@@ -7,7 +7,7 @@
       <MessageHeader>
         <id value="95675fed-25a6-4d75-8351-49707f9d3360" />
         <eventCoding>
-          <system value="https://fhir.nhs.uk/CodeSystem/message-events" />
+          <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
           <code value="medication-request-encoded-create" />
           <display value="Pharmacy/Treatment Encoded Order" />
         </eventCoding>

@@ -2,7 +2,7 @@
 
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="message-events"/>
-    <url value="https://fhir.nhs.uk/CodeSystem/message-events"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/message-event"/>
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="message-events"/>
