@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="medication-request-encoded-create" />
-    <url value="https://fhir.nhs.uk/CodeSystem/message-eventMessageDefinition/medication-order" />
+    <url value="https://fhir.nhs.uk/MessageDefinition/medication-order" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />
