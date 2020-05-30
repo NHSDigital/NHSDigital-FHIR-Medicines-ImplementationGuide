@@ -6,78 +6,9 @@
     <resource>
       <MessageHeader>
         <id value="95675fed-25a6-4d75-8351-49707f9d3360" />
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-              <b>id</b>: 95675fed-25a6-4d75-8351-49707f9d3360</p>
-            <p>
-              <b>event</b>: notification-admit (Details: https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events code notification-admit = 'Admission Notification', stated as 'notification-admit')</p>
-            <h3>Destinations</h3>
-            <table class="grid">
-              <tr>
-                <td>-</td>
-                <td>
-                  <b>Name</b>
-                </td>
-                <td>
-                  <b>Target</b>
-                </td>
-                <td>
-                  <b>Endpoint</b>
-                </td>
-              </tr>
-              <tr>
-                <td>*</td>
-                <td>ROUTE</td>
-                <td>ROUTE</td>
-                <td>
-                  <a href="ROUTE">ROUTE</a>
-                </td>
-              </tr>
-            </table>
-            <p>
-              <b>sender</b>: RCB</p>
-            <h3>Sources</h3>
-            <table class="grid">
-              <tr>
-                <td>-</td>
-                <td>
-                  <b>Name</b>
-                </td>
-                <td>
-                  <b>Endpoint</b>
-                </td>
-              </tr>
-              <tr>
-                <td>*</td>
-                <td>PAS</td>
-                <td>
-                  <a href="PAS">PAS</a>
-                </td>
-              </tr>
-            </table>
-            <p>
-              <b>focus</b>: </p>
-            <ul>
-              <li>
-                <a href="#backboneelement_506ab3bc-8efa-40bc-a7ad-1643d467eb4f">Generated Summary: unknown resource entry</a>
-              </li>
-              <li>
-                <a href="#backboneelement_a1cf4e55-a7bb-4867-a2bb-07619a67edd7">Generated Summary: unknown resource entry</a>
-              </li>
-              <li>
-                <a href="#backboneelement_1af1046d-f398-41d6-8ecc-be8ecf4c9ccd">Generated Summary: unknown resource entry</a>
-              </li>
-            </ul>
-          </div>
-        </text>
         <eventCoding>
-          <system value="https://project-wildfyre.github.io/careconnect-messaging-r4/CodeSystem/message-events" />
-          <code value="pharmacy-encoded-order" />
+          <system value="https://fhir.nhs.uk/CodeSystem/message-events" />
+          <code value="medication-request-encoded-create" />
           <display value="Pharmacy/Treatment Encoded Order" />
         </eventCoding>
         <destination>
