@@ -1,10 +1,11 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="messaging"/>
+    <id value="electronic-prescribing-server"/>
+    <url value="https://fhir.nhs.uk/CapabilityStatement/electronic-prescribing-server" />
     <version value="3.0.0"/>
     <name value="Messaging support Capability Statement"/>
     <status value="active"/>
     <publisher value="digital.nhs.uk"/>
-    <description value="Conformance requirements for Message endpoint"/>
+    <description value="Conformance requirements for EPS Message endpoint"/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="application/fhir+json"/>
@@ -20,10 +21,6 @@
                 </coding>
             </service>
         </security>
-        <operation>
-            <name value="validate"/>
-            <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
-        </operation>
         <operation>
             <name value="process-message"/>
             <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message"/>
