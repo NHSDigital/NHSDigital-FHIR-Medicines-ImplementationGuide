@@ -21,31 +21,31 @@
             <value value="http://hl7.org/fhir"/>
         </telecom>
     </contact>
-    <description value="Common messaging events"/>
+    <description value="Common messaging events. I am the description of the resource, should I be included  in the default rendering"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
         <code value="diagnostic-report-create"/>
-        <display value="Unsolicited transmission of an observation message"/>
+        <display value="Unsolicited transmission of an observation message (HL7v2.4 ORU_R01)"/>
     </concept>
     <concept>
-        <code value="encounter-admission-create"/>
+        <code value="encounter-admission-create (HL7v2.4 ADT_A01)"/>
         <display value="Admit/Visit Notification"/>
     </concept>
     <concept>
-        <code value="encounter-discharge-create"/>
+        <code value="encounter-discharge-create (HL7v2.4 ADT_A03)"/>
         <display value="Discharge/End Visit"/>
     </concept>
     <concept>
-        <code value="patient-create"/>
+        <code value="patient-create (HL7v2.4 ADT_A28)"/>
         <display value="Add person information"/>
     </concept>
     <concept>
-        <code value="patient-update"/>
+        <code value="patient-update (HL7v2.4 ADT_31)"/>
         <display value="Update person information"/>
     </concept>
     <concept>
-        <code value="medication-request-encoded-create"/>
+        <code value="medication-request-encoded-create (HL7v2.4 RDE_R01)"/>
         <display value="Prescription/Treatment Enconded Order"/>
     </concept>
 </CodeSystem>
