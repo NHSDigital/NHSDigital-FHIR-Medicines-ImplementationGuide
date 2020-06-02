@@ -14,16 +14,20 @@
         <destination>
           <name value="ROUTE" />
           <target>
-            <display value="ROUTE" />
+           <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="ABC135" />
+          </identifier>
+            <display value="The Pharmacy" />
           </target>
           <endpoint value="ROUTE" />
         </destination>
         <sender>
           <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-            <value value="RCB" />
+            <value value="M85011" />
           </identifier>
-          <display value="RCB" />
+          <display value="Mirfield Surgery" />
         </sender>
         <source>
           <name value="PAS" />
@@ -44,7 +48,7 @@
       <MedicationRequest>
         <!-- Can be ParentPrescription.id -->
         <id value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
-         <!-- Can be pertinentPrescription.id This is:
+        <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
 
@@ -96,7 +100,16 @@
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         <!-- `Patient.id -->
         <identifier>
-        <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
+          <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
+          <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                <code value="01" />
+                <display value="Number present and verified" />
+              </coding>
+            </valueCodeableConcept>
+          </extension>
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
           <value value="9900002717" />
         </identifier>
@@ -120,60 +133,181 @@
           <city value="Simple Town" />
           <postalCode value="AA1 1AA" />
         </address>
-      </Patient>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
-    <resource>
-      <Provenance>
-        <id value="7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
-        <target value="Bundle/1234"></target>
-        <recorded value="2004-09-20T10:30:000+00:00"></recorded>
-        <agent>
-        <who value="urn:uuid:TODO"></who>
-        </agent>
-        <signature>
-         <data>TODO</data>
-        </signature>
-       
-      </Provenance>
-    </resource>
-  </entry>
-   <entry>
-    <fullUrl value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-    <resource>
-      <Practitioner>
-        <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-        <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 -->
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <value value="896547302565" />
-        </identifier>
-         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-job-role-id" />
-          <value value="R0260" />
-        </identifier>
-         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
-          <value value="125686540025" />
-        </identifier>
-         <!-- <AgentPerson classCode="AGNT">.agentPerson.name -->
-        <name>
-          <use value="official" />
-          <family value="Smith" />
-          <prefix value="Dr" />
-        </name>
-         <!-- <AgentPerson classCode="AGNT">.telecom -->   
-        <telecom>
-        <!-- note mapping of phone to tel: -->
-          <system value="phone" />
-          <value value="01234567890" />
-          <use value="work" />
-        </telecom>
-      </Practitioner>
-    </resource>
-  </entry>
-</Bundle>
+        <generalPractitioner>
+          <identifier>
+            <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763"/>
+            <value value="G5612908"/>
+          </identifier>
+          <!-- display not required. Inlcuded to help readbility/navigation-->
+          <display value="Dr Nice"/>
+        </generalPractitioner>
+        <managingOrganization>
+          <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25">
+            <display value="Mirfleld Surgery"/>
+          </managingOrganization>
+        </Patient>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
+      <resource>
+        <Provenance>
+          <id value="7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
+          <target value="Bundle/1234"></target>
+          <recorded value="2004-09-20T10:30:000+00:00"></recorded>
+          <agent>
+            <who value="urn:uuid:TODO"></who>
+          </agent>
+          <signature>
+            <data>TODO</data>
+          </signature>
+
+        </Provenance>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+      <resource>
+        <!--  This is the person who is authorising the prescription -->
+        <Practitioner>
+          <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
+        -->
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+            <value value="896547302565" />
+          </identifier>
+          <!-- <AgentPerson classCode="AGNT">.agentPerson.name -->
+          <name>
+            <use value="official" />
+            <family value="Smith" />
+            <prefix value="Dr" />
+          </name>
+        </Practitioner>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
+      <resource>
+        <!--  This is the role of the person who is authorising the prescription -->
+        <PractitionerRole xmlns="http://hl7.org/fhir">
+          <!-- UUID not in Hl7v3 version -->
+          <id value="6dc16793-61c2-44b8-8d0f-f872101c016e" />
+          <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+            <value value="125686540025" />
+          </identifier>
+          <practitioner>
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          </practitioner>
+          <organization>
+            <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
+          </organization>
+          <code>
+            <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
+            <coding>
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+              <code value="R0260" />
+              <display value="General Medical Practitioner" />
+            </coding>
+          </code>
+          <!-- <AgentPerson classCode="AGNT">.telecom -->
+          <telecom>
+            <!-- note mapping of phone to tel: -->
+            <system value="phone" />
+            <value value="01234567890" />
+            <use value="work" />
+          </telecom>
+        </PractitionerRole>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25"/>
+      <resource>
+        <Organization xmlns="http://hl7.org/fhir">
+          <id value="17c4270d-6966-4788-8cbc-1d1d63536b25" />
+          <identifier>
+            <use value="official" />
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="M85011" />
+          </identifier>
+          <name value="Mirfleld Surgery" />
+          <telecom>
+            <system value="phone" />
+            <value value="01234567890" />
+            <use value="work" />
+          </telecom>
+          <address>
+            <line value="20 Low street" />
+            <city value="Simple town" />
+            <postalCode value="AA2 2AA" />
+          </address>
+          <partOf>
+            <identifier>
+              <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+              <value value="5FE"/>
+            </identifier>
+            <display value="Portsmouth City" />
+          </partOf>
+        </Organization>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+      <resource>
+        <!-- <responsibleParty typeCode="RESP"  This will normally be the patients GP -->
+        <Practitioner>
+          <!-- UUID not in Hl7v3 version -->
+          <id value="550692c5-9de4-4b7f-b06e-846b90f9a763" />
+          <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
+        -->
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+            <value value="777964352001" />
+          </identifier>
+          <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.agentPerson.name -->
+          <name>
+            <use value="official" />
+            <family value="Nice" />
+            <prefix value="Dr" />
+          </name>
+        </Practitioner>
+      </resource>
+    </entry>
+    <entry>
+      <fullUrl value="urn:uuid:0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
+      <resource>
+        <!-- <responsibleParty typeCode="RESP"  This will normally be the patients GP -->
+        <PractitionerRole xmlns="http://hl7.org/fhir">
+          <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
+          <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+            <value value="787946852679" />
+          </identifier>
+          <practitioner>
+            <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+          </practitioner>
+          <organization>
+            <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
+          </organization>
+          <code>
+            <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
+            <coding>
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+              <code value="R0260" />
+              <display value="General Medical Practitioner" />
+            </coding>
+          </code>
+          <!-- <AgentPerson classCode="AGNT">.telecom -->
+          <telecom>
+            <!-- note mapping of phone to tel: -->
+            <system value="phone" />
+            <value value="01234567890" />
+            <use value="work" />
+          </telecom>
+        </PractitionerRole>
+      </resource>
+    </entry>
+  </Bundle>
