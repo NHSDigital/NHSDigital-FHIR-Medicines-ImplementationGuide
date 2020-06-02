@@ -142,7 +142,7 @@
         </encounter>
         <authoredOn value="2008-02-27T11:38:00+00:00" />
         <requester>
-          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D"></reference>
         </requester>
         <dosageInstruction>
           <text value="3 tablets before breakfast" />
