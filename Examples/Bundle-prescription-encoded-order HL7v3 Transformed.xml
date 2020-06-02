@@ -2,10 +2,10 @@
   <id value="f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
   <type value="message" />
   <entry>
-    <fullUrl value="urn:oid:95675fed-25a6-4d75-8351-49707f9d3360" />
+    <fullUrl value="urn:oid:48B07891-1D81-7B99-3BD2-23E242D2DD44" />
     <resource>
       <MessageHeader>
-        <id value="95675fed-25a6-4d75-8351-49707f9d3360" />
+        <id value="48B07891-1D81-7B99-3BD2-23E242D2DD44" />
         <eventCoding>
           <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
           <code value="medication-request-encoded-create" />
@@ -44,11 +44,17 @@
       <MedicationRequest>
         <!-- Can be ParentPrescription.id -->
         <id value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
-        <!-- Can be Prescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
+         <!-- Can be pertinentPrescription.id This is:
+         
+        The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
+
+        ?? The reference to DCE gives me the impression this should be the MessageHeader.id
+ -->
+        <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
-        </identifier> 
+        </identifier>
         <status value="active" />
         <intent value="order" />
         <medicationCodeableConcept>
@@ -83,13 +89,14 @@
       </MedicationRequest>
     </resource>
   </entry>
-   <entry>
+  <entry>
     <fullUrl value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
     <resource>
       <Patient>
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         <!-- `Patient.id -->
         <identifier>
+        <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
           <value value="9900002717" />
         </identifier>
@@ -103,9 +110,9 @@
         </name>
         <!-- Patient.administrativeGenderCode -->
         <gender value="male" />
-         <!-- Patient.birthTime -->
+        <!-- Patient.birthTime -->
         <birthDate value="1972-12-07" />
-         <!-- `Patient.addr use="H" -->
+        <!-- `Patient.addr use="H" -->
         <address>
           <use value="home" />
           <type value="both" />
@@ -114,6 +121,59 @@
           <postalCode value="AA1 1AA" />
         </address>
       </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
+    <resource>
+      <Provenance>
+        <id value="7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
+        <target value="Bundle/1234"></target>
+        <recorded value="2004-09-20T10:30:000+00:00"></recorded>
+        <agent>
+        <who value="urn:uuid:TODO"></who>
+        </agent>
+        <signature>
+         <data>TODO</data>
+        </signature>
+       
+      </Provenance>
+    </resource>
+  </entry>
+   <entry>
+    <fullUrl value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+    <resource>
+      <Practitioner>
+        <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 -->
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+          <value value="896547302565" />
+        </identifier>
+         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-job-role-id" />
+          <value value="R0260" />
+        </identifier>
+         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
+        <identifier>
+          <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+          <value value="125686540025" />
+        </identifier>
+         <!-- <AgentPerson classCode="AGNT">.agentPerson.name -->
+        <name>
+          <use value="official" />
+          <family value="Smith" />
+          <prefix value="Dr" />
+        </name>
+         <!-- <AgentPerson classCode="AGNT">.telecom -->   
+        <telecom>
+        <!-- note mapping of phone to tel: -->
+          <system value="phone" />
+          <value value="01234567890" />
+          <use value="work" />
+        </telecom>
+      </Practitioner>
     </resource>
   </entry>
 </Bundle>
