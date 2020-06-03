@@ -26,4 +26,9 @@
         <value value="2.16.840.1.113883.2.1.4.3"></value>
         <preferred value="false"></preferred>
     </uniqueId>
+    <uniqueId>
+        <type value="oid"></type>
+        <value value="1.2.826.0.1285.0.1.10"></value>
+        <preferred value="false"></preferred>
+    </uniqueId>
 </NamingSystem>
