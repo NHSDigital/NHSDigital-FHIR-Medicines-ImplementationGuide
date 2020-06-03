@@ -34,41 +34,44 @@
           <endpoint value="PAS" />
         </source>
         <focus>
-          <reference value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+          <reference value="urn:uuid:1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:791C9A65-5C6A-308B-D700-32D247BADB87" />
         </focus>
         <focus>
           <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         </focus>
         <focus>
-          <reference value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa"/>
+          <reference value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+    <fullUrl value="urn:uuid:1E34EE53-397A-2E70-E97C-67B1BD95014D" />
     <resource>
       <MedicationRequest>
-        <!-- Can be ParentPrescription.id -->
-        <id value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+        <!-- pertinentInformation2[0].pertinentLineItem.id -->
+        <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+        </meta>
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
 
         ?? The reference to DCE gives me the impression this should be the MessageHeader.id
  -->
-        <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
-        <identifier>
-          <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
-          <value value="83C40E-A23856-00123C" />
-        </identifier>
+
         <status value="active" />
         <intent value="order" />
+        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
         <medicationCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="317896006" />
-            <display value="Digoxin 125 microgram oral tablet" />
+            <code value="320176004" />
+            <display value="Salbutamol 100micrograms/actuation inhaler" />
           </coding>
         </medicationCodeableConcept>
         <subject>
@@ -79,15 +82,94 @@
         <requester>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
         </requester>
+        <!-- ParentPrescription.id is this needed? -->
+        <groupIdentifier>
+          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
+          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+        </groupIdentifier>
+        <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
+        <groupIdentifier>
+          <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
+          <value value="83C40E-A23856-00123C" />
+        </groupIdentifier>
+
+        <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
-          <text value="1 tablet after breakfast" />
+          <text value="2 Puffs when required" />
         </dosageInstruction>
+        <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
         <dispenseRequest>
           <quantity>
-            <value value="28" />
-            <unit value="tablet" />
+            <value value="200" />
+            <unit value="actuation(s)" />
             <system value="http://snomed.info/sct" />
-            <code value="3319411000001109" />
+            <code value="4034511000001102" />
+          </quantity>
+        </dispenseRequest>
+      </MedicationRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:791C9A65-5C6A-308B-D700-32D247BADB87" />
+    <resource>
+      <MedicationRequest>
+        <!-- pertinentInformation2[1].pertinentLineItem.id -->
+        <id value="791C9A65-5C6A-308B-D700-32D247BADB87" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+        </meta>
+        <!-- Can be pertinentPrescription.id This is:
+         
+        The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
+
+        ?? The reference to DCE gives me the impression this should be the MessageHeader.id
+ -->
+        <status value="active" />
+        <intent value="order" />
+        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
+        <medicationCodeableConcept>
+          <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="810211000001105" />
+            <display value="Seretide 125 Evohaler (GlaxoSmithKline)" />
+          </coding>
+        </medicationCodeableConcept>
+        <subject>
+          <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
+        </subject>
+        <!-- ParentPrescription.effectiveTime -->
+        <authoredOn value="2004-09-20T10:30:00.000+00:00" />
+        <requester>
+          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        </requester>
+        <!-- ParentPrescription.id is this needed? -->
+        <groupIdentifier>
+          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
+          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+        </groupIdentifier>
+        <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
+        <groupIdentifier>
+          <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
+          <value value="83C40E-A23856-00123C" />
+        </groupIdentifier>
+
+        <!-- ParentPrescription.id -->
+        <groupIdentifier>
+          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
+          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
+        </groupIdentifier>
+
+        <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
+        <dosageInstruction>
+          <text value="2 Puffs twice daily" />
+        </dosageInstruction>
+        <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
+        <dispenseRequest>
+          <quantity>
+            <value value="240" />
+            <unit value="actuation(s)" />
+            <system value="http://snomed.info/sct" />
+            <code value="4034511000001102" />
           </quantity>
         </dispenseRequest>
       </MedicationRequest>
@@ -98,6 +180,9 @@
     <resource>
       <Patient>
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        </meta>
         <!-- `Patient.id -->
         <identifier>
           <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
@@ -135,15 +220,15 @@
         </address>
         <generalPractitioner>
           <identifier>
-            <system value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763"/>
-            <value value="G5612908"/>
+            <system value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+            <value value="G5612908" />
           </identifier>
           <!-- display not required. Inlcuded to help readbility/navigation-->
-          <display value="Dr Nice"/>
+          <display value="Dr Nice" />
         </generalPractitioner>
         <managingOrganization>
           <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
-          <display value="Mirfleld Surgery"/>
+          <display value="Mirfleld Surgery" />
         </managingOrganization>
       </Patient>
     </resource>
@@ -160,21 +245,21 @@
     record this relates to
     -->
         <target>
-          <reference value="DocumentReference/example"/>
+          <reference value="DocumentReference/example" />
         </target>
-        <recorded value="2015-08-27T08:39:24+10:00"/>
+        <recorded value="2015-08-27T08:39:24+10:00" />
         <reason>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
-            <code value="TREAT"/>
-            <display value="treatment"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason" />
+            <code value="TREAT" />
+            <display value="treatment" />
           </coding>
         </reason>
         <activity>
           <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion"/>
-            <code value="AU"/>
-            <display value="authenticated"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion" />
+            <code value="AU" />
+            <display value="authenticated" />
           </coding>
         </activity>
 
@@ -182,8 +267,8 @@
         <agent>
           <type>
             <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
-              <code value="VERF"/>
+              <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes" />
+              <code value="VERF" />
             </coding>
           </type>
 
@@ -192,25 +277,25 @@
       Most of the time the userId is fully qualfied such as an email address      -->
           <who>
             <identifier>
-              <system value="urn:ietf:rfc:3986"/>
-              <value value="mailto://hhd@ssa.gov"/>
+              <system value="urn:ietf:rfc:3986" />
+              <value value="mailto://hhd@ssa.gov" />
             </identifier>
           </who>
         </agent>
         <signature>
           <!--   verification signature   -->
           <type>
-            <system value="urn:iso-astm:E1762-95:2013"/>
-            <code value="1.2.840.10065.1.12.1.5"/>
-            <display value="Verification Signature"/>
+            <system value="urn:iso-astm:E1762-95:2013" />
+            <code value="1.2.840.10065.1.12.1.5" />
+            <display value="Verification Signature" />
           </type>
-          <when value="2015-08-27T08:39:24+10:00"/>
+          <when value="2015-08-27T08:39:24+10:00" />
           <who>
-            <reference value="Practitioner/xcda-author"/>
+            <reference value="Practitioner/xcda-author" />
           </who>
-          <targetFormat value="application/fhir+xml"/>
-          <sigFormat value="application/signature+xml"/>
-          <data value="Li4u"/>
+          <targetFormat value="application/fhir+xml" />
+          <sigFormat value="application/signature+xml" />
+          <data value="Li4u" />
         </signature>
       </Provenance>
     </resource>
@@ -221,6 +306,9 @@
       <!--  This is the person who is authorising the prescription -->
       <Practitioner>
         <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
         <identifier>
@@ -243,6 +331,9 @@
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <!-- UUID not in Hl7v3 version -->
         <id value="6dc16793-61c2-44b8-8d0f-f872101c016e" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        </meta>
         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
@@ -273,11 +364,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25"/>
+    <fullUrl value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
     <resource>
       <!-- <representedOrganization classCode="ORG" determinerCode="INSTANCE"> if the author and registered GP are different you will need two organisations -->
       <Organization xmlns="http://hl7.org/fhir">
         <id value="17c4270d-6966-4788-8cbc-1d1d63536b25" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        </meta>
         <!-- <id root="1.2.826.0.1285.0.1.10" extension="M85011"/> note this is the wrong OID for Organisation Code, believe a fault in the MiM for EPS  -->
         <identifier>
           <use value="official" />
@@ -306,7 +400,7 @@
           <!-- using shortened reference at the moment so missing organisation type <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="005"/> -->
           <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-            <value value="5FE"/>
+            <value value="5FE" />
           </identifier>
           <display value="Portsmouth City" />
         </partOf>
@@ -320,6 +414,9 @@
       <Practitioner>
         <!-- UUID not in Hl7v3 version -->
         <id value="550692c5-9de4-4b7f-b06e-846b90f9a763" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
         <identifier>
@@ -341,6 +438,9 @@
       <!-- <responsibleParty typeCode="RESP"  This will normally be the patients GP -->
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
+        <meta>
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        </meta>
         <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />

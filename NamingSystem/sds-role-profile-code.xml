@@ -25,5 +25,6 @@
         <type value="oid"></type>
         <value value="1.2.826.0.1285.0.2.0.67"></value>
         <preferred value="false"></preferred>
+        <comment value="NHS SDS - Role Profile Code [BT]"></comment>
     </uniqueId>
 </NamingSystem>
