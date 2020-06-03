@@ -82,13 +82,12 @@
         <requester>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
         </requester>
-        <!-- ParentPrescription.id is this needed? -->
-        <groupIdentifier>
-          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
-          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
-        </groupIdentifier>
         <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
         <groupIdentifier>
+                 <!-- ParentPrescription.id -->
+                 <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
+                  <valueUri value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" /> 
+                </extension>
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
@@ -141,22 +140,15 @@
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-        </requester>
-        <!-- ParentPrescription.id is this needed? -->
+        </requester>      
         <groupIdentifier>
-          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
-          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
-        </groupIdentifier>
-        <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
-        <groupIdentifier>
+            <!-- ParentPrescription.id -->
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
+            <valueUri value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" /> 
+          </extension>
+           <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
-        </groupIdentifier>
-
-        <!-- ParentPrescription.id -->
-        <groupIdentifier>
-          <system value="https://fhir.nhs.uk/Id/parentPrescription" />
-          <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
         </groupIdentifier>
 
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
