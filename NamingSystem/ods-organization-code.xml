@@ -30,7 +30,7 @@
     <uniqueId>
         <type value="oid"></type>
         <value value="1.2.826.0.1285.0.1.10"></value>
-        <preferred value="false"></preferred>
+        <preferred value="true"></preferred>
         <comment value="NHS SDS Organisation Id - Organisation Id. [BT]"></comment>
     </uniqueId>
 </NamingSystem>
