@@ -29,23 +29,23 @@
         <display value="Unsolicited transmission of an observation message (HL7v2.4 ORU_R01)"/>
     </concept>
     <concept>
-        <code value="encounter-admission-create (HL7v2.4 ADT_A01)"/>
-        <display value="Admit/Visit Notification"/>
+        <code value="encounter-admission-create"/>
+        <display value="Admit/Visit Notification (HL7v2.4 ADT_A01)"/>
     </concept>
     <concept>
-        <code value="encounter-discharge-create (HL7v2.4 ADT_A03)"/>
-        <display value="Discharge/End Visit"/>
+        <code value="encounter-discharge-create"/>
+        <display value="Discharge/End Visit (HL7v2.4 ADT_A03)"/>
     </concept>
     <concept>
-        <code value="patient-create (HL7v2.4 ADT_A28)"/>
-        <display value="Add person information"/>
+        <code value="patient-create"/>
+        <display value="Add person information (HL7v2.4 ADT_A28)"/>
     </concept>
     <concept>
-        <code value="patient-update (HL7v2.4 ADT_31)"/>
-        <display value="Update person information"/>
+        <code value="patient-update"/>
+        <display value="Update person information (HL7v2.4 ADT_31)"/>
     </concept>
     <concept>
-        <code value="medication-request-encoded-create (HL7v2.4 RDE_R01)"/>
-        <display value="Prescription/Treatment Enconded Order"/>
+        <code value="prescription-order"/>
+        <display value="Prescription/Treatment Enconded Order (HL7v2.4 RDE_R01)"/>
     </concept>
 </CodeSystem>
