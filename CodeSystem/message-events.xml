@@ -7,7 +7,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="message-events"/>
     </identifier>
-    <version value="4.0.0"/>
+    <version value="1.0.0"/>
     <name value="Message Events"/>
     <title value="Message Events"/>
     <status value="draft"/>
