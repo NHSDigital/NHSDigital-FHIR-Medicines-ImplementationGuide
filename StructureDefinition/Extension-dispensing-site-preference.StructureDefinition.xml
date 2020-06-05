@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/Extension-dispensing-site-preference" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
   <name value="Extension-dispensing-site-preference" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -17,7 +17,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-dispensing-site-preference" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
