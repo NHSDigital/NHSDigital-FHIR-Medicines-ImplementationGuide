@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="eps-prescription-order-create" />
-    <url value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order" />
+    <url value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-create" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />
