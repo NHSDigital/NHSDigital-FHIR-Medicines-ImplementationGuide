@@ -29,7 +29,25 @@
     </focus>
     <focus>
         <code value="Provenance" />
-        <min value="1" />
+        <min value="0" />
         <max value="1" />
+    </focus>
+    <focus>
+        <code value="Practitioner" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <min value="1" />
+        <max value="*" />
+    </focus>
+    <focus>
+        <code value="PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <min value="1" />
+        <max value="*" />
+    </focus>
+    <focus>
+        <code value="Organization" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <min value="1" />
+        <max value="*" />
     </focus>
 </MessageDefinition>
