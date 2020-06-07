@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="prescription-treatment-type"/>
-    <name value="Prescription Treatment Type"/>
+    <id value="itk-prescription-treatment-type"/>
+    <name value="ITK Prescription Treatment Type"/>
     <status value="draft"/>
     <kind value="codesystem"/>
     <date value="2020-06-01"/>
@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/CodeSystem/prescription-treatment-type"/>
+        <value value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
         <preferred value="true"/>
     </uniqueId>
     <uniqueId>

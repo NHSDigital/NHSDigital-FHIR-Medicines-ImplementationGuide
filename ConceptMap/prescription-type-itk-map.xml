@@ -1,0 +1,45 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="prescription-type-map"/>
+    <url value="https://fhir.nhs.uk/ConceptMap/prescription-type-map"/>
+    <version value="4.0.1"/>
+    <name value="Prescription Type Mapping"/>
+    <title value="Prescription Type Mapping"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-06-07"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="FHIR project team (example)"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://nhs.uk"/>
+        </telecom>
+    </contact>
+    <description value="Prescription Type Mapping"/>
+    <purpose value="Medicine Management"/>
+    <sourceUri value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
+    <targetUri value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
+    <group>
+        <source value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
+        <target value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
+        <element>
+            <code value="code"/>
+            <display value="Example Code"/>
+            <target>
+                <code value="code2"/>
+                <display value="Some Example Code"/>
+                <equivalence value="equivalent"/>
+                <dependsOn>
+                    <property value="http://example.org/fhir/property-value/example"/>
+                    <system value="http://example.org/fhir/example3"/>
+                    <value value="some-code"/>
+                    <display value="Something Coded"/>
+                </dependsOn>
+            </target>
+        </element>
+        <unmapped>
+            <mode value="other-map"/>
+            <url value="http://example.org/fhir/ConceptMap/map2"/>
+        </unmapped>
+    </group>
+</ConceptMap>
