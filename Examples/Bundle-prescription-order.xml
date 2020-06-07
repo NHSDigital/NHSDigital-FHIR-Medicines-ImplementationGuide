@@ -70,16 +70,6 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType-->
-         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
-              <code value="acute" />
-              <display value="Acute" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -114,7 +104,15 @@
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-
+    <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+          <courseOfTherapyType>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
+            </coding>
+          </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs when required" />
@@ -149,17 +147,7 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType-->
-         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
-              <code value="acute" />
-              <display value="Acute" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        
+      
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -193,7 +181,15 @@
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-
+          <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+          <courseOfTherapyType>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
+            </coding>
+          </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs twice daily" />
