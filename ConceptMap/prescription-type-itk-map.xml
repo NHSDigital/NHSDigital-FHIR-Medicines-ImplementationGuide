@@ -23,23 +23,41 @@
         <source value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
         <target value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
         <element>
-            <code value="code"/>
-            <display value="Example Code"/>
+            <code value="acute"/>
+            <display value="Acute"/>
             <target>
-                <code value="code2"/>
-                <display value="Some Example Code"/>
+                <code value="0001"/>
+                <display value="Acute"/>
                 <equivalence value="equivalent"/>
-                <dependsOn>
-                    <property value="http://example.org/fhir/property-value/example"/>
-                    <system value="http://example.org/fhir/example3"/>
-                    <value value="some-code"/>
-                    <display value="Something Coded"/>
-                </dependsOn>
+            </target>
+        </element>
+         <element>
+            <code value="repeat"/>
+            <display value="Repeat"/>
+            <target>
+                <code value="0002"/>
+                <display value="Repeat Prescribing"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+         <element>
+            <code value="repeat-dispensing"/>
+            <display value="Repeat Dispensing"/>
+            <target>
+                <code value="0003"/>
+                <display value="Repeat Dispensing"/>
+                <equivalence value="equivalent"/>
             </target>
         </element>
         <unmapped>
             <mode value="other-map"/>
-            <url value="http://example.org/fhir/ConceptMap/map2"/>
+            <code value="delayed-prescribing" />
+            <display value="Delayed Prescribing" />
+        </unmapped>
+            <unmapped>
+            <mode value="other-map"/>
+            <code value="acute-handwritten" />
+            <display value="acute-handwritten" />
         </unmapped>
     </group>
 </ConceptMap>

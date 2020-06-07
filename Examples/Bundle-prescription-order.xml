@@ -61,11 +61,22 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
+       <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
           <valueCodeableConcept>
             <coding>
               <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
               <code value="0004" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType-->
+         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -129,11 +140,22 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
+        <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
           <valueCodeableConcept>
             <coding>
               <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
               <code value="0004" />
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType-->
+         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
             </coding>
           </valueCodeableConcept>
         </extension>
