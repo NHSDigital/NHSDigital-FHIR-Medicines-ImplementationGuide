@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="itk-prescription-treatment-type"/>
+    <id value="itk-prescription-treatment-type-ns"/>
     <name value="ITK Prescription Treatment Type"/>
     <status value="draft"/>
     <kind value="codesystem"/>
