@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/StructureDefinition/MM-MedicationRequest" />
+  <name value="MM-MedicationRequest" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="script10.6" />
+    <uri value="http://ncpdp.org/SCRIPT10_6" />
+    <name value="Mapping to NCPDP SCRIPT 10.6" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationRequest" />
+  <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationRequest.courseOfTherapyType.coding.system">
+      <path value="MedicationRequest.courseOfTherapyType.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType" />
+    </element>
+  </differential>
+</StructureDefinition>
