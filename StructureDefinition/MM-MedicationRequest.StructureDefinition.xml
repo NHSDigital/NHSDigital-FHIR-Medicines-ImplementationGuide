@@ -80,7 +80,7 @@
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
-      <definition value="The type of prescription e.g. acute, repeat, repeat-dispensing." />
+      <comment value="The type of prescription e.g. acute, repeat, repeat-dispensing. Note, EPS uses a subset of the PrescriptionType subset and excludes non ETP items (e.g. handwritten)." />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationRequestCourseOfTherapy" />
