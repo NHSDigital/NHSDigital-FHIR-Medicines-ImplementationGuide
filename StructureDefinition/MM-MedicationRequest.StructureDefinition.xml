@@ -65,7 +65,7 @@
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
-      <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary." />
+      <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -82,10 +82,15 @@
         <description value="" />
       </binding>
     </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn" />
+      <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
+    </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="Composite request this is part of." />
-      <comment value="The groupIdentifier is equivalent to ParentPrescription.id (prescription-short-form). The extension is used to carry the ParentPrescription.id (UUID)." />
+      <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-short-form). The extension is used to carry the ParentPrescription.id (UUID)." />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.groupIdentifier.extension">
       <path value="MedicationRequest.groupIdentifier.extension" />
@@ -107,7 +112,8 @@
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
-      <comment value="The type of prescription e.g. acute, repeat, repeat-dispensing. Note, EPS uses a subset of the PrescriptionType subset and excludes non ETP items (e.g. handwritten)." />
+      <comment value="The type of prescription e.g. acute, repeat, repeat-dispensing. Note, EPS uses a subset of the PrescriptionType subset and excludes non ETP items (e.g. handwritten).&#xD;&#xA;ITK Mapping = pertinentInformation5.pertinentPrescriptionTreatmentType. Was extension in STU3" />
+      <min value="1" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationRequestCourseOfTherapy" />
@@ -123,6 +129,14 @@
         <description value="Valid Prescription Treatment Types for EPS" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type" />
       </binding>
+    </element>
+    <element id="MedicationRequest.dosageInstruction.text">
+      <path value="MedicationRequest.dosageInstruction.text" />
+      <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.component.lineItemQuantity" />
     </element>
   </differential>
 </StructureDefinition>

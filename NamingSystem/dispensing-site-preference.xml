@@ -7,7 +7,7 @@
     <date value="2020-06-01"/>
     <publisher value="NHS Digital"/>
     <responsible value="NHS Digital"/>
-    <description value="The roles played by a pharmacy when supplying medication."/>
+    <description value="Describes the nature of the role played by an agent (in this case a pharmacy) when supplying medication. Note: 1)    Message coding reflects the PDS code scheme for P1R2.     2)    The role of Agent is a place holder, not an actual specified pharmacy"/>
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
