@@ -35,6 +35,44 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationRequest.extension">
+      <path value="MedicationRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationRequest.extension:extension-dispensing-site">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="extension-dispensing-site" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
+      </type>
+    </element>
+    <element id="MedicationRequest.groupIdentifier.extension">
+      <path value="MedicationRequest.groupIdentifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationRequest.groupIdentifier.extension:myExtension">
+      <path value="MedicationRequest.groupIdentifier.extension" />
+      <sliceName value="myExtension" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
+      </type>
+    </element>
     <element id="MedicationRequest.courseOfTherapyType.coding.system">
       <path value="MedicationRequest.courseOfTherapyType.coding.system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType" />
