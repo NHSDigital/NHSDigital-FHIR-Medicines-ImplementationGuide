@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="itk-prescription-type"/>
+   <url value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type"/>
+   <version value="1.1.0"/>
+   <name value="ITK HL7v3 Prescription Type"/>
+   <status value="active"/>
+   <date value="2018-05-18T00:00:00+00:00"/>
+   <publisher value="HL7 UK"/>
+   <description value="A CodeSystem to identify the type of prescription"/>
+   <copyright value="Copyright © 2004 HSCIC"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="0001"/>
+      <display value="General Practitioner Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0002"/>
+      <display value="Intentionally left blank"/>
+   </concept>
+   <concept>
+      <code value="0003"/>
+      <display value="Nurse Practitioner Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0004"/>
+      <display value="Hospital Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0005"/>
+      <display value="Intentionally left blank"/>
+   </concept>
+   <concept>
+      <code value="0006"/>
+      <display value="Dental Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0007"/>
+      <display value="Supplementary Prescriber Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0008"/>
+      <display value="Intenionally left blank"/>
+   </concept>
+   <concept>
+      <code value="0009"/>
+      <display value="General Practitioner Prescribing: Private"/>
+   </concept>
+   <concept>
+      <code value="0010"/>
+      <display value="Intentionally left blank"/>
+   </concept>
+   <concept>
+      <code value="0011"/>
+      <display value="Intentionally left blank"/>
+   </concept>
+   <concept>
+      <code value="0012"/>
+      <display value="Extended Forumulary Prescriber"/>
+   </concept>
+   <concept>
+      <code value="0013"/>
+      <display value="Homecare Prescription (Secondary Care)"/>
+   </concept>
+</CodeSystem>

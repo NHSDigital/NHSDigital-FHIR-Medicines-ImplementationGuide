@@ -55,6 +55,14 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:myExtension">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="myExtension" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
+      </type>
+    </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="Composite request this is part of." />

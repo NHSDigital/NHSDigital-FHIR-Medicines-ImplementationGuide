@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
-  <name value="Extension-dispensing-site-preference" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
+  <name value="Extension-itk-prescription-type" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -21,11 +21,12 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -41,7 +42,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type" />
     </element>
   </differential>
 </StructureDefinition>
