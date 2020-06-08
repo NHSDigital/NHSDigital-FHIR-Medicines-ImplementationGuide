@@ -63,6 +63,25 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
       </type>
     </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]" />
+      <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+        </coding>
+      </fixedCodeableConcept>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationCode" />
+        </extension>
+        <strength value="required" />
+        <description value="" />
+      </binding>
+    </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="Composite request this is part of." />
