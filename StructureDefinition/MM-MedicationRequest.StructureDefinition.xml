@@ -55,6 +55,10 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
       </type>
     </element>
+    <element id="MedicationRequest.groupIdentifier">
+      <path value="MedicationRequest.groupIdentifier" />
+      <comment value="The groupIdentifier is equivalent to ParentPrescription.id (prescription-short-form). The extension is used to carry the ParentPrescription.id (UUID)." />
+    </element>
     <element id="MedicationRequest.groupIdentifier.extension">
       <path value="MedicationRequest.groupIdentifier.extension" />
       <slicing>
