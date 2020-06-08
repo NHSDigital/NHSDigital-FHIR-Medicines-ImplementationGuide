@@ -78,9 +78,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension:Extension-prescription-id">
+    <element id="MedicationRequest.groupIdentifier.extension:eps-prescription-id">
       <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="Extension-prescription-id" />
+      <sliceName value="eps-prescription-id" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
