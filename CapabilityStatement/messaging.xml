@@ -29,7 +29,11 @@
     <messaging>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order"/>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-create"/>
+        </supportedMessage>>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-update"/>
         </supportedMessage>>
     </messaging>
 </CapabilityStatement>

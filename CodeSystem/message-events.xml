@@ -45,7 +45,11 @@
         <display value="Update person information (HL7v2.4 ADT_31)"/>
     </concept>
     <concept>
-        <code value="prescription-order"/>
-        <display value="Prescription/Treatment Enconded Order (HL7v2.4 RDE_R01)"/>
+        <code value="prescription-order-create"/>
+        <display value="Prescription/Treatment Order (HL7v2.4 RDE_R01)"/>
+    </concept>
+    <concept>
+        <code value="prescription-order-update"/>
+        <display value="Prescription/Treatment Order Update"/>
     </concept>
 </CodeSystem>

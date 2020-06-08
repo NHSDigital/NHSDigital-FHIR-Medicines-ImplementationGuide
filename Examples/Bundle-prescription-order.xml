@@ -9,7 +9,7 @@
         <id value="48B07891-1D81-7B99-3BD2-23E242D2DD44" />
         <eventCoding>
           <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
-          <code value="prescription-order" />
+          <code value="prescription-order-create" />
           <display value="Pharmacy/Treatment Encoded Order" />
         </eventCoding>
         <destination>
@@ -61,6 +61,7 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
+       <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
           <valueCodeableConcept>
             <coding>
@@ -103,7 +104,15 @@
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-
+    <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+          <courseOfTherapyType>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
+            </coding>
+          </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs when required" />
@@ -129,6 +138,7 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
+        <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
           <valueCodeableConcept>
             <coding>
@@ -137,7 +147,7 @@
             </coding>
           </valueCodeableConcept>
         </extension>
-        
+      
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -171,7 +181,15 @@
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-
+          <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+          <courseOfTherapyType>
+            <coding>
+              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+              <code value="acute" />
+              <display value="Acute" />
+            </coding>
+          </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs twice daily" />
@@ -258,57 +276,28 @@
     record this relates to
     -->
         <target>
-          <reference value="DocumentReference/example" />
+          <reference value="Bundle/f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
         </target>
         <recorded value="2015-08-27T08:39:24+10:00" />
-        <reason>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason" />
-            <code value="TREAT" />
-            <display value="treatment" />
-          </coding>
-        </reason>
-        <activity>
-          <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion" />
-            <code value="AU" />
-            <display value="authenticated" />
-          </coding>
-        </activity>
-
-        <!--   signer = Harold Hippocrates   -->
         <agent>
-          <type>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes" />
-              <code value="VERF" />
-            </coding>
-          </type>
-
-          <!--   very often, the user won't have a known system - these aren't available 
-      for security system log ons. But where you can define it, you should.
-      Most of the time the userId is fully qualfied such as an email address      -->
           <who>
-            <identifier>
-              <system value="urn:ietf:rfc:3986" />
-              <value value="mailto://hhd@ssa.gov" />
-            </identifier>
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D"/>
           </who>
         </agent>
         <signature>
           <!--   verification signature   -->
           <type>
             <system value="urn:iso-astm:E1762-95:2013" />
-            <code value="1.2.840.10065.1.12.1.5" />
-            <display value="Verification Signature" />
+            <code value="1.2.840.10065.1.12.1.1" />
+            <display value="Author's Signature" />
           </type>
-          <when value="2015-08-27T08:39:24+10:00" />
+          <when value="2020-06-01T08:39:24+10:00" />
           <who>
-            <reference value="Practitioner/xcda-author" />
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
           </who>
-          <targetFormat value="application/fhir+xml" />
+          <targetFormat value="application/xml" />
           <sigFormat value="application/signature+xml" />
-          <data value="Li4u" />
+          <data value="Q+yEfnM5PA2punGmevuvLtwj4+XRsWeeiq7SJ9Ekd28NJ9jVtCa9oB3bU2aGl5wlX8HufH2GFJgg 9o9OFFrSvRAPpgWKW4/+3aL06S9B7YT4MQP/7St2gL1v2+v4tmQ7CSvF+VTFVugIezewAQPKvhJa NLHD+njOD+60W9pK17U=" />
         </signature>
       </Provenance>
     </resource>
