@@ -65,17 +65,31 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension:myExtension">
+    <element id="MedicationRequest.groupIdentifier.extension:Extension-prescription-id">
       <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="myExtension" />
+      <sliceName value="Extension-prescription-id" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
       </type>
     </element>
-    <element id="MedicationRequest.courseOfTherapyType.coding.system">
-      <path value="MedicationRequest.courseOfTherapyType.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType" />
+    <element id="MedicationRequest.courseOfTherapyType">
+      <path value="MedicationRequest.courseOfTherapyType" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationRequestCourseOfTherapy" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type" />
+      </binding>
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding">
+      <path value="MedicationRequest.courseOfTherapyType.coding" />
+      <binding>
+        <strength value="required" />
+        <description value="Valid Prescription Treatment Types for EPS" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
