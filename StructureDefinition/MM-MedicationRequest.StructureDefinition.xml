@@ -45,9 +45,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:extension-dispensing-site">
+    <element id="MedicationRequest.extension:dispensing-site">
       <path value="MedicationRequest.extension" />
-      <sliceName value="extension-dispensing-site" />
+      <sliceName value="dispensing-site" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -55,9 +55,9 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:myExtension">
+    <element id="MedicationRequest.extension:itk-prescription-type">
       <path value="MedicationRequest.extension" />
-      <sliceName value="myExtension" />
+      <sliceName value="itk-prescription-type" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
