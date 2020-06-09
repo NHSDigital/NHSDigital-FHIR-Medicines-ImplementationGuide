@@ -77,6 +77,22 @@
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
     </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.requester.identifier">
+      <path value="MedicationRequest.requester.identifier" />
+      <comment value="Should consider making identifier (GMP, GMC,etc) Code mandatory." />
+    </element>
+    <element id="MedicationRequest.requester.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationRequest.requester.display" />
+      <comment value="The name of the of the issuer must be included in the MedicationRequest (this is for legal reasons)" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.performerType">
       <path value="MedicationRequest.performerType" />
       <comment value="If specified without indicating a performer, this indicates that the performer must be of the specified type. If specified with a performer then it indicates the requirements of the performer if the designated performer is not available.&#xD;&#xA;&#xD;&#xA;EPS - This has several similarities to the dispensing-site-preference codeSystem. Should this be moved here from an extension and also switched to SNOMED." />
@@ -156,6 +172,7 @@
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
+      <comment value="Substituition is a mandatory requirement for EPS." />
       <min value="1" />
     </element>
   </differential>

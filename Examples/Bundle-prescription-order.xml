@@ -61,15 +61,7 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
-       <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
-              <code value="0004" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
+  
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -84,7 +76,7 @@
           <coding>
             <system value="http://snomed.info/sct" />
             <code value="320176004" />
-            <display value="Salbutamol 100micrograms/actuation inhaler" />
+            <display value="Salbutamol 100micrograms inhaler (product)" />
           </coding>
         </medicationCodeableConcept>
         <subject>
@@ -98,21 +90,21 @@
         <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
         <groupIdentifier>
           <!-- ParentPrescription.id -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-eps-parent-prescription-id">
             <valueUri value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
           </extension>
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-    <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
         Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
-          <courseOfTherapyType>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
-              <code value="acute" />
-              <display value="Acute" />
-            </coding>
-          </courseOfTherapyType>
+        <courseOfTherapyType>
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+            <code value="acute" />
+            <display value="Acute" />
+          </coding>
+        </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs when required" />
@@ -125,6 +117,15 @@
             <system value="http://snomed.info/sct" />
             <code value="4034511000001102" />
           </quantity>
+          <performer>
+            <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference">
+              <valueCoding>
+                <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
+                <code value="0004" />
+              </valueCoding>
+            </extension>
+          </performer>
         </dispenseRequest>
       </MedicationRequest>
     </resource>
@@ -138,16 +139,8 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
-        <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
-          <valueCodeableConcept>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
-              <code value="0004" />
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-      
+
+
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -174,22 +167,22 @@
         </requester>
         <groupIdentifier>
           <!-- ParentPrescription.id -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/eps-parent-prescription-id">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-eps-parent-prescription-id">
             <valueUri value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
           </extension>
           <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
           <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-          <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
+        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
         Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
-          <courseOfTherapyType>
-            <coding>
-              <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
-              <code value="acute" />
-              <display value="Acute" />
-            </coding>
-          </courseOfTherapyType>
+        <courseOfTherapyType>
+          <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"></system>
+            <code value="acute" />
+            <display value="Acute" />
+          </coding>
+        </courseOfTherapyType>
         <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs twice daily" />
@@ -202,6 +195,15 @@
             <system value="http://snomed.info/sct" />
             <code value="4034511000001102" />
           </quantity>
+          <performer>
+            <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference">
+              <valueCoding>
+                <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
+                <code value="0004" />
+              </valueCoding>
+            </extension>
+          </performer>
         </dispenseRequest>
       </MedicationRequest>
     </resource>
@@ -281,7 +283,7 @@
         <recorded value="2015-08-27T08:39:24+10:00" />
         <agent>
           <who>
-            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D"/>
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
           </who>
         </agent>
         <signature>
