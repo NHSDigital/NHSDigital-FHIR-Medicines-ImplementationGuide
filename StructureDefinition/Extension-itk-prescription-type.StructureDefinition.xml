@@ -33,14 +33,11 @@
       <type>
         <code value="Coding" />
       </type>
+      <fixedCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type" />
+      </fixedCoding>
     </element>
     <element id="Extension.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type" />
     </element>
