@@ -17,8 +17,7 @@
     </contact>
     <description value="Prescription Type Mapping"/>
     <purpose value="Medicine Management"/>
-    <sourceUri value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
-    <targetUri value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
+    <targetUri value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type"/>
     <group>
         <source value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
         <target value="https://fhir.nhs.uk/CodeSystem/itk-prescription-treatment-type"/>
@@ -49,15 +48,5 @@
                 <equivalence value="equivalent"/>
             </target>
         </element>
-        <unmapped>
-            <mode value="other-map"/>
-            <code value="delayed-prescribing" />
-            <display value="Delayed Prescribing" />
-        </unmapped>
-            <unmapped>
-            <mode value="other-map"/>
-            <code value="acute-handwritten" />
-            <display value="acute-handwritten" />
-        </unmapped>
     </group>
 </ConceptMap>
