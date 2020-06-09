@@ -2,11 +2,11 @@
    <id value="CareConnect-PrescriptionType"/>
    <url value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
    <version value="1.1.0"/>
-   <name value="Care Connect Prescription Type"/>
+   <name value="Care Connect Prescription Therapy Type"/>
    <status value="active"/>
    <date value="2018-05-18T00:00:00+00:00"/>
    <publisher value="HL7 UK"/>
-   <description value="A CodeSystem to identify the type of prescription"/>
+   <description value="A CodeSystem to identify the overall method of medication administration"/>
    <copyright value="Copyright © 2016 HL7 UK"/>
    <caseSensitive value="true"/>
    <content value="complete"/>
