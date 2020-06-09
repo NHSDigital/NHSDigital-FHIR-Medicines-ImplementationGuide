@@ -140,5 +140,9 @@
       <path value="MedicationRequest.dispenseRequest" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.component.lineItemQuantity" />
     </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
