@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="prescription-short-form"/>
+    <id value="prescription-short-form-ns"/>
     <name value="prescription-short-form"/>
     <status value="draft"/>
     <kind value="identifier"/>
