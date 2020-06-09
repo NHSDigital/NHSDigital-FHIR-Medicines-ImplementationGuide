@@ -21,7 +21,7 @@
             <value value="http://hl7.org/fhir"/>
         </telecom>
     </contact>
-    <description value="Dispensing Contractors and Nomination. As per current processes, a patient may require prescribed items to be authorised across different prescriptions to allow for dispensing by different dispensing contractors."/>
+    <description value="Dispensing Contractors and Nomination. As per current processes, a patient may require prescribed items to be authorised across different prescriptions to allow for dispensing by different dispensing contractors. Question? Should this move to Medication.performerType?"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
