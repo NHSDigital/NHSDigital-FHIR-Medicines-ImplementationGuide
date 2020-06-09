@@ -45,18 +45,11 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:dispensing-site">
-      <path value="MedicationRequest.extension" />
-      <sliceName value="dispensing-site" />
-      <min value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
-      </type>
-    </element>
     <element id="MedicationRequest.extension:itk-prescription-type">
       <path value="MedicationRequest.extension" />
       <sliceName value="itk-prescription-type" />
+      <short value="ITK Prescription Type" />
+      <comment value="Type of prescription, possibly can be moved to category." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
@@ -139,6 +132,27 @@
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.component.lineItemQuantity" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.extension">
+      <path value="MedicationRequest.dispenseRequest.performer.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.extension:dispensing-site-type">
+      <path value="MedicationRequest.dispenseRequest.performer.extension" />
+      <sliceName value="dispensing-site-type" />
+      <comment value="Data is sourced from NHS Choices directory service. Can be considered as type of Dispensing Organisation." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
+      </type>
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />

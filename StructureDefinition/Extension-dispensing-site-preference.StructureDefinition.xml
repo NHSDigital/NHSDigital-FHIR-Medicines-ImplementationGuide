@@ -13,7 +13,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationRequest" />
+    <expression value="MedicationRequest.dispenseRequest.performer" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -34,12 +34,6 @@
       </type>
     </element>
     <element id="Extension.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference" />
     </element>
