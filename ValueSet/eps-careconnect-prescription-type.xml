@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="eps-careconnect-prescription-type"/>
-    <url value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type"/>
+    <id value="careconnect-prescription-type"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/careconnect-prescription-type"/>
     <version value="4.0.1"/>
-    <name value="EPS Subset of CareConnect Prescription Type"/>
+    <name value="EPS Prescription Therapy Type ValueSet"/>
     <status value="draft"/>
-    <description value="Used to restrict codesystem"/>
+    <description value="Subset on CareConnect Prescription Therapy Type which is permitted for EPS use."/>
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"/>
