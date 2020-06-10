@@ -56,7 +56,7 @@
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-itk-prescription-type" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-itk-prescription-type" />
       </type>
     </element>
     <element id="MedicationRequest.medication[x]">
