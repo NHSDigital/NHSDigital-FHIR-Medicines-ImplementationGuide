@@ -49,9 +49,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:ITK-prescriptionType">
+    <element id="MedicationRequest.extension:eps-prescriptionType">
       <path value="MedicationRequest.extension" />
-      <sliceName value="ITK-prescriptionType" />
+      <sliceName value="eps-prescriptionType" />
       <short value="ITK Prescription Type" />
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
@@ -136,12 +136,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension:eps-prescription-id">
+    <element id="MedicationRequest.groupIdentifier.extension:eps-parentPrescriptionId">
       <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="eps-prescription-id" />
+      <sliceName value="eps-parentPrescriptionId" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">

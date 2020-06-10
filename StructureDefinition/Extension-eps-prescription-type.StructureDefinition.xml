@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-itk-prescription-type" />
-  <name value="Extension-itk-prescription-type" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType" />
+  <name value="Extension-eps-prescriptionType" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -26,7 +26,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-itk-prescription-type" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
