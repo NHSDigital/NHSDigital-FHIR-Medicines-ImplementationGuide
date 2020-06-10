@@ -56,7 +56,7 @@
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-itk-prescription-type" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType" />
       </type>
     </element>
     <element id="MedicationRequest.extension:procedureCode">
@@ -75,7 +75,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-token-issued" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued" />
       </type>
     </element>
     <element id="MedicationRequest.medication[x]">
@@ -141,7 +141,7 @@
       <sliceName value="eps-parentPrescriptionId" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
@@ -187,7 +187,7 @@
       <sliceName value="performerType" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType" />
       </type>
     </element>
     <element id="MedicationRequest.substitution">
