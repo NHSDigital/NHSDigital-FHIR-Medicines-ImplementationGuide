@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type"/>
+        <value value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type"/>
         <preferred value="true"/>
     </uniqueId>
     <uniqueId>

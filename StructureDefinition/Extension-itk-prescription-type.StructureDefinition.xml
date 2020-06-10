@@ -34,12 +34,12 @@
         <code value="Coding" />
       </type>
       <fixedCoding>
-        <system value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type" />
+        <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
       </fixedCoding>
     </element>
     <element id="Extension.value[x].system">
       <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/itk-prescription-type" />
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
     </element>
   </differential>
 </StructureDefinition>

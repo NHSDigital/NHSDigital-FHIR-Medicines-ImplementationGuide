@@ -134,7 +134,7 @@
           <valueString value="MedicationRequestCourseOfTherapy" />
         </extension>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type" />
       </binding>
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
@@ -142,7 +142,7 @@
       <binding>
         <strength value="required" />
         <description value="Valid Prescription Treatment Types for EPS" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.text">

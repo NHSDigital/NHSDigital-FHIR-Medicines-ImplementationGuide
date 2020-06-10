@@ -2,7 +2,7 @@
 
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="dispensing-site-preference"/>
-    <url value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
+    <url value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="dispensing-site-preference"/>

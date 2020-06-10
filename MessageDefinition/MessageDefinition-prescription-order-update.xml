@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="eps-prescription-order-update" />
-    <url value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-update" />
+    <url value="https://fhir.nhs.uk/R4/MessageDefinition/eps-prescription-order-update" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />
@@ -10,14 +10,14 @@
     <status value="active" />
     <date value="2020-05-27" />
     <eventCoding>
-        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+        <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
         <code value="prescription-order-update" />
         <display value="Pharmacy/Treatment Encoded Order" />
     </eventCoding>
     <category value="consequence" />
     <focus>
         <code value="MedicationRequest" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationRequest" />
         <min value="1" />
         <max value="4" />
     </focus>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="eps-careconnect-prescription-type"/>
-    <url value="https://fhir.nhs.uk/ValueSet/eps-careconnect-prescription-type"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type"/>
     <version value="4.0.1"/>
     <name value="EPS Subset of CareConnect Prescription Type"/>
     <status value="draft"/>
     <description value="Used to restrict codesystem"/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/CodeSystem/CareConnect-PrescriptionType"/>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"/>
             <concept>
                 <code value="acute"/>
                 <display value="Acute"/>
