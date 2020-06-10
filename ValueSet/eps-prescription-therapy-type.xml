@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="careconnect-prescription-type"/>
-    <url value="https://fhir.nhs.uk/R4/ValueSet/careconnect-prescription-type"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/eps-prescription-therapy-type"/>
     <version value="4.0.1"/>
     <name value="EPS Prescription Therapy Type ValueSet"/>
     <status value="draft"/>
