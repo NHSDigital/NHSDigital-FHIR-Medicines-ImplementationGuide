@@ -153,8 +153,8 @@
       <path value="MedicationRequest.dispenseRequest" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.component.lineItemQuantity" />
     </element>
-    <element id="MedicationRequest.dispenseRequest.performer.extension">
-      <path value="MedicationRequest.dispenseRequest.performer.extension" />
+    <element id="MedicationRequest.dispenseRequest.extension">
+      <path value="MedicationRequest.dispenseRequest.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -163,15 +163,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.dispenseRequest.performer.extension:dispensing-site-type">
-      <path value="MedicationRequest.dispenseRequest.performer.extension" />
-      <sliceName value="dispensing-site-type" />
-      <comment value="Data is sourced from NHS Choices directory service. Can be considered as type of Dispensing Organisation." />
-      <min value="1" />
-      <max value="1" />
+    <element id="MedicationRequest.dispenseRequest.extension:performerType">
+      <path value="MedicationRequest.dispenseRequest.extension" />
+      <sliceName value="performerType" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type" />
       </type>
     </element>
     <element id="MedicationRequest.substitution">

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="UKCore-MedicationRequest" />
   <url value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
@@ -17,7 +18,7 @@
   <description value="Defines the UK Core constraints and extensions on the MedicationRequest resource for the minimal set of data to query and retrieve prescription information." />
   <purpose value="An order or request for both supply of the medication and the instructions for administration of the medication to an individual. This profile covers inpatient medication orders as well as community orders (whether filled by the prescriber or by a pharmacy). It also includes orders for over-the-counter medications (e.g. Aspirin), total parenteral nutrition and diet/ vitamin supplements. It may be used to support the order of medication-related devices. It is not intended for use in prescribing particular diets, or for ordering non-medication-related items (eyeglasses, supplies, etc)." />
   <copyright value="Copyright © 2020 NHS Digital" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
     <uri value="http://hl7.org/fhir/workflow" />
@@ -259,6 +260,9 @@
       <min value="1" />
     </element>
     <element id="MedicationRequest.dosageInstruction.route.coding:snomedCT.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="MedicationRequest.dosageInstruction.route.coding.display" />
       <min value="1" />
     </element>

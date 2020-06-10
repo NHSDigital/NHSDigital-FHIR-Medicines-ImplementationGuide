@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
-  <name value="Extension-dispensing-site-preference" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type" />
+  <name value="Extension-performer-type" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -13,7 +13,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationRequest.dispenseRequest.performer" />
+    <expression value="MedicationRequest.dispenseRequest" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -25,7 +25,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-dispensing-site-preference" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
