@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
-  <name value="Extension-eps-parent-prescription-id" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-token-issued" />
+  <name value="Extension-token-issued" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -13,30 +13,21 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationRequest.groupIdentifier" />
+    <expression value="MedicationRequest" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <min value="1" />
-      <max value="1" />
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-token-issued" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="Identifier" />
+        <code value="boolean" />
       </type>
-    </element>
-    <element id="Extension.value[x].system">
-      <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/Id/prescription-parent-id" />
     </element>
   </differential>
 </StructureDefinition>

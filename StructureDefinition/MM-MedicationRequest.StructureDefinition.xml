@@ -59,6 +59,26 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-itk-prescription-type" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:procedureCode">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="procedureCode" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/procedureCode" />
+      </type>
+    </element>
+    <element id="MedicationRequest.extension:tokenIssued">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="tokenIssued" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/Extension-token-issued" />
+      </type>
+    </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
       <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
@@ -175,6 +195,12 @@
       <path value="MedicationRequest.substitution" />
       <comment value="Substituition is a mandatory requirement for EPS." />
       <min value="1" />
+    </element>
+    <element id="MedicationRequest.substitution.allowed[x]">
+      <path value="MedicationRequest.substitution.allowed[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
