@@ -49,9 +49,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:itk-prescription-type">
+    <element id="MedicationRequest.extension:ITK-prescriptionType">
       <path value="MedicationRequest.extension" />
-      <sliceName value="itk-prescription-type" />
+      <sliceName value="ITK-prescriptionType" />
       <short value="ITK Prescription Type" />
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
@@ -72,7 +72,6 @@
     <element id="MedicationRequest.extension:tokenIssued">
       <path value="MedicationRequest.extension" />
       <sliceName value="tokenIssued" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
