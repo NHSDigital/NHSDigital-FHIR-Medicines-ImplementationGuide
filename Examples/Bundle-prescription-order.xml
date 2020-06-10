@@ -56,7 +56,7 @@
     <fullUrl value="urn:uuid:1E34EE53-397A-2E70-E97C-67B1BD95014D" />
     <resource>
       <MedicationRequest>
-        <!-- pertinentInformation2[0].pertinentLineItem.id -->
+        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
@@ -68,7 +68,11 @@
 
         ?? The reference to DCE gives me the impression this should be the MessageHeader.id
  -->
-
+         <identifier>
+          <!--  pertinentInformation2[0].pertinentLineItem.id -->
+          <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+          <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+        </identifier>
         <status value="active" />
         <intent value="order" />
         <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
@@ -134,12 +138,16 @@
     <fullUrl value="urn:uuid:791C9A65-5C6A-308B-D700-32D247BADB87" />
     <resource>
       <MedicationRequest>
-        <!-- pertinentInformation2[1].pertinentLineItem.id -->
+       <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="791C9A65-5C6A-308B-D700-32D247BADB87" />
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
         </meta>
-
+       <identifier>
+          <!--  pertinentInformation2[1].pertinentLineItem.id -->
+          <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+          <value value="791C9A65-5C6A-308B-D700-32D247BADB87" />
+        </identifier>
 
         <!-- Can be pertinentPrescription.id This is:
          
