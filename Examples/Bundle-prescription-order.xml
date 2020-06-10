@@ -108,7 +108,7 @@
 
         <groupIdentifier>
           <!-- ParentPrescription.id uuid -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
               <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -134,7 +134,7 @@
         <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
         <dispenseRequest>
           <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
             <valueCoding>
               <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
               <code value="0004" />
@@ -210,7 +210,7 @@
         </requester>
         <groupIdentifier>
           <!-- ParentPrescription.id uuid -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parent-prescription-id">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
               <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -236,7 +236,7 @@
         <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
         <dispenseRequest>
           <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performer-type">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
             <valueCoding>
               <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
               <code value="0004" />
