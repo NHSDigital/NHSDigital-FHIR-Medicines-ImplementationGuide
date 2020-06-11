@@ -72,6 +72,13 @@
             </coding>
           </valueCodeableConcept>
         </extension>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
+          <valueCoding>
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+              <code value="0001" />
+              <display value="General Practitioner Prescribing" />
+          </valueCoding>
+        </extension>
         <!-- pertinentInformation2.pertinentTokenIssued -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
           <valueBoolean value="true" />
@@ -104,6 +111,7 @@
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <display value="Dr Smith" />
         </requester>
 
         <groupIdentifier>
@@ -174,6 +182,13 @@
             </coding>
           </valueCodeableConcept>
         </extension>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
+          <valueCoding>
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+              <code value="0001" />
+              <display value="General Practitioner Prescribing" />
+          </valueCoding>
+        </extension>
         <!-- pertinentInformation2.pertinentTokenIssued -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
           <valueBoolean value="true" />
@@ -207,6 +222,7 @@
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <display value="Dr Smith" />
         </requester>
         <groupIdentifier>
           <!-- ParentPrescription.id uuid -->

@@ -33,13 +33,14 @@
       <type>
         <code value="Coding" />
       </type>
-      <fixedCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
-      </fixedCoding>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-prescription-type" />
+      </binding>
     </element>
     <element id="Extension.value[x].system">
       <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

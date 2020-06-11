@@ -84,17 +84,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-        </coding>
-      </fixedCodeableConcept>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MedicationCode" />
-        </extension>
-        <strength value="required" />
-      </binding>
+    </element>
+    <element id="MedicationRequest.medication[x].coding.system">
+      <path value="MedicationRequest.medication[x].coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
