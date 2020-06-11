@@ -93,10 +93,6 @@
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/CareConnect-ManufacturedMaterialSnCT" />
       </binding>
     </element>
-    <element id="MedicationRequest.medication[x].coding">
-      <path value="MedicationRequest.medication[x].coding" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
