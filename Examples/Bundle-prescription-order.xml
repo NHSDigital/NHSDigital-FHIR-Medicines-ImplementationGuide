@@ -62,7 +62,9 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationRequest" />
         </meta>
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code -->
+        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
+        225426007 |Administration of therapeutic substance (procedure)| 
+        -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
           <valueCodeableConcept>
             <coding>
@@ -96,7 +98,8 @@
         </identifier>
         <status value="active" />
         <intent value="order" />
-        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
+        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial 
+        Code should be in SNOMED CT refset 999000031000001105 |Manufactured material simple reference set (foundation metadata concept)| -->
         <medicationCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />

@@ -85,9 +85,14 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="MedicationRequest.medication[x].coding.system">
-      <path value="MedicationRequest.medication[x].coding.system" />
-      <fixedUri value="http://snomed.info/sct" />
+    <element id="MedicationRequest.medication[x].coding">
+      <path value="MedicationRequest.medication[x].coding" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="ManufacturedMaterialSnCT" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/CareConnect-ManufacturedMaterialSnCT" />
+      </binding>
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
