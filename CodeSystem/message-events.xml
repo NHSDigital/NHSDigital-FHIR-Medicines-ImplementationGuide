@@ -30,26 +30,26 @@
     </concept>
     <concept>
         <code value="encounter-admission-create"/>
-        <display value="Admit/Visit Notification (HL7v2.4 ADT_A01)"/>
+        <display value="Admit/Visit Notification"/>
     </concept>
     <concept>
         <code value="encounter-discharge-create"/>
-        <display value="Discharge/End Visit (HL7v2.4 ADT_A03)"/>
+        <display value="Discharge/End Visit"/>
     </concept>
     <concept>
         <code value="patient-create"/>
-        <display value="Add person information (HL7v2.4 ADT_A28)"/>
+        <display value="Add person information"/>
     </concept>
     <concept>
         <code value="patient-update"/>
-        <display value="Update person information (HL7v2.4 ADT_31)"/>
+        <display value="Update person information"/>
     </concept>
     <concept>
         <code value="prescription-order-create"/>
-        <display value="Prescription/Treatment Order (HL7v2.4 RDE_R01)"/>
+        <display value="Prescription Order"/>
     </concept>
     <concept>
         <code value="prescription-order-update"/>
-        <display value="Prescription/Treatment Order Update"/>
+        <display value="Prescription Order Update"/>
     </concept>
 </CodeSystem>
