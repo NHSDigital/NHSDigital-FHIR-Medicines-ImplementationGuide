@@ -145,20 +145,13 @@
       <path value="MedicationRequest.courseOfTherapyType" />
       <comment value="The type of prescription e.g. acute, repeat, repeat-dispensing. Note, EPS uses a subset of the PrescriptionType subset and excludes non ETP items (e.g. handwritten).&#xD;&#xA;ITK Mapping = pertinentInformation5.pertinentPrescriptionTreatmentType. Was extension in STU3" />
       <min value="1" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MedicationRequestCourseOfTherapy" />
-        </extension>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-prescription-therapy-type" />
-      </binding>
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
       <path value="MedicationRequest.courseOfTherapyType.coding" />
       <binding>
         <strength value="required" />
         <description value="Valid Prescription Treatment Types for EPS" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/eps-prescription-therapy-type" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.text">
