@@ -64,6 +64,7 @@
         </meta>
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
         225426007 |Administration of therapeutic substance (procedure)| 
+        From Rob Gooch - Hard code this value.
         -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
           <valueCodeableConcept>
