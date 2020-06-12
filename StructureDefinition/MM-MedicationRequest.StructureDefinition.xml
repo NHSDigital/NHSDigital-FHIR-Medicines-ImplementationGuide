@@ -82,19 +82,9 @@
       <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
       </type>
-    </element>
-    <element id="MedicationRequest.medication[x].dosageInstruction.route.coding">
-      <path value="MedicationRequest.medication[x].dosageInstruction.route.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
+    </element>  
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
