@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
+    <meta>
+      <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+    </meta>
+    <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
+      <value value="787946852679" />
+    </identifier>
+    <practitioner>
+      <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+    </practitioner>
+    <organization>
+      <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
+    </organization>
+    <code>
+      <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
+      <coding>
+        <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+        <code value="R0260" />
+        <display value="General Medical Practitioner" />
+      </coding>
+    </code>
+    <!-- <AgentPerson classCode="AGNT">.telecom -->
+    <telecom>
+      <!-- note mapping of phone to tel: -->
+      <system value="phone" />
+      <value value="01234567890" />
+      <use value="work" />
+    </telecom>
+  </PractitionerRole>
