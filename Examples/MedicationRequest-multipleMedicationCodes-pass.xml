@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
-    <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+    <id value="multipleMedCodes-pass" />
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
         <valueCoding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />

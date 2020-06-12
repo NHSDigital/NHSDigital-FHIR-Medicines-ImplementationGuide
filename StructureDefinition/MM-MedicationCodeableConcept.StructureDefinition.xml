@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/MandatorySNOMEDCodeableConcept" />
-  <name value="MandatorySNOMEDCodeableConcept" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
+  <name value="MM-MedicationCodeableConcept" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -39,7 +39,13 @@
     <element id="CodeableConcept.coding:SNOMED">
       <path value="CodeableConcept.coding" />
       <sliceName value="SNOMED" />
+      <short value="Manufactured Material SNOMED CT Must be present" />
       <min value="1" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Manufactured Material SNOMED CT" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/CareConnect-ManufacturedMaterialSnCT" />
+      </binding>
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
       <path value="CodeableConcept.coding.system" />

@@ -1,5 +1,5 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
-    <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+    <id value="alienProfile-pass" />
     <meta>
         <!-- EPS will ignore this meta profile assertation and validate against the MM-MedicationRequest profile -->
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/CareConnect-GPC-MedicationRequest-1" />
