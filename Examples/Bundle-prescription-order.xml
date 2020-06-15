@@ -338,7 +338,7 @@
       <Practitioner>
         <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
         <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-Practitioner" />
         </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
@@ -363,7 +363,7 @@
         <!-- UUID not in Hl7v3 version -->
         <id value="6dc16793-61c2-44b8-8d0f-f872101c016e" />
         <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-PractitionerRole" />
         </meta>
         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
@@ -447,7 +447,7 @@
         <!-- UUID not in Hl7v3 version -->
         <id value="550692c5-9de4-4b7f-b06e-846b90f9a763" />
         <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-Practitioner" />
         </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
@@ -471,7 +471,7 @@
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
         <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-PractitionerRole" />
         </meta>
         <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
