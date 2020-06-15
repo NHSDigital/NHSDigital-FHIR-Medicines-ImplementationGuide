@@ -10,7 +10,7 @@
         <eventCoding>
           <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
           <code value="prescription-order-create" />
-          <display value="Pharmacy/Treatment Encoded Order" />
+          <display value="Prescription Order" />
         </eventCoding>
         <destination>
           <name value="ROUTE" />
@@ -44,9 +44,6 @@
         </focus>
         <focus>
           <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
-        </focus>
-        <focus>
-          <reference value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
         </focus>
       </MessageHeader>
     </resource>
@@ -114,7 +111,7 @@
         <!-- ParentPrescription.effectiveTime -->
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
-          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           <display value="Dr Smith" />
         </requester>
 
@@ -225,7 +222,7 @@
         <!-- ParentPrescription.effectiveTime -->
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
-          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           <display value="Dr Smith" />
         </requester>
         <groupIdentifier>
@@ -332,44 +329,6 @@
           <display value="Mirfleld Surgery" />
         </managingOrganization>
       </Patient>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
-    <resource>
-      <Provenance>
-        <id value="7e31c6ff-27dc-48aa-9f42-e9e336d2fdaa" />
-
-        <!--   
-    where possible, provenance targets should be version specific,
-    so that there is no ambiguity about which version of the 
-    record this relates to
-    -->
-        <target>
-          <reference value="Bundle/f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
-        </target>
-        <recorded value="2004-09-19T10:30:00+00:00" />
-        <agent>
-          <who>
-            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-          </who>
-        </agent>
-        <signature>
-          <!--   verification signature   -->
-          <type>
-            <system value="urn:iso-astm:E1762-95:2013" />
-            <code value="1.2.840.10065.1.12.1.1" />
-            <display value="Author's Signature" />
-          </type>
-          <when value="2020-06-01T08:39:24+10:00" />
-          <who>
-            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-          </who>
-          <targetFormat value="application/xml" />
-          <sigFormat value="application/signature+xml" />
-          <data value="Q+yEfnM5PA2punGmevuvLtwj4+XRsWeeiq7SJ9Ekd28NJ9jVtCa9oB3bU2aGl5wlX8HufH2GFJgg 9o9OFFrSvRAPpgWKW4/+3aL06S9B7YT4MQP/7St2gL1v2+v4tmQ7CSvF+VTFVugIezewAQPKvhJa NLHD+njOD+60W9pK17U=" />
-        </signature>
-      </Provenance>
     </resource>
   </entry>
   <entry>
