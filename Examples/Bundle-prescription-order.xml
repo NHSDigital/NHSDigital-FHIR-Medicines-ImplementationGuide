@@ -317,10 +317,9 @@
           <postalCode value="AA1 1AA" />
         </address>
         <generalPractitioner>
-          <identifier>
-            <system value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
-            <value value="G5612908" />
-          </identifier>
+          
+            <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+
           <!-- display not required. Inlcuded to help readbility/navigation-->
           <display value="Dr Nice" />
         </generalPractitioner>

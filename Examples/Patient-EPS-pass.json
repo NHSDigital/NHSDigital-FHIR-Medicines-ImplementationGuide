@@ -141,19 +141,22 @@
     ],
     "generalPractitioner": [
         {
-            "id": "254406A3",
-            "type": "Organization",
-            "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/Y12345",
-            "identifier": {
-                "system": "https://digital.nhs.uk/services/organisation-data-service",
-                "value": "Y12345",
-                "period": {
-                    "start": "2020-01-01",
-                    "end": "2021-12-31"
-                }
-            }
+            "reference": "urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763",
+            "display": "Dr Nice"
         }
     ],
+    "managingOrganization": {
+        "type": "Organization",
+        "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/Y12345",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "Y12345",
+            "period": {
+                "start": "2020-01-01",
+                "end": "2021-12-31"
+            }
+        }
+    },
     "extension": [
         {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NominatedPharmacy",
