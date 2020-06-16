@@ -18,6 +18,18 @@ rem PASS - [PractitionerRole]
 
 java -jar org.hl7.fhir.validator.jar PractitionerRole-pass.xml -version 4.0.1 -ig https://packages.simplifier.net/uk.ElectronicPrescriptionService.dev/-/uk.ElectronicPrescriptionService.dev-0.0.3-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/MM-PractitionerRole
 
-rem PASS - [Patient] PDS
+rem FAIL - [Patient] PDS
 
 java -jar org.hl7.fhir.validator.jar Patient-PDS-pass.json -version 4.0.1 -ig https://packages.simplifier.net/uk.ElectronicPrescriptionService.dev/-/uk.ElectronicPrescriptionService.dev-0.0.3-dev.tgz -profile https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient
+
+rem FAIL - [Patient] EPS
+
+java -jar org.hl7.fhir.validator.jar Patient-EPS-pass.json -version 4.0.1 -ig https://packages.simplifier.net/uk.ElectronicPrescriptionService.dev/-/uk.ElectronicPrescriptionService.dev-0.0.3-dev.tgz -profile https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient
+
+rem PASS - [Practitioner] 
+
+java -jar org.hl7.fhir.validator.jar Practitioner.xml -version 4.0.1 -ig https://packages.simplifier.net/uk.ElectronicPrescriptionService.dev/-/uk.ElectronicPrescriptionService.dev-0.0.3-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/MM-Practitioner
+
+rem PASS - [Organization] 
+
+java -jar org.hl7.fhir.validator.jar Organization.xml -version 4.0.1 -ig https://packages.simplifier.net/uk.ElectronicPrescriptionService.dev/-/uk.ElectronicPrescriptionService.dev-0.0.3-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/MM-Organization
