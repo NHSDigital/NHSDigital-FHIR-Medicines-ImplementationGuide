@@ -64,6 +64,10 @@
       <sliceName value="nhsNumber" />
       <min value="1" />
     </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <min value="1" />
+    </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
       <min value="1" />
@@ -78,7 +82,11 @@
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
-      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+      </type>
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
