@@ -42,7 +42,7 @@
       <short value="Manufactured Material SNOMED CT Must be present" />
       <min value="1" />
       <binding>
-        <strength value="preferred" />
+        <strength value="required" />
         <description value="Manufactured Material SNOMED CT" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/CareConnect-ManufacturedMaterialSnCT" />
       </binding>

@@ -84,7 +84,18 @@
         <code value="CodeableConcept" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
       </type>
-    </element>  
+    </element>
+    <element id="MedicationRequest.medication[x].coding">
+      <path value="MedicationRequest.medication[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
@@ -92,6 +103,10 @@
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-PractitionerRole" />
+      </type>
     </element>
     <element id="MedicationRequest.requester.identifier">
       <path value="MedicationRequest.requester.identifier" />
