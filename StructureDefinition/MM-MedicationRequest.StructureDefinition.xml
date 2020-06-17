@@ -49,9 +49,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:eps-prescriptionType">
+    <element id="MedicationRequest.extension:epsPrescriptionType">
       <path value="MedicationRequest.extension" />
-      <sliceName value="eps-prescriptionType" />
+      <sliceName value="epsPrescriptionType" />
       <short value="ITK Prescription Type" />
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
@@ -59,22 +59,14 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:procedureCode">
+    <element id="MedicationRequest.extension:repeatInformation">
       <path value="MedicationRequest.extension" />
-      <sliceName value="procedureCode" />
+      <sliceName value="repeatInformation" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode" />
-      </type>
-    </element>
-    <element id="MedicationRequest.extension:tokenIssued">
-      <path value="MedicationRequest.extension" />
-      <sliceName value="tokenIssued" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
     </element>
     <element id="MedicationRequest.medication[x]">
@@ -84,17 +76,6 @@
         <code value="CodeableConcept" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
       </type>
-    </element>
-    <element id="MedicationRequest.medication[x].coding">
-      <path value="MedicationRequest.medication[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
