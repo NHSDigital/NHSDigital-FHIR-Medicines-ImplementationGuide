@@ -86,6 +86,13 @@
       </slicing>
       <min value="1" />
     </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-Patient" />
+      </type>
+    </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />

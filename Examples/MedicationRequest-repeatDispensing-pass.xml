@@ -8,9 +8,6 @@
             <display value="General Practitioner Prescribing" />
         </valueCoding>
     </extension>
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
-        <valueBoolean value="true" />
-    </extension>
      <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
            <extension url="numberOfRepeatPrescriptionsAllowed">
                 <valueUnsignedInt value="6"/>
