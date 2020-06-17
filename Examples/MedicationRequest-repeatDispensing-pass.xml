@@ -11,6 +11,14 @@
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
         <valueBoolean value="true" />
     </extension>
+     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
+           <extension url="numberOfRepeatPrescriptionsAllowed">
+                <valueUnsignedInt value="6"/>
+            </extension>
+             <extension url="numberOfRepeatPrescriptionsIssued">
+              <valueUnsignedInt value="1"/>
+            </extension>
+        </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
         <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
