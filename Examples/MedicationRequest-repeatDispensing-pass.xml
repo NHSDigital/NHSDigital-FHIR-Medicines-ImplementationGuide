@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MedicationRequest xmlns="http://hl7.org/fhir">
+    <id value="repeatDispensing-pass" />
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
+        <valueCoding>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+            <code value="0001" />
+            <display value="General Practitioner Prescribing" />
+        </valueCoding>
+    </extension>
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
+        <valueBoolean value="true" />
+    </extension>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+        <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
+    </identifier>
+    <status value="active" />
+    <intent value="order" />
+    <medicationCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="21011811000001100" />
+            <display value="Enshake oral powder 96.5g sachets (Flavour Not Specified)" />
+        </coding>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
+    </subject>
+    <authoredOn value="2020-06-10T12:06:00.000+00:00" />
+    <requester>
+        <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        <display value="Dr Smith" />
+    </requester>
+    <groupIdentifier>
+    <!-- Note: no GUID for for parent presecription id -->
+        <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
+        <value value="754CB4-E81001-0B9EB8" />
+    </groupIdentifier>
+    <courseOfTherapyType>
+        <coding>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"></system>
+            <code value="repeat-dispensing" />
+            <display value="Repeat dispensing" />
+        </coding>
+    </courseOfTherapyType>
+    <dosageInstruction>
+        <text value="As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice" />
+    </dosageInstruction>
+    <dispenseRequest>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
+            <valueCoding>
+                <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
+                <code value="0004" />
+            </valueCoding>
+        </extension>
+        <validityPeriod> 
+            <end value="2020-12-07"/> 
+        </validityPeriod>
+        <quantity>
+            <value value="28" />
+            <unit value="sachet" />
+            <system value="http://snomed.info/sct" />
+            <code value="3318911000001109" />
+        </quantity>
+          <expectedSupplyDuration> 
+            <value value="28"/> 
+            <unit value="days"/> 
+            <system value="http://unitsofmeasure.org"/> 
+            <code value="d"/>  
+        </expectedSupplyDuration>
+    </dispenseRequest>
+    <substitution>
+        <allowedBoolean value="false" />
+    </substitution>
+</MedicationRequest>
