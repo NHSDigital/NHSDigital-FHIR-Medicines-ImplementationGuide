@@ -62,8 +62,6 @@
     <element id="MedicationRequest.extension:repeatInformation">
       <path value="MedicationRequest.extension" />
       <sliceName value="repeatInformation" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
@@ -76,6 +74,17 @@
         <code value="CodeableConcept" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
       </type>
+    </element>
+    <element id="MedicationRequest.medication[x].coding">
+      <path value="MedicationRequest.medication[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
@@ -178,6 +187,14 @@
       <type>
         <code value="boolean" />
       </type>
+    </element>
+    <element id="MedicationRequest.priorPrescription.reference">
+      <path value="MedicationRequest.priorPrescription.reference" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.priorPrescription.identifier">
+      <path value="MedicationRequest.priorPrescription.identifier" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
