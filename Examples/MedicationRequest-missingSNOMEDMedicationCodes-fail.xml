@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="missingSNOMED-fail" />
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
         <valueCoding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
             <code value="0001" />
             <display value="General Practitioner Prescribing" />
         </valueCoding>
@@ -38,7 +38,7 @@
         <display value="Dr Smith" />
     </requester>
     <groupIdentifier>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-parentPrescriptionId">
             <valueIdentifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
                 <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />

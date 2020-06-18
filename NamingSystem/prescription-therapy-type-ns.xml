@@ -7,7 +7,7 @@
     <date value="2020-06-01"/>
     <publisher value="NHS Digital"/>
     <responsible value="NHS Digital"/>
-    <description value="The management reasons for a prescription being issued. See ITK-Prescription-Treatment-Type for HL7v3 version"/>
+    <description value="The management reasons for a prescription being issued. See DM-Prescription-Treatment-Type for HL7v3 version"/>
     <usage value="Medication Management"/>
     <uniqueId>
         <type value="uri"/>

@@ -45,7 +45,7 @@
         <display value="Update person information"/>
     </concept>
     <concept>
-        <code value="prescription-order-create"/>
+        <code value="prescription-order"/>
         <display value="Prescription Order"/>
     </concept>
     <concept>

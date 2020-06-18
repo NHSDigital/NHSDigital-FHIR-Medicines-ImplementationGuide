@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="eps-prescription-type"/>
-    <url value="https://fhir.nhs.uk/R4/ValueSet/eps-prescription-type"/>
+    <id value="DM-prescription-type"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-type"/>
     <version value="4.0.1"/>
     <name value="EPS Prescription Type"/>
     <status value="draft"/>
     <description value="Subset on CareConnect Prescription Therapy Type which is permitted for EPS use."/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type"/>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type"/>
         </include>
     </compose>
 </ValueSet>

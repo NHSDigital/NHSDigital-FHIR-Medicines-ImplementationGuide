@@ -1,29 +1,29 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
-    <id value="eps-prescription-order-create" />
-    <url value="https://fhir.nhs.uk/R4/MessageDefinition/eps-prescription-order-create" />
+    <id value="prescription-order" />
+    <url value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />
     </identifier>
     <version value="1.0.0" />
-    <title value="Pharmacy/Treatment Encoded Order" />
+    <title value="Pharmacy/Treatment Order" />
     <status value="active" />
     <date value="2020-05-27" />
     <eventCoding>
         <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
-        <code value="prescription-order-create" />
-        <display value="Pharmacy/Treatment Encoded Order" />
+        <code value="prescription-order" />
+        <display value="Prescription Order" />
     </eventCoding>
     <category value="consequence" />
     <focus>
         <code value="MedicationRequest" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
         <min value="1" />
         <max value="4" />
     </focus>
     <focus>
         <code value="Patient" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
         <min value="1" />
         <max value="1" />
     </focus>
@@ -34,19 +34,19 @@
     </focus>
     <focus>
         <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Practitioner" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="PractitionerRole" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-PractitionerRole" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Organization" />
         <min value="1" />
         <max value="*" />
     </focus>

@@ -5,7 +5,7 @@
     <name value="Messaging support Capability Statement"/>
     <status value="active"/>
     <publisher value="digital.nhs.uk"/>
-    <description value="Conformance requirements for EPS Message endpoint"/>
+    <description value="Conformance requirements for DM Message endpoint"/>
     <kind value="requirements"/>
     <fhirVersion value="4.0.1"/>
     <format value="application/fhir+json"/>
@@ -29,11 +29,11 @@
     <messaging>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-create"/>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/DM-prescription-order-create"/>
         </supportedMessage>>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/eps-prescription-order-update"/>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/DM-prescription-order-update"/>
         </supportedMessage>>
     </messaging>
 </CapabilityStatement>

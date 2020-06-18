@@ -17,10 +17,10 @@
     </contact>
     <description value="Prescription Therapy Type Mapping"/>
     <purpose value="Medicine Management"/>
-    <targetUri value="https://fhir.nhs.uk/R4/ValueSet/eps-careconnect-prescription-type"/>
+    <targetUri value="https://fhir.nhs.uk/R4/ValueSet/DM-careconnect-prescription-type"/>
     <group>
         <source value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"/>
-        <target value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-treatment-type"/>
+        <target value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
         <element>
             <code value="acute"/>
             <display value="Acute"/>

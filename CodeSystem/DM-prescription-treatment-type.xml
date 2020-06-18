@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><CodeSystem xmlns="http://hl7.org/fhir">
-   <id value="itk-prescription-treatment-type"/>
-   <url value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-treatment-type"/>
+   <id value="DM-prescription-treatment-type"/>
+   <url value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
    <version value="1.1.0"/>
    <name value="ITK HL7v3 Prescription Treatment Type"/>
    <status value="active"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationRequest" />
-  <name value="MM-MedicationRequest" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+  <name value="DM-MedicationRequest" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -56,7 +56,7 @@
       <comment value="Type of prescription, possibly can be moved to category." />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType" />
       </type>
     </element>
     <element id="MedicationRequest.extension:repeatInformation">
@@ -72,7 +72,7 @@
       <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-MedicationCodeableConcept" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationCodeableConcept" />
       </type>
     </element>
     <element id="MedicationRequest.medication[x].coding">
@@ -90,7 +90,7 @@
       <path value="MedicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
       </type>
     </element>
     <element id="MedicationRequest.authoredOn">
@@ -102,7 +102,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/MM-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-PractitionerRole" />
       </type>
     </element>
     <element id="MedicationRequest.requester.identifier">
@@ -142,7 +142,7 @@
       <sliceName value="eps-parentPrescriptionId" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-parentPrescriptionId" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-parentPrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">

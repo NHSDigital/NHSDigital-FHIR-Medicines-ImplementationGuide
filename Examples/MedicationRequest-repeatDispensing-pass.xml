@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="repeatDispensing-pass" />
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-eps-prescriptionType">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
         <valueCoding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/itk-prescription-type" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
             <code value="0001" />
             <display value="General Practitioner Prescribing" />
         </valueCoding>
