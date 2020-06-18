@@ -9,19 +9,10 @@
     <value value="125686540025" />
   </identifier>
   <practitioner>
-    <identifier>
-      <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-      <value value="896547302565" />
-    </identifier>
-    <display value="Dr Smith"/>
+    <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
   </practitioner>
   <organization>
-    <identifier>
-      <use value="official" />
-      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-      <value value="M85011" />
-    </identifier>
-    <display value="Mirfleld Surgery"/>
+    <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
   </organization>
   <code>
     <coding>

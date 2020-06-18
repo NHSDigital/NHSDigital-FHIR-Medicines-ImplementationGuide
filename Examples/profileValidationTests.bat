@@ -34,7 +34,7 @@ java -jar org.hl7.fhir.validator.jar Patient-PDS-pass.json -version 4.0.1 -ig ht
 
 rem FAIL - [Patient] EPS
 
-java -jar org.hl7.fhir.validator.jar Patient-DM-pass.json -version 4.0.1 -ig https://packages.simplifier.net/UK.MM.r4/-/UK.MM.r4-0.0.1-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
+java -jar org.hl7.fhir.validator.jar Patient-EPS-pass.json -version 4.0.1 -ig https://packages.simplifier.net/UK.MM.r4/-/UK.MM.r4-0.0.1-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
 
 
 
