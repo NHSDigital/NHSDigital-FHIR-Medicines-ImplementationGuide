@@ -62,7 +62,7 @@
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
         225426007 |Administration of therapeutic substance (procedure)| 
         From Rob Gooch - Hard code this value.
-        -->
+       
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
           <valueCodeableConcept>
             <coding>
@@ -71,7 +71,7 @@
               <display value="Inhaled drug administration (procedure)" />
             </coding>
           </valueCodeableConcept>
-        </extension>
+        </extension>  -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
           <valueCoding>
               <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
@@ -79,10 +79,10 @@
               <display value="General Practitioner Prescribing" />
           </valueCoding>
         </extension>
-        <!-- pertinentInformation2.pertinentTokenIssued -->
+        <!-- pertinentInformation2.pertinentTokenIssued. Not required 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
           <valueBoolean value="true" />
-        </extension>
+        </extension> -->
         <!-- Can be pertinentPrescription.id This is:
          
         The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
@@ -173,7 +173,7 @@
         <meta>
           <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
         </meta>
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code -->
+        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
           <valueCodeableConcept>
             <coding>
@@ -182,7 +182,7 @@
               <display value="Inhaled drug administration (procedure)" />
             </coding>
           </valueCodeableConcept>
-        </extension>
+        </extension> -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
           <valueCoding>
               <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
@@ -190,10 +190,10 @@
               <display value="General Practitioner Prescribing" />
           </valueCoding>
         </extension>
-        <!-- pertinentInformation2.pertinentTokenIssued -->
+        <!-- pertinentInformation2.pertinentTokenIssued. Not required 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
           <valueBoolean value="true" />
-        </extension>
+        </extension> -->
         <identifier>
           <!--  pertinentInformation2[1].pertinentLineItem.id -->
           <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
@@ -279,7 +279,7 @@
       <Patient>
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
         </meta>
         <!-- `Patient.id -->
         <identifier>
