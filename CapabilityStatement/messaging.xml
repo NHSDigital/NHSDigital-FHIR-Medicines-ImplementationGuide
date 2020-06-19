@@ -25,15 +25,19 @@
             <name value="process-message"/>
             <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message"/>
         </operation>
+        <operation>
+            <name value="validate"/>
+            <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+        </operation>
     </rest>
     <messaging>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/DM-prescription-order-create"/>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order"/>
         </supportedMessage>>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/DM-prescription-order-update"/>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update"/>
         </supportedMessage>>
     </messaging>
 </CapabilityStatement>
