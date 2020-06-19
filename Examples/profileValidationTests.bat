@@ -29,7 +29,7 @@ java -jar org.hl7.fhir.validator.jar PractitionerRole-pass.xml -version 4.0.1 -i
 
 rem FAIL - [Patient] PDS
 
-java -jar org.hl7.fhir.validator.jar Patient-PDS-fail.json -version 4.0.1 -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.1-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
+java -jar org.hl7.fhir.validator.jar Patient-PDS-fail.json -version 4.0.1 -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.2-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
 
 rem FAIL - [Patient] EPS
 
