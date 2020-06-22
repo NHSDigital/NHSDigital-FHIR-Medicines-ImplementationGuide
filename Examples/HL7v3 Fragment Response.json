@@ -1,0 +1,9 @@
+{
+    "resourceType": "Parameters",
+    "parameter": [
+        {
+            "name": "signature-fragment",
+            "valueString": "<xml> ..... </xml>"
+        }
+    ]
+}
