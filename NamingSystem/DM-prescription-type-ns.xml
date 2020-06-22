@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="DM-prescription-type-ns"/>
+    <id value="prescription-type-ns"/>
     <name value="DM Prescription Type"/>
     <status value="draft"/>
     <kind value="codesystem"/>
@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type"/>
+        <value value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
         <preferred value="true"/>
     </uniqueId>
     <uniqueId>

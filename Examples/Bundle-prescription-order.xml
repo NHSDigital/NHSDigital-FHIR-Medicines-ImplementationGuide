@@ -9,7 +9,7 @@
         <id value="48B07891-1D81-7B99-3BD2-23E242D2DD44" />
         <eventCoding>
           <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
-          <code value="prescription-order-create" />
+          <code value="prescription-order" />
           <display value="Prescription Order" />
         </eventCoding>
         <destination>
@@ -56,9 +56,6 @@
 
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
-        </meta>
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
         225426007 |Administration of therapeutic substance (procedure)| 
         From Rob Gooch - Hard code this value.
@@ -72,9 +69,9 @@
             </coding>
           </valueCodeableConcept>
         </extension>  -->
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
-              <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
               <code value="0001" />
               <display value="General Practitioner Prescribing" />
           </valueCoding>
@@ -117,7 +114,7 @@
 
         <groupIdentifier>
           <!-- ParentPrescription.id uuid -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-parentPrescriptionId">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-parentPrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
               <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -170,9 +167,6 @@
 
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="791C9A65-5C6A-308B-D700-32D247BADB87" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
-        </meta>
         <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
           <valueCodeableConcept>
@@ -183,9 +177,9 @@
             </coding>
           </valueCodeableConcept>
         </extension> -->
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
-              <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
               <code value="0001" />
               <display value="General Practitioner Prescribing" />
           </valueCoding>
@@ -227,7 +221,7 @@
         </requester>
         <groupIdentifier>
           <!-- ParentPrescription.id uuid -->
-          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-parentPrescriptionId">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-parentPrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
               <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -278,9 +272,6 @@
     <resource>
       <Patient>
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
-        </meta>
         <!-- `Patient.id -->
         <identifier>
           <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
@@ -336,9 +327,6 @@
       <!--  This is the person who is authorising the prescription -->
       <Practitioner>
         <id value="1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Practitioner" />
-        </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
         <identifier>
@@ -361,9 +349,6 @@
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <!-- UUID not in Hl7v3 version -->
         <id value="6dc16793-61c2-44b8-8d0f-f872101c016e" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-PractitionerRole" />
-        </meta>
         <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
@@ -399,9 +384,6 @@
       <!-- <representedOrganization classCode="ORG" determinerCode="INSTANCE"> if the author and registered GP are different you will need two organisations -->
       <Organization xmlns="http://hl7.org/fhir">
         <id value="17c4270d-6966-4788-8cbc-1d1d63536b25" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        </meta>
         <!-- <id root="1.2.826.0.1285.0.1.10" extension="M85011"/> note this is the wrong OID for Organisation Code, believe a fault in the MiM for EPS  -->
         <identifier>
           <use value="official" />
@@ -445,9 +427,6 @@
       <Practitioner>
         <!-- UUID not in Hl7v3 version -->
         <id value="550692c5-9de4-4b7f-b06e-846b90f9a763" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Practitioner" />
-        </meta>
         <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
         -->
         <identifier>
@@ -469,9 +448,6 @@
       <!-- <responsibleParty typeCode="RESP"  This will normally be the patients GP -->
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
-        <meta>
-          <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-PractitionerRole" />
-        </meta>
         <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />

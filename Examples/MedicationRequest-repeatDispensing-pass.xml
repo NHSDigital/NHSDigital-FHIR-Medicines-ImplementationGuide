@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="repeatDispensing-pass" />
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
         <valueCoding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
             <code value="0001" />
             <display value="General Practitioner Prescribing" />
         </valueCoding>
     </extension>
-     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
-           <extension url="numberOfRepeatPrescriptionsAllowed">
-                <valueUnsignedInt value="6"/>
-            </extension>
-             <extension url="numberOfRepeatPrescriptionsIssued">
-              <valueUnsignedInt value="1"/>
-            </extension>
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
+        <extension url="numberOfRepeatPrescriptionsAllowed">
+            <valueUnsignedInt value="6" />
         </extension>
+        <extension url="numberOfRepeatPrescriptionsIssued">
+            <valueUnsignedInt value="1" />
+        </extension>
+    </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
         <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
@@ -38,7 +38,13 @@
         <display value="Dr Smith" />
     </requester>
     <groupIdentifier>
-    <!-- Note: no GUID for for parent presecription id -->
+        <!-- Note: no GUID for for parent presecription id -->
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-parentPrescriptionId">
+            <valueIdentifier>
+                <system value="https://fhir.nhs.uk/Id/prescription-parent-id" />
+                <value value="a609e5c9-82a6-4a67-83ec-c96323bd17d7" />
+            </valueIdentifier>
+        </extension>
         <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
         <value value="754CB4-E81001-0B9EB8" />
     </groupIdentifier>
@@ -59,8 +65,8 @@
                 <code value="0004" />
             </valueCoding>
         </extension>
-        <validityPeriod> 
-            <end value="2020-12-07"/> 
+        <validityPeriod>
+            <end value="2020-12-07" />
         </validityPeriod>
         <quantity>
             <value value="28" />
@@ -68,11 +74,11 @@
             <system value="http://snomed.info/sct" />
             <code value="3318911000001109" />
         </quantity>
-          <expectedSupplyDuration> 
-            <value value="28"/> 
-            <unit value="days"/> 
-            <system value="http://unitsofmeasure.org"/> 
-            <code value="d"/>  
+        <expectedSupplyDuration>
+            <value value="28" />
+            <unit value="days" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="d" />
         </expectedSupplyDuration>
     </dispenseRequest>
     <substitution>

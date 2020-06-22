@@ -8,7 +8,7 @@
     <description value="Subset on CareConnect Prescription Therapy Type which is permitted for EPS use."/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-type"/>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
         </include>
     </compose>
 </ValueSet>

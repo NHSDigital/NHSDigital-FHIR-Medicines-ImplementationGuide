@@ -20,7 +20,7 @@
     <targetUri value="https://fhir.nhs.uk/R4/ValueSet/DM-careconnect-prescription-type"/>
     <group>
         <source value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"/>
-        <target value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
+        <target value="https://fhir.nhs.uk/R4/CodeSystem/prescription-treatment-type"/>
         <element>
             <code value="acute"/>
             <display value="Acute"/>
