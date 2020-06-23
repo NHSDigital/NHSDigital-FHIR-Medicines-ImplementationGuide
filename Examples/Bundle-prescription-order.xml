@@ -13,8 +13,8 @@
           <display value="Prescription Order" />
         </eventCoding>
         <sender>
-            <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
-            <display value="Dr Smith" />
+          <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
+          <display value="Dr Smith" />
         </sender>
         <source>
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
