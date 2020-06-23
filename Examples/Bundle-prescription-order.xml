@@ -45,6 +45,12 @@
         <focus>
           <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         </focus>
+        <focus>
+          <reference value="urn:uuid:0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
+        </focus>
+        <focus>
+          <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
+        </focus>
       </MessageHeader>
     </resource>
   </entry>
@@ -71,9 +77,9 @@
         </extension>  -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
-              <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-              <code value="0001" />
-              <display value="General Practitioner Prescribing" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
+            <code value="0001" />
+            <display value="General Practitioner Prescribing" />
           </valueCoding>
         </extension>
         <!-- pertinentInformation2.pertinentTokenIssued. Not required 
@@ -179,9 +185,9 @@
         </extension> -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
-              <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-              <code value="0001" />
-              <display value="General Practitioner Prescribing" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
+            <code value="0001" />
+            <display value="General Practitioner Prescribing" />
           </valueCoding>
         </extension>
         <!-- pertinentInformation2.pertinentTokenIssued. Not required 
@@ -308,15 +314,23 @@
           <postalCode value="AA1 1AA" />
         </address>
         <generalPractitioner>
-          
-            <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
+
+          <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
 
           <!-- display not required. Inlcuded to help readbility/navigation-->
           <display value="Dr Nice" />
         </generalPractitioner>
         <managingOrganization>
-          <reference value="urn:uuid:17c4270d-6966-4788-8cbc-1d1d63536b25" />
-          <display value="Mirfleld Surgery" />
+          <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/Y12345" />
+          <type value="Organization" />
+          <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="Y12345" />
+            <period>
+              <start value="2020-01-01" />
+              <end value="2021-12-31" />
+            </period>
+          </identifier>
         </managingOrganization>
       </Patient>
     </resource>
