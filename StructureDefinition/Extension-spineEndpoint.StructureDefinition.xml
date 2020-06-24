@@ -28,6 +28,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+  <element id="Extension">
+      <path value="Extension" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint" />
@@ -36,8 +41,11 @@
       <path value="Extension.value[x]" />
       <type>
         <code value="Identifier" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/SpineASIDIdentifier" />
       </type>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <fixedUri value="https://fhir.nhs.uk/Id/spine-ASID" />
     </element>
   </differential>
 </StructureDefinition>
