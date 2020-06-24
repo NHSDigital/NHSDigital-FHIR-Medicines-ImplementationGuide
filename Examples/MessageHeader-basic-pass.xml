@@ -11,7 +11,7 @@
     </sender>
     <source>
         <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
-           
+            <valueIdentifier></valueIdentifier>
         </extension>
         <name value="PAS" />
         <endpoint value="https://fhir.mynhstrust.nhs.uk/R4" />
