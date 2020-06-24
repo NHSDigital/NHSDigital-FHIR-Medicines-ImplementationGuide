@@ -17,12 +17,12 @@
           <display value="Dr Smith" />
         </sender>
         <source>
-      <!--  <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
+          <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/spine-ASID" />
-              <code value="747225912019" />
+              <value value="747225912019" />
             </valueIdentifier>
-          </extension>  -->
+          </extension>
           <name value="PAS" />
           <endpoint value="https://fhir.mynhstrust.nhs.uk/R4" />
         </source>
@@ -121,7 +121,7 @@
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
         <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
-        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+        Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
         <courseOfTherapyType>
           <coding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"></system>
@@ -228,7 +228,7 @@
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
         <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
-        Was extension in STU3 to courseOfTherapyType  url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
+        Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
         <courseOfTherapyType>
           <coding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"></system>

@@ -13,6 +13,7 @@
         <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
             <valueIdentifier>
                 <system value="https://fhir.nhs.uk/Id/spine-ASID" />
+                <value value="747225912019" />
             </valueIdentifier>
         </extension>
         <name value="PAS" />
