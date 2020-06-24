@@ -40,19 +40,19 @@
     </focus>
     <focus>
         <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Practitioner" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="PractitionerRole" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Organization" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
         <min value="1" />
         <max value="*" />
     </focus>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Practitioner" />
-  <name value="DM-Practitioner" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+  <name value="Spine-Practitioner" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
