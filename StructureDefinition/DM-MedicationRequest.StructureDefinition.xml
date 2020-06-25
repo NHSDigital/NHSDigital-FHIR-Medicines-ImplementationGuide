@@ -176,6 +176,18 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType" />
       </type>
     </element>
+    <element id="MedicationRequest.dispenseRequest.performer">
+      <path value="MedicationRequest.dispenseRequest.performer" />
+      <definition value="Indicates the intended dispensing Pharmacy specified by the patient." />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.identifier">
+      <path value="MedicationRequest.dispenseRequest.performer.identifier" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.identifier.system">
+      <path value="MedicationRequest.dispenseRequest.performer.identifier.system" />
+      <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
       <comment value="Substituition is a mandatory requirement for EPS." />

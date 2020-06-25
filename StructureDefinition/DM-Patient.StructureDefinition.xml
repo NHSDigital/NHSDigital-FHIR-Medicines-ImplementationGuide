@@ -48,7 +48,7 @@
     <element id="Patient.extension:nominatedPharmacy">
       <path value="Patient.extension" />
       <sliceName value="nominatedPharmacy" />
-      <max value="1" />
+      <max value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NominatedPharmacy" />

@@ -14,7 +14,7 @@ These validation rules are taken from [EPS Prescribing Systems Compliance Specif
 | Required Fields | Notes | Section |
 |--
 |  | *token issued* is no longer supported. <br><br> EPS ITK mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2[].pertinentTokenIssued` | Section 6.1.3 |
-|  | *procedure code* is no longer supported and in EPS ParentPrescription this will use the default of SNOMED CT `163501000000109` Display Term `Prescription` <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2.` `pertinentLineItem[].code` | 
+|  | *procedure code* is no longer supported and in EPS ParentPrescription this will use the default of SNOMED CT (code) `163501000000109` Display Name `Prescription` <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2.` `pertinentLineItem[].code` | 
 | epsPrescriptionType (extension) | An extension containing a code from {{link:https://fhir.nhs.uk/R4/CodeSystem/prescription-type}}. <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation4.` `pertinentPrescriptionType.value` |
 | repeatInformation (extension) | For repeat-prescribing and repeat-dispensing prescriptions only {{link:https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation}} |
 | repeatInformation.numberOfRepeatPrescriptionsIssued (extension) |  EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentPrescription.repeatNumber.low`  |
@@ -31,6 +31,7 @@ These validation rules are taken from [EPS Prescribing Systems Compliance Specif
 | basedOn | Only MedicationRequests with `intent=plan` can be referenced  | 
 | notes | Should be only be used for information relevant to this presecription and should not be used for patient communication (consider adding Communication resource for items such as surgery opening times or advice to book blood tests). <br> markdown is allowed here but HL7v3 does not support this |
 | dosageInstructions | EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentInformation2.pertinentLineItem[].pertinentInformation2.pertinentDosageInstructions.value` |
+| dispenseRequest.performer.identifier (nominatedPharmacy) | Nominated Pharmacy. Patients preferred Pharmacy can be sourced from Patient Demongraphics Service. Use ODS Codes `https://fhir.nhs.uk/Id/ods-organization-code` only. |
 | dispenseRequest.performerType (extension) | EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentDispensingSitePreference` |
 | dispenseRequest.validityPerion.end | Repeats only <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentInformation7.pertinentReviewDate.value` |
 | dispenseRequest.quantity | EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2.` `pertinentLineItem[].component.lineItemQuantity` |
