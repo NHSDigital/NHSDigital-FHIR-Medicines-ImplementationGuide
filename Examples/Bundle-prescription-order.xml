@@ -72,6 +72,11 @@
             <display value="General Practitioner Prescribing" />
           </valueCoding>
         </extension>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+          <valueReference>
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          </valueReference>
+        </extension>
         <!-- pertinentInformation2.pertinentTokenIssued. Not required 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
           <valueBoolean value="true" />
@@ -148,6 +153,12 @@
             <system value="http://snomed.info/sct" />
             <code value="732981002" />
           </quantity>
+          <performer>
+            <identifier>
+              <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+              <value value="Y12345" />
+            </identifier>
+          </performer>
         </dispenseRequest>
         <!-- pertinentInformation2.pertinentLineItem.component.seperatableInd value="false"/> check this mapping is correct -->
         <substitution>
@@ -179,6 +190,11 @@
             <code value="0001" />
             <display value="General Practitioner Prescribing" />
           </valueCoding>
+        </extension>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+          <valueReference>
+            <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+          </valueReference>
         </extension>
         <!-- pertinentInformation2.pertinentTokenIssued. Not required 
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
@@ -255,6 +271,12 @@
             <system value="http://snomed.info/sct" />
             <code value="732981002" />
           </quantity>
+          <performer>
+            <identifier>
+              <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+              <value value="Y12345" />
+            </identifier>
+          </performer>
         </dispenseRequest>
         <!-- pertinentInformation2.pertinentLineItem.component.seperatableInd value="false"/> -->
         <substitution>

@@ -8,6 +8,11 @@
             <display value="General Practitioner Prescribing" />
         </valueCoding>
     </extension>
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+        <valueReference>
+          <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
+        </valueReference>
+      </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
         <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
@@ -62,6 +67,12 @@
             <system value="http://snomed.info/sct" />
             <code value="732981002" />
         </quantity>
+        <performer>
+            <identifier>
+                <system value="https://not.correct.uri/Id/ods-organization-code"/>
+                <value value="Y12345"/>
+            </identifier>
+        </performer>
     </dispenseRequest>
     <substitution>
         <allowedBoolean value="false" />
