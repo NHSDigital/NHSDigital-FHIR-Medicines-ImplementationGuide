@@ -70,7 +70,7 @@
     <element id="MedicationRequest.extension:legalAuthenticator">
       <path value="MedicationRequest.extension" />
       <sliceName value="legalAuthenticator" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -149,12 +149,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension:eps-parentPrescriptionId">
+    <element id="MedicationRequest.groupIdentifier.extension:eps-PrescriptionId">
       <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="eps-parentPrescriptionId" />
+      <sliceName value="eps-PrescriptionId" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-parentPrescriptionId" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
