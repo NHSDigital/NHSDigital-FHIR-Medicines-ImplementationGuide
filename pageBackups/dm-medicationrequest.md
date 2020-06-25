@@ -11,7 +11,7 @@ These validation rules are taken from [EPS Prescribing Systems Compliance Specif
 
 
 
-| Required Fields | Notes | Section |
+| Fields | Notes | Section |
 |--
 |  | *token issued* is no longer supported. <br><br> EPS ITK mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2[].pertinentTokenIssued` | Section 6.1.3 |
 |  | *procedure code* is no longer supported and in EPS ParentPrescription this will use the default of SNOMED CT (code) `163501000000109` Display Name `Prescription` <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2.` `pertinentLineItem[].code` | 
@@ -19,12 +19,15 @@ These validation rules are taken from [EPS Prescribing Systems Compliance Specif
 | repeatInformation (extension) | For repeat-prescribing and repeat-dispensing prescriptions only {{link:https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation}} |
 | repeatInformation.numberOfRepeatPrescriptionsIssued (extension) |  EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentPrescription.repeatNumber.low`  |
 | repeatInformation.numberOfRepeatPrescriptionsAllowed (extension) |  EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentPrescription.repeatNumber.high` |
+| legalAuthenticator (extension) |  EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.legalAuthenticator` | 
+| responsiblePractitioner (extension) |  EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.responsibleParty` |
 | identifier | An UUID identifer for {{link:https://fhir.nhs.uk/Id/prescription-line-id}} must be present <br><br> EPS ParentPrescription mapping `pertinentInformation2[].pertinentLineItem.id`|
 | category | TODO - a NHS ValueSet will be included |
 | medicationCodeableConcept | Refer to the dm+d implementation guidance documents for more information related to the use of dm+d, including that related to the use of “native” dm+d. These are available from the dm+d web site (http://www.dmd.nhs.uk). <br> <br> Where a medication item is not in the dm+d, current FP10 processes must be followed and no EPS prescription message will be generated. <br> ValueSet should allow [VMP, AMP and VTM concepts](link:https://developer.nhs.uk/apis/dose-syntax-implementation-1-3-2-alpha/#fast-healthcare-interoperability-resources-fhir-and-interopen)  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation2.` `pertinentLineItem[].product.manufacturedProduct.manufacturedRequestedMaterial` |
 | medicationCodeableConcept.display | dm+d name is required here, not SNOMED CT preferred name |
 | subject | Reference to a {{pagelink:DM-Patient}} which is a PDS compliant profile <br><br> EPS ParentPrescription mapping `recordTarget` |
 | authoredOn | EPS ParentPrescription mapping `effectiveTime` |
+| requestor | The author of the prescription.  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.author.AgentPerson` |
 | groupIdentifier | The short form prescription identifier {{link:https://fhir.nhs.uk/Id/prescription-short-form }}  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `id (oid=2.16.840.1.113883.2.1.3.2.4.18.8)`| 
 | groupIdentifier.extension | Contains the UUID for {{link:https://fhir.nhs.uk/Id/prescription-parent-id}}  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.id` | 
 | courseOfTherapyType | Code from {{link:https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type}} <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentInformation5.pertinentPrescriptionTreatmentType` |
