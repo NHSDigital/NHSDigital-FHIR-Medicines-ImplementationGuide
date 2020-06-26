@@ -44,6 +44,11 @@
       <sliceName value="odsSiteCode" />
       <max value="0" />
     </element>
+    <element id="Organization.type.coding.system">
+      <path value="Organization.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/organisation-type" />
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <min value="1" />
