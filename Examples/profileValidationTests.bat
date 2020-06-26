@@ -46,3 +46,12 @@ java -jar org.hl7.fhir.validator.jar Practitioner.xml -version 4.0.1 -tx https:/
 rem PASS - [Organization] 
 
 java -jar org.hl7.fhir.validator.jar Organization.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.9-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization
+
+
+rem PASS - [Questionnaire] 
+
+java -jar org.hl7.fhir.validator.jar Questionnaire-dispensing-patient-preferences.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.9-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ 
+
+rem PASS - [QuestionnaireResponse] 
+
+java -jar org.hl7.fhir.validator.jar QuestionnaireResponse-dispensing-patient-preferences-completed.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.9-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ 

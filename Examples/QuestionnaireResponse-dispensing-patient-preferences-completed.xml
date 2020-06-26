@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="dispensing-patient-preferences-completed"/> 
+  <identifier> 
+    <system value="https://fhir.spineservices.nhs.uk/R4/Id/questionnaire-id"/> 
+    <value value="Q12349876"/> 
+  </identifier> 
+  <questionnaire value="https://fhir.nhs.uk/R4/Questionnaire/dispensing-patient-preferences"/>
+  <status value="completed"/> 
+  <subject> 
+  <!-- made up and so invalid reference but going for restful. Id is {nhsNumber} -->
+    <reference value="https://fhir.spineservices.nhs.uk/R4/Patient/9876543210"/> 
+  </subject> 
+  <authored value="2020-06-26T10:01:00-05:00"/> 
+  <author> 
+      <!-- made up and so invalid reference but going for restful. Id is sds-user but can also be Patient/{nhsNumber} -->
+    <reference value="https://fhir.spineservices.nhs.uk/R4/Practitioner/12345"/> 
+  </author> 
+    <item> 
+      <linkId value="nominatedPharmacy"/> 
+      <answer> 
+          <!-- made up, so invalid reference, but going for restful. Id is ods-organization-code -->
+        <valueReference>
+            <reference value="https://fhir.spineservices.nhs.uk/R4/Organization/Y12345"/>
+        </valueReference> 
+      </answer> 
+    </item> 
+</QuestionnaireResponse> 
