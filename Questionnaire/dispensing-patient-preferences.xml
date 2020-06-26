@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Questionnaire xmlns="http://hl7.org/fhir">
+    <id value="dispensing-patient-preferences" />
+    <url value="https://fhir.nhs.uk/R4/Questionnaire/dispensing-patient-preferences" />
+    <title value="Dispensing Patient Preferences" />
+    <status value="draft" />
+    <subjectType value="Patient" />
+    <date value="2020-06-25" />
+    <item>
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
+            <valueCanonical value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
+        </extension>
+        <text value="Nominated Pharmacy" />
+        <linkId value="nominatedPharmacy" />
+        <type value="reference" />
+    </item>
+</Questionnaire>
