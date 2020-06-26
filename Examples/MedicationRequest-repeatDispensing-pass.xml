@@ -20,6 +20,9 @@
         <extension url="numberOfRepeatPrescriptionsIssued">
             <valueUnsignedInt value="1" />
         </extension>
+        <extension url="authorisationExpiryDate">
+            <valueDateTime value="2020-12-07" />            
+        </extension>
     </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
@@ -71,7 +74,6 @@
             </valueCoding>
         </extension>
         <validityPeriod>
-            <end value="2020-12-07" />
         </validityPeriod>
         <quantity>
             <value value="28" />
