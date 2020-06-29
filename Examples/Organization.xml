@@ -10,13 +10,13 @@
         Removed 
         Vocabulary for this attribute is no longer updated.
 Use code “999” / “Not Specified” in all cases.
-The OID must be 2.16.840.1.113883.2.1.3.2.4.17.94
+The OID must be 2.16.840.1.113883.2.1.3.2.4.17.94  --> 
     <type>
       <coding>
-        <system value="urn:uuid:2.16.840.1.113883.2.1.3.2.4.17.94" />
+        <system value="https://fhir.nhs.uk/R4/CodeSystem/organisation-type" />
         <code value="001" />
       </coding>
-    </type> --> 
+    </type>
     <name value="Mirfleld Surgery" />
     <telecom>
       <system value="phone" />

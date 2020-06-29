@@ -19,7 +19,7 @@
     <purpose value="Medicine Management"/>
     <sourceUri value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type"/>
     <group>
-        <source value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"/>
+        <source value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"/>
         <target value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
         <element>
             <code value="acute"/>

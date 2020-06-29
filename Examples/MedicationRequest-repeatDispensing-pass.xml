@@ -58,7 +58,7 @@
     </groupIdentifier>
     <courseOfTherapyType>
         <coding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType"></system>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
             <code value="repeat-dispensing" />
             <display value="Repeat dispensing" />
         </coding>

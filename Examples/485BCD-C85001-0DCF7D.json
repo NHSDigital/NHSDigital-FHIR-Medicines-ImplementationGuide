@@ -7,6 +7,28 @@
             "resource": {
                 "resourceType": "MessageHeader",
                 "id": "f8de0352-1fc2-40e7-9c74-67459f452451",
+                "eventCoding": {
+                    "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
+                    "code": "prescription-order",
+                    "display": "Prescription Order"
+                },
+                "sender": {
+                    "reference": "urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e",
+                    "display": "Dr Smith"
+                },
+                "source": {
+                    "extension":  [
+                        {
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/spine-ASID",
+                                "value": "747225912019"
+                            }
+                        }
+                    ],
+                    "name": "PAS",
+                    "endpoint": "https://fhir.mynhstrust.nhs.uk/R4"
+                },
                 "focus": [
                     {
                         "reference": "A7B86F8D-1D5E-FC28-E050-D20AE3A215F0"
@@ -207,7 +229,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -293,7 +315,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -379,7 +401,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
