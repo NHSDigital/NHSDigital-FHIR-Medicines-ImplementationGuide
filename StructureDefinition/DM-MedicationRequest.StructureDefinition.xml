@@ -126,7 +126,6 @@
       </extension>
       <path value="MedicationRequest.requester.display" />
       <comment value="The name of the of the issuer must be included in the MedicationRequest (this is for legal reasons)" />
-      <min value="1" />
     </element>
     <element id="MedicationRequest.performerType">
       <path value="MedicationRequest.performerType" />

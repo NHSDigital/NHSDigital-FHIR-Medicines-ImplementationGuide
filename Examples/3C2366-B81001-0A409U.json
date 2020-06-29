@@ -98,7 +98,10 @@
                     }
                 ],
                 "managingOrganization": {
-                    "reference": "https://directory.spineservices.nhs.uk/STU3/Organization/B81001"
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "B81001"
+                    }
                 }
             }
         },
@@ -135,7 +138,7 @@
                     {
                         "coding": [
                             {
-                                "system": "urn:uuid:2.16.840.1.113883.2.1.3.2.4.17.94",
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
                                 "code": "001"
                             }
                         ]
@@ -172,11 +175,18 @@
                     }
                 ],
                 "practitioner": {
-                    "reference": "Practitioner/30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                    "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
                 },
                 "organization": {
-                    "reference": "Organization/3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
-                }
+                    "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+                },
+                "telecom":  [
+                    {
+                        "system": "phone",
+                        "value": "01234567890",
+                        "use": "work"
+                    }
+                ]
             }
         },
         {
@@ -195,7 +205,7 @@
                     {
                         "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                         "valueReference": {
-                            "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                         }
                     }
                 ],
@@ -212,7 +222,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "321196004",
-                            "display": "Diazepam 2mg tablets"
+                            "display": "Diazepam 2 mg oral tablet"
                         }
                     ]
                 },
@@ -221,13 +231,17 @@
                 },
                 "authoredOn": "2019-12-30T12:00:00+00:00",
                 "requester": {
-                    "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                 },
                 "groupIdentifier": {
                     "extension": [
                         {
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
-                            "valueString": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                            "valueIdentifier": {
+                               "system": "https://fhir.nhs.uk/Id/prescription",
+                                "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+
+                            } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-short-form",
@@ -236,7 +250,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -263,6 +277,9 @@
                         "system": "http://snomed.info/sct",
                         "code": "428673006"
                     }
+                },
+                "substitution": {
+                    "allowedBoolean": false
                 }
             }
         },
@@ -282,7 +299,7 @@
                     {
                         "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                         "valueReference": {
-                            "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                         }
                     }
                 ],
@@ -299,7 +316,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "322236009",
-                            "display": "Paracetamol 500mg tablets"
+                            "display": "Paracetamol 500 mg oral tablet"
                         }
                     ]
                 },
@@ -308,13 +325,16 @@
                 },
                 "authoredOn": "2019-12-30T12:00:00+00:00",
                 "requester": {
-                    "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                 },
                 "groupIdentifier": {
                     "extension": [
                         {
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
-                            "valueString": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription",
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-short-form",
@@ -323,7 +343,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -350,6 +370,9 @@
                         "system": "http://snomed.info/sct",
                         "code": "428673006"
                     }
+                },
+                "substitution": {
+                    "allowedBoolean": false
                 }
             }
         },
@@ -369,7 +392,7 @@
                     {
                         "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                         "valueReference": {
-                            "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                         }
                     }
                 ],
@@ -386,7 +409,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "321152004",
-                            "display": "Temazepam 10mg tablets"
+                            "display": "Temazepam 10 mg oral tablet"
                         }
                     ]
                 },
@@ -395,13 +418,17 @@
                 },
                 "authoredOn": "2019-12-30T12:00:00+00:00",
                 "requester": {
-                    "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                 },
                 "groupIdentifier": {
                     "extension": [
                         {
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
-                            "valueString": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription",
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+ 
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-short-form",
@@ -410,7 +437,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -437,6 +464,9 @@
                         "system": "http://snomed.info/sct",
                         "code": "428673006"
                     }
+                },
+                "substitution": {
+                    "allowedBoolean": false
                 }
             }
         },
@@ -456,7 +486,7 @@
                     {
                         "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                         "valueReference": {
-                            "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                         }
                     }
                 ],
@@ -473,7 +503,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "322711002",
-                            "display": "Morphine 10mg modified-release tablets"
+                            "display": "Morphine sulfate 10mg m/r tablet (product)"
                         }
                     ]
                 },
@@ -482,13 +512,16 @@
                 },
                 "authoredOn": "2019-12-30T12:00:00+00:00",
                 "requester": {
-                    "reference": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0"
+                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                 },
                 "groupIdentifier": {
                     "extension": [
                         {
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
-                            "valueString": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription",
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-short-form",
@@ -497,7 +530,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "https://fhir.nhs.uk/R4/CodeSystem/CareConnect-PrescriptionType",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -524,6 +557,9 @@
                         "system": "http://snomed.info/sct",
                         "code": "428673006"
                     }
+                },
+                "substitution": {
+                    "allowedBoolean": false
                 }
             }
         }
