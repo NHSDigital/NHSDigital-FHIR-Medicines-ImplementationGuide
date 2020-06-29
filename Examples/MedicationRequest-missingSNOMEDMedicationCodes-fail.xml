@@ -3,11 +3,11 @@
     <id value="missingSNOMED-fail" />
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
         <valueCoding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-            <code value="0001" />
-            <display value="General Practitioner Prescribing" />
+          <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
+          <code value="0101" />
+          <display value="Primary Care Prescriber – Medical Prescriber" />
         </valueCoding>
-    </extension>
+      </extension>
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
         <valueReference>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />

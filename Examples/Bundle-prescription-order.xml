@@ -68,8 +68,8 @@
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-            <code value="0001" />
-            <display value="General Practitioner Prescribing" />
+            <code value="0101" />
+            <display value="Primary Care Prescriber – Medical Prescriber" />
           </valueCoding>
         </extension>
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
@@ -187,8 +187,8 @@
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
           <valueCoding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-            <code value="0001" />
-            <display value="General Practitioner Prescribing" />
+            <code value="0101" />
+            <display value="Primary Care Prescriber – Medical Prescriber" />
           </valueCoding>
         </extension>
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
