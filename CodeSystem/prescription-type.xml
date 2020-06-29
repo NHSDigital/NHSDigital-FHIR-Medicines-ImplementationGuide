@@ -11,55 +11,43 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
-      <code value="0001"/>
-      <display value="General Practitioner Prescribing"/>
+      <code value="0101"/>
+      <display value="Primary Care Prescriber – Medical Prescriber"/>
    </concept>
    <concept>
-      <code value="0002"/>
-      <display value="Intentionally left blank"/>
+      <code value="0104"/>
+      <display value="Primary Care Prescriber - Nurse Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0003"/>
-      <display value="Nurse Practitioner Prescribing"/>
+      <code value="0105"/>
+      <display value="Primary Care Prescriber - Community Practitioner Nurse prescriber"/>
    </concept>
    <concept>
-      <code value="0004"/>
-      <display value="Hospital Prescribing"/>
+      <code value="0108"/>
+      <display value="Primary Care Prescriber - Pharmacist Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0005"/>
-      <display value="Intentionally left blank"/>
+      <code value="0113"/>
+      <display value="Primary Care Prescriber – Optometrist Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0006"/>
-      <display value="Dental Prescribing"/>
+      <code value="0114"/>
+      <display value="Primary Care Prescriber – Podiatrist/Chiropodist Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0007"/>
-      <display value="Supplementary Prescriber Prescribing"/>
+      <code value="0116"/>
+      <display value="Primary Care Prescriber – Radiographer Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0008"/>
-      <display value="Intenionally left blank"/>
+      <code value="0117"/>
+      <display value="Primary Care Prescriber - Physiotherapist Independent/Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0009"/>
-      <display value="General Practitioner Prescribing: Private"/>
+      <code value="0124"/>
+      <display value="Primary Care Prescriber – Dietician Supplementary prescriber"/>
    </concept>
    <concept>
-      <code value="0010"/>
-      <display value="Intentionally left blank"/>
-   </concept>
-   <concept>
-      <code value="0011"/>
-      <display value="Intentionally left blank"/>
-   </concept>
-   <concept>
-      <code value="0012"/>
-      <display value="Extended Forumulary Prescriber"/>
-   </concept>
-   <concept>
-      <code value="0013"/>
-      <display value="Homecare Prescription (Secondary Care)"/>
+      <code value="0125"/>
+      <display value="Primary Care Prescriber – Paramedic Independent/Supplementary prescriber"/>
    </concept>
 </CodeSystem>
