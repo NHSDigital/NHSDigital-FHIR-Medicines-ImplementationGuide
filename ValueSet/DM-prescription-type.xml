@@ -5,7 +5,7 @@
     <version value="4.0.1"/>
     <name value="EPS Prescription Type"/>
     <status value="draft"/>
-    <description value="Subset on CareConnect Prescription Therapy Type which is permitted for EPS use."/>
+    <description value="Subset on UK Core Prescription Therapy Type which is permitted for EPS use."/>
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
