@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="itk-hl7v3-interaction-id"/>
+    <url value="https://fhir.nhs.uk/R4/CodeSystem/itk-hl7v3-interaction-id"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
+        <value value="itk-hl7v3-interaction-id"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="ITK HL7v3 Interaction ID"/>
+    <title value="ITK HL7v3 Interaction ID"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-06-29"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="FHIR project team"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/fhir"/>
+        </telecom>
+    </contact>
+    <description value="ITK HL7v3 Interaction ID"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="PORX_IN020101UK31"/>
+        <display value="Parent Prescription"/>
+    </concept>
+</CodeSystem>

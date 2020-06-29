@@ -3,6 +3,10 @@ rem PASS - [Bundle] Prescription Order Message
 java -jar org.hl7.fhir.validator.jar Bundle-prescription-order.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.9-dev.tgz  -ig C:\Development\NHSD\eps\StructureDefinition\ 
 
 
+rem PASS [Bundle] Solutions Assurance Order Message
+
+java -jar org.hl7.fhir.validator.jar 485BCD-C85001-0DCF7D.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.9-dev.tgz  -ig C:\Development\NHSD\eps\StructureDefinition\ 
+
 
 rem PASS - [MedicationRequest] Multiple medication codes validation
 
