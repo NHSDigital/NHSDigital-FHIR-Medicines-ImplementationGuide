@@ -5,7 +5,7 @@
    <name value="Prescription Type"/>
    <status value="active"/>
    <date value="2018-05-18T00:00:00+00:00"/>
-   <publisher value="HL7 UK"/>
+   <publisher value="NHS Digital and NHS Business Services Authority"/>
    <description value="A CodeSystem to identify the type of prescription"/>
    <copyright value="Copyright © 2004 HSCIC"/>
    <caseSensitive value="true"/>

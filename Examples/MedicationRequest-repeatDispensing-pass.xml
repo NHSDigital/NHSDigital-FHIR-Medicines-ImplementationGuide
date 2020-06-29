@@ -74,6 +74,8 @@
             </valueCoding>
         </extension>
         <validityPeriod>
+            <start value="2020-06-10"></start>
+            <end value="2020-07-09"></end>
         </validityPeriod>
         <quantity>
             <value value="28" />
