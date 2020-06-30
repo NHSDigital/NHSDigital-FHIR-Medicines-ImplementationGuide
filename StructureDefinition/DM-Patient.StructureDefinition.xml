@@ -48,7 +48,8 @@
     <element id="Patient.extension:nominatedPharmacy">
       <path value="Patient.extension" />
       <sliceName value="nominatedPharmacy" />
-      <max value="0" />
+      <definition value="This extension is not used in EPS/Digital Medicine to indicate pharmacy." />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NominatedPharmacy" />
@@ -82,14 +83,6 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <min value="1" />
-    </element>
-    <element id="Patient.generalPractitioner">
-      <path value="Patient.generalPractitioner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
