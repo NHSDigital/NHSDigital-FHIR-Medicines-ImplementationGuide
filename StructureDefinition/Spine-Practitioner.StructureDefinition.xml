@@ -47,6 +47,7 @@
     <element id="Practitioner.identifier:gmpCode">
       <path value="Practitioner.identifier" />
       <sliceName value="gmpCode" />
+      <max value="1" />
     </element>
     <element id="Practitioner.identifier:gmpCode.system">
       <path value="Practitioner.identifier.system" />
