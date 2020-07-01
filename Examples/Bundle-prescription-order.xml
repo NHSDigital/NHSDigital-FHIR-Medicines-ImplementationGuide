@@ -89,7 +89,7 @@
  -->
         <identifier>
           <!--  pertinentInformation2[0].pertinentLineItem.id -->
-          <system value="https://fhir.nhs.uk/Id/prescription-reference-number" />
+          <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
           <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
         </identifier>
         <status value="active" />
@@ -117,7 +117,7 @@
           <!-- ParentPrescription.id uuid -->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
             <valueIdentifier>
-              <system value="https://fhir.nhs.uk/Id/prescription" />
+              <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
               <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
             </valueIdentifier>
           </extension>
@@ -202,7 +202,7 @@
         </extension> -->
         <identifier>
           <!--  pertinentInformation2[1].pertinentLineItem.id -->
-          <system value="https://fhir.nhs.uk/Id/prescription-reference-number" />
+          <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
           <value value="791C9A65-5C6A-308B-D700-32D247BADB87" />
         </identifier>
 
@@ -235,7 +235,7 @@
           <!-- ParentPrescription.id uuid -->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
             <valueIdentifier>
-              <system value="https://fhir.nhs.uk/Id/prescription" />
+              <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
               <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
             </valueIdentifier>
           </extension>
