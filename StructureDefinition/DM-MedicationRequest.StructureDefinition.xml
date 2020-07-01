@@ -86,6 +86,26 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
     </element>
+    <element id="MedicationRequest.identifier">
+      <path value="MedicationRequest.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.identifier:prescriptionOrderItem">
+      <path value="MedicationRequest.identifier" />
+      <sliceName value="prescriptionOrderItem" />
+    </element>
+    <element id="MedicationRequest.identifier:prescriptionOrderItem.system">
+      <path value="MedicationRequest.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+    </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
       <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
@@ -154,6 +174,11 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
       </type>
+    </element>
+    <element id="MedicationRequest.groupIdentifier.system">
+      <path value="MedicationRequest.groupIdentifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-number" />
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
