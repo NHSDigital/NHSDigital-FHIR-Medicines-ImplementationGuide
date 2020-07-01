@@ -106,6 +106,16 @@
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
     </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationRequestCategory" />
+        </extension>
+        <strength value="preferred" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
+      </binding>
+    </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
       <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
@@ -167,9 +177,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionId">
+    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID">
       <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="PrescriptionId" />
+      <sliceName value="PrescriptionOrderUUID" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />

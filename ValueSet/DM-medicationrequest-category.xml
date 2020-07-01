@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="DM-medicationrequest-category"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category"/>
+    <version value="4.0.1"/>
+    <name value="EPS MedicationRequest Category"/>
+    <status value="draft"/>
+    <description value="EPS MedicationRequest Category."/>
+    <compose>
+        <include>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-category"/>
+        </include>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"/>
+        </include>
+    </compose>
+</ValueSet>
