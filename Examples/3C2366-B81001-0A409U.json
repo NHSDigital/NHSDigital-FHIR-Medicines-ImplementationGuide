@@ -211,7 +211,7 @@
                 ],
                 "identifier": [
                     {
-                        "system": "https://fhir.nhs.uk/Id/prescription-line-id",
+                        "system": "https://fhir.nhs.uk/Id/prescription-reference-number",
                         "value": "A7B86F8D-1D6D-FC28-E050-D20AE3A215F0"
                     }
                 ],
@@ -305,7 +305,7 @@
                 ],
                 "identifier": [
                     {
-                        "system": "https://fhir.nhs.uk/Id/prescription-line-id",
+                        "system": "https://fhir.nhs.uk/Id/prescription-reference-number",
                         "value": "A7B86F8D-1D72-FC28-E050-D20AE3A215F0"
                     }
                 ],
@@ -398,7 +398,7 @@
                 ],
                 "identifier": [
                     {
-                        "system": "https://fhir.nhs.uk/Id/prescription-line-id",
+                        "system": "https://fhir.nhs.uk/Id/prescription-reference-number",
                         "value": "A7B86F8D-1D77-FC28-E050-D20AE3A215F0"
                     }
                 ],
@@ -492,7 +492,7 @@
                 ],
                 "identifier": [
                     {
-                        "system": "https://fhir.nhs.uk/Id/prescription-line-id",
+                        "system": "https://fhir.nhs.uk/Id/prescription-reference-number",
                         "value": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F0"
                     }
                 ],

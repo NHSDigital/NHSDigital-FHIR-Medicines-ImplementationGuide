@@ -89,7 +89,7 @@
  -->
         <identifier>
           <!--  pertinentInformation2[0].pertinentLineItem.id -->
-          <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+          <system value="https://fhir.nhs.uk/Id/prescription-reference-number" />
           <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
         </identifier>
         <status value="active" />
@@ -202,7 +202,7 @@
         </extension> -->
         <identifier>
           <!--  pertinentInformation2[1].pertinentLineItem.id -->
-          <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+          <system value="https://fhir.nhs.uk/Id/prescription-reference-number" />
           <value value="791C9A65-5C6A-308B-D700-32D247BADB87" />
         </identifier>
 

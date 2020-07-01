@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="prescription-line-id-ns"/>
-    <name value="prescription-line-id"/>
+    <id value="prescription-reference-number-ns"/>
+    <name value="prescription-reference-number"/>
     <status value="draft"/>
     <kind value="identifier"/>
     <date value="2020-06-01"/>
@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/Id/prescription-line-id"/>
+        <value value="https://fhir.nhs.uk/Id/prescription-reference-number"/>
         <preferred value="true"/>
     </uniqueId>
 </NamingSystem>

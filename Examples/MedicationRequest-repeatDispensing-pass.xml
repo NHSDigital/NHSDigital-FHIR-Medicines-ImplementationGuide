@@ -25,7 +25,7 @@
         </extension>
     </extension>
     <identifier>
-        <system value="https://fhir.nhs.uk/Id/prescription-line-id" />
+        <system value="https://fhir.nhs.uk/Id/prescription-reference-number" />
         <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
     </identifier>
     <status value="active" />
