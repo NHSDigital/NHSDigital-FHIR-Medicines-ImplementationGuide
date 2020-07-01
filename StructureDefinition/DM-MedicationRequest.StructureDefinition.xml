@@ -134,7 +134,7 @@
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="Composite request this is part of." />
-      <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-short-form). The extension is used to carry the ParentPrescription.id (UUID)." />
+      <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
     </element>
     <element id="MedicationRequest.groupIdentifier.extension">

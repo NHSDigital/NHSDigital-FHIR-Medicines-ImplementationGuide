@@ -29,7 +29,7 @@ These validation rules are taken from [EPS Prescribing Systems Compliance Specif
 | subject | Reference to a {{pagelink:DM-Patient}} which is a PDS compliant profile <br><br> EPS ParentPrescription mapping `recordTarget` |
 | authoredOn | EPS ParentPrescription mapping `pertinentInformation1.author.time` and `effectiveTime` if  dispenseRequest.validityPeriod.start is NOT specified. | 6.4.1 |
 | requestor | The author of the prescription.  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.author.AgentPerson` |
-| groupIdentifier | The short form prescription identifier {{link:https://fhir.nhs.uk/Id/prescription-short-form }}  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `id (oid=2.16.840.1.113883.2.1.3.2.4.18.8)`| 
+| groupIdentifier | The short form prescription identifier {{link:https://fhir.nhs.uk/Id/prescription-order-number }}  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `id (oid=2.16.840.1.113883.2.1.3.2.4.18.8)`| 
 | groupIdentifier.extension | Contains the UUID for {{link:https://fhir.nhs.uk/Id/prescription}}  <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.id` | 
 | courseOfTherapyType | Code from {{link:https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type}} <br><br> EPS ParentPrescription mapping `pertinentInformation1.pertinentPrescription.pertinentInformation1.` `pertinentInformation5.pertinentPrescriptionTreatmentType` |
 | basedOn | Only MedicationRequests with `intent=plan` can be referenced  | 

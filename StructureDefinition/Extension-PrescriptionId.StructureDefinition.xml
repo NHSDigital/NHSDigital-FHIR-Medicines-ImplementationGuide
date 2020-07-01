@@ -36,7 +36,7 @@
     </element>
     <element id="Extension.value[x].system">
       <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-number" />
+      <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
     </element>
   </differential>
 </StructureDefinition>

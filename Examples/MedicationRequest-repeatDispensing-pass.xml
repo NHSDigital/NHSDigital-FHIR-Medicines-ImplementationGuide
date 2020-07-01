@@ -49,11 +49,11 @@
         <!-- Note: no GUID for for parent presecription id -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
             <valueIdentifier>
-                <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
+                <system value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
                 <value value="a609e5c9-82a6-4a67-83ec-c96323bd17d7" />
             </valueIdentifier>
         </extension>
-        <system value="https://fhir.nhs.uk/Id/prescription-short-form" />
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
         <value value="754CB4-E81001-0B9EB8" />
     </groupIdentifier>
     <courseOfTherapyType>
