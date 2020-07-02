@@ -76,10 +76,6 @@
       <path value="Patient.birthDate" />
       <min value="1" />
     </element>
-    <element id="Patient.deceased[x]">
-      <path value="Patient.deceased[x]" />
-      <max value="0" />
-    </element>
     <element id="Patient.address">
       <path value="Patient.address" />
       <min value="1" />
