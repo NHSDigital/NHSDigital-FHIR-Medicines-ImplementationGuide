@@ -4,8 +4,8 @@
     <id value="medicationrequest-course-of-therapy" />
     <url value="https://fhir.nhs.uk/R4/ValueSet/medicationrequest-course-of-therapy" />
     <version value="4.0.1" />
-    <name value="medicationRequest Course of Therapy Codes" />
-    <title value="Medication request  course of  therapy  codes" />
+    <name value="MedicationRequest Course of Therapy Codes" />
+    <title value="Medication Request  Course of  Therapy  Codes" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2020-07-02T09:29:23+11:00" />
@@ -31,10 +31,10 @@
             </concept>
         </include>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy" />
             <concept>
-                <code value="repeat-dispensing" />
-                <display value="Repeat Dispensing" />
+                <code value="continuous-repeat-dispensing"/>
+                <display value="Continuous long term (repeat dispensing)"/>
             </concept>
         </include>
         <exclude>
