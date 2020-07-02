@@ -1,32 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="medicationrequest-course-of-therapy"/> 
-  <url value="https://fhir.nhs.uk/R4/ValueSet/medicationrequest-course-of-therapy"/> 
-  <version value="4.0.1"/> 
-  <name value="medicationRequest Course of Therapy Codes"/> 
-  <title value="Medication request  course of  therapy  codes"/> 
-  <status value="draft"/> 
-  <experimental value="false"/> 
-  <date value="2020-07-02T09:29:23+11:00"/> 
-  <publisher value="FHIR Project team"/> 
-  <contact> 
-    <telecom> 
-      <system value="url"/> 
-      <value value="http://hl7.org/fhir"/> 
-    </telecom> 
-  </contact> 
-  <description value="MedicationRequest Course of Therapy Codes"/> 
-  <immutable value="true"/> 
-  <compose> 
-    <include> 
-      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/> 
-    </include> 
-    <exclude> 
-        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/> 
-        <concept>
-            <code value="seasonal"/>
-        </concept>
-    </exclude> 
-  </compose> 
+    <id value="medicationrequest-course-of-therapy" />
+    <url value="https://fhir.nhs.uk/R4/ValueSet/medicationrequest-course-of-therapy" />
+    <version value="4.0.1" />
+    <name value="medicationRequest Course of Therapy Codes" />
+    <title value="Medication request  course of  therapy  codes" />
+    <status value="draft" />
+    <experimental value="false" />
+    <date value="2020-07-02T09:29:23+11:00" />
+    <publisher value="FHIR Project team" />
+    <contact>
+        <telecom>
+            <system value="url" />
+            <value value="http://hl7.org/fhir" />
+        </telecom>
+    </contact>
+    <description value="MedicationRequest Course of Therapy Codes" />
+    <immutable value="true" />
+    <compose>
+        <include>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <concept>
+                <code value="continuous" />
+                <display value="Continuous long term therapy" />
+            </concept>
+            <concept>
+                <code value="acute" />
+                <display value="Short course (acute) therapy" />
+            </concept>
+        </include>
+        <include>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType" />
+            <concept>
+                <code value="repeat-dispensing" />
+                <display value="Repeat Dispensing" />
+            </concept>
+        </include>
+        <exclude>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <concept>
+                <code value="seasonal" />
+                <display value="Seasonal" />
+            </concept>
+        </exclude>
+    </compose>
 </ValueSet> 
