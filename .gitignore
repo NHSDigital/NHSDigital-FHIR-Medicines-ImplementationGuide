@@ -1,4 +1,8 @@
 Examples/org.hl7.fhir.validator.jar
+StructureDefinition/Spine-MessageHeader.StructureDefinition.xml
+StructureDefinition/Spine-Organization.StructureDefinition.xml
+StructureDefinition/Spine-Practitioner.StructureDefinition.xml
+StructureDefinition/Spine-PractitionerRole.StructureDefinition.xml
 StructureDefinition/UKCore-AdditionalPersonRelationshipRole.xml
 StructureDefinition/UKCore-AddressKeyType-duplicate-2.xml
 StructureDefinition/UKCore-AddressKeyType.xml
