@@ -79,7 +79,6 @@
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
       <sliceName value="responsiblePractitioner" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -137,6 +136,7 @@
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
