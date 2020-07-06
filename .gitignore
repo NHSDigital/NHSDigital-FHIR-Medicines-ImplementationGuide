@@ -1,4 +1,5 @@
 Examples/org.hl7.fhir.validator.jar
+StructureDefinition/Extension-spineEndpoint.StructureDefinition.xml
 StructureDefinition/Spine-MessageHeader.StructureDefinition.xml
 StructureDefinition/Spine-Organization.StructureDefinition.xml
 StructureDefinition/Spine-Practitioner.StructureDefinition.xml
