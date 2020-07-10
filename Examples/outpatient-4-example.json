@@ -141,7 +141,7 @@
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
+            "value": "A1B2C3"
           }
         ],
         "type": [
@@ -149,21 +149,37 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "008"
+                "code": "PR",
+                "display": "Prescribing Cost Centre"
               }
             ]
           }
         ],
-        "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
+        "name": "MUSGROVE PARK HOSPITAL OUTPATIENS DEPARTMENT",
         "address": [
           {
             "line": [
               "MUSGROVE PARK HOSPITAL",
+              "PARKFIELD DRIVE",
               "TAUNTON"
             ],
             "postalCode": "TA1 5DA"
           }
-        ]
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823333444",
+            "use": "work"
+          }
+        ],
+        "partOf": {
+          "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "RBA"
+          },
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+        }
       }
     },
     {
