@@ -390,8 +390,8 @@
               <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
               <coding>
                 <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
-                <code value="R0260" />
-                <display value="General Medical Practitioner" />
+                <code value="R8000" />
+                <display value="Clinical Practitioner Access Role" />
               </coding>
             </code>
             <!-- <AgentPerson classCode="AGNT">.telecom -->
@@ -489,8 +489,8 @@
               <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
               <coding>
                 <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
-                <code value="R0260" />
-                <display value="General Medical Practitioner" />
+                <code value="R8000" />
+                <display value="Clinical Practitioner Access Role" />
               </coding>
             </code>
             <!-- <AgentPerson classCode="AGNT">.telecom -->

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="medicationrequest-controlled-drug"/>
+    <url value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
+        <value value="medicationrequest-controlled-drug"/>
+    </identifier>
+    <version value="1.0.0"/>
+    <name value="MedicationRequest Category Controlled Drug"/>
+    <title value="MedicationRequest Category Controlled Drug"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-07-10"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="FHIR project team"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://hl7.org/fhir"/>
+        </telecom>
+    </contact>
+    <description value="MedicationRequest Category Controlled Drug"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="CD1"/>
+        <display value="Schedule 1"/>
+    </concept>
+    <concept>
+        <code value="CD2"/>
+        <display value="Schedule 2"/>
+    </concept>
+    <concept>
+        <code value="CD3"/>
+        <display value="Schedule 3"/>
+    </concept>
+    <concept>
+        <code value="CD4-1"/>
+        <display value="Schedule 4 (Part I)"/>
+    </concept>
+    <concept>
+        <code value="CD4-2"/>
+        <display value="Schedule 4 (Part II)"/>
+    </concept>
+    <concept>
+        <code value="CD5"/>
+        <display value="Schedule 5"/>
+    </concept>
+</CodeSystem>

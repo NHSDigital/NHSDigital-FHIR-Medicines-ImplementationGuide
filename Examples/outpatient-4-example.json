@@ -192,8 +192,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
-                "code": "R0260",
-                "display": "General Medical Practitioner"
+                "code": "R8000",
+                "display": "Clinical Practitioner Access Role"
               }
             ]
           }
