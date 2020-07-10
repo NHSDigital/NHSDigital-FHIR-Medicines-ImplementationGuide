@@ -32,16 +32,16 @@
         },
         "focus": [
           {
-            "reference": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F0"
+            "reference": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F3"
           },
           {
-            "reference": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F0"
+            "reference": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F2"
           },
           {
-            "reference": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F0"
+            "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
           },
           {
-            "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F0"
+            "reference": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F1"
           },
           {
             "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
@@ -187,6 +187,17 @@
         "organization": {
           "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
         },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "code": "R0260",
+                "display": "General Medical Practitioner"
+              }
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -218,7 +229,17 @@
         ],
         "status": "active",
         "intent": "order",
-        "category": "outpatient",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "outpatient",
+                "display": "Outpatient"
+              }
+            ]
+          }
+        ],
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -272,16 +293,12 @@
               }
             }
           ],
-          "performer": [
-            {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "code": "FX748"
-                }
-              ]
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
             }
-          ],
+          },
           "quantity": {
             "value": 28,
             "unit": "tablet",
@@ -322,7 +339,17 @@
         ],
         "status": "active",
         "intent": "order",
-        "category": "outpatient",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "outpatient",
+                "display": "Outpatient"
+              }
+            ]
+          }
+        ],
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -376,16 +403,12 @@
               }
             }
           ],
-          "performer": [
-            {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "code": "FX748"
-                }
-              ]
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
             }
-          ],
+          },
           "quantity": {
             "value": 100,
             "unit": "tablet",
@@ -426,7 +449,17 @@
         ],
         "status": "active",
         "intent": "order",
-        "category": "outpatient",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "outpatient",
+                "display": "Outpatient"
+              }
+            ]
+          }
+        ],
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -480,16 +513,12 @@
               }
             }
           ],
-          "performer": [
-            {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "code": "FX748"
-                }
-              ]
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
             }
-          ],
+          },
           "quantity": {
             "value": 14,
             "unit": "tablet",
@@ -530,7 +559,17 @@
         ],
         "status": "active",
         "intent": "order",
-        "category": "outpatient",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                "code": "outpatient",
+                "display": "Outpatient"
+              }
+            ]
+          }
+        ],
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -585,19 +624,15 @@
             },
             {
               "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words",
-              "value": "twenty eight"
+              "valueString": "twenty eight"
             }
           ],
-          "performer": [
-            {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "code": "FX748"
-                }
-              ]
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
             }
-          ],
+          },
           "quantity": {
             "value": 28,
             "unit": "tablet",
