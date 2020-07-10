@@ -283,6 +283,16 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType" />
       </type>
     </element>
+    <element id="MedicationRequest.dispenseRequest.extension:controlledDrugWords">
+      <path value="MedicationRequest.dispenseRequest.extension" />
+      <sliceName value="controlledDrugWords" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words" />
+      </type>
+    </element>
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
       <definition value="Indicates the intended dispensing Pharmacy specified by the patient." />
