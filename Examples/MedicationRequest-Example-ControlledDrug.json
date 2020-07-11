@@ -1,0 +1,120 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
+                "code": "0101"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
+            "valueReference": {
+                "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F0"
+        }
+    ],
+    "status": "active",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                    "code": "outpatient",
+                    "display": "Outpatient"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug",
+                    "code": "CD2",
+                    "display": "Schedule 2"
+                }
+            ]
+        }
+    ],
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "36126511000001106",
+                "display": "Morphine 10mg modified-release tablets"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
+    },
+    "authoredOn": "2019-12-30T12:00:00+00:00",
+    "requester": {
+        "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+    },
+    "groupIdentifier": {
+        "extension": [
+            {
+                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
+                "valueIdentifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-uuid-number",
+                    "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                }
+            }
+        ],
+        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+        "value": "3C2366-B81001-0A409U"
+    },
+    "courseOfTherapyType": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
+                "code": "acute",
+                "display": "Acute"
+            }
+        ]
+    },
+    "dosageInstruction": [
+        {
+            "text": "1 tablet, daily"
+        }
+    ],
+    "dispenseRequest": {
+        "extension": [
+            {
+                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
+                "valueCoding": {
+                    "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
+                    "code": "0004"
+                }
+            },
+            {
+                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words",
+                "valueString": "twenty eight"
+            }
+        ],
+        "performer": {
+            "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "FX748"
+            }
+        },
+        "quantity": {
+            "value": 28,
+            "unit": "tablet",
+            "system": "http://snomed.info/sct",
+            "code": "428673006"
+        }
+    },
+    "substitution": {
+        "allowedBoolean": false
+    }
+}
