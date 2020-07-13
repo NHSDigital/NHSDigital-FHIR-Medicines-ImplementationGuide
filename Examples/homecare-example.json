@@ -224,14 +224,14 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0124"
+              "code": "0126"
             }
           }
         ],
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-            "value": "A7B86F8D-1D6D-FC28-E050-D20AE3A215F0"
+            "value": "a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
         ],
         "status": "active",
@@ -259,7 +259,7 @@
         "subject": {
           "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
         },
-        "authoredOn": "2019-12-30T12:00:00+00:00",
+        "authoredOn": "2020-07-13T12:00:00+00:00",
         "requester": {
           "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
         },
@@ -300,6 +300,21 @@
               }
             }
           ],
+          "validityPeriod": {
+            "start": {
+              "value": "2020-07-13T12:00:00+00:00"
+            },
+            "end": {
+              "value": "2021-01-31T12:00:00+00:00"
+            }
+          },
+          "numberOfRepeatsAllowed" : 6,
+          "expectedSupplyDuration" : {
+            "value": 28,
+            "unit": "day",
+            "system": "http://unitsofmeasure.org",
+            "code" : "d"
+          },
           "performer": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -307,10 +322,10 @@
             }
           },
           "quantity": {
-            "value": 28,
-            "unit": "tablet",
+            "value": 7,
+            "unit": "vial",
             "system": "http://snomed.info/sct",
-            "code": "428673006"
+            "code": "415818006"
           }
         },
         "substitution": {
