@@ -289,7 +289,28 @@
         },
         "dosageInstruction": [
           {
-            "text": "1 tablet, daily"
+            "text": "1 tablet, daily",
+            "timing": {
+            "repeat": {
+              "period": "1",
+              "periodUnit": "d"
+            }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": "1",
+              "unit": "tablet",
+              "system": "http://snomed.info/sct",
+              "code": "428673006"
+            }
           }
         ],
         "note": {
