@@ -233,7 +233,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0124"
+              "code": "0401"
             }
           }
         ],
@@ -337,7 +337,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0124"
+              "code": "0401"
             }
           },
           {
@@ -447,7 +447,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0101"
+              "code": "0401"
             }
           },
           {
@@ -557,7 +557,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0101"
+              "code": "0401"
             }
           },
           {
