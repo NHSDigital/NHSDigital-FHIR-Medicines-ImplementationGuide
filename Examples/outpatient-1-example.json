@@ -291,10 +291,10 @@
           {
             "text": "1 tablet, daily",
             "timing": {
-            "repeat": {
-              "period": "1",
-              "periodUnit": "d"
-            }
+              "repeat": {
+                "period": 1,
+                "periodUnit": "d"
+              }
             },
             "route": {
               "coding": [
@@ -306,7 +306,7 @@
               ]
             },
             "doseQuantity": {
-              "value": "1",
+              "value": 1,
               "unit": "tablet",
               "system": "http://snomed.info/sct",
               "code": "428673006"
