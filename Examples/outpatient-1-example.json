@@ -1,3 +1,4 @@
+// Outpatient acute single item prescription for 2 weeks supply (GP instructed to prescibe on-going within discharge letter, not in this Bundle) 
 {
   "resourceType": "Bundle",
   "id": "36f17614-f054-4f2b-b63b-606b7caf3d40",
