@@ -176,8 +176,8 @@
         ],
         "partOf": {
           "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "RBA"
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
           },
           "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         }
@@ -407,7 +407,8 @@
         },
         "dosageInstruction": [
           {
-            "text": "as required"
+            "text": "as required",
+            "asNeededBoolean": true
           }
         ],
         "dispenseRequest": {
@@ -517,7 +518,18 @@
         },
         "dosageInstruction": [
           {
-            "text": "1 tablet, at night"
+            "text": "1 tablet, at NIGHT",
+            "timing": {
+              "repeat": {
+                "when": "NIGHT"
+              }
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "tablet",
+              "system": "http://snomed.info/sct",
+              "code": "428673006"
+            }
           }
         ],
         "dispenseRequest": {
@@ -636,7 +648,28 @@
         },
         "dosageInstruction": [
           {
-            "text": "1 tablet, daily"
+            "text": "1 tablet, daily",
+            "timing": {
+              "repeat": {
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "oral"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "tablet",
+              "system": "http://snomed.info/sct",
+              "code": "428673006"
+            }
           }
         ],
         "dispenseRequest": {
