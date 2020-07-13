@@ -10,8 +10,5 @@
         <include>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug"/>
         </include>
-        <include>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-controlled-drug"/>
-        </include>
     </compose>
 </ValueSet>
