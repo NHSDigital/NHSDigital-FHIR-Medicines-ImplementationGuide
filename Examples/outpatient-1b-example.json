@@ -288,7 +288,38 @@
         },
         "dosageInstruction": [
           {
-            "text": "apply 5 times a day, left eye, for 10 days"
+            "text": "apply 5 times a day, left eye, for 10 days",
+            "timing": {
+              "repeat": {
+                "frequency" : 5,
+                "period": 1,
+                "periodUnit": "d",
+                "boundsDuration": {
+                  "value": 10,
+                  "unit": "day",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "d"
+                }
+              }
+            },
+            "method": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "417924000",
+                  "display": "apply"
+                }
+              ]
+            },
+            "site": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "8966001",
+                  "display": "left eye"
+                }
+              ]
+            }
           }
         ],
         "dispenseRequest": {
