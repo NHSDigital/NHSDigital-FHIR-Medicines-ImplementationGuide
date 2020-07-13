@@ -7,6 +7,11 @@ rem PASS - [Bundle] Outpatient Prescription Order
 
 java -jar org.hl7.fhir.validator.jar outpatient-4-example.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.15-dev.tgz  -ig C:\Development\NHSD\eps\StructureDefinition\ 
 
+rem PASS - [Bundle] Homecare Prescription Order 
+
+java -jar org.hl7.fhir.validator.jar Homecare-example.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.15-dev.tgz  -ig C:\Development\NHSD\eps\StructureDefinition\ 
+
+
 
 rem PASS [Bundle] Solutions Assurance Order Message
 

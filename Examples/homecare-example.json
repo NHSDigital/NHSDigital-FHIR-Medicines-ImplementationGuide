@@ -14,7 +14,7 @@
           "display": "Prescription Order"
         },
         "sender": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645",
+          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
           "display": "RAZIA|ALI"
         },
         "source": {
@@ -301,12 +301,8 @@
             }
           ],
           "validityPeriod": {
-            "start": {
-              "value": "2020-07-13T12:00:00+00:00"
-            },
-            "end": {
-              "value": "2021-01-31T12:00:00+00:00"
-            }
+            "start": "2020-07-13T12:00:00+00:00",
+            "end": "2021-01-31T12:00:00+00:00"
           },
           "numberOfRepeatsAllowed" : 6,
           "expectedSupplyDuration" : {
