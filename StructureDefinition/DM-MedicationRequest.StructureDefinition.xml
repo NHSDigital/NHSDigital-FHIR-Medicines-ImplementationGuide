@@ -119,9 +119,6 @@
       <path value="MedicationRequest.category.coding" />
       <sliceName value="sliceControlledDrug" />
       <max value="1" />
-      <fixedCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug" />
-      </fixedCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-controlled-drug" />
@@ -135,9 +132,6 @@
       <path value="MedicationRequest.category.coding" />
       <sliceName value="sliceCategoryInt" />
       <max value="1" />
-      <fixedCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
-      </fixedCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
