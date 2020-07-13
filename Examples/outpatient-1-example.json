@@ -1,14 +1,15 @@
-// Outpatient repeat disensing single item prescription for 4 x weekly issues
+// Outpatient acute single item prescription for 2 weeks supply (GP instructed to prescibe on-going within discharge letter, not in this Bundle) 
+// not yet verified as schema-valid, the use of "note" may be syntactically incorrect 
 {
   "resourceType": "Bundle",
-  "id": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105",
+  "id": "36f17614-f054-4f2b-b63b-606b7caf3d40",
   "type": "message",
   "entry": [
     {
-      "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
+      "fullUrl": "urn:uuid:8650010b-9162-49e8-9885-2afbca8f8408",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "3599c0e9-9292-413e-9270-9a1ef1ead99c",
+        "id": "8650010b-9162-49e8-9885-2afbca8f8408",
         "eventCoding": {
           "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
           "code": "prescription-order",
@@ -167,8 +168,8 @@
         ],
         "partOf": {
           "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "RBA"
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
           },
           "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         }
@@ -225,7 +226,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0901"
+              "code": "0401"
             }
           }
         ],
@@ -252,8 +253,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "15517911000001104",
-              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+              "code": "317896006",
+              "display": "Digoxin 125microgram tablets"
             }
           ]
         },
@@ -275,54 +276,48 @@
             }
           ],
           "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-          "value": "DC2C66-A1B2C3-23407B"
+          "value": "A3D861-A1B2C3-00BB23"
         },
         "courseOfTherapyType": {
           "coding": [
             {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
-              "code": "repeat-dispensing",
-              "display": "Repeat Dispensing"
+              "code": "acute",
+              "display": "Acute"
             }
           ]
         },
         "dosageInstruction": [
           {
-            "text": "10 milligram, inject, subcutaneous route, once weekly"
+            "text": "1 tablet, daily"
           }
         ],
+        "note": {
+          "text": {
+            "value": "GP instructed to prescribe on-going"
+          }
+        },
         "dispenseRequest": {
           "extension": [
             {
               "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
-                "code": "P2"
+                "code": "P1"
               }
             }
           ],
-          "validityPeriod": {
-            "start": "2020-07-13T12:00:00+00:00",
-            "end": "2020-08-07T12:00:00+00:00"
-          },
-          "numberOfRepeatsAllowed" : 4,
-          "expectedSupplyDuration" : {
-            "value": 7,
-            "unit": "day",
-            "system": "http://unitsofmeasure.org",
-            "code" : "d"
-          },
           "performer": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "VNE51"
+              "value": "FX748"
             }
           },
           "quantity": {
-            "value": 1,
-            "unit": "pre-filled disposable injection",
+            "value": 14,
+            "unit": "tablet",
             "system": "http://snomed.info/sct",
-            "code": "3318611000001103"
+            "code": "428673006"
           }
         },
         "substitution": {
