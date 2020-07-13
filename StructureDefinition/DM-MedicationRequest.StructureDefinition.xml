@@ -116,12 +116,6 @@
       </slicing>
     </element>
     <element id="MedicationRequest.category.coding:sliceControlledDrug">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationRequest.category.coding" />
       <sliceName value="sliceControlledDrug" />
       <max value="1" />
@@ -133,13 +127,11 @@
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-controlled-drug" />
       </binding>
     </element>
+    <element id="MedicationRequest.category.coding:sliceControlledDrug.system">
+      <path value="MedicationRequest.category.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug" />
+    </element>
     <element id="MedicationRequest.category.coding:sliceCategoryInt">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationRequest.category.coding" />
       <sliceName value="sliceCategoryInt" />
       <max value="1" />
@@ -151,23 +143,22 @@
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
       </binding>
     </element>
+    <element id="MedicationRequest.category.coding:sliceCategoryInt.system">
+      <path value="MedicationRequest.category.coding.system" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+    </element>
     <element id="MedicationRequest.category.coding:sliceCategoryUK">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationRequest.category.coding" />
       <sliceName value="sliceCategoryUK" />
       <max value="1" />
-      <fixedCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-category" />
-      </fixedCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
       </binding>
+    </element>
+    <element id="MedicationRequest.category.coding:sliceCategoryUK.system">
+      <path value="MedicationRequest.category.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-category" />
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
@@ -286,7 +277,6 @@
     <element id="MedicationRequest.dispenseRequest.extension:controlledDrugWords">
       <path value="MedicationRequest.dispenseRequest.extension" />
       <sliceName value="controlledDrugWords" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
