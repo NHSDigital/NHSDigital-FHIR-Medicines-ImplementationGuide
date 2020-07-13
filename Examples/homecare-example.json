@@ -251,8 +251,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "35601211000001109",
-              "display": "Doxorubicin 20mg/10ml solution for infusion vials"
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
             }
           ]
         },
@@ -287,7 +287,7 @@
         },
         "dosageInstruction": [
           {
-            "text": "TBC"
+            "text": "10 milligram, inject, subcutaneous route, once weekly"
           }
         ],
         "dispenseRequest": {
@@ -305,12 +305,12 @@
               "value": "2020-07-13T12:00:00+00:00"
             },
             "end": {
-              "value": "2021-01-31T12:00:00+00:00"
+              "value": "2020-08-14T12:00:00+00:00"
             }
           },
-          "numberOfRepeatsAllowed" : 6,
+          "numberOfRepeatsAllowed" : 4,
           "expectedSupplyDuration" : {
-            "value": 28,
+            "value": 7,
             "unit": "day",
             "system": "http://unitsofmeasure.org",
             "code" : "d"
@@ -322,10 +322,10 @@
             }
           },
           "quantity": {
-            "value": 7,
-            "unit": "vial",
+            "value": 1,
+            "unit": "pre-filled disposable injection",
             "system": "http://snomed.info/sct",
-            "code": "415818006"
+            "code": "3318611000001103"
           }
         },
         "substitution": {
