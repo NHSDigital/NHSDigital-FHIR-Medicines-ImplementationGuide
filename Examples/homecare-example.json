@@ -297,7 +297,7 @@
               "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
-                "code": "0004"
+                "code": "P2"
               }
             }
           ],
