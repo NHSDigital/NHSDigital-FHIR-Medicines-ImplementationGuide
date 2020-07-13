@@ -296,15 +296,6 @@
                 "periodUnit": "d"
               }
             },
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "26643006",
-                  "display": "oral"
-                }
-              ]
-            },
             "doseQuantity": {
               "value": 1,
               "unit": "tablet",
