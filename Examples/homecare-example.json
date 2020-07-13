@@ -280,7 +280,7 @@
           "coding": [
             {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
-              "code": "repeat dispensing",
+              "code": "repeat-dispensing",
               "display": "Repeat Dispensing"
             }
           ]
