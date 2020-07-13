@@ -1,4 +1,5 @@
-﻿{
+// Outpatient acute four item prescription, including one Schedule 2 controlled drug
+{
   "resourceType": "Bundle",
   "id": "435c006d-e311-4c4e-8728-7026ed46dca4",
   "type": "message",
