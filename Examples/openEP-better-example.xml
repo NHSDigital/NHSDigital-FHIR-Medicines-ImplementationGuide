@@ -66,7 +66,8 @@
         </Encounter>
     </contained>
     <identifier>
-        <value value="9a9e4e11-5596-47bc-9376-21bf9d451905::default::1" />
+        <system value="urn:uuid"/>
+        <value value="9a9e4e11-5596-47bc-9376-21bf9d451905" />
     </identifier>
     <intent value="instance-order" />
     <category>
