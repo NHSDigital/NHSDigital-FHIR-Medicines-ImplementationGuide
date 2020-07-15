@@ -1,53 +1,53 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <text>
-        <status value="generated" />
+        <status value="generated"></status>
         <div xmlns="http://www.w3.org/1999/xhtml">
-        <span >Aspirin 300mg dispersible tablets </span>
-    </div>
+            <span>Aspirin 300mg dispersible tablets </span>
+        </div>
     </text>
     <contained>
         <Medication xmlns="http://hl7.org/fhir">
-            <id value="2" />
+            <id value="2"></id>
             <code>
                 <coding>
-                    <system value="http://snomed.info/sct" />
-                    <code value="329526003" />
-                    <display value="Aspirin 300mg dispersible tablet" />
+                    <system value="http://snomed.info/sct"></system>
+                    <code value="329526003"></code>
+                    <display value="Aspirin 300mg dispersible tablet"></display>
                 </coding>
-                <text value="Aspirin 300mg dispersible tablets" />
+                <text value="Aspirin 300mg dispersible tablets"></text>
             </code>
             <form>
                 <coding>
-                    <system value="http://snomed.info/sct" />
-                    <code value="35366911000001101" />
-                    <display value="Dispersible tablet" />
+                    <system value="http://snomed.info/sct"></system>
+                    <code value="35366911000001101"></code>
+                    <display value="Dispersible tablet"></display>
                 </coding>
-                <text value="Dispersible tablet" />
+                <text value="Dispersible tablet"></text>
             </form>
         </Medication>
     </contained>
     <contained>
         <Patient xmlns="http://hl7.org/fhir">
-            <id value="3" />
+            <id value="3"></id>
             <identifier>
-                <system value="https://ThinkEhr/Domain" />
-                <value value="default" />
+                <system value="https://ThinkEhr/Domain"></system>
+                <value value="default"></value>
             </identifier>
             <identifier>
-                <system value="https://fhir.hl7.org.uk/taunton/PAS" />
-                <value value="1007" />
+                <system value="https://fhir.hl7.org.uk/taunton/PAS"></system>
+                <value value="1007"></value>
             </identifier>
             <identifier>
-                <system value="https://fhir.hl7.org.uk/taunton/MRN" />
-                <value value="1007" />
+                <system value="https://fhir.hl7.org.uk/taunton/MRN"></system>
+                <value value="1007"></value>
             </identifier>
             <identifier>
-                <system value="https://fhir.nhs.uk/Id/nhs-number" />
-                <value value="1007" />
+                <system value="https://fhir.nhs.uk/Id/nhs-number"></system>
+                <value value="1007"></value>
             </identifier>
             <name>
-                <use value="anonymous" />
-                <family value="Unknown" />
+                <use value="anonymous"></use>
+                <family value="Unknown"></family>
             </name>
         </Patient>
     </contained>
@@ -58,6 +58,12 @@
                 <value value="10071" />
             </identifier>
             <status value="unknown"/>
+            <class> 
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/> 
+                <!--   This doesn't match the MedicationRequest - done on purpose   -->
+                <code value="HH"/> 
+                <display value="home health"/> 
+            </class> 
             <location>
                 <location>
                     <display value="wordsworth" />
@@ -66,55 +72,59 @@
         </Encounter>
     </contained>
     <identifier>
-        <system value="urn:uuid"/>
-        <value value="9a9e4e11-5596-47bc-9376-21bf9d451905" />
+        <system value="urn:uuid"></system>
+        <value value="9a9e4e11-5596-47bc-9376-21bf9d451905"></value>
     </identifier>
-    <intent value="instance-order" />
+    <status value="active"/>
+    <intent value="instance-order"></intent>
     <category>
         <coding>
-            <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="inpatient" />
-            <display value="Inpatient" />
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+            <code value="inpatient"></code>
+            <display value="Inpatient"></display>
         </coding>
-        <text value="Inpatient" />
+        <text value="Inpatient"></text>
     </category>
     <medicationReference>
-        <reference value="#2" />
+        <reference value="#2"></reference>
     </medicationReference>
     <subject>
-        <reference value="#3" />
+        <reference value="#3"></reference>
     </subject>
-    <context>
+    <encounter>
         <reference value="#4" />
-    </context>
-    <authoredOn value="2020-07-09T12:02:49+02:00" />
+    </encounter>
+    <authoredOn value="2020-07-09T12:02:49+02:00"></authoredOn>
     <dosageInstruction>
         <additionalInstruction>
-            <text value="test c" />
+            <text value="test c"></text>
         </additionalInstruction>
         <timing>
             <repeat>
-                <frequency value="3" />
-                <period value="1" />
-                <periodUnit value="d" />
-                <timeOfDay value="08:00:00" />
-                <timeOfDay value="13:00:00" />
-                <timeOfDay value="20:00:00" />
+                <frequency value="3"></frequency>
+                <period value="1"></period>
+                <periodUnit value="d"></periodUnit>
+                <timeOfDay value="08:00:00"></timeOfDay>
+                <timeOfDay value="13:00:00"></timeOfDay>
+                <timeOfDay value="20:00:00"></timeOfDay>
             </repeat>
         </timing>
         <route>
             <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="26643006" />
-                <display value="Oral Use" />
+                <system value="http://snomed.info/sct"></system>
+                <code value="26643006"></code>
+                <display value="Oral Use"></display>
             </coding>
-            <text value="Oral" />
+            <text value="Oral"></text>
         </route>
-        <doseQuantity>
+      
+    </dosageInstruction>
+    <dispenseRequest>
+        <quantity>
             <value value="300.0" />
             <unit value="mg" />
             <system value="http://unitsofmeasure.org" />
             <code value="mg" />
-        </doseQuantity>
-    </dosageInstruction>
+        </quantity>
+    </dispenseRequest>
 </MedicationRequest>
