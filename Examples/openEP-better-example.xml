@@ -1,14 +1,10 @@
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <text>
         <status value="generated" />
-        <span xmlns="http://www.w3.org/1999/xhtml">Aspirin 300mg dispersible tablets </span>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+        <span >Aspirin 300mg dispersible tablets </span>
+    </div>
     </text>
-    <contained>
-        <Location xmlns="http://hl7.org/fhir">
-            <id value="1" />
-            <name value="Wordsworth" />
-        </Location>
-    </contained>
     <contained>
         <Medication xmlns="http://hl7.org/fhir">
             <id value="2" />
@@ -16,7 +12,7 @@
                 <coding>
                     <system value="http://snomed.info/sct" />
                     <code value="329526003" />
-                    <display value="Aspirin 300mg dispersible tablets" />
+                    <display value="Aspirin 300mg dispersible tablet" />
                 </coding>
                 <text value="Aspirin 300mg dispersible tablets" />
             </code>
@@ -34,7 +30,7 @@
         <Patient xmlns="http://hl7.org/fhir">
             <id value="3" />
             <identifier>
-                <system value="ehr://ThinkEhr/Domain" />
+                <system value="https://ThinkEhr/Domain" />
                 <value value="default" />
             </identifier>
             <identifier>
@@ -42,7 +38,7 @@
                 <value value="1007" />
             </identifier>
             <identifier>
-                <system value="MRN" />
+                <system value="https://fhir.hl7.org.uk/taunton/MRN" />
                 <value value="1007" />
             </identifier>
             <identifier>
@@ -61,9 +57,10 @@
             <identifier>
                 <value value="10071" />
             </identifier>
+            <status value="unknown"/>
             <location>
                 <location>
-                    <reference value="#1" />
+                    <display value="wordsworth" />
                 </location>
             </location>
         </Encounter>
@@ -75,7 +72,7 @@
     <category>
         <coding>
             <system value="http://hl7.org/fhir/medication-request-category" />
-            <code value="1" />
+            <code value="inpatient" />
             <display value="Inpatient" />
         </coding>
         <text value="Inpatient" />
@@ -108,7 +105,7 @@
             <coding>
                 <system value="http://snomed.info/sct" />
                 <code value="26643006" />
-                <display value="Oral" />
+                <display value="Oral Use" />
             </coding>
             <text value="Oral" />
         </route>
