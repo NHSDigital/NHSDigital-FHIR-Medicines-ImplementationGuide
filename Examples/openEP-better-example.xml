@@ -1,130 +1,186 @@
-<MedicationRequest xmlns="http://hl7.org/fhir">
-    <text>
-        <status value="generated"></status>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <span>Aspirin 300mg dispersible tablets </span>
-        </div>
-    </text>
-    <contained>
-        <Medication xmlns="http://hl7.org/fhir">
-            <id value="2"></id>
-            <code>
-                <coding>
-                    <system value="http://snomed.info/sct"></system>
-                    <code value="329526003"></code>
-                    <display value="Aspirin 300mg dispersible tablet"></display>
-                </coding>
-                <text value="Aspirin 300mg dispersible tablets"></text>
-            </code>
-            <form>
-                <coding>
-                    <system value="http://snomed.info/sct"></system>
-                    <code value="35366911000001101"></code>
-                    <display value="Dispersible tablet"></display>
-                </coding>
-                <text value="Dispersible tablet"></text>
-            </form>
-        </Medication>
-    </contained>
-    <contained>
-        <Patient xmlns="http://hl7.org/fhir">
-            <id value="3"></id>
-            <identifier>
-                <system value="https://ThinkEhr/Domain"></system>
-                <value value="default"></value>
-            </identifier>
-            <identifier>
-                <system value="https://fhir.hl7.org.uk/taunton/PAS"></system>
-                <value value="1007"></value>
-            </identifier>
-            <identifier>
-                <system value="https://fhir.hl7.org.uk/taunton/MRN"></system>
-                <value value="1007"></value>
-            </identifier>
-            <identifier>
-                <system value="https://fhir.nhs.uk/Id/nhs-number"></system>
-                <value value="1007"></value>
-            </identifier>
-            <name>
-                <use value="anonymous"></use>
-                <family value="Unknown"></family>
-            </name>
-        </Patient>
-    </contained>
-    <contained>
-        <Encounter xmlns="http://hl7.org/fhir">
-            <id value="4" />
-            <identifier>
-                <value value="10071" />
-            </identifier>
-            <status value="unknown"/>
-            <class> 
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/> 
-                <!--   This doesn't match the MedicationRequest - done on purpose   -->
-                <code value="HH"/> 
-                <display value="home health"/> 
-            </class> 
-            <location>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
+    <type value="message" />
+    <entry>
+        <fullUrl value="urn:oid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
+        <resource>
+          <MessageHeader>
+            <id value="ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
+            <eventCoding>
+              <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
+              <code value="prescription-order" />
+              <display value="Prescription Order" />
+            </eventCoding>
+            <sender>
+              <display value="Dr Smith" />
+            </sender>
+            <source>
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
+                <valueIdentifier>
+                  <system value="https://fhir.nhs.uk/Id/spine-ASID" />
+                  <value value="747225912019" />
+                </valueIdentifier>
+              </extension>
+              <name value="PAS" />
+              <endpoint value="https://fhir.hl7.org.uk/taunton/PAS" />
+            </source>
+            <focus>
+              <reference value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />
+            </focus>
+            <focus>
+                <reference value="urn:uuid:e0094014-9659-4705-a481-0412eefd9dbc" />
+              </focus>
+              <focus>
+                <reference value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff" />
+              </focus>
+              <focus>
+                <reference value="urn:uuid:46588c8c-c606-420b-b3cc-88fb74f5d41b" />
+              </focus>
+          </MessageHeader>
+        </resource>
+      </entry>
+    <entry>
+        <fullUrl value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />
+        <resource>
+            <MedicationRequest xmlns="http://hl7.org/fhir">
+                <text>
+                    <status value="generated"></status>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <span>Aspirin 300mg dispersible tablets </span>
+                    </div>
+                </text>
+                <identifier>
+                    <system value="urn:uuid"></system>
+                    <value value="9a9e4e11-5596-47bc-9376-21bf9d451905"></value>
+                </identifier>
+                <status value="active" />
+                <intent value="instance-order"></intent>
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+                        <code value="inpatient"></code>
+                        <display value="Inpatient"></display>
+                    </coding>
+                    <text value="Inpatient"></text>
+                </category>
+                <medicationReference>
+                    <reference value="urn:uuid:e0094014-9659-4705-a481-0412eefd9dbc"></reference>
+                </medicationReference>
+                <subject>
+                    <reference value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff"></reference>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:46588c8c-c606-420b-b3cc-88fb74f5d41b" />
+                </encounter>
+                <authoredOn value="2020-07-09T12:02:49+02:00"></authoredOn>
+                <dosageInstruction>
+                    <additionalInstruction>
+                        <text value="test c"></text>
+                    </additionalInstruction>
+                    <timing>
+                        <repeat>
+                            <frequency value="3"></frequency>
+                            <period value="1"></period>
+                            <periodUnit value="d"></periodUnit>
+                            <timeOfDay value="08:00:00"></timeOfDay>
+                            <timeOfDay value="13:00:00"></timeOfDay>
+                            <timeOfDay value="20:00:00"></timeOfDay>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="http://snomed.info/sct"></system>
+                            <code value="26643006"></code>
+                            <display value="Oral Use"></display>
+                        </coding>
+                        <text value="Oral"></text>
+                    </route>
+
+                </dosageInstruction>
+                <dispenseRequest>
+                    <quantity>
+                        <value value="300.0" />
+                        <unit value="mg" />
+                        <system value="http://unitsofmeasure.org" />
+                        <code value="mg" />
+                    </quantity>
+                </dispenseRequest>
+            </MedicationRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:e0094014-9659-4705-a481-0412eefd9dbc" />
+        <resource>
+            <Medication xmlns="http://hl7.org/fhir">
+                <id value="e0094014-9659-4705-a481-0412eefd9dbc"></id>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"></system>
+                        <code value="329526003"></code>
+                        <display value="Aspirin 300mg dispersible tablet"></display>
+                    </coding>
+                    <text value="Aspirin 300mg dispersible tablets"></text>
+                </code>
+                <form>
+                    <coding>
+                        <system value="http://snomed.info/sct"></system>
+                        <code value="35366911000001101"></code>
+                        <display value="Dispersible tablet"></display>
+                    </coding>
+                    <text value="Dispersible tablet"></text>
+                </form>
+            </Medication>      
+        </resource>
+      </entry>
+      <entry>
+        <fullUrl value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff" />
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <id value="c99b7aff-58fc-4e42-b8d4-80ac573e8bff"></id>
+                <identifier>
+                    <system value="https://ThinkEhr/Domain"></system>
+                    <value value="default"></value>
+                </identifier>
+                <identifier>
+                    <system value="https://fhir.hl7.org.uk/taunton/PAS"></system>
+                    <value value="1007"></value>
+                </identifier>
+                <identifier>
+                    <system value="https://fhir.hl7.org.uk/taunton/MRN"></system>
+                    <value value="1007"></value>
+                </identifier>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/nhs-number"></system>
+                    <value value="1007"></value>
+                </identifier>
+                <name>
+                    <use value="anonymous"></use>
+                    <family value="Unknown"></family>
+                </name>
+            </Patient>
+        </resource>
+      </entry>
+      <entry>
+        <fullUrl value="urn:uuid:46588c8c-c606-420b-b3cc-88fb74f5d41b" />
+        <resource>
+            <Encounter xmlns="http://hl7.org/fhir">
+                <id value="46588c8c-c606-420b-b3cc-88fb74f5d41b" />
+                <identifier>
+                    <value value="10071" />
+                </identifier>
+                <status value="unknown" />
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+                    <!--   This doesn't match the MedicationRequest - done on purpose   -->
+                    <code value="HH" />
+                    <display value="home health" />
+                </class>
                 <location>
-                    <display value="wordsworth" />
+                    <location>
+                        <display value="wordsworth" />
+                    </location>
                 </location>
-            </location>
-        </Encounter>
-    </contained>
-    <identifier>
-        <system value="urn:uuid"></system>
-        <value value="9a9e4e11-5596-47bc-9376-21bf9d451905"></value>
-    </identifier>
-    <status value="active"/>
-    <intent value="instance-order"></intent>
-    <category>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
-            <code value="inpatient"></code>
-            <display value="Inpatient"></display>
-        </coding>
-        <text value="Inpatient"></text>
-    </category>
-    <medicationReference>
-        <reference value="#2"></reference>
-    </medicationReference>
-    <subject>
-        <reference value="#3"></reference>
-    </subject>
-    <encounter>
-        <reference value="#4" />
-    </encounter>
-    <authoredOn value="2020-07-09T12:02:49+02:00"></authoredOn>
-    <dosageInstruction>
-        <additionalInstruction>
-            <text value="test c"></text>
-        </additionalInstruction>
-        <timing>
-            <repeat>
-                <frequency value="3"></frequency>
-                <period value="1"></period>
-                <periodUnit value="d"></periodUnit>
-                <timeOfDay value="08:00:00"></timeOfDay>
-                <timeOfDay value="13:00:00"></timeOfDay>
-                <timeOfDay value="20:00:00"></timeOfDay>
-            </repeat>
-        </timing>
-        <route>
-            <coding>
-                <system value="http://snomed.info/sct"></system>
-                <code value="26643006"></code>
-                <display value="Oral Use"></display>
-            </coding>
-            <text value="Oral"></text>
-        </route>
-      
-    </dosageInstruction>
-    <dispenseRequest>
-        <quantity>
-            <value value="300.0" />
-            <unit value="mg" />
-            <system value="http://unitsofmeasure.org" />
-            <code value="mg" />
-        </quantity>
-    </dispenseRequest>
-</MedicationRequest>
+            </Encounter>
+        </resource>
+      </entry>
+</Bundle>
