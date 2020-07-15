@@ -34,6 +34,10 @@ rem PASS - [MedicationRequest] repeat Dispensing
 
 java -jar org.hl7.fhir.validator.jar MedicationRequest-repeatDispensing-pass.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.15-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest
 
+rem [MedicationRequest] Better
+
+java -jar org.hl7.fhir.validator.jar MedicationRequest-better.xml -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.15-dev.tgz -ig C:\Development\NHSD\eps\StructureDefinition\ -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest
+
 
 rem PASS - [PractitionerRole] 
 
