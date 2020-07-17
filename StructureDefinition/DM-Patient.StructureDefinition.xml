@@ -80,9 +80,14 @@
       <path value="Patient.address" />
       <min value="1" />
     </element>
+    <element id="Patient.generalPractitioner">
+      <path value="Patient.generalPractitioner" />
+      <definition value="Patient's nominated care provider. Should include registered Practice if not present in managingOrganization. May also include Branch Surgery and General Practitioner." />
+    </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
-      <min value="1" />
+      <short value="Organization that is the custodian of the patient primary care record" />
+      <definition value="Organization that is the custodian of the patient primary care record." />
     </element>
     <element id="Patient.managingOrganization.identifier">
       <path value="Patient.managingOrganization.identifier" />
