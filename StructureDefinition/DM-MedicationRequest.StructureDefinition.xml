@@ -260,9 +260,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.dispenseRequest.extension:performerType">
+    <element id="MedicationRequest.dispenseRequest.extension:performerSiteType">
       <path value="MedicationRequest.dispenseRequest.extension" />
-      <sliceName value="performerType" />
+      <sliceName value="performerSiteType" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType" />
