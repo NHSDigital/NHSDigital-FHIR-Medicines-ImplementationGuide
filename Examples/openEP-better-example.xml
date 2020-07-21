@@ -92,7 +92,7 @@
                     <!-- ParentPrescription.id uuid -->
                     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
                         <valueIdentifier>
-                            <system value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
+                            <system value="https://fhir.nhs.uk/Id/prescription" />
                             <value value="c26f0fe5-c084-4320-9c39-3ccdbc0b2e6a" />
                         </valueIdentifier>
                     </extension>

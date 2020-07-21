@@ -117,7 +117,7 @@
               <!-- ParentPrescription.id uuid -->
               <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
                 <valueIdentifier>
-                  <system value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
+                  <system value="https://fhir.nhs.uk/Id/prescription" />
                   <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
                 </valueIdentifier>
               </extension>
@@ -235,7 +235,7 @@
               <!-- ParentPrescription.id uuid -->
               <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
                 <valueIdentifier>
-                  <system value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
+                  <system value="https://fhir.nhs.uk/Id/prescription" />
                   <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
                 </valueIdentifier>
               </extension>

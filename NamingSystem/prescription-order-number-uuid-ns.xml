@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/Id/prescription-order-uuid-number"/>
+        <value value="https://fhir.nhs.uk/Id/prescription"/>
         <preferred value="true"/>
     </uniqueId>
 </NamingSystem>

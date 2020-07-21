@@ -49,7 +49,7 @@
         <!-- Note: no GUID for for parent presecription id -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
             <valueIdentifier>
-                <system value="https://fhir.nhs.uk/Id/prescription-order-uuid-number" />
+                <system value="https://fhir.nhs.uk/Id/prescription" />
                 <value value="a609e5c9-82a6-4a67-83ec-c96323bd17d7" />
             </valueIdentifier>
         </extension>
