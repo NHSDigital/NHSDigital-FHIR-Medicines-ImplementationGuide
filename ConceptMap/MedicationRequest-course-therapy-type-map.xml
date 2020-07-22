@@ -1,0 +1,56 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="prescription-therapy-type-map"/>
+    <url value="https://fhir.nhs.uk/R4/ConceptMap/MedicationRequest-course-therapy-type-map"/>
+    <version value="4.0.1"/>
+    <name value="MedicationRequest Course Prescription Therapy Type Map"/>
+    <title value="MedicationRequest Course Prescription Therapy Type Map"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-07-22"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="FHIR project team (example)"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://nhs.uk"/>
+        </telecom>
+    </contact>
+    <description value="Prescription Therapy Type Mapping"/>
+    <purpose value="Medicine Management"/>
+    <sourceUri value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type"/>
+    <group>
+        <source value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+        <target value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
+        <element>
+            <code value="acute"/>
+            <display value="Acute"/>
+            <target>
+                <code value="0001"/>
+                <display value="Acute"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+         <element>
+            <code value="continuous"/>
+            <display value="Continuous long term therapy"/>
+            <target>
+                <code value="0002"/>
+                <display value="Repeat Prescribing"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy"/>
+        <target value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
+         <element>
+            <code value="continuous-repeat-dispensing"/>
+            <display value="Continuous long term (repeat dispensing)"/>
+            <target>
+                <code value="0003"/>
+                <display value="Repeat Dispensing"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>
