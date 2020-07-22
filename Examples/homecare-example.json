@@ -1,8 +1,8 @@
 {
   "resourceType": "Bundle",
-  "id": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105",
+  "id": "homecare",
   "identifier": {
-    "system": "urn:uuid:",
+    "system": "https://tools.ietf.org/html/rfc4122",
     "value": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105"
   },
   "type": "message",

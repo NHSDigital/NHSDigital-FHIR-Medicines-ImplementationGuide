@@ -1,5 +1,10 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
+    <id value="openep-better" />
+    <identifier>
+        <!--  pertinentInformation2[0].pertinentLineItem.id -->
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
+      </identifier>
     <type value="message" />
     <entry>
         <fullUrl value="urn:oid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />

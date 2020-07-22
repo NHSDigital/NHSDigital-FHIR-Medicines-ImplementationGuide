@@ -1,9 +1,8 @@
 {
-  "_fhirComments": "Outpatient acute single item prescription for 2 weeks supply (GP instructed to prescibe on-going within discharge letter, not in this Bundle) \n// not yet verified as schema-valid, the use of \"note\" may be syntactically incorrect ",
   "resourceType": "Bundle",
-  "id": "36f17614-f054-4f2b-b63b-606b7caf3d40",
+  "id": "outpatient-1",
   "identifier": {
-    "system": "urn:uuid:",
+    "system": "https://tools.ietf.org/html/rfc4122",
     "value": "36f17614-f054-4f2b-b63b-606b7caf3d40"
   },
   "type": "message",
