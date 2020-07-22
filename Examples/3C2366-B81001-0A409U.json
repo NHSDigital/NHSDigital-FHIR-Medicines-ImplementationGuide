@@ -1,8 +1,8 @@
 {
     "resourceType": "Bundle",
-    "id": "435c006d-e311-4c4e-8728-7026ed46dca4",
+    "id": "eps-test-system",
     "identifier": {
-        "system": "urn:uuid:",
+        "system": "https://tools.ietf.org/html/rfc4122",
         "value": "435c006d-e311-4c4e-8728-7026ed46dca4"
     },
     "type": "message",
