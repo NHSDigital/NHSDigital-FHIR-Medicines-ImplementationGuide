@@ -1,5 +1,4 @@
 {
-  "_fhirComments": "Outpatient repeat disensing single item prescription for 4 x weekly issues",
   "resourceType": "Bundle",
   "id": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105",
   "identifier": {
