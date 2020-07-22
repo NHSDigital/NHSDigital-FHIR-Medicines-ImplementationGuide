@@ -1,7 +1,11 @@
 {
-  "_comments": "Outpatient acute single item prescription for a complete course of medication",
+  "_fhirComments": "Outpatient acute single item prescription for a complete course of medication",
   "resourceType": "Bundle",
   "id": "187ec06a-2823-4ea7-9512-5899af157480",
+  "identifier": {
+    "system": "urn:uuid:",
+    "value": "187ec06a-2823-4ea7-9512-5899af157480"
+  },
   "type": "message",
   "entry": [
     {

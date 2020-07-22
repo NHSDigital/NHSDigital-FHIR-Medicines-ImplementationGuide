@@ -1,5 +1,10 @@
     <Bundle xmlns="http://hl7.org/fhir">
       <id value="f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
+      <identifier>
+        <!--  pertinentInformation2[0].pertinentLineItem.id -->
+        <system value="urn:uuid:" />
+        <value value="f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
+      </identifier>
       <type value="message" />
       <entry>
         <fullUrl value="urn:oid:48B07891-1D81-7B99-3BD2-23E242D2DD44" />
