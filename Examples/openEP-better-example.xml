@@ -53,12 +53,6 @@
         <fullUrl value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />
         <resource>
             <MedicationRequest xmlns="http://hl7.org/fhir">
-                <text>
-                    <status value="generated"></status>
-                    <div xmlns="http://www.w3.org/1999/xhtml">
-                        <span>Aspirin 300mg dispersible tablets </span>
-                    </div>
-                </text>
                 <identifier>
                     <system value="urn:uuid"></system>
                     <value value="9a9e4e11-5596-47bc-9376-21bf9d451905"></value>

@@ -1,5 +1,6 @@
-// Outpatient acute four item prescription, including one Schedule 2 controlled drug
+
 {
+  "_comments" : "Outpatient acute four item prescription, including one Schedule 2 controlled drug",
   "resourceType": "Bundle",
   "id": "435c006d-e311-4c4e-8728-7026ed46dca4",
   "type": "message",
@@ -117,7 +118,7 @@
             "value": "3415870201"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/gmc-code",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "123456"
           }
         ],
@@ -150,8 +151,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "PR",
-                "display": "Prescribing Cost Centre"
+                "code": "008",
+                "display": "Acute Trust"
               }
             ]
           }
@@ -234,7 +235,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           }
         ],
@@ -349,7 +350,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           },
           {
@@ -460,7 +461,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           },
           {
@@ -581,7 +582,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           },
           {

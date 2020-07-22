@@ -1,5 +1,6 @@
-// Outpatient repeat disensing single item prescription for 4 x weekly issues
+
 {
+  "_fhirComments" : "Outpatient repeat disensing single item prescription for 4 x weekly issues",
   "resourceType": "Bundle",
   "id": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105",
   "type": "message",
@@ -108,7 +109,7 @@
             "value": "3415870201"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/gmc-code",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "123456"
           }
         ],
@@ -141,8 +142,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "PR",
-                "display": "Prescribing Cost Centre"
+                "code": "008",
+                "display": "Acute Trust"
               }
             ]
           }
@@ -225,7 +226,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0901"
+              "code": "0104"
             }
           }
         ],

@@ -1,6 +1,6 @@
-// Outpatient acute single item prescription for 2 weeks supply (GP instructed to prescibe on-going within discharge letter, not in this Bundle) 
-// not yet verified as schema-valid, the use of "note" may be syntactically incorrect 
+
 {
+  "_comments" : "// Outpatient acute single item prescription for 2 weeks supply (GP instructed to prescibe on-going within discharge letter, not in this Bundle) \n// not yet verified as schema-valid, the use of \"note\" may be syntactically incorrect ",
   "resourceType": "Bundle",
   "id": "36f17614-f054-4f2b-b63b-606b7caf3d40",
   "type": "message",
@@ -109,7 +109,7 @@
             "value": "3415870201"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/gmc-code",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "123456"
           }
         ],
@@ -142,8 +142,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "PR",
-                "display": "Prescribing Cost Centre"
+                "code": "008",
+                "display": "Acute Trust"
               }
             ]
           }
@@ -226,7 +226,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           }
         ],

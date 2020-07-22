@@ -1,5 +1,5 @@
-// Outpatient acute single item prescription for a complete course of medication 
 {
+  "_comments": "Outpatient acute single item prescription for a complete course of medication",
   "resourceType": "Bundle",
   "id": "187ec06a-2823-4ea7-9512-5899af157480",
   "type": "message",
@@ -108,7 +108,7 @@
             "value": "3415870201"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/gmc-code",
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "123456"
           }
         ],
@@ -141,8 +141,8 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "PR",
-                "display": "Prescribing Cost Centre"
+                "code": "008",
+                "display": "Acute Trust"
               }
             ]
           }
@@ -225,7 +225,7 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "0401"
+              "code": "0104"
             }
           }
         ],
