@@ -129,7 +129,7 @@
             Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
             <courseOfTherapyType>
               <coding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
                 <code value="acute" />
                 <display value="Acute" />
               </coding>
@@ -247,7 +247,7 @@
             Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
             <courseOfTherapyType>
               <coding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
                 <code value="acute" />
                 <display value="Acute" />
               </coding>

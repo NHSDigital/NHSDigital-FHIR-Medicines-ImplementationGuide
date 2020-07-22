@@ -15,7 +15,7 @@
             <value value="http://nhs.uk"/>
         </telecom>
     </contact>
-    <description value="Prescription Therapy Type Mapping"/>
+    <description value="Prescription Course of Therapy Mapping (UKCore to V3)"/>
     <purpose value="Medicine Management"/>
     <sourceUri value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type"/>
     <group>
