@@ -11,7 +11,6 @@
       "fullUrl": "urn:uuid:8650010b-9162-49e8-9885-2afbca8f8408",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "8650010b-9162-49e8-9885-2afbca8f8408",
         "eventCoding": {
           "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
           "code": "prescription-order",
@@ -51,7 +50,6 @@
       "fullUrl": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
       "resource": {
         "resourceType": "Patient",
-        "id": "78d3c2eb-009e-4ec8-a358-b042954aa9b2",
         "identifier": [
           {
             "extension": [
@@ -104,7 +102,6 @@
       "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "a8c85454-f8cb-498d-9629-78e2cb5fa47a",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-user-id",
@@ -132,7 +129,6 @@
       "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
       "resource": {
         "resourceType": "Organization",
-        "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -151,6 +147,13 @@
           }
         ],
         "name": "MUSGROVE PARK HOSPITAL OUTPATIENS DEPARTMENT",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823333444",
+            "use": "work"
+          }
+        ],
         "address": [
           {
             "line": [
@@ -159,13 +162,6 @@
               "TAUNTON"
             ],
             "postalCode": "TA1 5DA"
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "01823333444",
-            "use": "work"
           }
         ],
         "partOf": {
@@ -181,7 +177,6 @@
       "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "56166769-c1c4-4d07-afa8-132b5dfca666",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
@@ -222,7 +217,6 @@
       "fullUrl": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
@@ -289,6 +283,11 @@
             }
           ]
         },
+        "note": [
+          {
+            "text": "GP instructed to prescribe on-going"
+          }
+        ],
         "dosageInstruction": [
           {
             "text": "1 tablet, daily",
@@ -310,11 +309,6 @@
             ]
           }
         ],
-        "note": {
-          "text": {
-            "value": "GP instructed to prescribe on-going"
-          }
-        },
         "dispenseRequest": {
           "extension": [
             {
@@ -325,17 +319,17 @@
               }
             }
           ],
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "FX748"
-            }
-          },
           "quantity": {
             "value": 14,
             "unit": "tablet",
             "system": "http://snomed.info/sct",
             "code": "428673006"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
           }
         },
         "substitution": {
