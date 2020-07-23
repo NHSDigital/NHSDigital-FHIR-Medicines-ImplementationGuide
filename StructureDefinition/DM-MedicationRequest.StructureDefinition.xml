@@ -35,10 +35,6 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationRequest.id">
-      <path value="MedicationRequest.id" />
-      <comment value="ITK Mapping = pertinentInformation2[0].pertinentLineItem.id" />
-    </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
       <slicing>
