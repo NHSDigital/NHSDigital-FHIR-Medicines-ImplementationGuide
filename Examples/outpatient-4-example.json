@@ -1,4 +1,3 @@
-
 {
   "resourceType": "Bundle",
   "id": "outpatient-4",
@@ -12,7 +11,6 @@
       "fullUrl": "urn:uuid:3599c0e9-9292-413e-9270-9a1ef1ead99c",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "3599c0e9-9292-413e-9270-9a1ef1ead99c",
         "eventCoding": {
           "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
           "code": "prescription-order",
@@ -61,7 +59,6 @@
       "fullUrl": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23",
       "resource": {
         "resourceType": "Patient",
-        "id": "848d8470-bd51-494e-9347-8142ea75cb23",
         "identifier": [
           {
             "extension": [
@@ -114,7 +111,6 @@
       "fullUrl": "urn:uuid:30b05f09-5dc9-4e8c-8d21-5287e8761fc0",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "30b05f09-5dc9-4e8c-8d21-5287e8761fc0",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-user-id",
@@ -142,7 +138,6 @@
       "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
       "resource": {
         "resourceType": "Organization",
-        "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -161,6 +156,13 @@
           }
         ],
         "name": "MUSGROVE PARK HOSPITAL OUTPATIENS DEPARTMENT",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823333444",
+            "use": "work"
+          }
+        ],
         "address": [
           {
             "line": [
@@ -169,13 +171,6 @@
               "TAUNTON"
             ],
             "postalCode": "TA1 5DA"
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "01823333444",
-            "use": "work"
           }
         ],
         "partOf": {
@@ -191,7 +186,6 @@
       "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "56166769-c1c4-4d07-afa8-132b5dfca645",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
@@ -232,7 +226,6 @@
       "fullUrl": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F1",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "A7B86F8D-1D6D-FC28-E050-D20AE3A215F1",
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
@@ -304,15 +297,21 @@
             "text": "1 tablet, at NIGHT",
             "timing": {
               "repeat": {
-                "when": "NIGHT"
+                "when": [
+                  "NIGHT"
+                ]
               }
             },
-            "doseQuantity": {
-              "value": 1,
-              "unit": "tablet",
-              "system": "http://snomed.info/sct",
-              "code": "428673006"
-            }
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://snomed.info/sct",
+                  "code": "428673006"
+                }
+              }
+            ]
           }
         ],
         "dispenseRequest": {
@@ -325,17 +324,17 @@
               }
             }
           ],
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "FX748"
-            }
-          },
           "quantity": {
             "value": 28,
             "unit": "tablet",
             "system": "http://snomed.info/sct",
             "code": "428673006"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
           }
         },
         "substitution": {
@@ -347,7 +346,6 @@
       "fullUrl": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F2",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "A7B86F8D-1D72-FC28-E050-D20AE3A215F2",
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
@@ -436,17 +434,17 @@
               }
             }
           ],
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "FX748"
-            }
-          },
           "quantity": {
             "value": 100,
             "unit": "tablet",
             "system": "http://snomed.info/sct",
             "code": "428673006"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
           }
         },
         "substitution": {
@@ -458,7 +456,6 @@
       "fullUrl": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F3",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "A7B86F8D-1D77-FC28-E050-D20AE3A215F3",
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
@@ -536,15 +533,21 @@
             "text": "1 tablet, at NIGHT",
             "timing": {
               "repeat": {
-                "when": "NIGHT"
+                "when": [
+                  "NIGHT"
+                ]
               }
             },
-            "doseQuantity": {
-              "value": 1,
-              "unit": "tablet",
-              "system": "http://snomed.info/sct",
-              "code": "428673006"
-            }
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://snomed.info/sct",
+                  "code": "428673006"
+                }
+              }
+            ]
           }
         ],
         "dispenseRequest": {
@@ -557,17 +560,17 @@
               }
             }
           ],
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "FX748"
-            }
-          },
           "quantity": {
             "value": 14,
             "unit": "tablet",
             "system": "http://snomed.info/sct",
             "code": "428673006"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
           }
         },
         "substitution": {
@@ -579,7 +582,6 @@
       "fullUrl": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
       "resource": {
         "resourceType": "MedicationRequest",
-        "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
@@ -670,12 +672,16 @@
                 "periodUnit": "d"
               }
             },
-            "doseQuantity": {
-              "value": 1,
-              "unit": "tablet",
-              "system": "http://snomed.info/sct",
-              "code": "428673006"
-            }
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://snomed.info/sct",
+                  "code": "428673006"
+                }
+              }
+            ]
           }
         ],
         "dispenseRequest": {
@@ -692,17 +698,17 @@
               "valueString": "twenty eight"
             }
           ],
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "FX748"
-            }
-          },
           "quantity": {
             "value": 28,
             "unit": "tablet",
             "system": "http://snomed.info/sct",
             "code": "428673006"
+          },
+          "performer": {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "FX748"
+            }
           }
         },
         "substitution": {

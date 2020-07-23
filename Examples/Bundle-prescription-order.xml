@@ -344,8 +344,8 @@
                 <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
                 <value value="Y12345" />
                 <period>
-                  <start value="2020-01-01" />
-                  <end value="2021-12-31" />
+                  <start value="2020-01-01T00:00:00+00:00" />
+                  <end value="2021-12-31T00:00:00+00:00" />
                 </period>
               </identifier>
             </managingOrganization>

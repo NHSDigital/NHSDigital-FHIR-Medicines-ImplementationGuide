@@ -298,12 +298,16 @@
                 "periodUnit": "d"
               }
             },
-            "doseQuantity": {
-              "value": 1,
-              "unit": "tablet",
-              "system": "http://snomed.info/sct",
-              "code": "428673006"
-            }
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 1,
+                  "unit": "tablet",
+                  "system": "http://snomed.info/sct",
+                  "code": "428673006"
+                }
+              }
+            ]
           }
         ],
         "note": {

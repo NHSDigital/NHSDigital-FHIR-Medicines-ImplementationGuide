@@ -323,12 +323,13 @@
                 }
               ]
             },
+            "doseAndRate": [ {
             "doseQuantity": {
               "value": 10,
               "unit": "milligram",
               "system": "http://unitsofmeasure.org",
               "code": "mg"
-            }
+            } } ]
           }
         ],
         "dispenseRequest": {
