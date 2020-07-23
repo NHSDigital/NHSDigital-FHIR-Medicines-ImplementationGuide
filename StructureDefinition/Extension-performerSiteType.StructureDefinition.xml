@@ -31,13 +31,14 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <short value="Dispensing Site Prefererence" />
       <type>
         <code value="Coding" />
       </type>
-    </element>
-    <element id="Extension.value[x].system">
-      <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-performer-site-type" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

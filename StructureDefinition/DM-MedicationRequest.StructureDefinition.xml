@@ -152,7 +152,7 @@
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
-      <comment value="Any code from the SnomedCT UK subset that describes a manufactured material (e.g. a pharmaceutical product or personal medical device).  These wil form part of the NHS DM&amp;D Dictionary.&#xD;&#xA;&#xD;&#xA;ITK HL7v3 Mapping = ParentPrescription.pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial" />
+      <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts" />
       <type>
         <code value="CodeableConcept" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationCodeableConcept" />
@@ -243,10 +243,6 @@
       <path value="MedicationRequest.dosageInstruction.text" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
     </element>
-    <element id="MedicationRequest.dispenseRequest">
-      <path value="MedicationRequest.dispenseRequest" />
-      <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.component.lineItemQuantity" />
-    </element>
     <element id="MedicationRequest.dispenseRequest.extension">
       <path value="MedicationRequest.dispenseRequest.extension" />
       <slicing>
@@ -299,14 +295,6 @@
       <type>
         <code value="boolean" />
       </type>
-    </element>
-    <element id="MedicationRequest.priorPrescription.reference">
-      <path value="MedicationRequest.priorPrescription.reference" />
-      <max value="0" />
-    </element>
-    <element id="MedicationRequest.priorPrescription.identifier">
-      <path value="MedicationRequest.priorPrescription.identifier" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
