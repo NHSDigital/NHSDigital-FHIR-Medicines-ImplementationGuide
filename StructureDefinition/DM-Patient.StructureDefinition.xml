@@ -62,6 +62,7 @@
     <element id="Patient.identifier:nhsNumber">
       <path value="Patient.identifier" />
       <sliceName value="nhsNumber" />
+      <comment value="NHS Number must have been traced via PDS, DBS or SMSP (PDS)" />
       <min value="1" />
     </element>
     <element id="Patient.name">

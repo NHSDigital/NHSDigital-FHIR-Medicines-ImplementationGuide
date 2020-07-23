@@ -49,7 +49,7 @@
       <path value="MedicationRequest.extension" />
       <sliceName value="epsPrescriptionType" />
       <short value="ITK Prescription Type" />
-      <comment value="Type of prescription, possibly can be moved to category." />
+      <comment value="Care Setting and type of prescriber.." />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType" />
@@ -95,6 +95,8 @@
     <element id="MedicationRequest.identifier:prescriptionOrderItem">
       <path value="MedicationRequest.identifier" />
       <sliceName value="prescriptionOrderItem" />
+      <short value="Prescription Order Item" />
+      <definition value="Unique Id of the MedicationRequest within EPS" />
     </element>
     <element id="MedicationRequest.identifier:prescriptionOrderItem.system">
       <path value="MedicationRequest.identifier.system" />
