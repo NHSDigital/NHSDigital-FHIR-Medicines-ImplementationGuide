@@ -228,7 +228,7 @@
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
-      <comment value="The type of prescription e.g. acute, repeat, repeat-dispensing. Note, EPS uses a subset of the PrescriptionType subset and excludes non ETP items (e.g. handwritten).&#xD;&#xA;ITK Mapping = pertinentInformation5.pertinentPrescriptionTreatmentType. Was extension in STU3" />
+      <comment value="The type of prescription e.g. acute, continuous, etc. Was extension in STU3 https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1 and Digital Medicine uses international codes, so continuous in place of repeat." />
       <min value="1" />
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
