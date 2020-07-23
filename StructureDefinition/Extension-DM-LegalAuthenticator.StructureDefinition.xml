@@ -19,6 +19,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="person who countersigns prescription" />
+      <definition value="A participation used to provide a link to the person (another prescriber) who countersigns the prescription, where legally necessary, before it becomes dispensable. This is a requirement in law and the instances of it are likely to increase." />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-LegalAuthenticator" />

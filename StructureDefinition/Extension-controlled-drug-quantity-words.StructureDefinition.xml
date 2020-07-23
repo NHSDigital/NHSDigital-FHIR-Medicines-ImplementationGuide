@@ -19,6 +19,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Quantity in words" />
+      <definition value="Legal requirement for scheduled drugs" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words" />

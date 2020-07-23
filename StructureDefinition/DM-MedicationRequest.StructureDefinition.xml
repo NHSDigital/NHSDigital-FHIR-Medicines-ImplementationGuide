@@ -172,9 +172,12 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
       </type>
     </element>
+    <element id="MedicationRequest.subject.reference">
+      <path value="MedicationRequest.subject.reference" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
-      <comment value="ITK Mapping = ParentPrescription.effectiveTime" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.requester">
@@ -185,9 +188,9 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
       </type>
     </element>
-    <element id="MedicationRequest.requester.identifier">
-      <path value="MedicationRequest.requester.identifier" />
-      <comment value="Should consider making identifier (GMP, GMC,etc) Code mandatory." />
+    <element id="MedicationRequest.requester.reference">
+      <path value="MedicationRequest.requester.reference" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.requester.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -196,13 +199,10 @@
       <path value="MedicationRequest.requester.display" />
       <comment value="The name of the of the issuer must be included in the MedicationRequest (this is for legal reasons)" />
     </element>
-    <element id="MedicationRequest.performerType">
-      <path value="MedicationRequest.performerType" />
-      <comment value="If specified without indicating a performer, this indicates that the performer must be of the specified type. If specified with a performer then it indicates the requirements of the performer if the designated performer is not available.&#xD;&#xA;&#xD;&#xA;EPS - This has several similarities to the dispensing-site-preference codeSystem. Should this be moved here from an extension and also switched to SNOMED." />
-    </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
-      <short value="Composite request this is part of." />
+      <short value="order number for grouped MedicationRequests" />
+      <definition value="The short form prescription identifier" />
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
     </element>
@@ -219,6 +219,7 @@
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID">
       <path value="MedicationRequest.groupIdentifier.extension" />
       <sliceName value="PrescriptionOrderUUID" />
+      <short value="UUID order number for grouped MedciationRequests" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
@@ -263,9 +264,11 @@
     <element id="MedicationRequest.dispenseRequest.extension:performerSiteType">
       <path value="MedicationRequest.dispenseRequest.extension" />
       <sliceName value="performerSiteType" />
+      <short value="type of dispensing organisation" />
+      <definition value="Used to indicate type of pharmacist" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.extension:controlledDrugWords">
@@ -279,7 +282,7 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
-      <definition value="Indicates the intended dispensing Pharmacy specified by the patient." />
+      <definition value="Indicates the intended dispensing Pharmacy specified by the patient. Can be sourced from nominatedPharmacy in the Patient Demographics Service (PDS)" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">
       <path value="MedicationRequest.dispenseRequest.performer.identifier" />
@@ -291,6 +294,7 @@
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
+      <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done. In most cases this should default to false." />
       <comment value="Substituition is a mandatory requirement for EPS." />
       <min value="1" />
     </element>
