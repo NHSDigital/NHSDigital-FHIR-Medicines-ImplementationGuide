@@ -29,4 +29,10 @@
         </identifier>
         <display value="SOMERSET NHS FOUNDATION TRUST COST CENTRE RH50005" />
     </account>
+    <location>
+     <!-- PV1-3	Assigned Patient Location -->
+        <location>
+            <display value="wordsworth" />
+        </location>
+    </location>
 </Encounter>

@@ -4,7 +4,7 @@
         <!--  pertinentInformation2[0].pertinentLineItem.id -->
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
-      </identifier>
+    </identifier>
     <type value="message" />
     <entry>
         <fullUrl value="urn:oid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
@@ -110,7 +110,7 @@
                     <additionalInstruction>
                         <text value="test c"></text>
                     </additionalInstruction>
-                  <!-- need to investigate   <timing>
+                    <!-- need to investigate   <timing>
                         <repeat>
                             <frequency value="3"></frequency>
                             <period value="1"></period>
@@ -119,7 +119,7 @@
                             <timeOfDay value="13:00:00"></timeOfDay>
                             <timeOfDay value="20:00:00"></timeOfDay>
                         </repeat>
-                    </timing> --> 
+                    </timing> -->
                     <route>
                         <coding>
                             <system value="http://snomed.info/sct"></system>
@@ -228,18 +228,34 @@
             <Encounter xmlns="http://hl7.org/fhir">
                 <id value="46588c8c-c606-420b-b3cc-88fb74f5d41b" />
                 <identifier>
+                    <!-- PV1-19 Visit Number -->
+                    <system value="https://fhir.taunton.nhs.uk/Id/Encounter"/>
                     <value value="10071" />
                 </identifier>
-                <status value="unknown" />
+                <status value="finished" />
                 <class>
+                    <!-- PV1-2 Patient Class -->
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-                    <!--   This doesn't match the MedicationRequest - done on purpose   -->
                     <code value="HH" />
                     <display value="home health" />
                 </class>
-                 <subject>
+                <subject>
                     <reference value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff"></reference>
                 </subject>
+                <episodeOfCare>
+                    <identifier>
+                        <!-- PV1-50 Alternate Visit ID or PV1-54 -->
+                        <system value="https://fhir.taunton.nhs.uk/Id/Spell" />
+                        <value value="43567" />
+                    </identifier>
+                </episodeOfCare>
+                <account>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                        <value value="RH50005" />
+                    </identifier>
+                    <display value="SOMERSET NHS FOUNDATION TRUST COST CENTRE RH50005" />
+                </account>
                 <location>
                     <location>
                         <display value="wordsworth" />
