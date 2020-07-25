@@ -178,11 +178,11 @@
                     <value value="default"></value>
                 </identifier>
                 <identifier>
-                    <system value="https://fhir.hl7.org.uk/taunton/PAS"></system>
+                    <system value="https://fhir.taunton.nhs.uk/Id//PAS"></system>
                     <value value="1007"></value>
                 </identifier>
                 <identifier>
-                    <system value="https://fhir.hl7.org.uk/taunton/MRN"></system>
+                    <system value="https://fhir.taunton.nhs.uk/Id//MRN"></system>
                     <value value="1007"></value>
                 </identifier>
                 <identifier>
@@ -237,6 +237,9 @@
                     <code value="HH" />
                     <display value="home health" />
                 </class>
+                 <subject>
+                    <reference value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff"></reference>
+                </subject>
                 <location>
                     <location>
                         <display value="wordsworth" />
