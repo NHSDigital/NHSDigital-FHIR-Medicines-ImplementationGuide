@@ -35,6 +35,14 @@
       <comment value="HL7v2 mapping - PV1-19 Visit Number" />
       <min value="1" />
     </element>
+    <element id="Encounter.identifier.system">
+      <path value="Encounter.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.identifier.value">
+      <path value="Encounter.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="Encounter.statusHistory">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="StatusHistory" />
@@ -51,9 +59,21 @@
       </extension>
       <path value="Encounter.classHistory" />
     </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <min value="1" />
+    </element>
     <element id="Encounter.episodeOfCare">
       <path value="Encounter.episodeOfCare" />
       <comment value="HL7v2 mapping - PV1-50 Alternate Visit ID and/or PV1-54" />
+    </element>
+    <element id="Encounter.episodeOfCare.identifier.system">
+      <path value="Encounter.episodeOfCare.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.episodeOfCare.identifier.value">
+      <path value="Encounter.episodeOfCare.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Encounter.diagnosis">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -64,6 +84,18 @@
     <element id="Encounter.account">
       <path value="Encounter.account" />
       <comment value="Prescribing cost centre - mandatory for secondary care when used with prescription orders." />
+    </element>
+    <element id="Encounter.account.identifier">
+      <path value="Encounter.account.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.account.identifier.system">
+      <path value="Encounter.account.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.account.identifier.value">
+      <path value="Encounter.account.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Encounter.location">
       <path value="Encounter.location" />
