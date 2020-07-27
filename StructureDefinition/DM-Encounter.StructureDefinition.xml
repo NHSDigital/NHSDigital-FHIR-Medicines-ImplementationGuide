@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Encounter" />
+  <name value="DM-Encounter" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <comment value="HL7v2 mapping - PV1-19 Visit Number" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.statusHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="StatusHistory" />
+      </extension>
+      <path value="Encounter.statusHistory" />
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information. &#xD;&#xA;HL7v2 mapping - PV1-2 Patient Class" />
+    </element>
+    <element id="Encounter.classHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="ClassHistory" />
+      </extension>
+      <path value="Encounter.classHistory" />
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <comment value="HL7v2 mapping - PV1-50 Alternate Visit ID and/or PV1-54" />
+    </element>
+    <element id="Encounter.diagnosis">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Diagnosis" />
+      </extension>
+      <path value="Encounter.diagnosis" />
+    </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <comment value="Prescribing cost centre - mandatory for secondary care when used with prescription orders." />
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <comment value="HL7v2 mapping - PV1-3 Assigned Patient Location" />
+    </element>
+  </differential>
+</StructureDefinition>
