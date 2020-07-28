@@ -19,6 +19,9 @@
   <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement." />
   <compose>
     <include>
+      <system value="http://unitsofmeasure.org" />
+    </include>
+    <include>
       <system value="http://snomed.info/sct" />
       <filter>
         <property value="constraint" />
@@ -34,13 +37,34 @@
         <value value="(&lt;&lt;767524001 | Unit of measure|)" />
       </filter>
     </include>
-    <include>
-      <system value="http://unitsofmeasure.org" />
-    </include>
+    <exclude>
+      <system value="http://snomed.info/sct" />
+      <concept>
+        <code value="258670009" />
+        <display value="km" />
+      </concept>
+    </exclude>
   </compose>
   <expansion>
-    <timestamp value="2020-07-28T23:33:20+10:00" />
-    <total value="2607" />
+    <timestamp value="2020-07-28T23:46:36+10:00" />
+    <total value="2606" />
+    <offset value="0" />
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://unitsofmeasure.org|" />
+    </parameter>
+    <parameter>
+      <name value="version" />
+      <valueUri value="http://snomed.info/sct|http://snomed.info/sct/32506021000036107/version/20200731" />
+    </parameter>
+    <parameter>
+      <name value="count" />
+      <valueInteger value="2147483647" />
+    </parameter>
+    <parameter>
+      <name value="offset" />
+      <valueInteger value="0" />
+    </parameter>
     <contains>
       <system value="http://snomed.info/sct" />
       <version value="http://snomed.info/sct/32506021000036107/version/20200731" />
@@ -4138,12 +4162,6 @@
       <version value="http://snomed.info/sct/32506021000036107/version/20200731" />
       <code value="418612008" />
       <display value="dollars/unit" />
-    </contains>
-    <contains>
-      <system value="http://snomed.info/sct" />
-      <version value="http://snomed.info/sct/32506021000036107/version/20200731" />
-      <code value="258670009" />
-      <display value="km" />
     </contains>
     <contains>
       <system value="http://snomed.info/sct" />
