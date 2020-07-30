@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-prescription-type"/>
     <url value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-type"/>
-    <version value="4.0.1"/>
+    <version value="1.0.1"/>
     <name value="EPS Prescription Type"/>
     <status value="draft"/>
     <description value="Subset on UK Core Prescription Therapy Type which is permitted for EPS use."/>
@@ -12,12 +12,12 @@
         </include>
     </compose>
     <expansion>
-        <timestamp value="2020-07-29T17:22:48+10:00"/>
-        <total value="10"/>
+        <timestamp value="2020-07-30T19:30:34+10:00"/>
+        <total value="14"/>
         <offset value="0"/>
         <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type|1.1.0"/>
+            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type|1.1.1"/>
         </parameter>
         <parameter>
             <name value="count"/>
@@ -29,8 +29,13 @@
         </parameter>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0101"/>
-            <display value="Primary Care Prescriber – Medical Prescriber"/>
+            <code value="0108"/>
+            <display value="Primary Care Prescriber - Pharmacist Independent/Supplementary prescriber"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
+            <code value="0607"/>
+            <display value="Dental Prescribing – Dentist"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
@@ -44,18 +49,28 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0125"/>
-            <display value="Primary Care Prescriber – Paramedic Independent/Supplementary prescriber"/>
+            <code value="1201"/>
+            <display value="Outpatient Homecare Prescriber - Medical Prescriber"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0114"/>
-            <display value="Primary Care Prescriber – Podiatrist/Chiropodist Independent/Supplementary prescriber"/>
+            <code value="0101"/>
+            <display value="Primary Care Prescriber – Medical Prescriber"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0104"/>
-            <display value="Primary Care Prescriber - Nurse Independent/Supplementary prescriber"/>
+            <code value="1101"/>
+            <display value="Outpatient Pharmacy Prescriber - Medical Prescriber"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
+            <code value="1001"/>
+            <display value="Outpatient Community Prescriber - Medical Prescriber"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
+            <code value="0117"/>
+            <display value="Primary Care Prescriber - Physiotherapist Independent/Supplementary prescriber"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
@@ -69,13 +84,18 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0117"/>
-            <display value="Primary Care Prescriber - Physiotherapist Independent/Supplementary prescriber"/>
+            <code value="0104"/>
+            <display value="Primary Care Prescriber - Nurse Independent/Supplementary prescriber"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
-            <code value="0108"/>
-            <display value="Primary Care Prescriber - Pharmacist Independent/Supplementary prescriber"/>
+            <code value="0125"/>
+            <display value="Primary Care Prescriber – Paramedic Independent/Supplementary prescriber"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type"/>
+            <code value="0114"/>
+            <display value="Primary Care Prescriber – Podiatrist/Chiropodist Independent/Supplementary prescriber"/>
         </contains>
     </expansion>
 </ValueSet>
