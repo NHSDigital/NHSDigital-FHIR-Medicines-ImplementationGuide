@@ -29,10 +29,10 @@
             <name value="prepare"/>
             <definition value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message"/>
         </operation>
-        <operation>
+       <!-- <operation>
             <name value="validate"/>
             <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
-        </operation>
+        </operation> -->
     </rest>
     <messaging>
         <supportedMessage>
