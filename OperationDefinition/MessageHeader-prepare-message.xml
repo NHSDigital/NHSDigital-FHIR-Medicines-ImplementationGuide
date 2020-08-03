@@ -15,7 +15,7 @@
     </contact>
     <description value="Convert a prescription in FHIR format into the canonicalised HL7 V3 signature fragments which should be signed by the prescriber." />
     <code value="prepare" />
-    <comment value="See OAS specification" />
+    <comment value="This operation does not use the parameters resource for input parameters, it does for the response. /n/n A server may return one of several status codes:\n* **200 OK**: Indicates that the message has been fully processed." />
     <resource value="MessageHeader" />
     <system value="true" />
     <type value="false" />
