@@ -29,19 +29,11 @@
         <type value="Bundle" />
     </parameter>
     <parameter>
-        <name value="return" />
+        <name value="message-digest" />
         <use value="out" />
         <min value="1" />
         <max value="1" />
-        <documentation value="Message Digest response" />
-        <type value="Parameters" />
-        <part>
-            <name value="message-digest" />
-            <use value="out" />
-            <min value="1" />
-            <max value="1" />
-            <documentation value="Message Digest response" />
-            <type value="string" />
-        </part>
+        <documentation value="Message Digest response containing the signed signature in XML format" />
+        <type value="string" />
     </parameter>
 </OperationDefinition>
