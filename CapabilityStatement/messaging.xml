@@ -26,7 +26,7 @@
             <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message"/>
         </operation>
         <operation>
-            <name value="prepare-message"/>
+            <name value="prepare"/>
             <definition value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message"/>
         </operation>
         <operation>
