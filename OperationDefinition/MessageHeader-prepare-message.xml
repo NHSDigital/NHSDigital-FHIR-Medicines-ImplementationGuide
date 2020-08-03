@@ -28,7 +28,7 @@
         <documentation value="The prescription order message to process (without Provence resource)" />
         <type value="Bundle" />
     </parameter>
-    <parameter>
+    <part>
         <name value="return" />
         <use value="out" />
         <min value="1" />
@@ -43,5 +43,5 @@
             <documentation value="Message Digest response" />
             <type value="string" />
         </parameter>
-    </parameter>
+    </part>
 </OperationDefinition>
