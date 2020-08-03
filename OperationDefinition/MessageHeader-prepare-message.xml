@@ -14,7 +14,7 @@
         </telecom>
     </contact>
     <description value="Convert a prescription in FHIR format into the canonicalised HL7 V3 signature fragments which should be signed by the prescriber." />
-    <code value="prepare-message" />
+    <code value="prepare" />
     <comment value="See OAS specification" />
     <resource value="MessageHeader" />
     <system value="true" />
