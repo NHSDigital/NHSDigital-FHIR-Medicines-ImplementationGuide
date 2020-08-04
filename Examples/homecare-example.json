@@ -231,6 +231,16 @@
               "code": "1201",
               "display": "Outpatient Homecare Prescriber - Medical Prescriber"
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC01"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
+            }
           }
         ],
         "identifier": [
