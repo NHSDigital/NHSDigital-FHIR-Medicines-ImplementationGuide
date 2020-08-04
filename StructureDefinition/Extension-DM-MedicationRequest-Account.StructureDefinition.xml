@@ -31,12 +31,6 @@
       </type>
     </element>
     <element id="Extension.value[x].identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].identifier" />
       <min value="1" />
     </element>
@@ -46,6 +40,13 @@
     </element>
     <element id="Extension.value[x].identifier.value">
       <path value="Extension.value[x].identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].display" />
       <min value="1" />
     </element>
   </differential>
