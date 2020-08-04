@@ -233,7 +233,7 @@
             }
           },
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
             "valueReference": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",

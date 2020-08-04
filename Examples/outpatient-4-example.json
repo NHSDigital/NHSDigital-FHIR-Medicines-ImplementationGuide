@@ -234,6 +234,16 @@
               "code": "1001",
               "display": "Outpatient Community Prescriber - Medical Prescriber"
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC01"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
+            }
           }
         ],
         "identifier": [
@@ -361,6 +371,16 @@
             "valueReference": {
               "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC01"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
+            }
           }
         ],
         "identifier": [
@@ -471,6 +491,16 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
             "valueReference": {
               "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC01"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
             }
           }
         ],
@@ -598,6 +628,16 @@
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
             "valueReference": {
               "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC01"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
             }
           }
         ],

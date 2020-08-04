@@ -225,6 +225,16 @@
               "code": "1001",
               "display": "Outpatient Community Prescriber - Medical Prescriber"
             }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
+            "valueReference": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBACC05"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 05"
+            }
           }
         ],
         "identifier": [
