@@ -1,6 +1,6 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="spine-fhir-to-v3-message-map"/>
-    <url value="https://fhir.nhs.uk/R4/ConceptMap/spine-fhir-to-v3-message-mapp"/>
+    <url value="https://fhir.nhs.uk/R4/ConceptMap/spine-fhir-to-v3-message-map"/>
     <version value="4.0.1"/>
     <name value="spine-fhir-to-v3-message-map"/>
     <title value="Spine HL7 FHIR to ITK HL7v3 Message Map"/>
