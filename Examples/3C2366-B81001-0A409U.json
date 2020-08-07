@@ -1,10 +1,6 @@
 {
     "resourceType": "Bundle",
-    "id": "eps-test-system",
-    "identifier": {
-        "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "435c006d-e311-4c4e-8728-7026ed46dca4"
-    },
+    "id": "435c006d-e311-4c4e-8728-7026ed46dca4",
     "type": "message",
     "entry": [
         {
@@ -195,7 +191,7 @@
                         ]
                     }
                 ],
-                "telecom": [
+                "telecom":  [
                     {
                         "system": "phone",
                         "value": "01234567890",
@@ -253,9 +249,10 @@
                         {
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                             "valueIdentifier": {
-                                "system": "https://fhir.nhs.uk/Id/prescription",
-                                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
-                            }
+                               "system": "https://fhir.nhs.uk/Id/prescription",
+                                "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+
+                            } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -264,7 +261,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -278,7 +275,7 @@
                 "dispenseRequest": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
                             "valueCoding": {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
                                 "code": "0004"
@@ -347,8 +344,8 @@
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/prescription",
-                                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
-                            }
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -357,7 +354,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -371,7 +368,7 @@
                 "dispenseRequest": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
                             "valueCoding": {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
                                 "code": "0004"
@@ -440,8 +437,9 @@
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/prescription",
-                                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
-                            }
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+ 
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -450,7 +448,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -464,7 +462,7 @@
                 "dispenseRequest": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
                             "valueCoding": {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
                                 "code": "0004"
@@ -533,8 +531,8 @@
                             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/prescription",
-                                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
-                            }
+                                 "value" : "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                             } 
                         }
                     ],
                     "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -543,7 +541,7 @@
                 "courseOfTherapyType": {
                     "coding": [
                         {
-                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType",
                             "code": "acute",
                             "display": "Acute"
                         }
@@ -557,7 +555,7 @@
                 "dispenseRequest": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType",
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
                             "valueCoding": {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
                                 "code": "0004"

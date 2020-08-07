@@ -146,7 +146,7 @@
             <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
             <dispenseRequest>
               <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
                 <valueCoding>
                   <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
                   <code value="0004" />
@@ -264,7 +264,7 @@
             <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
             <dispenseRequest>
               <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
                 <valueCoding>
                   <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
                   <code value="0004" />

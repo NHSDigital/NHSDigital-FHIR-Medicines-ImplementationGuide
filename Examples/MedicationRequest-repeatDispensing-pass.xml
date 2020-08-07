@@ -58,16 +58,16 @@
     </groupIdentifier>
     <courseOfTherapyType>
         <coding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
-            <code value="repeat-dispensing" />
-            <display value="Repeat dispensing" />
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy"></system>
+            <code value="continuous-repeat-dispensing" />
+            <display value="Continuous long term (repeat dispensing)" />
         </coding>
     </courseOfTherapyType>
     <dosageInstruction>
         <text value="As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice" />
     </dosageInstruction>
     <dispenseRequest>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
             <valueCoding>
                 <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
                 <code value="0004" />

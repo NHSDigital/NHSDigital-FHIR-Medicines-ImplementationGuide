@@ -51,7 +51,7 @@
     </groupIdentifier>
     <courseOfTherapyType>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
             <code value="acute" />
             <display value="Acute" />
         </coding>
@@ -60,7 +60,7 @@
         <text value="2 Puffs when required" />
     </dosageInstruction>
     <dispenseRequest>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
             <valueCoding>
                 <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
                 <code value="0004" />
