@@ -49,7 +49,7 @@
   </groupIdentifier>
   <courseOfTherapyType>
     <coding>
-      <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
       <code value="acute" />
       <display value="Acute" />
     </coding>
