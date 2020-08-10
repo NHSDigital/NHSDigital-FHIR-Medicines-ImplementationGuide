@@ -136,7 +136,7 @@
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "A1B2C3"
+            "value": "RBA"
           }
         ],
         "type": [
@@ -150,7 +150,7 @@
             ]
           }
         ],
-        "name": "MUSGROVE PARK HOSPITAL OUTPATIENS DEPARTMENT",
+        "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
         "address": [
           {
             "line": [
@@ -167,14 +167,7 @@
             "value": "01823333444",
             "use": "work"
           }
-        ],
-        "partOf": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-        }
+        ]
       }
     },
     {

@@ -141,7 +141,7 @@
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "A1B2C3"
+            "value": "RBA"
           }
         ],
         "type": [
@@ -155,7 +155,7 @@
             ]
           }
         ],
-        "name": "MUSGROVE PARK HOSPITAL OUTPATIENS DEPARTMENT",
+        "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
         "telecom": [
           {
             "system": "phone",
@@ -172,14 +172,7 @@
             ],
             "postalCode": "TA1 5DA"
           }
-        ],
-        "partOf": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-        }
+        ]
       }
     },
     {
