@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="medicationrequest-course-of-therapy" />
-    <url value="https://fhir.nhs.uk/R4/ValueSet/medicationrequest-course-of-therapy" />
+    <id value="DM-medicationrequest-course-of-therapy" />
+    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-course-of-therapy" />
     <version value="4.0.1" />
     <name value="MedicationRequest Course of Therapy Codes" />
     <title value="Medication Request  Course of  Therapy  Codes" />

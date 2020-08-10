@@ -249,6 +249,13 @@
       <path value="MedicationRequest.courseOfTherapyType" />
       <comment value="The type of prescription e.g. acute, continuous, etc. Was extension in STU3 https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1 and Digital Medicine uses international codes, so continuous in place of repeat." />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationRequestCourseOfTherapy" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/DM-medicationrequest-course-of-therapy" />
+      </binding>
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
       <path value="MedicationRequest.courseOfTherapyType.coding" />
