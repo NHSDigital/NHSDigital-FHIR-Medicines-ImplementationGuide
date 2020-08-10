@@ -254,15 +254,7 @@
           <valueString value="MedicationRequestCourseOfTherapy" />
         </extension>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/DM-medicationrequest-course-of-therapy" />
-      </binding>
-    </element>
-    <element id="MedicationRequest.courseOfTherapyType.coding">
-      <path value="MedicationRequest.courseOfTherapyType.coding" />
-      <binding>
-        <strength value="required" />
-        <description value="Valid Prescription Treatment Types for EPS" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/medicationrequest-course-of-therapy" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>
     </element>
     <element id="MedicationRequest.dosageInstruction.text">
