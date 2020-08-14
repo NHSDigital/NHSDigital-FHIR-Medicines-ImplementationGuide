@@ -214,6 +214,13 @@
       <path value="MedicationRequest.requester.display" />
       <comment value="The name of the of the issuer must be included in the MedicationRequest (this is for legal reasons)" />
     </element>
+    <element id="MedicationRequest.basedOn">
+      <path value="MedicationRequest.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
+      </type>
+    </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="order number for grouped MedicationRequests" />
