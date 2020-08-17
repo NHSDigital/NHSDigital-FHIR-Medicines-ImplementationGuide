@@ -136,7 +136,7 @@
               <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
                 <code value="acute" />
-                <display value="Acute" />
+                <display value="Short course (acute) therapy" />
               </coding>
             </courseOfTherapyType>
             <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
@@ -254,7 +254,7 @@
               <coding>
                 <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
                 <code value="acute" />
-                <display value="Acute" />
+                <display value="Short course (acute) therapy" />
               </coding>
             </courseOfTherapyType>
             <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->

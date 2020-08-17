@@ -48,7 +48,7 @@
         <coding>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
             <code value="acute" />
-            <display value="Acute" />
+            <display value="Short course (acute) therapy" />
         </coding>
     </courseOfTherapyType>
     <dosageInstruction>

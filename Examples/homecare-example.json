@@ -295,7 +295,7 @@
         },
         "dosageInstruction": [
           {
-            "text": "10 milligram, inject, subcutaneous route, once weekly",
+            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
             "timing": {
               "repeat": {
                 "frequency": 5,
@@ -314,7 +314,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "422145002",
-                  "display": "inject"
+                  "display": "Inject"
                 }
               ]
             },
@@ -323,7 +323,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "34206005",
-                  "display": "subcutaneous route"
+                  "display": "Subcutaneous route"
                 }
               ]
             },

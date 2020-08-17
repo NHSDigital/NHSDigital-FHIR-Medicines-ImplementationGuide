@@ -259,7 +259,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "317896006",
+              "code": "330284003", 
               "display": "Aciclovir 3% eye ointment"
             }
           ]
@@ -289,7 +289,7 @@
             {
               "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
               "code": "acute",
-              "display": "Acute"
+              "display": "Short course (acute) therapy"
             }
           ]
         },
@@ -314,7 +314,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "417924000",
-                  "display": "apply"
+                  "display": "Apply"
                 }
               ]
             },
@@ -323,7 +323,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "8966001",
-                  "display": "left eye"
+                  "display": "Left eye"
                 }
               ]
             }
