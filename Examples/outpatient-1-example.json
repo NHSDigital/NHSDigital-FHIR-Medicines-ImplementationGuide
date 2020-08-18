@@ -197,10 +197,10 @@
             ]
           }
         ],
-        "healthcareservice": [
+        "healthcareService": [
           {
             "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [
