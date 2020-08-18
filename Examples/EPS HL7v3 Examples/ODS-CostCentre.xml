@@ -1,0 +1,62 @@
+<Organisation orgRecordClass="RC1">
+    <Name>SOMERSET BOWEL CANCER SCREENING CENTRE</Name>
+    <Date>
+      <Type value="Operational" />
+      <Start value="2018-04-01" />
+    </Date>
+    <OrgId root="2.16.840.1.113883.2.1.3.2.4.18.48" assigningAuthorityName="HSCIC" extension="A99968" />
+    <Status value="Active" />
+    <LastChangeDate value="2018-06-15" />
+    <GeoLoc>
+      <Location>
+        <AddrLn1>MUSGROVE PARK HOSPITAL</AddrLn1>
+        <Town>TAUNTON</Town>
+        <PostCode>TA1 5DA</PostCode>
+        <Country>ENGLAND</Country>
+        <UPRN>10008800708</UPRN>
+      </Location>
+    </GeoLoc>
+    <Contacts>
+      <Contact type="tel" value="01823 333444" />
+    </Contacts>
+    <Roles>
+      <Role id="RO72" uniqueRoleId="304451">
+        <Date>
+          <Type value="Operational" />
+          <Start value="2018-04-01" />
+        </Date>
+        <Status value="Active" />
+      </Role>
+      <Role id="RO177" uniqueRoleId="304452" primaryRole="true">
+        <Date>
+          <Type value="Operational" />
+          <Start value="2018-04-01" />
+        </Date>
+        <Status value="Active" />
+      </Role>
+    </Roles>
+    <Rels>
+      <Rel id="RE6" uniqueRelId="555918">
+        <Date>
+          <Type value="Operational" />
+          <Start value="2018-04-01" />
+        </Date>
+        <Status value="Active" />
+        <Target>
+          <OrgId root="2.16.840.1.113883.2.1.3.2.4.18.48" assigningAuthorityName="HSCIC" extension="RBA" />
+          <PrimaryRoleId id="RO197" uniqueRoleId="71582" />
+        </Target>
+      </Rel>
+      <Rel id="RE4" uniqueRelId="555920">
+        <Date>
+          <Type value="Operational" />
+          <Start value="2018-04-01" />
+        </Date>
+        <Status value="Active" />
+        <Target>
+          <OrgId root="2.16.840.1.113883.2.1.3.2.4.18.48" assigningAuthorityName="HSCIC" extension="11X" />
+          <PrimaryRoleId id="RO98" uniqueRoleId="161524" />
+        </Target>
+      </Rel>
+    </Rels>
+  </Organisation>
