@@ -312,12 +312,12 @@
                 <identifier>
                     <use value="official" />
                     <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-                    <value value="RH5" />
+                    <value value="RBA" />
                 </identifier>
                 <type>
                     <coding>
-                        <system value="https://fhir.nhs.uk/R4/CodeSystem/organisation-type" />
-                        <code value="001" />
+                        <system value="https://fhir.nhs.uk/R4/CodeSystem/organisation-role" />
+                        <code value="RO197" />
                     </coding>
                 </type>
                 <name value="SOMERSET NHS FOUNDATION TRUST" />

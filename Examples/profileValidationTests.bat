@@ -15,7 +15,7 @@ java -jar org.hl7.fhir.validator.jar Homecare-example.json -version 4.0.1 -tx ht
 
 rem PASS [Bundle] Solutions Assurance Order Message
 
-java -jar org.hl7.fhir.validator.jar 3C2366-B81001-0A409U.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.29-dev.tgz   
+java -jar org.hl7.fhir.validator.jar 3C2366-B81001-0A409U.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.30-dev.tgz   
 
 
 rem PASS - [MedicationRequest] Multiple medication codes validation

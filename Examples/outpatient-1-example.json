@@ -42,7 +42,14 @@
           },
           {
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
+          },
+          {
+            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
+          },
+          {
+            "reference": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb"
           }
+
         ]
       }
     },
@@ -139,9 +146,9 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                "code": "008",
-                "display": "Acute Trust"
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-role",
+                "code": "RO197",
+                "display": "NHS TRUST"
               }
             ]
           }
@@ -197,10 +204,10 @@
             ]
           }
         ],
-        "healthcareService": [
+        "healthcareservice": [
           {
             "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [

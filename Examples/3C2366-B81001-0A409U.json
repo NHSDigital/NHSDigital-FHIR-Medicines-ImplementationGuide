@@ -35,15 +35,6 @@
                         "reference": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F0"
                     },
                     {
-                        "reference": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F0"
-                    },
-                    {
-                        "reference": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F0"
-                    },
-                    {
-                        "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F0"
-                    },
-                    {
                         "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
                     },
                     {
@@ -138,8 +129,8 @@
                     {
                         "coding": [
                             {
-                                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-type",
-                                "code": "001"
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-role",
+                                "code": "RO76"
                             }
                         ]
                     }
