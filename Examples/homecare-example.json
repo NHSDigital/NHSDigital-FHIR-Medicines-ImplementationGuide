@@ -202,6 +202,12 @@
             ]
           }
         ],
+        "healthcareservice": [
+          {
+            "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -223,16 +229,6 @@
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
               "code": "1201",
               "display": "Outpatient Homecare Prescriber - Medical Prescriber"
-            }
-          },
-          {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-MedicationRequest-Account",
-            "valueReference": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "RBACC01"
-              },
-              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST COST CENTRE 01"
             }
           }
         ],
@@ -372,6 +368,63 @@
         },
         "substitution": {
           "allowedBoolean": false
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "54b0506d-49af-4245-9d40-d7d64902055e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "A99968"
+          }
+        ],
+        "active": true,
+        "providedBy": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          }
+        },
+        "location": [
+          {
+            "reference": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb"
+          }
+        ],
+        "name": "SOMERSET BOWEL CANCER SCREENING CENTRE",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 333444",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
+      "resource": {
+        "resourceType": "Location",
+        "id": "8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
+        "identifier": [
+          {
+            "value": "10008800708"
+          }
+        ],
+        "status": "active",
+        "mode": "instance",
+        "address": {
+          "use": "work",
+          "line": [
+            "MUSGROVE PARK HOSPITAL"
+          ],
+          "city": "TAUNTON",
+          "postalCode": "TA1 5DA",
+          "country": "NLD"
         }
       }
     }
