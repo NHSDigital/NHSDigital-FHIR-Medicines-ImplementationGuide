@@ -56,5 +56,11 @@
         <min value="1" />
         <max value="*" />
     </focus>
+    <focus>
+        <code value="CommunicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-CommunicationRequest" />
+        <min value="0" />
+        <max value="*" />
+    </focus>
 
 </MessageDefinition>
