@@ -150,7 +150,8 @@
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "5E5"
-                    }
+                    },
+                    "display": "The NHS CCG"
                 }
             }
         },
