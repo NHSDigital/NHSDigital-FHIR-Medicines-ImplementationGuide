@@ -41,22 +41,7 @@
             "reference": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F2"
           },
           {
-            "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
-          },
-          {
-            "reference": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F1"
-          },
-          {
-            "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
-          },
-          {
-            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
-          },
-          {
-            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
-          },
-          {
-            "reference": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb"
+            "reference": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e"
           }
         ]
       }
@@ -212,9 +197,9 @@
             ]
           }
         ],
-        "healthcareservice": [
+        "healthcareService": [
           {
-            "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
             "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
@@ -780,6 +765,60 @@
           "postalCode": "TA1 5DA",
           "country": "NLD"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e",
+      "resource": {
+        "resourceType": "CommunicationRequest",
+        "id": "51793ac0-112f-46c7-a891-9af8cefb206e",
+        "status": "unknown",
+        "subject": {
+          "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
+        },
+        "payload": [
+            {
+              "contentString": "Please make an appointment to see your GP"
+            },
+            {
+                "contentString": "Review date due"
+              },
+              {
+                  "contentReference": {
+                      "reference" : "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
+                      "display" :"List of Repeat Medications for re-ordering"
+                  } 
+              }
+          ]
+      } 
+    },
+    {
+      "fullUrl": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
+      "resource": {
+        "resourceType": "List",
+        "id": "d0f003a0-8763-43d5-a264-ce52a38901c9",
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "coding": [
+          ],
+          "text": "Repeat Medications"
+        },
+        "subject": {
+          "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
+        },
+        "entry": [
+          {
+            "item": {
+              "display": "Bendroflumethiazide 2.5 mg Tablets (3/6)"
+            }
+          },
+          {
+            "item": {
+              "display": "Salbutamol 100micrograms/dose inhaler CFC free 200 dose (2/6)"
+            }
+          }
+        ]
       }
     }
   ]
