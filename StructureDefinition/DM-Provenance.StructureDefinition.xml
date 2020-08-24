@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
+  <name value="DM-Provenance" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w3c.prov" />
+    <uri value="http://www.w3.org/ns/prov" />
+    <name value="W3C PROV" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="fhirauditevent" />
+    <uri value="http://hl7.org/fhir/auditevent" />
+    <name value="FHIR AuditEvent Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Provenance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Provenance.meta.security.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.meta.security.display" />
+    </element>
+    <element id="Provenance.meta.tag.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.meta.tag.display" />
+    </element>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+      </type>
+    </element>
+    <element id="Provenance.target.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.target.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.target.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.target.identifier.type.text" />
+    </element>
+    <element id="Provenance.target.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.target.display" />
+    </element>
+    <element id="Provenance.location.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.location.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.location.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.location.identifier.type.text" />
+    </element>
+    <element id="Provenance.location.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.location.display" />
+    </element>
+    <element id="Provenance.reason.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.reason.coding.display" />
+    </element>
+    <element id="Provenance.reason.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.reason.text" />
+    </element>
+    <element id="Provenance.activity.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.activity.coding.display" />
+    </element>
+    <element id="Provenance.activity.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.activity.text" />
+    </element>
+    <element id="Provenance.agent.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.type.coding.display" />
+    </element>
+    <element id="Provenance.agent.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.type.text" />
+    </element>
+    <element id="Provenance.agent.role.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.role.coding.display" />
+    </element>
+    <element id="Provenance.agent.role.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.role.text" />
+    </element>
+    <element id="Provenance.agent.who">
+      <path value="Provenance.agent.who" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+      </type>
+    </element>
+    <element id="Provenance.agent.who.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.who.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.agent.who.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.who.identifier.type.text" />
+    </element>
+    <element id="Provenance.agent.who.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.who.display" />
+    </element>
+    <element id="Provenance.agent.onBehalfOf.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.onBehalfOf.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.agent.onBehalfOf.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.onBehalfOf.identifier.type.text" />
+    </element>
+    <element id="Provenance.agent.onBehalfOf.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.agent.onBehalfOf.display" />
+    </element>
+    <element id="Provenance.entity.what.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.what.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.entity.what.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.what.identifier.type.text" />
+    </element>
+    <element id="Provenance.entity.what.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.what.display" />
+    </element>
+    <element id="Provenance.entity.agent.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.type.coding.display" />
+    </element>
+    <element id="Provenance.entity.agent.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.type.text" />
+    </element>
+    <element id="Provenance.entity.agent.role.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.role.coding.display" />
+    </element>
+    <element id="Provenance.entity.agent.role.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.role.text" />
+    </element>
+    <element id="Provenance.entity.agent.who.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.who.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.entity.agent.who.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.who.identifier.type.text" />
+    </element>
+    <element id="Provenance.entity.agent.who.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.who.display" />
+    </element>
+    <element id="Provenance.entity.agent.onBehalfOf.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.onBehalfOf.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.entity.agent.onBehalfOf.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.onBehalfOf.identifier.type.text" />
+    </element>
+    <element id="Provenance.entity.agent.onBehalfOf.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.entity.agent.onBehalfOf.display" />
+    </element>
+    <element id="Provenance.signature.type.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.type.display" />
+    </element>
+    <element id="Provenance.signature.who">
+      <path value="Provenance.signature.who" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Provenance.signature.who.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.who.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.signature.who.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.who.identifier.type.text" />
+    </element>
+    <element id="Provenance.signature.who.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.who.display" />
+    </element>
+    <element id="Provenance.signature.onBehalfOf.identifier.type.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.onBehalfOf.identifier.type.coding.display" />
+    </element>
+    <element id="Provenance.signature.onBehalfOf.identifier.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.onBehalfOf.identifier.type.text" />
+    </element>
+    <element id="Provenance.signature.onBehalfOf.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Provenance.signature.onBehalfOf.display" />
+    </element>
+  </differential>
+</StructureDefinition>
