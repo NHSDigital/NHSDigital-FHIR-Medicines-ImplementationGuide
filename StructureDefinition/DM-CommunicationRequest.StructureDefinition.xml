@@ -46,7 +46,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
       </type>
     </element>
   </differential>
