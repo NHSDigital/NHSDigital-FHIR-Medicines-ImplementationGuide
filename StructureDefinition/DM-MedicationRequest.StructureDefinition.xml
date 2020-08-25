@@ -84,8 +84,6 @@
     <element id="MedicationRequest.extension:prescriptionEndorsement">
       <path value="MedicationRequest.extension" />
       <sliceName value="prescriptionEndorsement" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionEndorsement" />
@@ -113,7 +111,6 @@
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
     </element>
-
     <element id="MedicationRequest.category.coding">
       <path value="MedicationRequest.category.coding" />
       <slicing>
@@ -185,7 +182,6 @@
       <path value="MedicationRequest.subject.reference" />
       <min value="1" />
     </element>
-
     <element id="MedicationRequest.encounter">
       <path value="MedicationRequest.encounter" />
       <definition value="Encounter is required for secondary care prescriptions." />
@@ -210,7 +206,6 @@
       <path value="MedicationRequest.requester.reference" />
       <min value="1" />
     </element>
-
     <element id="MedicationRequest.basedOn">
       <path value="MedicationRequest.basedOn" />
       <type>
@@ -244,7 +239,6 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
       </type>
     </element>
-
     <element id="MedicationRequest.groupIdentifier.system">
       <path value="MedicationRequest.groupIdentifier.system" />
       <min value="1" />
@@ -262,7 +256,6 @@
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>
     </element>
-
     <element id="MedicationRequest.dosageInstruction.text">
       <path value="MedicationRequest.dosageInstruction.text" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
@@ -317,14 +310,6 @@
       <path value="MedicationRequest.substitution.allowed[x]" />
       <type>
         <code value="boolean" />
-      </type>
-    </element>
-
-    <element id="MedicationRequest.eventHistory">
-      <path value="MedicationRequest.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
       </type>
     </element>
   </differential>
