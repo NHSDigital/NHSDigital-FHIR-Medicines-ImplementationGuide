@@ -312,12 +312,5 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="MedicationRequest.eventHistory">
-      <path value="MedicationRequest.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>
