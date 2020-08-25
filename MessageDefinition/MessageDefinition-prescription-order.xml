@@ -40,12 +40,6 @@
         <max value="*" />
     </focus>
     <focus>
-        <code value="Provenance" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
-        <min value="0" />
-        <max value="1" />
-    </focus>
-    <focus>
         <code value="Practitioner" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
         <min value="1" />
