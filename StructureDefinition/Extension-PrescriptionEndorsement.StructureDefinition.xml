@@ -30,6 +30,7 @@
       </type>
       <binding>
         <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-endorsement" />
       </binding>
     </element>
   </differential>

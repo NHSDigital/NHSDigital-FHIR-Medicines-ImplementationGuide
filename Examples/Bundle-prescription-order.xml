@@ -1,7 +1,6 @@
     <Bundle xmlns="http://hl7.org/fhir">
       <id value="mim-example" />
       <identifier>
-        <!--  pertinentInformation2[0].pertinentLineItem.id -->
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="f28682c0-50d2-472a-a8f0-477f7ac1b63f" />
       </identifier>

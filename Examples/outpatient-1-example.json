@@ -197,7 +197,7 @@
         "healthcareService": [
           {
             "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
-            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [
@@ -220,6 +220,18 @@
               "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
               "code": "1001",
               "display": "Outpatient Community Prescriber - Medical Prescriber"
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionEndorsement",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-endorsement",
+                  "code": "SLS",
+                  "display": "Selected List Scheme"
+                }
+              ]
             }
           }
         ],
