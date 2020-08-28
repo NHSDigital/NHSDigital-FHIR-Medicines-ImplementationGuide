@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="DM-medicationrequest-status-reason"/>
+    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-status-reason"/>
+    <version value="1.0.0"/>
+    <name value="MedicationRequest Status Reason"/>
+    <status value="draft"/>
+    <description value="MedicationRequest Category."/>
+    <compose>
+        <include>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+        </include>
+    </compose>
+    <expansion>
+        <timestamp value="2020-08-28T23:16:20+10:00"/>
+        <total value="7"/>
+        <offset value="0"/>
+        <parameter>
+            <name value="version"/>
+            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason|1.0.0"/>
+        </parameter>
+        <parameter>
+            <name value="count"/>
+            <valueInteger value="2147483647"/>
+        </parameter>
+        <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+        </parameter>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0001"/>
+            <display value="Prescribing Error"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0002"/>
+            <display value="Clinical contra-indication"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0007"/>
+            <display value="Notification of Death"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0005"/>
+            <display value="At the Patient’s request"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0006"/>
+            <display value="At the Pharmacist’s request"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0003"/>
+            <display value="Change to medication treatment regime"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0004"/>
+            <display value="Clinical grounds"/>
+        </contains>
+    </expansion>
+</ValueSet>

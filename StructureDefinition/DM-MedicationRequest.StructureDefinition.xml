@@ -111,6 +111,14 @@
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
     </element>
+    <element id="MedicationRequest.statusReason">
+      <path value="MedicationRequest.statusReason" />
+      <definition value="Mandatory for cancelled prescription items" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-status-reason" />
+      </binding>
+    </element>
     <element id="MedicationRequest.category.coding">
       <path value="MedicationRequest.category.coding" />
       <slicing>
@@ -249,9 +257,6 @@
       <comment value="The type of prescription e.g. acute, continuous, etc. Was extension in STU3 https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1 and Digital Medicine uses international codes, so continuous in place of repeat." />
       <min value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MedicationRequestCourseOfTherapy" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>

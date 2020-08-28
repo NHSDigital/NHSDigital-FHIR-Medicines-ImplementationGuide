@@ -1,0 +1,113 @@
+<CancellationRequest xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="ACTN" moodCode="RQO" xsi:schemaLocation="urn:hl7-org:v3 ..\Schemas\PORX_MT135001UK32.xsd">
+    <id root="4DD2E9DD-DA9A-C266-A2E3-447C68239533" />
+    <effectiveTime value="20040920103000" />
+    <recordTarget typeCode="RCT">
+        <Patient classCode="PAT">
+            <id root="2.16.840.1.113883.2.1.4.1" extension="9900002717" />
+            <addr use="H">
+                <streetAddressLine>10, The High Street,</streetAddressLine>
+                <streetAddressLine>Simple Town</streetAddressLine>
+                <postalCode>AA1 1AA</postalCode>
+            </addr>
+            <patientPerson classCode="PSN" determinerCode="INSTANCE">
+                <name>
+                    <prefix>Mr</prefix>
+                    <given>Frank</given>
+                    <given>Simon</given>
+                    <family>Smith</family>
+                </name>
+                <administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" code="1" />
+                <birthTime value="19721207" />
+                <playedProviderPatient classCode="PAT">
+                    <subjectOf typeCode="SBJ">
+                        <patientCareProvision classCode="PCPR" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.37" />
+                            <responsibleParty typeCode="RESP">
+                                <healthCareProvider classCode="PROV">
+                                    <id root="1.2.826.0.1285.0.2.0.65" extension="100004" />
+                                </healthCareProvider>
+                            </responsibleParty>
+                        </patientCareProvision>
+                    </subjectOf>
+                </playedProviderPatient>
+            </patientPerson>
+        </Patient>
+    </recordTarget>
+    <author typeCode="AUT">
+        <AgentPerson classCode="AGNT">
+            <id root="1.2.826.0.1285.0.2.0.67" extension="787946852679" />
+            <code codeSystem="1.2.826.0.1285.0.2.1.104" code="R0260" />
+            <telecom use="WP" value="tel:01234567890" />
+            <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                <id root="1.2.826.0.1285.0.2.0.65" extension="777964352001" />
+                <name>
+                    <prefix>Dr</prefix>
+                    <family>Nice</family>
+                </name>
+            </agentPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id root="1.2.826.0.1285.0.1.10" extension="M85011" />
+                <code code="0001" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" />
+                <name>Mirfield Surgery</name>
+                <telecom use="WP" value="tel:01234567890" />
+                <addr use="WP">
+                    <streetAddressLine>20 Low Street</streetAddressLine>
+                    <streetAddressLine>Simple Town</streetAddressLine>
+                    <postalCode>AA2 2AA</postalCode>
+                </addr>
+            </representedOrganization>
+        </AgentPerson>
+    </author>
+    <responsibleParty typeCode="RESP">
+        <AgentPerson classCode="AGNT">
+            <id extension="787946852679" root="1.2.826.0.1285.0.2.0.67" />
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.24" code="R0260" />
+            <telecom use="WP" value="tel:01234567890" />
+            <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                <id root="1.2.826.0.1285.0.2.0.65" extension="777964352001" />
+                <name>
+                    <prefix>Dr</prefix>
+                    <family>Nice</family>
+                </name>
+            </agentPerson>
+            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                <id root="1.2.826.0.1285.0.1.10" extension="M85011" />
+                <code code="0001" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" />
+                <name>Mirfield Surgery</name>
+                <telecom use="WP" value="tel:01234567890" />
+                <addr use="WP">
+                    <streetAddressLine>20 Low Street</streetAddressLine>
+                    <streetAddressLine>Simple Town</streetAddressLine>
+                    <postalCode>AA2 2AA</postalCode>
+                </addr>
+            </representedOrganization>
+        </AgentPerson>
+    </responsibleParty>
+    <pertinentInformation2 typeCode="PERT" contextConductionInd="true">
+        <seperatableInd value="false" />
+        <pertinentPrescriptionID classCode="OBS" moodCode="EVN">
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="PID" />
+            <value root="2.16.840.1.113883.2.1.3.2.4.18.8" extension="83C40E-A23856-00123C" />
+        </pertinentPrescriptionID>
+    </pertinentInformation2>
+    <pertinentInformation1 typeCode="PERT" inversionInd="false" negationInd="false">
+        <seperatableInd value="false" />
+        <pertinentLineItemRef classCode="SBADM" moodCode="RQO">
+            <id root="791C9A65-5C6A-308B-D700-32D247BADB87" />
+        </pertinentLineItemRef>
+    </pertinentInformation1>
+    <pertinentInformation typeCode="PERT" contextConductionInd="true">
+        <seperatableInd value="false" />
+        <pertinentCancellationReason classCode="OBS" moodCode="EVN">
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="CR" />
+            <text>Clinical contra-indication</text>
+            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.27" code="0002" />
+        </pertinentCancellationReason>
+    </pertinentInformation>
+    <pertinentInformation3 typeCode="PERT" contextConductionInd="false">
+        <seperatableInd value="true" />
+        <pertinentOriginalPrescriptionRef classCode="SBADM" moodCode="RQO">
+            <id root="66317E0C-CE13-59AD-9979-9B568E080160" />
+        </pertinentOriginalPrescriptionRef>
+    </pertinentInformation3>
+</CancellationRequest>
