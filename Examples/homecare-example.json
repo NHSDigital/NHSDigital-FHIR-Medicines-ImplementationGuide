@@ -86,7 +86,12 @@
         "address": [
           {
             "use": "home",
-            "postalCode": "DE21 4QH"
+            "line": [
+              "123 Dale Avenue",
+              "Long Eaton",
+              "Nottingham"
+            ],
+            "postalCode": "NG10 1NP"
           }
         ],
         "managingOrganization": {

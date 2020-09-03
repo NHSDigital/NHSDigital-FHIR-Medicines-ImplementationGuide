@@ -86,7 +86,12 @@
         "address": [
           {
             "use": "home",
-            "postalCode": "DE21 4QH"
+            "line": [
+              "123 Dale Avenue",
+              "Long Eaton",
+              "Nottingham"
+            ],
+            "postalCode": "NG10 1NP"
           }
         ],
         "managingOrganization": {
@@ -209,7 +214,7 @@
                 "value": "A99968"
               }
             ],
-            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [
@@ -227,8 +232,8 @@
         "resourceType": "MedicationRequest",
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "meta": {
-          "versionId" : "2",
-          "lastUpdated" : "2020-07-13T12:30:00+00:00"
+          "versionId": "2",
+          "lastUpdated": "2020-07-13T12:30:00+00:00"
         },
         "extension": [
           {
@@ -342,13 +347,16 @@
                 }
               ]
             },
-            "doseAndRate": [ {
-            "doseQuantity": {
-              "value": 10,
-              "unit": "milligram",
-              "system": "http://unitsofmeasure.org",
-              "code": "mg"
-            } } ]
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
           }
         ],
         "dispenseRequest": {
@@ -387,6 +395,63 @@
         },
         "substitution": {
           "allowedBoolean": false
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "54b0506d-49af-4245-9d40-d7d64902055e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "A99968"
+          }
+        ],
+        "active": true,
+        "providedBy": {
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          }
+        },
+        "location": [
+          {
+            "reference": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb"
+          }
+        ],
+        "name": "SOMERSET BOWEL CANCER SCREENING CENTRE",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 333444",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
+      "resource": {
+        "resourceType": "Location",
+        "id": "8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
+        "identifier": [
+          {
+            "value": "10008800708"
+          }
+        ],
+        "status": "active",
+        "mode": "instance",
+        "address": {
+          "use": "work",
+          "line": [
+            "MUSGROVE PARK HOSPITAL"
+          ],
+          "city": "TAUNTON",
+          "postalCode": "TA1 5DA",
+          "country": "NLD"
         }
       }
     }
