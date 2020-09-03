@@ -40,9 +40,5 @@
         <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-type" />
       </binding>
     </element>
-    <element id="Extension.value[x].system">
-      <path value="Extension.value[x].system" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
-    </element>
   </differential>
 </StructureDefinition>

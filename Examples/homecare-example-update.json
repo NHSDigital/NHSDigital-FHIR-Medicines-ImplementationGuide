@@ -226,6 +226,10 @@
       "resource": {
         "resourceType": "MedicationRequest",
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+        "meta": {
+          "versionId" : "2",
+          "lastUpdated" : "2020-07-13T12:30:00+00:00"
+        },
         "extension": [
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
