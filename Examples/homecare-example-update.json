@@ -235,16 +235,6 @@
           "versionId": "2",
           "lastUpdated": "2020-07-13T12:30:00+00:00"
         },
-        "extension": [
-          {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
-            "valueCoding": {
-              "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
-              "code": "1201",
-              "display": "Outpatient Homecare Prescriber - Medical Prescriber"
-            }
-          }
-        ],
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
@@ -264,17 +254,6 @@
           }
         ],
         "intent": "order",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
-                "code": "outpatient",
-                "display": "Outpatient"
-              }
-            ]
-          }
-        ],
         "medicationCodeableConcept": {
           "coding": [
             {
@@ -303,95 +282,6 @@
           ],
           "system": "https://fhir.nhs.uk/Id/prescription-order-number",
           "value": "DC2C66-A1B2C3-23407B"
-        },
-        "courseOfTherapyType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
-              "code": "continuous",
-              "display": "Continuous long term therapy"
-            }
-          ]
-        },
-        "dosageInstruction": [
-          {
-            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
-            "timing": {
-              "repeat": {
-                "frequency": 5,
-                "period": 1,
-                "periodUnit": "d",
-                "boundsDuration": {
-                  "value": 10,
-                  "unit": "day",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "d"
-                }
-              }
-            },
-            "method": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "422145002",
-                  "display": "Inject"
-                }
-              ]
-            },
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "34206005",
-                  "display": "Subcutaneous route"
-                }
-              ]
-            },
-            "doseAndRate": [
-              {
-                "doseQuantity": {
-                  "value": 10,
-                  "unit": "milligram",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "mg"
-                }
-              }
-            ]
-          }
-        ],
-        "dispenseRequest": {
-          "extension": [
-            {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
-                "code": "P2"
-              }
-            }
-          ],
-          "validityPeriod": {
-            "start": "2020-07-13T12:00:00+00:00",
-            "end": "2020-08-07T12:00:00+00:00"
-          },
-          "numberOfRepeatsAllowed": 4,
-          "expectedSupplyDuration": {
-            "value": 7,
-            "unit": "day",
-            "system": "http://unitsofmeasure.org",
-            "code": "d"
-          },
-          "performer": {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "VNE51"
-            }
-          },
-          "quantity": {
-            "value": 1,
-            "unit": "pre-filled disposable injection",
-            "system": "http://snomed.info/sct",
-            "code": "3318611000001103"
-          }
         },
         "substitution": {
           "allowedBoolean": false
