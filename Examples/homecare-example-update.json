@@ -45,6 +45,68 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2020-07-13T12:30:00+00:00"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+            "value": "a54219b8-f741-4c47-b662-e4f8dfa49ab6"
+          }
+        ],
+        "status": "cancelled",
+        "statusReason": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason",
+                "code": "0001",
+                "display": "Prescribing Error"
+              }
+            ]
+          }
+        ],
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "15517911000001104",
+              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+        },
+        "authoredOn": "2020-07-13T12:00:00+00:00",
+        "requester": {
+          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+        },
+        "groupIdentifier": {
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
+              "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/prescription",
+                "value": "ad945a29-85f8-439a-b590-6789719adc16"
+              }
+            }
+          ],
+          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+          "value": "DC2C66-A1B2C3-23407B"
+        },
+        "substitution": {
+          "allowedBoolean": false
+        }
+      }
+    },
+    {
       "fullUrl": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
       "resource": {
         "resourceType": "Patient",
@@ -100,6 +162,60 @@
             "value": "B81001"
           }
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "56166769-c1c4-4d07-afa8-132b5dfca666",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "100102238986"
+          },
+          {
+            "system": "https://fhir.nhs.uk/Id/prescribing-code",
+            "value": "2345213"
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
+        },
+        "organization": {
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "code": "R8000",
+                "display": "Clinical Practitioner Access Role"
+              }
+            ]
+          }
+        ],
+        "healthcareService": [
+          {
+            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+            "identifier": [
+              {
+                "use": "official",
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "A99968"
+              }
+            ],
+            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01234567890",
+            "use": "work"
+          }
+        ]
       }
     },
     {
@@ -170,122 +286,6 @@
             "use": "work"
           }
         ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "56166769-c1c4-4d07-afa8-132b5dfca666",
-        "identifier": [
-          {
-            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-            "value": "100102238986"
-          },
-          {
-            "system": "https://fhir.nhs.uk/Id/prescribing-code",
-            "value": "2345213"
-          }
-        ],
-        "practitioner": {
-          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
-        },
-        "organization": {
-          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
-        },
-        "code": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
-                "code": "R8000",
-                "display": "Clinical Practitioner Access Role"
-              }
-            ]
-          }
-        ],
-        "healthcareService": [
-          {
-            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
-            "identifier": [
-              {
-                "use": "official",
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "A99968"
-              }
-            ],
-            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "01234567890",
-            "use": "work"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
-        "meta": {
-          "versionId": "2",
-          "lastUpdated": "2020-07-13T12:30:00+00:00"
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-            "value": "a54219b8-f741-4c47-b662-e4f8dfa49ab6"
-          }
-        ],
-        "status": "cancelled",
-        "statusReason": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason",
-                "code": "0001",
-                "display": "Prescribing Error"
-              }
-            ]
-          }
-        ],
-        "intent": "order",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "15517911000001104",
-              "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-        },
-        "authoredOn": "2020-07-13T12:00:00+00:00",
-        "requester": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
-        },
-        "groupIdentifier": {
-          "extension": [
-            {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
-              "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/prescription",
-                "value": "ad945a29-85f8-439a-b590-6789719adc16"
-              }
-            }
-          ],
-          "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-          "value": "DC2C66-A1B2C3-23407B"
-        },
-        "substitution": {
-          "allowedBoolean": false
-        }
       }
     },
     {
