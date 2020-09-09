@@ -315,7 +315,11 @@
           },
           {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "123456"
+            "value": "G1234567"
+          },
+          {
+            "system": "https://fhir.hl7.org.uk/Id/din-number",
+            "value": "1234567"
           }
         ],
         "name": [
