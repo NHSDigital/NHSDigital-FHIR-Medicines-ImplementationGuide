@@ -61,7 +61,7 @@
     <element id="Extension.extension:status.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
     </element>
     <element id="Extension.url">

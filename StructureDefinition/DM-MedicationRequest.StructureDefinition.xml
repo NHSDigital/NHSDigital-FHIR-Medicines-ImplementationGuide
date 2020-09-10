@@ -298,6 +298,26 @@
       <path value="MedicationRequest.dispenseRequest.performer" />
       <definition value="Indicates the intended dispensing Pharmacy specified by the patient. Can be sourced from nominatedPharmacy in the Patient Demographics Service (PDS)" />
     </element>
+    <element id="MedicationRequest.dispenseRequest.performer.extension">
+      <path value="MedicationRequest.dispenseRequest.performer.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.extension:practitionerRole">
+      <path value="MedicationRequest.dispenseRequest.performer.extension" />
+      <sliceName value="practitionerRole" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DispensingPerformer" />
+      </type>
+    </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">
       <path value="MedicationRequest.dispenseRequest.performer.identifier" />
       <min value="1" />
