@@ -45,18 +45,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.extension:epsPrescriptionType">
-      <path value="MedicationRequest.extension" />
-      <sliceName value="epsPrescriptionType" />
-      <short value="ITK Prescription Type" />
-      <definition value="Care Setting and type of prescriber. Required for prescription-order" />
-      <comment value="Care Setting and type of prescriber.." />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType" />
-      </type>
-    </element>
     <element id="MedicationRequest.extension:repeatInformation">
       <path value="MedicationRequest.extension" />
       <sliceName value="repeatInformation" />
@@ -91,6 +79,17 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionEndorsement" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:statusHistory">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="statusHistory" />
+      <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory" />
+      </type>
+    </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>
@@ -118,7 +117,7 @@
       <definition value="Mandatory for cancelled prescription items" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-status-reason" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
       </binding>
     </element>
     <element id="MedicationRequest.category.coding">

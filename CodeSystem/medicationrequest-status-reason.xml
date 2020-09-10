@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="medicationrequest-status-reason" />
-    <url value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason" />
+    <url value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason" />
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="medicationrequest-status-reason" />
