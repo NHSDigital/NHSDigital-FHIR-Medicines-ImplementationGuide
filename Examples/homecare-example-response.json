@@ -34,11 +34,9 @@
           "name": "DJM",
           "endpoint": "https://mait.digital.nhs.uk/"
         },
-        "response" : {
-          "identifier": {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9"
-          }
+        "response": {
+          "identifier": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9",
+          "code": "ok"
         },
         "focus": [
           {
@@ -57,19 +55,17 @@
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory",
             "extension": [
               {
-                "url" : "status",
+                "url": "status",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-history",
                   "code": "R-0002",
-                  "display": "Prescription/item was not cancelled With dispenser"
+                  "display": "Prescription/item was not cancelled – With dispenser"
                 }
-
               }
             ]
-            
           }
         ],
         "identifier": [
@@ -83,7 +79,6 @@
         "subject": {
           "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
         },
-
         "requester": {
           "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
         },
@@ -280,29 +275,6 @@
             "use": "work"
           }
         ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
-      "resource": {
-        "resourceType": "Location",
-        "id": "8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
-        "identifier": [
-          {
-            "value": "10008800708"
-          }
-        ],
-        "status": "active",
-        "mode": "instance",
-        "address": {
-          "use": "work",
-          "line": [
-            "MUSGROVE PARK HOSPITAL"
-          ],
-          "city": "TAUNTON",
-          "postalCode": "TA1 5DA",
-          "country": "NLD"
-        }
       }
     },
     {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory" />
-  <name value="PrescriptionStatusHistory" />
+  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionStatusHistory" />
+  <name value="Extension-PrescriptionStatusHistory" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -66,7 +66,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory" />
+      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionStatusHistory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
