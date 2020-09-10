@@ -19,7 +19,7 @@
         },
         "sender": {
           "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
-          "display": "DR SAZ RAZIA"
+          "display": "DR SAZ RAZ"
         },
         "source": {
           "extension": [
@@ -412,7 +412,7 @@
         ],
         "name": [
           {
-            "family": "RAZIA",
+            "family": "RAZ",
             "given": [
               "SAZ"
             ],
