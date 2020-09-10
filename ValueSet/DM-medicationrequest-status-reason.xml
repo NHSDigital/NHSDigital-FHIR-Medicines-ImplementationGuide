@@ -2,22 +2,23 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-medicationrequest-status-reason"/>
     <url value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-status-reason"/>
-    <version value="1.0.0"/>
+    <version value="1.1.0"/>
     <name value="MedicationRequest Status Reason"/>
     <status value="draft"/>
     <description value="MedicationRequest Category."/>
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <version value="1.1.0"/>
         </include>
     </compose>
     <expansion>
-        <timestamp value="2020-08-28T23:16:20+10:00"/>
-        <total value="7"/>
+        <timestamp value="2020-09-10T17:51:35+10:00"/>
+        <total value="17"/>
         <offset value="0"/>
         <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason|1.0.0"/>
+            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason|1.1.0"/>
         </parameter>
         <parameter>
             <name value="count"/>
@@ -39,8 +40,63 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
-            <code value="0007"/>
-            <display value="Notification of Death"/>
+            <code value="0003"/>
+            <display value="Change to medication treatment regime"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-5006"/>
+            <display value="Format of date passed is invalid"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-5888"/>
+            <display value="Invalid message The user should inform their system supplier that a message was rejected as invalid by the Spine."/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-5000"/>
+            <display value="Unable to process message. [Additional Information (if any)]"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-0001"/>
+            <display value="Prescription/item was cancelled"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0008"/>
+            <display value="Patient deducted - other reason"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-0002"/>
+            <display value="Prescription/item was not cancelled – With dispenser"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0009"/>
+            <display value="Patient deducted - registered with new practice"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-0003"/>
+            <display value=" Prescription item was not cancelled – With dispenser active The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing and the Spine has identified that dispensing events have been recorded against that prescription. The Spine has been updated accordingly. The response will notify the prescriber which dispenser has the prescription using the ‘Dispenser Information’ block defined within the DMS. It cannot be cancelled. The user must be notified accordingly."/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-0004"/>
+            <display value="Prescription/item was not cancelled – Dispensed to Patient"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="R-0005"/>
+            <display value=" Prescription item had expired The prescription item cannot be cancelled because the prescription item has expired. The user must be notified accordingly."/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0004"/>
+            <display value="Clinical grounds"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
@@ -54,13 +110,8 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
-            <code value="0003"/>
-            <display value="Change to medication treatment regime"/>
-        </contains>
-        <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason"/>
-            <code value="0004"/>
-            <display value="Clinical grounds"/>
+            <code value="0007"/>
+            <display value="Notification of Death"/>
         </contains>
     </expansion>
 </ValueSet>

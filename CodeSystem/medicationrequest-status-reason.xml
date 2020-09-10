@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="medicationrequest-status-reason" />
     <url value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason" />
@@ -7,7 +5,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="medicationrequest-status-reason" />
     </identifier>
-    <version value="1.0.0" />
+    <version value="1.1.0" />
     <name value="MedicationRequest Status Reason" />
     <title value="MedicationRequest Status Reason" />
     <status value="draft" />
@@ -51,5 +49,50 @@
     <concept>
         <code value="0007"></code>
         <display value="Notification of Death" />
+    </concept>
+    <concept>
+        <code value="0008"></code>
+        <display value="Patient deducted - other reason" />
+    </concept>
+    <concept>
+        <code value="0009"></code>
+        <display value="Patient deducted - registered with new practice" />
+    </concept>
+    <concept>
+        <code value="R-0001"></code>
+        <display value="Prescription/item was cancelled" />
+        <definition value="The cancellation request was successful, and the user is notified accordingly. If the entire prescription has been cancelled, the wording “prescription cancelled successfully” should be included within the user notification. Where one or more medication items have been cancelled, the wording “prescription item(s) cancelled successfully” should be included within the user notification. If the system cannot determine whether an individual item or the entire prescription has been cancelled, the wording “prescription/prescription item cancelled successfully” should be included within the user notification. " />
+    </concept>
+    <concept>
+        <code value="R-0002"></code>
+        <display value="Prescription/item was not cancelled – With dispenser" />
+        <definition value="The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing. The cancellation request identifies the prescription/item to be cancelled and sets a flag in the Spine that should that prescription be returned to the Spine by the dispenser, the prescription will be cancelled, and a cancel response will be sent to the prescriber indicating that the initial cancel request was successful. The user is notified accordingly." />
+    </concept>
+    <concept>
+        <code value="R-0003"></code>
+        <display value=" Prescription item was not cancelled – With dispenser active The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing and the Spine has identified that dispensing events have been recorded against that prescription. The Spine has been updated accordingly. The response will notify the prescriber which dispenser has the prescription using the ‘Dispenser Information’ block defined within the DMS. It cannot be cancelled. The user must be notified accordingly." />
+    </concept>
+    <concept>
+        <code value="R-0004"></code>
+        <display value="Prescription/item was not cancelled – Dispensed to Patient" />
+        <definition value="The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing and the Spine has identified that dispensing events have been recorded against that prescription. The Spine has been updated accordingly. The prescription is recorded as having been dispensed. The user must be notified accordingly." />
+    </concept>
+    <concept>
+        <code value="R-0005"></code>
+        <display value=" Prescription item had expired The prescription item cannot be cancelled because the prescription item has expired. The user must be notified accordingly." />
+    </concept>
+    <concept>
+        <code value="R-5000"></code>
+        <display value="Unable to process message. [Additional Information (if any)]" />
+        <definition value="The user should inform their system supplier that a message was rejected by the Spine." />
+    </concept>
+    <concept>
+        <code value="R-5888"></code>
+        <display value="Invalid message The user should inform their system supplier that a message was rejected as invalid by the Spine." />
+    </concept>
+    <concept>
+        <code value="R-5006"></code>
+        <display value="Format of date passed is invalid" />
+        <definition value="The format of a date/time attribute with the prescription does not confirm with the format defined within the DMS. The System must correct the date/time attribute and re-submit the prescription to the Spine." />
     </concept>
 </CodeSystem>
