@@ -5,7 +5,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="medicationrequest-status-reason" />
     </identifier>
-    <version value="1.1.0" />
+    <version value="1.1.1" />
     <name value="MedicationRequest Status Reason" />
     <title value="MedicationRequest Status Reason" />
     <status value="draft" />
@@ -70,7 +70,8 @@
     </concept>
     <concept>
         <code value="R-0003"></code>
-        <display value=" Prescription item was not cancelled – With dispenser active The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing and the Spine has identified that dispensing events have been recorded against that prescription. The Spine has been updated accordingly. The response will notify the prescriber which dispenser has the prescription using the ‘Dispenser Information’ block defined within the DMS. It cannot be cancelled. The user must be notified accordingly." />
+        <display value="Prescription item was not cancelled – With dispenser active"/>
+        <definition value="The cancellation request was unsuccessful because the prescription has been transmitted to a pharmacy for dispensing and the Spine has identified that dispensing events have been recorded against that prescription. The Spine has been updated accordingly. The response will notify the prescriber which dispenser has the prescription using the ‘Dispenser Information’ block defined within the DMS. It cannot be cancelled. The user must be notified accordingly." />
     </concept>
     <concept>
         <code value="R-0004"></code>
@@ -79,7 +80,8 @@
     </concept>
     <concept>
         <code value="R-0005"></code>
-        <display value=" Prescription item had expired The prescription item cannot be cancelled because the prescription item has expired. The user must be notified accordingly." />
+        <display value="Prescription item had expired"/>
+        <definition value="The prescription item cannot be cancelled because the prescription item has expired. The user must be notified accordingly." />
     </concept>
     <concept>
         <code value="R-5000"></code>
@@ -88,7 +90,8 @@
     </concept>
     <concept>
         <code value="R-5888"></code>
-        <display value="Invalid message The user should inform their system supplier that a message was rejected as invalid by the Spine." />
+        <display value="Invalid message"/>
+        <definition value="The user should inform their system supplier that a message was rejected as invalid by the Spine." />
     </concept>
     <concept>
         <code value="R-5006"></code>
