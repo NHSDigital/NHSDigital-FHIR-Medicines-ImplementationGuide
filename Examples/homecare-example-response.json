@@ -204,10 +204,6 @@
           {
             "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
             "value": "100102238986"
-          },
-          {
-            "system": "https://fhir.nhs.uk/Id/prescribing-code",
-            "value": "2345213"
           }
         ],
         "practitioner": {
@@ -251,10 +247,6 @@
           {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "G1234567"
-          },
-          {
-            "system": "https://fhir.hl7.org.uk/Id/din-number",
-            "value": "1234567"
           }
         ],
         "name": [
@@ -430,10 +422,6 @@
           {
             "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
             "value": "10012345678"
-          },
-          {
-            "system": "https://fhir.nhs.uk/Id/prescribing-code",
-            "value": "2132345"
           }
         ],
         "practitioner": {
@@ -466,10 +454,6 @@
           {
             "system": "https://fhir.nhs.uk/Id/sds-user-id",
             "value": "7020134158"
-          },
-          {
-            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "G9999999"
           }
         ],
         "name": [
