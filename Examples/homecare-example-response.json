@@ -12,27 +12,46 @@
       "resource": {
         "resourceType": "MessageHeader",
         "id": "4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
+        "destination" : [ {
+          "receiver" : {
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
+                "valueIdentifier": {
+                  "system": "https://fhir.nhs.uk/Id/spine-ASID",
+                  "value": "4561232"
+                }
+              }
+            ],
+            "reference" : "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "RBA"
+            },
+            "display" : "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+          }
+        }
+      ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
           "code": "prescription-order-response",
           "display": "Prescription Order Response"
         },
         "sender": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-          "display": "RAZIA|ALI"
-        },
-        "source": {
           "extension": [
             {
               "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
               "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                "value": "12456789012"
+                "value": "1231232"
               }
             }
           ],
-          "name": "DJM",
-          "endpoint": "https://mait.digital.nhs.uk/"
+          "display": "NHS Digital Spine"
+        },
+        "source": {
+          "name": "NHS Spine",
+          "endpoint": "https://apiman.nhs.uk/"
         },
         "response": {
           "identifier": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9",
@@ -66,6 +85,12 @@
                 }
               }
             ]
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
+            "valueReference": {
+              "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466"
+            }
           }
         ],
         "identifier": [
@@ -154,12 +179,14 @@
             "postalCode": "NG10 1NP"
           }
         ],
-        "managingOrganization": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "B81001"
+        "generalPractitioner": [
+          {
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "B81001"
+            }
           }
-        }
+        ]
       }
     },
     {
@@ -376,6 +403,72 @@
             "system": "phone",
             "value": "01234567890",
             "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a5acefc1-f8ca-4989-a5ac-34ae36741466",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "10012345678"
+          },
+          {
+            "system": "https://fhir.nhs.uk/Id/prescribing-code",
+            "value": "2132345"
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:e6aa1919-1334-4cb2-9024-b3c9bb0415c1"
+        },
+        "organization": {
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "code": "R8000",
+                "display": "Clinical Practitioner Access Role"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e6aa1919-1334-4cb2-9024-b3c9bb0415c1",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e6aa1919-1334-4cb2-9024-b3c9bb0415c1",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
+            "value": "7020134158"
+          },
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "G9999999"
+          },
+          {
+            "system": "https://fhir.hl7.org.uk/Id/din-number",
+            "value": "70201123456"
+          }
+        ],
+        "name": [
+          {
+            "family": "RAZ",
+            "given": [
+              "SAZ"
+            ],
+            "prefix": [
+              "DR"
+            ]
           }
         ]
       }
