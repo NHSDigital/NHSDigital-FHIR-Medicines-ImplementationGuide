@@ -12,26 +12,27 @@
       "resource": {
         "resourceType": "MessageHeader",
         "id": "4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
-        "destination" : [ {
-          "receiver" : {
-            "extension": [
-              {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-                "valueIdentifier": {
-                  "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                  "value": "4561232"
+        "destination": [
+          {
+            "receiver": {
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
+                  "valueIdentifier": {
+                    "system": "https://fhir.nhs.uk/Id/spine-ASID",
+                    "value": "4561232"
+                  }
                 }
-              }
-            ],
-            "reference" : "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "RBA"
-            },
-            "display" : "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+              ],
+              "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RBA"
+              },
+              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+            }
           }
-        }
-      ],
+        ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
           "code": "prescription-order-response",
@@ -89,7 +90,8 @@
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
             "valueReference": {
-              "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466"
+              "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
+              "display": "DR SAZ RAZ"
             }
           }
         ],
@@ -102,10 +104,12 @@
         "status": "active",
         "intent": "order",
         "subject": {
-          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+          "display": "ETTA CORY"
         },
         "requester": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+          "display": "DR RAZIA ALI"
         },
         "groupIdentifier": {
           "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -117,14 +121,16 @@
               {
                 "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DispensingPerformer",
                 "valueReference": {
-                  "reference": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6"
+                  "reference": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6",
+                  "display": "LOTTIE POTTS"
                 }
               }
             ],
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
               "value": "AB123"
-            }
+            },
+            "display": "The Simple Pharmacy"
           }
         }
       }
@@ -205,10 +211,12 @@
           }
         ],
         "practitioner": {
-          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
+          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+          "display": "DR RAZIA ALI"
         },
         "organization": {
-          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "code": [
           {
@@ -316,10 +324,12 @@
           }
         ],
         "practitioner": {
-          "reference": "urn:uuid:b439a0d2-67a8-4045-b577-242c134882db"
+          "reference": "urn:uuid:b439a0d2-67a8-4045-b577-242c134882db",
+          "display": "MS LOTTIE POTTS"
         },
         "organization": {
-          "reference": "urn:uuid:a51415a9-99f4-452e-bdae-f4067bfd738a"
+          "reference": "urn:uuid:a51415a9-99f4-452e-bdae-f4067bfd738a",
+          "display": "The Simple Pharmacy"
         },
         "code": [
           {
@@ -350,6 +360,10 @@
           {
             "system": "https://fhir.nhs.uk/Id/sds-user-id",
             "value": "3415870201"
+          },
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+            "value": "2145879"
           }
         ],
         "name": [
@@ -359,7 +373,7 @@
               "LOTTIE"
             ],
             "prefix": [
-              "DR"
+              "MS"
             ]
           }
         ]
@@ -423,10 +437,12 @@
           }
         ],
         "practitioner": {
-          "reference": "urn:uuid:e6aa1919-1334-4cb2-9024-b3c9bb0415c1"
+          "reference": "urn:uuid:e6aa1919-1334-4cb2-9024-b3c9bb0415c1",
+          "display": "DR SAZ RAZ"
         },
         "organization": {
-          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "code": [
           {
@@ -454,10 +470,6 @@
           {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "G9999999"
-          },
-          {
-            "system": "https://fhir.hl7.org.uk/Id/din-number",
-            "value": "70201123456"
           }
         ],
         "name": [
