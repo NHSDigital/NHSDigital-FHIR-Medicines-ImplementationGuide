@@ -87,7 +87,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
       </type>
     </element>
     <element id="MedicationRequest.identifier">

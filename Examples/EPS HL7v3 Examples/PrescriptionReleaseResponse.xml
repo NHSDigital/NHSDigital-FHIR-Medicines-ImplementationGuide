@@ -1,0 +1,344 @@
+<PrescriptionReleaseResponse xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\Schemas\PORX_MT122002UK31.xsd" classCode="INFO" moodCode="EVN">
+    <id root="BBC4E9DD-DA9A-C223-A2E3-332C69909534" />
+    <effectiveTime value="20040920103000" />
+    <component typeCode="COMP" contextConductionInd="false">
+        <seperatableInd value="false" />
+        <templateId root="2.16.840.1.113883.2.1.3.2.4.17.120" extension="PORX_MT122003UK30" />
+        <!--  
+This example message is provided for illustrative purposes only. It has had no clinical validation. Whilst every effort has been taken to ensure that the examples are consistent with the message specification contained within the MiM, where there are conflicts with the written message specification or schema, the specification or schema shall be considered to take precedence.
+ -->
+        <ParentPrescription classCode="INFO" moodCode="EVN">
+            <id root="BBC4E9DD-DA9A-C223-A2E3-332C69909534" />
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="163501000000109" displayName="Prescription" />
+            <effectiveTime value="20040920103000" />
+            <typeId root="2.16.840.1.113883.2.1.3.2.4.18.7" extension="PORX_MT122003UK32" />
+            <recordTarget typeCode="RCT">
+                <Patient classCode="PAT">
+                    <id root="2.16.840.1.113883.2.1.4.1" extension="9900002717" />
+                    <addr use="H">
+                        <streetAddressLine>10, The High Street,</streetAddressLine>
+                        <streetAddressLine>Simple Town</streetAddressLine>
+                        <postalCode>AA1 1AA</postalCode>
+                    </addr>
+                    <patientPerson classCode="PSN" determinerCode="INSTANCE">
+                        <name>
+                            <prefix>Mr</prefix>
+                            <given>Frank</given>
+                            <given>Simon</given>
+                            <family>Smith</family>
+                        </name>
+                        <administrativeGenderCode codeSystem="2.16.840.1.113883.2.1.3.2.4.16.25" code="1" />
+                        <birthTime value="19721207" />
+                        <playedProviderPatient classCode="PAT">
+                            <subjectOf typeCode="SBJ">
+                                <patientCareProvision classCode="PCPR" moodCode="EVN">
+                                    <code code="1" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.37" />
+                                    <responsibleParty typeCode="RESP">
+                                        <healthCareProvider classCode="PROV">
+                                            <id root="1.2.826.0.1285.0.2.0.65" extension="100004" />
+                                        </healthCareProvider>
+                                    </responsibleParty>
+                                </patientCareProvision>
+                            </subjectOf>
+                        </playedProviderPatient>
+                    </patientPerson>
+                </Patient>
+            </recordTarget>
+            <pertinentInformation1 typeCode="PERT" contextConductionInd="true">
+                <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.pertinentInformation" />
+                <pertinentPrescription classCode="SBADM" moodCode="RQO">
+                    <id root="45D2E9DD-DA11-C266-A426-447C68D3D33A" />
+                    <id root="2.16.840.1.113883.2.1.3.2.4.18.8" extension="83C40E-A23856-00123C" />
+                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="225426007" displayName="administration of therapeutic substance (procedure)" />
+                    <effectiveTime nullFlavor="NA" />
+                    <author typeCode="AUT" contextControlCode="OP">
+                        <time value="20040919103000" />
+                        <signatureText>
+                            <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+                                <SignedInfo>
+                                    <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                                    <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                                    <Reference>
+                                        <Transforms>
+                                            <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                                        </Transforms>
+                                        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                                        <DigestValue>hcaxZFDcBZNDOitCe+Xw5lUsUTQ=</DigestValue>
+                                    </Reference>
+                                </SignedInfo>
+                                <SignatureValue>maTUO72WzuCtteMeNAUOjTLpQq3ZjS3choobqKSGvdvPjA4f8KuhJgVsXwenEoaUudst532/6d8w LvCvU+67KGr6bIcfid8+Xlkl+O+Aq/q6K0PApQE23U4lqHvv0s7Gqic+iASYEJYhPRFDqLU4hn5f XPBzcIYYf9rLwZzVm/w=</SignatureValue>
+                                <KeyInfo>
+                                    <X509Data>
+                                        <X509Certificate>MIID8zCCAtugAwIBAgIEQd3BozANBgkqhkiG9w0BAQUFADAyMQwwCgYDVQQKEwNuaHMxCzAJBgNV BAsTAkNBMRUwEwYDVQQDFAxOSVMyX1NVQkNBQ0MwHhcNMDUwNzI3MTM1NDQzWhcNMDcwNzI3MTQy NDQzWjBEMQwwCgYDVQQKDANuaHMxDzANBgNVBAsMBlBlb3BsZTEjMCEGA1UEAwwaMjI5MzExMzM1 MDE3X0RhdmVfTWNBdmVudWUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALmmXQsK9alyap8F f6198QO4n4Q6fDD1elXDobVUXG3/eQoy0pPIZszv7YZGa4a+8DxIgTNghxUBS0X7fCk/O+QPYwri 9+ZADuVZFZu81v9hzRtv0235KQGtrMYGFzt4zM7BlJFMcSHesMvUpSQ17t6JM+wVFOkjcRPjbeYs 8RbFAgMBAAGjggGBMIIBfTAOBgNVHQ8BAf8EBAMCBkAwKwYDVR0QBCQwIoAPMjAwNTA3MjcxMzU0 NDNagQ8yMDA3MDcyNzE0MjQ0M1owgYEGA1UdIAEB/wR3MHUwcwYLKoY6AIl7ZgADAgAwZDBiBggr BgEFBQcCARZWaHR0cDovL253dy5ucGZpdC5uaHMudWsvaW5mb3JtYXRpb25fZ292ZXJuYW5jZS9j ZXJ0aWZpY2F0ZV9wb2xpY2llcy9jb250ZW50X2NvbW1pdG1lbnQwVAYDVR0fBE0wSzBJoEegRaRD MEExDDAKBgNVBAoTA25oczELMAkGA1UECxMCQ0ExFTATBgNVBAMUDE5JUzJfU1VCQ0FDQzENMAsG A1UEAxMEQ1JMNzAfBgNVHSMEGDAWgBR/2d/Aec3eXJG40OqbopsvmsmtuzAdBgNVHQ4EFgQU5fuL lhZDMawdfO1P784vv0vGeAYwCQYDVR0TBAIwADAZBgkqhkiG9n0HQQAEDDAKGwRWNy4xAwIEsDAN BgkqhkiG9w0BAQUFAAOCAQEAD7RxsmmPOgkn3Xf1Hlsv+Pq9DVq77zh09yxdslTTciiQvCTxA96H 0Dofpcq+es0OvuZzUZrbLjcD2j/SP1ecjB/vTh9tU9GyIYRE6NlRfo6Oe22OiEFeOarbrIp6lnjE GCSkEfaRKWEy6YskmMG+7o48n5IARvil2J5K6uF/AQQhdmw+LSuqSf9uJmJudRakQtTJcNrC9O0t B9QpVfrpzYp3lxlvqOeofZAVIH1JxAu2KslP0dq2qiRMgd65n/r8l36dm/gEmYcN8JLZ7xpphM4P Zjbb2TNYBeJCnbXjS6U4a34Hn5z9k9+9q7ievhpaiW4UQG+y5Zayj4XavYfQCw==</X509Certificate>
+                                    </X509Data>
+                                </KeyInfo>
+                            </Signature>
+                        </signatureText>
+                        <AgentPerson classCode="AGNT">
+                            <id root="1.2.826.0.1285.0.2.0.67" extension="125686540025" />
+                            <code code="R0260" codeSystem="1.2.826.0.1285.0.2.1.104" />
+                            <telecom use="WP" value="tel:01234567890" />
+                            <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                <id root="1.2.826.0.1285.0.2.0.65" extension="896547302565" />
+                                <name>
+                                    <prefix>Dr</prefix>
+                                    <family>Smith</family>
+                                </name>
+                            </agentPerson>
+                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                <id root="1.2.826.0.1285.0.1.10" extension="M85011" />
+                                <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="001" />
+                                <name>Mirfield Surgery</name>
+                                <telecom use="WP" value="tel:01234567890" />
+                                <addr use="WP">
+                                    <streetAddressLine>20</streetAddressLine>
+                                    <streetAddressLine>Low Street</streetAddressLine>
+                                    <streetAddressLine>Simple Town</streetAddressLine>
+                                    <postalCode>AA2 2AA</postalCode>
+                                </addr>
+                                <healthCareProviderLicense classCode="PROV">
+                                    <Organization classCode="ORG" determinerCode="INSTANCE">
+                                        <id root="1.2.826.0.1285.0.1.10" extension="5FE" />
+                                        <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="005" />
+                                        <name>Portsmouth City</name>
+                                        <telecom use="WP" value="tel:01834567890" />
+                                    </Organization>
+                                </healthCareProviderLicense>
+                            </representedOrganization>
+                        </AgentPerson>
+                    </author>
+                    <responsibleParty typeCode="RESP" contextControlCode="OP">
+                        <AgentPerson classCode="AGNT">
+                            <id root="1.2.826.0.1285.0.2.0.67" extension="787946852679" />
+                            <code code="R0260" codeSystem="1.2.826.0.1285.0.2.1.104" />
+                            <telecom use="WP" value="tel:01234567890" />
+                            <agentPerson classCode="PSN" determinerCode="INSTANCE">
+                                <id root="1.2.826.0.1285.0.2.0.65" extension="777964352001" />
+                                <name>
+                                    <prefix>Dr</prefix>
+                                    <family>Nice</family>
+                                </name>
+                            </agentPerson>
+                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                <id root="1.2.826.0.1285.0.1.10" extension="M85011" />
+                                <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="001" />
+                                <name>Mirfield Surgery</name>
+                                <telecom use="WP" value="tel:01234567890" />
+                                <addr use="WP">
+                                    <streetAddressLine>20</streetAddressLine>
+                                    <streetAddressLine>Low Street</streetAddressLine>
+                                    <streetAddressLine>Simple Town</streetAddressLine>
+                                    <postalCode>AA2 2AA</postalCode>
+                                </addr>
+                                <healthCareProviderLicense classCode="PROV">
+                                    <Organization classCode="ORG" determinerCode="INSTANCE">
+                                        <id root="1.2.826.0.1285.0.1.10" extension="5FE" />
+                                        <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.94" code="005" />
+                                        <name>Portsmouth City</name>
+                                        <telecom use="WP" value="tel:01834567890" />
+                                    </Organization>
+                                </healthCareProviderLicense>
+                            </representedOrganization>
+                        </AgentPerson>
+                    </responsibleParty>
+                    <pertinentInformation7 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentReviewDate classCode="OBS" moodCode="EVN">
+                            <code code="RD" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" />
+                            <value value="20050320" />
+                        </pertinentReviewDate>
+                    </pertinentInformation7>
+                    <pertinentInformation5 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentPrescriptionTreatmentType classCode="OBS" moodCode="EVN">
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="PTT" />
+                            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.36" code="0002" />
+                        </pertinentPrescriptionTreatmentType>
+                    </pertinentInformation5>
+                    <pertinentInformation6 typeCode="PERT" inversionInd="false" negationInd="false">
+                        <seperatableInd value="false" />
+                        <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.sourceOf1" />
+                        <pertinentCareEventRef classCode="ENC" moodCode="EVN">
+                            <id root="123459DD-DA9A-C223-A200-332009907734" />
+                        </pertinentCareEventRef>
+                    </pertinentInformation6>
+                    <pertinentInformation10 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentPrescriptionStatus classCode="OBS" moodCode="EVN">
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="PS" />
+                            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.16.35" code="0002" displayName="With Dispenser" />
+                        </pertinentPrescriptionStatus>
+                    </pertinentInformation10>
+                    <pertinentInformation9 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentLowPermanentExemptionInfo classCode="OBS" moodCode="EVN">
+                            <code code="0002" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" />
+                            <value value="19881206" />
+                        </pertinentLowPermanentExemptionInfo>
+                    </pertinentInformation9>
+                    <pertinentInformation1 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentDispensingSitePreference classCode="OBS" moodCode="EVN">
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="DSP" />
+                            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.17.21" code="0004" />
+                        </pertinentDispensingSitePreference>
+                    </pertinentInformation1>
+                    <pertinentInformation2 typeCode="PERT" inversionInd="false" contextConductionInd="true" negationInd="false">
+                        <seperatableInd value="true" />
+                        <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.sourceOf2" />
+                        <pertinentLineItem classCode="SBADM" moodCode="RQO">
+                            <id root="5534EE53-397A-2E89-E97C-67B1BD95078D" />
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="225426007" />
+                            <effectiveTime nullFlavor="NA" />
+                            <product typeCode="PRD" contextControlCode="OP">
+                                <manufacturedProduct classCode="MANU">
+                                    <manufacturedRequestedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="320176004" displayName="Salbutamol 100micrograms/actuation inhaler" />
+                                    </manufacturedRequestedMaterial>
+                                </manufacturedProduct>
+                            </product>
+                            <component typeCode="COMP">
+                                <seperatableInd value="false" />
+                                <lineItemQuantity classCode="SPLY" moodCode="RQO">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="373784005" />
+                                    <quantity value="200" unit="1">
+                                        <translation value="200" code="4034511000001102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="actuation" />
+                                    </quantity>
+                                </lineItemQuantity>
+                            </component>
+                            <pertinentInformation4 typeCode="PERT" contextConductionInd="true">
+                                <seperatableInd value="true" />
+                                <pertinentItemStatus classCode="OBS" moodCode="EVN">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="IS" />
+                                    <value codeSystem="2.16.840.1.113883.2.1.3.2.4.17.23" code="0008" displayName="Item with dispenser" />
+                                </pertinentItemStatus>
+                            </pertinentInformation4>
+                            <pertinentInformation2 typeCode="PERT" contextConductionInd="true">
+                                <seperatableInd value="true" />
+                                <pertinentDosageInstructions classCode="OBS" moodCode="EVN">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="DI" />
+                                    <value>2 puffs when required</value>
+                                </pertinentDosageInstructions>
+                            </pertinentInformation2>
+                            <inFulfillmentOf2 typeCode="FLFS" inversionInd="false" negationInd="false">
+                                <seperatableInd value="true" />
+                                <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.sourceOf1" />
+                                <priorOriginalItemRef moodCode="RQO" classCode="SBADM">
+                                    <id root="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+                                </priorOriginalItemRef>
+                            </inFulfillmentOf2>
+                        </pertinentLineItem>
+                    </pertinentInformation2>
+                    <pertinentInformation2 typeCode="PERT" inversionInd="false" contextConductionInd="true" negationInd="false">
+                        <seperatableInd value="true" />
+                        <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.sourceOf2" />
+                        <pertinentLineItem classCode="SBADM" moodCode="RQO">
+                            <id root="666C9A65-5C6A-308B-3400-32D247BADB23" />
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="225426007" />
+                            <effectiveTime nullFlavor="NA" />
+                            <product typeCode="PRD" contextControlCode="OP">
+                                <manufacturedProduct classCode="MANU">
+                                    <manufacturedRequestedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="810211000001105" displayName="Seretide 125 Evohaler (GlaxoSmithKline)" />
+                                    </manufacturedRequestedMaterial>
+                                </manufacturedProduct>
+                            </product>
+                            <component typeCode="COMP">
+                                <seperatableInd value="false" />
+                                <lineItemQuantity classCode="SPLY" moodCode="RQO">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.15" code="373784005" />
+                                    <quantity value="200" unit="1">
+                                        <translation value="240" code="4034511000001102" codeSystem="2.16.840.1.113883.2.1.3.2.4.15" displayName="actuation" />
+                                    </quantity>
+                                </lineItemQuantity>
+                            </component>
+                            <pertinentInformation4 typeCode="PERT" contextConductionInd="true">
+                                <seperatableInd value="true" />
+                                <pertinentItemStatus classCode="OBS" moodCode="EVN">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="IS" />
+                                    <value codeSystem="2.16.840.1.113883.2.1.3.2.4.17.23" code="0005" displayName="Item cancelled" />
+                                </pertinentItemStatus>
+                            </pertinentInformation4>
+                            <pertinentInformation2 typeCode="PERT" contextConductionInd="true">
+                                <seperatableInd value="true" />
+                                <pertinentDosageInstructions classCode="OBS" moodCode="EVN">
+                                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="DI" />
+                                    <value>2 puffs twice daily </value>
+                                </pertinentDosageInstructions>
+                            </pertinentInformation2>
+                            <inFulfillmentOf2 typeCode="FLFS" inversionInd="false" negationInd="false">
+                                <seperatableInd value="true" />
+                                <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.sourceOf1" />
+                                <priorOriginalItemRef moodCode="RQO" classCode="SBADM">
+                                    <id root="791C9A65-5C6A-308B-D700-32D247BADB87" />
+                                </priorOriginalItemRef>
+                            </inFulfillmentOf2>
+                        </pertinentLineItem>
+                    </pertinentInformation2>
+                    <pertinentInformation11 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentHighPermanentExemptionInfo classCode="OBS" moodCode="EVN">
+                            <code code="0004" codeSystem="2.16.840.1.113883.2.1.3.2.4.16.33" />
+                            <value value="20321206" />
+                        </pertinentHighPermanentExemptionInfo>
+                    </pertinentInformation11>
+                    <pertinentInformation8 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentTokenIssued classCode="OBS" moodCode="EVN">
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="TI" />
+                            <value value="false" />
+                        </pertinentTokenIssued>
+                    </pertinentInformation8>
+                    <pertinentInformation4 typeCode="PERT" contextConductionInd="true">
+                        <seperatableInd value="true" />
+                        <pertinentPrescriptionType classCode="OBS" moodCode="EVN">
+                            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.30" code="PT" />
+                            <value codeSystem="2.16.840.1.113883.2.1.3.2.4.17.25" code="0001" />
+                        </pertinentPrescriptionType>
+                    </pertinentInformation4>
+                </pertinentPrescription>
+            </pertinentInformation1>
+            <pertinentInformation2 typeCode="PERT">
+                <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="CSAB_RM-NPfITUK10.pertinentInformation1" />
+                <pertinentCareRecordElementCategory classCode="CATEGORY" moodCode="EVN">
+                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.56" code="185361000000102" />
+                    <component typeCode="COMP">
+                        <actRef classCode="ACT" moodCode="RQO">
+                            <id root="45D2E9DD-DA11-C266-A426-447C68D3D33A" />
+                        </actRef>
+                    </component>
+                    <component typeCode="COMP">
+                        <actRef classCode="ACT" moodCode="RQO">
+                            <id root="5534EE53-397A-2E89-E97C-67B1BD95078D" />
+                        </actRef>
+                    </component>
+                    <component typeCode="COMP">
+                        <actRef classCode="ACT" moodCode="RQO">
+                            <id root="666C9A65-5C6A-308B-3400-32D247BADB23" />
+                        </actRef>
+                    </component>
+                </pertinentCareRecordElementCategory>
+            </pertinentInformation2>
+        </ParentPrescription>
+    </component>
+    <pertinentInformation typeCode="PERT" contextConductionInd="true">
+        <seperatableInd value="false" />
+        <pertinentBatchInfo moodCode="EVN" classCode="OBS">
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.14" code="1" />
+            <value value="1" />
+        </pertinentBatchInfo>
+    </pertinentInformation>
+    <pertinentInformation typeCode="PERT" contextConductionInd="true">
+        <seperatableInd value="false" />
+        <pertinentBatchInfo moodCode="EVN" classCode="OBS">
+            <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.14" code="2" />
+            <value value="50" />
+        </pertinentBatchInfo>
+    </pertinentInformation>
+    <inFulfillmentOf typeCode="FLFS" inversionInd="false" negationInd="false">
+        <seperatableInd value="true" />
+        <priorDownloadRequestRef classCode="INFO" moodCode="RQO">
+            <id root="BBC4E9DD-DA9A-C223-A2E3-332C69909534" />
+        </priorDownloadRequestRef>
+    </inFulfillmentOf>
+</PrescriptionReleaseResponse>
