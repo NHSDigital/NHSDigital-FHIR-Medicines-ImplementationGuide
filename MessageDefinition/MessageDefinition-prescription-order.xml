@@ -10,17 +10,11 @@
     <status value="active" />
     <date value="2020-05-27" />
     <eventCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
+        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
         <code value="prescription-order" />
         <display value="Prescription Order" />
     </eventCoding>
     <category value="consequence" />
-    <focus>
-        <code value="MessageHeader" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader" />
-        <min value="1" />
-        <max value="1" />
-    </focus>
     <focus>
         <code value="MedicationRequest" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
@@ -37,24 +31,6 @@
         <code value="CommunicationRequest" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-CommunicationRequest" />
         <min value="0" />
-        <max value="*" />
-    </focus>
-    <focus>
-        <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
-        <min value="1" />
-        <max value="*" />
-    </focus>
-    <focus>
-        <code value="PractitionerRole" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
-        <min value="1" />
-        <max value="*" />
-    </focus>
-    <focus>
-        <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
-        <min value="1" />
         <max value="*" />
     </focus>
 </MessageDefinition>

@@ -34,7 +34,7 @@
           }
         ],
         "eventCoding": {
-          "system": "https://fhir.nhs.uk/R4/CodeSystem/message-event",
+          "system": "https://fhir.nhs.uk/CodeSystem/message-event",
           "code": "prescription-order-response",
           "display": "Prescription Order Response"
         },

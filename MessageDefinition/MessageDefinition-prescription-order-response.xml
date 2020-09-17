@@ -10,7 +10,7 @@
     <status value="active" />
     <date value="2020-08-28" />
     <eventCoding>
-        <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
+        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
         <code value="prescription-order-response" />
         <display value="Prescription Order Response" />
     </eventCoding>

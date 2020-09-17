@@ -12,7 +12,7 @@
           <MessageHeader>
             <id value="48B07891-1D81-7B99-3BD2-23E242D2DD44" />
             <eventCoding>
-              <system value="https://fhir.nhs.uk/R4/CodeSystem/message-event" />
+              <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
               <code value="prescription-order" />
               <display value="Prescription Order" />
             </eventCoding>
