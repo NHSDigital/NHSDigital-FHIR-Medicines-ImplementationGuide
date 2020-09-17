@@ -18,7 +18,7 @@
     <usage value="To be used to identify an Organisation registered with the Organisation Data Service (ODS)."></usage>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/R4/CodeSystem/organisation-type"/>
+        <value value="https://fhir.nhs.uk/CodeSystem/organisation-type"/>
         <preferred value="true"/>
     </uniqueId>
     <uniqueId>
