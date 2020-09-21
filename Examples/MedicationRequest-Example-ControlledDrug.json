@@ -37,7 +37,7 @@
         {
             "coding": [
                 {
-                    "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug",
+                    "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug",
                     "code": "CD2",
                     "display": "Schedule 2"
                 }

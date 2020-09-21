@@ -2,7 +2,7 @@
 
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="medicationrequest-controlled-drug"/>
-    <url value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug"/>
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="medicationrequest-controlled-drug"/>

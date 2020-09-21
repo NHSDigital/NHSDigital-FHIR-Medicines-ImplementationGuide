@@ -139,7 +139,7 @@
     </element>
     <element id="MedicationRequest.category.coding:sliceControlledDrug.system">
       <path value="MedicationRequest.category.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-controlled-drug" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug" />
     </element>
     <element id="MedicationRequest.category.coding:sliceCategoryInt">
       <path value="MedicationRequest.category.coding" />
