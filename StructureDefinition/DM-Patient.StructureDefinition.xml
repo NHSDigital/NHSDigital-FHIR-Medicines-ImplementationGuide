@@ -35,26 +35,6 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient.extension">
-      <path value="Patient.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.extension:nominatedPharmacy">
-      <path value="Patient.extension" />
-      <sliceName value="nominatedPharmacy" />
-      <definition value="This extension is not used in EPS/Digital Medicine to indicate pharmacy." />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NominatedPharmacy" />
-      </type>
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <min value="1" />
@@ -84,6 +64,7 @@
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
       <definition value="Patient's nominated care provider. Should include registered Practice if not present in managingOrganization. May also include Branch Surgery and General Practitioner." />
+      <min value="1" />
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
