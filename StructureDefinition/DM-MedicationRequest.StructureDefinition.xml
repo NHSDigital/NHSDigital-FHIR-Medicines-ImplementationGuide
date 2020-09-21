@@ -83,8 +83,6 @@
       <path value="MedicationRequest.extension" />
       <sliceName value="statusHistory" />
       <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
@@ -262,9 +260,18 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>
     </element>
+    <element id="MedicationRequest.dosageInstruction">
+      <path value="MedicationRequest.dosageInstruction" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.dosageInstruction.text">
       <path value="MedicationRequest.dosageInstruction.text" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.dispenseRequest.extension">
       <path value="MedicationRequest.dispenseRequest.extension" />
@@ -294,6 +301,10 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words" />
       </type>
     </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
       <definition value="Indicates the intended dispensing Pharmacy specified by the patient. Can be sourced from nominatedPharmacy in the Patient Demographics Service (PDS)" />
@@ -311,7 +322,6 @@
     <element id="MedicationRequest.dispenseRequest.performer.extension:practitionerRole">
       <path value="MedicationRequest.dispenseRequest.performer.extension" />
       <sliceName value="practitionerRole" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

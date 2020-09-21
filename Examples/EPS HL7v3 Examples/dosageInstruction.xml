@@ -1,0 +1,38 @@
+<dosageInstruction>
+    <text value="10 milligram, Inject, Subcutaneous route, once weekly" />
+    <timing>
+        <repeat>
+            <boundsDuration>
+                <value value="10" />
+                <unit value="day" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="d" />
+            </boundsDuration>
+            <frequency value="5" />
+            <period value="1" />
+            <periodUnit value="d" />
+        </repeat>
+    </timing>
+    <route>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="34206005" />
+            <display value="Subcutaneous route" />
+        </coding>
+    </route>
+    <method>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="422145002" />
+            <display value="Inject" />
+        </coding>
+    </method>
+    <doseAndRate>
+        <doseQuantity>
+            <value value="10" />
+            <unit value="milligram" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="mg" />
+        </doseQuantity>
+    </doseAndRate>
+</dosageInstruction>
