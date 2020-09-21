@@ -217,7 +217,7 @@
           {
             "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
             "valueCoding": {
-              "system": "https://fhir.nhs.uk/R4/CodeSystem/prescription-type",
+              "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "1001",
               "display": "Outpatient Community Prescriber - Medical Prescriber"
             }
@@ -227,7 +227,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-endorsement",
+                  "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement",
                   "code": "SLS",
                   "display": "Selected List Scheme"
                 }
@@ -323,7 +323,7 @@
             {
               "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
               "valueCoding": {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference",
+                "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                 "code": "P1"
               }
             }

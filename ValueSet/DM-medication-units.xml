@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="DM-medication-units" />
-  <url value="https://fhir.nhs.uk/R4/ValueSet/DM-medication-units" />
+  <url value="https://fhir.nhs.uk/ValueSet/DM-medication-units" />
   <version value="1.0.0" />
   <name value="DM-medication-units" />
   <title value="DM-medication-units" />

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-performer-site-type"/>
-    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-performer-site-type"/>
+    <url value="https://fhir.nhs.uk/ValueSet/DM-performer-site-type"/>
     <version value="4.0.1"/>
     <name value="MedicationRequest Performer Site Type"/>
     <status value="draft"/>
     <description value="MedicationRequest Performer Site Type"/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
         </include>
     </compose>
     <expansion>
@@ -18,7 +18,7 @@
         <offset value="0"/>
         <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference|1.0.0"/>
+            <valueUri value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference|1.0.0"/>
         </parameter>
         <parameter>
             <name value="count"/>
@@ -29,22 +29,22 @@
             <valueInteger value="0"/>
         </parameter>
         <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
             <code value="P1"/>
             <display value="Other (e.g. Community Pharmacy)"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
             <code value="P2"/>
             <display value="Appliance Contractor"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
             <code value="P3"/>
             <display value="Dispensing Doctor"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
             <code value="0004"/>
             <display value="None"/>
         </contains>

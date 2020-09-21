@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/R4/CodeSystem/DM-prescription-treatment-type"/>
+        <value value="https://fhir.nhs.uk/CodeSystem/DM-prescription-treatment-type"/>
         <preferred value="false"/>
     </uniqueId>
     <uniqueId>

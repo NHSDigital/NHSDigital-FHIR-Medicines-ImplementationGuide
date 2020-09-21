@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><CodeSystem xmlns="http://hl7.org/fhir">
     <id value="DM-medicationrequest-endorsement"/>
-    <url value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-endorsement"/>
+    <url value="https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement"/>
     <version value="1.1.0"/>
     <name value="NHSBSA Prescriber Endorsements"/>
     <status value="active"/>

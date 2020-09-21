@@ -134,7 +134,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-controlled-drug" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug" />
       </binding>
     </element>
     <element id="MedicationRequest.category.coding:sliceControlledDrug.system">
@@ -147,7 +147,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
       </binding>
     </element>
     <element id="MedicationRequest.category.coding:sliceCategoryInt.system">
@@ -160,12 +160,12 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-medicationrequest-category" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
       </binding>
     </element>
     <element id="MedicationRequest.category.coding:sliceCategoryUK.system">
       <path value="MedicationRequest.category.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-category" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-category" />
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />

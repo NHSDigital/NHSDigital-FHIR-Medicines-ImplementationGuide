@@ -31,7 +31,7 @@
             </concept>
         </include>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy" />
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy" />
             <concept>
                 <code value="continuous-repeat-dispensing"/>
                 <display value="Continuous long term (repeat dispensing)"/>
@@ -51,7 +51,7 @@
         <offset value="0"/>
         <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy|1.0.0"/>
+            <valueUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy|1.0.0"/>
         </parameter>
         <parameter>
             <name value="version"/>
@@ -78,7 +78,7 @@
             <display value="Short course (acute) therapy"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy"/>
             <version value="1.0.0"/>
             <code value="continuous-repeat-dispensing"/>
             <display value="Continuous long term (repeat dispensing)"/>

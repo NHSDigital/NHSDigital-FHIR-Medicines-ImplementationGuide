@@ -37,7 +37,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-type" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-type" />
       </binding>
     </element>
   </differential>

@@ -3,7 +3,7 @@
     <id value="repeatDispensing-pass" />
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
         <valueCoding>
-          <system value="https://fhir.nhs.uk/R4/CodeSystem/prescription-type" />
+          <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
           <code value="0101" />
           <display value="Primary Care Prescriber – Medical Prescriber" />
         </valueCoding>
@@ -58,7 +58,7 @@
     </groupIdentifier>
     <courseOfTherapyType>
         <coding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-course-of-therapy"></system>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy"></system>
             <code value="continuous-repeat-dispensing" />
             <display value="Continuous long term (repeat dispensing)" />
         </coding>
@@ -69,7 +69,7 @@
     <dispenseRequest>
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
             <valueCoding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"></system>
+                <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
                 <code value="0004" />
             </valueCoding>
         </extension>

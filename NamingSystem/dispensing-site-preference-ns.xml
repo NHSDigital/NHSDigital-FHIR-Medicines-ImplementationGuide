@@ -11,7 +11,7 @@
     <usage value="EPS"/>
     <uniqueId>
         <type value="uri"/>
-        <value value="https://fhir.nhs.uk/R4/CodeSystem/dispensing-site-preference"/>
+        <value value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"/>
         <preferred value="true"/>
     </uniqueId>
     <uniqueId>

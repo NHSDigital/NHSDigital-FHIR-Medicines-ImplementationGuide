@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-prescription-therapy-type"/>
-    <url value="https://fhir.nhs.uk/R4/ValueSet/DM-prescription-therapy-type"/>
+    <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-therapy-type"/>
     <version value="4.0.1"/>
     <name value="Digital Medicine Prescription Therapy Type ValueSet"/>
     <status value="draft"/>

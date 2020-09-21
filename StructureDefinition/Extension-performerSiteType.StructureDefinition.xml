@@ -37,7 +37,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/DM-performer-site-type" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-performer-site-type" />
       </binding>
     </element>
   </differential>
