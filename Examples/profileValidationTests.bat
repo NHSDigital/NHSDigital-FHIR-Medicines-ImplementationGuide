@@ -16,7 +16,6 @@ java -jar org.hl7.fhir.validator.jar outpatient-1-example.json -version 4.0.1 -t
 rem PASS - [Bundle] Homecare Prescription Order 
 
 java -jar org.hl7.fhir.validator.jar Homecare-example.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz   
-
 rem PASS - [bUNDLE] Homecare Prescription Cancel Response 
 
 java -jar org.hl7.fhir.validator.jar Homecare-example-response.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz   

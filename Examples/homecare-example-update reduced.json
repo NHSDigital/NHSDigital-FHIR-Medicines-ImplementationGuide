@@ -60,7 +60,7 @@
           }
         ],
         "status": "cancelled",
-        "statusReason": [
+        "statusReason": 
           {
             "coding": [
               {
@@ -70,7 +70,7 @@
               }
             ]
           }
-        ],
+        ,
         "intent": "order",
         "medicationCodeableConcept": {
           "coding": [
@@ -210,13 +210,13 @@
         ],
         "healthcareService": [
           {
-            "identifier": [
+            "identifier": 
               {
                 "use": "official",
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                 "value": "A99968"
               }
-            ],
+            ,
             "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
