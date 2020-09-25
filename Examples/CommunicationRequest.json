@@ -20,12 +20,12 @@
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/ods-organization-code",
       "value": "RBA"
-    },
-    "recipient": [
-      {
-        "system": "https://fhir.nhs.uk/Id/nhs-number",
-        "value": "9453740519"
-      }
-    ]
-  }
+    }
+  },
+  "recipient": [
+    {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9453740519"
+    }
+  ]
 }
