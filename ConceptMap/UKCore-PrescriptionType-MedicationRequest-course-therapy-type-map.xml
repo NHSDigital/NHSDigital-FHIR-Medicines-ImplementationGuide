@@ -1,0 +1,57 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
+    <url value="https://fhir.nhs.uk/ConceptMap/UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
+    <version value="4.0.1"/>
+    <name value="UKCore-PrescriptionType to MedicationRequest Course Prescription Therapy Type Map"/>
+    <title value="UKCore-PrescriptionType to MedicationRequest Course Prescription Therapy Type Map"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2020-09-25"/>
+    <publisher value="NHS Digital"/>
+    <contact>
+        <name value="Interoperability Team" />
+        <telecom>
+          <system value="email" />
+          <value value="interoperabilityteam@nhs.net" />
+          <use value="work" />
+        </telecom>
+      </contact>
+    <description value="Prescription Course of Therapy Mapping (DigitalMedicine to v3)"/>
+    <purpose value="Medicine Management"/>
+    <sourceUri value="https://fhir.nhs.uk/ValueSet/DM-prescription-therapy-type"/>
+    <group>
+        <source value="https://fhir.nhs.uk/CodeSystem/UKCore-PrescriptionType"/>
+        <target value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+        <element>
+            <code value="acute"/>
+            <display value="Acute"/>
+            <target>
+                <code value="acute"/>
+                <display value="Short course (acute) therapy"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+         <element>
+            <code value="repeat"/>
+            <display value="Repeat"/>
+            <target>
+                <code value="continuous"/>
+                <display value="Continuous long term therapy"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="https://fhir.nhs.uk/CodeSystem/UKCore-PrescriptionType"/>
+        <target value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy"/>
+         <element>
+            <code value="repeat-dispensing"/>
+            <display value="Repeat Dispensing"/>
+            <target>
+                <code value="continuous-repeat-dispensing"/>
+                <display value="Continuous long term (repeat dispensing)"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

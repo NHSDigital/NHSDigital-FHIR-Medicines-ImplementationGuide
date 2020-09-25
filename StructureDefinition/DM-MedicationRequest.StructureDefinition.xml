@@ -255,6 +255,7 @@
       <path value="MedicationRequest.courseOfTherapyType" />
       <definition value="The description of the overall pattern of the administration of the medication to the patient.&#xD;&#xA;Required for prescription-order" />
       <comment value="The type of prescription e.g. acute, continuous, etc. Was extension in STU3 https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1 and Digital Medicine uses international codes, so continuous in place of repeat." />
+      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy" />

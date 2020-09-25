@@ -7,6 +7,14 @@
    <status value="active"/>
    <date value="2018-05-18T00:00:00+00:00"/>
    <publisher value="HL7 UK"/>
+   <contact>
+      <name value="Interoperability Team" />
+      <telecom>
+        <system value="email" />
+        <value value="interoperabilityteam@nhs.net" />
+        <use value="work" />
+      </telecom>
+    </contact>
    <description value="A CodeSystem to identify the type of organisation"/>
    <copyright value="Copyright © 2004 HSCIC"/>
    <caseSensitive value="true"/>

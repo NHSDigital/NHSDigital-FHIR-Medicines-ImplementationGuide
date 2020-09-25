@@ -13,12 +13,13 @@
     <date value="2020-08-28" />
     <publisher value="NHS Digital" />
     <contact>
-        <name value="FHIR project team" />
+        <name value="Interoperability Team" />
         <telecom>
-            <system value="url" />
-            <value value="http://hl7.org/fhir" />
+          <system value="email" />
+          <value value="interoperabilityteam@nhs.net" />
+          <use value="work" />
         </telecom>
-    </contact>
+      </contact>
     <description value="MedicationRequest Status Reason History. Taken from HL7v3 UK Cancellation Reason Response" />
     <caseSensitive value="true" />
     <content value="complete" />
