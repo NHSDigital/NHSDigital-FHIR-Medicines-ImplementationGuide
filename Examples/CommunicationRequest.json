@@ -24,8 +24,10 @@
   },
   "recipient": [
     {
-      "system": "https://fhir.nhs.uk/Id/nhs-number",
-      "value": "9453740519"
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9453740519"
+      }
     }
   ]
 }
