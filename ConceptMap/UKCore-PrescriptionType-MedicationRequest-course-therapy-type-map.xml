@@ -18,7 +18,7 @@
       </contact>
     <description value="UKCore-PrescriptionType to MedicationRequest Course Prescription Therapy Type Map"/>
     <purpose value="CareConnect STU3 and UKCore to Digital Medicine conversion"/>
-    <sourceUri value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy"/>
+    <targetUri value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy"/>
     <group>
         <source value="https://fhir.nhs.uk/CodeSystem/UKCore-PrescriptionType"/>
         <target value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
