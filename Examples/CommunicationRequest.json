@@ -17,6 +17,7 @@
     }
   ],
   "requester": {
+    "type" :"Organization",
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/ods-organization-code",
       "value": "RBA"
@@ -24,6 +25,7 @@
   },
   "recipient": [
     {
+      "type" : "Patient",
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/nhs-number",
         "value": "9453740519"
