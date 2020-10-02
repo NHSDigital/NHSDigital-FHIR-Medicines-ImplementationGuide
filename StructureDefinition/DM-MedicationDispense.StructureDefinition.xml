@@ -44,5 +44,27 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="MedicationDispense.performer">
+      <path value="MedicationDispense.performer" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.performer.actor">
+      <path value="MedicationDispense.performer.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
+    <element id="MedicationDispense.authorizingPrescription">
+      <path value="MedicationDispense.authorizingPrescription" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.authorizingPrescription.identifier">
+      <path value="MedicationDispense.authorizingPrescription.identifier" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
