@@ -1,0 +1,24 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="pharmacy-dispense" />
+    <url value="https://fhir.nhs.uk/R4/MessageDefinition/pharmacy-dispense" />
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="bf729ea8-280b-4109-b2f5-02ce8e51d870" />
+    </identifier>
+    <version value="1.0.0" />
+    <title value="Pharmacy/Treatment Dispense" />
+    <status value="active" />
+    <date value="2020-10-02" />
+    <eventCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+        <code value="prescription-dispense" />
+        <display value="Pharmacy/treatment Dispense" />
+    </eventCoding>
+    <category value="consequence" />
+    <focus>
+        <code value="MedicationDispense" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationDispense" />
+        <min value="1" />
+        <max value="4" />
+    </focus>
+</MessageDefinition>
