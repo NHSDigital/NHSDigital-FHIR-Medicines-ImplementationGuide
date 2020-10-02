@@ -45,7 +45,7 @@
             },
             {
               "url": "url",
-              "value": "https://www.nhsapp.service.nhs.uk/message/"
+              "valueUri": "https://www.nhsapp.service.nhs.uk/message/"
             }
           ]
         }
