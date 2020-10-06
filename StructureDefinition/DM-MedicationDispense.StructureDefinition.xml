@@ -35,6 +35,26 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense.extension">
+      <path value="MedicationDispense.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:GroupIdentifier">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="GroupIdentifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier" />
+      </type>
+    </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
       <min value="1" />
