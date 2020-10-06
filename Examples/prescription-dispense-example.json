@@ -34,10 +34,7 @@
                     "endpoint": "https://mait.digital.nhs.uk/"
                 },
                 "response": {
-                    "identifier": {
-                        "system": "https://tools.ietf.org/html/rfc4122",
-                        "value": "9FBC4386-924F-4025-B8B3-E75819446A45"
-                    }
+                    "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45"
                 },
                 "focus": [
                     {
