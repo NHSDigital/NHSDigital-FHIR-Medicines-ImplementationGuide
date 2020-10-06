@@ -1,14 +1,13 @@
 {
     "resourceType": "MedicationDispense",
-    "id": "notification",
+    "id": "06167339-9337-D030-0366-514A6A46DA17",
     "identifier": [
         {
-            "use": "official",
-            "system": "http://www.bmc.nl/portal/dispenses",
-            "value": "12345689"
+            "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
+            "value": "06167339-9337-D030-0366-514A6A46DA17"
         }
     ],
-    "status": "completed",
+    "status": "in-progress",
     "medicationCodeableConcept": {
         "coding": [
             {
@@ -42,9 +41,9 @@
     "type": {
         "coding": [
             {
-                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                "code": "FFP",
-                "display": "First Fill - Part Fill"
+                "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                "code": "0003",
+                "display": "Item dispensed - partial"
             }
         ]
     },

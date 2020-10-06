@@ -66,5 +66,13 @@
       <path value="MedicationDispense.authorizingPrescription.identifier" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.type">
+      <path value="MedicationDispense.type" />
+      <binding>
+        <strength value="required" />
+        <description value="A ValueSet to identify the type of medication item status." />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
