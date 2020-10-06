@@ -29,5 +29,9 @@
         <code value="Identifier" />
       </type>
     </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <defaultValueUri value="https://fhir.nhs.uk/Id/prescription-order-number" />
+    </element>
   </differential>
 </StructureDefinition>
