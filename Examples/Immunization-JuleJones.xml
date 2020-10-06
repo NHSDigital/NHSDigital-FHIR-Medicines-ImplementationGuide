@@ -1,0 +1,197 @@
+<!--This xml example is for illustrative purposes only and has not been clinically verified.-->
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="40e225a0-8f48-11e8-b568-0800200c9a66" />
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="739aeb30-8f48-11e8-b568-0800200c9a66" />
+    </identifier>
+    <type value="message" />
+    <!--
+        This is as per ITK3 and is quite large compared to newer NHS Digital R4 versions.
+        It would be included in the STU3 digital medicines message.  
+        It's not correct as the sender and receiver are not included in the bundle
+        original message is here https://developer.nhs.uk/apis/itk3messagedistribution/explore_bundle_examples.html  
+        EventCoding has been swapped to EMS as this is a messaging event 
+    -->
+    <entry>
+        <fullUrl value="urn:uuid:a4409d7c-b613-477c-b623-87e60406c2f0" />
+        <resource>
+            <MessageHeader>
+                <id value="a4409d7c-b613-477c-b623-87e60406c2f0" />
+                <meta>
+                    <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2" />
+                </meta>
+                <extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+                    <!--The value of this handling specification is dependant on the response pattern.-->
+                    <extension url="BusAckRequested">
+                        <valueBoolean value="true" />
+                    </extension>
+                    <extension url="InfAckRequested">
+                        <valueBoolean value="true" />
+                    </extension>
+                    <extension url="RecipientType">
+                        <valueCoding>
+                            <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1" />
+                            <code value="FA" />
+                            <display value="For Action" />
+                        </valueCoding>
+                    </extension>
+                    <extension url="MessageDefinition">
+                        <valueReference>
+                            <reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-EDIS-MessageDefinition-1" />
+                        </valueReference>
+                    </extension>
+                    <extension url="SenderReference">
+                        <valueString value="None" />
+                    </extension>
+                    <extension url="LocalExtension">
+                        <valueString value="None" />
+                    </extension>
+                </extension>
+                <event>
+                    <system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2" />
+                    <code value="ITK011M" />
+                    <display value="ITK Events Management Service" />
+                </event>
+                <receiver>
+                    <reference value="urn:uuid:c7d0d92f-4db9-4ab0-89c8-375afca971ad" />
+                </receiver>
+                <sender>
+                    <reference value="urn:uuid:b86216fe-6a51-4687-af97-4b7d58154c39" />
+                </sender>
+                <timestamp value="2017-01-23T10:10:16+00:00" />
+                <source>
+                    <endpoint value="NOROT003" />
+                </source>
+                <focus>
+                    <reference value="urn:uuid:631ec8d3-6341-4c9e-b2a1-131af62718f2" />
+                </focus>
+                <focus>
+                    <reference value="urn:uuid:1c1f74ac-b4a1-468b-b1e1-0df0e0692064" />
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <!--Immunization administered during the encounter-->
+    <entry>
+        <fullUrl value="urn:uuid:631ec8d3-6341-4c9e-b2a1-131af62718f2" />
+        <resource>
+            <Immunization xmlns="http://hl7.org/fhir">
+                <id value="631ec8d3-6341-4c9e-b2a1-131af62718f2" />
+                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="822851000000102" />
+                            <display value="Seasonal influenza vaccination" />
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <status value="completed" />
+                <notGiven value="false" />
+                <vaccineCode>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="22704311000001109" />
+                        <display value="Fluarix Tetra vaccine suspension for injection 0.5ml pre-filled syringes (GlaxoSmithKline UK Ltd)" />
+                    </coding>
+                </vaccineCode>
+                <patient>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                        <value value="3478526985" />
+                    </identifier>
+                    <display value="JONES, Julie (Mrs)" />
+                </patient>
+                <encounter>
+                    <reference value="urn:uuid:1c1f74ac-b4a1-468b-b1e1-0df0e0692064" />
+                </encounter>
+                <date value="2018-05-09" />
+                <primarySource value="true" />
+                <site>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="368209003" />
+                        <display value="Right upper arm" />
+                    </coding>
+                </site>
+                <route>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="34206005" />
+                        <display value="Subcutaneous route" />
+                    </coding>
+                </route>
+                <practitioner>
+                    <role>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0443" />
+                            <code value="AP" />
+                            <display value="Administering Provider" />
+                        </coding>
+                    </role>
+                    <actor>
+                        <identifier>
+                            <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                            <value value="2145879" />
+                        </identifier>
+                        <display value="SMITH, Eric (Mr)" />
+                    </actor>
+                </practitioner>
+                <explanation>
+                    <reason>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="398192003" />
+                            <display value="Co-morbid conditions" />
+                        </coding>
+                    </reason>
+                </explanation>
+            </Immunization>
+        </resource>
+    </entry>
+    <!--Pharmacy Encounter-->
+    <entry>
+        <fullUrl value="urn:uuid:1c1f74ac-b4a1-468b-b1e1-0df0e0692064" />
+        <resource>
+            <!--Encounter resource providing context for the pharmacy visit-->
+            <Encounter xmlns="http://hl7.org/fhir">
+                <id value="1c1f74ac-b4a1-468b-b1e1-0df0e0692064" />
+                <status value="finished" />
+                <subject>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                        <value value="3478526985" />
+                    </identifier>
+                    <display value="JONES, Julie (Mrs)" />
+                </subject>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v3/ParticipationType" />
+                            <code value="PPRF" />
+                            <display value="primary performer" />
+                        </coding>
+                    </type>
+                    <individual>
+                        <identifier>
+                            <system value="https://fhir.hl7.org.uk/Id/gphc-number" />
+                            <value value="2145879" />
+                        </identifier>
+                        <display value="SMITH, Eric (Mr)" />
+                    </individual>
+                </participant>
+                <period>
+                    <start value="2018-05-09T10:00:00+00:00" />
+                </period>
+                <serviceProvider>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                        <value value="FA000" />
+                    </identifier>
+                    <display value="Overtown Pharmacy" />
+                </serviceProvider>
+            </Encounter>
+        </resource>
+    </entry>
+</Bundle>
