@@ -16,6 +16,15 @@
                     "code": "prescription-dispense",
                     "display": "Prescription Dispense"
                 },
+                "destination": {
+                    "endpoint": "https://eps.digital.nhs.uk/",
+                    "receiver": {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "T1270"
+                        }
+                    }
+                },
                 "sender": {
                     "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
                     "display": "Mr Peter Potion"
@@ -30,8 +39,8 @@
                             }
                         }
                     ],
-                    "name": "DJM",
-                    "endpoint": "https://mait.digital.nhs.uk/"
+                    "name": "The Pharmacy System",
+                    "endpoint": "https://simplepharmacy.nhs.uk/"
                 },
                 "response": {
                     "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45"
