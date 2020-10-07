@@ -89,6 +89,27 @@
                     }
                 },
                 "prescription": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier",
+                            "extension": [
+                                {
+                                    "url": "shortForm",
+                                    "valueIdentifier": {
+                                        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                                        "value": "83C40E-A23856-00123C"
+                                    }
+                                },
+                                {
+                                    "url": "UUID",
+                                    "valueIdentifier": {
+                                        "system": "https://fhir.nhs.uk/Id/prescription",
+                                        "value": "06167339-9337-D030-0366-514A6A46DA17"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
                         "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
