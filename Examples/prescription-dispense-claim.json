@@ -23,7 +23,7 @@
                             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                             "value": "T1270"
                         },
-                        "display" :"PPA"
+                        "display": "PPA"
                     }
                 },
                 "sender": {
@@ -43,15 +43,15 @@
                     "name": "The Pharmacy System",
                     "endpoint": "https://simplepharmacy.nhs.uk/"
                 },
-                "reason" : {
+                "reason": {
                     "coding": [
-                      {
-                        "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
-                        "code": "claim",
-                        "display": "Claim"
-                      }
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
+                            "code": "claim",
+                            "display": "Claim"
+                        }
                     ]
-                  },
+                },
                 "response": {
                     "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45"
                 },
@@ -61,104 +61,39 @@
                     }
                 ]
             }
-        },{
+        },
+        {
             "fullUrl": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29",
             "resource": {
-                "resourceType": "MedicationDispense",
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier",
-                        "valueIdentifier": {
-                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                            "value": "3C2366-B81001-0A409U"
-                        }
-                    }
-                ],
+                "resourceType": "Claim",
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
                         "value": "4509B70D-D8B8-EA03-1105-64557CB54A29"
                     }
                 ],
-                "status": "completed",
-                "medicationCodeableConcept": {
+                "status": "active",
+                "type": {
                     "coding": [
                         {
-                            "system": "http://snomed.info/sct",
-                            "code": "323465006",
-                            "display": "Flucloxacillin 500mg capsules"
+                            "system": "http://terminology.hl7.org/CodeSystem/claim-type",
+                            "code": "pharmacy",
+                            "display": "Pharmacy"
                         }
                     ]
                 },
-                "subject": {
+                "patient": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "2300992742"
                     }
                 },
-                "performer": [
-                    {
-                        "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
-                        }
+                "prescription": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                        "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
                     }
-                ],
-                "authorizingPrescription": [
-                    {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                            "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
-                        }
-                    }
-                ],
-                "type": {
-                    "coding": [
-                        {
-                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                            "code": "0001",
-                            "display": "Item fully dispensed"
-                        }
-                    ]
-                },
-                "quantity": {
-                    "value": 28,
-                    "unit": "capsule",
-                    "system": "http://snomed.info/sct",
-                    "code": "3316911000001105"
-                },
-                "daysSupply": {
-                    "value": 7,
-                    "unit": "Day",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "d"
-                },
-                "whenPrepared": "2004-09-16T16:30:00+00:00",
-                "dosageInstruction": [
-                    {
-                        "text": "4 times a day for 7 days",
-                        "timing": {
-                            "repeat": {
-                                "boundsDuration": {
-                                    "value": 7,
-                                    "unit": "d"
-                                },
-                                "frequency": 4,
-                                "period": 1,
-                                "periodUnit": "d"
-                            }
-                        },
-                        "doseAndRate": [
-                            {
-                                "doseQuantity": {
-                                    "value": 1,
-                                    "unit": "capsule",
-                                    "system": "http://snomed.info/sct",
-                                    "code": "3316911000001105"
-                                }
-                            }
-                        ]
-                    }
-                ]
+                }
             }
         },
         {
