@@ -13,8 +13,8 @@
                 "resourceType": "MessageHeader",
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "prescription-dispense",
-                    "display": "Prescription Dispense"
+                    "code": "prescription-claim",
+                    "display": "Prescription Dispense Claim"
                 },
                 "destination": {
                     "endpoint": "https://eps.digital.nhs.uk/",

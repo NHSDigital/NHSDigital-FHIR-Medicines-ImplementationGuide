@@ -1,0 +1,24 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="pharmacy-dispense-claim" />
+    <url value="https://fhir.nhs.uk/R4/MessageDefinition/pharmacy-dispense-claim" />
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="e4966893-d9a0-43fd-a43a-f4db8d5d6c7d" />
+    </identifier>
+    <version value="1.0.0" />
+    <title value="Pharmacy Dispense Claim" />
+    <status value="active" />
+    <date value="2020-10-07" />
+    <eventCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+        <code value="prescription-claim" />
+        <display value="Prescription Dispense Claim" />
+    </eventCoding>
+    <category value="consequence" />
+    <focus>
+        <code value="Claim" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Claim" />
+        <min value="1" />
+        <max value="4" />
+    </focus>
+</MessageDefinition>
