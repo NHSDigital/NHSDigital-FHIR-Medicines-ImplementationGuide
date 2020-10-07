@@ -3,12 +3,12 @@
     "id": "prescription-dispense-claim",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "E9A71955-53BA-B15A-D4B6-BEA99D5017B3"
+        "value": "5A14C91B-B6B7-A8D1-D396-99E26C903C04"
     },
     "type": "message",
     "entry": [
         {
-            "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
+            "fullUrl": "urn:uuid:5A14C91B-B6B7-A8D1-D396-99E26C903C04",
             "resource": {
                 "resourceType": "MessageHeader",
                 "eventCoding": {
