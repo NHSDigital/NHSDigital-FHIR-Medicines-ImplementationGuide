@@ -72,8 +72,6 @@
       <path value="MedicationDispense.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
         <aggregation value="bundled" />
       </type>
@@ -81,6 +79,10 @@
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="referenced" />
+      </type>
     </element>
     <element id="MedicationDispense.authorizingPrescription.identifier">
       <path value="MedicationDispense.authorizingPrescription.identifier" />
@@ -93,6 +95,14 @@
         <description value="A ValueSet to identify the type of medication item status." />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
       </binding>
+    </element>
+    <element id="MedicationDispense.dosageInstruction">
+      <path value="MedicationDispense.dosageInstruction" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.text">
+      <path value="MedicationDispense.dosageInstruction.text" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

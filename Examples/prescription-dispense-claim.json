@@ -1,6 +1,6 @@
 {
     "resourceType": "Bundle",
-    "id": "prescription-dispense-example",
+    "id": "prescription-dispense-claim",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
         "value": "E9A71955-53BA-B15A-D4B6-BEA99D5017B3"
