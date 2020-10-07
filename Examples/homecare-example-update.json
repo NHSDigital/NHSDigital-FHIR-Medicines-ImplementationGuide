@@ -34,6 +34,15 @@
           "name": "DJM",
           "endpoint": "https://mait.digital.nhs.uk/"
         },
+        "reason" : {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
+              "code": "cancel",
+              "display": "Cancel"
+            }
+          ]
+        },
         "focus": [
           {
             "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
