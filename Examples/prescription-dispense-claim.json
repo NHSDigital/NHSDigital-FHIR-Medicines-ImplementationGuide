@@ -120,7 +120,21 @@
                         "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
                         "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
                     }
-                }
+                },
+                "item" : [
+                    {
+                        "sequence": 1,
+                        "productOrService" :{
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "323465006",
+                                    "display": "Flucloxacillin 500mg capsules"
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
