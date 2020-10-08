@@ -6,8 +6,8 @@
         <value value="medicationdispense-type" />
     </identifier>
     <version value="1.0.0" />
-    <name value="Medication Status Type" />
-    <title value="Medication Status Type" />
+    <name value="Medication Disepnse Status Type" />
+    <title value="Medication Dispense Status Type" />
     <status value="draft" />
     <experimental value="true" />
     <date value="2020-10-06" />
