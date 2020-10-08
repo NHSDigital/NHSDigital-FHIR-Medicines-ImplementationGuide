@@ -35,6 +35,16 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense.medication[x]">
+      <path value="MedicationDispense.medication[x]" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationCodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
       <min value="1" />

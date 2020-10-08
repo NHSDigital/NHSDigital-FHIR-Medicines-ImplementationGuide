@@ -82,14 +82,14 @@
                         }
                     ]
                 },
-                "use" : "claim",
+                "use": "claim",
                 "patient": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "2300992742"
                     }
                 },
-                "created":"2004-09-16T16:30:00+00:00",
+                "created": "2004-09-16T16:30:00+00:00",
                 "provider": {
                     "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
                     "display": "The Simple Pharmacy"
@@ -117,19 +117,39 @@
                         }
                     ]
                 },
-                "item" : [
+                "item": [
                     {
                         "extension": [
                             {
                                 "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-sequenceIdentifier",
-                                "valueIdentifier" : {
+                                "valueIdentifier": {
                                     "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
                                     "value": "4509B70D-D8B8-EA03-1105-64557CB54A29"
                                 }
                             }
                         ],
                         "sequence": 1,
-                        "productOrService" :{
+                        "modifier": {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        },
+                        "programCode": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                                        "code": "0001",
+                                        "display": "Patient has paid appropriate charges"
+                                    }
+                                ]
+                            }
+                        ],
+                        "productOrService": {
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
@@ -143,14 +163,34 @@
                         "extension": [
                             {
                                 "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-sequenceIdentifier",
-                                "valueIdentifier" : {
+                                "valueIdentifier": {
                                     "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
                                     "value": "06167339-9337-D030-0366-514A6A46DA17"
                                 }
                             }
                         ],
-                        "sequence": 1,
-                        "productOrService" :{
+                        "sequence": 2,
+                        "modifier": {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0001",
+                                    "display": "Item fully dispensed"
+                                }
+                            ]
+                        },
+                        "programCode": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                                        "code": "0001",
+                                        "display": "Patient has paid appropriate charges"
+                                    }
+                                ]
+                            }
+                        ],
+                        "productOrService": {
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",

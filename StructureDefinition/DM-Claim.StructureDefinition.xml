@@ -65,5 +65,33 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-sequenceIdentifier" />
       </type>
     </element>
+    <element id="Claim.item.productOrService">
+      <path value="Claim.item.productOrService" />
+      <binding>
+        <strength value="required" />
+        <description value="DMD Medication Code" />
+        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+      </binding>
+    </element>
+    <element id="Claim.item.modifier">
+      <path value="Claim.item.modifier" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Prescription status" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
+      </binding>
+    </element>
+    <element id="Claim.item.programCode">
+      <path value="Claim.item.programCode" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Prescription Charge Exemption" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
