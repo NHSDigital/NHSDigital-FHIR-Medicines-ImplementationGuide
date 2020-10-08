@@ -45,5 +45,25 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier" />
       </type>
     </element>
+    <element id="Claim.item.extension">
+      <path value="Claim.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Claim.item.extension:sequenceIdentifier">
+      <path value="Claim.item.extension" />
+      <sliceName value="sequenceIdentifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-sequenceIdentifier" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
