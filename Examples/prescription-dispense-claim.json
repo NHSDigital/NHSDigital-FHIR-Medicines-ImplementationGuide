@@ -94,6 +94,13 @@
                     "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
                     "display": "The Simple Pharmacy"
                 },
+                "priority": {
+                    "coding": [
+                      {
+                        "code": "normal"
+                      }
+                    ]
+                  },
                 "prescription": {
                     "extension": [
                         {
@@ -117,6 +124,19 @@
                         }
                     ]
                 },
+                "insurance": [
+                    {
+                        "sequence": 1,
+                        "focal": true,
+                        "coverage": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "T1270"
+                            },
+                            "display": "PPA"
+                        }
+                    }
+                ],
                 "item": [
                     {
                         "extension": [

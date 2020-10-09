@@ -19,6 +19,6 @@
         <code value="Claim" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Claim" />
         <min value="1" />
-        <max value="4" />
+        <max value="1" />
     </focus>
 </MessageDefinition>
