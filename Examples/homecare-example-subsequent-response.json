@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "homecare-response",
+  "id": "homecare-subsequent-response",
   "identifier": {
     "system": "https://tools.ietf.org/html/rfc4122",
     "value": "49f3405b-b3c9-477a-bd1e-7fba0c84f981"
@@ -81,8 +81,8 @@
                 "url": "status",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-history",
-                  "code": "R-0002",
-                  "display": "Prescription/item was not cancelled – With dispenser"
+                  "code": "R-0001",
+                  "display": "Prescription/item was cancelled"
                 }
               }
             ]
@@ -101,7 +101,7 @@
             "value": "a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
         ],
-        "status": "active",
+        "status": "cancelled",
         "intent": "order",
         "medicationCodeableConcept": {
           "coding": [
