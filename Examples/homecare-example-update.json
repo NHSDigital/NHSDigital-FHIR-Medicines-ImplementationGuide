@@ -200,7 +200,7 @@
             "value": "100102238986"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/prescribing-code",
+            "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
             "value": "2345213"
           }
         ],
@@ -382,7 +382,7 @@
             "value": "10012345678"
           },
           {
-            "system": "https://fhir.nhs.uk/Id/prescribing-code",
+            "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
             "value": "2132345"
           }
         ],
