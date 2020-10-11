@@ -38,7 +38,7 @@
         <time value="20040920103000"/>
         <AgentPerson classCode="AGNT">
             <id root="1.2.826.0.1285.0.2.0.67" extension="210987654322"/>
-            <code code="R5240" codeSystem="1.2.826.0.1285.0.2.1.104"/>
+            <code code="R1981" codeSystem="1.2.826.0.1285.0.2.1.104"/>
             <telecom use="WP" value="tel:01234567890"/>
             <agentPerson classCode="PSN" determinerCode="INSTANCE">
                 <id root="1.2.826.0.1285.0.2.0.65" extension="156968544265"/>

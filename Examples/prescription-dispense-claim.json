@@ -53,7 +53,8 @@
                     ]
                 },
                 "response": {
-                    "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45"
+                    "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45",
+                    "code" : "ok"
                 },
                 "focus": [
                     {
@@ -122,7 +123,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "display" : "The original prescription"
                 },
                 "insurance": [
                     {
@@ -246,7 +248,7 @@
                         "coding": [
                             {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R5240",
+                                "code": "R1981",
                                 "display": "Community Pharmacist"
                             }
                         ]
