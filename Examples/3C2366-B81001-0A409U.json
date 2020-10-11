@@ -129,7 +129,7 @@
                     {
                         "coding": [
                             {
-                                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-role",
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
                                 "code": "RO76"
                             }
                         ]

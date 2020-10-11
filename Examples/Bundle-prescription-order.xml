@@ -423,7 +423,7 @@
             <!-- This seems to be an odd codeSystem need to find source/owner, does not appear to match SDS/ODS held data  -->
             <type>
               <coding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/organisation-role" />
+                <system value="https://fhir.nhs.uk/CodeSystem/organisation-role" />
                 <code value="RO76" />
               </coding>
             </type>
