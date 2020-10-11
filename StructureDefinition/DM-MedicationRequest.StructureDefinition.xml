@@ -261,17 +261,9 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>
     </element>
-    <element id="MedicationRequest.dosageInstruction">
-      <path value="MedicationRequest.dosageInstruction" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.dosageInstruction.text">
       <path value="MedicationRequest.dosageInstruction.text" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
-      <min value="1" />
-    </element>
-    <element id="MedicationRequest.dispenseRequest">
-      <path value="MedicationRequest.dispenseRequest" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.dispenseRequest.extension">
