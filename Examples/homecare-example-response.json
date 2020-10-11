@@ -14,6 +14,7 @@
         "id": "4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
         "destination": [
           {
+            "endpoint": "mesh:ods:RBA",
             "receiver": {
               "extension": [
                 {
@@ -116,6 +117,7 @@
           "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
           "display": "ETTA CORY"
         },
+        "authoredOn": "2020-07-13T12:00:00+00:00",
         "requester": {
           "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
           "display": "DR RAZIA ALI"
@@ -133,52 +135,6 @@
             }
           ]
         },
-        "dosageInstruction": [
-          {
-            "text": "10 milligram, Inject, Subcutaneous route, once weekly",
-            "timing": {
-              "repeat": {
-                "frequency": 5,
-                "period": 1,
-                "periodUnit": "d",
-                "boundsDuration": {
-                  "value": 10,
-                  "unit": "day",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "d"
-                }
-              }
-            },
-            "method": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "422145002",
-                  "display": "Inject"
-                }
-              ]
-            },
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "34206005",
-                  "display": "Subcutaneous route"
-                }
-              ]
-            },
-            "doseAndRate": [
-              {
-                "doseQuantity": {
-                  "value": 10,
-                  "unit": "milligram",
-                  "system": "http://unitsofmeasure.org",
-                  "code": "mg"
-                }
-              }
-            ]
-          }
-        ],
         "dispenseRequest": {
           "performer": {
             "extension": [
