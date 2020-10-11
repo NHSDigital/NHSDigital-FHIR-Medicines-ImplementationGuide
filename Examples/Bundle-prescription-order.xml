@@ -69,7 +69,7 @@
                 </coding>
               </valueCodeableConcept>
             </extension>  -->
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
               <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
                 <code value="0101" />
@@ -188,7 +188,7 @@
                 </coding>
               </valueCodeableConcept>
             </extension> -->
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
               <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
                 <code value="0101" />

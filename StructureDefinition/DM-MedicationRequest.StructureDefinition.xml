@@ -88,6 +88,16 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:prescriptionType">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="prescriptionType" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType" />
+      </type>
+    </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>

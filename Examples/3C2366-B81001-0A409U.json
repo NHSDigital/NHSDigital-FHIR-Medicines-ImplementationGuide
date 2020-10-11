@@ -199,7 +199,7 @@
                 "id": "A7B86F8D-1D6D-FC28-E050-D20AE3A215F0",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                             "code": "0101"
@@ -293,7 +293,7 @@
                 "id": "A7B86F8D-1D72-FC28-E050-D20AE3A215F0",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                             "code": "0101"
@@ -386,7 +386,7 @@
                 "id": "A7B86F8D-1D77-FC28-E050-D20AE3A215F0",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                             "code": "0101"
@@ -480,7 +480,7 @@
                 "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F0",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-prescriptionType",
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                             "code": "0101"
