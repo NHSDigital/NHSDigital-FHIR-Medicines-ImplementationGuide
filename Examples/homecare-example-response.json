@@ -76,7 +76,7 @@
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/PrescriptionStatusHistory",
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
             "extension": [
               {
                 "url": "status",
@@ -351,7 +351,7 @@
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
-                "code": "R5240",
+                "code": "R1290",
                 "display": "Pharmacist"
               }
             ]
