@@ -316,7 +316,7 @@
                 </identifier>
                 <type>
                     <coding>
-                        <system value="https://fhir.nhs.uk/R4/CodeSystem/organisation-role" />
+                        <system value="https://fhir.nhs.uk/CodeSystem/organisation-role" />
                         <code value="RO197" />
                     </coding>
                 </type>

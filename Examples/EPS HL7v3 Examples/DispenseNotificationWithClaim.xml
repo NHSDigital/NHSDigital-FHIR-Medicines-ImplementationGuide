@@ -43,7 +43,7 @@
                 <signatureText nullFlavor="NA" />
                 <AgentPerson classCode="AGNT">
                     <id extension="210987654322" root="1.2.826.0.1285.0.2.0.67" />
-                    <code codeSystem="1.2.826.0.1285.0.2.1.104" code="R5240" />
+                    <code codeSystem="1.2.826.0.1285.0.2.1.104" code="R1981" />
                     <telecom value="tel:01234567890" />
                     <agentPerson classCode="PSN" determinerCode="INSTANCE">
                         <id root="1.2.826.0.1285.0.2.0.65" extension="156968544265" />
@@ -72,7 +72,7 @@
                 <signatureText nullFlavor="NA" />
                 <AgentPerson classCode="AGNT">
                     <id extension="210987654322" root="1.2.826.0.1285.0.2.0.67" />
-                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.24" code="R5240" />
+                    <code codeSystem="2.16.840.1.113883.2.1.3.2.4.17.24" code="R1981" />
                     <telecom value="tel:01234567890" />
                     <agentPerson classCode="PSN" determinerCode="INSTANCE">
                         <id root="1.2.826.0.1285.0.2.0.65" extension="156968544265" />

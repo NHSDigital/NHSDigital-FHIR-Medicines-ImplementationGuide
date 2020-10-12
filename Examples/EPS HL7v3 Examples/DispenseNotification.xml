@@ -27,7 +27,7 @@
                 <signatureText nullFlavor="NA" />
                 <AgentPerson classCode="AGNT">
                     <id extension="210987654322" root="1.2.826.0.1285.0.2.0.67" />
-                    <code codeSystem="1.2.826.0.1285.0.2.1.104" code="R5240" />
+                    <code codeSystem="1.2.826.0.1285.0.2.1.104" code="R1981" />
                     <telecom use="WP" value="tel:01134567890" />
                     <agentPerson classCode="PSN" determinerCode="INSTANCE">
                         <id root="1.2.826.0.1285.0.2.0.65" extension="156968544265" />

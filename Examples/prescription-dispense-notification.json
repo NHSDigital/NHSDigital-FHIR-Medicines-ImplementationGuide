@@ -17,7 +17,7 @@
                     "display": "Prescription Dispense"
                 },
                 "destination": {
-                    "endpoint": "https://eps.digital.nhs.uk/",
+                    "endpoint": "mesh:ods:T1270",
                     "receiver": {
                         "identifier": {
                             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -53,7 +53,8 @@
                     ]
                 },
                 "response": {
-                    "identifier": "D43B69B6-6BE3-C912-B78B-53D836D16175"
+                    "identifier": "D43B69B6-6BE3-C912-B78B-53D836D16175",
+                    "code": "ok"
                 },
                 "focus": [
                     {
@@ -104,10 +105,15 @@
                         "extension": [
                             {
                                 "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier",
-                                "valueIdentifier": {
-                                    "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                                    "value": "3C2366-B81001-0A409U"
-                                }
+                                "extension": [
+                                    {
+                                        "url": "shortForm",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                                            "value": "3C2366-B81001-0A409U"
+                                        }
+                                    }
+                                ]
                             }
                         ],
                         "identifier": {
@@ -295,7 +301,7 @@
                         "coding": [
                             {
                                 "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R5240",
+                                "code": "R1981",
                                 "display": "Community Pharmacist"
                             }
                         ]
