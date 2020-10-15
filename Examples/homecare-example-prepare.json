@@ -17,9 +17,24 @@
           "code": "prescription-order",
           "display": "Prescription Order"
         },
+        "destination": [
+          {
+            "endpoint": "mesh:ods:X2601",
+            "receiver": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "X2601"
+              },
+              "display": "NHS Digital Spine"
+            }
+          }
+        ],
         "sender": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-          "display": "RAZIA|ALI"
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          },
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "source": {
           "extension": [
@@ -150,13 +165,16 @@
                 }
               ]
             },
-            "doseAndRate": [ {
-            "doseQuantity": {
-              "value": 10,
-              "unit": "milligram",
-              "system": "http://unitsofmeasure.org",
-              "code": "mg"
-            } } ]
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
           }
         ],
         "dispenseRequest": {
@@ -291,7 +309,7 @@
         "healthcareService": [
           {
             "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
-            "display" : "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [
@@ -377,7 +395,6 @@
         ]
       }
     },
-    
     {
       "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
       "resource": {
