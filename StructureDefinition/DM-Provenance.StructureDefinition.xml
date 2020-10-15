@@ -47,7 +47,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
       </type>
     </element>
     <element id="Provenance.signature.who">

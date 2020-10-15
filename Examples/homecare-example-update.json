@@ -12,14 +12,29 @@
       "resource": {
         "resourceType": "MessageHeader",
         "id": "4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
+        "destination": [
+          {
+            "endpoint": "mesh:ods:X2601",
+            "receiver": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "X2601"
+              }, 
+            "display": "NHS Digital Spine"
+            }
+          }
+        ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/CodeSystem/message-event",
           "code": "prescription-order-update",
           "display": "Prescription Order Update"
         },
         "sender": {
-          "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
-          "display": "DR SAZ RAZ"
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          },
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "source": {
           "extension": [
@@ -122,7 +137,7 @@
               "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
               "code": "continuous",
               "display": "Continuous long term therapy"
-            }
+            }+
           ]
         },
         "substitution": {

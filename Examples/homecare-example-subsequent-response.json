@@ -25,7 +25,6 @@
                   }
                 }
               ],
-              "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                 "value": "RBA"
@@ -49,6 +48,10 @@
               }
             }
           ],
+          "identifier": {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "X2601"
+            }, 
           "display": "NHS Digital Spine"
         },
         "source": {
@@ -148,7 +151,7 @@
             ],
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "AB123"
+              "value": "VNE51"
             },
             "display": "The Simple Pharmacy"
           }

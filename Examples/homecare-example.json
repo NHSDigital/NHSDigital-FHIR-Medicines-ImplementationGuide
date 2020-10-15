@@ -12,14 +12,29 @@
       "resource": {
         "resourceType": "MessageHeader",
         "id": "3599c0e9-9292-413e-9270-9a1ef1ead99c",
+        "destination": [
+          {
+            "endpoint": "mesh:ods:X2601",
+            "receiver": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "X2601"
+              }, 
+            "display": "NHS Digital Spine"
+            }
+          }
+        ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/CodeSystem/message-event",
           "code": "prescription-order",
           "display": "Prescription Order"
         },
         "sender": {
-          "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-          "display": "RAZIA|ALI"
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          },
+          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "source": {
           "extension": [
