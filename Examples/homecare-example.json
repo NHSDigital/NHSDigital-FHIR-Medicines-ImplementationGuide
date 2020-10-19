@@ -152,6 +152,14 @@
                 "dosageInstruction": [
                     {
                         "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+                        "additionalInstruction": [
+                            {
+                                "system": "http://snomed.info/sct",
+				                "code": "421769005",
+				                "display":"Follow directions"
+                            }
+                        ],
+                        "patientInstruction": "As directed",
                         "timing": {
                             "repeat": {
                                 "boundsDuration": {
