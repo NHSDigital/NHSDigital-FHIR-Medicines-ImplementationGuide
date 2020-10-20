@@ -16,6 +16,7 @@
         }
     ],
     "requester": {
+        "type": "Organization",
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
             "value": "RBA"
