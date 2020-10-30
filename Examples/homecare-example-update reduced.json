@@ -32,7 +32,7 @@
             }
           ],
           "name": "DJM",
-          "endpoint": "https://mait.digital.nhs.uk/"
+          "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
         "focus": [
           {

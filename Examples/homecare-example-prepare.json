@@ -19,7 +19,7 @@
         },
         "destination": [
           {
-            "endpoint": "mesh:ods:X2601",
+            "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
             "receiver": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -47,7 +47,7 @@
             }
           ],
           "name": "DJM",
-          "endpoint": "https://mait.digital.nhs.uk/"
+          "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
         "focus": [
           {
