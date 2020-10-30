@@ -18,17 +18,8 @@
               },
               "destination": [
                   {
-                      "endpoint": "mesh:ods:RBA",
+                      "endpoint": "urn:nhs-uk:addressing:ods:RBA",
                       "receiver": {
-                          "extension": [
-                              {
-                                  "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-                                  "valueIdentifier": {
-                                      "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                                      "value": "4561232"
-                                  }
-                              }
-                          ],
                           "identifier": {
                               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                               "value": "RBA"
@@ -38,15 +29,6 @@
                   }
               ],
               "sender": {
-                  "extension": [
-                      {
-                          "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-                          "valueIdentifier": {
-                              "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                              "value": "1231232"
-                          }
-                      }
-                  ],
                   "identifier": {
                       "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                       "value": "X2601"
@@ -55,7 +37,7 @@
               },
               "source": {
                   "name": "NHS Spine",
-                  "endpoint": "https://apiman.nhs.uk/"
+                  "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message"
               },
               "response": {
                   "identifier": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9",

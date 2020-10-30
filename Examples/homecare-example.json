@@ -36,15 +36,6 @@
                     "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
                 },
                 "source": {
-                    "extension": [
-                        {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-                            "valueIdentifier": {
-                                "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                                "value": "12456789012"
-                            }
-                        }
-                    ],
                     "name": "DJM",
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },

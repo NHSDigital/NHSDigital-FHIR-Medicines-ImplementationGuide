@@ -21,14 +21,8 @@
                     <display value="Dr Smith" />
                 </sender>
                 <source>
-                    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint">
-                        <valueIdentifier>
-                            <system value="https://fhir.nhs.uk/Id/spine-ASID" />
-                            <value value="747225912019" />
-                        </valueIdentifier>
-                    </extension>
                     <name value="PAS" />
-                    <endpoint value="https://fhir.hl7.org.uk/taunton/PAS" />
+                    <endpoint value="urn:nhs-uk:addressing:ods:RBA" />
                 </source>
                 <focus>
                     <reference value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />
@@ -178,7 +172,7 @@
                     <value value="default"></value>
                 </identifier>
                 <identifier>
-                    <system value="https://fhir.hl7.org.uk/taunton/PAS"></system>
+                    <system value="urn:nhs-uk:addressing:ods:RBA"></system>
                     <value value="1007"></value>
                 </identifier>
                 <identifier>
