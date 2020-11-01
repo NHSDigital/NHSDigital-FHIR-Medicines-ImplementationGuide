@@ -17,22 +17,25 @@
           "code": "prescription-order-update",
           "display": "Prescription Order Update"
         },
+        "destination": [
+          {
+            "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
+            "receiver": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "X2601"
+              },
+              "display": "NHS Digital Spine"
+            }
+          }
+        ],
         "sender": {
           "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
           "display": "RAZIA|ALI"
         },
         "source": {
-          "extension": [
-            {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-              "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                "value": "12456789012"
-              }
-            }
-          ],
           "name": "DJM",
-          "endpoint": "https://mait.digital.nhs.uk/"
+          "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
         "focus": [
           {
@@ -60,17 +63,15 @@
           }
         ],
         "status": "cancelled",
-        "statusReason": 
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason",
-                "code": "0001",
-                "display": "Prescribing Error"
-              }
-            ]
-          }
-        ,
+        "statusReason": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/R4/CodeSystem/medicationrequest-status-reason",
+              "code": "0001",
+              "display": "Prescribing Error"
+            }
+          ]
+        },
         "intent": "order",
         "medicationCodeableConcept": {
           "coding": [
@@ -210,13 +211,11 @@
         ],
         "healthcareService": [
           {
-            "identifier": 
-              {
-                "use": "official",
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "A99968"
-              }
-            ,
+            "identifier": {
+              "use": "official",
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "A99968"
+            },
             "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],

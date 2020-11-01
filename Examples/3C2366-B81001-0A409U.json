@@ -18,17 +18,8 @@
                     "display": "RAZIA|ALI"
                 },
                 "source": {
-                    "extension": [
-                        {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-spineEndpoint",
-                            "valueIdentifier": {
-                                "system": "https://fhir.nhs.uk/Id/spine-ASID",
-                                "value": "12456789012"
-                            }
-                        }
-                    ],
                     "name": "DJM",
-                    "endpoint": "https://mait.digital.nhs.uk/"
+                    "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },
                 "focus": [
                     {
