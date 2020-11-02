@@ -23,9 +23,9 @@
             "receiver": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "X2601"
+                "value": "VNE51"
               },
-              "display": "NHS Digital Spine"
+              "display": "The Simple Pharmacy"
             }
           }
         ],
@@ -37,7 +37,6 @@
           "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
         "source": {
-          "name": "DJM",
           "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
         "focus": [

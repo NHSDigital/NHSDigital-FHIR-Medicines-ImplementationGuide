@@ -22,9 +22,9 @@
                         "receiver": {
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "X2601"
+                                "value": "VNE51"
                             },
-                            "display": "NHS Digital Spine"
+                            "display": "The Simple Pharmacy"
                         }
                     }
                 ],
@@ -36,7 +36,6 @@
                     "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
                 },
                 "source": {
-                    "name": "DJM",
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },
                 "focus": [
@@ -148,9 +147,13 @@
                         "text": "10 milligram, Inject, Subcutaneous route, once weekly",
                         "additionalInstruction": [
                             {
-                                "system": "http://snomed.info/sct",
-				                "code": "421769005",
-				                "display":"Follow directions"
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "421769005",
+                                        "display": "Follow directions"
+                                    }
+                                ]
                             }
                         ],
                         "patientInstruction": "As directed",
