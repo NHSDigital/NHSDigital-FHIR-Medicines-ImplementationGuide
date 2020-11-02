@@ -3,7 +3,7 @@
     "id": "homecare",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "ad945a29-85f8-439a-b590-6789719adc16"
+        "value": "e11ee7ba-368f-4127-9eca-43aaf1509627"
     },
     "type": "message",
     "entry": [
@@ -11,6 +11,15 @@
             "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
             "resource": {
                 "resourceType": "MessageHeader",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
+                        "valueIdentifier": {
+                            "system": "https://tools.ietf.org/html/rfc4122",
+                            "value": "ad945a29-85f8-439a-b590-6789719adc16"
+                        }
+                    }
+                ],
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                     "code": "prescription-order",
