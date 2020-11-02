@@ -1,16 +1,29 @@
 {
   "resourceType": "Bundle",
   "id": "homecare-update",
+  "meta": {
+    "lastUpdated": "2020-11-02T11:13:30+00:00"
+  },
   "identifier": {
       "system": "https://tools.ietf.org/html/rfc4122",
-      "value": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9"
+      "value": "35a6e463-60cf-482e-84b7-ad41b55e740d"
   },
   "type": "message",
+  "timestamp": "2020-11-02T11:13:30+00:00",
   "entry": [
       {
           "fullUrl": "urn:uuid:4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
           "resource": {
               "resourceType": "MessageHeader",
+              "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
+                    "valueIdentifier": {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9"
+                    }
+                }
+              ],
               "eventCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                   "code": "prescription-order-update",
@@ -47,6 +60,10 @@
                           "display": "Cancel"
                       }
                   ]
+              },
+              "response": {
+                "identifier": "ad945a29-85f8-439a-b590-6789719adc16",
+                "code": "ok"
               },
               "focus": [
                   {

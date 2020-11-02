@@ -1,16 +1,29 @@
 {
   "resourceType": "Bundle",
   "id": "homecare-response",
+  "meta": {
+    "lastUpdated": "2020-11-02T11:15:30+00:00"
+  },
   "identifier": {
       "system": "https://tools.ietf.org/html/rfc4122",
       "value": "49f3405b-b3c9-477a-bd1e-7fba0c84f981"
   },
   "type": "message",
+  "timestamp": "2020-11-02T11:15:30+00:00",
   "entry": [
       {
           "fullUrl": "urn:uuid:4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
           "resource": {
               "resourceType": "MessageHeader",
+              "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
+                    "valueIdentifier": {
+                        "system": "https://tools.ietf.org/html/rfc4122",
+                        "value": "658c143d-7e8d-43b7-a8b0-495032e50411"
+                    }
+                }
+              ],
               "eventCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                   "code": "prescription-order-response",
@@ -40,7 +53,7 @@
                   "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message"
               },
               "response": {
-                  "identifier": "d6b902f4-7cc0-44f1-a919-a86d6ffbccb9",
+                  "identifier": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9",
                   "code": "ok"
               },
               "focus": [

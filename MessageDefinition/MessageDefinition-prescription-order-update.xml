@@ -54,5 +54,5 @@
     <responseRequired value="always"></responseRequired>
     <allowedResponse> 
         <message value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-response"/>  
-      </allowedResponse> 
+    </allowedResponse> 
 </MessageDefinition>
