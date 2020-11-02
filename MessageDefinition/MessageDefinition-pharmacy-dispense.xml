@@ -14,7 +14,7 @@
         <code value="prescription-dispense" />
         <display value="Pharmacy/treatment Dispense" />
     </eventCoding>
-    <category value="consequence" />
+    <category value="notification" />
     <focus>
         <code value="MedicationDispense" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationDispense" />
