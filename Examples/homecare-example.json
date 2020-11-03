@@ -43,6 +43,15 @@
                 ],
                 "sender": {
                     "identifier": {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-MessageHeader-HealthcareService-Reference",
+                                "valueIdentifier": {
+                                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                    "value": "A99968"
+                                }
+                            }
+                        ],
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "RBA"
                     },
