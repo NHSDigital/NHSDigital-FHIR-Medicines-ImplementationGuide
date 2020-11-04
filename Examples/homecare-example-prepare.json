@@ -3,7 +3,7 @@
   "id": "homecare-prepare",
   "identifier": {
     "system": "https://tools.ietf.org/html/rfc4122",
-    "value": "bf84d5ce-7af0-4b59-b1c8-7c6225d11105"
+    "value": "ad945a29-85f8-439a-b590-6789719adc16"
   },
   "type": "message",
   "entry": [
@@ -12,6 +12,15 @@
       "resource": {
         "resourceType": "MessageHeader",
         "id": "3599c0e9-9292-413e-9270-9a1ef1ead99c",
+        "extension": [
+          {
+              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
+              "valueIdentifier": {
+                  "system": "https://tools.ietf.org/html/rfc4122",
+                  "value": "e11ee7ba-368f-4127-9eca-43aaf1509627"
+              }
+          }
+      ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/CodeSystem/message-event",
           "code": "prescription-order",
@@ -30,6 +39,15 @@
           }
         ],
         "sender": {
+          "extension": [
+            {
+                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-MessageHeader-HealthcareService-Reference",
+                "valueIdentifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "A99968"
+                }
+            }
+        ],
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
             "value": "RBA"
