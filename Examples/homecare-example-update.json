@@ -6,7 +6,7 @@
   },
   "identifier": {
       "system": "https://tools.ietf.org/html/rfc4122",
-      "value": "35a6e463-60cf-482e-84b7-ad41b55e740d"
+      "value": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9"
   },
   "type": "message",
   "timestamp": "2020-11-02T11:13:30+00:00",
@@ -20,7 +20,7 @@
                     "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
                     "valueIdentifier": {
                         "system": "https://tools.ietf.org/html/rfc4122",
-                        "value": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9"
+                        "value": "35a6e463-60cf-482e-84b7-ad41b55e740d"
                     }
                 }
               ],
