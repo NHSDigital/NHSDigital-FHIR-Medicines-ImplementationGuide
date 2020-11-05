@@ -35,7 +35,7 @@
                       "receiver": {
                         "extension": [
                             {
-                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-MessageHeader-HealthcareService-Reference",
+                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
                                 "valueIdentifier": {
                                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                     "value": "A99968"
