@@ -1,11 +1,11 @@
 {
     "resourceType": "Bundle",
-    "id": "homecare",
+    "id": "DC2C66-A1B2C3-23407B",
     "meta": {
         "lastUpdated": "2020-11-02T01:43:30+00:00"
     },
     "identifier": {
-        "system": "https://tools.ietf.org/html/rfc4122",
+        "system": "https://fhir.nhs.uk/Id/prescription",
         "value": "ad945a29-85f8-439a-b590-6789719adc16"
     },
     "type": "message",
