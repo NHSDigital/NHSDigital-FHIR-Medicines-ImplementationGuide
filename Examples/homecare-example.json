@@ -3,7 +3,7 @@
     "id": "homecare",
     "meta": {
         "lastUpdated": "2020-11-02T01:43:30+00:00"
-      },
+    },
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
         "value": "ad945a29-85f8-439a-b590-6789719adc16"
@@ -17,10 +17,18 @@
                 "resourceType": "MessageHeader",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-messageId",
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-messageId",
                         "valueIdentifier": {
                             "system": "https://tools.ietf.org/html/rfc4122",
                             "value": "e11ee7ba-368f-4127-9eca-43aaf1509627"
+                        }
+                    },
+                    {
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-Message-Status",
+                        "valueCoding": {
+                            "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
+                            "code": "active",
+                            "display": "Active"
                         }
                     }
                 ],
@@ -44,15 +52,16 @@
                 "sender": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-MessageHeader-HealthcareService-Reference",
-                            "valueIdentifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "A99968"
+                            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                    "value": "A99968"
+                                }
                             }
                         }
                     ],
                     "identifier": {
-                        
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "RBA"
                     },
@@ -71,7 +80,7 @@
                         "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
                     },
                     {
-                        "type": "CommunicationRequest",
+                        "type": "Provenance",
                         "reference": "urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E"
                     }
                 ]

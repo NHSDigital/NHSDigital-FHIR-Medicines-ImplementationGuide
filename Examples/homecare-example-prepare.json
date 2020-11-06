@@ -11,16 +11,23 @@
       "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "3599c0e9-9292-413e-9270-9a1ef1ead99c",
         "extension": [
           {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-identifier",
-              "valueIdentifier": {
-                  "system": "https://tools.ietf.org/html/rfc4122",
-                  "value": "e11ee7ba-368f-4127-9eca-43aaf1509627"
-              }
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-messageId",
+            "valueIdentifier": {
+              "system": "https://tools.ietf.org/html/rfc4122",
+              "value": "e11ee7ba-368f-4127-9eca-43aaf1509627"
+            }
+          },
+          {
+            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-Message-Status",
+            "valueCoding": {
+              "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
+              "code": "active",
+              "display": "Active"
+            }
           }
-      ],
+        ],
         "eventCoding": {
           "system": "https://fhir.nhs.uk/CodeSystem/message-event",
           "code": "prescription-order",
@@ -41,13 +48,15 @@
         "sender": {
           "extension": [
             {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-MessageHeader-HealthcareService-Reference",
-                "valueIdentifier": {
-                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                    "value": "A99968"
+              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
+              "valueReference": {
+                "identifier": {
+                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                  "value": "A99968"
                 }
+              }
             }
-        ],
+          ],
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
             "value": "RBA"
@@ -59,9 +68,11 @@
         },
         "focus": [
           {
+            "type": "Patient",
             "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
           },
           {
+            "type": "MedicationRequest",
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
         ]
@@ -291,12 +302,14 @@
             "postalCode": "NG10 1NP"
           }
         ],
-        "managingOrganization": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "B81001"
+        "generalPractitioner": [
+          {
+              "identifier": {
+                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                  "value": "B81001"
+              }
           }
-        }
+      ]
       }
     },
     {
