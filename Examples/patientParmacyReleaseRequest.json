@@ -1,0 +1,16 @@
+{
+    "resourceType": "Parameters",
+    "parameter": [
+        {
+            "name": "_id",
+            "valueString": "{prescription-short-form-id}"
+        },
+        {
+            "name": "status",
+            "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status - can be dropped",
+                "code": "queued"
+            }
+        }
+    ]
+}

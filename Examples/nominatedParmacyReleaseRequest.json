@@ -1,0 +1,19 @@
+{
+    "resourceType": "Parameters",
+    "parameter": [
+        {
+            "name": "message.destination.receiver",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code - can be dropped",
+                "value": "[ODSCode]"
+            }
+        },
+        {
+            "name": "status",
+            "valueCoding": {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status - can be dropped",
+                "code": "queued"
+            }
+        }
+    ]
+}

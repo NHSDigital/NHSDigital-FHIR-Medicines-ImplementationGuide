@@ -91,7 +91,6 @@
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
       <path value="MedicationRequest.extension" />
       <sliceName value="NHSBSAprescriptionType" />
-      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType" />
@@ -127,7 +126,12 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
       </binding>
     </element>
-    <element id="MedicationRequest.category.coding">
+    <element id="MedicationRequest.category:patientClass">
+      <path value="MedicationRequest.category" />
+      <sliceName value="patientClass" />
+      <max value="1" />
+    </element>
+    <element id="MedicationRequest.category:patientClass.coding">
       <path value="MedicationRequest.category.coding" />
       <slicing>
         <discriminator>
@@ -137,44 +141,32 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationRequest.category.coding:sliceControlledDrug">
+    <element id="MedicationRequest.category:patientClass.coding:patientClassUK">
       <path value="MedicationRequest.category.coding" />
-      <sliceName value="sliceControlledDrug" />
+      <sliceName value="patientClassUK" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug" />
-      </binding>
     </element>
-    <element id="MedicationRequest.category.coding:sliceControlledDrug.system">
+    <element id="MedicationRequest.category:patientClass.coding:patientClassUK.system">
       <path value="MedicationRequest.category.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-category" />
     </element>
-    <element id="MedicationRequest.category.coding:sliceCategoryInt">
+    <element id="MedicationRequest.category:patientClass.coding:patientClassInt">
       <path value="MedicationRequest.category.coding" />
-      <sliceName value="sliceCategoryInt" />
+      <sliceName value="patientClassInt" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
-      </binding>
     </element>
-    <element id="MedicationRequest.category.coding:sliceCategoryInt.system">
+    <element id="MedicationRequest.category:patientClass.coding:patientClassInt.system">
       <path value="MedicationRequest.category.coding.system" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
     </element>
-    <element id="MedicationRequest.category.coding:sliceCategoryUK">
-      <path value="MedicationRequest.category.coding" />
-      <sliceName value="sliceCategoryUK" />
+    <element id="MedicationRequest.category:controlledDrug">
+      <path value="MedicationRequest.category" />
+      <sliceName value="controlledDrug" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
-      </binding>
     </element>
-    <element id="MedicationRequest.category.coding:sliceCategoryUK.system">
+    <element id="MedicationRequest.category:controlledDrug.coding.system">
       <path value="MedicationRequest.category.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-category" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug" />
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
