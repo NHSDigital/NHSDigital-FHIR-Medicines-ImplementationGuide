@@ -142,8 +142,9 @@
       <short value="Patient Class" />
       <max value="1" />
     </element>
-    <element id="MedicationRequest.category:patientClass.coding">
+    <element id="MedicationRequest.category:patientClass.coding:sliceCoding">
       <path value="MedicationRequest.category.coding" />
+      <sliceName value="sliceCoding" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
@@ -159,8 +160,9 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug" />
       </binding>
     </element>
-    <element id="MedicationRequest.category:controlledDrug.coding">
+    <element id="MedicationRequest.category:controlledDrug.coding:sliceCoding">
       <path value="MedicationRequest.category.coding" />
+      <sliceName value="sliceCoding" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug" />
