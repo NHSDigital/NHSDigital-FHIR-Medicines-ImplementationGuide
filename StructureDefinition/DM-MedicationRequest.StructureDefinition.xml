@@ -126,6 +126,16 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
       </binding>
     </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationRequest.category:patientClass">
       <path value="MedicationRequest.category" />
       <sliceName value="patientClass" />
