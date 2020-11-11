@@ -145,6 +145,15 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category" />
       </binding>
     </element>
+    <element id="MedicationRequest.category:controlledDrug">
+      <path value="MedicationRequest.category" />
+      <sliceName value="controlledDrug" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug" />
+      </binding>
+    </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
       <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts" />
