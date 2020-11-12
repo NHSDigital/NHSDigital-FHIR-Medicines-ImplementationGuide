@@ -32,6 +32,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="Dispensing Site Prefererence" />
+      <min value="1" />
       <type>
         <code value="Coding" />
       </type>
@@ -39,6 +40,14 @@
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-performer-site-type" />
       </binding>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

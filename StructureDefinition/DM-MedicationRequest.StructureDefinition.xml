@@ -132,12 +132,25 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
       </binding>
     </element>
+    <element id="MedicationRequest.statusReason.coding">
+      <path value="MedicationRequest.statusReason.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicationRequest.statusReason.coding.system">
+      <path value="MedicationRequest.statusReason.coding.system" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.statusReason.coding.code">
       <path value="MedicationRequest.statusReason.coding.code" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.statusReason.coding.display">
       <path value="MedicationRequest.statusReason.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.category.coding">
@@ -149,6 +162,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="MedicationRequest.category.coding:patientClassFHIR">
       <path value="MedicationRequest.category.coding" />
@@ -161,7 +176,16 @@
     </element>
     <element id="MedicationRequest.category.coding:patientClassFHIR.system">
       <path value="MedicationRequest.category.coding.system" />
+      <min value="1" />
       <fixedUri value="http://terminology.hl7.org/CodeSystem/medicationrequest-category" />
+    </element>
+    <element id="MedicationRequest.category.coding:patientClassFHIR.code">
+      <path value="MedicationRequest.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.category.coding:patientClassFHIR.display">
+      <path value="MedicationRequest.category.coding.display" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.category.coding:patientClassUK">
       <path value="MedicationRequest.category.coding" />
@@ -174,7 +198,12 @@
     </element>
     <element id="MedicationRequest.category.coding:patientClassUK.system">
       <path value="MedicationRequest.category.coding.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-category" />
+    </element>
+    <element id="MedicationRequest.category.coding:patientClassUK.code">
+      <path value="MedicationRequest.category.coding.code" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
@@ -318,6 +347,35 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words" />
       </type>
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.start" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.end" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity.value">
+      <path value="MedicationRequest.dispenseRequest.quantity.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity.unit">
+      <path value="MedicationRequest.dispenseRequest.quantity.unit" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity.code">
+      <path value="MedicationRequest.dispenseRequest.quantity.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.value">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.code">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.code" />
+      <min value="1" />
+      <fixedCode value="d" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
