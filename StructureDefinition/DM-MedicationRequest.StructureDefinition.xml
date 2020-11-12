@@ -330,6 +330,10 @@
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
       <min value="1" />
     </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.dispenseRequest.extension">
       <path value="MedicationRequest.dispenseRequest.extension" />
       <slicing>
@@ -349,21 +353,16 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType" />
       </type>
     </element>
-    <element id="MedicationRequest.dispenseRequest.extension:controlledDrugWords">
-      <path value="MedicationRequest.dispenseRequest.extension" />
-      <sliceName value="controlledDrugWords" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words" />
-      </type>
-    </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
       <path value="MedicationRequest.dispenseRequest.validityPeriod.start" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
       <path value="MedicationRequest.dispenseRequest.validityPeriod.end" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity" />
       <min value="1" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity.value">
