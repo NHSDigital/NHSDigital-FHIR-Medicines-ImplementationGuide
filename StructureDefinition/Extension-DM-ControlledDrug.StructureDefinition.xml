@@ -64,8 +64,20 @@
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="Coding" />
       </type>
+    </element>
+    <element id="Extension.extension:schedule.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:schedule.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:schedule.value[x].display">
+      <path value="Extension.extension.value[x].display" />
+      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

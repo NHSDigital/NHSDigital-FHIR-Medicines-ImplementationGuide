@@ -10,10 +10,21 @@
             }
         },
         {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
-            "valueReference": {
-                "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
-            }
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug",
+            "extension": [
+                {
+                    "url": "quantityWords",
+                    "valueString": "twenty eight"
+                },
+                {
+                    "url": "schedule",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug",
+                        "code": "CD2",
+                        "display": "Schedule 2"
+                    }
+                }
+            ]
         }
     ],
     "identifier": [
@@ -95,10 +106,6 @@
                     "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                     "code": "0004"
                 }
-            },
-            {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-controlled-drug-quantity-words",
-                "valueString": "twenty eight"
             }
         ],
         "performer": {
