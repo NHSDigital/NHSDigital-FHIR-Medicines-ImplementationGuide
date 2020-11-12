@@ -96,6 +96,16 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType" />
       </type>
     </element>
+    <element id="MedicationRequest.extension:controlledDrug">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="controlledDrug" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
+      </type>
+    </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>
