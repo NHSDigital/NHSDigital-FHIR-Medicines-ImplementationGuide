@@ -112,11 +112,17 @@
       <sliceName value="prescriptionOrderItem" />
       <short value="Prescription Order Item" />
       <definition value="Unique Id of the MedicationRequest within EPS" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="MedicationRequest.identifier:prescriptionOrderItem.system">
       <path value="MedicationRequest.identifier.system" />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+    </element>
+    <element id="MedicationRequest.identifier:prescriptionOrderItem.value">
+      <path value="MedicationRequest.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
@@ -125,6 +131,14 @@
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
       </binding>
+    </element>
+    <element id="MedicationRequest.statusReason.coding.code">
+      <path value="MedicationRequest.statusReason.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.statusReason.coding.display">
+      <path value="MedicationRequest.statusReason.coding.display" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.category.coding">
       <path value="MedicationRequest.category.coding" />
@@ -241,10 +255,22 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
       </type>
     </element>
+    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
+      <path value="MedicationRequest.groupIdentifier.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].value">
+      <path value="MedicationRequest.groupIdentifier.extension.value[x].value" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.groupIdentifier.system">
       <path value="MedicationRequest.groupIdentifier.system" />
       <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-number" />
+    </element>
+    <element id="MedicationRequest.groupIdentifier.value">
+      <path value="MedicationRequest.groupIdentifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />

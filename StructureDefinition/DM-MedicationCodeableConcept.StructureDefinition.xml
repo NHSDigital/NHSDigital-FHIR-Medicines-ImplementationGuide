@@ -41,6 +41,7 @@
       <sliceName value="SNOMED" />
       <short value="UK Core Medication Code SNOMED CT Must be present" />
       <min value="1" />
+      <max value="1" />
       <binding>
         <strength value="required" />
         <description value="UK Core Medication Code" />
@@ -49,7 +50,12 @@
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
       <path value="CodeableConcept.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="CodeableConcept.coding:SNOMED.code">
+      <path value="CodeableConcept.coding.code" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

@@ -31,6 +31,7 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="Coding" />
       </type>
@@ -38,6 +39,14 @@
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-type" />
       </binding>
+    </element>
+    <element id="Extension.value[x].system">
+      <path value="Extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].code">
+      <path value="Extension.value[x].code" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
