@@ -18,7 +18,7 @@
     </contact>
     <description value="TODO - Add description" />
     <code value="release-message" />
-    <comment value="TODO - Add comment" />
+    <comment value="One of the parameters _id and message.destination.receiver MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions." />
     <resource value="Bundle" />
     <system value="true" />
     <type value="false" />
