@@ -1,0 +1,58 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="MessageHeader-release-message" />
+    <meta>
+        <lastUpdated value="2019-11-01T09:29:23.356+11:00" />
+    </meta>
+    <url value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-release-message" />
+    <version value="4.0.1" />
+    <name value="Release Message" />
+    <status value="draft" />
+    <kind value="operation" />
+    <date value="2020-11-13T09:29:23+11:00" />
+    <publisher value="NHS Digital" />
+    <contact>
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+        </telecom>
+    </contact>
+    <description value="TODO - Add description" />
+    <code value="release-message" />
+    <comment value="TODO - Add comment" />
+    <resource value="MessageHeader" />
+    <system value="true" />
+    <type value="false" />
+    <instance value="false" />
+    <parameter>
+        <name value="_id" />
+        <use value="in" />
+        <min value="0" />
+        <max value="1" />
+        <documentation value="The short-form-prescription-id (token) of the prescription. Used for releasing Patient prescriptions" />
+        <type value="string" />
+    </parameter>
+    <parameter>
+        <name value="message.destination.receiver" />
+        <use value="in" />
+        <min value="0" />
+        <max value="1" />
+        <documentation value="The ODS code of the pharmacy. Used for releasing Nominated Pharmacy prescriptions" />
+        <type value="Identifier" />
+    </parameter>
+    <parameter>
+        <name value="status" />
+        <use value="in" />
+        <min value="1" />
+        <max value="1" />
+        <documentation value="Used to update the prescriptions status. Only supported status is currently: completed" />
+        <type value="Coding" />
+    </parameter>
+    <parameter>
+        <name value="return" />
+        <use value="out" />
+        <min value="1" />
+        <max value="1" />
+        <documentation value="A FHIR Bundle (type=searchset) which contains prescription-order FHIR Messages which match the search parameters" />
+        <type value="Bundle" />
+    </parameter>
+</OperationDefinition>
