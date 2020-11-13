@@ -19,7 +19,7 @@
     <description value="TODO - Add description" />
     <code value="release-message" />
     <comment value="TODO - Add comment" />
-    <resource value="MessageHeader" />
+    <resource value="Bundle" />
     <system value="true" />
     <type value="false" />
     <instance value="false" />
