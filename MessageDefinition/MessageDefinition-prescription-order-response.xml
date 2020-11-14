@@ -23,7 +23,7 @@
     </focus>
     <focus>
         <code value="MedicationRequest" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest-Outcome" />
         <min value="1" />
         <max value="4" />
     </focus>
