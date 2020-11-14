@@ -52,7 +52,7 @@
         <use value="out" />
         <min value="1" />
         <max value="1" />
-        <documentation value="A FHIR Bundle (type=searchset) which contains prescription-order FHIR Messages which match the search parameters" />
+        <documentation value="A FHIR Bundle (type=searchset) which contains prescription-order FHIR Messages which match the search parameters. An empty search will still return a FHIR Bundle but with no entries." />
         <type value="Bundle" />
     </parameter>
 </OperationDefinition>
