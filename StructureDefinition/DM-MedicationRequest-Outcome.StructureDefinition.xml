@@ -94,10 +94,6 @@
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
       <definition value="Mandatory for cancelled prescription items" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
-      </binding>
     </element>
     <element id="MedicationRequest.statusReason.coding">
       <path value="MedicationRequest.statusReason.coding" />
