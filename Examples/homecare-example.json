@@ -67,6 +67,14 @@
                     },
                     "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
                 },
+                "author": {
+                    "type": "PractitionerRole",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "100102238986"
+                    },
+                    "display": "DR ALI"
+                },
                 "source": {
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },
