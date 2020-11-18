@@ -9,6 +9,13 @@
             }
         },
         {
+            "name": "message.event",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                "value": "prescription-order"
+            }
+        },
+        {
             "name": "status",
             "valueCoding": {
                 "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
