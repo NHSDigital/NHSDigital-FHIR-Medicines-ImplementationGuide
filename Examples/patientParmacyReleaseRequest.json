@@ -3,12 +3,12 @@
     "parameter": [
         {
             "name": "_id",
-            "valueString": "{prescription-short-form-id}"
+            "valueString": "DC2C66-A1B2C3-23407B"
         },
         {
             "name": "status",
             "valueCoding": {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status - can be dropped",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
                 "code": "queued"
             }
         }

@@ -17,8 +17,8 @@
         </telecom>
     </contact>
     <description value="TODO - Add description" />
-    <code value="release-message" />
-    <comment value="One of the parameters _id and message.destination.receiver MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions." />
+    <code value="release" />
+    <comment value="Only one of the parameters _id and message.destination.receiver MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions." />
     <resource value="Bundle" />
     <system value="true" />
     <type value="false" />
@@ -40,11 +40,19 @@
         <type value="Identifier" />
     </parameter>
     <parameter>
+        <name value="message.event" />
+        <use value="in" />
+        <min value="0" />
+        <max value="1" />
+        <documentation value="The message event code from ValueSet https://fhir.nhs.uk/ValueSet/spine-message-events. Use: prescription-order " />
+        <type value="Coding" />
+    </parameter>
+    <parameter>
         <name value="status" />
         <use value="in" />
         <min value="1" />
         <max value="1" />
-        <documentation value="Used to update the prescriptions status. Only supported status is currently: completed" />
+        <documentation value="Status from ValueSet https://fhir.hl7.org.uk/ValueSet/message-status-vs. Use: completed" />
         <type value="Coding" />
     </parameter>
     <parameter>

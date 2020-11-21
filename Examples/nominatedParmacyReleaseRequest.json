@@ -4,14 +4,21 @@
         {
             "name": "message.destination.receiver",
             "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code - can be dropped",
-                "value": "[ODSCode]"
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "VNE51"
+            }
+        },
+        {
+            "name": "message.event",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                "value": "prescription-order"
             }
         },
         {
             "name": "status",
             "valueCoding": {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status - can be dropped",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
                 "code": "queued"
             }
         }
