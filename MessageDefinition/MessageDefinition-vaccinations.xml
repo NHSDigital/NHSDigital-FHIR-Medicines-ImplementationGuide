@@ -1,0 +1,25 @@
+<MessageDefinition xmlns="http://hl7.org/fhir">
+    <id value="vaccinations" />
+    <url value="https://fhir.nhs.uk/MessageDefinition/vaccinations" />
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />
+    </identifier>
+    <version value="1.0.0" />
+    <title value="Vaccinations notification" />
+    <status value="active" />
+    <date value="2020-11-21" />
+    <eventCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
+        <code value="vaccinations" />
+        <display value="Vaccinations" />
+    </eventCoding>
+    <category value="consequence" />
+    <focus>
+        <code value="MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+        <min value="1" />
+        <max value="*" />
+    </focus>
+    <responseRequired value="on-error"></responseRequired>
+</MessageDefinition>

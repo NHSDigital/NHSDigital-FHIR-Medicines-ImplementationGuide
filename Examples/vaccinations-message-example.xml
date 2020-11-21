@@ -1,0 +1,116 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="6e824ff8-9b0a-11e8-9eb6-529269fb1459"/>
+    <type value="message"/>
+    <timestamp value="2017-02-14T15:00:00+00:00"/>
+    <entry>
+        <fullUrl value="urn:uuid:85c8a1c5-a8a1-41c9-bb99-20956fa66218"/>
+        <resource>
+            <MessageHeader>
+                <event>
+                    <system value="https://fhir.nhs.uk/CodeSystem/message-event"/>
+                    <code value="vaccinations"/>
+                    <display value="Vaccinations"/>
+                </event>
+                <destination>
+                    <endpoint value="https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message" />
+                    <receiver>
+                        <identifier>
+                            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                            <value value="X26" />
+                        </identifier>
+                        <display value="NHS Digital" />
+                    </receiver>
+                </destination>
+                <sender>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                        <value value="A83627" />
+                    </identifier>
+                    <display value="SILVERDALE FAMILY PRACTICE" />
+                </sender>
+                <source>
+                    <endpoint value="urn:nhs-uk:addressing:ods:A83627" />
+                </source>
+                <focus>
+                    <reference value="urn:uuid:076db265-8799-4dda-9418-e2a4d6d1c0d0"/>
+                </focus>
+            </MessageHeader>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:076db265-8799-4dda-9418-e2a4d6d1c0d0"/>
+        <resource>
+            <Immunization>
+                <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="170433008"/>
+                            <display value="Measles mumps and rubella vaccination - second dose (procedure)"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <identifier>
+                    <system value="https://supplierABC/identifiers"/>
+                    <value value="abc1111"/>
+                </identifier>
+                <status value="completed"/>
+                <notGiven value="false"/>
+                <vaccineCode>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34925411000001109"/>
+                        <display value="Priorix vaccine powder and solvent for solution for injection 0.5ml pre-filled syringes (GlaxoSmithKline UK Ltd) 1 pre-filled disposable injection (product)"/>
+                    </coding>
+                </vaccineCode>
+                <patient>
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+                        <value value="9912003888"/>
+                    </identifier>
+                </patient>
+                <date value="2017-02-14T12:00:00+00:00">
+                </date>
+                <primarySource value="true"/>
+                <lotNumber value="CCJN12M"/>
+                <site>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="91775009"/>
+                        <display value="Structure of left shoulder region"/>
+                    </coding>
+                </site>
+                <route>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="34206005"/>
+                        <display value="Subcutaneous route"/>
+                    </coding>
+                </route>
+                <doseQuantity>
+                    <value value="0.5"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="ml"/>
+                </doseQuantity>
+                <practitioner>
+                    <actor>
+                        <identifier>
+                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                        <value value="A83627" />
+                    </identifier>
+                    <display value="SILVERDALE FAMILY PRACTICE" />
+                    </actor>
+                </practitioner>
+                <explanation>
+                    <reason>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="864611000000103"/>
+                            <display value="Recommendation to have child immunised against measles, mumps and rubella"/>
+                        </coding>
+                    </reason>
+                </explanation>
+            </Immunization>
+        </resource>
+    </entry>
+</Bundle>
