@@ -76,23 +76,19 @@
             </valueCodeableConcept>
         </extension>
         <targetDisease>
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://snomed.info/sct"></system>
-                    <code value="36989005"></code>
-                    <display value="Mumps"></display>
-                </coding>
-            </valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"></system>
+                <code value="36989005"></code>
+                <display value="Mumps"></display>
+            </coding>
         </targetDisease>
         <targetDisease>
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://snomed.info/sct"></system>
-                    <code value="36653000"></code>
-                    <display value="Rubella"></display>
-                </coding>
-            </valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct"></system>
+                <code value="36653000"></code>
+                <display value="Rubella"></display>
+            </coding>
         </targetDisease>
-        <doseNumberPositiveInt	value="1"/>
+        <doseNumberPositiveInt value="1"></doseNumberPositiveInt>
     </protocolApplied>
 </Immunization>
