@@ -43,6 +43,15 @@
     <performer>
         <actor>
             <identifier>
+                <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
+                <value value="PT2468"></value>
+            </identifier>
+            <display value="Dr Stephen Strange"></display>
+        </actor>
+    </performer>
+    <performer>
+        <actor>
+            <identifier>
                 <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
                 <value value="A83627"></value>
             </identifier>
