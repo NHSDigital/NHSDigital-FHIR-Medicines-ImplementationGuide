@@ -131,7 +131,7 @@
                             <display value="Rubella"></display>
                         </coding>
                     </targetDisease>
-                    <doseNumberPositiveInt value="1"></doseNumberPositiveInt>
+                    <doseNumberPositiveInt value="2"></doseNumberPositiveInt>
                 </protocolApplied>
             </Immunization>
         </resource>
