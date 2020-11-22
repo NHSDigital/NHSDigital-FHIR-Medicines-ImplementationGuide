@@ -41,15 +41,7 @@
         <fullUrl value="urn:uuid:076db265-8799-4dda-9418-e2a4d6d1c0d0"></fullUrl>
         <resource>
             <Immunization xmlns="http://hl7.org/fhir">
-                <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-VaccinationProcedure">
-                    <valueCodeableConcept>
-                        <coding>
-                            <system value="http://snomed.info/sct"></system>
-                            <code value="170433008"></code>
-                            <display value="Measles mumps and rubella vaccination - second dose (procedure)"></display>
-                        </coding>
-                    </valueCodeableConcept>
-                </extension>
+                <id value="vaccination"></id>
                 <identifier>
                     <system value="https://supplierABC/identifiers"></system>
                     <value value="abc1111"></value>
@@ -93,6 +85,15 @@
                 <performer>
                     <actor>
                         <identifier>
+                            <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
+                            <value value="PT2468"></value>
+                        </identifier>
+                        <display value="Dr Stephen Strange"></display>
+                    </actor>
+                </performer>
+                <performer>
+                    <actor>
+                        <identifier>
                             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
                             <value value="A83627"></value>
                         </identifier>
@@ -106,6 +107,32 @@
                         <display value="Recommendation to have child immunised against measles, mumps and rubella"></display>
                     </coding>
                 </reasonCode>
+                <protocolApplied>
+                    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-VaccinationProcedure">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://snomed.info/sct"></system>
+                                <code value="170433008"></code>
+                                <display value="Measles mumps and rubella vaccination - second dose (procedure)"></display>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <targetDisease>
+                        <coding>
+                            <system value="http://snomed.info/sct"></system>
+                            <code value="36989005"></code>
+                            <display value="Mumps"></display>
+                        </coding>
+                    </targetDisease>
+                    <targetDisease>
+                        <coding>
+                            <system value="http://snomed.info/sct"></system>
+                            <code value="36653000"></code>
+                            <display value="Rubella"></display>
+                        </coding>
+                    </targetDisease>
+                    <doseNumberPositiveInt value="1"></doseNumberPositiveInt>
+                </protocolApplied>
             </Immunization>
         </resource>
     </entry>
