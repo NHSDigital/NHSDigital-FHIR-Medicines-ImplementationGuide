@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="6e824ff8-9b0a-11e8-9eb6-529269fb1459"></id>
+    <id value="vaccinations-message"></id>
     <type value="message"></type>
     <timestamp value="2017-02-14T15:00:00+00:00"></timestamp>
     <entry>
