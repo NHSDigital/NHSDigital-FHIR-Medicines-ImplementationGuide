@@ -1,4 +1,3 @@
-<!--This xml example is for illustrative purposes only and has not been clinically verified.-->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="40e225a0-8f48-11e8-b568-0800200c9a66"/>
     <meta>
@@ -13,8 +12,8 @@
     <!--Pharmacy Immunizations Notification Document-->
     <entry>
         <fullUrl value="urn:uuid:979a4ef0-8b5a-11e8-b568-0800200c9a66"/>
+        <!--A resource carrying a set of healthcare-related information about the patient-->
         <resource>
-            <!--A resource carrying a set of healthcare-related information about the patient-->
             <Composition xmlns="http://hl7.org/fhir">
                 <meta>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-Composition-1"/>
@@ -54,7 +53,7 @@
 not necessarily who typed it in-->
                 <author>
                     <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY, RECOMMEND USING PROFESSIONAL CODES -->
-                    <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"></reference>
+                    <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
                     <display value="SMITH, Eric (Mr)"/>
                 </author>
                 <title value="Overtown Pharmacy 118 Immunization Record"/>
@@ -67,7 +66,6 @@ to the composition/document information.-->
                     </identifier>
                     <display value="Overtown Pharmacy"/>
                 </custodian>
-
                 <!-- GP Practice-->
                 <section>
                     <title value="GP practice"/>
@@ -197,7 +195,9 @@ to the composition/document information.-->
                                     </tr>
                                     <tr>
                                         <th>Relevant contacts</th>
-                                        <td>Name: Philip Jones <p>Relationship: Next of kin</p>
+                                        <td> Name: Philip Jones 
+                                 
+                                            <p>Relationship: Next of kin</p>
                                             <p>Contact details: Tel. 01138698975 Email. pjones@mymail.com</p>
                                         </td>
                                     </tr>
@@ -213,9 +213,8 @@ to the composition/document information.-->
             </Composition>
         </resource>
     </entry>
-   
     <!--Patient's registered GP Practice.-->
-     <!-- !!!!!!!!!!! CSV NOT PRESENT !!!!!!!!!!!!!!! -->
+    <!-- !!!!!!!!!!! CSV NOT PRESENT !!!!!!!!!!!!!!! -->
     <entry>
         <fullUrl value="urn:uuid:94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
         <resource>
@@ -281,14 +280,12 @@ to the composition/document information.-->
             </Patient>
         </resource>
     </entry>
-   
     <!--Immunization administered during the encounter-->
     <entry>
         <fullUrl value="urn:uuid:631ec8d3-6341-4c9e-b2a1-131af62718f2"/>
         <resource>
             <Immunization xmlns="http://hl7.org/fhir">
                 <meta>
-                    <!-- CSV RECORDED_DATE need to check this is correct -->
                     <lastUpdated value="2018-05-09T10:00:00+00:00"/>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-1"/>
                 </meta>
@@ -296,7 +293,7 @@ to the composition/document information.-->
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>
-                             <!-- CSV VACCINATION_PROCEDURE_CODE -->
+                            <!-- CSV VACCINATION_PROCEDURE_CODE -->
                             <code value="822851000000102"/>
                             <!-- CSV VACCINATION_PROCEDURE_TERM -->
                             <display value="Seasonal influenza vaccination"/>
@@ -305,13 +302,13 @@ to the composition/document information.-->
                 </extension>
                 <!-- CSV UNIQUE_ID -->
                 <identifier>
-                    <system value="https://tools.ietf.org/html/rfc4122" />
-                    <value value="e11ee7ba-368f-4127-9eca-43aaf1509627" />
+                    <system value="https://tools.ietf.org/html/rfc4122"/>
+                    <value value="e11ee7ba-368f-4127-9eca-43aaf1509627"/>
                 </identifier>
                 <!-- CSV ACTION_FLAG needs mapping deleted = entered-in-error | not-done ??? -->
                 <status value="completed"/>
                 <!-- CSV NOT_GIVEN -->
-              <notGiven value="true"/> 
+                <notGiven value="true"/>
                 <vaccineCode>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -329,28 +326,28 @@ to the composition/document information.-->
                 <date value="2018-05-09"/>
                 <!-- CSV PRIMARY_SOURCE -->
                 <primarySource value="true"/>
-                <reportOrigin> 
-                    <coding> 
-                      <system value="http://hl7.org/fhir/immunization-origin"/> 
-                      <!-- CSV REPORT_ORIGIN -->
-                      <code value="record"/> 
-                    </coding> 
-                    <text value="Written Record"/> 
-                  </reportOrigin> 
+                <reportOrigin>
+                    <coding>
+                        <system value="http://hl7.org/fhir/immunization-origin"/>
+                        <!-- CSV REPORT_ORIGIN -->
+                        <code value="record"/>
+                    </coding>
+                    <text value="Written Record"/>
+                </reportOrigin>
                 <location>
                     <identifier>
                         <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-                         <!-- CSV SITE_CODE this differs from original example but is legit -->
+                        <!-- CSV SITE_CODE this differs from original example but is legit -->
                         <value value="FA000"/>
                     </identifier>
                     <display value="Overtown Pharmacy"/>
                 </location>
                 <manufacturer>
                     <!-- CSV VACCINE_MANUFACTURER -->
-                    <display value="BOOTS"></display>
+                    <display value="BOOTS"/>
                 </manufacturer>
                 <!-- csv BATCH_NUMBER -->
-                <lotNumber value="abc123"></lotNumber>
+                <lotNumber value="abc123"/>
                 <site>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -369,19 +366,19 @@ to the composition/document information.-->
                         <display value="Subcutaneous route"/>
                     </coding>
                 </route>
-                <doseQuantity> 
+                <doseQuantity>
                     <!-- csv DOSE_AMOUNT -->
-                    <value value="5"/> 
+                    <value value="5"/>
                     <!-- CSV DOSE_UNIT_TERM     -->
-                    <unit value="pre-filled disposable injection"></unit>
-                    <system value="http://snomed.info/sct"/> 
+                    <unit value="pre-filled disposable injection"/>
+                    <system value="http://snomed.info/sct"/>
                     <!-- CSV DOSE_UNIT_CODE -->
-                    <code value="3318611000001103"/> 
-                  </doseQuantity> 
+                    <code value="3318611000001103"/>
+                </doseQuantity>
                 <practitioner>
                     <actor>
                         <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY, RECOMMEND USING PROFESSIONAL CODES -->
-                        <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"></reference>
+                        <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
                         <display value="SMITH, Eric (Mr)"/>
                     </actor>
                 </practitioner>
@@ -395,54 +392,54 @@ to the composition/document information.-->
                             <display value="Co-morbid conditions"/>
                         </coding>
                     </reason>
-                        <reasonNotGiven>
-                            <coding>
-                                <system value="http://snomed.info/sct"/>
-                                <!-- CSV VACCINATION_SITUATION_CODE -->
-                                <code value="398192003"/>
-                                <!-- CSV VACCINATION_SITUATION_TERM -->
-                                <display value="Co-morbid conditions"/>
-                            </coding>
-                        </reasonNotGiven>
-                        <reasonNotGiven>
-                            <coding>
-                                <system value="http://snomed.info/sct"/>
-                                <!-- CSV REASON_NOT_GIVEN_CODE -->
-                                <code value="398192003"/>
-                                <!-- CSV REASON_NOT_GIVEN_TERM -->
-                                <display value="Co-morbid conditions"/>
-                            </coding>
-                        </reasonNotGiven>
+                    <reasonNotGiven>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <!-- CSV VACCINATION_SITUATION_CODE -->
+                            <code value="398192003"/>
+                            <!-- CSV VACCINATION_SITUATION_TERM -->
+                            <display value="Co-morbid conditions"/>
+                        </coding>
+                    </reasonNotGiven>
+                    <reasonNotGiven>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <!-- CSV REASON_NOT_GIVEN_CODE -->
+                            <code value="398192003"/>
+                            <!-- CSV REASON_NOT_GIVEN_TERM -->
+                            <display value="Co-morbid conditions"/>
+                        </coding>
+                    </reasonNotGiven>
                 </explanation>
                 <vaccinationProtocol>
                     <!-- CSV DOSE_SEQUENCE -->
-                    <doseSequence value="1"></doseSequence>
+                    <doseSequence value="1"/>
                 </vaccinationProtocol>
             </Immunization>
         </resource>
     </entry>
     <!--Pharmacist associated with the encounter. -->
     <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY -->
-	<entry>
-		<fullUrl value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
-		<resource>
-			<Practitioner xmlns="http://hl7.org/fhir">
-				<meta>
-					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    <entry>
+        <fullUrl value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
                 </meta>
-                <!-- CSV THIS IS NOT IN CSV, HAVE SDS_JOB_ROLE_NAME WHICH REQUIRES PRACTITIONER_ROLE --> 
-				<identifier>
-					<system value="https://fhir.hl7.org.uk/Id/gphc-number"/>
-					<value value="2145879"/>
-				</identifier>
-				<name>
+                <!-- CSV THIS IS NOT IN CSV, HAVE SDS_JOB_ROLE_NAME WHICH REQUIRES PRACTITIONER_ROLE -->
+                <identifier>
+                    <system value="https://fhir.hl7.org.uk/Id/gphc-number"/>
+                    <value value="2145879"/>
+                </identifier>
+                <name>
                     <!-- PERFORMING_PROFESSIONAL_SURNAME -->
                     <family value="Smith"/>
                     <!-- CSV PERFORMING_PROFESSIONAL_FORENAME -->
-					<given value="Eric"/>
-					<prefix value="Mr"/>
-				</name>
-			</Practitioner>
-		</resource>
-	</entry>
+                    <given value="Eric"/>
+                    <prefix value="Mr"/>
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
 </Bundle>
