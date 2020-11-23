@@ -16,7 +16,6 @@
         <resource>
             <!--A resource carrying a set of healthcare-related information about the patient-->
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="979a4ef0-8b5a-11e8-b568-0800200c9a66"/>
                 <meta>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-Composition-1"/>
                 </meta>
@@ -221,7 +220,6 @@ to the composition/document information.-->
         <fullUrl value="urn:uuid:94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
         <resource>
             <Organization xmlns="http://hl7.org/fhir">
-                <id value="94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
                 </meta>
@@ -243,7 +241,6 @@ to the composition/document information.-->
         <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429209e3"/>
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
-                <id value="9589fb37-87a2-48d8-968f-b371429209e3"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
                 </meta>
@@ -290,7 +287,6 @@ to the composition/document information.-->
         <fullUrl value="urn:uuid:631ec8d3-6341-4c9e-b2a1-131af62718f2"/>
         <resource>
             <Immunization xmlns="http://hl7.org/fhir">
-                <id value="631ec8d3-6341-4c9e-b2a1-131af62718f2"/>
                 <meta>
                     <!-- CSV RECORDED_DATE need to check this is correct -->
                     <lastUpdated value="2018-05-09"/>
@@ -308,14 +304,14 @@ to the composition/document information.-->
                     </valueCodeableConcept>
                 </extension>
                 <!-- CSV UNIQUE_ID -->
-                <valueIdentifier>
+                <identifier>
                     <system value="https://tools.ietf.org/html/rfc4122" />
                     <value value="e11ee7ba-368f-4127-9eca-43aaf1509627" />
-                </valueIdentifier>
+                </identifier>
                 <!-- CSV ACTION_FLAG needs mapping deleted = entered-in-error | not-done ??? -->
                 <status value="completed"/>
                 <!-- CSV NOT_GIVEN -->
-                <notGiven value="false"/>
+              <notGiven value="true"/> 
                 <vaccineCode>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -431,7 +427,6 @@ to the composition/document information.-->
 		<fullUrl value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
 		<resource>
 			<Practitioner xmlns="http://hl7.org/fhir">
-				<id value="666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
 				<meta>
 					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
                 </meta>
