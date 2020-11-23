@@ -88,3 +88,6 @@ java -jar org.hl7.fhir.validator.jar CommunicationRequest.json -version 4.0.1 -t
 rem PASS - [List Repeat Medications] 
 
 java -jar org.hl7.fhir.validator.jar List-RepeatMedications.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz  -profile https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List
+
+
+java -jar org.hl7.fhir.validator.jar vaccinations-JulieJones.xml -version 3.0

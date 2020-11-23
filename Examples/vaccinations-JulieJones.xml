@@ -289,7 +289,7 @@ to the composition/document information.-->
             <Immunization xmlns="http://hl7.org/fhir">
                 <meta>
                     <!-- CSV RECORDED_DATE need to check this is correct -->
-                    <lastUpdated value="2018-05-09"/>
+                    <lastUpdated value="2018-05-09T10:00:00+00:00"/>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-1"/>
                 </meta>
                 <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1">
@@ -343,7 +343,7 @@ to the composition/document information.-->
                          <!-- CSV SITE_CODE this differs from original example but is legit -->
                         <value value="FA000"/>
                     </identifier>
-                    <dispay value="Overtown Pharmacy"/>
+                    <display value="Overtown Pharmacy"/>
                 </location>
                 <manufacturer>
                     <!-- CSV VACCINE_MANUFACTURER -->
