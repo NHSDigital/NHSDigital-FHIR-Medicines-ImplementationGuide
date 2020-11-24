@@ -64,6 +64,14 @@
         <code value="Coding" />
       </type>
     </element>
+    <element id="Extension.extension:status.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:status.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />

@@ -27,8 +27,12 @@
                     }
                 },
                 "sender": {
-                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-                    "display": "Mr Peter Potion"
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "AB123"
+                    },
+                    "display": "The Pharmacy System"
+                    
                 },
                 "source": {
                     "name": "The Pharmacy System",
@@ -44,7 +48,7 @@
                     ]
                 },
                 "response": {
-                    "identifier": "D43B69B6-6BE3-C912-B78B-53D836D16175",
+                    "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45",
                     "code": "ok"
                 },
                 "focus": [
@@ -61,6 +65,16 @@
             "fullUrl": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29",
             "resource": {
                 "resourceType": "MedicationDispense",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus",
+                        "valueCoding": {
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-prescription-status",
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
+                        }
+                    }
+                ],
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
@@ -102,6 +116,13 @@
                                         "valueIdentifier": {
                                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
                                             "value": "3C2366-B81001-0A409U"
+                                        }
+                                    },
+                                    {
+                                        "url": "UUID",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription",
+                                            "value": "66317E0C-CE13-59AD-9979-9B568E080160"
                                         }
                                     }
                                 ]
@@ -167,6 +188,16 @@
             "fullUrl": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17",
             "resource": {
                 "resourceType": "MedicationDispense",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus",
+                        "valueCoding": {
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-prescription-status",
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
+                        }
+                    }
+                ],
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
@@ -193,7 +224,14 @@
                 "performer": [
                     {
                         "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "display": "Mr Peter Potion"
+                        }
+                    },
+                    {
+                        "actor": {
+                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "display": "The Simple Pharmacy"
                         }
                     }
                 ],
@@ -208,6 +246,13 @@
                                         "valueIdentifier": {
                                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
                                             "value": "3C2366-B81001-0A409U"
+                                        }
+                                    },
+                                    {
+                                        "url": "UUID",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription",
+                                            "value": "66317E0C-CE13-59AD-9979-9B568E080160"
                                         }
                                     }
                                 ]

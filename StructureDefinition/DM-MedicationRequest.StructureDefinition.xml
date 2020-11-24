@@ -99,12 +99,15 @@
     <element id="MedicationRequest.extension:controlledDrug">
       <path value="MedicationRequest.extension" />
       <sliceName value="controlledDrug" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
       </type>
+    </element>
+    <element id="MedicationRequest.contained">
+      <path value="MedicationRequest.contained" />
+      <max value="0" />
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />

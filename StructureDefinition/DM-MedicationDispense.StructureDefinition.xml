@@ -35,6 +35,46 @@
   <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense.extension">
+      <path value="MedicationDispense.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.extension:prescriptionStatus">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="prescriptionStatus" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus" />
+      </type>
+    </element>
+    <element id="MedicationDispense.contained">
+      <path value="MedicationDispense.contained" />
+      <max value="0" />
+    </element>
+    <element id="MedicationDispense.identifier.system">
+      <path value="MedicationDispense.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.identifier.value">
+      <path value="MedicationDispense.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.category.coding.system">
+      <path value="MedicationDispense.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.category.coding.code">
+      <path value="MedicationDispense.category.coding.code" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
       <type>
@@ -54,6 +94,22 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="MedicationDispense.subject.identifier">
+      <path value="MedicationDispense.subject.identifier" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.subject.identifier.system">
+      <path value="MedicationDispense.subject.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.subject.identifier.value">
+      <path value="MedicationDispense.subject.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.subject.display">
+      <path value="MedicationDispense.subject.display" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
       <min value="1" />
@@ -63,6 +119,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -105,6 +162,45 @@
         <description value="A ValueSet to identify the type of medication item status." />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
       </binding>
+    </element>
+    <element id="MedicationDispense.type.coding.system">
+      <path value="MedicationDispense.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.type.coding.code">
+      <path value="MedicationDispense.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.value">
+      <path value="MedicationDispense.quantity.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.unit">
+      <path value="MedicationDispense.quantity.unit" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.system">
+      <path value="MedicationDispense.quantity.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.code">
+      <path value="MedicationDispense.quantity.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.whenPrepared">
+      <path value="MedicationDispense.whenPrepared" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.receiver">
+      <path value="MedicationDispense.receiver" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-HealthcareService" />
+      </type>
     </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
