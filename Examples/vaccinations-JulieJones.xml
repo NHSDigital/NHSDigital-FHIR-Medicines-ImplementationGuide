@@ -1,4 +1,3 @@
-<!--This xml example is for illustrative purposes only and has not been clinically verified.-->
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="40e225a0-8f48-11e8-b568-0800200c9a66"/>
     <meta>
@@ -13,10 +12,9 @@
     <!--Pharmacy Immunizations Notification Document-->
     <entry>
         <fullUrl value="urn:uuid:979a4ef0-8b5a-11e8-b568-0800200c9a66"/>
+        <!--A resource carrying a set of healthcare-related information about the patient-->
         <resource>
-            <!--A resource carrying a set of healthcare-related information about the patient-->
             <Composition xmlns="http://hl7.org/fhir">
-                <id value="979a4ef0-8b5a-11e8-b568-0800200c9a66"/>
                 <meta>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-Composition-1"/>
                 </meta>
@@ -54,10 +52,8 @@
                 <!--Identifies who is responsible for the information in the composition, 
 not necessarily who typed it in-->
                 <author>
-                    <identifier>
-                        <system value="https://fhir.hl7.org.uk/Id/gphc-number"/>
-                        <value value="2145879"/>
-                    </identifier>
+                    <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY, RECOMMEND USING PROFESSIONAL CODES -->
+                    <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
                     <display value="SMITH, Eric (Mr)"/>
                 </author>
                 <title value="Overtown Pharmacy 118 Immunization Record"/>
@@ -70,7 +66,6 @@ to the composition/document information.-->
                     </identifier>
                     <display value="Overtown Pharmacy"/>
                 </custodian>
-
                 <!-- GP Practice-->
                 <section>
                     <title value="GP practice"/>
@@ -200,7 +195,9 @@ to the composition/document information.-->
                                     </tr>
                                     <tr>
                                         <th>Relevant contacts</th>
-                                        <td>Name: Philip Jones <p>Relationship: Next of kin</p>
+                                        <td> Name: Philip Jones 
+                                 
+                                            <p>Relationship: Next of kin</p>
                                             <p>Contact details: Tel. 01138698975 Email. pjones@mymail.com</p>
                                         </td>
                                     </tr>
@@ -216,42 +213,12 @@ to the composition/document information.-->
             </Composition>
         </resource>
     </entry>
-    <!--Pharmacy associated with the encounter. -->
-    <entry>
-        <fullUrl value="urn:uuid:09cf4c3d-2ba0-40dc-a633-27fca0151a91"/>
-        <resource>
-            <Organization xmlns="http://hl7.org/fhir">
-                <id value="09cf4c3d-2ba0-40dc-a633-27fca0151a91"/>
-                <meta>
-                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
-                </meta>
-                <identifier>
-                    <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-                    <value value="FA000"/>
-                </identifier>
-                <name value="Overtown Pharmacy"/>
-                <telecom>
-                    <system value="phone"/>
-                    <value value="01134875516"/>
-                </telecom>
-                <telecom>
-                    <system value="email"/>
-                    <value value="overtonpharmacy118@mymail.com"/>
-                </telecom>
-                <address>
-                    <line value="1 High Street, Overtown"/>
-                    <city value="Leeds"/>
-                    <postalCode value="LS1 9AM"/>
-                </address>
-            </Organization>
-        </resource>
-    </entry>
     <!--Patient's registered GP Practice.-->
+    <!-- !!!!!!!!!!! CSV NOT PRESENT !!!!!!!!!!!!!!! -->
     <entry>
         <fullUrl value="urn:uuid:94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
         <resource>
             <Organization xmlns="http://hl7.org/fhir">
-                <id value="94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
                 </meta>
@@ -268,16 +235,16 @@ to the composition/document information.-->
             </Organization>
         </resource>
     </entry>
-    <!--Patient associated with the encounter.-->
+    <!--Patient associated with the immunisation.-->
     <entry>
         <fullUrl value="urn:uuid:9589fb37-87a2-48d8-968f-b371429209e3"/>
         <resource>
             <Patient xmlns="http://hl7.org/fhir">
-                <id value="9589fb37-87a2-48d8-968f-b371429209e3"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
                 </meta>
                 <identifier>
+                    <!-- !!!!!!!!!!! CSV NOT PRESENT !!!!!!!!!!!!!!! -->
                     <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
                         <valueCodeableConcept>
                             <coding>
@@ -288,92 +255,66 @@ to the composition/document information.-->
                         </valueCodeableConcept>
                     </extension>
                     <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+                    <!-- CSV NHS_NUMBER -->
                     <value value="3478526985"/>
                 </identifier>
                 <name>
+                    <!-- CSV Not known -->
                     <use value="official"/>
                     <text value="Mrs Julie Jones"/>
+                    <!-- CSV PERSON_SURNAME -->
                     <family value="Jones"/>
+                    <!-- CSV PERSON_FORENAME -->
                     <given value="Julie"/>
-                    <prefix value="Mrs"/>
                 </name>
-                <telecom>
-                    <system value="phone"/>
-                    <value value="01138698975"/>
-                    <use value="home"/>
-                </telecom>
+                <!-- CSV PERSON_GENDER_CODE Needs mapping -->
                 <gender value="female"/>
+                <!-- CSV PERSON_DOB -->
                 <birthDate value="1959-05-04"/>
                 <address>
-                    <use value="home"/>
-                    <type value="both"/>
-                    <text value="22 Brightside Crescent, Overtown, West Yorkshire, LS10 4YU"/>
-                    <line value="22 Brightside Crescent"/>
-                    <city value="Overtown"/>
-                    <district value="West Yorkshire"/>
                     <postalCode value="LS10 4YU"/>
                 </address>
-                <maritalStatus>
-                    <coding>
-                        <system value="http://hl7.org/fhir/v3/MaritalStatus"/>
-                        <code value="M"/>
-                        <display value="Married"/>
-                    </coding>
-                </maritalStatus>
-                <contact>
-                    <relationship>
-                        <coding>
-                            <system value="http://hl7.org/fhir/v2/0131"/>
-                            <code value="N"/>
-                            <display value="Next-of-Kin"/>
-                        </coding>
-                    </relationship>
-                    <name>
-                        <use value="official"/>
-                        <family value="Jones"/>
-                        <given value="Philip"/>
-                    </name>
-                    <telecom>
-                        <system value="phone"/>
-                        <value value="01138698975"/>
-                    </telecom>
-                    <telecom>
-                        <system value="email"/>
-                        <value value="pjones@mymail.com"/>
-                    </telecom>
-                    <gender value="male"/>
-                </contact>
                 <generalPractitioner>
-                <reference value="urn:uuid:94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
+                    <reference value="urn:uuid:94ca030c-03aa-4dae-8270-c2de2b7907ef"/>
                 </generalPractitioner>
             </Patient>
         </resource>
     </entry>
-   
     <!--Immunization administered during the encounter-->
     <entry>
         <fullUrl value="urn:uuid:631ec8d3-6341-4c9e-b2a1-131af62718f2"/>
         <resource>
             <Immunization xmlns="http://hl7.org/fhir">
-                <id value="631ec8d3-6341-4c9e-b2a1-131af62718f2"/>
                 <meta>
+                    <lastUpdated value="2018-05-09T10:00:00+00:00"/>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-DM-Immunization-1"/>
                 </meta>
                 <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-VaccinationProcedure-1">
                     <valueCodeableConcept>
                         <coding>
                             <system value="http://snomed.info/sct"/>
+                            <!-- CSV VACCINATION_PROCEDURE_CODE -->
                             <code value="822851000000102"/>
+                            <!-- CSV VACCINATION_PROCEDURE_TERM -->
                             <display value="Seasonal influenza vaccination"/>
                         </coding>
                     </valueCodeableConcept>
                 </extension>
+                <!-- CSV UNIQUE_ID -->
+                <identifier>
+                    <system value="https://tools.ietf.org/html/rfc4122"/>
+                    <value value="e11ee7ba-368f-4127-9eca-43aaf1509627"/>
+                </identifier>
+                <!-- CSV ACTION_FLAG needs mapping deleted = entered-in-error | not-done ??? -->
                 <status value="completed"/>
-                <notGiven value="false"/>
+                <!-- CSV NOT_GIVEN -->
+                <notGiven value="true"/>
                 <vaccineCode>
                     <coding>
                         <system value="http://snomed.info/sct"/>
+                        <!-- CSV VACCINE_PRODUCT_CODE -->
                         <code value="22704311000001109"/>
+                        <!-- CSV VACCINE_PRODUCT_TERM -->
                         <display value="Fluarix Tetra vaccine suspension for injection 0.5ml pre-filled syringes (GlaxoSmithKline UK Ltd)"/>
                     </coding>
                 </vaccineCode>
@@ -381,42 +322,63 @@ to the composition/document information.-->
                     <reference value="urn:uuid:9589fb37-87a2-48d8-968f-b371429209e3"/>
                     <display value="JONES, Julie (Mrs)"/>
                 </patient>
+                <!-- CSV DATE_AND_TIME -->
                 <date value="2018-05-09"/>
+                <!-- CSV PRIMARY_SOURCE -->
                 <primarySource value="true"/>
+                <reportOrigin>
+                    <coding>
+                        <system value="http://hl7.org/fhir/immunization-origin"/>
+                        <!-- CSV REPORT_ORIGIN -->
+                        <code value="record"/>
+                    </coding>
+                    <text value="Written Record"/>
+                </reportOrigin>
                 <location>
                     <identifier>
                         <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+                        <!-- CSV SITE_CODE this differs from original example but is legit -->
                         <value value="FA000"/>
                     </identifier>
-                    <dispay value="Overtown Pharmacy"/>
+                    <display value="Overtown Pharmacy"/>
                 </location>
+                <manufacturer>
+                    <!-- CSV VACCINE_MANUFACTURER -->
+                    <display value="BOOTS"/>
+                </manufacturer>
+                <!-- csv BATCH_NUMBER -->
+                <lotNumber value="abc123"/>
                 <site>
                     <coding>
                         <system value="http://snomed.info/sct"/>
+                        <!-- CSV SITE_OF_VACCINATION_CODE -->
                         <code value="368209003"/>
+                        <!-- CSV SITE_OF_VACCINATION_TERM -->
                         <display value="Right upper arm"/>
                     </coding>
                 </site>
                 <route>
                     <coding>
                         <system value="http://snomed.info/sct"/>
+                        <!-- CSV ROUTE_OF_VACCINATION_CODE -->
                         <code value="34206005"/>
+                        <!-- CSV ROUTE_OF_VACCINATION_TERM -->
                         <display value="Subcutaneous route"/>
                     </coding>
                 </route>
+                <doseQuantity>
+                    <!-- csv DOSE_AMOUNT -->
+                    <value value="5"/>
+                    <!-- CSV DOSE_UNIT_TERM     -->
+                    <unit value="pre-filled disposable injection"/>
+                    <system value="http://snomed.info/sct"/>
+                    <!-- CSV DOSE_UNIT_CODE -->
+                    <code value="3318611000001103"/>
+                </doseQuantity>
                 <practitioner>
-                    <role>
-                        <coding>
-                            <system value="http://hl7.org/fhir/v2/0443"/>
-                            <code value="AP"/>
-                            <display value="Administering Provider"/>
-                        </coding>
-                    </role>
                     <actor>
-                        <identifier>
-                            <system value="https://fhir.hl7.org.uk/Id/gphc-number"/>
-                            <value value="2145879"/>
-                        </identifier>
+                        <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY, RECOMMEND USING PROFESSIONAL CODES -->
+                        <reference value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
                         <display value="SMITH, Eric (Mr)"/>
                     </actor>
                 </practitioner>
@@ -424,12 +386,60 @@ to the composition/document information.-->
                     <reason>
                         <coding>
                             <system value="http://snomed.info/sct"/>
+                            <!-- CSV INDICATION_CODE -->
                             <code value="398192003"/>
+                            <!-- CSV INDICATION_TERM -->
                             <display value="Co-morbid conditions"/>
                         </coding>
                     </reason>
+                    <reasonNotGiven>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <!-- CSV VACCINATION_SITUATION_CODE -->
+                            <code value="398192003"/>
+                            <!-- CSV VACCINATION_SITUATION_TERM -->
+                            <display value="Co-morbid conditions"/>
+                        </coding>
+                    </reasonNotGiven>
+                    <reasonNotGiven>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <!-- CSV REASON_NOT_GIVEN_CODE -->
+                            <code value="398192003"/>
+                            <!-- CSV REASON_NOT_GIVEN_TERM -->
+                            <display value="Co-morbid conditions"/>
+                        </coding>
+                    </reasonNotGiven>
                 </explanation>
+                <vaccinationProtocol>
+                    <!-- CSV DOSE_SEQUENCE -->
+                    <doseSequence value="1"/>
+                </vaccinationProtocol>
             </Immunization>
+        </resource>
+    </entry>
+    <!--Pharmacist associated with the encounter. -->
+    <!-- WOULD CONSIDER DROPPING THIS ENTRY AND USING DISPLAY REFERENCES ONLY -->
+    <entry>
+        <fullUrl value="urn:uuid:666f8ce8-3f3b-43ac-9f8d-5bb020539d74"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+                </meta>
+                <!-- CSV THIS IS NOT IN CSV, HAVE SDS_JOB_ROLE_NAME WHICH REQUIRES PRACTITIONER_ROLE -->
+                <identifier>
+                    <system value="https://fhir.hl7.org.uk/Id/gphc-number"/>
+                    <value value="2145879"/>
+                </identifier>
+                <name>
+                    <!-- PERFORMING_PROFESSIONAL_SURNAME -->
+                    <family value="Smith"/>
+                    <!-- CSV PERFORMING_PROFESSIONAL_FORENAME -->
+                    <given value="Eric"/>
+                    <prefix value="Mr"/>
+                </name>
+            </Practitioner>
         </resource>
     </entry>
 </Bundle>
