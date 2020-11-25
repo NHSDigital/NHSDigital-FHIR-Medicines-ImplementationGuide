@@ -36,6 +36,8 @@
     <element id="Extension.extension:UUID">
       <path value="Extension.extension" />
       <sliceName value="UUID" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:UUID.url">
       <path value="Extension.extension.url" />
@@ -50,6 +52,8 @@
     <element id="Extension.extension:shortForm">
       <path value="Extension.extension" />
       <sliceName value="shortForm" />
+      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:shortForm.url">
       <path value="Extension.extension.url" />
