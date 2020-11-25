@@ -55,10 +55,6 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus" />
       </type>
     </element>
-    <element id="MedicationDispense.contained">
-      <path value="MedicationDispense.contained" />
-      <max value="0" />
-    </element>
     <element id="MedicationDispense.identifier.system">
       <path value="MedicationDispense.identifier.system" />
       <min value="1" />
@@ -116,12 +112,46 @@
     </element>
     <element id="MedicationDispense.performer.actor">
       <path value="MedicationDispense.performer.actor" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
         <aggregation value="bundled" />
       </type>
+    </element>
+    <element id="MedicationDispense.performer.actor:pharmacist">
+      <path value="MedicationDispense.performer.actor" />
+      <sliceName value="pharmacist" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-PractitionerRole" />
+      </type>
+    </element>
+    <element id="MedicationDispense.performer.actor:pharmacist.reference">
+      <path value="MedicationDispense.performer.actor.reference" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.performer.actor:pharmacy">
+      <path value="MedicationDispense.performer.actor" />
+      <sliceName value="pharmacy" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Organization" />
+      </type>
+    </element>
+    <element id="MedicationDispense.performer.actor:pharmacy.reference">
+      <path value="MedicationDispense.performer.actor.reference" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
@@ -209,6 +239,10 @@
     <element id="MedicationDispense.dosageInstruction.text">
       <path value="MedicationDispense.dosageInstruction.text" />
       <min value="1" />
+    </element>
+    <element id="MedicationDispense.contained">
+      <path value="MedicationDispense.contained" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
