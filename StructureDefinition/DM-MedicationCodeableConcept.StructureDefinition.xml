@@ -45,7 +45,7 @@
       <binding>
         <strength value="required" />
         <description value="Digital Medicine Medication Code" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationCode" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-Medication-Code" />
       </binding>
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
