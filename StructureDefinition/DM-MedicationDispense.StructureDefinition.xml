@@ -55,6 +55,10 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus" />
       </type>
     </element>
+    <element id="MedicationDispense.contained">
+      <path value="MedicationDispense.contained" />
+      <max value="0" />
+    </element>
     <element id="MedicationDispense.identifier.system">
       <path value="MedicationDispense.identifier.system" />
       <min value="1" />
@@ -79,6 +83,7 @@
       </type>
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Medication" />
       </type>
     </element>
     <element id="MedicationDispense.subject">

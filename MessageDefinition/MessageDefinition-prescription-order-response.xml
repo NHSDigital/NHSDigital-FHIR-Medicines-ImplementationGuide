@@ -29,7 +29,7 @@
     </focus>
     <focus>
         <code value="Patient" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
         <min value="1" />
         <max value="1" />
     </focus>

@@ -227,13 +227,14 @@
       </type>
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Medication" />
       </type>
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
       </type>
     </element>
     <element id="MedicationRequest.subject.reference">
@@ -438,6 +439,10 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
       </type>
+    </element>
+    <element id="MedicationRequest.contained">
+      <path value="MedicationRequest.contained" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

@@ -39,13 +39,13 @@
     <element id="CodeableConcept.coding:SNOMED">
       <path value="CodeableConcept.coding" />
       <sliceName value="SNOMED" />
-      <short value="UK Core Medication Code SNOMED CT Must be present" />
+      <short value="Digital Medicine Medication Code SNOMED CT Must be present" />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="UK Core Medication Code" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+        <description value="Digital Medicine Medication Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationCode" />
       </binding>
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
