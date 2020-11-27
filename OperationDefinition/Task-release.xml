@@ -20,9 +20,9 @@
     <code value="release"></code>
     <comment value="Only one of the parameters based-on.identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
     <resource value="Task"></resource>
-    <system value="true"></system>
+   <!-- <system value="true"></system>
     <type value="false"></type>
-    <instance value="false"></instance>
+    <instance value="false"></instance> -->
     <parameter>
         <name value="based-on.identifier"></name>
         <use value="in"></use>
