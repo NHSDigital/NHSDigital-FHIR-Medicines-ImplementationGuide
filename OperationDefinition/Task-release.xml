@@ -24,7 +24,7 @@
     <type value="false"></type>
     <instance value="false"></instance> -->
     <parameter>
-        <name value="based-on.identifier"></name>
+        <name value="focus.identifier"></name>
         <use value="in"></use>
         <min value="0"></min>
         <max value="1"></max>
