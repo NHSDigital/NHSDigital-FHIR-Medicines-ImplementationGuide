@@ -55,10 +55,6 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus" />
       </type>
     </element>
-    <element id="MedicationDispense.contained">
-      <path value="MedicationDispense.contained" />
-      <max value="0" />
-    </element>
     <element id="MedicationDispense.identifier.system">
       <path value="MedicationDispense.identifier.system" />
       <min value="1" />
@@ -79,11 +75,11 @@
       <path value="MedicationDispense.medication[x]" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationCodeableConcept" />
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationDispense-CodeableConcept" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Medication" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-Medication" />
       </type>
     </element>
     <element id="MedicationDispense.subject">
@@ -247,6 +243,14 @@
     </element>
     <element id="MedicationDispense.contained">
       <path value="MedicationDispense.contained" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+    <element id="MedicationDispense.contained:no name">
+      <path value="MedicationDispense.contained" />
+      <sliceName value="no name" />
       <max value="0" />
     </element>
   </differential>

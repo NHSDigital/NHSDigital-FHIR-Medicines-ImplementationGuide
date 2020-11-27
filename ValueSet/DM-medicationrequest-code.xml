@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="DM-Medication-Code" />
-    <url value="https://fhir.nhs.uk/ValueSet/DM-Medication-Code" />
+    <id value="DM-MedicationRequest-Code" />
+    <url value="https://fhir.nhs.uk/ValueSet/DM-MedicationRequest-Code" />
     <version value="1.0.0" />
-    <name value="DMMedicationCode" />
-    <title value="Digital Medicine Medication Code" />
+    <name value="DMMedicationRequestCode" />
+    <title value="Digital Medicine MedicationRequest Code" />
     <status value="draft" />
     <date value="2020-11-26T00:00:00+00:00" />
     <publisher value="NHS Digital" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationCodeableConcept" />
-  <name value="DM-MedicationCodeableConcept" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-CodeableConcept" />
+  <name value="DM-MedicationDispense-CodeableConcept" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -39,13 +39,13 @@
     <element id="CodeableConcept.coding:SNOMED">
       <path value="CodeableConcept.coding" />
       <sliceName value="SNOMED" />
-      <short value="Digital Medicine Medication Code SNOMED CT Must be present" />
+      <short value="Digital Medicine Medication Code AMMP, VMPP, AMP or VMP SNOMED CT Must be present" />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
         <description value="Digital Medicine Medication Code" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-Medication-Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-Medication-Dispense-Code" />
       </binding>
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
