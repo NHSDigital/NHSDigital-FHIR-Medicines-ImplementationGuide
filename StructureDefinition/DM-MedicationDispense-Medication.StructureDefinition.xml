@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/DM-Medication-Dispense" />
-  <name value="DM-Medication-Dispense" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-Medication" />
+  <name value="DM-MedicationDispense-Medication" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -35,7 +35,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-Medication-Dispense-Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationDispense-Code" />
       </binding>
     </element>
     <element id="Medication.code.coding">
