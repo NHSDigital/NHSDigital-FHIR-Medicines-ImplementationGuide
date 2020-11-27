@@ -75,7 +75,7 @@
       <path value="MedicationDispense.medication[x]" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationDispense-CodeableConcept" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-CodeableConcept" />
       </type>
       <type>
         <code value="Reference" />

@@ -223,7 +223,7 @@
       <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest-CodeableConcept" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest-CodeableConcept" />
       </type>
       <type>
         <code value="Reference" />
