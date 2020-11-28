@@ -1,0 +1,58 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="Task-release-message"></id>
+    <meta>
+        <lastUpdated value="2019-11-01T09:29:23.356+11:00"></lastUpdated>
+    </meta>
+    <url value="https://fhir.nhs.uk/OperationDefinition/Task-release-message"></url>
+    <version value="4.0.1"></version>
+    <name value="release-task"></name>
+    <status value="draft"></status>
+    <kind value="operation"></kind>
+    <date value="2020-11-13T09:29:23+11:00"></date>
+    <publisher value="NHS Digital"></publisher>
+    <contact>
+        <telecom>
+            <system value="email"></system>
+            <value value="interoperabilityteam@nhs.net"></value>
+        </telecom>
+    </contact>
+    <description value="TODO - Add description"></description>
+    <code value="release"></code>
+    <comment value="Only one of the parameters based-on.identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
+    <resource value="Task"></resource>
+   <!-- <system value="true"></system>
+    <type value="false"></type>
+    <instance value="false"></instance> -->
+    <parameter>
+        <name value="focus.identifier"></name>
+        <use value="in"></use>
+        <min value="0"></min>
+        <max value="1"></max>
+        <documentation value="The short-form-prescription-id (token) of the prescription. Used for releasing Patient prescriptions"></documentation>
+        <type value="Identifier"></type>
+    </parameter>
+    <parameter>
+        <name value="owner"></name>
+        <use value="in"></use>
+        <min value="0"></min>
+        <max value="1"></max>
+        <documentation value="The ODS code of the pharmacy. Used for releasing Nominated Pharmacy prescriptions"></documentation>
+        <type value="Identifier"></type>
+    </parameter>
+    <parameter>
+        <name value="status"></name>
+        <use value="in"></use>
+        <min value="1"></min>
+        <max value="1"></max>
+        <documentation value="Status from ValueSet http://hl7.org/fhir/valueset-task-status.html Use: accepted"></documentation>
+        <type value="code"></type>
+    </parameter>
+    <parameter>
+        <name value="return"></name>
+        <use value="out"></use>
+        <min value="1"></min>
+        <max value="1"></max>
+        <documentation value="A FHIR Bundle (type=searchset) which contains prescription-order FHIR Messages which match the search parameters. An empty search will still return a FHIR Bundle but with no entries."></documentation>
+        <type value="Bundle"></type>
+    </parameter>
+</OperationDefinition>

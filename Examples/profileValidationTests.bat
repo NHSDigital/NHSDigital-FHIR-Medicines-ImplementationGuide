@@ -54,11 +54,11 @@ java -jar org.hl7.fhir.validator.jar PractitionerRole-pass.xml -version 4.0.1 -t
 
 rem FAIL - [Patient] 
 
-java -jar org.hl7.fhir.validator.jar Patient-PDS-fail.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz  -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
+java -jar org.hl7.fhir.validator.jar Patient-PDS-fail.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz  -profile https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient
 
 rem PASS - [Patient] 
 
-java -jar org.hl7.fhir.validator.jar Patient-EPS-pass.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz  -profile https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient
+java -jar org.hl7.fhir.validator.jar Patient-EPS-pass.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.0.41-dev.tgz  -profile https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient
 
 
 

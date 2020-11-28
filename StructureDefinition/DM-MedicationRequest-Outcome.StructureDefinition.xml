@@ -121,7 +121,7 @@
       <path value="MedicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
       </type>
     </element>
     <element id="MedicationRequest.subject.reference">
