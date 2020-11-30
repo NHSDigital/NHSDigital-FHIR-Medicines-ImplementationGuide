@@ -196,10 +196,6 @@
       <path value="MedicationRequest.category.coding.code" />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.category.coding:patientClassFHIR.display">
-      <path value="MedicationRequest.category.coding.display" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.category.coding:patientClassUK">
       <path value="MedicationRequest.category.coding" />
       <sliceName value="patientClassUK" />
@@ -442,6 +438,14 @@
     </element>
     <element id="MedicationRequest.contained">
       <path value="MedicationRequest.contained" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.contained:no name">
+      <path value="MedicationRequest.contained" />
+      <sliceName value="no name" />
       <max value="0" />
     </element>
   </differential>
