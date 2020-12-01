@@ -415,7 +415,12 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier.system">
       <path value="MedicationRequest.dispenseRequest.performer.identifier.system" />
+      <min value="1" />
       <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer.identifier.value">
+      <path value="MedicationRequest.dispenseRequest.performer.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
@@ -438,6 +443,14 @@
     </element>
     <element id="MedicationRequest.contained">
       <path value="MedicationRequest.contained" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.contained:no name">
+      <path value="MedicationRequest.contained" />
+      <sliceName value="no name" />
       <slicing>
         <rules value="open" />
       </slicing>
