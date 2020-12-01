@@ -321,6 +321,19 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy" />
       </binding>
     </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding">
+      <path value="MedicationRequest.courseOfTherapyType.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding.system">
+      <path value="MedicationRequest.courseOfTherapyType.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding.code">
+      <path value="MedicationRequest.courseOfTherapyType.coding.code" />
+      <min value="1" />
+    </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
       <min value="1" />
