@@ -92,31 +92,6 @@
       <path value="MedicationRequest.identifier.value" />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.statusReason">
-      <path value="MedicationRequest.statusReason" />
-      <definition value="Mandatory for cancelled prescription items" />
-      <binding>
-        <strength value="example" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
-      </binding>
-    </element>
-    <element id="MedicationRequest.statusReason.coding">
-      <path value="MedicationRequest.statusReason.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="MedicationRequest.statusReason.coding.system">
-      <path value="MedicationRequest.statusReason.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="MedicationRequest.statusReason.coding.code">
-      <path value="MedicationRequest.statusReason.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="MedicationRequest.statusReason.coding.display">
-      <path value="MedicationRequest.statusReason.coding.display" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
       <type>
