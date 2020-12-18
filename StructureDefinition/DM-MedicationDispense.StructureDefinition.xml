@@ -52,7 +52,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskStatusReason" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
       </type>
     </element>
     <element id="MedicationDispense.identifier.system">
