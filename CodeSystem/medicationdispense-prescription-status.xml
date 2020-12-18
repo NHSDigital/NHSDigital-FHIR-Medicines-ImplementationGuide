@@ -6,7 +6,7 @@
         <value value="medicationdispense-prescription-status" />
     </identifier>
     <version value="1.0.0" />
-    <name value="Medication Disepnse Prescription Status" />
+    <name value="Medication Dispense Prescription Status" />
     <title value="Medication Dispense Prescription Status" />
     <status value="draft" />
     <experimental value="true" />
