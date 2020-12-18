@@ -54,9 +54,9 @@
         <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:statusHistory">
+    <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
       <path value="MedicationRequest.extension" />
-      <sliceName value="statusHistory" />
+      <sliceName value="prescriptionTaskStatusReason" />
       <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
       <min value="1" />
       <type>
