@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD:StructureDefinition/Extension-EPS-TaskStatusReason.StructureDefinition.xml
-  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskStatusReason" />
-  <name value="Extension-EPS-TaskStatusReason" />
-=======
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-task-businessStatus" />
   <name value="Extension-EPS-task-businessStatus" />
->>>>>>> 93b73441ebf2eaf48bc5bcd083aa7f6a2cdcf09a:StructureDefinition/Extension-EPS-task-businessStatus.StructureDefinition.xml
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
