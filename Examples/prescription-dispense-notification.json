@@ -69,7 +69,7 @@
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus",
                         "valueCoding": {
-                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-prescription-status",
+                            "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason",
                             "code": "0003",
                             "display": "With Dispenser - Active"
                         }
@@ -199,7 +199,7 @@
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionStatus",
                         "valueCoding": {
-                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-prescription-status",
+                            "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason",
                             "code": "0003",
                             "display": "With Dispenser - Active"
                         }
