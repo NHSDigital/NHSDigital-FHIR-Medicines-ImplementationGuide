@@ -1,9 +1,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="medicationrequest-dispense-return-reason" />
-    <url value="https://fhir.nhs.uk/CodeSystem/medicationrequest-dispense-return-reason" />
+    <id value="EPS-task-dispense-return-status-reason" />
+    <url value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason" />
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
-        <value value="medicationrequest-dispense-return-reason" />
+        <value value="EPS-task-dispense-return-status-reason" />
     </identifier>
     <version value="1.0.4" />
     <name value="MedicationRequest Dispense Return Reason" />

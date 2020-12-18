@@ -51,7 +51,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-history" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-task-status-reason" />
       </binding>
     </element>
     <element id="Extension.extension:status.url">
