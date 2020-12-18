@@ -6,8 +6,8 @@
         <value value="EPS-task-dispense-return-status-reason" />
     </identifier>
     <version value="1.0.4" />
-    <name value="MedicationRequest Dispense Return Reason" />
-    <title value="MedicationRequest Dispense Return Reason" />
+    <name value="EPS Dispense Return Reason" />
+    <title value="EPS Dispense Return Reason" />
     <status value="draft" />
     <experimental value="false" />
     <date value="2005-07-17" />
@@ -20,7 +20,7 @@
             <use value="work" />
         </telecom>
     </contact>
-    <description value="MedicationRequest Status Reason History. Taken from HL7v3 UK Cancellation Reason Response" />
+    <description value="EPS Dispense Return Reason. Taken from HL7v3 UK Cancellation Reason Response" />
     <caseSensitive value="true" />
     <content value="complete" />
     <concept>
