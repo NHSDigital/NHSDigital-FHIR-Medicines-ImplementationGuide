@@ -3,8 +3,8 @@
     <status value="rejected"></status>
     <statusReason>
         <coding>
-            <system value="oid:2.16.840.1.113883.2.1.3.2.4.16.28"></system>
-            <code value="0002"></code>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
+            <code value="D-0002"></code>
             <display value="Unable to dispense medication on prescriptions"></display>
         </coding>
     </statusReason>

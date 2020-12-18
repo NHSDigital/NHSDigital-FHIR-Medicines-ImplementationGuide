@@ -1,13 +1,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="EPS-task-status-reason" />
-    <url value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason" />
+    <url value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status" />
     <identifier>
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
-        <value value="EPS-task-status-reason" />
+        <value value="EPS-task-business-status" />
     </identifier>
-    <version value="1.0.0" />
-    <name value="Medication Dispense Prescription Status" />
-    <title value="Medication Dispense Prescription Status" />
+    <version value="1.0.1" />
+    <name value="EPS Prescription (Business) Status" />
+    <title value="EPS Prescription (Business) Status" />
     <status value="draft" />
     <experimental value="true" />
     <date value="2020-11-24" />
