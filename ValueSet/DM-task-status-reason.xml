@@ -2,50 +2,55 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-task-status-reason"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-task-status-reason"/>
-    <version value="1.0.0"/>
-    <name value="MedicationDispense Prescription Status"/>
+    <version value="1.0.1"/>
+    <name value="Task Prescription Status Reason"/>
     <status value="draft"/>
-    <description value="MedicationDispense Prescription Status."/>
+    <description value="Task Prescription Status Reason"/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
         </include>
     </compose>
     <expansion>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0006"/>
-            <display value="Dispensed"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0005"/>
+            <display value="Invalid digital signature"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0007"/>
-            <display value="Not Dispensed"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0006"/>
+            <display value="Rejected due to version problem"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0004"/>
-            <display value="Expired"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0007"/>
+            <display value="Prescription otherwise invalid or unreadable"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0005"/>
-            <display value="Cancelled"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0008"/>
+            <display value="Prescription expired"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0002"/>
-            <display value="With Dispenser"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0001"/>
+            <display value="Patient non-attendance"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0003"/>
-            <display value="With Dispenser - Active"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0002"/>
+            <display value="Unable to dispense medication on prescriptions"/>
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-status-reason"/>
-            <code value="0001"/>
-            <display value="To be Dispensed"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0003"/>
+            <display value="Patient requested release"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"/>
+            <code value="D-0004"/>
+            <display value="Another dispenser requested release on behalf of the patient"/>
         </contains>
     </expansion>
 </ValueSet>
