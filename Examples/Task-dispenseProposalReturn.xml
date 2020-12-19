@@ -1,5 +1,9 @@
 <Task xmlns="http://hl7.org/fhir">
     <id value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></id>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="83C40E-A23856-00123C"></value>
+    </identifier>
     <status value="rejected"></status>
     <statusReason>
         <coding>
@@ -9,12 +13,6 @@
         </coding>
     </statusReason>
     <intent value="order"></intent>
-    <focus>
-        <identifier>
-            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-            <value value="83C40E-A23856-00123C"></value>
-        </identifier>
-    </focus>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
     <lastModified value="2016-03-10T22:39:32-04:00"></lastModified>
     <owner>
