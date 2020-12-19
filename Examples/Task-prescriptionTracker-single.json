@@ -24,47 +24,15 @@
                 }
             ],
             "businessStatus": {
-                "coding": [{
-                    "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                    "code": "0001",
-                    "display": "To be Dispensed"
-                }]
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                ]
             },
             "authoredOn": "2016-07-11T11:07:21"
-        },
-        {
-            "resourceType": "MedicationDispense",
-            "id": "1-1",
-            "extension": [
-                {
-                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
-                    "valueCoding": {
-                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                        "code": "0001",
-                        "display": "To be Dispensed"
-                    }
-                }
-            ],
-            "authorizingPrescription": [{
-                "reference" : "#1"
-            }]
-        },
-        {
-            "resourceType": "MedicationDispense",
-            "id": "1-2",
-            "extension": [
-                {
-                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
-                    "valueCoding": {
-                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                        "code": "0001",
-                        "display": "To be Dispensed"
-                    }
-                }
-            ],
-            "authorizingPrescription": [{
-                "reference" : "#1"
-            }]
         },
         {
             "resourceType": "Task",
@@ -89,12 +57,52 @@
                 }
             ],
             "businessStatus": {
-                "coding": [{
-                    "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                    "code": "9000",
-                    "display": "Prescription future instance"
-                }]
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "9000",
+                        "display": "Prescription future instance"
+                    }
+                ]
             }
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "1-1",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#1"
+                }
+            ]
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "1-2",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#1"
+                }
+            ]
         },
         {
             "resourceType": "MedicationDispense",
@@ -109,9 +117,11 @@
                     }
                 }
             ],
-            "authorizingPrescription": [{
-                "reference" : "#2"
-            }]
+            "authorizingPrescription": [
+                {
+                    "reference": "#2"
+                }
+            ]
         },
         {
             "resourceType": "MedicationDispense",
@@ -126,77 +136,59 @@
                     }
                 }
             ],
-            "authorizingPrescription":[ {
-                "reference" : "#2"
-            }]
+            "authorizingPrescription": [
+                {
+                    "reference": "#2"
+                }
+            ]
         }
     ],
-    "status": "in-progress",
     "identifier": [
         {
             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
             "value": "A3B4D9-Z42475-11E6B"
         }
     ],
-    "for": [
-        {
-            "identifier": {
-                "system": "https://fhir.nhs.uk/Id/nhs-number",
-                "value": "9453740519"
-            }
+    "status": "in-progress",
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
         }
-    ],
+    },
     "authoredOn": "2016-07-11T11:07:21",
     "lastModified": "2016-07-11T11:07:22",
-    "input" : [
+    "input": [
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#1"
+            "valueReference": {
+                "reference": "#1"
             }
         },
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#2"
+            "valueReference": {
+                "reference": "#2"
             }
         }
     ],
-    "output" : [
+    "output": [
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#1-1"
+            "valueReference": {
+                "reference": "#1-1"
             }
         },
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#1-2"
+            "valueReference": {
+                "reference": "#1-2"
             }
         },
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#2-1"
+            "valueReference": {
+                "reference": "#2-1"
             }
         },
         {
-            "type" : {
-                "coding" : []
-            },
-            "valueReference" : {
-                "reference" : "#2-2"
+            "valueReference": {
+                "reference": "#2-2"
             }
         }
     ]
