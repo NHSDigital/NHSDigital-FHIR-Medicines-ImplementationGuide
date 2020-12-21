@@ -62,7 +62,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-sequenceIdentifier" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SequenceIdentifier" />
       </type>
     </element>
     <element id="Claim.item.productOrService">

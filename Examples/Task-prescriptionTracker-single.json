@@ -1,0 +1,195 @@
+{
+    "resourceType": "Task",
+    "contained": [
+        {
+            "resourceType": "Task",
+            "id": "1",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+                    "extension": [
+                        {
+                            "url": "numberOfRepeatPrescriptionsIssued",
+                            "valueUnsignedInt": 1
+                        }
+                    ]
+                },
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskTherapyType",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy",
+                        "code": "ontinuous-repeat-dispensing",
+                        "display": "Continuous long term (repeat dispensing)"
+                    }
+                }
+            ],
+            "businessStatus": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                ]
+            },
+            "authoredOn": "2016-07-11T11:07:21"
+        },
+        {
+            "resourceType": "Task",
+            "id": "2",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+                    "extension": [
+                        {
+                            "url": "numberOfRepeatPrescriptionsIssued",
+                            "valueUnsignedInt": 1
+                        }
+                    ]
+                },
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskTherapyType",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy",
+                        "code": "ontinuous-repeat-dispensing",
+                        "display": "Continuous long term (repeat dispensing)"
+                    }
+                }
+            ],
+            "businessStatus": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "9000",
+                        "display": "Prescription future instance"
+                    }
+                ]
+            }
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "1-1",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#1"
+                }
+            ]
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "1-2",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#1"
+                }
+            ]
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "2-1",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#2"
+                }
+            ]
+        },
+        {
+            "resourceType": "MedicationDispense",
+            "id": "2-2",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                        "code": "0001",
+                        "display": "To be Dispensed"
+                    }
+                }
+            ],
+            "authorizingPrescription": [
+                {
+                    "reference": "#2"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+            "value": "A3B4D9-Z42475-11E6B"
+        }
+    ],
+    "status": "in-progress",
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+        }
+    },
+    "authoredOn": "2016-07-11T11:07:21",
+    "lastModified": "2016-07-11T11:07:22",
+    "input": [
+        {
+            "valueReference": {
+                "reference": "#1"
+            }
+        },
+        {
+            "valueReference": {
+                "reference": "#2"
+            }
+        }
+    ],
+    "output": [
+        {
+            "valueReference": {
+                "reference": "#1-1"
+            }
+        },
+        {
+            "valueReference": {
+                "reference": "#1-2"
+            }
+        },
+        {
+            "valueReference": {
+                "reference": "#2-1"
+            }
+        },
+        {
+            "valueReference": {
+                "reference": "#2-2"
+            }
+        }
+    ]
+}
