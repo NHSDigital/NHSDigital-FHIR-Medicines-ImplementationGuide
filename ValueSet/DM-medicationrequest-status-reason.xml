@@ -31,12 +31,12 @@
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
             <code value="0005"/>
-            <display value="At the Patient’s request"/>
+            <display value="At the Patient's request"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
             <code value="0006"/>
-            <display value="At the Pharmacist’s request"/>
+            <display value="At the Pharmacist's request"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
