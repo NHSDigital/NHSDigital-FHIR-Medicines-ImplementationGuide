@@ -41,11 +41,11 @@
     </concept>
     <concept>
         <code value="0005"></code>
-        <display value="At the Patient's request" />
+        <display value="At the Patients request" />
     </concept>
     <concept>
         <code value="0006"></code>
-        <display value="At the Pharmacist's request" />
+        <display value="At the Pharmacists request" />
     </concept>
     <concept>
         <code value="0007"></code>
