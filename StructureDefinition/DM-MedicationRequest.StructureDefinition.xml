@@ -105,10 +105,6 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
       </type>
     </element>
-    <element id="MedicationRequest.contained">
-      <path value="MedicationRequest.contained" />
-      <max value="0" />
-    </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>
@@ -456,6 +452,14 @@
     </element>
     <element id="MedicationRequest.contained">
       <path value="MedicationRequest.contained" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.contained:no name">
+      <path value="MedicationRequest.contained" />
+      <sliceName value="no name" />
       <slicing>
         <rules value="open" />
       </slicing>

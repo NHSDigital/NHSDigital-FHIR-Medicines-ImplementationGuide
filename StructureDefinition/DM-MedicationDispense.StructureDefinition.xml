@@ -241,17 +241,5 @@
       <path value="MedicationDispense.dosageInstruction.text" />
       <min value="1" />
     </element>
-    <element id="MedicationDispense.contained">
-      <path value="MedicationDispense.contained" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <max value="0" />
-    </element>
-    <element id="MedicationDispense.contained:no name">
-      <path value="MedicationDispense.contained" />
-      <sliceName value="no name" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>
