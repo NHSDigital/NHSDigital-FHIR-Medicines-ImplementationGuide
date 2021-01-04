@@ -450,33 +450,5 @@
         <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
       </type>
     </element>
-    <element id="MedicationRequest.contained">
-      <path value="MedicationRequest.contained" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <max value="0" />
-    </element>
-    <element id="MedicationRequest.contained:no name">
-      <path value="MedicationRequest.contained" />
-      <sliceName value="no name" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <max value="0" />
-    </element>
-    <element id="MedicationRequest.contained:no name">
-      <path value="MedicationRequest.contained" />
-      <sliceName value="no name" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <max value="0" />
-    </element>
-    <element id="MedicationRequest.contained:no name">
-      <path value="MedicationRequest.contained" />
-      <sliceName value="no name" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>
