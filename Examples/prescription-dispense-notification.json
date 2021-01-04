@@ -107,7 +107,7 @@
                     },
                     {
                         "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
                             "display": "The Simple Pharmacy"
                         }
                     }
@@ -237,7 +237,7 @@
                     },
                     {
                         "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
                             "display": "The Simple Pharmacy"
                         }
                     }
