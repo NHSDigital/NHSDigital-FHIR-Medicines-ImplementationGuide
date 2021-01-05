@@ -1,47 +1,77 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="electronic-prescribing-server"/>
+    <id value="electronic-prescribing-server" />
     <url value="https://fhir.nhs.uk/CapabilityStatement/electronic-prescribing-server" />
-    <version value="3.0.0"/>
-    <name value="Messaging support Capability Statement"/>
-    <status value="active"/>
-    <publisher value="digital.nhs.uk"/>
-    <description value="Conformance requirements for DM Message endpoint"/>
-    <kind value="requirements"/>
-    <fhirVersion value="4.0.1"/>
-    <format value="application/fhir+json"/>
-    <format value="application/fhir+xml"/>
+    <version value="3.0.0" />
+    <name value="Messaging support Capability Statement" />
+    <status value="active" />
+    <publisher value="digital.nhs.uk" />
+    <description value="Conformance requirements for DM Message endpoint" />
+    <kind value="requirements" />
+    <fhirVersion value="4.0.1" />
+    <format value="application/fhir+json" />
+    <format value="application/fhir+xml" />
     <rest>
-        <mode value="server"/>
+        <mode value="server" />
         <security>
             <service>
                 <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
-                    <code value="OAuth"/>
-                    <display value="OAuth2 Token"/>
+                    <system value="http://terminology.hl7.org/CodeSystem/restful-security-service" />
+                    <code value="OAuth" />
+                    <display value="OAuth2 Token" />
                 </coding>
             </service>
         </security>
+        <resource>
+            <type value="List" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+        </resource>
+        <resource>
+            <type value="HealthcareService" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-HealthcareService" />
+        </resource>
+        <resource>
+            <type value="Location" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+        </resource>
+        <resource>
+            <type value="Organization" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
+        </resource>
+        <resource>
+            <type value="Patient" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
+        </resource>
+        <resource>
+            <type value="Practitioner" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+        </resource>
+        <resource>
+            <type value="PractitionerRole" />
+            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        </resource>
         <operation>
-            <name value="process-message"/>
-            <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message"/>
+            <name value="process-message" />
+            <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message" />
         </operation>
         <operation>
-            <name value="prepare"/>
-            <definition value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message"/>
+            <name value="prepare" />
+            <definition value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message" />
         </operation>
-       <!-- <operation>
+        <operation>
             <name value="validate"/>
             <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
-        </operation> -->
+        </operation>
     </rest>
     <messaging>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order"/>
-        </supportedMessage>>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
+        </supportedMessage>
+        >
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update"/>
-        </supportedMessage>>
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
+        </supportedMessage>
+        >
     </messaging>
 </CapabilityStatement>
