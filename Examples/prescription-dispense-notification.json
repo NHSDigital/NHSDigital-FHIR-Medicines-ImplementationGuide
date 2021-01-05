@@ -16,7 +16,7 @@
                     "code": "prescription-dispense",
                     "display": "Prescription Dispense"
                 },
-                "destination": {
+                "destination": [{
                     "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
                     "receiver": {
                         "identifier": {
@@ -25,7 +25,7 @@
                         },
                         "display": "PPA"
                     }
-                },
+                }],
                 "sender": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
