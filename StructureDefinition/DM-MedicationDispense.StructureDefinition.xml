@@ -192,13 +192,6 @@
     <element id="MedicationDispense.receiver">
       <path value="MedicationDispense.receiver" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-HealthcareService" />
-      </type>
     </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
