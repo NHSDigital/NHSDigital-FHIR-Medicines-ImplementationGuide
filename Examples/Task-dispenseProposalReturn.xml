@@ -2,7 +2,7 @@
     <id value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></id>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-        <value value="83C40E-A23856-00123C"></value>
+        <value value="DC2C66-A1B2C3-23407B"></value>
     </identifier>
     <status value="rejected"></status>
     <statusReason>
@@ -18,7 +18,7 @@
     <owner>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
-            <value value="AB123"></value>
+            <value value="VNE51"></value>
         </identifier>
     </owner>
 </Task>
