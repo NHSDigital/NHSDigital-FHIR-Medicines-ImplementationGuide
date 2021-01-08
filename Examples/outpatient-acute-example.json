@@ -257,7 +257,7 @@
                           "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                           "valueIdentifier": {
                               "system": "https://fhir.nhs.uk/Id/prescription",
-                              "value": "ad945a29-85f8-439a-b590-6789719adc16"
+                              "value": "087c58da-10c9-4ebb-81a6-b5868723897d"
                           }
                       }
                   ],
