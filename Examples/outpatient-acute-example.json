@@ -376,6 +376,7 @@
               "resourceType": "Location",
               "identifier": [
                   {
+                    "system": "https://fhir.rba.nhs.uk/Id/Location",
                       "value": "10008800708"
                   }
               ],
