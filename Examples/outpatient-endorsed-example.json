@@ -269,12 +269,12 @@
                           "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
                           "valueIdentifier": {
                               "system": "https://fhir.nhs.uk/Id/prescription",
-                              "value": "ad945a29-85f8-439a-b590-6789719adc16"
+                              "value": "c09f722d-b277-44e4-bba8-b3aa5b87191d"
                           }
                       }
                   ],
                   "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                  "value": "A3D861-A1B2C3-00BB23"
+                  "value": "A3D861-A1B2C3-00BB24"
               },
               "courseOfTherapyType": {
                   "coding": [
