@@ -198,7 +198,6 @@
       "fullUrl": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
       "resource": {
         "resourceType": "Patient",
-        "id": "78d3c2eb-009e-4ec8-a358-b042954aa9b2",
         "identifier": [
           {
             "extension": [
@@ -264,7 +263,6 @@
       "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "56166769-c1c4-4d07-afa8-132b5dfca666",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
@@ -353,7 +351,6 @@
       "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "a8c85454-f8cb-498d-9629-78e2cb5fa47a",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/sds-user-id",
@@ -408,7 +405,6 @@
       "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
       "resource": {
         "resourceType": "Organization",
-        "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
         "identifier": [
           {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -450,7 +446,6 @@
       "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
       "resource": {
         "resourceType": "HealthcareService",
-        "id": "54b0506d-49af-4245-9d40-d7d64902055e",
         "identifier": [
           {
             "use": "usual",
@@ -484,7 +479,6 @@
       "fullUrl": "urn:uuid:8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
       "resource": {
         "resourceType": "Location",
-        "id": "8a5d7d67-64fb-44ec-9802-2dc214bb3dcb",
         "identifier": [
           {
             "system": "https://fhir.rba.nhs.uk/Id/Location",
