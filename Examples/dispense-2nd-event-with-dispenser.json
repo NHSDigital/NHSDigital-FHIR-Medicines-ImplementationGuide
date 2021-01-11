@@ -1,9 +1,9 @@
 {
     "resourceType": "Bundle",
-    "id": "b240434e-cb85-40bb-899c-1c61410c93a7",
+    "id": "a7849e19-6f4a-4336-a4ef-8962e2f7e684",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "b240434e-cb85-40bb-899c-1c61410c93a7"
+        "value": "a7849e19-6f4a-4336-a4ef-8962e2f7e684"
     },
     "type": "message",
     "entry": [
@@ -79,7 +79,7 @@
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "fd833d33-f128-4fa2-a807-1fc8a7db2658"
+                        "value": "4021d407-8a4f-478a-9cb7-3aab645b91b6"
                     }
                 ],
                 "status": "completed",
@@ -87,8 +87,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "1858411000001101",
-                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
+                            "code": "915611000001105",
+                            "display": "Paracetamol 500mg soluble tablets (A A H Pharmaceuticals Ltd)"
                         }
                     ]
                 },
@@ -153,21 +153,21 @@
                     ]
                 },
                 "quantity": {
-                    "value": 60,
+                    "value": 24,
                     "unit": "tablet",
                     "system": "http://snomed.info/sct",
                     "code": "732936001"
                 },
                 "daysSupply": {
-                    "value": 15,
+                    "value": 6,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-10T16:30:00+00:00",
+                "whenPrepared": "2020-06-25T15:30:00+00:00",
                 "dosageInstruction": [
                     {
-                        "text": "100 tablets. One tablet to be taken four times a day",
+                        "text": "210 tablets. One tablet to be taken four times a day",
                         "timing": {
                             "repeat": {
                                 "frequency": 5,

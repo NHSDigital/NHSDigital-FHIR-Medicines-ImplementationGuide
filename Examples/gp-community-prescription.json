@@ -126,11 +126,11 @@
         },
         "dosageInstruction": [
           {
-            "text": "200 tablets. One tablet to be taken five times a day",
+            "text": "100 tablets. One tablet to be taken four times a day",
             
             "timing": {
               "repeat": {
-                "frequency": 5,
+                "frequency": 4,
                 "period": 1,
                 "periodUnit": "d"
               }
@@ -161,7 +161,7 @@
             "end": "2020-12-07"
           },
           "expectedSupplyDuration": {
-            "value": 25,
+            "value": 40,
             "unit": "day",
             "system": "http://unitsofmeasure.org",
             "code": "d"

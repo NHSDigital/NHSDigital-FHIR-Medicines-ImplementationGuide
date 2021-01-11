@@ -1,9 +1,9 @@
 {
     "resourceType": "Bundle",
-    "id": "b240434e-cb85-40bb-899c-1c61410c93a7",
+    "id": "334a3195-1f6c-497a-8efe-d272ca9c4e38",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "b240434e-cb85-40bb-899c-1c61410c93a7"
+        "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
     },
     "type": "message",
     "entry": [
@@ -71,15 +71,15 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0003",
-                            "display": "With Dispenser - Active"
+                            "code": "0006",
+                            "display": "Dispensed"
                         }
                     }
                 ],
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "fd833d33-f128-4fa2-a807-1fc8a7db2658"
+                        "value": "228e8360-c490-4de6-a33b-daeb6a8d904a"
                     }
                 ],
                 "status": "completed",
@@ -87,8 +87,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "1858411000001101",
-                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
+                            "code": "2274211000001101",
+                            "display": "Paracetamol 500mg soluble tablets (Kent Pharmaceuticals Ltd) 16 tablet 2 x 8 tablets"
                         }
                     ]
                 },
@@ -147,24 +147,24 @@
                     "coding": [
                         {
                             "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                            "code": "0003",
-                            "display": "Item dispensed - partial"
+                            "code": "0001",
+                            "display": "Item fully dispensed"
                         }
                     ]
                 },
                 "quantity": {
-                    "value": 60,
+                    "value": 16,
                     "unit": "tablet",
                     "system": "http://snomed.info/sct",
                     "code": "732936001"
                 },
                 "daysSupply": {
-                    "value": 15,
+                    "value": 4,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-10T16:30:00+00:00",
+                "whenPrepared": "2020-06-25T15:30:00+00:00",
                 "dosageInstruction": [
                     {
                         "text": "100 tablets. One tablet to be taken four times a day",
@@ -197,8 +197,8 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0003",
-                            "display": "With Dispenser - Active"
+                            "code": "0006",
+                            "display": "Dispensed"
                         }
                     }
                 ],
