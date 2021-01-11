@@ -189,10 +189,6 @@
       <path value="MedicationDispense.whenPrepared" />
       <min value="1" />
     </element>
-    <element id="MedicationDispense.receiver">
-      <path value="MedicationDispense.receiver" />
-      <max value="1" />
-    </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
       <min value="1" />
