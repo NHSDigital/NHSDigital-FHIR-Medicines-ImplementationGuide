@@ -46,6 +46,9 @@
           },
           {
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
+          },
+          {
+            "reference": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e"
           }
         ]
       }
@@ -485,6 +488,53 @@
           "display": "NHS Derby and Derbyshire CCG"
         }
       }
+    },
+    {
+        "fullUrl": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e",
+        "resource": {
+            "resourceType": "CommunicationRequest",
+            "status": "unknown",
+            "subject": {
+                "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+            },
+            "payload": [
+                {
+                    "contentString": "Due to Coronavirus restrictions Church View Surgery if CLOSED until further notice"
+                },
+                {
+                    "contentReference": {
+                        "reference": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
+                        "display": "List of Repeat Medications for re-ordering"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "fullUrl": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
+        "resource": {
+            "resourceType": "List",
+            "status": "current",
+            "mode": "snapshot",
+            "code": {
+                "text": "Repeat Medications"
+            },
+            "subject": {
+                "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+            },
+            "entry": [
+                {
+                    "item": {
+                        "display": "Bendroflumethiazide 2.5 mg Tablets (3/6)"
+                    }
+                },
+                {
+                    "item": {
+                        "display": "Salbutamol 100micrograms/dose inhaler CFC free 200 dose (2/6)"
+                    }
+                }
+            ]
+        }
     }
   ]
 }
