@@ -49,6 +49,17 @@
             <type value="PractitionerRole" />
             <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
         </resource>
+        <resource>
+            <type value="Task" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-Task" />
+            <interaction>
+                <code value="create"/>
+            </interaction>
+            <operation>
+                <name value="release" />
+                <definition value="https://fhir.nhs.uk/OperationDefinition/Task-release-message" />
+            </operation>
+        </resource>
         <operation>
             <name value="process-message" />
             <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message" />
