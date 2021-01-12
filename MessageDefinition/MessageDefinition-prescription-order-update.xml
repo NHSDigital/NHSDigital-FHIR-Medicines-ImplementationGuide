@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="prescription-order-update" />
-    <url value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-update" />
+    <url value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="c81b88dc-760e-4b1e-9cdb-c5f853630664" />

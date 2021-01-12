@@ -78,11 +78,13 @@
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
         </supportedMessage>
-        >
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
         </supportedMessage>
-        >
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
+        </supportedMessage>
     </messaging>
 </CapabilityStatement>

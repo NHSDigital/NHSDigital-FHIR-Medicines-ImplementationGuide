@@ -1,6 +1,6 @@
 <MessageDefinition xmlns="http://hl7.org/fhir">
     <id value="pharmacy-dispense" />
-    <url value="https://fhir.nhs.uk/R4/MessageDefinition/pharmacy-dispense" />
+    <url value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="bf729ea8-280b-4109-b2f5-02ce8e51d870" />
