@@ -2,25 +2,15 @@
     "resourceType": "Parameters",
     "parameter": [
         {
-            "name": "message.destination.receiver",
+            "name": "owner",
             "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                 "value": "VNE51"
             }
         },
         {
-            "name": "message.event",
-            "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                "value": "prescription-order"
-            }
-        },
-        {
             "name": "status",
-            "valueCoding": {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
-                "code": "queued"
-            }
+            "valueCode": "accepted"
         }
     ]
 }

@@ -2,15 +2,15 @@
     "resourceType": "Parameters",
     "parameter": [
         {
-            "name": "_id",
-            "valueString": "DC2C66-A1B2C3-23407B"
-        },
+            "name": "group-identifier",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                "value": "82D996-C81010-11DB12"
+            }
+        }
         {
             "name": "status",
-            "valueCoding": {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
-                "code": "queued"
-            }
+            "valueCode": "accepted"
         }
     ]
 }
