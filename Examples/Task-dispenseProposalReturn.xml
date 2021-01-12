@@ -1,5 +1,4 @@
 <Task xmlns="http://hl7.org/fhir">
-    <id value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></id>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
