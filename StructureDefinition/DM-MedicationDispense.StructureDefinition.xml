@@ -63,6 +63,13 @@
       <path value="MedicationDispense.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.statusReason[x]">
+      <path value="MedicationDispense.statusReason[x]" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-status-reason" />
+      </binding>
+    </element>
     <element id="MedicationDispense.category.coding.system">
       <path value="MedicationDispense.category.coding.system" />
       <min value="1" />
