@@ -1,5 +1,6 @@
 {
     "resourceType": "Parameters",
+    "id": "nominatedParmacyReleaseRequest",
     "parameter": [
         {
             "name": "owner",

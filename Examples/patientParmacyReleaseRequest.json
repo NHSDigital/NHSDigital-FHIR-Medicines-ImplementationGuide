@@ -1,5 +1,6 @@
 {
     "resourceType": "Parameters",
+    "id" : "patientParmacyReleaseRequest",
     "parameter": [
         {
             "name": "group-identifier",
