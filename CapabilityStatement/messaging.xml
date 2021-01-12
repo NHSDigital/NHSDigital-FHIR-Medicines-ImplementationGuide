@@ -84,7 +84,7 @@
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-dispense" />
         </supportedMessage>
     </messaging>
 </CapabilityStatement>
