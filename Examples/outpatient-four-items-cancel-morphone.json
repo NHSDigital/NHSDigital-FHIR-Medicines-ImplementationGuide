@@ -272,7 +272,7 @@
               },
               "authoredOn": "2019-12-30T12:00:00+00:00",
               "requester": {
-                  "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+                  "reference": "urn:uuid:63aa76ee-4b0d-41d8-97d5-fe86a134736b"
               },
               "groupIdentifier": {
                   "extension": [
@@ -447,6 +447,72 @@
                       "item": {
                           "display": "Salbutamol 100micrograms/dose inhaler CFC free 200 dose (2/6)"
                       }
+                  }
+              ]
+          }
+      },
+      ,
+      {
+          "fullUrl": "urn:uuid:63aa76ee-4b0d-41d8-97d5-fe86a134736b",
+          "resource": {
+              "resourceType": "PractitionerRole",
+              "identifier": [
+                  {
+                      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                      "value": "223891001086"
+                  }
+              ],
+              "practitioner": {
+                  "reference": "urn:uuid:b5a24a70-f503-4517-ba00-930bf5a2e0a1"
+              },
+              "organization": {
+                  "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+              },
+              "code": [
+                  {
+                      "coding": [
+                          {
+                              "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                              "code": "R1720",
+                              "display": "Clerical Worker"
+                          }
+                      ]
+                  }
+              ],
+              "healthcareService": [
+                  {
+                      "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+                      "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+                  }
+              ],
+              "telecom": [
+                  {
+                      "system": "phone",
+                      "value": "01234567890",
+                      "use": "work"
+                  }
+              ]
+          }
+      },
+      {
+          "fullUrl": "urn:uuid:b5a24a70-f503-4517-ba00-930bf5a2e0a1",
+          "resource": {
+              "resourceType": "Practitioner",
+              "identifier": [
+                  {
+                      "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                      "value": "8703415201"
+                  }
+              ],
+              "name": [
+                  {
+                      "family": "SCOTT",
+                      "given": [
+                          "LIZ"
+                      ],
+                      "prefix": [
+                          "MS"
+                      ]
                   }
               ]
           }
