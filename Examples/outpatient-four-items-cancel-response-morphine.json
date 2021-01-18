@@ -46,6 +46,10 @@
                     },
                     "display": "NHS Digital Spine"
                 },
+                "response": {
+                    "identifier": "5a8079ae-e430-41ff-89fa-14db08969a19",
+                    "code": "ok"
+                },
                 "focus": [
                     {
                         "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
@@ -230,12 +234,17 @@
                 "resourceType": "MedicationRequest",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
-                        "valueCoding": {
-                            "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
-                            "code": "1001",
-                            "display": "Outpatient Community Prescriber - Medical Prescriber"
-                        }
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
+                        "extension": [
+                            {
+                                "url": "status",
+                                "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-history",
+                                    "code": "R-0002",
+                                    "display": "Prescription/item was not cancelled – With dispenser"
+                                }
+                            }
+                        ]
                     },
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner",
