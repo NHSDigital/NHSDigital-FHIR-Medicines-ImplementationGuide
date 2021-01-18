@@ -54,7 +54,7 @@
           "resourceType": "MedicationRequest",
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                 "code": "1001",
@@ -62,7 +62,7 @@
               }
             },
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+              "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
               "extension": [
                 {
                   "url": "numberOfRepeatPrescriptionsAllowed",
@@ -113,7 +113,7 @@
           "groupIdentifier": {
             "extension": [
               {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
+                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId",
                 "valueIdentifier": {
                   "system": "https://fhir.nhs.uk/Id/prescription",
                   "value": "d61df424-604d-49be-b9ad-9e2064785e18"
@@ -181,7 +181,7 @@
           "dispenseRequest": {
             "extension": [
               {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
+                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                   "code": "P1"
@@ -218,11 +218,11 @@
             {
               "extension": [
                 {
-                  "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                  "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
                   "valueCodeableConcept": {
                     "coding": [
                       {
-                        "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                        "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
                         "code": "01",
                         "display": "Number present and verified"
                       }
@@ -299,7 +299,7 @@
             {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                  "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                   "code": "R8000",
                   "display": "Clinical Practitioner Access Role"
                 }

@@ -54,7 +54,7 @@
             225426007 |Administration of therapeutic substance (procedure)| 
             From Rob Gooch - Hard code this value.
           
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-procedureCode">
               <valueCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct" />
@@ -63,20 +63,20 @@
                 </coding>
               </valueCodeableConcept>
             </extension>  -->
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType">
               <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
                 <code value="0101" />
                 <display value="Primary Care Prescriber – Medical Prescriber" />
               </valueCoding>
             </extension>
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner">
               <valueReference>
                 <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
               </valueReference>
             </extension>
             <!-- pertinentInformation2.pertinentTokenIssued. Not required 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-tokenIssued">
               <valueBoolean value="true" />
             </extension> -->
             <!-- Can be pertinentPrescription.id This is:
@@ -113,7 +113,7 @@
 
             <groupIdentifier>
               <!-- ParentPrescription.id uuid -->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
                 <valueIdentifier>
                   <system value="https://fhir.nhs.uk/Id/prescription" />
                   <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -139,7 +139,7 @@
             <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
             <dispenseRequest>
               <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType">
                 <valueCoding>
                   <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
                   <code value="0004" />
@@ -173,7 +173,7 @@
             <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
             <id value="791C9A65-5C6A-308B-D700-32D247BADB87" />
             <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-procedureCode">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-procedureCode">
               <valueCodeableConcept>
                 <coding>
                   <system value="http://snomed.info/sct" />
@@ -182,20 +182,20 @@
                 </coding>
               </valueCodeableConcept>
             </extension> -->
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType">
               <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
                 <code value="0101" />
                 <display value="Primary Care Prescriber – Medical Prescriber" />
               </valueCoding>
             </extension>
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner">
               <valueReference>
                 <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
               </valueReference>
             </extension>
             <!-- pertinentInformation2.pertinentTokenIssued. Not required 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-tokenIssued">
+            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-tokenIssued">
               <valueBoolean value="true" />
             </extension> -->
             <identifier>
@@ -231,7 +231,7 @@
             </requester>
             <groupIdentifier>
               <!-- ParentPrescription.id uuid -->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
                 <valueIdentifier>
                   <system value="https://fhir.nhs.uk/Id/prescription" />
                   <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -257,7 +257,7 @@
             <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
             <dispenseRequest>
               <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
-              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
+              <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType">
                 <valueCoding>
                   <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
                   <code value="0004" />
@@ -291,10 +291,10 @@
             <!-- `Patient.id -->
             <identifier>
               <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
-              <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+              <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
                 <valueCodeableConcept>
                   <coding>
-                    <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
                     <code value="01" />
                     <display value="Number present and verified" />
                   </coding>
@@ -387,7 +387,7 @@
             <code>
               <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
               <coding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
                 <code value="R8000" />
                 <display value="Clinical Practitioner Access Role" />
               </coding>
@@ -486,7 +486,7 @@
             <code>
               <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
               <coding>
-                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
                 <code value="R8000" />
                 <display value="Clinical Practitioner Access Role" />
               </coding>

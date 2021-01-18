@@ -32,7 +32,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationRequest" />
-  <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+  <baseDefinition value="https://fhir.nhs.uk/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationRequest.extension">
@@ -51,7 +51,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
     </element>
     <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
@@ -61,7 +61,7 @@
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
       </type>
     </element>
     <element id="MedicationRequest.identifier">
@@ -96,7 +96,7 @@
       <path value="MedicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
       </type>
     </element>
     <element id="MedicationRequest.subject.reference">
@@ -112,7 +112,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
       </type>
     </element>
     <element id="MedicationRequest.requester.reference">
@@ -142,7 +142,7 @@
       <short value="UUID order number for grouped MedciationRequests" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
@@ -186,7 +186,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DispensingPerformer" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Claim" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-Claim" />
   <name value="DM-Claim" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -42,7 +42,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier" />
       </type>
     </element>
     <element id="Claim.item.extension">
@@ -70,7 +70,7 @@
       <binding>
         <strength value="required" />
         <description value="DMD Medication Code" />
-        <valueSet value="https://fhir.nhs.uk/R4/ValueSet/UKCore-MedicationCode" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
     </element>
     <element id="Claim.item.modifier">

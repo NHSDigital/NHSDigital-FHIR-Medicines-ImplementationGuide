@@ -116,7 +116,7 @@
                     {
                         "extension": [
                             {
-                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier",
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
                                 "extension": [
                                     {
                                         "url": "shortForm",
@@ -246,7 +246,7 @@
                     {
                         "extension": [
                             {
-                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-GroupIdentifier",
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
                                 "extension": [
                                     {
                                         "url": "shortForm",
@@ -343,7 +343,7 @@
                     {
                         "coding": [
                             {
-                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                                 "code": "R1981",
                                 "display": "Community Pharmacist"
                             }

@@ -20,7 +20,7 @@
             }
           },
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-Message-Status",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-Message-Status",
             "valueCoding": {
               "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
               "code": "active",
@@ -48,7 +48,7 @@
         "sender": {
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
               "valueReference": {
                 "identifier": {
                   "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -85,7 +85,7 @@
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "1201",
@@ -93,7 +93,7 @@
             }
           },
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
             "extension": [
               {
                 "url": "numberOfRepeatPrescriptionsAllowed",
@@ -148,7 +148,7 @@
         "groupIdentifier": {
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId",
               "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/prescription",
                 "value": "ad945a29-85f8-439a-b590-6789719adc16"
@@ -216,7 +216,7 @@
         "dispenseRequest": {
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                 "code": "P2"
@@ -261,11 +261,11 @@
           {
             "extension": [
               {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
                       "code": "01",
                       "display": "Number present and verified"
                     }
@@ -337,7 +337,7 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                 "code": "R8000",
                 "display": "Clinical Practitioner Access Role"
               }

@@ -1,9 +1,9 @@
 <Patient xmlns="http://hl7.org/fhir">
     <identifier>
-        <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
                 <coding>
-                    <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
                     <code value="01" />
                     <display value="Number present and verified" />
                 </coding>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
   <name value="DM-MedicationRequest" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -32,7 +32,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationRequest" />
-  <baseDefinition value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-MedicationRequest" />
+  <baseDefinition value="https://fhir.nhs.uk/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationRequest.extension">
@@ -50,7 +50,7 @@
       <sliceName value="repeatInformation" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
     </element>
     <element id="MedicationRequest.extension:legalAuthenticator">
@@ -59,7 +59,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-LegalAuthenticator" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-LegalAuthenticator" />
       </type>
     </element>
     <element id="MedicationRequest.extension:responsiblePractitioner">
@@ -68,7 +68,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
     </element>
     <element id="MedicationRequest.extension:prescriptionEndorsement">
@@ -76,7 +76,7 @@
       <sliceName value="prescriptionEndorsement" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionEndorsement" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionEndorsement" />
       </type>
     </element>
     <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
@@ -85,7 +85,7 @@
       <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
       </type>
     </element>
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
@@ -93,7 +93,7 @@
       <sliceName value="NHSBSAprescriptionType" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType" />
       </type>
     </element>
     <element id="MedicationRequest.extension:controlledDrug">
@@ -226,7 +226,7 @@
       <path value="MedicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
       </type>
     </element>
     <element id="MedicationRequest.subject.reference">
@@ -238,7 +238,7 @@
       <definition value="Encounter is required for secondary care prescriptions." />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Encounter" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Encounter" />
       </type>
     </element>
     <element id="MedicationRequest.authoredOn">
@@ -250,7 +250,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
       </type>
     </element>
     <element id="MedicationRequest.requester.reference">
@@ -287,7 +287,7 @@
       <short value="UUID order number for grouped MedciationRequests" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
@@ -359,7 +359,7 @@
       <short value="type of dispensing organisation" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
@@ -415,7 +415,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DispensingPerformer" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">
@@ -447,7 +447,7 @@
       <path value="MedicationRequest.eventHistory" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Provenance" />
       </type>
     </element>
   </differential>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-LegalAuthenticator" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-LegalAuthenticator" />
   <name value="Extension-DM-LegalAuthenticator" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -26,13 +26,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-LegalAuthenticator" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-LegalAuthenticator" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>

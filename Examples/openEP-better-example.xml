@@ -83,7 +83,7 @@
 
                 <groupIdentifier>
                     <!-- ParentPrescription.id uuid -->
-                    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
+                    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
                         <valueIdentifier>
                             <system value="https://fhir.nhs.uk/Id/prescription" />
                             <value value="c26f0fe5-c084-4320-9c39-3ccdbc0b2e6a" />
@@ -180,10 +180,10 @@
                     <value value="1007"></value>
                 </identifier>
                 <identifier>
-                    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+                    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
                         <valueCodeableConcept>
                             <coding>
-                                <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
                                 <code value="01" />
                                 <display value="Number present and verified" />
                             </coding>
@@ -285,7 +285,7 @@
                 <code>
                     <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
                     <coding>
-                        <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName" />
+                        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
                         <code value="R8000" />
                         <display value="Clinical Practitioner Access Role" />
                     </coding>

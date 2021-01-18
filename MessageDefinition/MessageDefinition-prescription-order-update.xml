@@ -17,42 +17,42 @@
     <category value="consequence" />
     <focus>
         <code value="MessageHeader" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-MessageHeader" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-MessageHeader" />
         <min value="1" />
         <max value="1" />
     </focus>
     <focus>
         <code value="MedicationRequest" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
         <min value="1" />
         <max value="1" />
     </focus>
     <focus>
         <code value="Patient" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
         <min value="1" />
         <max value="1" />
     </focus>
     <focus>
         <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Practitioner" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="PractitionerRole" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
         <min value="1" />
         <max value="*" />
     </focus>
     <responseRequired value="always"></responseRequired>
     <allowedResponse> 
-        <message value="https://fhir.nhs.uk/R4/MessageDefinition/prescription-order-response"/>  
+        <message value="https://fhir.nhs.uk/MessageDefinition/prescription-order-response"/>  
     </allowedResponse> 
 </MessageDefinition>

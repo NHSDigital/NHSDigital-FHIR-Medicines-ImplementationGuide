@@ -53,7 +53,7 @@
         "resourceType": "MedicationRequest",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "1005",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-LegalAuthenticator",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-LegalAuthenticator",
             "valueReference": {
               "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
             }
@@ -105,7 +105,7 @@
         "groupIdentifier": {
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId",
               "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/prescription",
                 "value": "f441aad2-90b9-43cc-acce-82b8d8ea90ba"
@@ -159,7 +159,7 @@
         "dispenseRequest": {
           "extension": [
             {
-              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType",
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                 "code": "P1"
@@ -202,11 +202,11 @@
           {
             "extension": [
               {
-                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
                       "code": "01",
                       "display": "Number present and verified"
                     }
@@ -283,7 +283,7 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                 "code": "R8000",
                 "display": "Clinical Practitioner Access Role"
               }
@@ -325,7 +325,7 @@
           {
             "coding": [
               {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                 "code": "R0700",
                 "display": "Community Nurse"
               }

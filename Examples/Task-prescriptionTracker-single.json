@@ -6,7 +6,7 @@
             "id": "1",
             "extension": [
                 {
-                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+                    "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
                     "extension": [
                         {
                             "url": "numberOfRepeatPrescriptionsIssued",
@@ -39,7 +39,7 @@
             "id": "2",
             "extension": [
                 {
-                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+                    "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
                     "extension": [
                         {
                             "url": "numberOfRepeatPrescriptionsIssued",

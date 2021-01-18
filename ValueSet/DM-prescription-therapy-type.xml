@@ -8,7 +8,7 @@
     <description value="Subset on CareConnect Prescription Therapy Type which is permitted for EPS use."/>
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"/>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrescriptionType"/>
             <concept>
                 <code value="acute"/>
                 <display value="Acute"/>

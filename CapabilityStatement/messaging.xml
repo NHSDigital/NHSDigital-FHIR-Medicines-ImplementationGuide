@@ -23,31 +23,31 @@
         </security>
         <resource>
             <type value="List" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/UKCore-List" />
         </resource>
         <resource>
             <type value="HealthcareService" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-HealthcareService" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-HealthcareService" />
         </resource>
         <resource>
             <type value="Location" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Location" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/UKCore-Location" />
         </resource>
         <resource>
             <type value="Organization" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Organization" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
         </resource>
         <resource>
             <type value="Patient" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Patient" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
         </resource>
         <resource>
             <type value="Practitioner" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Practitioner" />
         </resource>
         <resource>
             <type value="PractitionerRole" />
-            <profile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
         </resource>
         <resource>
             <type value="Task" />
@@ -66,7 +66,7 @@
         </operation>
         <operation>
             <name value="prepare" />
-            <definition value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message" />
+            <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
         </operation>
         <operation>
             <name value="validate"/>

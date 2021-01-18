@@ -1,6 +1,6 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-prepare-message" />
-    <url value="https://fhir.nhs.uk/R4/OperationDefinition/MessageHeader-prepare-message" />
+    <url value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
     <version value="4.0.1" />
     <name value="Prepare Message" />
     <status value="draft" />

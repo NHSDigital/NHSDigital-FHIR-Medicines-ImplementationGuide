@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MedicationRequest xmlns="http://hl7.org/fhir">
     <id value="missingSNOMED-fail" />
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-prescriptionType">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType">
         <valueCoding>
           <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
           <code value="0101" />
           <display value="Primary Care Prescriber – Medical Prescriber" />
         </valueCoding>
       </extension>
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner">
         <valueReference>
           <reference value="urn:uuid:1557E58E-3B1E-41DD-B3B5-D4D393DC5A3D" />
         </valueReference>
@@ -35,7 +35,7 @@
         <display value="Dr Smith" />
     </requester>
     <groupIdentifier>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-PrescriptionId">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
             <valueIdentifier>
                 <system value="https://fhir.nhs.uk/Id/prescription" />
                 <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -46,7 +46,7 @@
     </groupIdentifier>
     <courseOfTherapyType>
         <coding>
-            <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-PrescriptionType"></system>
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrescriptionType"></system>
             <code value="acute" />
             <display value="Short course (acute) therapy" />
         </coding>
@@ -55,7 +55,7 @@
         <text value="2 Puffs when required" />
     </dosageInstruction>
     <dispenseRequest>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-performerSiteType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType">
             <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
                 <code value="0004" />

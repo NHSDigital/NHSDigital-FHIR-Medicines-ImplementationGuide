@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-CommunicationRequest" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-CommunicationRequest" />
   <name value="DM-CommunicationRequest" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -29,7 +29,7 @@
       <path value="CommunicationRequest.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/UKCore-Patient" />
       </type>
     </element>
     <element id="CommunicationRequest.payload">
@@ -46,7 +46,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-List" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/UKCore-List" />
       </type>
     </element>
   </differential>

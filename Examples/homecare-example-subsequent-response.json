@@ -24,7 +24,7 @@
                     }
                 },
                 {
-                    "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-Message-Status",
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-Message-Status",
                     "valueCoding": {
                         "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
                         "code": "active",
@@ -80,7 +80,7 @@
               "resourceType": "MedicationRequest",
               "extension": [
                   {
-                      "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
+                      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
                       "extension": [
                           {
                               "url": "status",
@@ -93,7 +93,7 @@
                       ]
                   },
                   {
-                      "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
+                      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                       "valueReference": {
                           "reference": "urn:uuid:a5acefc1-f8ca-4989-a5ac-34ae36741466",
                           "display": "DR SAZ RAZ"
@@ -134,7 +134,7 @@
                   "performer": {
                       "extension": [
                           {
-                              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DispensingPerformer",
+                              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer",
                               "valueReference": {
                                   "reference": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6",
                                   "display": "LOTTIE POTTS"
@@ -158,11 +158,11 @@
                   {
                       "extension": [
                           {
-                              "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                              "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
                               "valueCodeableConcept": {
                                   "coding": [
                                       {
-                                          "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                          "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
                                           "code": "01",
                                           "display": "Number present and verified"
                                       }
@@ -231,7 +231,7 @@
                   {
                       "coding": [
                           {
-                              "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                               "code": "R8000",
                               "display": "Clinical Practitioner Access Role"
                           }
@@ -337,7 +337,7 @@
                   {
                       "coding": [
                           {
-                              "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                               "code": "R1981",
                               "display": "Pharmacist"
                           }
@@ -443,7 +443,7 @@
                   {
                       "coding": [
                           {
-                              "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName",
+                              "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                               "code": "R8000",
                               "display": "Clinical Practitioner Access Role"
                           }

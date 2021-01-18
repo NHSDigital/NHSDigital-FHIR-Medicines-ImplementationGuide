@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/R4/StructureDefinition/DM-Provenance" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/DM-Provenance" />
   <name value="DM-Provenance" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -39,22 +39,22 @@
       <path value="Provenance.target" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/DM-MedicationRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
       </type>
     </element>
     <element id="Provenance.agent.who">
       <path value="Provenance.agent.who" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
       </type>
     </element>
     <element id="Provenance.signature.who">
       <path value="Provenance.signature.who" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-Practitioner" />
-        <targetProfile value="https://fhir.nhs.uk/R4/StructureDefinition/Spine-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Practitioner" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
       </type>
     </element>
   </differential>
