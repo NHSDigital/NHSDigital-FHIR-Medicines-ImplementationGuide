@@ -1,0 +1,17 @@
+{
+    "resourceType": "Parameters",
+    "id": "nominatedParmacyReleaseRequest",
+    "parameter": [
+        {
+            "name": "owner",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "FX748"
+            }
+        },
+        {
+            "name": "status",
+            "valueCode": "accepted"
+        }
+    ]
+}

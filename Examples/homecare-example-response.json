@@ -41,6 +41,17 @@
                     {
                         "endpoint": "urn:nhs-uk:addressing:ods:RBA",
                         "receiver": {
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
+                                    "valueReference": {
+                                        "identifier": {
+                                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                            "value": "A99968"
+                                        }
+                                    }
+                                }
+                            ],
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "RBA"
