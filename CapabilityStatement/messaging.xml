@@ -23,7 +23,7 @@
         </security>
         <resource>
             <type value="List" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/UKCore-List" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
         </resource>
         <resource>
             <type value="HealthcareService" />
@@ -31,7 +31,7 @@
         </resource>
         <resource>
             <type value="Location" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/UKCore-Location" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
         </resource>
         <resource>
             <type value="Organization" />

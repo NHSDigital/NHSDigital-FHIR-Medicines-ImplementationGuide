@@ -32,7 +32,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationDispense" />
-  <baseDefinition value="https://fhir.nhs.uk/StructureDefinition/UKCore-MedicationDispense" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationDispense.extension">
@@ -94,7 +94,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <aggregation value="referenced" />
       </type>
     </element>
@@ -122,9 +122,9 @@
       <path value="MedicationDispense.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/UKCore-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
         <aggregation value="bundled" />
       </type>
     </element>
