@@ -1,0 +1,27 @@
+<Task xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="af0b3dad-5113-46fe-ae76-e117d20f6dd2"></value>
+    </identifier>
+    <status value="rejected"></status>
+    <statusReason>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
+            <code value="D-0002"></code>
+            <display value="Unable to dispense medication on prescriptions"></display>
+        </coding>
+    </statusReason>
+    <intent value="order"></intent>
+    <groupIdentifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="3C2366-B81001-0A409U"></value>
+    </groupIdentifier>
+    <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
+    <lastModified value="2016-03-10T22:39:32-04:00"></lastModified>
+    <owner>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
+            <value value="FX748"></value>
+        </identifier>
+    </owner>
+</Task>
