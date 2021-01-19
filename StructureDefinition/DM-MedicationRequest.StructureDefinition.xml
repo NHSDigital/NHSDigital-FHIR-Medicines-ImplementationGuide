@@ -262,6 +262,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier">
