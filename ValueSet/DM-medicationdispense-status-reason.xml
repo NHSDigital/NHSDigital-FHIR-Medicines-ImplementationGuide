@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-medicationdispense-status-reason"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-status-reason"/>
-    <version value="1.1.3"/>
+    <version value="1.1.4"/>
     <name value="MedicationDispense Status Reason"/>
     <status value="draft"/>
     <description value="MedicationDispense Status Reason"/>
@@ -11,62 +11,141 @@
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
             <version value="1.1.3"/>
         </include>
+        <include>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+        </include>
+        <include>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
+        </include>
     </compose>
     <expansion>
         <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="DA"/>
+            <display value="Dosage Amendments"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="PA"/>
+            <display value="Patient Details Amendments"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="OC"/>
+            <display value="Other Clinical"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="QU"/>
+            <display value="Quantity Update"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="ONC"/>
+            <display value="Other Non-Clinical"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
+            <version value="01"/>
+            <code value="MU"/>
+            <display value="Medication Update"/>
+        </contains>
+        <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0001"/>
             <display value="Not required as instructed by the patient"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0011"/>
             <display value="Patient purchased medication over the counter"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0003"/>
             <display value="Owings note issued to patient"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0002"/>
             <display value="Clinically unsuitable"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0010"/>
             <display value="Patient did not collect medication"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0009"/>
             <display value="Not allowed on FP10"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0008"/>
             <display value="Item or prescription expired"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0005"/>
             <display value="Prescription cancellation due to death"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0004"/>
             <display value="Prescription cancellation"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0007"/>
             <display value="Prescribed out of scope item"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason"/>
+            <version value="1.1.3"/>
             <code value="0006"/>
             <display value="Illegal NHS prescription"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
+            <code value="AD"/>
+            <display value="All Dispenses for an instance"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
+            <code value="PS"/>
+            <display value="Protocol Supply"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
+            <code value="PA"/>
+            <display value="Personal Administration"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
+            <code value="LD"/>
+            <display value="Last Dispense"/>
         </contains>
     </expansion>
 </ValueSet>

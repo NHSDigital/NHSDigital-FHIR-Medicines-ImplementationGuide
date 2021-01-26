@@ -1,0 +1,37 @@
+<Task xmlns="http://hl7.org/fhir">
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
+    </identifier>
+    <status value="cancelled"></status>
+    <statusReason>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"></system>
+            <code value="AD"></code>
+            <display value="All Dispenses for an instance"></display>
+        </coding>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"></system>
+            <code value="DA"></code>
+            <display value="Dosage Amendments"></display>
+        </coding>
+    </statusReason>
+    <intent value="order"></intent>
+    <groupIdentifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="88AF6C-C81007-00001C"></value>
+    </groupIdentifier>
+    <for>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+            <value value="9446368138"/>
+        </identifier>
+    </for>
+    <authoredOn value="2020-12-21T17:03:20-00:00"></authoredOn>
+    <owner>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
+            <value value="VNE51"></value>
+        </identifier>
+    </owner>
+</Task>
