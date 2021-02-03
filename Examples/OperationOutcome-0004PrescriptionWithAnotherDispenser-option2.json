@@ -7,9 +7,9 @@
       "valueReference" : {
         "identifier" : {
           "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "AB123",
-          "display" : "The Simple Pharmacy"
-        }
+          "value": "AB123"         
+        },
+        "display" : "The Simple Pharmacy"
       }
     }
   ],
