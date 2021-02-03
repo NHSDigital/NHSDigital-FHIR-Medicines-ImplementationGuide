@@ -7,7 +7,8 @@
       "valueReference" : {
         "identifier" : {
           "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "AB123"
+          "value": "AB123",
+          "display" : "The Simple Pharmacy"
         }
       }
     }
@@ -29,8 +30,7 @@
             "display": "Prescription is with another dispenser"
           }
         ]
-      },
-      "diagnostics": "0004 - Prescription is with another dispenser [Acme Pharmacy AB123]"
+      }
     }
   ]
 }
