@@ -1,0 +1,54 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="EPS-task-prescription-release-rejection-reason" />
+    <url value="https://fhir.nhs.uk/CodeSystem/EPS-task-prescription-release-rejection-reason" />
+    <identifier>
+        <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
+        <value value="EPS-task-prescription-release-rejection-reason" />
+    </identifier>
+    <version value="6.2" />
+    <name value="EPS Prescription Release Rejection Reason" />
+    <title value="EPS Prescription Release Rejection Reason" />
+    <status value="draft" />
+    <experimental value="false" />
+    <date value="2005-06-17" />
+    <publisher value="NHS Digital" />
+    <contact>
+        <name value="Interoperability Team" />
+        <telecom>
+            <system value="email" />
+            <value value="interoperabilityteam@nhs.net" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="EPS Prescription Release Rejection Reason" />
+    <caseSensitive value="true" />
+    <content value="complete" />
+    <concept>
+        <code value="0001"></code>
+        <display value="Prescription has been cancelled" />
+    </concept>
+    <concept>
+        <code value="0002"></code>
+        <display value="Prescription has expired" />
+    </concept>
+    <concept>
+        <code value="0003"></code>
+        <display value="Prescription cannot be found – contact your GP/prescriber" />
+    </concept>
+    <concept>
+        <code value="0004"></code>
+        <display value="Prescription is with another dispenser" />
+    </concept>
+    <concept>
+        <code value="0005"></code>
+        <display value="Prescription has been dispensed" />
+    </concept>
+    <concept>
+        <code value="0006"></code>
+        <display value="No more nominated prescriptions available" />
+    </concept>
+    <concept>
+        <code value="0007"></code>
+        <display value="Nominated download functionality disabled in spine" />
+    </concept>
+</CodeSystem>
