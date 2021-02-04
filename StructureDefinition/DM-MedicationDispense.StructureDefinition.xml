@@ -3,6 +3,8 @@
   <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense" />
   <name value="DM-MedicationDispense" />
   <status value="draft" />
+  <description value="### Fill status&#xD;&#xA;&#xD;&#xA;```json&#xD;&#xA;&quot;status&quot;: &quot;completed&quot;&#xD;&#xA;```&#xD;&#xA;&#xD;&#xA;### Actual Product Code&#xD;&#xA;&#xD;&#xA;Actual Medical Product Packs (AMPP) SHOULD be used. The ValueSet for medication is {{pagelink:DM-MedicationDispense-Code}}&#xD;&#xA;&#xD;&#xA;See also {{pagelink:Dispensing}}&#xD;&#xA;&#xD;&#xA;&lt;br&gt;&#xD;&#xA;```json&#xD;&#xA;&quot;medicationCodeableConcept&quot;: {&#xD;&#xA;        &quot;coding&quot;:  [&#xD;&#xA;        {&#xD;&#xA;            &quot;system&quot;: &quot;http://snomed.info/sct&quot;,&#xD;&#xA;            &quot;code&quot;: &quot;10460811000001109&quot;,&#xD;&#xA;            &quot;display&quot;: &quot;Amoxil 500mg capsules (Dowelhurst Ltd) 12 capsule&quot;&#xD;&#xA;        }&#xD;&#xA;    ]&#xD;&#xA;}&#xD;&#xA;```" />
+  <purpose value="NHS in England" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
