@@ -3,7 +3,7 @@
   "id" : "option2",
   "extension": [
     {
-      "url" : "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo",
+      "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-supportingInfo",
       "valueReference" : {
         "identifier" : {
           "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -19,14 +19,9 @@
       "code": "conflict",
       "details": {
         "coding": [
-          {
-            "system": "https://fhir.nhs.uk/CodeSystem/Spine-ErrorOrWarningCode",
-            "code": "FORBIDDEN_UPDATE",
-            "display": "Forbidden update"
-          },
           { 
-            "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-prescription-release-rejection-reason",
-            "code": "0004",
+            "system": "https://fhir.nhs.uk/CodeSystem/EPS-IssueCode",
+            "code": "PRESCRIPTION_WITH_ANOTHER_DISPENSER",
             "display": "Prescription is with another dispenser"
           }
         ]
