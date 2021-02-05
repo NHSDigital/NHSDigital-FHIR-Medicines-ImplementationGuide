@@ -63,7 +63,8 @@
     </concept>
     <concept>
         <code value="0099"></code>
-        <display value="Incompatible version of Request. [Additional Information (if any)]	The user should inform their system supplier that an incompatible version of a prescription has been received.
+        <display value="Incompatible version of Request. [Additional Information (if any)]"/>
+        <definition value="The user should inform their system supplier that an incompatible version of a prescription has been received.
 This scenario may occur when a new version of the EPS is deployed but any messaging incompatibles will be carefully managed by the EPS Programme." />
     </concept>
     <concept>
