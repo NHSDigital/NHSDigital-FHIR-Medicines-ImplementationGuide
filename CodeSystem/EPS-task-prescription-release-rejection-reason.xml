@@ -5,7 +5,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="EPS-task-prescription-release-rejection-reason" />
     </identifier>
-    <version value="6.2" />
+    <version value="6.2.1" />
     <name value="EPS Prescription Release Rejection Reason" />
     <title value="EPS Prescription Release Rejection Reason" />
     <status value="draft" />
@@ -26,29 +26,59 @@
     <concept>
         <code value="0001"></code>
         <display value="Prescription has been cancelled" />
+        <description value="Inform the dispenser to advise the patient that their prescription has been cancelled" />
     </concept>
     <concept>
         <code value="0002"></code>
         <display value="Prescription has expired" />
+        <description value="Inform the dispenser that the prescription has expired and it cannot be downloaded" />
     </concept>
     <concept>
         <code value="0003"></code>
         <display value="Prescription cannot be found – contact your GP/prescriber" />
+        <description value="Contact prescriber	Inform the dispenser that the prescription not be found. This may be because; 
+        1.	There is no matching prescription. 
+        2.	The prescription has been removed from the ETP component under the ETP housekeeping rules. In such cases, there has been a considerable time period between this request and the receipt of the prescription. 
+        3.	The prescription has not arrived at the Spine. This may occur if the prescription is requested immediately after the prescriber has submitted it, or is a post-dated prescription." />
     </concept>
     <concept>
         <code value="0004"></code>
         <display value="Prescription is with another dispenser" />
+        <description value="Inform the dispenser that the prescription has been downloaded by another dispenser. The rejection message will contain details of the dispensing site that has the prescription." />
     </concept>
     <concept>
         <code value="0005"></code>
         <display value="Prescription has been dispensed" />
+        <description value="Inform the dispenser to advise the patient that this prescription has already been dispensed. " />
     </concept>
     <concept>
         <code value="0006"></code>
         <display value="No more nominated prescriptions available" />
+        <description value="No further request messages to pull down nominated prescriptions should be submitted at this time" />
     </concept>
     <concept>
         <code value="0007"></code>
         <display value="Nominated download functionality disabled in spine" />
+        <description value="The Spine nomination functionality has been disabled at the request of the Authority and the message is rejected. The request will not be processed. However, the prescription request by prescription unique identifier should be available." />
+    </concept>
+    <concept>
+        <code value="0099"></code>
+        <display value="Incompatible version of Request. [Additional Information (if any)]	The user should inform their system supplier that an incompatible version of a prescription has been received.
+This scenario may occur when a new version of the EPS is deployed but any messaging incompatibles will be carefully managed by the EPS Programme." />
+    </concept>
+    <concept>
+        <code value="5000"></code>
+        <display value="Unable to process message. [Additional Information (if any)]" />
+        <description value="The user should inform their system supplier that a request message was rejected by the Spine." />
+    </concept>
+    <concept>
+        <code value="5888"></code>
+        <display value="Invalid message" />
+        <description value="The user should inform their system supplier that a message was rejected as invalid by the Spine." />
+    </concept>
+    <concept>
+        <code value="9006"></code>
+        <display value="Format of date passed is invalid" />
+        <description value="The format of a date/time attribute with the prescription does not conform with the format defined within the MIM. The System shall correct the date/time attribute and re-submit the prescription to the Spine." />
     </concept>
 </CodeSystem>
