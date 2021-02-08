@@ -12,7 +12,7 @@
     <eventCoding>
         <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
         <code value="dispense-notification" />
-        <display value="Pharmacy/treatment Dispense" />
+        <display value="Dispense Notification" />
     </eventCoding>
     <category value="notification" />
     <focus>
