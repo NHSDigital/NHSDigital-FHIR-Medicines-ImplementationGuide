@@ -14,7 +14,7 @@
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                     "code": "dispense-notification",
-                    "display": "Prescription Dispense"
+                    "display": "Dispense Notification"
                 },
                 "destination": [{
                     "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
