@@ -11,7 +11,7 @@
     <date value="2020-10-02" />
     <eventCoding>
         <system value="https://fhir.nhs.uk/CodeSystem/message-event" />
-        <code value="prescription-dispense" />
+        <code value="dispense-notification" />
         <display value="Pharmacy/treatment Dispense" />
     </eventCoding>
     <category value="notification" />

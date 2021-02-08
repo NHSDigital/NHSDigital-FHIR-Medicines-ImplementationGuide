@@ -13,7 +13,7 @@
                 "resourceType": "MessageHeader",
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "prescription-dispense",
+                    "code": "dispense-notification",
                     "display": "Prescription Dispense"
                 },
                 "destination": [{
