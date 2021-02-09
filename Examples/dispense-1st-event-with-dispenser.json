@@ -103,13 +103,19 @@
                 "performer": [
                     {
                         "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "identifier":  {
+                                "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                                "value": "210987654322"
+                            }, 
                             "display": "Mr Peter Potion"
                         }
                     },
                     {
                         "actor": {
-                            "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "AB123"
+                            },
                             "display": "The Simple Pharmacy"
                         }
                     }
@@ -229,13 +235,19 @@
                 "performer": [
                     {
                         "actor": {
-                            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                            "identifier":  {
+                                "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                                "value": "210987654322"
+                            },
                             "display": "Mr Peter Potion"
                         }
                     },
                     {
                         "actor": {
-                            "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "AB123"
+                            },
                             "display": "The Simple Pharmacy"
                         }
                     }
@@ -315,112 +327,6 @@
                                 }
                             }
                         ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-            "resource": {
-                "resourceType": "PractitionerRole",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                        "value": "210987654322"
-                    }
-                ],
-                "practitioner": {
-                    "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-                    "display": "Mr Peter Potion"
-                },
-                "organization": {
-                    "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
-                    "display": "The Simple Pharmacy"
-                },
-                "code": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R1981",
-                                "display": "Community Pharmacist"
-                            }
-                        ]
-                    }
-                ],
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01234567890",
-                        "use": "work"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-            "resource": {
-                "resourceType": "Practitioner",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-                        "value": "156968544265"
-                    },
-                    {
-                        "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                        "value": "2728314"
-                    }
-                ],
-                "name": [
-                    {
-                        "family": "Potion",
-                        "given": [
-                            "Peter"
-                        ],
-                        "prefix": [
-                            "Mr"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
-            "resource": {
-                "resourceType": "Organization",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "AB123"
-                    }
-                ],
-                "type": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                                "code": "RO182",
-                                "display": "PHARMACY"
-                            }
-                        ]
-                    }
-                ],
-                "name": "The Simple Pharmacy",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01234567890",
-                        "use": "work"
-                    }
-                ],
-                "address": [
-                    {
-                        "line": [
-                            "1",
-                            "The Midway",
-                            "Simple Town"
-                        ],
-                        "postalCode": "AA3 3AA"
                     }
                 ]
             }
