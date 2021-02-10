@@ -1,0 +1,354 @@
+{
+    "resourceType": "Bundle",
+    "timestamp": "2021-01-12T08:03:00+00:00",
+    "meta": {
+        "lastUpdated": "2021-01-12T08:03:00+00:00"
+    },
+    "entry": [
+        {
+            "resource": {
+                "sender": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "X2601"
+                    },
+                    "display": "NHS Digital Spine"
+                },
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-messageId",
+                        "valueIdentifier": {
+                            "system": "https://tools.ietf.org/html/rfc4122",
+                            "value": "16c8c9de-eebc-4b6a-8575-218320a65caf"
+                        }
+                    },
+                    {
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-Spine-Message-Status",
+                        "valueCoding": {
+                            "code": "active",
+                            "display": "Active",
+                            "system": "https://fhir.hl7.org.uk/CodeSystem/message-status"
+                        }
+                    }
+                ],
+                "resourceType": "MessageHeader",
+                "destination": [
+                    {
+                        "endpoint": "urn:nhs-uk:addressing:ods:C82008",
+                        "receiver": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "D81015"
+                            },
+                            "display": "VERNON STREET MEDICAL"
+                        }
+                    }
+                ],
+                "focus": [
+                    {
+                        "reference": "urn:uuid:11fbb860-e253-4468-93f7-36197dc2fc6a"
+                    },
+                    {
+                        "reference": "urn:uuid:55fa3621-0d4e-482a-bac9-6b6c1b8dd74b"
+                    }
+                ],
+                "id": "eadb1c77-86f9-465d-9a11-e4243d90d873",
+                "source": {
+                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
+                    "name": "NHS Spine"
+                },
+                "eventCoding": {
+                    "code": "prescription-order-response",
+                    "display": "Prescription Order Response",
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-event"
+                },
+                "response": {
+                    "code": "ok",
+                    "identifier": "E0DC363E-332E-00E6-5CC8-B70D2057789F"
+                }
+            },
+            "fullUrl": "urn:uuid:eadb1c77-86f9-465d-9a11-e4243d90d873"
+        },
+        {
+            "resource": {
+                "status": "cancelled",
+                "authoredOn": "2021-01-12T07:31:00+00:00",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-ResponsiblePractitioner",
+                        "valueReference": {
+                            "reference": "urn:uuid:30eaea0e-7b1f-493c-870e-55531db4f3c8"
+                        }
+                    },
+                    {
+                        "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
+                        "valueCoding": {
+                            "code": "R-0001",
+                            "display": "Prescription/item was cancelled",
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-history"
+                        }
+                    }
+                ],
+                "groupIdentifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                    "value": "2CD283-B83002-00001T"
+                },
+                "resourceType": "MedicationRequest",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "763158003",
+                            "display": "Medicinal product",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ]
+                },
+                "intent": "order",
+                "requester": {
+                    "display": "Dr MAIZIE BHOWMIK",
+                    "reference": "urn:uuid:e3787212-b3c5-488e-8f2e-cab565f7c8c6"
+                },
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                        "value": "B8648A0A-4587-E4E5-E050-D20AE3A257EA"
+                    }
+                ],
+                "id": "55fa3621-0d4e-482a-bac9-6b6c1b8dd74b",
+                "subject": {
+                    "reference": "urn:uuid:11fbb860-e253-4468-93f7-36197dc2fc6a"
+                }
+            },
+            "fullUrl": "urn:uuid:55fa3621-0d4e-482a-bac9-6b6c1b8dd74b"
+        },
+        {
+            "resource": {
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "A84002"
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "Ms Misti HALES",
+                        "given": [
+                            "Misti"
+                        ],
+                        "use": "usual",
+                        "prefix": [
+                            "Ms"
+                        ],
+                        "family": "HALES"
+                    }
+                ],
+                "resourceType": "Patient",
+                "gender": "male",
+                "birthDate": "1977-03-27T00:00:00+00:00",
+                "address": [
+                    {
+                        "postalCode": "DE21 2UL",
+                        "city": "",
+                        "line": [
+                            "3 MEADOW VIEW CLOSE",
+                            "OAKWOOD",
+                            "DERBY"
+                        ],
+                        "type": "both",
+                        "use": "home"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "value": "9453740802",
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "01",
+                                            "display": "Number present and verified",
+                                            "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "id": "11fbb860-e253-4468-93f7-36197dc2fc6a"
+            },
+            "fullUrl": "urn:uuid:11fbb860-e253-4468-93f7-36197dc2fc6a"
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "D81015"
+                    }
+                ],
+                "id": "ec53f099-2921-411f-8803-1a23ab35cf3a",
+                "name": "VERNON STREET MEDICAL"
+            },
+            "fullUrl": "urn:uuid:ec53f099-2921-411f-8803-1a23ab35cf3a"
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "C82008"
+                    }
+                ],
+                "id": "f48def4a-e68d-4511-8195-25135b255ef8",
+                "name": "VERNON STREET MEDICAL"
+            },
+            "fullUrl": "urn:uuid:f48def4a-e68d-4511-8195-25135b255ef8"
+        },
+        {
+            "resource": {
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "code": "S0080:G0450:R5080",
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName"
+                            }
+                        ]
+                    }
+                ],
+                "practitioner": {
+                    "reference": "urn:uuid:2cd48eed-bdc5-490c-90d7-49141a54499e"
+                },
+                "telecom": [
+                    {
+                        "use": "work",
+                        "system": "phone",
+                        "value": "tel:01945700223"
+                    }
+                ],
+                "resourceType": "PractitionerRole",
+                "organization": {
+                    "reference": "urn:uuid:ec53f099-2921-411f-8803-1a23ab35cf3a"
+                },
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "100107762988"
+                    }
+                ],
+                "id": "30eaea0e-7b1f-493c-870e-55531db4f3c8"
+            },
+            "fullUrl": "urn:uuid:30eaea0e-7b1f-493c-870e-55531db4f3c8"
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "100107762988"
+                    },
+                    {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "G9701379"
+                    }
+                ],
+                "id": "2cd48eed-bdc5-490c-90d7-49141a54499e",
+                "name": [
+                    {
+                        "text": "Dr ANDREW CHANDLER",
+                        "given": [
+                            "ANDREW"
+                        ],
+                        "use": "usual",
+                        "prefix": [
+                            "Dr"
+                        ],
+                        "family": "CHANDLER"
+                    }
+                ]
+            },
+            "fullUrl": "urn:uuid:2cd48eed-bdc5-490c-90d7-49141a54499e"
+        },
+        {
+            "resource": {
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "code": "S0080:G0450:R5080",
+                                "system": "https://fhir.nhs.uk/R4/CodeSystem/UKCore-SDSJobRoleName"
+                            }
+                        ]
+                    }
+                ],
+                "practitioner": {
+                    "reference": "urn:uuid:f5a59b05-fa06-46c1-bc3e-1bd5ea34bb65"
+                },
+                "telecom": [
+                    {
+                        "use": "work",
+                        "system": "phone",
+                        "value": "tel:08444773120"
+                    }
+                ],
+                "resourceType": "PractitionerRole",
+                "organization": {
+                    "reference": "urn:uuid:f48def4a-e68d-4511-8195-25135b255ef8"
+                },
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "value": "100107762988"
+                    }
+                ],
+                "id": "e3787212-b3c5-488e-8f2e-cab565f7c8c6"
+            },
+            "fullUrl": "urn:uuid:e3787212-b3c5-488e-8f2e-cab565f7c8c6"
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "100107762988"
+                    },
+                    {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "G3410772"
+                    }
+                ],
+                "id": "f5a59b05-fa06-46c1-bc3e-1bd5ea34bb65",
+                "name": [
+                    {
+                        "text": "Dr MAIZIE BHOWMIK",
+                        "given": [
+                            "MAIZIE"
+                        ],
+                        "use": "usual",
+                        "prefix": [
+                            "Dr"
+                        ],
+                        "family": "BHOWMIK"
+                    }
+                ]
+            },
+            "fullUrl": "urn:uuid:f5a59b05-fa06-46c1-bc3e-1bd5ea34bb65"
+        }
+    ],
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "89ea1f07-8f28-41f3-8750-ee370422aab0"
+    },
+    "type": "message",
+    "id": "homecare-subsequent-response"
+}
