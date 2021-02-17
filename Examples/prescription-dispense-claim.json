@@ -224,6 +224,10 @@
                     {
                         "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                         "value": "210987654322"
+                    },
+                    {
+                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                                "value": "7654321"
                     }
                 ],
                 "practitioner": {
