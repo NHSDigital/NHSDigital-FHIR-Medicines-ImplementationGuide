@@ -101,6 +101,7 @@
                 "performer": [
                     {
                         "actor": {
+                            "type" : "Practitioner",
                             "identifier":  {
                                 "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                                 "value": "7654321"
@@ -110,6 +111,7 @@
                     },
                     {
                         "actor": {
+                            "type": "Organization",
                             "identifier":  {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "AB123"
@@ -237,6 +239,7 @@
                 "performer": [
                     {
                         "actor": {
+                            "type" : "Practitioner",
                             "identifier":  {
                                 "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                                 "value": "7654321"
@@ -246,6 +249,7 @@
                     },
                     {
                         "actor": {
+                            "type": "Organization",
                             "identifier":  {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "AB123"
