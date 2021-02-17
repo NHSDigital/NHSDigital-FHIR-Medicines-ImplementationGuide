@@ -214,7 +214,7 @@
                         "value": "06167339-9337-D030-0366-514A6A46DA17"
                     }
                 ],
-                "status": "in-progress",
+                "status": "completed",
                 "medicationCodeableConcept": {
                     "coding": [
                         {

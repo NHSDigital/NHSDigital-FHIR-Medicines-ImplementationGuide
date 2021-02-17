@@ -1,9 +1,9 @@
 {
     "resourceType": "Bundle",
-    "id": "a7849e19-6f4a-4336-a4ef-8962e2f7e684",
+    "id": "75f7464d-1469-4118-b96c-59fb07cdf3f8",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "a7849e19-6f4a-4336-a4ef-8962e2f7e684"
+        "value": "75f7464d-1469-4118-b96c-59fb07cdf3f8"
     },
     "type": "message",
     "entry": [
@@ -79,7 +79,7 @@
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "4021d407-8a4f-478a-9cb7-3aab645b91b6"
+                        "value": "fd833d33-f128-4fa2-a807-1fc8a7db2658"
                     }
                 ],
                 "status": "completed",
@@ -87,17 +87,14 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "915611000001105",
-                            "display": "Paracetamol 500mg soluble tablets (A A H Pharmaceuticals Ltd)"
+                            "code": "1858411000001101",
+                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
                         }
                     ]
                 },
                 "subject": {
                     "type": "Patient",
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "9876543210"
-                    },
+                    "reference": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
                     "display": "Miss Bernie Kanfeld"
                 },
                 "performer": [
@@ -106,16 +103,16 @@
                             "identifier":  {
                                 "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                                 "value": "210987654322"
-                            },
+                            }, 
                             "display": "Mr Peter Potion"
                         }
                     },
                     {
                         "actor": {
-                            "identifier":  {
+                            "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "AB123"
-                            } ,
+                            },
                             "display": "The Simple Pharmacy"
                         }
                     }
@@ -159,21 +156,21 @@
                     ]
                 },
                 "quantity": {
-                    "value": 24,
+                    "value": 60,
                     "unit": "tablet",
                     "system": "http://snomed.info/sct",
                     "code": "732936001"
                 },
                 "daysSupply": {
-                    "value": 6,
+                    "value": 15,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-25T15:30:00+00:00",
+                "whenPrepared": "2020-06-10T16:30:00+00:00",
                 "dosageInstruction": [
                     {
-                        "text": "210 tablets. One tablet to be taken four times a day",
+                        "text": "100 tablets. One tablet to be taken four times a day",
                         "timing": {
                             "repeat": {
                                 "frequency": 5,
@@ -226,16 +223,13 @@
                 },
                 "subject": {
                     "type": "Patient",
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "9876543210"
-                    },
+                    "reference": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
                     "display": "Miss Bernie Kanfeld"
                 },
                 "performer": [
                     {
                         "actor": {
-                            "identifier": {
+                            "identifier":  {
                                 "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                                 "value": "210987654322"
                             },
@@ -244,7 +238,7 @@
                     },
                     {
                         "actor": {
-                            "identifier":  {
+                            "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "AB123"
                             },
@@ -327,6 +321,88 @@
                                 }
                             }
                         ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
+            "resource": {
+                "resourceType": "Patient",
+                "identifier": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+                                            "code": "01",
+                                            "display": "Number present and verified"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    },
+                    {
+                        "system": "https://fhir.leedsth.nhs.uk/Id/pas-number",
+                        "value": "ABC8650149"
+                    },
+                    {
+                        "system": "https://fhir.leedsth.nhs.uk/Id/PPMIdentifier",
+                        "value": "1"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Kanfeld",
+                        "given": [
+                            "Bernie"
+                        ],
+                        "prefix": [
+                            "Miss"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "0115 9737320",
+                        "use": "home"
+                    },
+                    {
+                        "system": "email",
+                        "value": "bernie.kanfeld@nhsdigital.nhs.uk",
+                        "use": "home"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1998-03-13",
+                "address": [
+                    {
+                        "use": "work",
+                        "type": "both",
+                        "line": [
+                            "Field Jardin",
+                            "Long Eaton"
+                        ],
+                        "city": "Nottingham",
+                        "district": "Derbyshire",
+                        "postalCode": "NG10 1ZZ"
+                    }
+                ],
+                "generalPractitioner": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "C81010"
+                        }
                     }
                 ]
             }
