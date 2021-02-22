@@ -12,11 +12,23 @@
     </groupIdentifier>
     <code>
         <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"></system>
+            <code value="LD"></code>
+            <display value="Last Dispense"></display>
+        </coding>
+        <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
-            <code value="change"></code>
-            <display value="Change the focal resource"></display>
+            <code value="abort"></code>
+            <display value="Mark the focal resource as no longer active"></display>
         </coding>
     </code>
+    <focus>
+        <type value="Bundle"/>
+        <identifier>
+           <system value="https://tools.ietf.org/html/rfc4122"/>
+           <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38"/>
+        </identifier>
+    </focus>
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />
@@ -37,25 +49,4 @@
             <display value="Dosage Amendments"></display>
         </coding>
     </reasonCode>
-    <input>
-        <type>
-            <coding>
-                <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"></system>
-                <code value="LD"></code>
-                <display value="Last Dispense"></display>
-            </coding>
-            <coding>
-                <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
-                <code value="abort"></code>
-                <display value="Mark the focal resource as no longer active"></display>
-            </coding>
-        </type>
-        <valueReference>
-            <type value="Bundle"/>
-            <identifier>
-               <system value="https://tools.ietf.org/html/rfc4122"/>
-               <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38"/>
-            </identifier>
-        </valueReference>
-    </input>
 </Task>

@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-task-code"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-task-code"/>
-    <version value="1.0.1"/>
+    <version value="1.0.2"/>
     <name value="Task Code"/>
     <status value="draft"/>
     <description value="Task Code"/>
@@ -23,22 +23,71 @@
                 <display value="Last Dispense" />
             </concept>
         </include>
+        <include>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+        </include>
     </compose>
     <expansion>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
             <code value="PS"/>
             <display value="Protocol Supply"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
             <code value="PA"/>
             <display value="Personal Administration"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"/>
+            <version value="01"/>
             <code value="LD"/>
             <display value="Last Dispense"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="replace"/>
+            <display value="Replace the focal resource with the input resource"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="change"/>
+            <display value="Change the focal resource"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="suspend"/>
+            <display value="Suspend the focal resource"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="approve"/>
+            <display value="Activate/approve the focal resource"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="abort"/>
+            <display value="Mark the focal resource as no longer active"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="fulfill"/>
+            <display value="Fulfill the focal request"/>
+        </contains>
+        <contains>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+            <version value="4.0.1"/>
+            <code value="resume"/>
+            <display value="Re-activate the focal resource"/>
         </contains>
     </expansion>
 </ValueSet>
