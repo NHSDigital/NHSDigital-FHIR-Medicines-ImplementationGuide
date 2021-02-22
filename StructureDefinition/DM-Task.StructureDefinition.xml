@@ -34,7 +34,6 @@
       <path value="Task.statusReason" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-status-reason" />
       </binding>
     </element>
     <element id="Task.statusReason.coding">
@@ -76,6 +75,12 @@
       <path value="Task.businessStatus.coding.display" />
       <min value="1" />
     </element>
+    <element id="Task.code">
+      <path value="Task.code" />
+      <binding>
+        <strength value="required" />
+      </binding>
+    </element>
     <element id="Task.focus">
       <path value="Task.focus" />
       <min value="1" />
@@ -103,6 +108,28 @@
     <element id="Task.owner.identifier.value">
       <path value="Task.owner.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="Task.reasonCode">
+      <path value="Task.reasonCode" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code" />
+      </binding>
+    </element>
+    <element id="Task.input.type">
+      <path value="Task.input.type" />
+      <binding>
+        <strength value="required" />
+        <description value="Reason for altering the Task and last dispense-notification message" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-code" />
+      </binding>
+    </element>
+    <element id="Task.input.value[x]">
+      <path value="Task.input.value[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="Bundle" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
