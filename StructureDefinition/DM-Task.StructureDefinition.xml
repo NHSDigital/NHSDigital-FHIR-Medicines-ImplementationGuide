@@ -30,28 +30,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
-    <element id="Task.statusReason">
-      <path value="Task.statusReason" />
-      <binding>
-        <strength value="required" />
-      </binding>
-    </element>
-    <element id="Task.statusReason.coding">
-      <path value="Task.statusReason.coding" />
-      <min value="1" />
-    </element>
-    <element id="Task.statusReason.coding.system">
-      <path value="Task.statusReason.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Task.statusReason.coding.code">
-      <path value="Task.statusReason.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Task.statusReason.coding.display">
-      <path value="Task.statusReason.coding.display" />
-      <min value="1" />
-    </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
       <binding>
@@ -80,6 +58,22 @@
       <binding>
         <strength value="required" />
       </binding>
+    </element>
+    <element id="Task.code.coding">
+      <path value="Task.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="Task.code.coding.system">
+      <path value="Task.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.code.coding.code">
+      <path value="Task.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Task.code.coding.display">
+      <path value="Task.code.coding.display" />
+      <min value="1" />
     </element>
     <element id="Task.focus">
       <path value="Task.focus" />
@@ -116,6 +110,22 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code" />
       </binding>
     </element>
+    <element id="Task.reasonCode.coding">
+      <path value="Task.reasonCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Task.reasonCode.coding.system">
+      <path value="Task.reasonCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.reasonCode.coding.code">
+      <path value="Task.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Task.reasonCode.coding.display">
+      <path value="Task.reasonCode.coding.display" />
+      <min value="1" />
+    </element>
     <element id="Task.input.type">
       <path value="Task.input.type" />
       <binding>
@@ -123,6 +133,22 @@
         <description value="Reason for altering the Task and last dispense-notification message" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-code" />
       </binding>
+    </element>
+    <element id="Task.input.type.coding">
+      <path value="Task.input.type.coding" />
+      <min value="1" />
+    </element>
+    <element id="Task.input.type.coding.system">
+      <path value="Task.input.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.input.type.coding.code">
+      <path value="Task.input.type.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Task.input.type.coding.display">
+      <path value="Task.input.type.coding.display" />
+      <min value="1" />
     </element>
     <element id="Task.input.value[x]">
       <path value="Task.input.value[x]" />
