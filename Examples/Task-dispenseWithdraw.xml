@@ -38,8 +38,8 @@
     <authoredOn value="2020-12-21T17:03:20-00:00"></authoredOn>
     <owner>
         <identifier>
-            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
-            <value value="VNE51"></value>
+            <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
+            <value value="7654321"></value>
         </identifier>
     </owner>
     <reasonCode>
