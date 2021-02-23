@@ -30,6 +30,30 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
+    <element id="Task.identifier">
+      <path value="Task.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Task.identifier.system">
+      <path value="Task.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.identifier.value">
+      <path value="Task.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Task.groupIdentifier">
+      <path value="Task.groupIdentifier" />
+      <min value="1" />
+    </element>
+    <element id="Task.groupIdentifier.system">
+      <path value="Task.groupIdentifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.groupIdentifier.value">
+      <path value="Task.groupIdentifier.value" />
+      <min value="1" />
+    </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
       <binding>
@@ -96,6 +120,30 @@
       <path value="Task.focus.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Task.for">
+      <path value="Task.for" />
+      <min value="1" />
+    </element>
+    <element id="Task.for.identifier">
+      <path value="Task.for.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Task.for.identifier.system">
+      <path value="Task.for.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Task.for.identifier.value">
+      <path value="Task.for.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Task.authoredOn">
+      <path value="Task.authoredOn" />
+      <min value="1" />
+    </element>
+    <element id="Task.owner">
+      <path value="Task.owner" />
+      <min value="1" />
+    </element>
     <element id="Task.owner.identifier">
       <path value="Task.owner.identifier" />
       <min value="1" />
@@ -110,6 +158,7 @@
     </element>
     <element id="Task.reasonCode">
       <path value="Task.reasonCode" />
+      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code" />

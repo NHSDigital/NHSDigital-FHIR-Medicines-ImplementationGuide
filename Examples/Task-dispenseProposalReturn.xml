@@ -10,6 +10,12 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="83C40E-A23856-00123C"></value>
     </groupIdentifier>
+    <for>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9446368138" />
+        </identifier>
+    </for>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
     <lastModified value="2016-03-10T22:39:32-04:00"></lastModified>
     <owner>

@@ -91,6 +91,7 @@
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
       <path value="MedicationRequest.extension" />
       <sliceName value="NHSBSAprescriptionType" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType" />
