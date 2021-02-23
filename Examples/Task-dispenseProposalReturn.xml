@@ -18,12 +18,6 @@
     </for>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
     <lastModified value="2016-03-10T22:39:32-04:00"></lastModified>
-    <owner>
-        <identifier>
-            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
-            <value value="VNE51"></value>
-        </identifier>
-    </owner>
     <reasonCode>
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
