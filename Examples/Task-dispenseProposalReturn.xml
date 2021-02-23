@@ -1,16 +1,10 @@
 <Task xmlns="http://hl7.org/fhir">
+    <id value="ee1b55f8-113c-4725-99a3-25fbad366dd6"/>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
     <status value="rejected"></status>
-    <statusReason>
-        <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
-            <code value="D-0002"></code>
-            <display value="Unable to dispense medication on prescriptions"></display>
-        </coding>
-    </statusReason>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
@@ -24,4 +18,11 @@
             <value value="VNE51"></value>
         </identifier>
     </owner>
+    <reasonCode>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
+            <code value="D-0002"></code>
+            <display value="Unable to dispense medication on prescriptions"></display>
+        </coding>
+    </reasonCode>
 </Task>

@@ -1,5 +1,5 @@
 <Task xmlns="http://hl7.org/fhir">
-    <id value="Task-dispenseWithdraw"/>
+    <id value="6a2624a2-321b-470e-91a6-8ae7a065e2f0"/>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
@@ -11,7 +11,7 @@
         <value value="88AF6C-C81007-00001C"></value>
     </groupIdentifier>
     <code>
-        <coding>
+        <coding> <!-- Maybe drop this and have it implied by the abort code? -->
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"></system>
             <code value="LD"></code>
             <display value="Last Dispense"></display>
