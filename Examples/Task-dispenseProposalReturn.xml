@@ -10,6 +10,13 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="83C40E-A23856-00123C"></value>
     </groupIdentifier>
+    <focus>
+        <type value="Bundle"/>
+        <identifier>
+           <system value="https://tools.ietf.org/html/rfc4122"/>
+           <value value="2363E9DD-DA0A-45AA-A4E3-447C68231525"/>
+        </identifier>
+    </focus>
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />

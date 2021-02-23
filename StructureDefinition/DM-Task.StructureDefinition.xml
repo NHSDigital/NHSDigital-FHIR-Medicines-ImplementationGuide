@@ -140,6 +140,10 @@
       <path value="Task.authoredOn" />
       <min value="1" />
     </element>
+    <element id="Task.owner">
+      <path value="Task.owner" />
+      <min value="1" />
+    </element>
     <element id="Task.owner.identifier">
       <path value="Task.owner.identifier" />
       <min value="1" />
