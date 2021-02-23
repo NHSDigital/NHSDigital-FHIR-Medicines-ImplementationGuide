@@ -22,7 +22,7 @@
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
             <code value="D-0002"></code>
-            <display value="Unable to dispense medication on prescriptions"></display>
+            <display value="Unable to dispense medication on prescriptions"/>
         </coding>
     </reasonCode>
 </Task>

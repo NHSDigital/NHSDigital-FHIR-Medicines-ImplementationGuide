@@ -46,7 +46,7 @@
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"></system>
             <code value="DA"></code>
-            <display value="Dosage Amendments"></display>
+            <display value="Dosage Amendments"/>
         </coding>
     </reasonCode>
 </Task>
