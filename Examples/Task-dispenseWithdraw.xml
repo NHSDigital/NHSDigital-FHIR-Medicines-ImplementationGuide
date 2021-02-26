@@ -11,11 +11,6 @@
         <value value="88AF6C-C81007-00001C"></value>
     </groupIdentifier>
     <code>
-        <coding> <!-- Maybe drop this and have it implied by the abort code? -->
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-type"></system>
-            <code value="LD"></code>
-            <display value="Last Dispense"></display>
-        </coding>
         <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
             <code value="abort"></code>
