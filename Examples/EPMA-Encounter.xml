@@ -1,0 +1,50 @@
+<Encounter xmlns="http://hl7.org/fhir">
+    <!-- clinical data items removed -->
+    <identifier> <!-- HL7v2 ITK PV1.19  -->
+        <system value="https://fhir.uhdb.nhs.uk/Id/Encounter" />
+        <value value="1" />
+    </identifier>
+    <status value="in-progress" />
+    <class> <!-- HL7v2 ITK PV1.2 Maybe use a UK CodeSystem?-->
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="IMP"/>
+            <display value="inpatient encounter"/>
+        </coding>
+    </class>
+    <serviceType> <!-- HL7v2 ITK PV1.10. Should this be a Treatment function code or SNOMED refset. -->
+        <coding>
+            <system value="https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1"/>
+            <code value="800"/>
+            <display value="CLINICAL ONCOLOGY"/>
+        </coding>
+    </serviceType>
+    <subject> <!-- more likely to point to a FHIR Patient in EPMA/EPS secondary care. N/a for HL7v2 ITK -->
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+            <value value="7653231"/>
+          </identifier>
+    </subject>
+    <episodeOfCare> <!-- HL7v2 ITK PV1.50  -->
+        <identifier>
+            <system value="https://fhir.uhdb.nhs.uk/Id/Stay" />
+            <value value="76543" />
+        </identifier>
+    </episodeOfCare>
+    <location>  <!-- HL7v2 ITK PV1.6.1 Point Of Care, if room and bed is required use a Location resource reference  -->
+        <location>
+            <identifier>
+                <system value="https://fhir.uhdb.nhs.uk/Id/Location" />
+                <value value="1" />
+                <display value="KOOKIT"/>
+            </identifier>
+        </location>
+    </location>
+    <serviceProvider>  <!-- HL7v2 ITK PV1.6.4 Facility  -->
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="RTGFG" />
+            <display value="Royal Derby Hospital"/>
+        </identifier>
+    </serviceProvider> value
+</Encounter>
