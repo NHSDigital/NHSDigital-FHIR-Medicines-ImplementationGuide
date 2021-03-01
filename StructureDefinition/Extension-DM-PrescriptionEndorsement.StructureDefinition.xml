@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType" />
-  <name value="Extension-performerSiteType" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
+  <name value="Extension-PrescriptionEndorsement" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -13,40 +13,37 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationRequest.dispenseRequest" />
+    <expression value="MedicationRequest" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Type of dispensing organisation" />
-      <definition value="Used to indicate type of pharmacist" />
-      <max value="1" />
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Dispensing Site Prefererence" />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-performer-site-type" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-endorsement" />
       </binding>
     </element>
-    <element id="Extension.value[x].system">
-      <path value="Extension.value[x].system" />
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
       <min value="1" />
     </element>
-    <element id="Extension.value[x].code">
-      <path value="Extension.value[x].code" />
+    <element id="Extension.value[x].coding.system">
+      <path value="Extension.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].coding.code">
+      <path value="Extension.value[x].coding.code" />
       <min value="1" />
     </element>
   </differential>

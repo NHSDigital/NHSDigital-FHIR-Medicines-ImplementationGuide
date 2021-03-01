@@ -47,7 +47,7 @@
     </requester>
     <groupIdentifier>
         <!-- Note: no GUID for for parent presecription id -->
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
             <valueIdentifier>
                 <system value="https://fhir.nhs.uk/Id/prescription" />
                 <value value="a609e5c9-82a6-4a67-83ec-c96323bd17d7" />
@@ -67,7 +67,7 @@
         <text value="As Directed Enshake oral powder 96.5g sachets (Flavour Not Specified) Please call the practice" />
     </dosageInstruction>
     <dispenseRequest>
-        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType">
+        <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
             <valueCoding>
                 <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
                 <code value="0004" />

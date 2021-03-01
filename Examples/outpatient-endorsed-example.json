@@ -216,7 +216,7 @@
                       }
                   },
                   {
-                      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionEndorsement",
+                      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement",
                       "valueCodeableConcept": {
                           "coding": [
                               {
@@ -266,7 +266,7 @@
               "groupIdentifier": {
                   "extension": [
                       {
-                          "url": "https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId",
+                          "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
                           "valueIdentifier": {
                               "system": "https://fhir.nhs.uk/Id/prescription",
                               "value": "c09f722d-b277-44e4-bba8-b3aa5b87191d"
@@ -314,7 +314,7 @@
               "dispenseRequest": {
                   "extension": [
                       {
-                          "url": "https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType",
+                          "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType",
                           "valueCoding": {
                               "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                               "code": "P1"

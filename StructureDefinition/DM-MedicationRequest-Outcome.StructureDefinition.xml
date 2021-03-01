@@ -142,7 +142,7 @@
       <short value="UUID order number for grouped MedciationRequests" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
@@ -186,7 +186,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-DispensingPerformer" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">

@@ -76,7 +76,7 @@
       <sliceName value="prescriptionEndorsement" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionEndorsement" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
       </type>
     </element>
     <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
@@ -285,7 +285,7 @@
       <short value="UUID order number for grouped MedciationRequests" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
@@ -357,7 +357,7 @@
       <short value="type of dispensing organisation" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
@@ -413,7 +413,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-DispensingPerformer" />
       </type>
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier">

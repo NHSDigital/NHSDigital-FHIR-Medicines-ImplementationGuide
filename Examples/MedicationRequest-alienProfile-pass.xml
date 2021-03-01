@@ -38,7 +38,7 @@
     <display value="Dr Smith" />
   </requester>
   <groupIdentifier>
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-PrescriptionId">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
       <valueIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription" />
         <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
@@ -58,7 +58,7 @@
     <text value="2 Puffs when required" />
   </dosageInstruction>
   <dispenseRequest>
-    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-performerSiteType">
+    <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
       <valueCoding>
         <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
         <code value="0004" />

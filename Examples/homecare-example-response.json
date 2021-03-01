@@ -145,7 +145,7 @@
                     "performer": {
                         "extension": [
                             {
-                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DispensingPerformer",
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-DispensingPerformer",
                                 "valueReference": {
                                     "reference": "urn:uuid:25f3dd9f-5838-44a7-930e-c78ae3ecadd6",
                                     "display": "LOTTIE POTTS"
