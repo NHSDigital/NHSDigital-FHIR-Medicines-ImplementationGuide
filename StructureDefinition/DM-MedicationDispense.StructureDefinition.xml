@@ -120,49 +120,24 @@
     </element>
     <element id="MedicationDispense.performer.actor">
       <path value="MedicationDispense.performer.actor" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <aggregation value="bundled" />
       </type>
     </element>
-    <element id="MedicationDispense.performer.actor:pharmacy">
-      <path value="MedicationDispense.performer.actor" />
-      <sliceName value="pharmacy" />
+    <element id="MedicationDispense.performer.actor.identifier">
+      <path value="MedicationDispense.performer.actor.identifier" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
-    <element id="MedicationDispense.performer.actor:pharmacy.type">
-      <path value="MedicationDispense.performer.actor.type" />
+    <element id="MedicationDispense.performer.actor.identifier.system">
+      <path value="MedicationDispense.performer.actor.identifier.system" />
       <min value="1" />
-      <fixedUri value="Organization" />
     </element>
-    <element id="MedicationDispense.performer.actor:pharmacist">
-      <path value="MedicationDispense.performer.actor" />
-      <sliceName value="pharmacist" />
+    <element id="MedicationDispense.performer.actor.identifier.value">
+      <path value="MedicationDispense.performer.actor.identifier.value" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-      </type>
-    </element>
-    <element id="MedicationDispense.performer.actor:pharmacist.type">
-      <path value="MedicationDispense.performer.actor.type" />
-      <min value="1" />
-      <fixedUri value="Practitioner" />
     </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
