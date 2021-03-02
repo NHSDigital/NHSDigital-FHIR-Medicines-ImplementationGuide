@@ -221,6 +221,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest-Medication" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="MedicationRequest.subject">

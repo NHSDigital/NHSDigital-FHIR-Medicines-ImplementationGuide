@@ -87,6 +87,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-Medication" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="MedicationDispense.subject">
