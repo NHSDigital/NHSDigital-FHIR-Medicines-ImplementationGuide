@@ -85,7 +85,7 @@
         "id": "a54219b8-f741-4c47-b662-e4f8dfa49ab6",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "1201",

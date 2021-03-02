@@ -94,7 +94,7 @@
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType" />
       </type>
     </element>
     <element id="MedicationRequest.extension:controlledDrug">

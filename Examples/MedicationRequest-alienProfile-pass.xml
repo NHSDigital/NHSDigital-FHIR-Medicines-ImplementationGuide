@@ -4,7 +4,7 @@
     <!-- EPS will ignore this meta profile assertation and validate against the DM-MedicationRequest profile -->
     <profile value="https://fhir.nhs.uk/StructureDefinition/CareConnect-GPC-MedicationRequest-1" />
   </meta>
-  <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType">
+  <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType">
     <valueCoding>
       <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
       <code value="0101" />

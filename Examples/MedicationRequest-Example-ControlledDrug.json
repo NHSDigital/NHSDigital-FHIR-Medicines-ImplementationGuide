@@ -3,7 +3,7 @@
     "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
     "extension": [
         {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
             "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                 "code": "0101"

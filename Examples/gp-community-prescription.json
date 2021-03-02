@@ -59,7 +59,7 @@
         "resourceType": "MedicationRequest",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "0101",
@@ -190,7 +190,7 @@
         "resourceType": "MedicationRequest",
         "extension": [
           {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "0101",
