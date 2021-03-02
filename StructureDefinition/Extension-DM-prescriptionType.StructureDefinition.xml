@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType" />
   <name value="Extension NHS BSA prescriptionType" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -27,7 +27,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType" />
+      <fixedUri value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
