@@ -19,6 +19,14 @@
     </identifier>
     <status value="active" />
     <intent value="order" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+            <code value="inpatient"></code>
+            <display value="Inpatient"></display>
+        </coding>
+        <text value="Inpatient"></text>
+    </category>
     <medicationCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct" />

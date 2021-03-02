@@ -96,11 +96,8 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
         <aggregation value="referenced" />
+        <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="MedicationDispense.subject.identifier">
-      <path value="MedicationDispense.subject.identifier" />
-      <min value="1" />
     </element>
     <element id="MedicationDispense.subject.identifier.system">
       <path value="MedicationDispense.subject.identifier.system" />

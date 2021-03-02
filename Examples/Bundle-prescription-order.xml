@@ -92,6 +92,14 @@
             </identifier>
             <status value="active" />
             <intent value="order" />
+            <category>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+                <code value="inpatient"></code>
+                <display value="Inpatient"></display>
+              </coding>
+              <text value="Inpatient"></text>
+            </category>
             <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial 
             Code should be in SNOMED CT refset 999000031000001105 |Manufactured material simple reference set (foundation metadata concept)| -->
             <medicationCodeableConcept>
@@ -212,6 +220,14 @@
     -->
             <status value="active" />
             <intent value="order" />
+            <category>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
+                <code value="inpatient"></code>
+                <display value="Inpatient"></display>
+              </coding>
+              <text value="Inpatient"></text>
+            </category>
             <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
             <medicationCodeableConcept>
               <coding>
@@ -324,15 +340,6 @@
               <postalCode value="AA1 1AA" />
             </address>
             <generalPractitioner>
-
-              <reference value="urn:uuid:550692c5-9de4-4b7f-b06e-846b90f9a763" />
-
-              <!-- display not required. Inlcuded to help readbility/navigation-->
-              <display value="Dr Nice" />
-            </generalPractitioner>
-            <managingOrganization>
-              <reference value="https://directory.spineservices.nhs.uk/STU3/Organization/Y12345" />
-              <type value="Organization" />
               <identifier>
                 <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
                 <value value="Y12345" />
@@ -341,7 +348,9 @@
                   <end value="2021-12-31T00:00:00+00:00" />
                 </period>
               </identifier>
-            </managingOrganization>
+              <!-- display not required. Inlcuded to help readbility/navigation-->
+              <display value="Dr Nice" />
+            </generalPractitioner>
           </Patient>
         </resource>
       </entry>

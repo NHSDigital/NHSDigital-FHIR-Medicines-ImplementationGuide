@@ -52,8 +52,15 @@
         <fullUrl value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />
         <resource>
             <MedicationRequest xmlns="http://hl7.org/fhir">
+                <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-prescriptionType">
+                    <valueCoding>
+                        <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
+                        <code value="0101" />
+                        <display value="Primary Care Prescriber – Medical Prescriber" />
+                    </valueCoding>
+                </extension>
                 <identifier>
-                    <system value="urn:uuid"></system>
+                    <system value="https://fhir.nhs.uk/Id/prescription-order-item-number"></system>
                     <value value="9a9e4e11-5596-47bc-9376-21bf9d451905"></value>
                 </identifier>
                 <status value="active" />
@@ -101,6 +108,7 @@
                     </coding>
                 </courseOfTherapyType>
                 <dosageInstruction>
+                    <text value="test C Oral Use" />
                     <additionalInstruction>
                         <text value="test c"></text>
                     </additionalInstruction>
@@ -142,7 +150,6 @@
         <fullUrl value="urn:uuid:e0094014-9659-4705-a481-0412eefd9dbc" />
         <resource>
             <Medication xmlns="http://hl7.org/fhir">
-                <id value="e0094014-9659-4705-a481-0412eefd9dbc"></id>
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct"></system>
@@ -207,12 +214,12 @@
                     <city value="Simple Town" />
                     <postalCode value="AA1 1AA" />
                 </address>
-                <managingOrganization>
+                <generalPractitioner>
                     <identifier>
                         <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
                         <value value="Y12345" />
                     </identifier>
-                </managingOrganization>
+                </generalPractitioner>
             </Patient>
         </resource>
     </entry>
