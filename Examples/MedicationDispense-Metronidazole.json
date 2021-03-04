@@ -59,7 +59,7 @@
         "system": "http://unitsofmeasure.org",
         "code": "d"
     },
-    "whenPrepared": "2004-09-16T16:30:+00:00",
+    "whenPrepared": "2004-09-16T16:30:00+00:00",
     "dosageInstruction": [
         {
             "text": "3 times a day for 10 days",
