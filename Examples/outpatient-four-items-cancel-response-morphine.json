@@ -50,6 +50,9 @@
                     "identifier": "5a8079ae-e430-41ff-89fa-14db08969a19",
                     "code": "ok"
                 },
+                "source": {
+                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message"
+                },
                 "focus": [
                     {
                         "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
@@ -83,15 +86,6 @@
                         "valueReference": {
                             "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
                         }
-                    },
-                    {
-                        "extension": [
-                            {
-                                "url": "quantityWords",
-                                "valueString": "twenty eight"
-                            }
-                        ],
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug",
                     }
                 ],
                 "identifier": [
