@@ -603,6 +603,15 @@
                             "code": "1001",
                             "display": "Outpatient Community Prescriber - Medical Prescriber"
                         }
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "quantityWords",
+                                "valueString": "twenty eight"
+                            }
+                        ],
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug",
                     }
                 ],
                 "identifier": [
@@ -700,10 +709,6 @@
                                 "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
                                 "code": "0004"
                             }
-                        },
-                        {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-controlled-drug-quantity-words",
-                            "valueString": "twenty eight"
                         }
                     ],
                     "quantity": {
