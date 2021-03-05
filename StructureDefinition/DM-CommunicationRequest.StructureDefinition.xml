@@ -49,5 +49,21 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
       </type>
     </element>
+    <element id="CommunicationRequest.requester.identifier.system">
+      <path value="CommunicationRequest.requester.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="CommunicationRequest.requester.identifier.value">
+      <path value="CommunicationRequest.requester.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="CommunicationRequest.recipient.identifier.system">
+      <path value="CommunicationRequest.recipient.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="CommunicationRequest.recipient.identifier.value">
+      <path value="CommunicationRequest.recipient.identifier.value" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
