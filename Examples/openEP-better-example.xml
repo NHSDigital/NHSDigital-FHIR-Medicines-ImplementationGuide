@@ -318,7 +318,7 @@
                 <type>
                     <coding>
                         <system value="https://fhir.nhs.uk/CodeSystem/organisation-role" />
-                        <code value="RO197" />
+                        <code value="197" />
                     </coding>
                 </type>
                 <name value="SOMERSET NHS FOUNDATION TRUST" />

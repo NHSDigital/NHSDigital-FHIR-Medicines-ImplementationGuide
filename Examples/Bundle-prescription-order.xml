@@ -427,7 +427,7 @@
             <type>
               <coding>
                 <system value="https://fhir.nhs.uk/CodeSystem/organisation-role" />
-                <code value="RO76" />
+                <code value="76" />
               </coding>
             </type>
             <name value="Mirfleld Surgery" />
