@@ -32,15 +32,14 @@
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
+        <code value="Identifier" />
+      </type>
+      <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
-    </element>
-    <element id="Extension.value[x].reference">
-      <path value="Extension.value[x].reference" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
