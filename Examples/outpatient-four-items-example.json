@@ -218,6 +218,17 @@
                 "organization": {
                     "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
                 },
+                "specialty": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://fhir.nhs.uk/CodeSystem/main-specialty",
+                          "code": "100",
+                          "display": "GENERAL MEDICINE"
+                        }
+                      ]
+                    }
+                  ],
                 "code": [
                     {
                         "coding": [

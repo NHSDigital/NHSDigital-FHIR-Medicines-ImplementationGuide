@@ -198,6 +198,17 @@
           ],
           "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
         },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/CodeSystem/main-specialty",
+                "code": "370",
+                "display": "MEDICAL ONCOLOGY"
+              }
+            ]
+          }
+        ],
         "code": [
           {
             "coding": [
