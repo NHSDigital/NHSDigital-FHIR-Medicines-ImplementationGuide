@@ -299,7 +299,7 @@
             {
               "coding": [
                 {
-                  "system": "https://fhir.nhs.uk/CodeSystem/main-specialty",
+                  "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
                   "code": "100",
                   "display": "GENERAL MEDICINE"
                 }
