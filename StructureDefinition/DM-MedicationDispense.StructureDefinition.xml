@@ -133,6 +133,10 @@
       <path value="MedicationDispense.performer.actor.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.performer.actor.display">
+      <path value="MedicationDispense.performer.actor.display" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
       <min value="1" />
