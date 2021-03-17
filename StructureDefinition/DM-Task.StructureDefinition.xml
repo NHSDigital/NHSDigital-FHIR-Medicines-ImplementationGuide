@@ -145,9 +145,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
       </type>
     </element>
     <element id="Task.owner.identifier">
