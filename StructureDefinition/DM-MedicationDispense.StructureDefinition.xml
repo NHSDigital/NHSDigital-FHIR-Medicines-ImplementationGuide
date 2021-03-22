@@ -121,26 +121,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
       </type>
     </element>
-    <element id="MedicationDispense.performer.actor.extension">
-      <path value="MedicationDispense.performer.actor.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationDispense.performer.actor.extension:serviceOrSpecialty">
-      <path value="MedicationDispense.performer.actor.extension" />
-      <sliceName value="serviceOrSpecialty" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty" />
-      </type>
-    </element>
     <element id="MedicationDispense.performer.actor.identifier">
       <path value="MedicationDispense.performer.actor.identifier" />
       <min value="1" />
