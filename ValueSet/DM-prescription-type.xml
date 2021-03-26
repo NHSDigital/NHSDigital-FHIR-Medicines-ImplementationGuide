@@ -242,7 +242,7 @@
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/prescription-type"/>
             <code value="0917"/>
-            <display value="Private prescribing - Physiotherapsit"/>
+            <display value="Private prescribing - Physiotherapist"/>
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/prescription-type"/>
