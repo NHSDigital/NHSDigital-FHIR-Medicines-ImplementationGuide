@@ -17,7 +17,7 @@
                 "resourceType": "MessageHeader",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-messageId",
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-messageId",
                         "valueIdentifier": {
                             "system": "https://tools.ietf.org/html/rfc4122",
                             "value": "35a6e463-60cf-482e-84b7-ad41b55e740d"
@@ -52,7 +52,7 @@
                 "sender": {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-LocalPart",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-LocalPart",
                             "valueReference": {
                                 "identifier": {
                                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",

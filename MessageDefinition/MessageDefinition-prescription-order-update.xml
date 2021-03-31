@@ -17,7 +17,7 @@
     <category value="consequence" />
     <focus>
         <code value="MessageHeader" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-MessageHeader" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader" />
         <min value="1" />
         <max value="1" />
     </focus>
@@ -29,25 +29,25 @@
     </focus>
     <focus>
         <code value="Patient" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Patient" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
         <min value="1" />
         <max value="1" />
     </focus>
     <focus>
         <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Practitioner" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="PractitionerRole" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
         <min value="1" />
         <max value="*" />
     </focus>
     <focus>
         <code value="Organization" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Spine-Organization" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
         <min value="1" />
         <max value="*" />
     </focus>

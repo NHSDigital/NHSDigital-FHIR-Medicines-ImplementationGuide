@@ -17,7 +17,7 @@
                 "resourceType": "MessageHeader",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-MessageHeader-messageId",
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-messageId",
                         "valueIdentifier": {
                             "system": "https://tools.ietf.org/html/rfc4122",
                             "value": "16c8c9de-eebc-4b6a-8575-218320a65caf"
