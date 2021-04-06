@@ -25,6 +25,17 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim" />
   <derivation value="constraint" />
   <differential>
+    <element id="Claim.provider">
+      <path value="Claim.provider" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
+      </type>
+    </element>
+    <element id="Claim.prescription">
+      <path value="Claim.prescription" />
+      <min value="1" />
+    </element>
     <element id="Claim.prescription.extension">
       <path value="Claim.prescription.extension" />
       <slicing>
@@ -44,6 +55,43 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier" />
       </type>
+    </element>
+    <element id="Claim.prescription.identifier.system">
+      <path value="Claim.prescription.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+    </element>
+    <element id="Claim.prescription.identifier.value">
+      <path value="Claim.prescription.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Claim.originalPrescription.extension">
+      <path value="Claim.originalPrescription.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Claim.originalPrescription.extension:groupIdentifier">
+      <path value="Claim.originalPrescription.extension" />
+      <sliceName value="groupIdentifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier" />
+      </type>
+    </element>
+    <element id="Claim.originalPrescription.identifier.system">
+      <path value="Claim.originalPrescription.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.originalPrescription.identifier.value">
+      <path value="Claim.originalPrescription.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Claim.item.extension">
       <path value="Claim.item.extension" />

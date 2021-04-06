@@ -26,6 +26,10 @@
             <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
         </resource>
         <resource>
+            <type value="Claim" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-Claim" />
+        </resource>
+        <resource>
             <type value="HealthcareService" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-HealthcareService" />
         </resource>
