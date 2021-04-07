@@ -53,15 +53,6 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:legalAuthenticator">
-      <path value="MedicationRequest.extension" />
-      <sliceName value="legalAuthenticator" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-LegalAuthenticator" />
-      </type>
-    </element>
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
       <sliceName value="responsiblePractitioner" />
