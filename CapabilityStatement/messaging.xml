@@ -55,7 +55,7 @@
         </resource>
         <resource>
             <type value="Task" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-Task" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task" />
             <interaction>
                 <code value="create"/>
             </interaction>

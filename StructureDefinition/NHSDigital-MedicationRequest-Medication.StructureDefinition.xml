@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Medication" />
-  <name value="DM-MedicationRequest-Medication" />
+  <name value="NHSDigital-MedicationRequest-Medication" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -930,7 +930,7 @@
       <binding>
         <strength value="required" />
         <description value="A code from the SNOMED Clinical Terminology UK coding system that describes a medication from the VTM/VMP/VMPP/AMP/AMPP subsets from the dm+d terminology." />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationRequest-Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationRequest-Code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2937,7 +2937,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationRequest-Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationRequest-Code" />
       </binding>
     </element>
     <element id="Medication.code.coding">
