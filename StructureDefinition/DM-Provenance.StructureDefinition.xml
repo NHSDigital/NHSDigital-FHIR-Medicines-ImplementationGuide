@@ -39,7 +39,7 @@
       <path value="Provenance.target" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </type>
     </element>
     <element id="Provenance.agent.who">

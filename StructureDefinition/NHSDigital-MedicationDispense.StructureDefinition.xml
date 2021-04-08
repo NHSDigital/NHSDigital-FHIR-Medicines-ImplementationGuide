@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
   <name value="DM-MedicationDispense" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -82,11 +82,11 @@
       <path value="MedicationDispense.medication[x]" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-CodeableConcept" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense-CodeableConcept" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationDispense-Medication" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense-Medication" />
         <aggregation value="bundled" />
       </type>
     </element>

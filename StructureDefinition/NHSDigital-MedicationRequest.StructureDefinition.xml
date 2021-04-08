@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
+  <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
   <name value="DM-MedicationRequest" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
@@ -207,11 +207,11 @@
       <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest-CodeableConcept" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-CodeableConcept" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest-Medication" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Medication" />
         <aggregation value="bundled" />
       </type>
     </element>
@@ -251,7 +251,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-MedicationRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier">

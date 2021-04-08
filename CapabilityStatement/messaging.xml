@@ -27,7 +27,7 @@
         </resource>
         <resource>
             <type value="Claim" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-Claim" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
         </resource>
         <resource>
             <type value="HealthcareService" />
