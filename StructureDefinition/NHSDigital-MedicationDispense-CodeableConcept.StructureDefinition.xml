@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense-CodeableConcept" />
-  <name value="DM-MedicationDispense-CodeableConcept" />
+  <name value="NHSDigital-MedicationDispense-CodeableConcept" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -45,7 +45,7 @@
       <binding>
         <strength value="required" />
         <description value="Digital Medicine Medication Code" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-MedicationDispense-Code" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationDispense-Code" />
       </binding>
     </element>
     <element id="CodeableConcept.coding:SNOMED.system">
