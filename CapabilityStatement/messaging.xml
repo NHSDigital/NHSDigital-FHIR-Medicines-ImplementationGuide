@@ -29,29 +29,21 @@
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
         </resource>
-        <resource>
-            <type value="HealthcareService" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-HealthcareService" />
+         <resource>
+            <type value="CommunicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-CommunicationRequest" />
+        </resource>
+       <resource>
+            <type value="MedicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
         </resource>
         <resource>
-            <type value="Location" />
-            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Location" />
+            <type value="MedicationDispense" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
         </resource>
         <resource>
-            <type value="Organization" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
-        </resource>
-        <resource>
-            <type value="Patient" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
-        </resource>
-        <resource>
-            <type value="Practitioner" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner" />
-        </resource>
-        <resource>
-            <type value="PractitionerRole" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
+            <type value="Medication" />
+            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
         </resource>
         <resource>
             <type value="Task" />
