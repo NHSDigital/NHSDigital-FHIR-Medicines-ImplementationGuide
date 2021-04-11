@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "outpatient-1",
+  "id": "899cc492-f35b-4f2e-a1fb-9b7be9aeeb97",
   "identifier": {
       "system": "https://tools.ietf.org/html/rfc4122",
       "value": "36f17614-f054-4f2b-b63b-606b7caf3d40"
