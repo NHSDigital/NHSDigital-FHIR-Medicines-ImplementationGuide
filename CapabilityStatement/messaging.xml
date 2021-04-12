@@ -80,7 +80,19 @@
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
+        </supportedMessage>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-claim" />
+        </supportedMessage>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/vaccinations" />
+        </supportedMessage>
+        <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-response" />
         </supportedMessage>
     </messaging>
 </CapabilityStatement>
