@@ -13,7 +13,7 @@
                 "resourceType": "MessageHeader",
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "prescription-claim",
+                    "code": "dispense-claim",
                     "display": "Dispense Notification Claim"
                 },
                 "destination": {

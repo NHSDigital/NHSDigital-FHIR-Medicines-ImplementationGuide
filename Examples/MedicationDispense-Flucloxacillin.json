@@ -28,6 +28,7 @@
         ]
     },
     "subject": {
+        "type": "Patient",
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "2300992742"
@@ -36,8 +37,8 @@
     "performer": [
         {
             "actor": {
-                "type": "Practitioner",
-                "identifier": {
+                "type" : "Practitioner",
+                "identifier":  {
                     "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                     "value": "7654321"
                 },
@@ -47,7 +48,7 @@
         {
             "actor": {
                 "type": "Organization",
-                "identifier": {
+                "identifier":  {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "AB123"
                 },
@@ -56,7 +57,7 @@
         }
     ],
     "authorizingPrescription": [
-        {   
+        {
             "extension": [
                 {
                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
@@ -95,9 +96,9 @@
     },
     "quantity": {
         "value": 28,
+        "unit": "capsule",
         "system": "http://snomed.info/sct",
-        "code": "3316911000001105",
-        "unit": "capsule"
+        "code": "3316911000001105"
     },
     "daysSupply": {
         "value": 7,
