@@ -16,9 +16,15 @@
     </eventCoding>
     <category value="consequence" />
     <focus>
-        <code value="MedicationRequest" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+        <code value="Immunization" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Immunization" />
         <min value="1" />
+        <max value="*" />
+    </focus>
+    <focus>
+        <code value="Patient" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
+        <min value="0" />
         <max value="*" />
     </focus>
     <responseRequired value="on-error"></responseRequired>
