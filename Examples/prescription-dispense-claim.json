@@ -16,16 +16,18 @@
                     "code": "dispense-claim",
                     "display": "Dispense Notification Claim"
                 },
-                "destination": {
-                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
-                    "receiver": {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "T1270"
-                        },
-                        "display": "PPA"
+                "destination": [
+                    {
+                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
+                        "receiver": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "T1270"
+                            },
+                            "display": "PPA"
+                        }
                     }
-                },
+                ],
                 "sender": {
                     "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
                     "display": "Mr Peter Potion"
@@ -45,7 +47,7 @@
                 },
                 "response": {
                     "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45",
-                    "code" : "ok"
+                    "code": "ok"
                 },
                 "focus": [
                     {
@@ -87,12 +89,12 @@
                 },
                 "priority": {
                     "coding": [
-                      {
-                          "system" : "http://terminology.hl7.org/CodeSystem/processpriority",
-                        "code": "normal"
-                      }
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+                            "code": "normal"
+                        }
                     ]
-                  },
+                },
                 "prescription": {
                     "extension": [
                         {
@@ -115,7 +117,7 @@
                             ]
                         }
                     ],
-                    "display" : "The original prescription"
+                    "display": "The original prescription"
                 },
                 "insurance": [
                     {
@@ -142,15 +144,26 @@
                             }
                         ],
                         "sequence": 1,
-                        "modifier": {
+                        "productOrService": {
                             "coding": [
                                 {
-                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                                    "code": "0001",
-                                    "display": "Item fully dispensed"
+                                    "system": "http://snomed.info/sct",
+                                    "code": "323465006",
+                                    "display": "Flucloxacillin 500mg capsules"
                                 }
                             ]
                         },
+                        "modifier": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                        "code": "0001",
+                                        "display": "Item fully dispensed"
+                                    }
+                                ]
+                            }
+                        ],
                         "programCode": [
                             {
                                 "coding": [
@@ -161,16 +174,7 @@
                                     }
                                 ]
                             }
-                        ],
-                        "productOrService": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "323465006",
-                                    "display": "Flucloxacillin 500mg capsules"
-                                }
-                            ]
-                        }
+                        ]
                     },
                     {
                         "extension": [
@@ -183,15 +187,26 @@
                             }
                         ],
                         "sequence": 2,
-                        "modifier": {
+                        "productOrService": {
                             "coding": [
                                 {
-                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                                    "code": "0001",
-                                    "display": "Item fully dispensed"
+                                    "system": "http://snomed.info/sct",
+                                    "code": "585011000001109",
+                                    "display": "Metronidazole 400mg tablets (Teva UK Ltd))"
                                 }
                             ]
                         },
+                        "modifier": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                        "code": "0001",
+                                        "display": "Item fully dispensed"
+                                    }
+                                ]
+                            }
+                        ],
                         "programCode": [
                             {
                                 "coding": [
@@ -202,16 +217,7 @@
                                     }
                                 ]
                             }
-                        ],
-                        "productOrService": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "585011000001109",
-                                    "display": "Metronidazole 400mg tablets (Teva UK Ltd))"
-                                }
-                            ]
-                        }
+                        ]
                     }
                 ]
             }
@@ -226,8 +232,8 @@
                         "value": "210987654322"
                     },
                     {
-                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                                "value": "7654321"
+                        "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                        "value": "7654321"
                     }
                 ],
                 "practitioner": {
