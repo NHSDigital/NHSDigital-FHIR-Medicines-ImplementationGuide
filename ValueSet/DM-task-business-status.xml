@@ -12,6 +12,7 @@
         </include>
     </compose>
     <expansion>
+        <timestamp value="2021-04-13T12:00:00+00:00"/>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status"/>
             <code value="0002"/>

@@ -12,20 +12,7 @@
         </include>
     </compose>
     <expansion>
-        <total value="5"/>
-        <offset value="0"/>
-        <parameter>
-            <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement|1.1.0"/>
-        </parameter>
-        <parameter>
-            <name value="count"/>
-            <valueInteger value="2147483647"/>
-        </parameter>
-        <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-        </parameter>
+        <timestamp value="2021-04-13T12:00:00+00:00"/>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement"/>
             <code value="CC"/>
