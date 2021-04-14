@@ -44,6 +44,9 @@ html, body {
       text-align: left; 
     }
 
+    .lang-json {
+      border: 1px solid #ccc;
+    }
     .tab {
       overflow: hidden;
       border: 1px solid #ccc;
