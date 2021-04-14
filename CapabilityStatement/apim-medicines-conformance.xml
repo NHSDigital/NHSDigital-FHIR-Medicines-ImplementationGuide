@@ -53,10 +53,36 @@
        <resource>
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+            <interaction>
+                <code value="search-type" />
+            </interaction>
+            <searchParam>
+                <name value="patient.identifier" />
+                <type value="token" />
+                <documentation value="Returns prescriptions for a specific patientt identifier (NHS Number)" />
+            </searchParam>
+            <searchParam>
+                <name value="patient" />
+                <type value="reference" />
+                <documentation value="Returns prescriptions for a specific patient" />
+            </searchParam>
         </resource>
         <resource>
             <type value="MedicationDispense" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
+            <interaction>
+                <code value="search-type" />
+            </interaction>
+            <searchParam>
+                <name value="patient.identifier" />
+                <type value="token" />
+                <documentation value="TThe identity (NHS Number) of a patient to list dispenses for" />
+            </searchParam>
+            <searchParam>
+                <name value="patient" />
+                <type value="reference" />
+                <documentation value="TThe identity of a patient to list dispenses for" />
+            </searchParam>
         </resource>
         <resource>
             <type value="Medication" />
