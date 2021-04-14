@@ -1,11 +1,11 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="electronic-prescribing-server" />
-    <url value="https://fhir.nhs.uk/CapabilityStatement/electronic-prescribing-server" />
+    <id value="apim-medicines-conformance" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-conformance" />
     <version value="3.0.0" />
-    <name value="Messaging support Capability Statement" />
+    <name value="NHSD Medicines Capability Statement" />
     <status value="active" />
     <publisher value="digital.nhs.uk" />
-    <description value="Conformance requirements for DM Message endpoint" />
+    <description value="Conformance requirements for NHS Digital Medicines APIs" />
     <kind value="requirements" />
     <fhirVersion value="4.0.1" />
     <format value="application/fhir+json" />

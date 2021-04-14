@@ -42,7 +42,7 @@
 <body>
 
     <header>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 fhir-logo">
@@ -58,12 +58,6 @@
                     </div>
                 </div>
                 <div class="col-md-4 hl7-logo">
-                    <a href="http://hl7.org">
-                        <img src="https://www.hl7.org/assets/systemimages/hl7-logo-header.png"
-                            alt="visit the HL7 website" width="89" height="auto" target="_blank">
-                    </a>
-                </div>
-                <div class="col-md-4 hl7-logo">
                     <a href="http://digital.nhs.uk">
                         <img src="https://digital.nhs.uk/webfiles/1576854238445/images/nhs-digital-logo.svg"
                             alt="visit the NHS Digital website" width="89" height="auto" target="_blank">
@@ -74,13 +68,10 @@
         {{ dropdown-navigation }}
     </header>
 
-    <div class="warning">
-        
-        <b>Please note:</b> 
-        <ul> <li>This is an WIP development version of the Digital Medicines Implementation Guide.</li>
+ <div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i><b> Please note:</b>   <ul> <li>This is an WIP development version of the NHS Digital FHIR Medicines Implementation Guide.</li>
 
-        </ul> 
-        </div>
+        </ul></div>
+
 
     <div class="content container">
         {{ page-with-children }}
