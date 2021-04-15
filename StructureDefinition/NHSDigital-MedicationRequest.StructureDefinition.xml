@@ -347,6 +347,7 @@
       <path value="MedicationRequest.dispenseRequest.extension" />
       <sliceName value="performerSiteType" />
       <short value="type of dispensing organisation" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType" />
