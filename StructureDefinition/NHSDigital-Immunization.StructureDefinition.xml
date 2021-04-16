@@ -123,6 +123,13 @@
       <path value="Immunization.manufacturer.display" />
       <min value="1" />
     </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
+      </binding>
+    </element>
     <element id="Immunization.site.coding">
       <path value="Immunization.site.coding" />
       <min value="1" />
