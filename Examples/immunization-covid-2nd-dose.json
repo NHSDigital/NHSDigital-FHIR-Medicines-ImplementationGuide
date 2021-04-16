@@ -22,7 +22,10 @@
     }
   ],
   "status": "completed",
-  "primarySource": true,
+  "primarySource": false,
+  "reportOrigin": {
+    "text": "RR8 - LEEDS TEACHING HOSPITALS NHS TRUST"
+  },
   "occurrenceDateTime": "2021-02-23T13:00:08.476+00:00",
   "patient": {
     "reference": "Patient/1953684",
@@ -47,18 +50,18 @@
   "lotNumber": "R04X",
   "protocolApplied": [
     {
-        "targetDisease": [
+      "targetDisease": [
+        {
+          "coding": [
             {
-                "coding": [
-                    {
-                        "system": "http://snomed.info/sct",
-                        "code": "840544004",
-                        "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
-                    }
-                ]
+              "system": "http://snomed.info/sct",
+              "code": "840544004",
+              "display": "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)"
             }
-        ],
-        "doseNumberPositiveInt": 2
+          ]
+        }
+      ],
+      "doseNumberPositiveInt": 2
     }
-]
+  ]
 }

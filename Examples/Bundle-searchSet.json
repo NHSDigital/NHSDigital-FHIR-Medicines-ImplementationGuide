@@ -147,7 +147,10 @@
                 },
                 "occurrenceDateTime": "2021-02-23T13:00:08.476+00:00",
                 "recorded": "2021-02-23",
-                "primarySource": true,
+                "primarySource": false,
+                "reportOrigin": {
+                    "text": "RR8 - LEEDS TEACHING HOSPITALS NHS TRUST"
+                },
                 "manufacturer": {
                     "display": "AstraZeneca Ltd"
                 },
