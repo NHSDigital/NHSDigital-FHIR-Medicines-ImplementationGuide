@@ -31,7 +31,7 @@
         </resource>
          <resource>
             <type value="CommunicationRequest" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/DM-CommunicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
         </resource>
         <resource>
             <type value="Immunization" />

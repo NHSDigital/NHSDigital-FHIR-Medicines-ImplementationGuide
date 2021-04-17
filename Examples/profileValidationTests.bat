@@ -85,10 +85,6 @@ rem PASS - [PractitionerRole - json]
 
 java -jar org.hl7.fhir.validator.jar PractitionerRole-2.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.1.5-alpha.tgz  -profile https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole
 
-rem PASS - [CommunicationRequest - json] 
-
-java -jar org.hl7.fhir.validator.jar CommunicationRequest.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.1.5-alpha.tgz  -profile https://fhir.nhs.uk/StructureDefinition/DM-CommunicationRequest
-
 rem PASS - [List Repeat Medications] 
 
 java -jar org.hl7.fhir.validator.jar List-RepeatMedications.json -version 4.0.1 -tx https://r4.ontoserver.csiro.au/fhir -ig https://packages.simplifier.net/UK.DM.r4/-/UK.DM.r4-0.1.5-alpha.tgz  -profile https://fhir.hl7.org.uk/StructureDefinition/UKCore-List
