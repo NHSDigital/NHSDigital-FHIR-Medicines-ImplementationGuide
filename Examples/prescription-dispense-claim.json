@@ -104,14 +104,14 @@
                                     "url": "shortForm",
                                     "valueIdentifier": {
                                         "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                                        "value": "83C40E-A23856-00123C"
+                                        "value": "82D996-C81010-11DB12"
                                     }
                                 },
                                 {
                                     "url": "UUID",
                                     "valueIdentifier": {
                                         "system": "https://fhir.nhs.uk/Id/prescription",
-                                        "value": "06167339-9337-D030-0366-514A6A46DA17"
+                                        "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
                                     }
                                 }
                             ]
@@ -139,7 +139,7 @@
                                 "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-SequenceIdentifier",
                                 "valueIdentifier": {
                                     "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                    "value": "4509B70D-D8B8-EA03-1105-64557CB54A29"
+                                    "value": "299c610b-f4f1-4eac-a7d7-4fb6b0556e11"
                                 }
                             }
                         ],
@@ -148,8 +148,8 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "323465006",
-                                    "display": "Flucloxacillin 500mg capsules"
+                                    "code": "322237000",
+                                    "display": "Paracetamol 500mg soluble tablets"
                                 }
                             ]
                         },
@@ -173,6 +173,68 @@
                                         "display": "Patient has paid appropriate charges"
                                     }
                                 ]
+                            }
+                        ],
+                        "quantity": {
+                            "value": 100,
+                            "unit": "Tablet",
+                            "system": "http://snomed.info/sct",
+                            "code": "732936001"
+                        },
+                        "detail" : [
+                            {
+                                "sequence" : 1,
+                                "productOrService": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "1858411000001101",
+                                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
+                                        }
+                                    ]
+                                },
+                                "quantity": {
+                                    "value": 60,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "732936001"
+                                }
+                            },
+                            {
+                                "sequence" : 2,
+                                "productOrService": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "915611000001105",
+                                            "display": "Paracetamol 500mg soluble tablets (A A H Pharmaceuticals Ltd)"
+                                        }
+                                    ]
+                                },
+                                "quantity": {
+                                    "value": 24,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "732936001"
+                                }
+                            },
+                            {
+                                "sequence" : 3,
+                                "productOrService": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "2274211000001101",
+                                            "display": "Paracetamol 500mg soluble tablets (Kent Pharmaceuticals Ltd) 16 tablet 2 x 8 tablets"
+                                        }
+                                    ]
+                                },
+                                "quantity": {
+                                    "value": 16,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "732936001"
+                                }
                             }
                         ]
                     },
@@ -191,8 +253,8 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "585011000001109",
-                                    "display": "Metronidazole 400mg tablets (Teva UK Ltd))"
+                                    "code": "35936511000001108",
+                                    "display": "Salbutamol 100micrograms/dose inhaler"
                                 }
                             ]
                         },
@@ -216,6 +278,32 @@
                                         "display": "Patient has paid appropriate charges"
                                     }
                                 ]
+                            }
+                        ],
+                        "quantity": {
+                            "value": 200,
+                            "unit": "unit dose",
+                            "system": "http://snomed.info/sct",
+                            "code": "408102007"
+                        },
+                        "detail" : [
+                            {
+                                "sequence" : 1,
+                                "productOrService": {
+                                    "coding": [
+                                        {
+                                            "system": "http://snomed.info/sct",
+                                            "code": "3416211000001106",
+                                            "display": "Salbutamol 100micrograms/dose inhaler (Sandoz Ltd) 200 dose"
+                                        }
+                                    ]
+                                },
+                                "quantity": {
+                                    "value": 200,
+                                    "unit": "unit dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "408102007"
+                                }
                             }
                         ]
                     }

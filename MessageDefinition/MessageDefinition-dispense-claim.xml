@@ -19,7 +19,7 @@
         <code value="Claim" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
         <min value="1" />
-        <max value="4" />
+        <max value="1" />
     </focus>
     <focus>
         <code value="PractitionerRole" />
