@@ -22,8 +22,8 @@
         <max value="4" />
     </focus>
     <focus>
-        <code value="Practitioner" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner" />
+        <code value="PractitionerRole" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
         <min value="1" />
         <max value="*" />
     </focus>
