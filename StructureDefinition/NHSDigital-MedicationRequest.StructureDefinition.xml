@@ -41,13 +41,7 @@
         <key value="eps-1" />
         <severity value="error" />
         <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
-        <expression value="medicationReference.exists() and medicationReference.exists().not()" />
-      </constraint>
-      <constraint>
-        <key value="eps-2" />
-        <severity value="error" />
-        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
-        <expression value="medicationReference.exists().not() and medicationReference.exists()" />
+        <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
       </constraint>
     </element>
     <element id="MedicationRequest.extension">
