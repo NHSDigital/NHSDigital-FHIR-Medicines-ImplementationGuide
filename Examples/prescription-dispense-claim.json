@@ -166,6 +166,12 @@
                         ],
                         "programCode": [
                             {
+                                "extension": [
+                                    {
+                                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-evidenceSeen",
+                                        "valueBoolean": true
+                                    }
+                                ],
                                 "coding": [
                                     {
                                         "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
@@ -181,9 +187,9 @@
                             "system": "http://snomed.info/sct",
                             "code": "732936001"
                         },
-                        "detail" : [
+                        "detail": [
                             {
-                                "sequence" : 1,
+                                "sequence": 1,
                                 "productOrService": {
                                     "coding": [
                                         {
@@ -201,7 +207,7 @@
                                 }
                             },
                             {
-                                "sequence" : 2,
+                                "sequence": 2,
                                 "productOrService": {
                                     "coding": [
                                         {
@@ -219,7 +225,7 @@
                                 }
                             },
                             {
-                                "sequence" : 3,
+                                "sequence": 3,
                                 "productOrService": {
                                     "coding": [
                                         {
@@ -271,6 +277,12 @@
                         ],
                         "programCode": [
                             {
+                                "extension": [
+                                    {
+                                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-evidenceSeen",
+                                        "valueBoolean": true
+                                    }
+                                ],
                                 "coding": [
                                     {
                                         "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
@@ -286,9 +298,9 @@
                             "system": "http://snomed.info/sct",
                             "code": "408102007"
                         },
-                        "detail" : [
+                        "detail": [
                             {
-                                "sequence" : 1,
+                                "sequence": 1,
                                 "productOrService": {
                                     "coding": [
                                         {
