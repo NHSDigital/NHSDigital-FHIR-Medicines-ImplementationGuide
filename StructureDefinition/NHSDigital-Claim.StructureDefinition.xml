@@ -103,9 +103,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Claim.item.extension:sequenceIdentifier">
+    <element id="Claim.item.extension:lineItemIdentifier">
       <path value="Claim.item.extension" />
-      <sliceName value="sequenceIdentifier" />
+      <sliceName value="lineItemIdentifier" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -140,6 +140,26 @@
         <description value="Prescription Charge Exemption" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
       </binding>
+    </element>
+    <element id="Claim.item.detail.extension">
+      <path value="Claim.item.detail.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Claim.item.detail.extension:identifier">
+      <path value="Claim.item.detail.extension" />
+      <sliceName value="identifier" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SequenceIdentifier" />
+      </type>
     </element>
     <element id="Claim.item.detail.productOrService">
       <path value="Claim.item.detail.productOrService" />
