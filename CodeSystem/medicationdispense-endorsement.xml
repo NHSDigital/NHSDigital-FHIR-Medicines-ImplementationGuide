@@ -97,4 +97,8 @@
         <code value="NDEC"></code>
         <display value="No Dispenser Endorsement Code" />
     </concept>
+    <concept>
+        <code value="SSP"></code>
+        <display value="Serious Shortage Protocol" />
+    </concept>
 </CodeSystem>

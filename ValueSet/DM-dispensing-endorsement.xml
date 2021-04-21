@@ -1,98 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="DM-dispensing-endorsement"/>
-    <url value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement"/>
-    <version value="4.0.1"/>
-    <name value="NHSBSA Dispensing Endorsement"/>
-    <status value="draft"/>
-    <description value="NHSBSA Dispensing Endorsement"/>
+    <id value="DM-dispensing-endorsement" />
+    <url value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
+    <version value="4.0.1" />
+    <name value="NHSBSA Dispensing Endorsement" />
+    <status value="draft" />
+    <description value="NHSBSA Dispensing Endorsement" />
     <compose>
         <include>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
             <version value="1.0.0" />
         </include>
     </compose>
     <expansion>
-        <identifier value="c9c986c2-c549-430c-8577-a0ec4c5b7afe"/>
-        <timestamp value="2021-04-21T17:54:06+10:00"/>
-        <total value="14"/>
-        <offset value="0"/>
+        <identifier value="c9c986c2-c549-430c-8577-a0ec4c5b7afe" />
+        <timestamp value="2021-04-21T17:54:06+10:00" />
+        <total value="14" />
+        <offset value="0" />
         <parameter>
-            <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement|1.0.0"/>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement|1.0.0" />
         </parameter>
         <parameter>
-            <name value="count"/>
-            <valueInteger value="2147483647"/>
+            <name value="count" />
+            <valueInteger value="2147483647" />
         </parameter>
         <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
+            <name value="offset" />
+            <valueInteger value="0" />
         </parameter>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="BB"/>
-            <display value="Broken Bulk"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="BB" />
+            <display value="Broken Bulk" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="ED"/>
-            <display value="Extemporaneously dispensed "/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="ED" />
+            <display value="Extemporaneously dispensed " />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="IP"/>
-            <display value="Invoice Price for less common products or special items"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="IP" />
+            <display value="Invoice Price for less common products or special items" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="MF"/>
-            <display value="Measured and Fitted"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="MF" />
+            <display value="Measured and Fitted" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="NCSO"/>
-            <display value="No Cheaper Stock Obtainable"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="NCSO" />
+            <display value="No Cheaper Stock Obtainable" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="NDEC"/>
-            <display value="No Dispenser Endorsement Code"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="NDEC" />
+            <display value="No Dispenser Endorsement Code" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="ND"/>
-            <display value="Not Dispensed"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="ND" />
+            <display value="Not Dispensed" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="XP"/>
-            <display value="Out of Pocket Expenses"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="XP" />
+            <display value="Out of Pocket Expenses" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="PC"/>
-            <display value="Prescriber Contacted"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="PC" />
+            <display value="Prescriber Contacted" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="PNC"/>
-            <display value="Prescriber Not Contacted"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="PNC" />
+            <display value="Prescriber Not Contacted" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="RC"/>
-            <display value="Rebate Claimed"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="RC" />
+            <display value="Rebate Claimed" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="SP"/>
-            <display value="Special License"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="SP" />
+            <display value="Special License" />
         </contains>
         <contains>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement"/>
-            <code value="ZD"/>
-            <display value="Zero Discount (List B only)"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="ZD" />
+            <display value="Zero Discount (List B only)" />
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+            <code value="SSP"></code>
+            <display value="Serious Shortage Protocol" />
         </contains>
     </expansion>
 </ValueSet>
