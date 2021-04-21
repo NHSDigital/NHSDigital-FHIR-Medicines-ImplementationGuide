@@ -9,6 +9,7 @@
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement"/>
+            <version value="1.0.0" />
         </include>
     </compose>
     <expansion>

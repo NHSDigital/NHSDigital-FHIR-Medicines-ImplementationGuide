@@ -185,6 +185,26 @@
       <path value="MedicationDispense.type.coding.code" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.quantity.extension">
+      <path value="MedicationDispense.quantity.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationDispense.quantity.extension:runningTotal">
+      <path value="MedicationDispense.quantity.extension" />
+      <sliceName value="runningTotal" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-RunningTotal" />
+      </type>
+    </element>
     <element id="MedicationDispense.quantity.value">
       <path value="MedicationDispense.quantity.value" />
       <min value="1" />
