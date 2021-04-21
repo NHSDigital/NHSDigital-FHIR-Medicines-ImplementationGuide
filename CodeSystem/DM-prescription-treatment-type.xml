@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><CodeSystem xmlns="http://hl7.org/fhir">
-   <id value="DM-prescription-charge"/>
-   <url value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge"/>
+   <id value="DM-prescription-treatment-type"/>
+   <url value="https://fhir.nhs.uk/CodeSystem/DM-prescription-treatment-type"/>
    <version value="1.1.0"/>
-   <name value="DM Prescription Charge"/>
+   <name value="Prescription Treatment Type"/>
    <status value="active"/>
    <date value="2018-05-18T00:00:00+00:00"/>
    <publisher value="NHS Digital"/>
@@ -19,11 +19,15 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
-      <code value="paid"/>
-      <display value="Paid"/>
+      <code value="0001"/>
+      <display value="Acute"/>
    </concept>
    <concept>
-      <code value="not-paid"/>
-      <display value="Not Paid"/>
+      <code value="0002"/>
+      <display value="Repeat Prescribing"/>
+   </concept>
+   <concept>
+      <code value="0003"/>
+      <display value="Repeat dispensing"/>
    </concept>
 </CodeSystem>
