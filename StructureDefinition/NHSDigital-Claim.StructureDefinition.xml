@@ -197,6 +197,7 @@
       <max value="1" />
       <binding>
         <strength value="extensible" />
+        <description value="Program specific reason codes" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
       </binding>
     </element>
