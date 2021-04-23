@@ -35,6 +35,15 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationRequest">
+      <path value="MedicationRequest" />
+      <constraint>
+        <key value="eps-1" />
+        <severity value="error" />
+        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
+        <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
+      </constraint>
+    </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
       <slicing>
