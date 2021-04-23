@@ -140,7 +140,7 @@
       <min value="1" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <description value="Prescription Charge Exemption" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
       </binding>
@@ -170,7 +170,7 @@
       <sliceName value="exemptionEvidence" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-exemption-evidence" />
       </binding>
     </element>
@@ -183,7 +183,7 @@
       <sliceName value="prescriptionCharge" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge" />
       </binding>
     </element>
@@ -196,7 +196,7 @@
       <sliceName value="dispensingEndorsement" />
       <max value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
       </binding>
     </element>
