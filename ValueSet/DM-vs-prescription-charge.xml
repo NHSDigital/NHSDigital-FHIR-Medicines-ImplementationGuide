@@ -9,17 +9,17 @@
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge"/>
-            <version value="1.1.0" />
+            <version value="1.1.1" />
         </include>
     </compose>
     <expansion>
         <identifier value="b0f0e4f5-4971-4e43-8de3-1adf32a46e1c"/>
         <timestamp value="2021-04-21T18:03:22+10:00"/>
-        <total value="2"/>
+        <total value="3"/>
         <offset value="0"/>
         <parameter>
             <name value="version"/>
-            <valueUri value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge|1.1.0"/>
+            <valueUri value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge|1.1.1"/>
         </parameter>
         <parameter>
             <name value="count"/>
@@ -36,8 +36,13 @@
         </contains>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge"/>
-            <code value="paid"/>
-            <display value="Paid"/>
+            <code value="paid-twice"/>
+            <display value="Paid Twice"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge"/>
+            <code value="paid-once"/>
+            <display value="Paid Once"/>
         </contains>
     </expansion>
 </ValueSet>
