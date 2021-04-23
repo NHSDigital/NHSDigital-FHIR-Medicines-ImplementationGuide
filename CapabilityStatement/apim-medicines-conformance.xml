@@ -2,7 +2,7 @@
     <id value="apim-medicines-conformance" />
     <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-conformance" />
     <version value="3.0.0" />
-    <name value="NHSD Medicines Capability Statement" />
+    <name value="NHS Digital Medicines Capability Statement" />
     <status value="active" />
     <publisher value="digital.nhs.uk" />
     <description value="Conformance requirements for NHS Digital Medicines APIs" />
@@ -40,7 +40,7 @@
                 <code value="search-type" />
             </interaction>
             <searchParam>
-                <name value="patient.identifier" />
+                <name value="patient:identifier" />
                 <type value="token" />
                 <documentation value="The patient identifier (e.g. NHS Number) that the immunisation is about" />
             </searchParam>
@@ -57,7 +57,7 @@
                 <code value="search-type" />
             </interaction>
             <searchParam>
-                <name value="patient.identifier" />
+                <name value="patient:identifier" />
                 <type value="token" />
                 <documentation value="Returns prescriptions for a specific patientt identifier (NHS Number)" />
             </searchParam>
@@ -74,7 +74,7 @@
                 <code value="search-type" />
             </interaction>
             <searchParam>
-                <name value="patient.identifier" />
+                <name value="patient:identifier" />
                 <type value="token" />
                 <documentation value="TThe identity (NHS Number) of a patient to list dispenses for" />
             </searchParam>
