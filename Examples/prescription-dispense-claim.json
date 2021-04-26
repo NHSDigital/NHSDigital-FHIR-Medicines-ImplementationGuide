@@ -167,12 +167,6 @@
                         ],
                         "programCode": [
                             {
-                                "extension": [
-                                    {
-                                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-evidenceSeen",
-                                        "valueBoolean": true
-                                    }
-                                ],
                                 "coding": [
                                     {
                                         "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
@@ -200,6 +194,36 @@
                                         }
                                     ]
                                 },
+                                "programCode":  [
+                                    {
+                                        "coding":  [
+                                            {
+                                                 "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                                "code": "evidence-seen",
+                                                "display": "Evidence Seen"
+                                                
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "coding":  [
+                                            {
+                                                "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                                                "code": "paid-once",
+                                                "display": "Paid Once"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "coding":  [
+                                            {
+                                                "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                                "code": "IP",
+                                                "display": "Invoice Price"
+                                            }
+                                        ]
+                                    }
+                                ],
                                 "quantity": {
                                     "value": 60,
                                     "unit": "tablet",
@@ -362,12 +386,6 @@
                         ],
                         "programCode": [
                             {
-                                "extension": [
-                                    {
-                                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-evidenceSeen",
-                                        "valueBoolean": true
-                                    }
-                                ],
                                 "coding": [
                                     {
                                         "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
