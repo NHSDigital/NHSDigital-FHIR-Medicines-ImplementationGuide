@@ -29,21 +29,15 @@
                     }
                 ],
                 "sender": {
-                    "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
-                    "display": "Mr Peter Potion"
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "AB123"
+                    },
+                    "display": "The Pharmacy System"
                 },
                 "source": {
                     "name": "The Pharmacy System",
                     "endpoint": "urn:nhs-uk:addressing:ods:AB123"
-                },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
-                            "code": "claim",
-                            "display": "Claim"
-                        }
-                    ]
                 },
                 "response": {
                     "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45",
@@ -428,11 +422,17 @@
                     }
                 ],
                 "practitioner": {
-                    "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "value": "156968544265"
+                    },
                     "display": "Mr Peter Potion"
                 },
                 "organization": {
-                    "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "AB123"
+                    },
                     "display": "The Simple Pharmacy"
                 },
                 "code": [
@@ -451,70 +451,6 @@
                         "system": "phone",
                         "value": "01234567890",
                         "use": "work"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-            "resource": {
-                "resourceType": "Practitioner",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-                        "value": "156968544265"
-                    }
-                ],
-                "name": [
-                    {
-                        "family": "Potion",
-                        "given": [
-                            "Peter"
-                        ],
-                        "prefix": [
-                            "Mr"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
-            "resource": {
-                "resourceType": "Organization",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "AB123"
-                    }
-                ],
-                "type": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                                "code": "182",
-                                "display": "PHARMACY"
-                            }
-                        ]
-                    }
-                ],
-                "name": "The Simple Pharmacy",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01234567890",
-                        "use": "work"
-                    }
-                ],
-                "address": [
-                    {
-                        "line": [
-                            "1",
-                            "The Midway",
-                            "Simple Town"
-                        ],
-                        "postalCode": "AA3 3AA"
                     }
                 ]
             }
