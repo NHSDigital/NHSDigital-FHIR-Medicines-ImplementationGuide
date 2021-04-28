@@ -1,6 +1,7 @@
 {
 	"resourceType": "SearchParameter",
-	"title": "Group Identifier",
+	"id": "338e6ade-61b6-45a7-a624-dd8c334f0835",
+	"name": "Group Identifier",
 	"base": [ "MedicationRequest" ],
 	"status": "active",
 	"code": "group",
