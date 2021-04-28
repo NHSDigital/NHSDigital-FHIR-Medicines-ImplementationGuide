@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="51c8f867-9fa0-4ca8-a82f-0f76d06d3bc2"/>
+  <id value="51c8f867-9fa0-4ca8-a82f-0f76d06d3bc2" />
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
   <name value="Extension-DM-ControlledDrug" />
   <status value="draft" />
@@ -33,7 +33,6 @@
     <element id="Extension.extension:quantityWords">
       <path value="Extension.extension" />
       <sliceName value="quantityWords" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:quantityWords.url">
