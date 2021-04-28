@@ -14,7 +14,7 @@
         <code value="dispense-claim-update" />
         <display value="Dispense Claim Update" />
     </eventCoding>
-    <category value="consequence" />
+    <category value="notification" />
     <focus>
         <code value="Claim" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />

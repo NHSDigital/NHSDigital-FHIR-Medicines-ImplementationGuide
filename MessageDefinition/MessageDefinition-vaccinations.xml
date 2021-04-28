@@ -14,7 +14,7 @@
         <code value="vaccinations" />
         <display value="Vaccinations" />
     </eventCoding>
-    <category value="consequence" />
+    <category value="notification" />
     <focus>
         <code value="Immunization" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Immunization" />

@@ -14,7 +14,7 @@
         <code value="prescription-order-update" />
         <display value="Prescription Order Update" />
     </eventCoding>
-    <category value="consequence" />
+    <category value="notification" />
     <focus>
         <code value="MessageHeader" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MessageHeader" />
