@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="d227b7ec-13ff-4689-9d91-cec34bba208e"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
   <name value="Extension-DM-ResponsiblePractitioner" />
   <status value="draft" />

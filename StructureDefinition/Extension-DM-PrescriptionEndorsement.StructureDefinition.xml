@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="a3d92f68-fc3d-4004-a5c9-b6eb6049d368"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
   <name value="Extension-PrescriptionEndorsement" />
   <status value="draft" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="db5e6fcc-2f29-42a8-ab29-18faa469d032"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
   <name value="NHSDigital-MedicationRequest" />
   <status value="draft" />

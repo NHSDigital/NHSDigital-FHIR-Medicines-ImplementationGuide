@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="b619236b-3f5a-4b3f-b312-72b6dc0d23b0"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
   <name value="Extension-DM-PrescriptionId" />
   <status value="draft" />

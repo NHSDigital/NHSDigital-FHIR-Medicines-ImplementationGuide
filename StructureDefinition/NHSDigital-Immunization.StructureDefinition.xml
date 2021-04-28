@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="7236d711-c336-4716-ae3e-d68d9511fe0c"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Immunization" />
   <name value="NHSDigital-Immunization" />
   <status value="draft" />

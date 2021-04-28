@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="14c34d14-4d39-43c1-8889-4db2406203e1"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType" />
   <name value="Extension-performerSiteType" />
   <status value="draft" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ad94deb2-6141-4ea2-a9dc-f1133de3fc28"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense-Medication" />
   <name value="NHSDigital-MedicationDispense-Medication" />
   <status value="draft" />
