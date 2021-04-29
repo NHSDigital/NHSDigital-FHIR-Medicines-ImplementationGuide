@@ -7,12 +7,12 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem"/>
         <value value="medicationrequest-controlled-drug"/>
     </identifier>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
     <name value="MedicationRequest Category Controlled Drug"/>
     <title value="MedicationRequest Category Controlled Drug"/>
     <status value="draft"/>
     <experimental value="true"/>
-    <date value="2020-07-10"/>
+    <date value="2021-04-29"/>
     <publisher value="NHS Digital"/>
     <contact>
         <name value="Interoperability Team" />
@@ -44,6 +44,10 @@
     <concept>
         <code value="CD4-2"/>
         <display value="Schedule 4 (Part II)"/>
+    </concept>
+    <concept>
+        <code value="CD4"/>
+        <display value="Schedule 4"/>
     </concept>
     <concept>
         <code value="CD5"/>

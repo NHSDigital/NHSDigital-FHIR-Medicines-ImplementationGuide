@@ -2,18 +2,19 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-medicationrequest-category-controlled-drug"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug"/>
-    <version value="4.0.1"/>
+    <version value="4.0.2"/>
     <name value="MedicationRequest Category Controlled Drug"/>
     <status value="draft"/>
     <description value="MedicationRequest Category Controlled Drug."/>
     <compose>
         <include>
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug"/>
+            <version value="1.0.1"/>
         </include>
     </compose>
     <expansion>
-        <timestamp value="2020-07-29T17:14:20+10:00"/>
-        <total value="6"/>
+        <timestamp value="2021-04-29T11:14:20+10:00"/>
+        <total value="7"/>
         <offset value="0"/>
         <parameter>
             <name value="version"/>
@@ -56,6 +57,11 @@
             <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug"/>
             <code value="CD1"/>
             <display value="Schedule 1"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug"/>
+            <code value="CD4"/>
+            <display value="Schedule 4"/>
         </contains>
     </expansion>
 </ValueSet>
