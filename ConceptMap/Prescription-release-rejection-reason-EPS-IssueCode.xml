@@ -41,10 +41,6 @@
             </target>
         </element>
         <element>
-            <code value="0003"></code>
-            <display value="Prescription cannot be found – contact your GP/prescriber" />    
-        </element>
-        <element>
             <code value="0004"></code>
             <display value="Prescription is with another dispenser" />
             <target>
@@ -65,18 +61,20 @@
         <element>
             <code value="0006"></code>
             <display value="No more nominated prescriptions available" />
+            <target>
+                <code value="NO_MORE_PRESCRIPTIONS" />
+                <display value="No more prescriptions available" />
+                <equivalence value="equivalent" />
+            </target>
         </element>
         <element>
             <code value="0007"></code>
             <display value="Nominated download functionality disabled in spine" />
-        </element>
-        <element>
-            <code value="0099"></code>
-            <display value="Incompatible version of Request. [Additional Information (if any)]" />
-        </element>
-        <element>
-            <code value="5000"></code>
-            <display value="Unable to process message. [Additional Information (if any)]" />
+            <target>
+                <code value="SERVICE_DISABLED" />
+                <display value="functionality disabled in spine" />
+                <equivalence value="equivalent" />
+            </target>
         </element>
         <element>
             <code value="5888"></code>
@@ -93,6 +91,37 @@
             <target>
                 <code value="INVALID_DATE_FORMAT" />
                 <display value="Format of date passed is invalid" />
+                <equivalence value="equivalent" />
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="https://fhir.nhs.uk/CodeSystem/EPS-task-prescription-release-rejection-reason" />
+        <target value="https://fhir.nhs.uk/CodeSystem/Spine-ErrorOrWarningCode" />
+        <element>
+            <code value="0003"></code>
+            <display value="Prescription cannot be found – contact your GP/prescriber" />
+            <target>
+                <code value="RESOURCE_NOT_FOUND" />
+                <display value="Resource not found" />
+                <equivalence value="equivalent" />
+            </target>
+        </element>
+        <element>
+            <code value="5000"></code>
+            <display value="Unable to process message. [Additional Information (if any)]" />
+            <target>
+                <code value="FAILURE_TO_PROCESS_MESSAGE" />
+                <display value="Failure to process message" />
+                <equivalence value="equivalent" />
+            </target>
+        </element>
+        <element>
+            <code value="0099"></code>
+            <display value="Incompatible version of Request. [Additional Information (if any)]" />
+            <target>
+                <code value="RESOURCE_VERSION_MISMATCH" />
+                <display value="Resource version mismatch" />
                 <equivalence value="equivalent" />
             </target>
         </element>
