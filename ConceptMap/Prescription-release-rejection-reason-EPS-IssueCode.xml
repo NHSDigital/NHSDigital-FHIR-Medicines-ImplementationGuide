@@ -23,15 +23,6 @@
         <source value="https://fhir.nhs.uk/CodeSystem/EPS-task-prescription-release-rejection-reason" />
         <target value="https://fhir.nhs.uk/CodeSystem/EPS-IssueCode" />
         <element>
-            <code value="acute" />
-            <display value="Acute" />
-            <target>
-                <code value="0001" />
-                <display value="Acute" />
-                <equivalence value="equivalent" />
-            </target>
-        </element>
-        <element>
             <code value="0001"></code>
             <display value="Prescription has been cancelled" />
             <target>
