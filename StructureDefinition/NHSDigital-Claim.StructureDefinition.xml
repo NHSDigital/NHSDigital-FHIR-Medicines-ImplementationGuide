@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="c7a6e6f2-4e97-48b9-9ec2-bd4f220e8a5d"/>
+  <id value="c7a6e6f2-4e97-48b9-9ec2-bd4f220e8a5d" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
   <name value="NHSDigital-Claim" />
   <status value="draft" />
@@ -116,6 +116,26 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier" />
       </type>
     </element>
+    <element id="Claim.item.extension:prescriptionStatus">
+      <path value="Claim.item.extension" />
+      <sliceName value="prescriptionStatus" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
+      </type>
+    </element>
+    <element id="Claim.item.extension:prescriptionStatusReasson">
+      <path value="Claim.item.extension" />
+      <sliceName value="prescriptionStatusReasson" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatusReason" />
+      </type>
+    </element>
     <element id="Claim.item.productOrService">
       <path value="Claim.item.productOrService" />
       <binding>
@@ -126,8 +146,6 @@
     </element>
     <element id="Claim.item.modifier">
       <path value="Claim.item.modifier" />
-      <min value="1" />
-      <max value="1" />
       <binding>
         <strength value="required" />
         <description value="Prescription status" />

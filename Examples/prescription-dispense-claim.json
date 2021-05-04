@@ -142,6 +142,14 @@
                                     "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                     "value": "18fc8a8b-f7c7-4367-80ce-1f4fc84c962d"
                                 }
+                            },
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                                "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                                    "code": "0006",
+                                    "display": "Dispensed"
+                                }
                             }
                         ],
                         "sequence": 1,
@@ -360,6 +368,14 @@
                                 "valueIdentifier": {
                                     "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                     "value": "c630d884-fd77-4f68-a616-a0817eac9e44"
+                                }
+                            },
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                                "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                                    "code": "0006",
+                                    "display": "Dispensed"
                                 }
                             }
                         ],

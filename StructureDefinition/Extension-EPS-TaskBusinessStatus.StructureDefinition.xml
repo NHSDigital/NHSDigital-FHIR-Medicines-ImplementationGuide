@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="5709261a-98a9-437a-b136-d4699c659f12"/>
+  <id value="5709261a-98a9-437a-b136-d4699c659f12" />
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
   <name value="Extension-EPS-TaskBusinessStatus" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
     <expression value="MedicationDispense" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Claim.item" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
