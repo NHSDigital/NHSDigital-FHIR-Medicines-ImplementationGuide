@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
     <url value="https://fhir.nhs.uk/ConceptMap/UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
-    <version value="4.0.1"/>
+    <version value="4.0.2"/>
     <name value="UKCore-PrescriptionType to MedicationRequest Course Prescription Therapy Type Map"/>
     <title value="UKCore-PrescriptionType to MedicationRequest Course Prescription Therapy Type Map"/>
     <status value="draft"/>
@@ -20,7 +20,7 @@
     <purpose value="CareConnect STU3 and UKCore to Digital Medicine conversion"/>
     <targetUri value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy"/>
     <group>
-        <source value="https://fhir.nhs.uk/CodeSystem/UKCore-PrescriptionType"/>
+        <source value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrescriptionType"/>
         <target value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
         <element>
             <code value="acute"/>
@@ -42,7 +42,7 @@
         </element>
     </group>
     <group>
-        <source value="https://fhir.nhs.uk/CodeSystem/UKCore-PrescriptionType"/>
+        <source value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PrescriptionType"/>
         <target value="https://fhir.nhs.uk/CodeSystem/medicationrequest-course-of-therapy"/>
          <element>
             <code value="repeat-dispensing"/>
