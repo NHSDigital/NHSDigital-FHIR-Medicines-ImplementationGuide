@@ -1,7 +1,7 @@
 {
     "name": "uk.nhsdigital.medicines.r4",
     "version": "2.1.12-alpha",
-    "description": "Electronic Prescription Service",
+    "description": "NHS Digital FHIR Medicines Implementation Guide",
     "author": "nhsdigital",
     "fhirVersions": [
       "4.0.1"
