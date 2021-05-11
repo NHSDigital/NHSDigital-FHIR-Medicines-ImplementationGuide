@@ -1,0 +1,14 @@
+{
+    "name": "uk.nhsdigital.medicines.r4",
+    "version": "2.1.12-alpha",
+    "description": "Electronic Prescription Service",
+    "author": "nhsdigital",
+    "fhirVersions": [
+      "4.0.1"
+    ],
+    "dependencies": {
+      "uk.nhsdigital.r4": "2.1.12-discovery",
+      "UK.Core.r4.V2": "2.0.8",
+      "hl7.fhir.r4.core": "4.0.1"
+    }
+  }
