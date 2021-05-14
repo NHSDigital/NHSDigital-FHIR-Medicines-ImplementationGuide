@@ -202,28 +202,27 @@
                                         }
                                     ]
                                 },
-                                "programCode":  [
+                                "programCode": [
                                     {
-                                        "coding":  [
+                                        "coding": [
                                             {
-                                                 "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                                "code": "evidence-seen",
-                                                "display": "Evidence Seen"
-                                                
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "coding":  [
-                                            {
-                                                "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                                                "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                                                 "code": "paid-once",
                                                 "display": "Paid Once"
                                             }
                                         ]
                                     },
                                     {
-                                        "coding":  [
+                                        "coding": [
+                                            {
+                                                "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                                                "code": "evidence-seen",
+                                                "display": "Evidence Seen"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "coding": [
                                             {
                                                 "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
                                                 "code": "IP",
@@ -445,16 +444,6 @@
             "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
             "resource": {
                 "resourceType": "PractitionerRole",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                        "value": "210987654322"
-                    },
-                    {
-                        "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                        "value": "7654321"
-                    }
-                ],
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/sds-user-id",
@@ -478,13 +467,6 @@
                                 "display": "Community Pharmacist"
                             }
                         ]
-                    }
-                ],
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "01234567890",
-                        "use": "work"
                     }
                 ]
             }
