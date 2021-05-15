@@ -50,6 +50,12 @@
                 <type value="reference" />
                 <documentation value="The patient that the immunisation is about" />
             </searchParam>
+            <searchParam>
+                <name value="procedure:below" />
+                <type value="token" />
+                <definition value="https://fhir.nhs.uk/SearchParameter/procedure-code"/>
+                <documentation value="Parent snomed procedure code for vaccinations" />
+            </searchParam>
         </resource>
        <resource>
             <type value="MedicationRequest" />
