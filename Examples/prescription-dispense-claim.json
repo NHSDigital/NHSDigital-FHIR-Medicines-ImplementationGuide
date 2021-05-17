@@ -127,9 +127,9 @@
                         "coverage": {
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "T1270"
+                                "value": "T1450"
                             },
-                            "display": "PPA"
+                            "display": "NHS BUSINESS SERVICES AUTHORITY"
                         }
                     }
                 ],
@@ -353,9 +353,9 @@
                         "coverage": {
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "T1270"
+                                "value": "T1450"
                             },
-                            "display": "PPA"
+                            "display": "NHS BUSINESS SERVICES AUTHORITY"
                         }
                     }
                 ],
