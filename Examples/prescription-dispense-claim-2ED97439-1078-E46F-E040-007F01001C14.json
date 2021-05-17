@@ -77,13 +77,19 @@
                     ]
                 },
                 "use": "claim",
+                "patient": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "2300992742"
+                    }
+                },
                 "created": "2011-10-25T13:45:35+00:00",
                 "provider": {
                     "identifier": {
-                        "system" : "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                         "value": "884562163557"
                     },
-                    "display" :"dummy full name"
+                    "display": "dummy full name"
                 },
                 "priority": {
                     "coding": [
@@ -126,7 +132,7 @@
                         "coding": [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/payeetype",
-                                "value": "provider",
+                                "code": "provider",
                                 "display": "Provider"
                             }
                         ]
@@ -238,7 +244,7 @@
                                         ]
                                     },
                                     {
-                                        "coding":  [
+                                        "coding": [
                                             {
                                                 "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                                                 "code": "not-paid",
@@ -274,13 +280,19 @@
                     ]
                 },
                 "use": "claim",
+                "patient": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "2300992742"
+                    }
+                },
                 "created": "2011-10-25T13:45:35+00:00",
                 "provider": {
                     "identifier": {
-                        "system" : "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                         "value": "884562163557"
                     },
-                    "display" :"dummy full name"
+                    "display": "dummy full name"
                 },
                 "priority": {
                     "coding": [
@@ -323,7 +335,7 @@
                         "coding": [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/payeetype",
-                                "value": "provider",
+                                "code": "provider",
                                 "display": "Provider"
                             }
                         ]
@@ -435,7 +447,7 @@
                                         ]
                                     },
                                     {
-                                        "coding":  [
+                                        "coding": [
                                             {
                                                 "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                                                 "code": "not-paid",
@@ -471,13 +483,19 @@
                     ]
                 },
                 "use": "claim",
+                "patient": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "2300992742"
+                    }
+                },
                 "created": "2011-10-25T13:45:35+00:00",
                 "provider": {
                     "identifier": {
-                        "system" : "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                         "value": "884562163557"
                     },
-                    "display" :"dummy full name"
+                    "display": "dummy full name"
                 },
                 "priority": {
                     "coding": [
@@ -520,7 +538,7 @@
                         "coding": [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/payeetype",
-                                "value": "provider",
+                                "code": "provider",
                                 "display": "Provider"
                             }
                         ]
@@ -623,10 +641,10 @@
                                 },
                                 "programCode": [
                                     {
-                                       "text" : "Flolan 1.5mg pdr & solv for soln for inj vials,Test additional information [AI is no longer a valid code]"
+                                        "text": "Flolan 1.5mg pdr & solv for soln for inj vials,Test additional information [AI is no longer a valid code]"
                                     },
                                     {
-                                        "coding":  [
+                                        "coding": [
                                             {
                                                 "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                                                 "code": "not-paid",

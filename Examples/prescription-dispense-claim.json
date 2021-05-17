@@ -125,7 +125,7 @@
                         "coding": [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/payeetype",
-                                "value": "provider",
+                                "code": "provider",
                                 "display": "Provider"
                             }
                         ]
@@ -369,7 +369,7 @@
                         "coding": [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/payeetype",
-                                "value": "provider",
+                                "code": "provider",
                                 "display": "Provider"
                             }
                         ]
