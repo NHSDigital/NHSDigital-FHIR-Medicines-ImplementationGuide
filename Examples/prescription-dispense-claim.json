@@ -120,6 +120,24 @@
                     },
                     "display": "The original prescription"
                 },
+                "payee": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+                                "value": "provider",
+                                "display": "Provider"
+                            }
+                        ]
+                    },
+                    "party": {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "AB123"
+                        },
+                        "display": "The Simple Pharmacy"
+                    }
+                },
                 "insurance": [
                     {
                         "sequence": 1,
@@ -345,6 +363,24 @@
                         "value": "06167339-9337-D030-0366-514A6A46DA17"
                     },
                     "display": "The original prescription"
+                },
+                "payee": {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/payeetype",
+                                "value": "provider",
+                                "display": "Provider"
+                            }
+                        ]
+                    },
+                    "party": {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "AB123"
+                        },
+                        "display": "The Simple Pharmacy"
+                    }
                 },
                 "insurance": [
                     {
