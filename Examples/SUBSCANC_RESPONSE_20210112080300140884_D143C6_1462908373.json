@@ -163,7 +163,7 @@
                     }
                 ],
                 "gender": "male",
-                "birthDate": "1977-03-27T00:00:00+00:00",
+                "birthDate": "1977-03-27",
                 "address": [
                     {
                         "use": "home",
