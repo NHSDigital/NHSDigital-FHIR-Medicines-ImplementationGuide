@@ -233,7 +233,7 @@
                         "coding": [
                             {
                                 "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "S0080:G0450:R5080"
+                                "code": "R5080"
                             }
                         ]
                     }

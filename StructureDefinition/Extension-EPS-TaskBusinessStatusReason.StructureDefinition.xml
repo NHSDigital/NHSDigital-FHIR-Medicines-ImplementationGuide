@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="7a8fe1be-015a-46b9-9f86-92ee25a014f9"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatusReason" />
   <name value="Extension-EPS-TaskBusinessStatusReason" />
   <status value="draft" />
