@@ -258,6 +258,7 @@
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />

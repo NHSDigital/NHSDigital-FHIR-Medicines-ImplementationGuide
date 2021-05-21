@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="fd471b8d-3b37-46a3-af00-568de477864a"/>
+  <id value="fd471b8d-3b37-46a3-af00-568de477864a" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
   <name value="NHSDigital-MedicationDispense" />
   <status value="draft" />
@@ -55,6 +55,11 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.identifier">
+      <path value="MedicationDispense.identifier" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.identifier.system">
       <path value="MedicationDispense.identifier.system" />
@@ -63,6 +68,10 @@
     <element id="MedicationDispense.identifier.value">
       <path value="MedicationDispense.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="MedicationDispense.status">
+      <path value="MedicationDispense.status" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.statusReason[x]">
       <path value="MedicationDispense.statusReason[x]" />
@@ -90,6 +99,7 @@
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense-Medication" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
@@ -100,6 +110,7 @@
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject.identifier.system">
       <path value="MedicationDispense.subject.identifier.system" />
@@ -112,6 +123,7 @@
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
       <min value="2" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.performer.actor">
       <path value="MedicationDispense.performer.actor" />
@@ -145,6 +157,7 @@
         <code value="Reference" />
         <aggregation value="referenced" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.authorizingPrescription.extension">
       <path value="MedicationDispense.authorizingPrescription.extension" />
@@ -172,6 +185,7 @@
     </element>
     <element id="MedicationDispense.type">
       <path value="MedicationDispense.type" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <description value="A ValueSet to identify the type of medication item status." />
@@ -186,6 +200,10 @@
       <path value="MedicationDispense.type.coding.code" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.quantity">
+      <path value="MedicationDispense.quantity" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationDispense.quantity.extension">
       <path value="MedicationDispense.quantity.extension" />
       <slicing>
@@ -199,7 +217,6 @@
     <element id="MedicationDispense.quantity.extension:runningTotal">
       <path value="MedicationDispense.quantity.extension" />
       <sliceName value="runningTotal" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -222,9 +239,14 @@
       <path value="MedicationDispense.quantity.code" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.daysSupply">
+      <path value="MedicationDispense.daysSupply" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationDispense.whenPrepared">
       <path value="MedicationDispense.whenPrepared" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.receiver">
       <path value="MedicationDispense.receiver" />
@@ -233,6 +255,7 @@
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.text">
       <path value="MedicationDispense.dosageInstruction.text" />
