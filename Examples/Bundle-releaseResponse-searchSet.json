@@ -1,0 +1,43 @@
+{
+    "resourceType": "Bundle",
+    "id": "E9DDBBC4-DA9A-C223-A2E3-909534332C69",
+    "meta": {
+        "lastUpdated": "2004-09-20T10:30:00.000+00:00"
+    },
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "BBC4E9DD-DA9A-C223-A2E3-332C69909534"
+    },
+    "type": "searchset",
+    "total": 1,
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120001",
+            "resource": {
+                "resourceType": "Bundle",
+                "meta": {
+                    "lastUpdated": "2020-11-02T01:43:30+00:00"
+                },
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription",
+                    "value": "ad945a29-85f8-439a-b590-6789719adc16"
+                },
+                "type": "message",
+                "timestamp": "2020-11-02T01:44:30+00:00",
+                "entry": [
+                    {
+                        "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
+                        "resource": {
+                            "resourceType": "MessageHeader",
+                            "eventCoding": {
+                                "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                                "code": "prescription-order",
+                                "display": "Prescription Order"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
