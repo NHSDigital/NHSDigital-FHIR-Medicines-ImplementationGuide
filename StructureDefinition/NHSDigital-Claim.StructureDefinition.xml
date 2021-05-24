@@ -26,6 +26,26 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim" />
   <derivation value="constraint" />
   <differential>
+    <element id="Claim.identifier">
+      <path value="Claim.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.status">
+      <path value="Claim.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.type">
+      <path value="Claim.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.patient">
+      <path value="Claim.patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.created">
+      <path value="Claim.created" />
+      <mustSupport value="true" />
+    </element>
     <element id="Claim.provider">
       <path value="Claim.provider" />
       <type>
@@ -35,10 +55,12 @@
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Claim.prescription">
       <path value="Claim.prescription" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.prescription.extension">
       <path value="Claim.prescription.extension" />
@@ -100,6 +122,7 @@
     <element id="Claim.payee">
       <path value="Claim.payee" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.payee.party">
       <path value="Claim.payee.party" />
@@ -116,6 +139,15 @@
     <element id="Claim.payee.party.identifier.value">
       <path value="Claim.payee.party.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="Claim.insurance">
+      <path value="Claim.insurance" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item">
+      <path value="Claim.item" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.extension">
       <path value="Claim.item.extension" />
@@ -138,6 +170,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.extension:prescriptionStatus">
       <path value="Claim.item.extension" />
@@ -148,6 +181,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.extension:prescriptionStatusReasson">
       <path value="Claim.item.extension" />
@@ -157,9 +191,15 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatusReason" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.sequence">
+      <path value="Claim.item.sequence" />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.productOrService">
       <path value="Claim.item.productOrService" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <description value="DMD Medication Code" />
@@ -168,6 +208,7 @@
     </element>
     <element id="Claim.item.modifier">
       <path value="Claim.item.modifier" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <description value="Prescription status" />
@@ -180,14 +221,24 @@
       <definition value="Describes possible reasons for someone not having to pay prescription charges." />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <description value="Prescription Charge Exemption" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
       </binding>
     </element>
+    <element id="Claim.item.quantity">
+      <path value="Claim.item.quantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.sequence">
+      <path value="Claim.item.detail.sequence" />
+      <mustSupport value="true" />
+    </element>
     <element id="Claim.item.detail.productOrService">
       <path value="Claim.item.detail.productOrService" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <description value="DMD Medication Code" />
@@ -205,6 +256,7 @@
       </slicing>
       <short value="Dispensing Endorsement and Charge Payment" />
       <definition value="Dispensing Endorsement  - Details of the endorsement(s) to support the claim for this medication item. &#xD;&#xA;&#xD;&#xA;Charge Payment - Details on whether a prescription charge was paid for the medication treatment." />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.programCode:exemptionEvidence">
       <path value="Claim.item.detail.programCode" />
@@ -245,6 +297,10 @@
     <element id="Claim.item.detail.programCode:dispensingEndorsement.coding.system">
       <path value="Claim.item.detail.programCode.coding.system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
+    </element>
+    <element id="Claim.item.detail.quantity">
+      <path value="Claim.item.detail.quantity" />
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.quantity.extension">
       <path value="Claim.item.detail.quantity.extension" />

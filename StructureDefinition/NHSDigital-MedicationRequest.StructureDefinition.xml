@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="db5e6fcc-2f29-42a8-ab29-18faa469d032"/>
+  <id value="db5e6fcc-2f29-42a8-ab29-18faa469d032" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
   <name value="NHSDigital-MedicationRequest" />
   <status value="draft" />
@@ -43,6 +43,7 @@
         <severity value="error" />
         <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
         <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
     </element>
     <element id="MedicationRequest.extension">
@@ -62,6 +63,7 @@
         <code value="Extension" />
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
@@ -71,6 +73,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.extension:prescriptionEndorsement">
       <path value="MedicationRequest.extension" />
@@ -79,6 +82,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
       <path value="MedicationRequest.extension" />
@@ -97,6 +101,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.extension:controlledDrug">
       <path value="MedicationRequest.extension" />
@@ -106,6 +111,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
@@ -117,6 +123,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.identifier:prescriptionOrderItem">
       <path value="MedicationRequest.identifier" />
@@ -135,9 +142,14 @@
       <path value="MedicationRequest.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
       <definition value="Mandatory for cancelled prescription items" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-status-reason" />
@@ -163,6 +175,7 @@
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.category.coding">
       <path value="MedicationRequest.category.coding" />
@@ -224,6 +237,7 @@
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Medication" />
         <aggregation value="bundled" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
@@ -231,6 +245,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.subject.reference">
       <path value="MedicationRequest.subject.reference" />
@@ -243,6 +258,7 @@
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
@@ -251,6 +267,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester.reference">
       <path value="MedicationRequest.requester.reference" />
@@ -270,6 +287,7 @@
       <definition value="The short form prescription identifier" />
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.groupIdentifier.extension">
       <path value="MedicationRequest.groupIdentifier.extension" />
@@ -312,6 +330,7 @@
       <definition value="The description of the overall pattern of the administration of the medication to the patient.&#xD;&#xA;Required for prescription-order" />
       <comment value="The type of prescription e.g. acute, continuous, etc. Was extension in STU3 https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-PrescriptionType-1 and Digital Medicine uses international codes, so continuous in place of repeat." />
       <min value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-course-of-therapy" />
@@ -333,6 +352,7 @@
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction.text">
       <path value="MedicationRequest.dosageInstruction.text" />
@@ -342,6 +362,7 @@
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.extension">
       <path value="MedicationRequest.dispenseRequest.extension" />
@@ -437,6 +458,7 @@
       <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done. In most cases this should default to false." />
       <comment value="Substituition is a mandatory requirement for EPS." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
       <path value="MedicationRequest.substitution.allowed[x]" />

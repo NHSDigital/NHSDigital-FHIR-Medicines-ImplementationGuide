@@ -30,13 +30,13 @@
     <medicationCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct" />
-            <code value="320176004" />
-            <display value="Salbutamol 100micrograms inhaler (product)" />
+            <code value="9207411000001106" />
+            <display value="Salbutamol 100micrograms/dose dry powder inhaler" />
         </coding>
         <coding>
             <system value="https://fhir.hl7.org.uk/Id/multilex-drug-codes" />
             <code value="ABCDE" />
-            <display value="Salbutamol 100micrograms inhaler (product)" />
+            <display value="Salbutamol 100micrograms/dose dry powder inhaler" />
         </coding>
     </medicationCodeableConcept>
     <subject>
@@ -76,9 +76,9 @@
         </extension>
         <quantity>
             <value value="200" />
-            <unit value="actuation(s)" />
+            <unit value="dose" />
             <system value="http://snomed.info/sct" />
-            <code value="732981002" />
+            <code value="3317411000001100" />
         </quantity>
         <performer>
             <identifier>

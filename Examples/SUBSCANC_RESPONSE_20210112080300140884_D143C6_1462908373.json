@@ -163,7 +163,7 @@
                     }
                 ],
                 "gender": "male",
-                "birthDate": "1977-03-27T00:00:00+00:00",
+                "birthDate": "1977-03-27",
                 "address": [
                     {
                         "use": "home",
@@ -233,7 +233,7 @@
                         "coding": [
                             {
                                 "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "S0080:G0450:R5080"
+                                "code": "R5080"
                             }
                         ]
                     }
