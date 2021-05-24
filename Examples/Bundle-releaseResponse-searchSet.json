@@ -12,7 +12,6 @@
     "total": 1,
     "entry": [
         {
-            "fullUrl": "urn:uuid:edea022a-2d81-11eb-adc1-0242ac120001",
             "resource": {
                 "resourceType": "Bundle",
                 "meta": {
