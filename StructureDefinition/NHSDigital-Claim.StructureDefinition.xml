@@ -231,6 +231,10 @@
       <path value="Claim.item.quantity" />
       <mustSupport value="true" />
     </element>
+    <element id="Claim.item.detail">
+      <path value="Claim.item.detail" />
+      <mustSupport value="true" />
+    </element>
     <element id="Claim.item.detail.sequence">
       <path value="Claim.item.detail.sequence" />
       <mustSupport value="true" />
