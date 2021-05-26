@@ -175,13 +175,11 @@
     <element id="Claim.item.extension:prescriptionStatus">
       <path value="Claim.item.extension" />
       <sliceName value="prescriptionStatus" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Claim.item.extension:prescriptionStatusReasson">
       <path value="Claim.item.extension" />
@@ -208,6 +206,7 @@
     </element>
     <element id="Claim.item.modifier">
       <path value="Claim.item.modifier" />
+      <min value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
