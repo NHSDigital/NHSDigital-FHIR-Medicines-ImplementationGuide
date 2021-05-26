@@ -68,10 +68,5 @@
                 "display": "ELLAND ROAD STADIUM - COVID VACCINATION CENTRE"
             }
         }
-    ],
-    "protocolApplied": [
-        {
-            "doseNumberPositiveInt": 1
-        }
     ]
 }
