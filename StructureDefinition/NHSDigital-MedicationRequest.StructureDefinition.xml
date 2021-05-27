@@ -383,18 +383,24 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
       <path value="MedicationRequest.dispenseRequest.validityPeriod.start" />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
-      <path value="MedicationRequest.dispenseRequest.validityPeriod.end" />
-      <min value="1" />
+    <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
+      <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
       <path value="MedicationRequest.dispenseRequest.quantity" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity.value">
       <path value="MedicationRequest.dispenseRequest.quantity.value" />
@@ -408,6 +414,10 @@
       <path value="MedicationRequest.dispenseRequest.quantity.code" />
       <min value="1" />
     </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.value">
       <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.value" />
       <min value="1" />
@@ -420,6 +430,7 @@
     <element id="MedicationRequest.dispenseRequest.performer">
       <path value="MedicationRequest.dispenseRequest.performer" />
       <definition value="Indicates the intended dispensing Pharmacy specified by the patient. Can be sourced from nominatedPharmacy in the Patient Demographics Service (PDS)" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.extension">
       <path value="MedicationRequest.dispenseRequest.performer.extension" />
