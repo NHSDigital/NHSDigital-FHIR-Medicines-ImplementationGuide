@@ -113,6 +113,18 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationRequest.extension:repeatDispensingInformation">
+      <path value="MedicationRequest.extension" />
+      <sliceName value="repeatDispensingInformation" />
+      <short value="Not to be supplied by prescriber" />
+      <definition value="Only used within EPS to supply details of last dispense of a Repeat Dispensing prescription." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/ExtensionRepeatDispensingInformation" />
+      </type>
+    </element>
     <element id="MedicationRequest.identifier">
       <path value="MedicationRequest.identifier" />
       <slicing>
