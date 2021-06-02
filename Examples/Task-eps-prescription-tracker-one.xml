@@ -1,0 +1,28 @@
+<Task xmlns="http://hl7.org/fhir">
+    <id value="bd1ca5c4-ff49-4f2a-9db4-f5dda0112084"/>
+    <meta>
+        <!-- lastEventDate -->
+        <lastUpdated value="2016-07-11T11:07:22+00:00"/>
+    </meta>
+    <status value="received"></status>
+    <statusReason>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status"/>
+            <code value="0002"/>
+            <display value="With Dispenser"/>
+        </coding>
+    </statusReason>
+    <intent value="order"></intent>
+    <groupIdentifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="A3B4D9-Z42475-11E6B+"></value>
+    </groupIdentifier>
+    <for>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/nhs-number" />
+            <value value="9912003489" />
+        </identifier>
+    </for>
+    <!-- prescriptionIssueDate -->
+    <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
+</Task>
