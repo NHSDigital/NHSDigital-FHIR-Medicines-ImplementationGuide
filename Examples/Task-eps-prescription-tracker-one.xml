@@ -17,6 +17,13 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="A3B4D9-Z42475-11E6B+"></value>
     </groupIdentifier>
+    <code>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
+            <code value="acute" />
+            <display value="Acute" />
+        </coding>
+    </code>
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />
