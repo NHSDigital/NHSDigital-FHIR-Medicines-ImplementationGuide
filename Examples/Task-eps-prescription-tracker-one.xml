@@ -4,6 +4,10 @@
         <!-- lastEventDate -->
         <lastUpdated value="2016-07-11T11:07:22+00:00"/>
     </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="A3B4D9-Z42475-11E6B+"></value>
+    </identifier>
     <status value="received"></status>
     <!-- probably use statusReason for pending Cancellation -->
     <statusReason>
@@ -16,10 +20,6 @@
         </coding>
     </businessStatus>
     <intent value="order"></intent>
-    <groupIdentifier>
-        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-        <value value="A3B4D9-Z42475-11E6B+"></value>
-    </groupIdentifier>
     <code>
         <!-- prescriptionTreatmentType -->
         <coding>
