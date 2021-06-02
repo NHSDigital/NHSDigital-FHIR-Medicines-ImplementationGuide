@@ -6,6 +6,8 @@
     </meta>
     <status value="received"></status>
     <!-- probably use statusReason for pending Cancellation -->
+    <statusReason>
+    </statusReason>
     <businessStatus>
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status"/>
@@ -34,11 +36,11 @@
     </for>
     <!-- prescriptionIssueDate -->
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
-    <in>
+    <input>
     <!-- Should we have a reference to the prescription-order here ???-->
-    </in>
-    <out>
+    </input>
+    <output>
     <!-- Similarly, should we have a reference to the dispense-notification here ???-->
     <!-- or insert horrid extension here -->    
-    </out>
+    </output>
 </Task>
