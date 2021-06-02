@@ -5,19 +5,21 @@
         <lastUpdated value="2016-07-11T11:07:22+00:00"/>
     </meta>
     <status value="received"></status>
-    <statusReason>
+    <!-- probably use statusReason for pending Cancellation -->
+    <businessStatus>
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status"/>
             <code value="0002"/>
             <display value="With Dispenser"/>
         </coding>
-    </statusReason>
+    </businessStatus>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="A3B4D9-Z42475-11E6B+"></value>
     </groupIdentifier>
     <code>
+        <!-- prescriptionTreatmentType -->
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
             <code value="acute" />
@@ -32,4 +34,11 @@
     </for>
     <!-- prescriptionIssueDate -->
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
+    <in>
+    <!-- Should we have a reference to the prescription-order here ???-->
+    </in>
+    <out>
+    <!-- Similarly, should we have a reference to the dispense-notification here ???-->
+    <!-- or insert horrid extension here -->    
+    </out>
 </Task>
