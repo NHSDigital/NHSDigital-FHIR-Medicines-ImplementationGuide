@@ -61,11 +61,13 @@
                 <display value="Prescription"/>
             </coding>
         </type>
-        <!-- This should be a valueReference to the original prescription-order message -->
-        <valueIdentifier>
-            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-            <value value="A3B4D9-Z42475-11E6B+"></value>
-        </valueIdentifier>
+        <!-- This should be a valueReference to the original prescription-order message. This would be used in the GET /MedicationRequest API -->
+      <valueReference>
+            <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122"/>
+                <value value="ee86a018-779c-4809-999f-a9d89cdfd30f"/>
+            </identifier>
+        </valueReference>
     </input>
     <output>
         <!-- Similarly, should we have a reference to the dispense-notification here ???-->
@@ -83,6 +85,12 @@
                 <display value="Dispensing medication"/>
             </coding>
         </type>
-        <!-- Should have a valueReference to the original prescription-order message -->
+        <!-- Should have a valueReference to the dispense-notification message. This would be used in the GET /MedicationDispesne API -->
+        <valueReference>
+            <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122"/>
+                <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38"/>
+            </identifier>
+        </valueReference>
     </output>
 </Task>
