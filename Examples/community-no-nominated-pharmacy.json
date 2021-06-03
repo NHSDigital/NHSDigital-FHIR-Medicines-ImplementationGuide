@@ -134,18 +134,12 @@
           },
           "dosageInstruction": [
             {
-              "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+              "text": "Inject 10 milligram - once a week - Subcutaneous route",
               "timing": {
                 "repeat": {
-                  "frequency": 5,
+                  "frequency": 1,
                   "period": 1,
-                  "periodUnit": "d",
-                  "boundsDuration": {
-                    "value": 10,
-                    "unit": "day",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "d"
-                  }
+                  "periodUnit": "wk"
                 }
               },
               "method": {
@@ -184,7 +178,7 @@
                 "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
-                  "code": "P1"
+                  "code": "0004"
                 }
               }
             ],
@@ -193,10 +187,10 @@
               "end": "2020-12-07"
             },
             "quantity": {
-              "value": 63,
-              "unit": "tablet",
+              "value": 4,
+              "unit": "pre-filled disposable injection",
               "system": "http://snomed.info/sct",
-              "code": "428673006"
+              "code": "3318611000001103"
             },
             "expectedSupplyDuration": {
               "value": 28,
@@ -427,7 +421,7 @@
           "telecom": [
             {
               "system": "phone",
-              "value": "01823 333444",
+              "value": "01823333444",
               "use": "work"
             }
           ]
