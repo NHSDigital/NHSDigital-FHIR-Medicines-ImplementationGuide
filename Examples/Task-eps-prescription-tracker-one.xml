@@ -34,13 +34,41 @@
             <value value="9912003489" />
         </identifier>
     </for>
+    <requester>
+        <!-- This is coming from the detailed prescription -->
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
+            <value value="C81007"></value>
+        </identifier>
+        <display value="VERNON STREET MEDICAL CTR"/>
+    </requester>
+    <owner>
+        <!-- This is coming from the detailed prescription -->
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
+            <value value="FA666"></value>
+        </identifier>
+        <display value="CROYDON PHARMACY"/>
+    </requester>
     <!-- prescriptionIssueDate -->
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
     <input>
-    <!-- Should we have a reference to the prescription-order here ???-->
+        <!-- Should we have a reference to the prescription-order here ???-->
+        <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="260885003"/>
+            <display value="Prescription"/>
+        </coding>
+        </type>
+        <!-- This should be a valueReference to the original message -->
+        <valueIdentifier>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+            <value value="A3B4D9-Z42475-11E6B+"></value>
+        </valueIdentifier>
     </input>
     <output>
-    <!-- Similarly, should we have a reference to the dispense-notification here ???-->
-    <!-- or insert horrid extension here -->    
+        <!-- Similarly, should we have a reference to the dispense-notification here ???-->
+        <!-- or insert horrid extension here -->
     </output>
 </Task>
