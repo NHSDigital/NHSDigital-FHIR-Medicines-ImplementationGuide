@@ -137,9 +137,9 @@
               "text": "10 milligram, Inject, Subcutaneous route, once weekly",
               "timing": {
                 "repeat": {
-                  "frequency": 5,
+                  "frequency": 1,
                   "period": 1,
-                  "periodUnit": "d",
+                  "periodUnit": "w",
                   "boundsDuration": {
                     "value": 10,
                     "unit": "day",
