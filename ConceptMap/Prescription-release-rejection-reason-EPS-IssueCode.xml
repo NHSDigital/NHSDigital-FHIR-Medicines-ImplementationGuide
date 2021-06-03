@@ -1,12 +1,12 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="Prescription-release-rejection-reason-EPS-IssueCode" />
     <url value="https://fhir.nhs.uk/ConceptMap/Prescription-release-rejection-reason-EPS-IssueCode" />
-    <version value="1.0.-" />
+    <version value="1.0.1" />
     <name value="Prescription-release-rejection-reason to EPS-IssueCode Map" />
     <title value="Prescription-release-rejection-reason to EPS-IssueCode Map" />
     <status value="draft" />
     <experimental value="true" />
-    <date value="2021-04-29" />
+    <date value="2021-06-03" />
     <publisher value="NHS Digital" />
     <contact>
         <name value="Interoperability Team" />
@@ -76,7 +76,7 @@
                 <equivalence value="equivalent" />
             </target>
         </element>
-        <element>
+    <!-- AEA-1376   <element>
             <code value="5888"></code>
             <display value="Invalid message" />
             <target>
@@ -84,8 +84,8 @@
                 <display value="Invalid message" />
                 <equivalence value="equivalent" />
             </target>
-        </element>
-        <element>
+        </element> -->
+      <!-- AEA-1376    <element>
             <code value="9006"></code>
             <display value="Format of date passed is invalid" />
             <target>
@@ -93,7 +93,7 @@
                 <display value="Format of date passed is invalid" />
                 <equivalence value="equivalent" />
             </target>
-        </element>
+        </element> -->
     </group>
     <group>
         <source value="https://fhir.nhs.uk/CodeSystem/EPS-task-prescription-release-rejection-reason" />
@@ -116,7 +116,7 @@
                 <equivalence value="equivalent" />
             </target>
         </element>
-        <element>
+    <!-- AEA-1376      <element>
             <code value="0099"></code>
             <display value="Incompatible version of Request. [Additional Information (if any)]" />
             <target>
@@ -124,6 +124,6 @@
                 <display value="Resource version mismatch" />
                 <equivalence value="equivalent" />
             </target>
-        </element>
+        </element> -->
     </group>
 </ConceptMap>
