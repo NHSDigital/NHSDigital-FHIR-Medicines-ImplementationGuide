@@ -55,13 +55,13 @@
     <input>
         <!-- Should we have a reference to the prescription-order here ???-->
         <type>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="260885003"/>
-            <display value="Prescription"/>
-        </coding>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="16076005"/>
+                <display value="Prescription"/>
+            </coding>
         </type>
-        <!-- This should be a valueReference to the original message -->
+        <!-- This should be a valueReference to the original prescription-order message -->
         <valueIdentifier>
             <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
             <value value="A3B4D9-Z42475-11E6B+"></value>
@@ -70,5 +70,21 @@
     <output>
         <!-- Similarly, should we have a reference to the dispense-notification here ???-->
         <!-- or insert horrid extension here -->
+        <!-- Should we have a reference to the prescription-order here ???-->
+        <extension>
+            <url value="https://fhir.nhs.uk/StructureDefinition/ExtensionRepeatDispensingInformation"/>
+            <extension>
+                <url value="dateLastDispensed"/>
+                <valueDate value="2014-05-07"/>
+            </extension>
+        </extension>
+        <type>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="373784005"/>
+                <display value="Dispensing medication"/>
+            </coding>
+        </type>
+        <!-- Should have a valueReference to the original prescription-order message -->
     </output>
 </Task>
