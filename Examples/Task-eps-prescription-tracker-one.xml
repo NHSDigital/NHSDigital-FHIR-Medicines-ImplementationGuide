@@ -27,6 +27,7 @@
             <code value="acute" />
             <display value="Acute" />
         </coding>
+        <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
     </code>
     <for>
         <identifier>
