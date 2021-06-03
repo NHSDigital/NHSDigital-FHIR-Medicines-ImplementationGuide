@@ -134,7 +134,7 @@
           },
           "dosageInstruction": [
             {
-              "text": "10 milligram, Inject, Subcutaneous route, once weekly",
+              "text": "Inject 10 milligram - once a week - Subcutaneous route",
               "timing": {
                 "repeat": {
                   "frequency": 1,
