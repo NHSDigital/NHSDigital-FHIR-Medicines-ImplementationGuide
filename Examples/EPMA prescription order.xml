@@ -1,99 +1,58 @@
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="d0a503d2-6809-4055-be82-308183e64734" />
+    <!-- not required prefer to use identifier for the messageID, see below
+    <id value="d0a503d2-6809-4055-be82-308183e64734" /> -->
+    <identifier>
+        <!-- this needs to use an extension to make it valid for UKCore -->
+        <system value="https://tools.ietf.org/html/rfc4122" />
+        <value value="d0a503d2-6809-4055-be82-308183e64734" />
+    </identifier>
     <type value="message" />
     <timestamp value="2021-05-07T16:15:32Z" />
     <!--    Message Header    -->
     <entry>
-        <fullUrl value="urn:message-header-167434" />
+        <fullUrl value="urn:uuid:2ccf6b1b-5fda-447c-bbe1-eef3d6285d63" />
         <resource>
             <MessageHeader>
-                <id value="urn:message-header-167434" />
+                <!-- uncessary <id value="urn:message-header-167434" />
                 <text>
                     <status value="generated" />
                     <div xmlns="http://www.w3.org/1999/xhtml"><p>The quick brown fox jumps over the lazy dog</p></div>
-                </text>
+                </text> -->
+                <!-- Strongly recommend you define an event to indicate a prescription order. This is required to help systems understand what the message is about -->
                 <eventCoding>
-                    <system value="http://hl7.org/fhir/message-events" />
-                    <code value="individual-requirements-1" />
-                    <display value="Individual Requirements" />
+                    <system value="https://fhir.hl7.org.uk//CodeSystem/message-event" />
+                    <code value="prescription-order" />
+                    <display value="Prescription Order" />
                 </eventCoding>
+                <!-- 
+                    
+                this to and from probably needs some work. 
+                
+                Suggest you refer implementers to NHS Digital guidance https://simplifier.net/guide/NHSDigital/NHSDigital-MessageHeader 
+                
+                For internal organisation messaging this is not that important, but for anything outside of those boundaries I would the NHSDigital-Message is a good start.
+
+                -->
                 <source>
                     <endpoint value="urn:nhs-uk:addressing:ods:T48NT" />
                 </source>
+                <destination>
+                <!-- where is this going to? probably include name and/or target device/system -->
+                </destination>
                 <focus>
-                    <reference value="urn:med-req-1023938" />
+                    <!-- don't have to use UUID's but its the convention we have used in STU3 and R4 -->
+                    <reference value="urn:uuid:0c8093aa-4369-4100-983b-d937f80e34b7" />
                 </focus>
             </MessageHeader>
         </resource>
     </entry>
-    <!-- Patient associated with the encounter. -->
-    <entry>
-        <fullUrl value="urn:patient-011223344" />
-        <resource>
-            <Patient>
-                <id value="urn:patient-011223344" />
-                <identifier>
-                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
-                    <value value="2377954310" />
-                </identifier>
-                <name>
-                    <use value="official" />
-                    <text value="Mrs Anne Teak" />
-                    <family value="Teak" />
-                    <given value="Anne" />
-                    <prefix value="Mrs" />
-                </name>
-                <gender value="female" />
-                <birthDate value="1956-02-04" />
-            </Patient>
-        </resource>
-    </entry>
-    <!-- Prescribing clinician associated with the encounter.  -->
-    <entry>
-        <fullUrl value="urn:staff-1112" />
-        <resource>
-            <Practitioner>
-                <id value="urn:staff-1112" />
-                <name>
-                    <text value="Dr Maikeu Well" />
-                    <family value="Well" />
-                    <given value="Maikeu" />
-                    <prefix value="Dr" />
-                </name>
-                <qualification>
-                    <code>
-                        <coding>
-                            <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
-                            <code value="2145879" />
-                            <display value="General Medical Council" />
-                        </coding>
-                    </code>
-                </qualification>
-            </Practitioner>
-        </resource>
-    </entry>
-    <!-- Medication prescribed  -->
-    <entry>
-        <fullUrl value="urn:medication-38769117" />
-        <resource>
-            <Medication>
-                <id value="urn:medication-38769117" />
-                <code>
-                    <coding>
-                        <system value="http://snomed.info/sct" />
-                        <code value="27658006" />
-                        <display value="Amoxicillin" />
-                    </coding>
-                </code>
-            </Medication>
-        </resource>
-    </entry>
     <!--  Medication Request  -->
+    <!-- moved to second entry as it's focus and makes it easier to read. Cosmetic-->
     <entry>
-        <fullUrl value="urn:med-req-1023938" />
+        <fullUrl value="urn:uuid:0c8093aa-4369-4100-983b-d937f80e34b7" />
         <resource>
             <MedicationRequest>
-                <id value="urn:med-req-1023938" />
+                <!-- Not required <id value="urn:med-req-1023938" /> -->
                 <status value="active" />
                 <intent value="order" />
                 <category>
@@ -104,20 +63,20 @@
                     </coding>
                 </category>
                 <medicationReference>
-                    <reference value="urn:medication-38769117" />
+                    <reference value="urn:uuid:84969b0d-d0a5-4e90-8a95-c08624f9912f" />
                     <display value="Amoxicillin" />
                 </medicationReference>
                 <subject>
-                    <reference value="urn:patient-011223344" />
+                    <reference value="urn:uuid:9e0dcc98-355b-448b-9a90-cf2a3953d65d" />
                     <display value="Mrs Anne Teak" />
                 </subject>
                 <authoredOn value="2020-05-15T15:00:00Z" />
                 <requester>
-                    <reference value="urn:staff-1112" />
+                    <reference value="urn:uuid:4013309b-55cb-482d-be8f-f26b3aeea933" />
                     <display value="Dr Maikeu Well" />
                 </requester>
                 <recorder>
-                    <reference value="urn:staff-1112" />
+                    <reference value="urn:uuid:4013309b-55cb-482d-be8f-f26b3aeea933" />
                     <display value="Dr Maikeu Well" />
                 </recorder>
                 <dosageInstruction>
@@ -150,4 +109,66 @@
             </MedicationRequest>
         </resource>
     </entry>
+    <!-- Patient associated with the encounter. -->
+    <entry>
+        <!-- not a valid urn -->
+        <fullUrl value="urn:uuid:9e0dcc98-355b-448b-9a90-cf2a3953d65d" />
+        <resource>
+            <Patient>
+                <!-- not required    <id value="urn:patient-011223344" /> -->
+                <identifier>
+                    <!-- this needs to use an extension to make it valid for UKCore -->
+                    <system value="https://fhir.nhs.uk/Id/nhs-number" />
+                    <value value="2377954310" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <!-- not required   <text value="Mrs Anne Teak" /> -->
+                    <family value="Teak" />
+                    <given value="Anne" />
+                    <prefix value="Mrs" />
+                </name>
+                <gender value="female" />
+                <birthDate value="1956-02-04" />
+            </Patient>
+        </resource>
+    </entry>
+    <!-- Prescribing clinician associated with the encounter.  -->
+    <entry>
+        <fullUrl value="urn:uuid:4013309b-55cb-482d-be8f-f26b3aeea933" />
+        <resource>
+            <Practitioner>
+                <!-- not required   <id value="urn:staff-1112" /> -->
+                <!-- was under qualifcation, should be an identifier -->
+                <identifier>
+                    <system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+                    <value value="2145879" />
+                </identifier>
+                <name>
+                    <!-- not necessary  <text value="Dr Maikeu Well" /> -->
+                    <family value="Well" />
+                    <given value="Maikeu" />
+                    <prefix value="Dr" />
+                </name>
+            </Practitioner>
+        </resource>
+    </entry>
+    <!-- Medication prescribed  -->
+    <entry>
+        <fullUrl value="urn:uuid:84969b0d-d0a5-4e90-8a95-c08624f9912f" />
+        <resource>
+            <Medication>
+                <!-- would recommend removing this and using medicationCodeableConcept in MedicationRequest -->
+                <!-- not necessary <id value="urn:medication-38769117" /> -->
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="27658006" />
+                        <display value="Amoxicillin" />
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+
 </Bundle>
