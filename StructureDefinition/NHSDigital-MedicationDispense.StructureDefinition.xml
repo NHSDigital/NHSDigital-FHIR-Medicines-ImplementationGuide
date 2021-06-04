@@ -122,7 +122,6 @@
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
-      <min value="2" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.performer.actor">
@@ -254,7 +253,6 @@
     </element>
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.dosageInstruction.text">

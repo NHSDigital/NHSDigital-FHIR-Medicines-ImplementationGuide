@@ -221,8 +221,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "3416211000001106",
-                            "display": "Salbutamol 100micrograms/dose inhaler (Sandoz Ltd) 200 dose"
+                            "code": "35936511000001108",
+                            "display": "Salbutamol 100micrograms/dose inhaler"
                         }
                     ]
                 },
@@ -234,28 +234,6 @@
                     },
                     "display": "Miss Bernie Kanfeld"
                 },
-                "performer": [
-                    {
-                        "actor": {
-                            "type" : "Practitioner",
-                            "identifier":  {
-                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                                "value": "7654321"
-                            },
-                            "display": "Mr Peter Potion"
-                        }
-                    },
-                    {
-                        "actor": {
-                            "type": "Organization",
-                            "identifier":  {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "AB123"
-                            },
-                            "display": "The Simple Pharmacy"
-                        }
-                    }
-                ],
                 "authorizingPrescription": [
                     {
                         "extension": [
@@ -293,46 +271,7 @@
                             "display": "Item fully dispensed"
                         }
                     ]
-                },
-                "quantity": {
-                    "value": 200,
-                    "unit": "unit dose",
-                    "system": "http://snomed.info/sct",
-                    "code": "408102007"
-                },
-                "daysSupply": {
-                    "value": 40,
-                    "unit": "Day",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "d"
-                },
-                "whenPrepared": "2004-09-16T16:30:00+00:00",
-                "dosageInstruction": [
-                    {
-                        "text": "5 times a day for 40 days",
-                        "timing": {
-                            "repeat": {
-                                "boundsDuration": {
-                                    "value": 40,
-                                    "unit": "d"
-                                },
-                                "frequency": 5,
-                                "period": 1,
-                                "periodUnit": "d"
-                            }
-                        },
-                        "doseAndRate": [
-                            {
-                                "doseQuantity": {
-                                    "value": 1,
-                                    "unit": "unit dose",
-                                    "system": "http://snomed.info/sct",
-                                    "code": "408102007"
-                                }
-                            }
-                        ]
-                    }
-                ]
+                }
             }
         }
     ]
