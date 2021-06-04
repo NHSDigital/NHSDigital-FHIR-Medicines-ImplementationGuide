@@ -5,7 +5,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="EPS-task-prescription-release-rejection-reason" />
     </identifier>
-    <version value="6.2.1" />
+    <version value="16.34" />
     <name value="EPS Prescription Release Rejection Reason" />
     <title value="EPS Prescription Release Rejection Reason" />
     <status value="draft" />
