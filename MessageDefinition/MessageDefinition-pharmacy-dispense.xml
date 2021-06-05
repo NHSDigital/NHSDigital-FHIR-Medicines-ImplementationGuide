@@ -19,6 +19,6 @@
         <code value="MedicationDispense"></code>
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense"></profile>
         <min value="1"></min>
-        <max value="4"></max>
+        <max value="*"></max>
     </focus>
 </MessageDefinition>
