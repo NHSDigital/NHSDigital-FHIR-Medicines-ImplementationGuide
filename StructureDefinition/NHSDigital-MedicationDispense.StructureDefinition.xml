@@ -57,6 +57,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationDispense.extension:repeatInformation">
+      <path value="MedicationDispense.extension" />
+      <sliceName value="repeatInformation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation" />
+      </type>
+    </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
       <mustSupport value="true" />

@@ -1,0 +1,9 @@
+{
+  "updated": "2021-06-07T15:14:37.4430424+01:00",
+  "dependencies": {
+    "uk.nhsdigital.r4": "2.1.14-discovery",
+    "uk.core.r4.v2": "2.0.8",
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "missing": {}
+}
