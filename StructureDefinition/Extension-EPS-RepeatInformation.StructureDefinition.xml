@@ -24,36 +24,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:dateLastDispensed">
-      <path value="Extension.extension" />
-      <sliceName value="dateLastDispensed" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:dateLastDispensed.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="dateLastDispensed" />
-    </element>
-    <element id="Extension.extension:dateLastDispensed.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="date" />
-      </type>
-    </element>
-    <element id="Extension.extension:dispenseNotificationReference">
-      <path value="Extension.extension" />
-      <sliceName value="dispenseNotificationReference" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:dispenseNotificationReference.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="dispenseNotificationReference" />
-    </element>
-    <element id="Extension.extension:dispenseNotificationReference.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <type>
-        <code value="Identifier" />
-      </type>
-    </element>
     <element id="Extension.extension:numberOfRepeatsAllowed">
       <path value="Extension.extension" />
       <sliceName value="numberOfRepeatsAllowed" />
