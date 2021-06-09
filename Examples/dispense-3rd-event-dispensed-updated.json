@@ -1,0 +1,287 @@
+{
+    "resourceType": "Bundle",
+    "id": "1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98",
+    "identifier": {
+        "system": "https://tools.ietf.org/html/rfc4122",
+        "value": "1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98"
+    },
+    "type": "message",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:E9A71955-53BA-B15A-D4B6-BEA99D5017B3",
+            "resource": {
+                "resourceType": "MessageHeader",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-replacementOf",
+                        "valueIdentifier": {
+                            "system": "https://tools.ietf.org/html/rfc4122",
+                            "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+                        }
+                    }
+                ],
+                "eventCoding": {
+                    "system": "https://fhir.nhs.uk/CodeSystem/message-event",
+                    "code": "dispense-notification-update",
+                    "display": "Dispense Notification Update"
+                },
+                "destination": [
+                    {
+                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
+                        "receiver": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "T1450"
+                            },
+                            "display": "NHS BUSINESS SERVICES AUTHORITY"
+                        }
+                    }
+                ],
+                "sender": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    },
+                    "display": "The Pharmacy System"
+                },
+                "source": {
+                    "name": "The Pharmacy System",
+                    "endpoint": "urn:nhs-uk:addressing:ods:VNE51"
+                },
+                "reason": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
+                            "code": "notification",
+                            "display": "Notification"
+                        }
+                    ]
+                },
+                "response": {
+                    "identifier": "6b1d6d0f-f154-48c9-80e5-48f041585185",
+                    "code": "ok"
+                },
+                "focus": [
+                    {
+                        "reference": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29"
+                    },
+                    {
+                        "reference": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                        "valueCoding": {
+                            "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                            "code": "0006",
+                            "display": "Dispensed"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
+                        "value": "228e8360-c490-4de6-a33b-daeb6a8d904a"
+                    }
+                ],
+                "status": "completed",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "2274211000001101",
+                            "display": "Paracetamol 500mg soluble tablets (Kent Pharmaceuticals Ltd) 16 tablet 2 x 8 tablets"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    },
+                    "display": "Miss Bernie Kanfeld"
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "type": "Practitioner",
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                                "value": "4321765"
+                            },
+                            "display": "Miss Wanda Maximoff"
+                        }
+                    },
+                    {
+                        "actor": {
+                            "type": "Organization",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "AB123"
+                            },
+                            "display": "The Simple Pharmacy"
+                        }
+                    }
+                ],
+                "authorizingPrescription": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
+                                "extension": [
+                                    {
+                                        "url": "shortForm",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                                            "value": "82D996-C81010-11DB12"
+                                        }
+                                    },
+                                    {
+                                        "url": "UUID",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription",
+                                            "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                            "value": "5cb17f5a-11ac-4e18-825f-6470467238b3"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                            "code": "0001",
+                            "display": "Item fully dispensed"
+                        }
+                    ]
+                },
+                "quantity": {
+                    "value": 16,
+                    "unit": "tablet",
+                    "system": "http://snomed.info/sct",
+                    "code": "732936001"
+                },
+                "daysSupply": {
+                    "value": 4,
+                    "unit": "Day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenPrepared": "2020-06-25T15:30:00+00:00",
+                "dosageInstruction": [
+                    {
+                        "text": "100 tablets. One tablet to be taken four times a day",
+                        "timing": {
+                            "repeat": {
+                                "frequency": 5,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "26643006",
+                                    "display": "Oral"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17",
+            "resource": {
+                "resourceType": "MedicationDispense",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
+                        "valueCoding": {
+                            "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                            "code": "0006",
+                            "display": "Dispensed"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
+                        "value": "06167339-9337-D030-0366-514A6A46DA17"
+                    }
+                ],
+                "status": "completed",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "35936511000001108",
+                            "display": "Salbutamol 100micrograms/dose inhaler"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    },
+                    "display": "Miss Bernie Kanfeld"
+                },
+                "authorizingPrescription": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
+                                "extension": [
+                                    {
+                                        "url": "shortForm",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                                            "value": "82D996-C81010-11DB12"
+                                        }
+                                    },
+                                    {
+                                        "url": "UUID",
+                                        "valueIdentifier": {
+                                            "system": "https://fhir.nhs.uk/Id/prescription",
+                                            "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                            "value": "5cb17f5a-11ac-4e18-825f-6470467238b3"
+                        }
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                            "code": "0001",
+                            "display": "Item fully dispensed"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
