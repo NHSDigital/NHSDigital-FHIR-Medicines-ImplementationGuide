@@ -33,10 +33,10 @@
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "VNE51"
                     },
-                    "display": "The Pharmacy System"
+                    "display": "The Simple Pharmacy"
                 },
                 "source": {
-                    "name": "The Pharmacy System",
+                    "name": "The Simple Pharmacy",
                     "endpoint": "urn:nhs-uk:addressing:ods:VNE51"
                 },
                 "reason": {
@@ -116,7 +116,7 @@
                             "type": "Organization",
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "AB123"
+                                "value": "VNE51"
                             },
                             "display": "The Simple Pharmacy"
                         }
@@ -250,7 +250,7 @@
                             "type": "Organization",
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "AB123"
+                                "value": "VNE51"
                             },
                             "display": "The Simple Pharmacy"
                         }

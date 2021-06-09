@@ -7,7 +7,7 @@
       "valueReference" : {
         "identifier" : {
           "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-          "value": "AB123"         
+          "value": "VNE51"         
         },
         "display" : "The Simple Pharmacy"
       }

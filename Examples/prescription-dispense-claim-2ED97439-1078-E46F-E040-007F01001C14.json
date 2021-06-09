@@ -36,7 +36,7 @@
                     "display": "34-36 LOUTH ROAD"
                 },
                 "source": {
-                    "name": "The Pharmacy System",
+                    "name": "The Simple Pharmacy",
                     "endpoint": "urn:nhs-uk:addressing:ods:FM096a"
                 },
                 "response": {

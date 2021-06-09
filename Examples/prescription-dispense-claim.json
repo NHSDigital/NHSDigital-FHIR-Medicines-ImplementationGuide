@@ -31,13 +31,13 @@
                 "sender": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "AB123"
+                        "value": "VNE51"
                     },
-                    "display": "The Pharmacy System"
+                    "display": "The Simple Pharmacy"
                 },
                 "source": {
-                    "name": "The Pharmacy System",
-                    "endpoint": "urn:nhs-uk:addressing:ods:AB123"
+                    "name": "The Simple Pharmacy",
+                    "endpoint": "urn:nhs-uk:addressing:ods:VNE51"
                 },
                 "response": {
                     "identifier": "9FBC4386-924F-4025-B8B3-E75819446A45",
@@ -133,7 +133,7 @@
                     "party": {
                         "identifier": {
                             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "AB123"
+                            "value": "VNE51"
                         },
                         "display": "The Simple Pharmacy"
                     }
@@ -377,7 +377,7 @@
                     "party": {
                         "identifier": {
                             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "AB123"
+                            "value": "VNE51"
                         },
                         "display": "The Simple Pharmacy"
                     }
@@ -490,7 +490,7 @@
                 "organization": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "AB123"
+                        "value": "VNE51"
                     },
                     "display": "The Simple Pharmacy"
                 },
