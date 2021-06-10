@@ -60,7 +60,8 @@
     <element id="MedicationDispense.extension:repeatInformation">
       <path value="MedicationDispense.extension" />
       <sliceName value="repeatInformation" />
-      <min value="0" />
+      <short value="Repeat Prescribing and Dispensing" />
+      <definition value="Mandatory for Repeat Prescribing and Repeat Dispensing" />
       <max value="1" />
       <type>
         <code value="Extension" />

@@ -116,7 +116,8 @@
     <element id="MedicationRequest.extension:dispensingInformation">
       <path value="MedicationRequest.extension" />
       <sliceName value="dispensingInformation" />
-      <min value="0" />
+      <short value="For EPS use only" />
+      <definition value="Not to be populated by prescribing systems. Tracking systems only for repeat dispensing." />
       <max value="1" />
       <type>
         <code value="Extension" />
