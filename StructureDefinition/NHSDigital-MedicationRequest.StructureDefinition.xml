@@ -478,7 +478,7 @@
       <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier.value">
-      <path value="MedicationRequest.dispenseRequest.performer.identifier.value" />
+      <path value="MedicationRequest.dispenseRequest.performer.identifier.value"  />
       <min value="1" />
     </element>
     <element id="MedicationRequest.substitution">
