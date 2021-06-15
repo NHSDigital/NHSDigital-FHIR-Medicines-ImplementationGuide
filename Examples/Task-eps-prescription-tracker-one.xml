@@ -8,6 +8,10 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="A3B4D9-Z42475-11E6B+"></value>
     </identifier>
+    <groupIdentifier>
+        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+        <value value="A3B4D9-Z42475-11E6B+"></value>
+    </groupIdentifier>
     <status value="received"></status>
     <!-- probably use statusReason for pending Cancellation -->
     <statusReason>
