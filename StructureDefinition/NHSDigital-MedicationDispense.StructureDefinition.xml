@@ -36,6 +36,16 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationDispense">
+      <path value="MedicationDispense" />
+      <constraint>
+        <key value="eps-2" />
+        <severity value="error" />
+        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
+        <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
+      </constraint>
+    </element>
     <element id="MedicationDispense.extension">
       <path value="MedicationDispense.extension" />
       <slicing>
@@ -122,6 +132,12 @@
         <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
+      <constraint>
+        <key value="eps-3" />
+        <severity value="error" />
+        <human value="An identifier or resource reference must be provided" />
+        <expression value="(reference.exists() or identifier.exists())" />
+      </constraint>
     </element>
     <element id="MedicationDispense.subject.identifier.system">
       <path value="MedicationDispense.subject.identifier.system" />
@@ -143,6 +159,12 @@
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
       </type>
+      <constraint>
+        <key value="eps-4" />
+        <severity value="error" />
+        <human value="An identifier or resource reference must be provided" />
+        <expression value="(reference.exists() or identifier.exists())" />
+      </constraint>
     </element>
     <element id="MedicationDispense.performer.actor.identifier">
       <path value="MedicationDispense.performer.actor.identifier" />
