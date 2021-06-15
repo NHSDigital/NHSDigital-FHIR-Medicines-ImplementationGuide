@@ -1,6 +1,6 @@
 {
     "name": "uk.nhsdigital.medicines.r4",
-    "version": "2.1.12-alpha",
+    "version": "2.1.15-alpha",
     "description": "NHS Digital FHIR Medicines Implementation Guide",
     "author": "nhsdigital",
     "fhirVersions": [
