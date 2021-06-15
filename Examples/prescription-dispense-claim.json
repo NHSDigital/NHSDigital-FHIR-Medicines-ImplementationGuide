@@ -482,7 +482,7 @@
                 "resourceType": "PractitionerRole",
                 "practitioner": {
                     "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                         "value": "156968544265"
                     },
                     "display": "Mr Peter Potion"
