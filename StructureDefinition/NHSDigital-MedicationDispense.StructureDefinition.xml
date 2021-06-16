@@ -41,7 +41,7 @@
       <constraint>
         <key value="eps-2" />
         <severity value="error" />
-        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
+        <human value="MedicationDispense - Only one of medicationReference or medicationCodeableConcept should be provided" />
         <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
       </constraint>
@@ -135,7 +135,7 @@
       <constraint>
         <key value="eps-3" />
         <severity value="error" />
-        <human value="An identifier or resource reference must be provided" />
+        <human value="MedicationDispense.subject - An identifier or resource reference must be provided" />
         <expression value="(reference.exists() or identifier.exists())" />
       </constraint>
     </element>
@@ -162,7 +162,7 @@
       <constraint>
         <key value="eps-4" />
         <severity value="error" />
-        <human value="An identifier or resource reference must be provided" />
+        <human value="MedicationDispense.performer.actor - An identifier or resource reference must be provided" />
         <expression value="(reference.exists() or identifier.exists())" />
       </constraint>
     </element>
