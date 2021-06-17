@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fd471b8d-3b37-46a3-af00-568de477864a" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
-  <name value="NHSDigital-MedicationDispense"  />
+  <name value="NHSDigital-MedicationDispense" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -36,16 +36,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationDispense" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationDispense">
-      <path value="MedicationDispense" />
-      <constraint>
-        <key value="eps-2" />
-        <severity value="error" />
-        <human value="MedicationDispense - Only one of medicationReference or medicationCodeableConcept should be provided" />
-        <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
-        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
-      </constraint>
-    </element>
     <element id="MedicationDispense.extension">
       <path value="MedicationDispense.extension" />
       <slicing>
@@ -132,12 +122,6 @@
         <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
-      <constraint>
-        <key value="eps-3" />
-        <severity value="error" />
-        <human value="MedicationDispense.subject - An identifier or resource reference must be provided" />
-        <expression value="(reference.exists() or identifier.exists())" />
-      </constraint>
     </element>
     <element id="MedicationDispense.subject.identifier.system">
       <path value="MedicationDispense.subject.identifier.system" />
@@ -159,12 +143,6 @@
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner" />
       </type>
-      <constraint>
-        <key value="eps-4" />
-        <severity value="error" />
-        <human value="MedicationDispense.performer.actor - An identifier or resource reference must be provided" />
-        <expression value="(reference.exists() or identifier.exists())" />
-      </constraint>
     </element>
     <element id="MedicationDispense.performer.actor.identifier">
       <path value="MedicationDispense.performer.actor.identifier" />
@@ -287,6 +265,10 @@
     <element id="MedicationDispense.dosageInstruction">
       <path value="MedicationDispense.dosageInstruction" />
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.dosageInstruction.id">
+      <path value="MedicationDispense.dosageInstruction.id" />
+      <max value="0" />
     </element>
     <element id="MedicationDispense.dosageInstruction.text">
       <path value="MedicationDispense.dosageInstruction.text" />
