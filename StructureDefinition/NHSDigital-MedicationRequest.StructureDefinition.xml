@@ -41,7 +41,7 @@
       <constraint>
         <key value="eps-1" />
         <severity value="error" />
-        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
+        <human value="MedicationRequest - Only one of medicationReference or medicationCodeableConcept should be provided" />
         <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
@@ -278,6 +278,12 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
       </type>
+       <constraint>
+        <key value="eps-5" />
+        <severity value="error" />
+        <human value="MedicationRequest.requester - An identifier or resource reference must be provided" />
+        <expression value="(reference.exists() or identifier.exists())" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester.reference">
@@ -476,7 +482,7 @@
       <fixedUri value="https://fhir.nhs.uk/Id/ods-organization-code" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.identifier.value">
-      <path value="MedicationRequest.dispenseRequest.performer.identifier.value" />
+      <path value="MedicationRequest.dispenseRequest.performer.identifier.value"  />
       <min value="1" />
     </element>
     <element id="MedicationRequest.substitution">

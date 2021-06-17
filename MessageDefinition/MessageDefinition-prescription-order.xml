@@ -14,7 +14,7 @@
         <code value="prescription-order" />
         <display value="Prescription Order" />
     </eventCoding>
-    <category value="notification" />
+    <category value="consequence" />
     <focus>
         <code value="MedicationRequest" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
