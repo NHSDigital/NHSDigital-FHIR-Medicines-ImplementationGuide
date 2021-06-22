@@ -45,6 +45,12 @@
         <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
+      <constraint>
+        <key value="eps-cd1" />
+        <severity value="error" />
+        <human value="For schedule 2 or 3 Controlled Drugs, the quantity must be expressed in words" />
+        <expression value="(((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code='CD2') and  ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='quantityWords').exists())) or  (((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code='CD3') and  ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='quantityWords').exists()))  or   ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code != 'CD2' and (extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code != 'CD3')" />
+      </constraint>
     </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
