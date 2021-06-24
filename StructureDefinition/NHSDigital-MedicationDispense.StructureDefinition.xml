@@ -121,11 +121,18 @@
         <aggregation value="referenced" />
         <aggregation value="bundled" />
       </type>
+      <constraint>
+        <key value="eps-2" />
+        <severity value="error" />
+        <human value="An identifier plus display or resource reference must be provided" />
+        <expression value="(reference.exists() or (identifier.exists() and display.exists()))" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.subject.identifier.system">
       <path value="MedicationDispense.subject.identifier.system" />
       <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
     </element>
     <element id="MedicationDispense.subject.identifier.value">
       <path value="MedicationDispense.subject.identifier.value" />
@@ -139,7 +146,6 @@
       <path value="MedicationDispense.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner" />
       </type>
