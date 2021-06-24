@@ -32,7 +32,8 @@
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "2300992742"
-        }
+        },
+        "display" : "Mrs Chi Edinburgh"
     },
     "performer": [
         {
