@@ -54,7 +54,7 @@
       </constraint>
       <constraint>
         <key value="eps-5" />
-        <severity value="error" />
+        <severity value="warning" />
         <human value="Extension(responsiblePractitioner) - An identifier or resource reference must be provided" />
         <expression value="((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).exists())  and (((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).value.reference.exists() or ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).value.system.exists())) )" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
