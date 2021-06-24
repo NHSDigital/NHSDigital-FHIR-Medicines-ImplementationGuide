@@ -41,21 +41,21 @@
       <constraint>
         <key value="eps-1" />
         <severity value="error" />
-        <human value="Only one of medicationReference or medicationCodeableConcept should be provided" />
+        <human value="medication[x] - Only one of medicationReference or medicationCodeableConcept should be provided" />
         <expression value="(medicationReference.exists() and medicationCodeableConcept.exists().not()) or (medicationReference.exists().not() and medicationCodeableConcept.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
       <constraint>
         <key value="eps-cd1" />
         <severity value="error" />
-        <human value="For schedule 2 or 3 Controlled Drugs, the quantity must be expressed in words" />
+        <human value="Extension(controlledDrug) - For schedule 2 or 3 Controlled Drugs, the quantity must be expressed in words" />
         <expression value="((((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code='CD2') and  ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='quantityWords').exists())) or  (((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code='CD3') and  ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='quantityWords').exists())) or ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code != 'CD2' and (extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug')).extension.where(url='schedule').value.code != 'CD3'))" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
       <constraint>
         <key value="eps-5" />
         <severity value="error" />
-        <human value="An identifier or resource reference must be provided" />
+        <human value="Extension(responsiblePractitioner) - An identifier or resource reference must be provided" />
         <expression value="((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).exists())  and (((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).value.reference.exists() or ((extension.where(url = 'https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner')).value.system.exists())) )" />
       </constraint>
     </element>
@@ -303,7 +303,7 @@
       <constraint>
         <key value="eps-3" />
         <severity value="error" />
-        <human value="An identifier plus display or resource reference must be provided" />
+        <human value="requester - An identifier plus display or resource reference must be provided" />
         <expression value="(reference.exists() or (identifier.exists() and display.exists()))" />
       </constraint>
       <mustSupport value="true" />
@@ -317,7 +317,7 @@
       <constraint>
         <key value="eps-4" />
         <severity value="error" />
-        <human value="An identifier plus display or resource reference must be provided" />
+        <human value="recorder - An identifier plus display or resource reference must be provided" />
         <expression value="(reference.exists() or (identifier.exists() and display.exists()))" />
       </constraint>
     </element>
