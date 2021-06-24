@@ -15,23 +15,6 @@
             "fullUrl": "urn:uuid:4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
             "resource": {
                 "resourceType": "MessageHeader",
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-messageId",
-                        "valueIdentifier": {
-                            "system": "https://tools.ietf.org/html/rfc4122",
-                            "value": "49f3405b-b3c9-477a-bd1e-7fba0c84f981"
-                        }
-                    },
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-Message-Status",
-                        "valueCoding": {
-                            "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    }
-                ],
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                     "code": "prescription-order-response",
@@ -41,17 +24,6 @@
                     {
                         "endpoint": "urn:nhs-uk:addressing:ods:RBA",
                         "receiver": {
-                            "extension": [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-LocalPart",
-                                    "valueReference": {
-                                        "identifier": {
-                                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                            "value": "A99968"
-                                        }
-                                    }
-                                }
-                            ],
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "RBA"

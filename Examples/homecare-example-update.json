@@ -15,23 +15,6 @@
             "fullUrl": "urn:uuid:4f51f97f-a4b8-4756-bac9-b9bc7af8dc23",
             "resource": {
                 "resourceType": "MessageHeader",
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-messageId",
-                        "valueIdentifier": {
-                            "system": "https://tools.ietf.org/html/rfc4122",
-                            "value": "35a6e463-60cf-482e-84b7-ad41b55e740d"
-                        }
-                    },
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Spine-Message-Status",
-                        "valueCoding": {
-                            "system": "https://fhir.hl7.org.uk/CodeSystem/message-status",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    }
-                ],
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
                     "code": "prescription-order-update",
