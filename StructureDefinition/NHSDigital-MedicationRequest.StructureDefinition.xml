@@ -56,7 +56,7 @@
         <key value="eps-5" />
         <severity value="warning" />
         <human value="Extension(responsiblePractitioner) - An identifier or resource reference must be provided" />
-        <expression value="extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').exists() and (extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').value.reference.exists() or extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').value.system.exists())" />
+        <expression value="extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').exists().not() or (extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').value.reference.exists() or extension('https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner').value.system.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
     </element>
