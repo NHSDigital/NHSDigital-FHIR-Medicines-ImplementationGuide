@@ -397,6 +397,10 @@
       <path value="MedicationRequest.courseOfTherapyType.coding.code" />
       <min value="1" />
     </element>
+    <element id="MedicationRequest.note">
+      <path value="MedicationRequest.note" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
       <min value="1" />

@@ -67,6 +67,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
@@ -164,6 +165,25 @@
     </element>
     <element id="MedicationDispense.performer.actor.display">
       <path value="MedicationDispense.performer.actor.display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.location">
+      <path value="MedicationDispense.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Location" />
+      </type>
+    </element>
+    <element id="MedicationDispense.location.identifier.system">
+      <path value="MedicationDispense.location.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.location.identifier.value">
+      <path value="MedicationDispense.location.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.location.display">
+      <path value="MedicationDispense.location.display" />
       <min value="1" />
     </element>
     <element id="MedicationDispense.authorizingPrescription">
