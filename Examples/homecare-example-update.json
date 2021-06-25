@@ -455,6 +455,13 @@
                             }
                         ]
                     }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01234567890",
+                        "use": "work"
+                    }
                 ]
             }
         }
