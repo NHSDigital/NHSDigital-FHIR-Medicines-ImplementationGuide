@@ -32,7 +32,8 @@
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9453740519"
-        }
+        },
+        "display": "MISS ETTA CORY"
     },
     "performer": [
         {
