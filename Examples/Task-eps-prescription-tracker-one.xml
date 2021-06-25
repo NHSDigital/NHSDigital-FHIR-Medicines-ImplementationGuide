@@ -4,14 +4,11 @@
         <!-- lastEventDate -->
         <lastUpdated value="2016-07-11T11:07:22+00:00"/>
     </meta>
+    <!-- internal id, may be prescription short form id -->
     <identifier>
-        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-        <value value="A3B4D9-Z42475-11E6B+"></value>
+        <system value="https://tools.ietf.org/html/rfc4122"></system>
+        <value value="bd1ca5c4-ff49-4f2a-9db4-f5dda0112084"></value>
     </identifier>
-    <groupIdentifier>
-        <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-        <value value="A3B4D9-Z42475-11E6B+"></value>
-    </groupIdentifier>
     <status value="received"></status>
     <!-- probably use statusReason for pending Cancellation -->
     <statusReason>
@@ -32,7 +29,20 @@
             <display value="Acute" />
         </coding>
         <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
+            <code value="prescription-order" />
+            <display value="Prescription Order" />
+        </coding>
     </code>
+    <focus>
+        <!-- identifier of the prescription i.e. short form prescription id -->
+        <type value="Bundle"/>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+            <value value="A3B4D9-Z42475-11E6B+"></value>
+        </identifier>
+    </focus>
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />
