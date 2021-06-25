@@ -10,6 +10,13 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="83C40E-A23856-00123C"></value>
     </groupIdentifier>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
+            <code value="change"></code>
+            <display value="Change the focal resource"></display>
+        </coding>
+    </code>
     <focus>
         <type value="Bundle"/>
         <identifier>
