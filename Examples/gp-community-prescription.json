@@ -127,7 +127,6 @@
         "dosageInstruction": [
           {
             "text": "100 tablets. One tablet to be taken four times a day",
-            
             "timing": {
               "repeat": {
                 "frequency": 4,
@@ -258,7 +257,6 @@
         "dosageInstruction": [
           {
             "text": "200 tablets. One dose to be taken five times a day",
-            
             "timing": {
               "repeat": {
                 "frequency": 5,
@@ -308,7 +306,7 @@
             "unit": "unit dose",
             "system": "http://snomed.info/sct",
             "code": "408102007"
-          } 
+          }
         },
         "substitution": {
           "allowedBoolean": false
@@ -385,10 +383,20 @@
           }
         ],
         "practitioner": {
-          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
+          "identifier": 
+            {
+              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+              "value": "G8133438"
+            },
+            "display": "DR AA BHATIA"
         },
         "organization": {
-          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
+          "identifier": 
+            {
+              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+              "value": "C81010"
+            },
+            "display":"The Moir Medical Centre"
         },
         "code": [
           {
@@ -411,130 +419,69 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+      "fullUrl": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e",
       "resource": {
-        "resourceType": "Practitioner",
-        "identifier": [
+        "resourceType": "CommunicationRequest",
+        "status": "unknown",
+        "subject": {
+          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+        },
+        "payload": [
           {
-            "system": "https://fhir.nhs.uk/Id/sds-user-id",
-            "value": "44151870302"
+            "contentString": "Due to Coronavirus restrictions Church View Surgery is CLOSED until further notice"
           },
           {
-            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-            "value": "G8133438"
+            "contentReference": {
+              "reference": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
+              "display": "List of Repeat Medications for re-ordering"
+            }
           }
         ],
-        "name": [
+        "requester": {
+          "type": "Organization",
+          "identifier": 
           {
-            "family": "Bhatia",
-            "given": [
-              "AA"
-            ],
-            "prefix": [
-              "DR"
-            ]
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "C81010"
+          },
+          "display":"The Moir Medical Centre"
+        },
+        "recipient": [
+          {
+            "type": "Patient",
+            "identifier": {
+              "system": "https://fhir.nhs.uk/Id/nhs-number",
+              "value": "9876543210"
+            }
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+      "fullUrl": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
       "resource": {
-        "resourceType": "Organization",
-        "identifier": [
+        "resourceType": "List",
+        "status": "current",
+        "mode": "snapshot",
+        "code": {
+          "text": "Repeat Medications"
+        },
+        "subject": {
+          "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+        },
+        "entry": [
           {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "C81010"
-          }
-        ],
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                "code": "76",
-                "display": "GP PRACTICE"
-              }
-            ]
-          }
-        ],
-        "name": "The Moir Medical Centre",
-        "address": [
-          {
-            "use": "work",
-            "type": "both",
-            "line": [
-              "The Moir Medical Centre",
-              "Regent Street, Long Eaton",
-              "Nottingham"
-            ],
-            "city": "Nottingham",
-            "district": "Derbyshire",
-            "postalCode": "NG10 1QQ"
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "0115 9737320",
-            "use": "work"
-          }
-        ],
-        "partOf": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "15M"
+            "item": {
+              "display": "Bendroflumethiazide 2.5 mg Tablets (3/6)"
+            }
           },
-          "display": "NHS Derby and Derbyshire CCG"
-        }
+          {
+            "item": {
+              "display": "Salbutamol 100micrograms/dose inhaler CFC free 200 dose (2/6)"
+            }
+          }
+        ]
       }
-    },
-    {
-        "fullUrl": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e",
-        "resource": {
-            "resourceType": "CommunicationRequest",
-            "status": "unknown",
-            "subject": {
-                "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-            },
-            "payload": [
-                {
-                    "contentString": "Due to Coronavirus restrictions Church View Surgery is CLOSED until further notice"
-                },
-                {
-                    "contentReference": {
-                        "reference": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
-                        "display": "List of Repeat Medications for re-ordering"
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "fullUrl": "urn:uuid:d0f003a0-8763-43d5-a264-ce52a38901c9",
-        "resource": {
-            "resourceType": "List",
-            "status": "current",
-            "mode": "snapshot",
-            "code": {
-                "text": "Repeat Medications"
-            },
-            "subject": {
-                "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-            },
-            "entry": [
-                {
-                    "item": {
-                        "display": "Bendroflumethiazide 2.5 mg Tablets (3/6)"
-                    }
-                },
-                {
-                    "item": {
-                        "display": "Salbutamol 100micrograms/dose inhaler CFC free 200 dose (2/6)"
-                    }
-                }
-            ]
-        }
     }
   ]
 }

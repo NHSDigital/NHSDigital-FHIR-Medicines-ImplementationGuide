@@ -4,7 +4,7 @@
         <!--  pertinentInformation2[0].pertinentLineItem.id -->
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
-      </identifier>
+    </identifier>
     <type value="message" />
     <entry>
         <fullUrl value="urn:oid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
@@ -17,7 +17,10 @@
                     <display value="Prescription Order" />
                 </eventCoding>
                 <sender>
-                    <reference value="urn:uuid:54f13dfd-5850-4498-a632-8a98f9ee2480" />
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+                        <value value="896547302565" />
+                    </identifier>
                     <display value="Dr Smith" />
                 </sender>
                 <source>
@@ -37,13 +40,7 @@
                     <reference value="urn:uuid:46588c8c-c606-420b-b3cc-88fb74f5d41b" />
                 </focus>
                 <focus>
-                    <reference value="urn:uuid:54f13dfd-5850-4498-a632-8a98f9ee2480"></reference>
-                </focus>
-                <focus>
                     <reference value="urn:uuid:f942fd9b-f423-48c5-84b3-0e76bb4c5da5"></reference>
-                </focus>
-                <focus>
-                    <reference value="urn:uuid:2c396b19-1973-4099-ba57-cb2c123eb9f2"></reference>
                 </focus>
             </MessageHeader>
         </resource>
@@ -112,7 +109,7 @@
                     <additionalInstruction>
                         <text value="test c"></text>
                     </additionalInstruction>
-                  <!-- need to investigate   <timing>
+                    <!-- need to investigate   <timing>
                         <repeat>
                             <frequency value="3"></frequency>
                             <period value="1"></period>
@@ -121,7 +118,7 @@
                             <timeOfDay value="13:00:00"></timeOfDay>
                             <timeOfDay value="20:00:00"></timeOfDay>
                         </repeat>
-                    </timing> --> 
+                    </timing> -->
                     <route>
                         <coding>
                             <system value="http://snomed.info/sct"></system>
@@ -133,6 +130,12 @@
 
                 </dosageInstruction>
                 <dispenseRequest>
+                    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
+                        <valueCoding>
+                            <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference" />
+                            <code value="0004" />
+                        </valueCoding>
+                    </extension>
                     <quantity>
                         <value value="300.0" />
                         <unit value="mg" />
@@ -251,27 +254,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:54f13dfd-5850-4498-a632-8a98f9ee2480" />
-        <resource>
-            <!--  This is the person who is authorising the prescription -->
-            <Practitioner>
-                <id value="54f13dfd-5850-4498-a632-8a98f9ee2480" />
-                <!-- <AgentPerson classCode="AGNT">.agentPerson  1.2.826.0.1285.0.2.0.65 
-            -->
-                <identifier>
-                    <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-                    <value value="896547302565" />
-                </identifier>
-                <!-- <AgentPerson classCode="AGNT">.agentPerson.name -->
-                <name>
-                    <use value="official" />
-                    <family value="Smith" />
-                    <prefix value="Dr" />
-                </name>
-            </Practitioner>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="urn:uuid:f942fd9b-f423-48c5-84b3-0e76bb4c5da5" />
         <resource>
             <!--  This is the role of the person who is authorising the prescription -->
@@ -284,10 +266,19 @@
                     <value value="125686540025" />
                 </identifier>
                 <practitioner>
-                    <reference value="urn:uuid:54f13dfd-5850-4498-a632-8a98f9ee2480" />
+                    <identifier>
+                        <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+                        <value value="896547302565" />
+                    </identifier>
+                    <display value="Dr Smith"/>
                 </practitioner>
                 <organization>
-                    <reference value="urn:uuid:2c396b19-1973-4099-ba57-cb2c123eb9f2" />
+                    <identifier>
+                        <use value="official" />
+                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                        <value value="RBA" />
+                    </identifier>
+                    <display value="SOMERSET NHS FOUNDATION TRUST" />
                 </organization>
                 <code>
                     <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
@@ -305,41 +296,5 @@
             </PractitionerRole>
         </resource>
     </entry>
-    <entry>
-        <fullUrl value="urn:uuid:2c396b19-1973-4099-ba57-cb2c123eb9f2" />
-        <resource>
-            <Organization xmlns="http://hl7.org/fhir">
-                <id value="2c396b19-1973-4099-ba57-cb2c123eb9f2" />
-                <identifier>
-                    <use value="official" />
-                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-                    <value value="RBA" />
-                </identifier>
-                <type>
-                    <coding>
-                        <system value="https://fhir.nhs.uk/CodeSystem/organisation-role" />
-                        <code value="197" />
-                    </coding>
-                </type>
-                <name value="SOMERSET NHS FOUNDATION TRUST" />
-                <telecom>
-                    <system value="phone" />
-                    <value value="01278 432000" />
-                    <use value="work" />
-                </telecom>
-                <address>
-                    <city value="TAUNTON" />
-                    <postalCode value="TA1 5DA" />
-                </address>
 
-                <partOf>
-                    <identifier>
-                        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-                        <value value="RH5" />
-                    </identifier>
-                    <display value="SOMERSET NHS FOUNDATION TRUST" />
-                </partOf>
-            </Organization>
-        </resource>
-    </entry>
 </Bundle>
