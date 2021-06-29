@@ -2,7 +2,7 @@
     <id value="NHSDigital-MedicationDispense-Code" />
     <url value="https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationDispense-Code" />
     <version value="1.0.1" />
-    <name value="DM MedicationDispense Code" />
+    <name value="DMMedicationDispenseCode" />
     <title value="Digital Medicine MedicationDispense Code" />
     <status value="draft" />
     <date value="2020-11-26T00:00:00+00:00" />

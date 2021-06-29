@@ -2,7 +2,7 @@
     <id value="Prescription-release-rejection-reason-EPS-IssueCode" />
     <url value="https://fhir.nhs.uk/ConceptMap/Prescription-release-rejection-reason-EPS-IssueCode" />
     <version value="1.0.1" />
-    <name value="Prescription-release-rejection-reason to EPS-IssueCode Map" />
+    <name value="PrescriptionReleaseRejectionReasonEPSIssueCode" />
     <title value="Prescription-release-rejection-reason to EPS-IssueCode Map" />
     <status value="draft" />
     <experimental value="true" />

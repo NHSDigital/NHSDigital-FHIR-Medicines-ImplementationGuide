@@ -6,7 +6,7 @@
         <value value="prescription-charge-exemption" />
     </identifier>
     <version value="1.0.0" />
-    <name value="Prescription Charge Exemption" />
+    <name value="PrescriptionChargeExemption" />
     <title value="Prescription Charge Exemption" />
     <status value="draft" />
     <experimental value="true" />

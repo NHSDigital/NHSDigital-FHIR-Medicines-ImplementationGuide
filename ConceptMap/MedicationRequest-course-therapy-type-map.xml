@@ -2,7 +2,7 @@
     <id value="prescription-therapy-type-map"/>
     <url value="https://fhir.nhs.uk/ConceptMap/MedicationRequest-course-therapy-type-map"/>
     <version value="4.0.1"/>
-    <name value="MedicationRequest Course Prescription Therapy Type Map"/>
+    <name value="prescriptionTherapytypemap"/>
     <title value="MedicationRequest Course Prescription Therapy Type Map"/>
     <status value="draft"/>
     <experimental value="true"/>

@@ -6,7 +6,7 @@
         <value value="medicationdispense-type" />
     </identifier>
     <version value="1.0.0" />
-    <name value="Medication Dispense Status Type" />
+    <name value="MedicationDispenseStatusType" />
     <title value="Medication Dispense Status Type" />
     <status value="draft" />
     <experimental value="true" />

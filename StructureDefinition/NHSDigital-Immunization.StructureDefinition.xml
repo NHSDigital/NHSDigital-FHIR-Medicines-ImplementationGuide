@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="7236d711-c336-4716-ae3e-d68d9511fe0c"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Immunization" />
-  <name value="NHSDigital-Immunization" />
+  <name value="NHSDigitalImmunization" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>

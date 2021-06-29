@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="5709261a-98a9-437a-b136-d4699c659f12" />
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
-  <name value="Extension-EPS-TaskBusinessStatus" />
+  <name value="ExtensionEPSTaskBusinessStatus" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />

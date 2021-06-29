@@ -3,7 +3,7 @@
    <id value="prescription-type" />
    <url value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
    <version value="1.1.4" />
-   <name value="Prescription Type" />
+   <name value="PrescriptionType" />
    <status value="active" />
    <date value="2020-07-30T00:00:00+00:00" />
    <publisher value="NHS Digital and NHS Business Services Authority" />

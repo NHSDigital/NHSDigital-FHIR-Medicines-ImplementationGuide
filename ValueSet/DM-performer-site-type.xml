@@ -3,7 +3,7 @@
     <id value="DM-performer-site-type"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-performer-site-type"/>
     <version value="4.0.1"/>
-    <name value="MedicationRequest Performer Site Type"/>
+    <name value="MedicationRequestPerformerSiteType"/>
     <status value="draft"/>
     <description value="MedicationRequest Performer Site Type"/>
     <compose>

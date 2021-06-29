@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="4b4b132a-90ec-47e7-970d-31a76a63afcc"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier" />
-  <name value="Extension-DM-SuppliedItemIdentifier" />
+  <name value="ExtensionDMSuppliedItemIdentifier" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fe2f3847-5283-4b8c-9527-b106ca94ca88"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-DispensingPerformer" />
-  <name value="Extension-DM-DispensingPerformer" />
+  <name value="ExtensionDMDispensingPerformer" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>

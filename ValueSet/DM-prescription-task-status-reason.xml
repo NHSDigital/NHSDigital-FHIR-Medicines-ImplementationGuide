@@ -3,7 +3,7 @@
     <id value="DM-prescription-task-status-reason"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-task-status-reason"/>
     <version value="1.1.5"/>
-    <name value="Task (MedicationRequest) Status Reason"/>
+    <name value="TaskMedicationRequestStatusReason"/>
     <status value="draft"/>
     <description value="Task (MedicationRequest) Status Reason"/>
     <compose>

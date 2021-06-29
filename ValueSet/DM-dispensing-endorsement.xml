@@ -3,7 +3,7 @@
     <id value="DM-dispensing-endorsement" />
     <url value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
     <version value="4.0.1" />
-    <name value="NHSBSA Dispensing Endorsement" />
+    <name value="NHSBSADispensingEndorsement" />
     <status value="draft" />
     <description value="NHSBSA Dispensing Endorsement" />
     <compose>

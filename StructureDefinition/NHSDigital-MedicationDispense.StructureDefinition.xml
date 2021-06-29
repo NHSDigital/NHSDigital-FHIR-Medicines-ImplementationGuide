@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="fd471b8d-3b37-46a3-af00-568de477864a" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
-  <name value="NHSDigital-MedicationDispense" />
+  <name value="NHSDigitalMedicationDispense" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>

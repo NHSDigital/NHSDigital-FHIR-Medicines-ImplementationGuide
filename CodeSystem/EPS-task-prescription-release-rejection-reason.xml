@@ -6,7 +6,7 @@
         <value value="EPS-task-prescription-release-rejection-reason" />
     </identifier>
     <version value="16.34" />
-    <name value="EPS Prescription Release Rejection Reason" />
+    <name value="EPSPrescriptionReleaseRejectionReason" />
     <title value="EPS Prescription Release Rejection Reason" />
     <status value="draft" />
     <experimental value="false" />

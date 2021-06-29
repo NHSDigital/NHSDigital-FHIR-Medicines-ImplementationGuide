@@ -6,7 +6,7 @@
         <value value="EPS-task-dispense-withdraw-type" />
     </identifier>
     <version value="01" />
-    <name value="EPS Dispense Withdraw Type" />
+    <name value="EPSDispenseWithdrawType" />
     <title value="EPS Dispense Withdraw Type" />
     <status value="draft" />
     <experimental value="false" />

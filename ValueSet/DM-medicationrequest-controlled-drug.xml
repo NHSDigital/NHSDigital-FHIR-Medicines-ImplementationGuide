@@ -3,7 +3,7 @@
     <id value="DM-medicationrequest-category-controlled-drug"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-controlled-drug"/>
     <version value="4.0.2"/>
-    <name value="MedicationRequest Category Controlled Drug"/>
+    <name value="MedicationRequestCategoryControlledDrug"/>
     <status value="draft"/>
     <description value="MedicationRequest Category Controlled Drug."/>
     <compose>

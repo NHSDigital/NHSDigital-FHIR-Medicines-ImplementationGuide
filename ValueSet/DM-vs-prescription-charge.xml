@@ -3,7 +3,7 @@
     <id value="DM-vs-prescription-charge"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge"/>
     <version value="4.0.1"/>
-    <name value="NHSBSA Prescription Charge"/>
+    <name value="NHSBSAPrescriptionCharge"/>
     <status value="draft"/>
     <description value="NHSBSA Prescription Charge"/>
     <compose>

@@ -3,7 +3,7 @@
     <id value="DM-prescription-endorsement"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-endorsement"/>
     <version value="4.0.1"/>
-    <name value="NHSBSA Prescription Endorsement"/>
+    <name value="NHSBSAPrescriptionEndorsement"/>
     <status value="draft"/>
     <description value="MedicationRequest Category Controlled Drug."/>
     <compose>

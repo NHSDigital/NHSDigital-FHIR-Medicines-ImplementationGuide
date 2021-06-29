@@ -6,7 +6,7 @@
         <value value="medicationrequest-status-history" />
     </identifier>
     <version value="1.1.4" />
-    <name value="MedicationRequest Status Reason History" />
+    <name value="MedicationRequestStatusReasonHistory" />
     <title value="MedicationRequest Status Reason History" />
     <status value="draft" />
     <experimental value="true" />

@@ -3,7 +3,7 @@
     <id value="DM-medicationrequest-category"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-medicationrequest-category"/>
     <version value="4.0.1"/>
-    <name value="MedicationRequest Category"/>
+    <name value="MedicationRequestCategory"/>
     <status value="draft"/>
     <description value="MedicationRequest Category."/>
     <compose>

@@ -2,7 +2,7 @@
     <id value="DM-medicationrequest-endorsement"/>
     <url value="https://fhir.nhs.uk/CodeSystem/medicationrequest-endorsement"/>
     <version value="1.1.0"/>
-    <name value="NHSBSA Prescriber Endorsements"/>
+    <name value="NHSBSAPrescriberEndorsements"/>
     <status value="active"/>
     <date value="2020-08-24T00:00:00+00:00"/>
     <publisher value="NHS Digital"/>

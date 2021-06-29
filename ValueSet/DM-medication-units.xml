@@ -2,7 +2,7 @@
   <id value="DM-medication-units" />
   <url value="https://fhir.nhs.uk/ValueSet/DM-medication-units" />
   <version value="1.0.0" />
-  <name value="DM-medication-units" />
+  <name value="DMmedicationunits" />
   <title value="DM-medication-units" />
   <status value="draft" />
   <date value="2020-07-28T00:00:00+00:00" />

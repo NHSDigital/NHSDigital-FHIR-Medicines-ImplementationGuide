@@ -2,7 +2,7 @@
   <id value="DM-prescription-charge-exemption" />
   <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
   <version value="1.0.0" />
-  <name value="DM-prescription-charge-exemption" />
+  <name value="DMprescriptionchargeexemption" />
   <title value="DM-prescription-charge-exemption" />
   <status value="draft" />
   <date value="2020-10-08T00:00:00+00:00" />

@@ -3,7 +3,7 @@
     <id value="DM-prescription-release-rejection-reason"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-release-rejection-reason"/>
     <version value="16.34"/>
-    <name value="DM prescription release rejection reason"/>
+    <name value="DMprescriptionreleaserejectionreason"/>
     <date value="2021-06-03"/>
     <status value="draft"/>
     <description value="DM prescription release rejection reason"/>

@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="51c8f867-9fa0-4ca8-a82f-0f76d06d3bc2" />
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ControlledDrug" />
-  <name value="Extension-DM-ControlledDrug" />
+  <name value="ExtensionDMControlledDrug" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>

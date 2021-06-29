@@ -6,7 +6,7 @@
         <value value="EPS-task-dispense-withdraw-reason" />
     </identifier>
     <version value="01" />
-    <name value="EPS Dispense Withdraw Reason" />
+    <name value="EPSDispenseWithdrawReason" />
     <title value="EPS Dispense Withdraw Reason" />
     <status value="draft" />
     <experimental value="false" />
