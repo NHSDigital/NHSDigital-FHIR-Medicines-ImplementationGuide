@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="976a3f97-582b-4d8d-839a-961d68366e28"/>
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-RunningTotal" />
-  <name value="Extension-DM-RunningTotal" />
+  <name value="ExtensionDMRunningTotal" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
