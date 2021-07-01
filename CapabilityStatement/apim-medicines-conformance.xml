@@ -103,7 +103,7 @@
             <searchParam>
                 <name value="patient" />
                 <type value="reference" />
-                <documentation value="TThe identity of a patient to list dispenses for" />
+                <documentation value="The identity of a patient to list dispenses for" />
             </searchParam>
         </resource>
         <resource>
