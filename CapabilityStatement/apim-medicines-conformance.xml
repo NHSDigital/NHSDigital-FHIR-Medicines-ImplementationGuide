@@ -73,6 +73,21 @@
                 <type value="reference" />
                 <documentation value="Returns prescriptions for a specific patient" />
             </searchParam>
+            <searchParam>
+                <name value="medication" />
+                <type value="reference" />
+                <documentation value="Return prescriptions for this medication reference" />
+            </searchParam>
+            <searchParam>
+                <name value="status" />
+                <type value="token" />
+                <documentation value="Status of the prescription" />
+            </searchParam>
+            <searchParam>
+                <name value="authoredon" />
+                <type value="date" />
+                <documentation value="Return prescriptions written on this date" />
+            </searchParam>
         </resource>
         <resource>
             <type value="MedicationDispense" />
