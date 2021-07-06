@@ -34,6 +34,12 @@
         <min value="0" />
         <max value="*" />
     </focus>
+     <focus>
+        <code value="Location" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Location" />
+        <min value="1" />
+        <max value="*" />
+    </focus>
     <responseRequired value="on-error"></responseRequired>
     <allowedResponse> 
         <message value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update"/>  
