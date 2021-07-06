@@ -145,7 +145,12 @@
                     "display": "Jackie Clark"
                 },
                 "organization": {
-                    "reference": "urn:uuid:1068129b-3635-44f6-9ebd-b29ae8a6d519"
+                    "identifier": 
+                        {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "694X0"
+                        },
+                        "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
                 },
                 "code": [
                     {
@@ -169,49 +174,6 @@
                         "system": "phone",
                         "value": "02380798431",
                         "use": "work"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:1068129b-3635-44f6-9ebd-b29ae8a6d519",
-            "resource": {
-                "resourceType": "Organization",
-                "id": "1068129b-3635-44f6-9ebd-b29ae8a6d519",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "694X0"
-                    }
-                ],
-                "type": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                                "code": "173",
-                                "display": "PATHOLOGY LAB"
-                            }
-                        ]
-                    }
-                ],
-                "name": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "02380798431",
-                        "use": "work"
-                    }
-                ],
-                "address": [
-                    {
-                        "line": [
-                            "SOUTHAMPTON GENERAL HOSPITAL",
-                            "TREMONA ROAD",
-                            "SOUTHAMPTON",
-                            "HAMPSHIRE"
-                        ],
-                        "postalCode": "SO16 6YD"
                     }
                 ]
             }
