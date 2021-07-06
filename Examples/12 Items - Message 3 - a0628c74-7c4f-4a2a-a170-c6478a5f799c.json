@@ -145,12 +145,11 @@
                     "display": "Jackie Clark"
                 },
                 "organization": {
-                    "identifier": 
-                        {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "694X0"
-                        },
-                        "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "694X0"
+                    },
+                    "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
                 },
                 "code": [
                     {
@@ -163,46 +162,21 @@
                         ]
                     }
                 ],
-                "healthcareService": [
-                    {
-                        "reference": "urn:uuid:367d1910-59f8-44ef-b47e-73697682847d",
-                        "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
-                    }
-                ],
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "02380798431",
-                        "use": "work"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:367d1910-59f8-44ef-b47e-73697682847d",
-            "resource": {
-                "resourceType": "HealthcareService",
-                "id": "367d1910-59f8-44ef-b47e-73697682847d",
-                "identifier": [
-                    {
-                        "use": "usual",
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "694X0"
-                    }
-                ],
-                "active": true,
-                "providedBy": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "694X0"
-                    }
-                },
                 "location": [
                     {
                         "reference": "urn:uuid:99530dd1-e47b-4b13-b386-c17c99f74b2e"
                     }
                 ],
-                "name": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY",
+                "healthcareService": [
+                    {
+                        "identifier": {
+                            "use": "usual",
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "694X0"
+                        },
+                        "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
+                    }
+                ],
                 "telecom": [
                     {
                         "system": "phone",
