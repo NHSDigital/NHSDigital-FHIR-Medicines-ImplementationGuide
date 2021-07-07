@@ -127,33 +127,6 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:82b84976-8e90-45dc-b315-fbac99fe2570",
-            "resource": {
-                "resourceType": "Practitioner",
-                "id": "82b84976-8e90-45dc-b315-fbac99fe2570",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
-                        "value": "555252291108"
-                    },
-                    {
-                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "1231234"
-                    }
-                ],
-                "name": [
-                    {
-                        "use": "usual",
-                        "family": "Clark",
-                        "given": [
-                            "Jackie"
-                        ]
-                    }
-                ],
-                "gender": "unknown"
-            }
-        },
-        {
             "fullUrl": "urn:uuid:f36f6202-5b48-49e7-970b-3b4a1761247c",
             "resource": {
                 "resourceType": "PractitionerRole",
@@ -165,7 +138,11 @@
                     }
                 ],
                 "practitioner": {
-                    "reference": "urn:uuid:82b84976-8e90-45dc-b315-fbac99fe2570"
+                    "identifier": {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "1231234"
+                    },
+                    "display": "Jackie Clark"
                 },
                 "organization": {
                     "identifier": {
