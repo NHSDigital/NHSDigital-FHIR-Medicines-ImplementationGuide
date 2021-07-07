@@ -181,6 +181,11 @@
                         ]
                     }
                 ],
+                "location": [
+                    {
+                        "reference": "urn:uuid:4bdb71a5-209a-49b9-89ff-5396abc2e582"
+                    }
+                ],
                 "healthcareService": [
                     {
                         "reference": "urn:uuid:86b4ae63-b886-49da-b57f-5549a0e7eb76",
@@ -258,11 +263,6 @@
                         "value": "694X0"
                     }
                 },
-                "location": [
-                    {
-                        "reference": "urn:uuid:4bdb71a5-209a-49b9-89ff-5396abc2e582"
-                    }
-                ],
                 "name": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY",
                 "telecom": [
                     {
