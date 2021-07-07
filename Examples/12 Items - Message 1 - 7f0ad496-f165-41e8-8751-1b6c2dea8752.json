@@ -168,7 +168,11 @@
                     "reference": "urn:uuid:82b84976-8e90-45dc-b315-fbac99fe2570"
                 },
                 "organization": {
-                    "reference": "urn:uuid:65cb8282-1b4f-446c-8fa0-bd5676ffab23"
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RHM"
+                    },
+                    "display": "UNIVERSITY HOSPITAL SOUTHAMPTON NHS FOUNDATION TRUST"
                 },
                 "code": [
                     {
@@ -201,49 +205,6 @@
                         "system": "phone",
                         "value": "02380798431",
                         "use": "work"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:65cb8282-1b4f-446c-8fa0-bd5676ffab23",
-            "resource": {
-                "resourceType": "Organization",
-                "id": "65cb8282-1b4f-446c-8fa0-bd5676ffab23",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "694X0"
-                    }
-                ],
-                "type": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                                "code": "173",
-                                "display": "PATHOLOGY LAB"
-                            }
-                        ]
-                    }
-                ],
-                "name": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY",
-                "telecom": [
-                    {
-                        "system": "phone",
-                        "value": "02380798431",
-                        "use": "work"
-                    }
-                ],
-                "address": [
-                    {
-                        "line": [
-                            "SOUTHAMPTON GENERAL HOSPITAL",
-                            "TREMONA ROAD",
-                            "SOUTHAMPTON",
-                            "HAMPSHIRE"
-                        ],
-                        "postalCode": "SO16 6YD"
                     }
                 ]
             }
