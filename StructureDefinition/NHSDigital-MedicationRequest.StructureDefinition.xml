@@ -66,6 +66,27 @@
         <expression value="(courseOfTherapyType.coding.code.startsWith('acute') and extension('https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation').exists().not()) or  ((courseOfTherapyType.coding.code.startsWith('continuous') or courseOfTherapyType.coding.code.startsWith('instalment')) and extension('https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation').exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
+      <constraint>
+        <key value="eps-7" />
+        <severity value="error" />
+        <human value="For continuous-repeat-dispensing intent must be relex-order or original-order" />
+        <expression value="(courseOfTherapyType.coding.code != 'continuous-repeat-dispensing') or ((courseOfTherapyType.coding.code = 'continuous-repeat-dispensing') and ((intent ='orginal-order') or (intent ='reflex-order')))" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </constraint>
+      <constraint>
+        <key value="eps-8" />
+        <severity value="error" />
+        <human value="For instalment-dispensing intent must be instance-order or original-order" />
+        <expression value="(courseOfTherapyType.coding.code != 'instalment-dispensing') or ((courseOfTherapyType.coding.code = 'instalment-dispensing') and ((intent ='orginal-order') or (intent ='instance-order')))" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </constraint>
+      <constraint>
+        <key value="eps-9" />
+        <severity value="warning" />
+        <human value="dispenseRequest.numberOfRepeatsAllowed should be populated for continuous, continuous-repeat-dispensing and instalment-dispensing MedicationRequests." />
+        <expression value="(courseOfTherapyType.coding.code.startsWith('acute')) or  ((courseOfTherapyType.coding.code.startsWith('continuous') or courseOfTherapyType.coding.code.startsWith('instalment')) and dispenseRequest.exists() and dispenseRequest.numberOfRepeatsAllowed.exists())" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </constraint>
     </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
