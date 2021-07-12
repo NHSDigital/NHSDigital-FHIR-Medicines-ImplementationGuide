@@ -62,7 +62,7 @@
       <constraint>
         <key value="eps-6" />
         <severity value="error" />
-        <human value="Extension repeatInformation is required for continuous, continuous-repeat-dispensing and instalment-dispensing MedicationRequests. It is not required to actue MedicationRequests" />
+        <human value="Extension repeatInformation is required for continuous, continuous-repeat-dispensing and instalment-dispensing MedicationRequests. It is not required for actue MedicationRequests" />
         <expression value="(courseOfTherapyType.coding.code.startsWith('acute') and extension('https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation').exists().not()) or  ((courseOfTherapyType.coding.code.startsWith('continuous') or courseOfTherapyType.coding.code.startsWith('instalment')) and extension('https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation').exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
