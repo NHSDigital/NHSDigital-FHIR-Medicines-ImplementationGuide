@@ -14,9 +14,6 @@
         </valueReference>
       </extension>
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
-        <extension url="numberOfRepeatPrescriptionsAllowed">
-            <valueUnsignedInt value="6" />
-        </extension>
         <extension url="numberOfRepeatPrescriptionsIssued">
             <valueUnsignedInt value="1" />
         </extension>
@@ -29,7 +26,7 @@
         <value value="A7B86F8D-1D59-FC28-E050-D20AE3A215F0" />
     </identifier>
     <status value="active" />
-    <intent value="order" />
+    <intent value="original-order" />
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-category"></system>
@@ -85,6 +82,7 @@
             <start value="2020-06-10T00:00:00+00:00"></start>
             <end value="2020-07-09T00:00:00+00:00"></end>
         </validityPeriod>
+        <numberOfRepeatsAllowed value="6"/>
         <quantity>
             <value value="28" />
             <unit value="sachet" />

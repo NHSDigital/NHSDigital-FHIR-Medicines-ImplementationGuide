@@ -368,19 +368,19 @@
         </identifier>
         <practitioner>
           <identifier>
-          <system value="https://fhir.nhs.uk/Id/sds-user-id" />
-          <value value="896547302565" />
-        </identifier>
-        <display value="Dr Smith"/>
-      
+            <system value="https://fhir.nhs.uk/Id/sds-user-id" />
+            <value value="896547302565" />
+          </identifier>
+          <display value="Dr Smith" />
+
         </practitioner>
         <organization>
-               <identifier>
-          <use value="official" />
-          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-          <value value="M85011" />
-        </identifier>
-        <display value="Mirfleld Surgery" />
+          <identifier>
+            <use value="official" />
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="M85011" />
+          </identifier>
+          <display value="Mirfleld Surgery" />
         </organization>
         <code>
           <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
@@ -390,6 +390,9 @@
             <display value="Clinical Practitioner Access Role" />
           </coding>
         </code>
+        <location>
+          <reference value="urn:uuid:631330c5-2d4f-4683-a14a-c8e0c3c2d760"/>
+        </location>
         <!-- <AgentPerson classCode="AGNT">.telecom -->
         <telecom>
           <!-- note mapping of phone to tel: -->
@@ -412,19 +415,19 @@
           <value value="787946852679" />
         </identifier>
         <practitioner>
-              <identifier>
+          <identifier>
             <system value="https://fhir.nhs.uk/Id/sds-user-id" />
             <value value="777964352001" />
           </identifier>
-          <display value="Dr Nice"/>
+          <display value="Dr Nice" />
         </practitioner>
         <organization>
-              <identifier>
-          <use value="official" />
-          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-          <value value="M85011" />
-        </identifier>
-        <display value="Mirfleld Surgery" />
+          <identifier>
+            <use value="official" />
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+            <value value="M85011" />
+          </identifier>
+          <display value="Mirfleld Surgery" />
         </organization>
         <code>
           <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
@@ -434,6 +437,9 @@
             <display value="Clinical Practitioner Access Role" />
           </coding>
         </code>
+        <location>
+          <reference value="urn:uuid:631330c5-2d4f-4683-a14a-c8e0c3c2d760"/>
+        </location>
         <!-- <AgentPerson classCode="AGNT">.telecom -->
         <telecom>
           <!-- note mapping of phone to tel: -->
@@ -442,6 +448,26 @@
           <use value="work" />
         </telecom>
       </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:631330c5-2d4f-4683-a14a-c8e0c3c2d760" />
+    <resource>
+      <Location xmlns="http://hl7.org/fhir">
+        <identifier>
+          <use value="official" />
+          <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+          <value value="M85011" />
+        </identifier>
+        <address>
+          <line value="4 WILLARD RD" />
+          <line value="SOUTH YARDLEY" />
+          <city value="BIRMINGHAM" />
+          <district value="WEST MIDLANDS" />
+          <postalCode value="B25 8AA" />
+          <country value="ENGLAND" />
+        </address>
+      </Location>
     </resource>
   </entry>
 </Bundle>

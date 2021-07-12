@@ -334,15 +334,15 @@
                 },
                 "specialty": [
                     {
-                      "coding": [
-                        {
-                          "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
-                          "code": "370",
-                          "display": "MEDICAL ONCOLOGY"
-                        }
-                      ]
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
+                                "code": "370",
+                                "display": "MEDICAL ONCOLOGY"
+                            }
+                        ]
                     }
-                  ],
+                ],
                 "code": [
                     {
                         "coding": [
@@ -354,12 +354,9 @@
                         ]
                     }
                 ],
-                "location":  [
+                "location": [
                     {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "RBA11"
-                        },
+                        "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
                         "display": "MUSGROVE PARK HOSPITAL"
                     }
                 ],
@@ -437,6 +434,30 @@
                             "display": "pre-filled disposable injection"
                         }
                     ]
+                }
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
+            "resource": {
+                "resourceType": "Location",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA11"
+                    }
+                ],
+                "status": "active",
+                "mode": "instance",
+                "address": {
+                    "use": "work",
+                    "line": [
+                        "MUSGROVE PARK HOSPITAL"
+                    ],
+                    "city": "TAUNTON",
+                    "postalCode": "TA1 5DA",
+                    "country": "NLD"
                 }
             }
         }

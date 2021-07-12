@@ -409,6 +409,12 @@
             ]
           }
         ],
+        "location": [
+          {
+            "reference": "urn:uuid:2a690d03-2ea2-48f8-9c2d-d0debe7099f1",
+            "display": "The Moir Medical Centre"
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -481,6 +487,31 @@
             }
           }
         ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2a690d03-2ea2-48f8-9c2d-d0debe7099f1",
+      "resource": {
+        "resourceType": "Location",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "C81010"
+          }
+        ],
+        "status": "active",
+        "mode": "instance",
+        "address": {
+          "line": [
+            "REGENT STREET",
+            "LONG EATON"
+        ],
+        "city": "NOTTINGHAM",
+        "district": "NOTTINGHAMSHIRE",
+        "postalCode": "NG10 1QQ",
+        "country": "ENGLAND"
+        }
       }
     }
   ]
