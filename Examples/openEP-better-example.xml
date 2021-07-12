@@ -288,6 +288,10 @@
                         <display value="Clinical Practitioner Access Role" />
                     </coding>
                 </code>
+                <location>
+                    <reference value="urn:uuid:044e7916-c697-4072-880e-ef44d3032962" />
+                    <display value="MUSGROVE PARK HOSPITAL" />
+                </location>
                 <telecom>
                     <system value="phone" />
                     <value value="01234567890" />
@@ -296,5 +300,25 @@
             </PractitionerRole>
         </resource>
     </entry>
-
+    <entry>
+        <fullUrl value="urn:uuid:044e7916-c697-4072-880e-ef44d3032962" />
+        <resource>
+            <Location>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+                    <value value="RBA11" />
+                </identifier>
+                <status value="active" />
+                <mode value="instance" />
+                <address>
+                    <use value="work" />
+                    <line value="MUSGROVE PARK HOSPITAL" />
+                    <city value="TAUNTON" />
+                    <postalCode value="TA1 5DA" />
+                    <country value="NLD" />
+                </address>
+            </Location>
+        </resource>
+    </entry>
 </Bundle>
