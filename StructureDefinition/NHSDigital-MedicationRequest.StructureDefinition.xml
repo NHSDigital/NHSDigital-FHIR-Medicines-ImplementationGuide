@@ -70,7 +70,7 @@
         <key value="eps-7" />
         <severity value="error" />
         <human value="For continuous-repeat-dispensing intent must be relex-order or original-order" />
-        <expression value="(courseOfTherapyType.coding.code != 'continuous-repeat-dispensing') or ((courseOfTherapyType.coding.code = 'continuous-repeat-dispensing') and ((intent ='original-order') or (intent ='order') or (intent ='reflex-order')))" />
+        <expression value="(courseOfTherapyType.coding.code != 'continuous-repeat-dispensing') or ((courseOfTherapyType.coding.code = 'continuous-repeat-dispensing') and ((intent ='original-order') or (intent ='reflex-order')))" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
       <constraint>
