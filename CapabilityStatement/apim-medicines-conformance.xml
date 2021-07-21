@@ -1,4 +1,28 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="uk.nhsdigital.medicines.r4" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.1.37-alpha" />
+        </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="uk.nhsdigital.r4" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.1.33-discovery" />
+        </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="UK.Core.r4.v2" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.0.8" />
+        </extension>
+    </extension>
     <id value="apim-medicines-conformance" />
     <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-conformance" />
     <version value="3.0.0" />
@@ -8,6 +32,13 @@
     <publisher value="digital.nhs.uk" />
     <description value="Conformance requirements for NHS Digital Medicines APIs" />
     <kind value="requirements" />
+    <software>
+        <name value="EPS NextGen" />
+        <version value="1.2.3-alpha" />
+        <releaseDate value="2021-07-21T00:00:00+00:00" />
+    </software>
+    <implementationGuide value="https://simplifier.net/guide/digitalmedicines"/> 
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/> 
     <fhirVersion value="4.0.1" />
     <format value="application/fhir+json" />
     <format value="application/fhir+xml" />
@@ -30,7 +61,7 @@
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
         </resource>
-         <resource>
+        <resource>
             <type value="CommunicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
         </resource>
@@ -53,11 +84,11 @@
             <searchParam>
                 <name value="procedure:below" />
                 <type value="token" />
-                <definition value="https://fhir.nhs.uk/SearchParameter/procedure-code"/>
+                <definition value="https://fhir.nhs.uk/SearchParameter/procedure-code" />
                 <documentation value="Parent snomed procedure code for vaccinations" />
             </searchParam>
         </resource>
-       <resource>
+        <resource>
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
             <interaction>
@@ -114,7 +145,7 @@
             <type value="Task" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task" />
             <interaction>
-                <code value="create"/>
+                <code value="create" />
             </interaction>
             <operation>
                 <name value="release" />
@@ -130,8 +161,8 @@
             <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
         </operation>
         <operation>
-            <name value="validate"/>
-            <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate"/>
+            <name value="validate" />
+            <definition value="http://hl7.org/fhir/OperationDefinition/Resource-validate" />
         </operation>
     </rest>
     <messaging>
