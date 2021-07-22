@@ -1,4 +1,28 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="uk.nhsdigital.medicines.r4" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.1.37-alpha" />
+        </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="uk.nhsdigital.r4" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.1.33-discovery" />
+        </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
+        <extension url="packageName">
+            <valueString value="UK.Core.r4.v2" />
+        </extension>
+        <extension url="version">
+            <valueString value="2.0.8" />
+        </extension>
+    </extension>
     <id value="apim-medicines-api-example" />
     <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-api-example" />
     <version value="3.0.0" />
@@ -9,6 +33,16 @@
     <description value="Example API Statement for NHS Digital Medicines APIs" />
     <kind value="instance" />
     <fhirVersion value="4.0.1" />
+    <software>
+        <name value="EPS NextGen" />
+        <version value="1.2.3-alpha" />
+        <releaseDate value="2021-07-21T00:00:00+00:00" />
+    </software>
+    <implementation>
+    <description value="This is an example EPS API Capability Statement"/>
+    </implementation>
+    <implementationGuide value="https://simplifier.net/guide/digitalmedicines"/> 
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/> 
     <format value="application/fhir+json" />
     <format value="application/fhir+xml" />
     <rest>
