@@ -5,7 +5,7 @@
         "lastUpdated": "2020-11-02T01:43:30+00:00"
     },
     "identifier": {
-        "system": "https://fhir.nhs.uk/Id/prescription",
+        "system": "https://tools.ietf.org/html/rfc4122",
         "value": "ad945a29-85f8-439a-b590-6789719adc16"
     },
     "type": "message",
