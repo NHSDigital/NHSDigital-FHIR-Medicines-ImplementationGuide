@@ -321,13 +321,13 @@
                     },
                     {
                         "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
-                        "value": "2345213"
+                        "value": "G6345213"
                     }
                 ],
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "G1234567"
+                        "value": "C1234567"
                     },
                     "display": "DR RAZIA ALI"
                 },
