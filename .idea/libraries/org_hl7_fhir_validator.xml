@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="org.hl7.fhir.validator">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Examples/org.hl7.fhir.validator.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

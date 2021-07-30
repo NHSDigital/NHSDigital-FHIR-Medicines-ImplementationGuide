@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "id": "hce-DC2C66-A1B2C3-23407B",
     "meta": {
-        "lastUpdated": "2020-11-02T01:43:30+00:00"
+        "lastUpdated": "2021-07-29T01:43:30+00:00"
     },
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
@@ -321,13 +321,13 @@
                     },
                     {
                         "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
-                        "value": "2345213"
+                        "value": "G6345213"
                     }
                 ],
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "G1234567"
+                        "value": "C1234567"
                     },
                     "display": "DR RAZIA ALI"
                 },
