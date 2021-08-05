@@ -139,6 +139,14 @@
       <path value="MedicationDispense.subject.identifier.value" />
       <min value="1" />
     </element>
+    <element id="MedicationDispense.context">
+      <path value="MedicationDispense.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Encounter" />
+      </type>
+    </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
       <mustSupport value="true" />
