@@ -147,9 +147,9 @@
                 "organization": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "694X0"
+                        "value": "RHM"
                     },
-                    "display": "SOUTHAMPTON GENERAL HOSPITAL LABORATORY"
+                    "display": "UNIVERSITY HOSPITAL SOUTHAMPTON NHS FOUNDATION TRUST"
                 },
                 "code": [
                     {
