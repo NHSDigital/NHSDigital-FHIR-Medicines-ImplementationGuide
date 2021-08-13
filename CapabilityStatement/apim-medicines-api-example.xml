@@ -179,19 +179,15 @@
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
+        </supportedMessage>
+         <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-claim" />
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/vaccinations" />
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-response" />
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
