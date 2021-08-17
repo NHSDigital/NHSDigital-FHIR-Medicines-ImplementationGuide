@@ -35,7 +35,7 @@
     <fhirVersion value="4.0.1" />
     <software>
         <name value="EPS NextGen" />
-        <version value="1.2.3-alpha" />
+        <version value="1.2.4-alpha" />
         <releaseDate value="2021-07-21T00:00:00+00:00" />
     </software>
     <implementation>
@@ -179,19 +179,15 @@
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/pharmacy-dispense" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
+        </supportedMessage>
+         <supportedMessage>
+            <mode value="receiver" />
+            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-claim" />
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/vaccinations" />
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-response" />
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
