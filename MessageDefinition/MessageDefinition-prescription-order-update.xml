@@ -22,6 +22,12 @@
         <min value="1" />
         <max value="1" />
     </focus>
+    <focus>
+        <code value="Patient" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
+        <min value="1" />
+        <max value="1" />
+    </focus>
     <responseRequired value="always"></responseRequired>
     <allowedResponse> 
         <message value="https://fhir.nhs.uk/MessageDefinition/prescription-order-response"/>  
