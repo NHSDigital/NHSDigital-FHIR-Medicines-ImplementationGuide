@@ -84,11 +84,11 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-                    <coding>
+               
                         <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
                         <code value="0001" />
                         <display value="Item fully dispensed" />
-                    </coding>
+              
                 </valueCoding>
             </extension>
         </extension>
@@ -112,11 +112,11 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-                    <coding>
+                
                         <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
                         <code value="0001" />
                         <display value="Item fully dispensed" />
-                    </coding>
+               
                 </valueCoding>
             </extension>
         </extension>
