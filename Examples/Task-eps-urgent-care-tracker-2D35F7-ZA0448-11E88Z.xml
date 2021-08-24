@@ -11,7 +11,7 @@
         <extension url="numberOfRepeatPrescriptionsIssued">
             <valueUnsignedInt value="2" />
         </extension>
-       <!-- <extension url="authorisationExpiryDate">
+        <!-- <extension url="authorisationExpiryDate">
             <valueDateTime value="2020-08-07" />
         </extension> -->
     </extension>
@@ -84,12 +84,15 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-               
-                        <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
-                        <code value="0001" />
-                        <display value="Item fully dispensed" />
-              
+
+                    <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
+                    <code value="0001" />
+                    <display value="Item fully dispensed" />
+
                 </valueCoding>
+            </extension>
+            <extension url="dateLastDispensed">
+                <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
         <type>
@@ -101,8 +104,9 @@
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
+            <type value="MedicationRequest"/>
             <identifier>
-                <system value="https://tools.ietf.org/html/rfc4122" />
+                <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
             </identifier>
         </valueReference>
@@ -112,12 +116,15 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-                
-                        <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
-                        <code value="0001" />
-                        <display value="Item fully dispensed" />
-               
+
+                    <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
+                    <code value="0001" />
+                    <display value="Item fully dispensed" />
+
                 </valueCoding>
+            </extension>
+            <extension url="dateLastDispensed">
+                <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
         <type>
@@ -129,8 +136,9 @@
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
+            <type value="MedicationRequest"/>
             <identifier>
-                <system value="https://tools.ietf.org/html/rfc4122" />
+                <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
             </identifier>
         </valueReference>
@@ -138,10 +146,8 @@
     <output>
         <!-- Similarly, should we have a reference to the dispense-notification here ???-->
         <!-- or insert horrid extension here -->
-        <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionRepeatDispensingInformation">
-            <extension url="dateLastDispensed">
-                <valueDate value="2018-04-22T09:57:03+00:00" />
-            </extension>
+        <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
+            
             <extension url="dateLastIssuedDispensed">
                 <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>
