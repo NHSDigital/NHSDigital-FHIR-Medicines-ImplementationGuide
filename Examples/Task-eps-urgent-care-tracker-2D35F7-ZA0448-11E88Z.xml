@@ -4,11 +4,11 @@
         <!-- lastEventDate -->
         <lastUpdated value="2018-04-22T09:57:03+00:00" />
     </meta>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
-        <extension url="numberOfRepeatPrescriptionsAllowed">
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation">
+        <extension url="numberOfRepeatsAllowed">
             <valueUnsignedInt value="6" />
         </extension>
-        <extension url="numberOfRepeatPrescriptionsIssued">
+        <extension url="numberOfRepeatsIssued">
             <valueUnsignedInt value="2" />
         </extension>
         <!-- <extension url="authorisationExpiryDate">
@@ -81,14 +81,12 @@
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
     <input>
         <!-- Should we have a reference to the prescription-order here ???-->
-        <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
+        <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-
                     <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
                     <code value="0001" />
                     <display value="Item fully dispensed" />
-
                 </valueCoding>
             </extension>
             <extension url="dateLastDispensed">
@@ -116,11 +114,9 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
-
                     <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
                     <code value="0001" />
                     <display value="Item fully dispensed" />
-
                 </valueCoding>
             </extension>
             <extension url="dateLastDispensed">
@@ -146,7 +142,7 @@
     <output>
         <!-- Similarly, should we have a reference to the dispense-notification here ???-->
         <!-- or insert horrid extension here -->
-        <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
+        <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingReleaseInformation">
             
             <extension url="dateLastIssuedDispensed">
                 <valueDate value="2018-04-22T09:57:03+00:00" />
