@@ -37,7 +37,7 @@
     </code>
     <focus>
         <!-- identifier of the prescription i.e. short form prescription id -->
-        <type value="Bundle"/>
+        <type value="Task"/>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
             <value value="A3B4D9-Z42475-11E6B+"></value>

@@ -4,13 +4,25 @@
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
     </identifier>
-    <status value="in-progress"></status> <!-- if this post results in no dispense-notifications then accepted else in-progress -->
+    <status value="failed"></status>    <!-- this is to mark the sub task as failed -->
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="88AF6C-C81007-00001C"></value>
     </groupIdentifier>
+    <partOf>
+        <type value="Task"/>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+            <value value="88AF6C-C81007-00001C"></value>
+        </identifier>
+    </partOf>
     <code>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
+            <code value="dispense-notification" />
+            <display value="Dispense Notification" />
+        </coding>
         <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
             <code value="abort"></code>
@@ -20,8 +32,8 @@
     <focus>
         <type value="Bundle"/>
         <identifier>
-           <system value="https://tools.ietf.org/html/rfc4122"/>
-           <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38"/>
+            <system value="https://tools.ietf.org/html/rfc4122"/>
+            <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38"/>
         </identifier>
     </focus>
     <for>

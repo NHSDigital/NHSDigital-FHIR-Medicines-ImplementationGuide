@@ -4,7 +4,7 @@
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
-    <status value="rejected"></status>
+    <status value="ready"></status>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
@@ -12,16 +12,21 @@
     </groupIdentifier>
     <code>
         <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
+            <code value="prescription-order" />
+            <display value="Prescription Order" />
+        </coding>
+        <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
             <code value="change"></code>
             <display value="Change the focal resource"></display>
         </coding>
     </code>
     <focus>
-        <type value="Bundle"/>
+        <type value="Task"/>
         <identifier>
-           <system value="https://tools.ietf.org/html/rfc4122"/>
-           <value value="2363E9DD-DA0A-45AA-A4E3-447C68231525"/>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+            <value value="83C40E-A23856-00123C"></value>
         </identifier>
     </focus>
     <for>
