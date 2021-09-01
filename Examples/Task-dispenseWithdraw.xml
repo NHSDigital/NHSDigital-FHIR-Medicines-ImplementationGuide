@@ -4,7 +4,7 @@
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
     </identifier>
-    <status value="failed"></status>    <!-- this is to mark the sub task as failed -->
+    <status value="cancelled"></status>    <!-- this is to mark the sub task as failed -->
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
