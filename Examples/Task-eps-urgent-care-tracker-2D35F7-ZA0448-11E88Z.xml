@@ -15,6 +15,16 @@
             <valueDateTime value="2020-08-07" />
         </extension> -->
     </extension>
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-Prescription">
+        <!-- prescriptionTreatmentType -->
+        <extension url="courseOfTherapyType">
+            <valueCoding>
+                <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
+                <code value="acute" />
+                <display value="Acute" />
+            </valueCoding>
+        </extension>
+    </extension>
     <!-- internal id, can be ommited -->
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
@@ -33,12 +43,6 @@
     </businessStatus>
     <intent value="order"></intent>
     <code>
-        <!-- prescriptionTreatmentType -->
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
-            <code value="acute" />
-            <display value="Acute" />
-        </coding>
         <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
@@ -102,7 +106,7 @@
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
-            <type value="MedicationRequest"/>
+            <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
             <identifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
@@ -133,7 +137,7 @@
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
-            <type value="MedicationRequest"/>
+            <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
             <identifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
@@ -145,7 +149,7 @@
         <!-- Similarly, should we have a reference to the dispense-notification here ???-->
         <!-- or insert horrid extension here -->
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingReleaseInformation">
-            
+
             <extension url="dateLastIssuedDispensed">
                 <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>

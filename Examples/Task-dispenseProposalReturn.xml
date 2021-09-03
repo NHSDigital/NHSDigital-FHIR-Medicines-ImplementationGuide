@@ -16,11 +16,6 @@
             <code value="prescription-order" />
             <display value="Prescription Order" />
         </coding>
-        <coding>
-            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
-            <code value="change"></code>
-            <display value="Change the focal resource"></display>
-        </coding>
     </code>
     <focus>
         <type value="Task"/>

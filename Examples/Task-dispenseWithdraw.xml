@@ -23,11 +23,6 @@
             <code value="dispense-notification" />
             <display value="Dispense Notification" />
         </coding>
-        <coding>
-            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
-            <code value="abort"></code>
-            <display value="Mark the focal resource as no longer active"></display>
-        </coding>
     </code>
     <focus>
         <type value="Bundle"/>
