@@ -56,6 +56,10 @@
                         "reference": "urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E"
                     }
                 ]
+            },
+            "request" : {
+                "method" : "POST",
+                "url": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717"
             }
         },
         {
@@ -241,10 +245,20 @@
                 "substitution": {
                     "allowedBoolean": false
                 }
+            },
+            "request" : {
+                "method" : "POST",
+                "url" :"urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6",
+                "ifNoneExist" : "MedicationRequest?identifier=https://fhir.nhs.uk/Id/prescription-order-item-number|a54219b8-f741-4c47-b662-e4f8dfa49ab6"
             }
         },
         {
             "fullUrl": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+            "request" : {
+                "method" : "POST",
+                "url" :"urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+                "ifNoneExist" : "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519"
+            },
             "resource": {
                 "resourceType": "Patient",
                 "identifier":  [
@@ -304,6 +318,11 @@
         },
         {
             "fullUrl": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+            "request" : {
+                "method" : "POST",
+                "url" :"urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666",
+                "ifNoneExist" : "PractitionerRole?identifier=https://fhir.nhs.uk/Id/sds-role-profile-id|100102238986"
+            },
             "resource": {
                 "resourceType": "PractitionerRole",
                 "identifier":  [
@@ -379,6 +398,10 @@
         },
         {
             "fullUrl": "urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E",
+            "request" : {
+                "method" : "POST",
+                "url" :"urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E"
+            },
             "resource": {
                 "resourceType": "Provenance",
                 "target":  [
@@ -413,6 +436,11 @@
         },
         {
             "fullUrl": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
+            "request" : {
+                "method" : "POST",
+                "url" :"urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
+                "ifNoneExist" : "Location?identifier=https://fhir.nhs.uk/Id/ods-organization-code|RBA11"
+            },
             "resource": {
                 "resourceType": "Location",
                 "identifier":  [
