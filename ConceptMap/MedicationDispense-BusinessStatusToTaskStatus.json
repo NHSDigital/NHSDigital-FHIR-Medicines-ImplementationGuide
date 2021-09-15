@@ -72,6 +72,39 @@
                             "equivalence": "equivalent"
                         }
                     ]
+                },
+                {
+                    "code": "0005",
+                    "display": "Cancelled",
+                    "target":  [
+                        {
+                            "code": "cancelled",
+                            "display": "Cancelled",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "0006",
+                    "display": "Dispensed",
+                    "target":  [
+                        {
+                            "code": "completed",
+                            "display": "Completed",
+                            "equivalence": "equivalent"
+                        }
+                    ]
+                },
+                {
+                    "code": "0007",
+                    "display": "Not Dispensed",
+                    "target":  [
+                        {
+                            "code": "ready",
+                            "display": "Ready",
+                            "equivalence": "equivalent"
+                        }
+                    ]
                 }
 
             ]
