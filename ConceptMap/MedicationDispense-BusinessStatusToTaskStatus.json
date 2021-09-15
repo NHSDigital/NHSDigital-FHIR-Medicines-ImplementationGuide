@@ -6,7 +6,6 @@
     "name": "medicationDispenseBusinessStatusToTaskStatus",
     "title": "MedicationDispense business status to Task status Map",
     "status": "draft",
-    "experimental": true,
     "date": "2021-09-11",
     "publisher": "NHS Digital",
     "contact":  [
@@ -24,7 +23,7 @@
     "description": "MedicationDispense business status to Task status Map",
     "purpose": "Medicine Management",
     "sourceUri": "https://fhir.nhs.uk/ValueSet/DM-task-business-status",
-    "destinationUri": "http://hl7.org/fhir/ValueSet/task-status",
+    "targetUri": "http://hl7.org/fhir/ValueSet/task-status",
     "group":  [
         {
             "source": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
