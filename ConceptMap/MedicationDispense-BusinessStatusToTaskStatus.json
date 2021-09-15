@@ -62,7 +62,19 @@
                             "equivalence": "equivalent"
                         }
                     ]
+                },
+                {
+                    "code": "0004",
+                    "display": "Expired",
+                    "target":  [
+                        {
+                            "code": "cancelled",
+                            "display": "Cancelled",
+                            "equivalence": "equivalent"
+                        }
+                    ]
                 }
+
             ]
         }
     ]
