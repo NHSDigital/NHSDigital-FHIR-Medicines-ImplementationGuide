@@ -71,6 +71,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Claim.prescription.extension:groupIdentifier">
       <path value="Claim.prescription.extension" />
@@ -100,6 +101,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Claim.originalPrescription.extension:groupIdentifier">
       <path value="Claim.originalPrescription.extension" />
@@ -158,23 +160,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Claim.item.extension:lineItemIdentifier">
-      <path value="Claim.item.extension" />
-      <sliceName value="lineItemIdentifier" />
-      <short value="UUID for HL7v3 Message" />
-      <definition value="SuppliedLineItem.id" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier" />
-      </type>
-      <mustSupport value="true" />
+      <min value="0" />
     </element>
     <element id="Claim.item.extension:prescriptionStatus">
       <path value="Claim.item.extension" />
       <sliceName value="prescriptionStatus" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -184,6 +175,7 @@
     <element id="Claim.item.extension:prescriptionStatusReasson">
       <path value="Claim.item.extension" />
       <sliceName value="prescriptionStatusReasson" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -191,35 +183,34 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Claim.item.sequence">
-      <path value="Claim.item.sequence" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Claim.item.productOrService">
-      <path value="Claim.item.productOrService" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="DMD Medication Code" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
-      </binding>
-    </element>
-    <element id="Claim.item.modifier">
-      <path value="Claim.item.modifier" />
+    <element id="Claim.item.productOrService.coding">
+      <path value="Claim.item.productOrService.coding" />
       <min value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <description value="Prescription status" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
-      </binding>
+      <max value="1" />
+    </element>
+    <element id="Claim.item.productOrService.coding.system">
+      <path value="Claim.item.productOrService.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Claim.item.productOrService.coding.code">
+      <path value="Claim.item.productOrService.coding.code" />
+      <fixedCode value="16076005" />
+    </element>
+    <element id="Claim.item.productOrService.coding.display">
+      <path value="Claim.item.productOrService.coding.display" />
+      <fixedString value="Prescription" />
     </element>
     <element id="Claim.item.programCode">
       <path value="Claim.item.programCode" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <short value="PrescriptionChargeExemption" />
       <definition value="Describes possible reasons for someone not having to pay prescription charges." />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -227,12 +218,46 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
       </binding>
     </element>
-    <element id="Claim.item.quantity">
-      <path value="Claim.item.quantity" />
-      <mustSupport value="true" />
+    <element id="Claim.item.programCode:exemptionEvidence">
+      <path value="Claim.item.programCode" />
+      <sliceName value="exemptionEvidence" />
+      <max value="1" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-exemption-evidence" />
+      </binding>
+    </element>
+    <element id="Claim.item.programCode:exemptionEvidence.coding.system">
+      <path value="Claim.item.programCode.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence" />
     </element>
     <element id="Claim.item.detail">
       <path value="Claim.item.detail" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.extension">
+      <path value="Claim.item.detail.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.extension:lineItemIdentifier">
+      <path value="Claim.item.detail.extension" />
+      <sliceName value="lineItemIdentifier" />
+      <short value="UUID for HL7v3 Message" />
+      <definition value="SuppliedLineItem.id" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.sequence">
@@ -248,8 +273,58 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
       </binding>
     </element>
+    <element id="Claim.item.detail.modifier">
+      <path value="Claim.item.detail.modifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="Prescription status" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-type" />
+      </binding>
+    </element>
     <element id="Claim.item.detail.programCode">
       <path value="Claim.item.detail.programCode" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="PrescriptionChargeExemption" />
+      <definition value="Describes possible reasons for someone not having to pay prescription charges." />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="extensible" />
+        <description value="Prescription Charge Exemption" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
+      </binding>
+    </element>
+    <element id="Claim.item.detail.quantity">
+      <path value="Claim.item.detail.quantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.subDetail">
+      <path value="Claim.item.detail.subDetail" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.subDetail.sequence">
+      <path value="Claim.item.detail.subDetail.sequence" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.subDetail.productOrService">
+      <path value="Claim.item.detail.subDetail.productOrService" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="DMD Medication Code" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
+      </binding>
+    </element>
+    <element id="Claim.item.detail.subDetail.programCode">
+      <path value="Claim.item.detail.subDetail.programCode" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -261,21 +336,8 @@
       <definition value="Dispensing Endorsement  - Details of the endorsement(s) to support the claim for this medication item. &#xD;&#xA;&#xD;&#xA;Charge Payment - Details on whether a prescription charge was paid for the medication treatment." />
       <mustSupport value="true" />
     </element>
-    <element id="Claim.item.detail.programCode:exemptionEvidence">
-      <path value="Claim.item.detail.programCode" />
-      <sliceName value="exemptionEvidence" />
-      <max value="1" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-exemption-evidence" />
-      </binding>
-    </element>
-    <element id="Claim.item.detail.programCode:exemptionEvidence.coding.system">
-      <path value="Claim.item.detail.programCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence" />
-    </element>
-    <element id="Claim.item.detail.programCode:prescriptionCharge">
-      <path value="Claim.item.detail.programCode" />
+    <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge">
+      <path value="Claim.item.detail.subDetail.programCode" />
       <sliceName value="prescriptionCharge" />
       <max value="1" />
       <binding>
@@ -283,12 +345,12 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge" />
       </binding>
     </element>
-    <element id="Claim.item.detail.programCode:prescriptionCharge.coding.system">
-      <path value="Claim.item.detail.programCode.coding.system" />
+    <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge.coding.system">
+      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge" />
     </element>
-    <element id="Claim.item.detail.programCode:dispensingEndorsement">
-      <path value="Claim.item.detail.programCode" />
+    <element id="Claim.item.detail.subDetail.programCode:dispensingEndorsement">
+      <path value="Claim.item.detail.subDetail.programCode" />
       <sliceName value="dispensingEndorsement" />
       <max value="1" />
       <binding>
@@ -297,16 +359,16 @@
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
       </binding>
     </element>
-    <element id="Claim.item.detail.programCode:dispensingEndorsement.coding.system">
-      <path value="Claim.item.detail.programCode.coding.system" />
+    <element id="Claim.item.detail.subDetail.programCode:dispensingEndorsement.coding.system">
+      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
       <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
     </element>
-    <element id="Claim.item.detail.quantity">
-      <path value="Claim.item.detail.quantity" />
+    <element id="Claim.item.detail.subDetail.quantity">
+      <path value="Claim.item.detail.subDetail.quantity" />
       <mustSupport value="true" />
     </element>
-    <element id="Claim.item.detail.quantity.extension">
-      <path value="Claim.item.detail.quantity.extension" />
+    <element id="Claim.item.detail.subDetail.quantity.extension">
+      <path value="Claim.item.detail.subDetail.quantity.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -314,10 +376,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
-    <element id="Claim.item.detail.quantity.extension:runningTotal">
-      <path value="Claim.item.detail.quantity.extension" />
+    <element id="Claim.item.detail.subDetail.quantity.extension:runningTotal">
+      <path value="Claim.item.detail.subDetail.quantity.extension" />
       <sliceName value="runningTotal" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
