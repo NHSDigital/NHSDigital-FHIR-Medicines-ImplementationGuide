@@ -331,12 +331,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
     </element>
     <element id="Claim.item.detail.subDetail.extension:medicationDispense">
       <path value="Claim.item.detail.subDetail.extension" />
       <sliceName value="medicationDispense" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

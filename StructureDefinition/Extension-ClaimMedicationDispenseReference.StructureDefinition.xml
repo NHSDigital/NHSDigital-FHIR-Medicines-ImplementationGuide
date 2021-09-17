@@ -27,16 +27,20 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
-        <code value="Identifier" />
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
       </type>
     </element>
-    <element id="Extension.value[x].system">
-      <path value="Extension.value[x].system" />
+    <element id="Extension.value[x].identifier">
+      <path value="Extension.value[x].identifier" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.uk/Id/prescription-dispense-item-number" />
     </element>
-    <element id="Extension.value[x].value">
-      <path value="Extension.value[x].value" />
+    <element id="Extension.value[x].identifier.system">
+      <path value="Extension.value[x].identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.value[x].identifier.value">
+      <path value="Extension.value[x].identifier.value" />
       <min value="1" />
     </element>
   </differential>

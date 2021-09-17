@@ -135,6 +135,15 @@
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E5-A577-E040-A8C016024E6D"
                             }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "33560bee-bc0c-4e3b-a155-71591eee9ca5"
+                                }
+                            }
                         }
                     ],
                     "sequence": 1,
@@ -213,6 +222,15 @@
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E6-A577-E040-A8C016024E6D"
                             }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "e8e75676-9d30-45f8-8b09-696818e7f4ca"
+                                }
+                            }
                         }
                     ],
                     "sequence": 2,
@@ -290,6 +308,15 @@
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E7-A577-E040-A8C016024E6D"
+                            }
+                        },
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "164e94fe-16e5-4105-a4aa-10c3757c07c5"
+                                }
                             }
                         }
                     ],
