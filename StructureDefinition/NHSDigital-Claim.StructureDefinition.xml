@@ -28,6 +28,7 @@
   <differential>
     <element id="Claim.identifier">
       <path value="Claim.identifier" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Claim.status">
