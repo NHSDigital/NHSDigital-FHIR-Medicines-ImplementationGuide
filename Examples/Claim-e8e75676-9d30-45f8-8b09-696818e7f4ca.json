@@ -1,5 +1,6 @@
 {
     "resourceType": "Claim",
+    "id": "e8e75676-9d30-45f8-8b09-696818e7f4ca",
     "identifier": [
         {
             "system": "https://tools.ietf.org/html/rfc4122",
