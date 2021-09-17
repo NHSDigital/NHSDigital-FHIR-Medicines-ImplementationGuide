@@ -130,7 +130,7 @@
                 {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E5-A577-E040-A8C016024E6D"
@@ -208,7 +208,7 @@
                 {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E6-A577-E040-A8C016024E6D"
@@ -286,7 +286,7 @@
                 {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "58338C37-00E7-A577-E040-A8C016024E6D"
