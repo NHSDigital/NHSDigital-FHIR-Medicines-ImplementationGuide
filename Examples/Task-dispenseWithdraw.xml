@@ -19,9 +19,9 @@
     </partOf>
     <code>
         <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
-            <code value="dispense-notification" />
-            <display value="Dispense Notification" />
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
+            <code value="abort" />
+            <display value="Mark the focal resource as no longer active" />
         </coding>
     </code>
     <focus>

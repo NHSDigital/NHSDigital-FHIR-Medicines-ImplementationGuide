@@ -33,9 +33,9 @@
     <code>
         <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
         <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
-            <code value="prescription-order" />
-            <display value="Prescription Order" />
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
+            <code value="fulfill" />
+            <display value="Fulfill the focal request" />
         </coding>
     </code>
     <focus>

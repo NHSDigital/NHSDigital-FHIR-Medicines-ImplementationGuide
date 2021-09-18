@@ -1,14 +1,14 @@
 <Task xmlns="http://hl7.org/fhir">
-    <id value="ee1b55f8-113c-4725-99a3-25fbad366dd6"/>
+    <id value="1291fcca-902b-48f3-9d07-1be9ea30d7a0"/>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
-    <status value="ready"></status>    <!-- reset status to ready. If this is to allow a cancellation, should it be cancelled -->
+    <status value="cancelled"></status>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-        <value value="83C40E-A23856-00123C"></value>
+        <value value="3C2366-B81001-0A409U"></value>
     </groupIdentifier>
     <code>
         <coding>
@@ -18,29 +18,40 @@
         </coding>
     </code>
     <focus>
+        <type value="Task"/>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-            <value value="83C40E-A23856-00123C"></value>
+            <value value="3C2366-B81001-0A409U"></value>
         </identifier>
     </focus>
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />
-            <value value="9446368138" />
+            <value value="9453740519" />
         </identifier>
+        <display value="MISS ETTA CORY"/>
     </for>
-    <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
+     <requester>
+        <type value="PracttiionerRole"/>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
+            <value value="223891001086"></value>
+        </identifier>
+        <display value="Dr Liz Scott" />
+    </requester>
+    <authoredOn value="2019-12-30T12:00:00+00:00"></authoredOn>
     <owner>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
             <value value="VNE51"></value>
         </identifier>
+        <display value="The Simple Pharmacy"/>
     </owner>
     <reasonCode>
         <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
-            <code value="0002"></code>
-            <display value="Unable to dispense medication on prescriptions"/>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"></system>
+            <code value="0001"></code>
+            <display value="Prescribing Error"/>
         </coding>
     </reasonCode>
     <input>
@@ -55,7 +66,7 @@
             <type value="MedicationRequest"/>
             <identifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
-                <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+                <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
             </identifier>
         </valueReference>
     </input>

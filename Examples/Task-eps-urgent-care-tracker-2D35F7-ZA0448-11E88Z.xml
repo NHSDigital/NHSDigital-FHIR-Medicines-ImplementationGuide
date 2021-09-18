@@ -44,15 +44,14 @@
     <intent value="order"></intent>
     <code>
         <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
-        <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/message-event"></system>
-            <code value="prescription-order" />
-            <display value="Prescription Order" />
+       <coding>
+            <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
+            <code value="fulfill" />
+            <display value="Fulfill the focal request" />
         </coding>
     </code>
     <focus>
         <!-- identifier of the prescription i.e. short form prescription id -->
-        <type value="Task" />
         <identifier>
             <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
             <value value="2D35F7-ZA0448-11E88Z"></value>
@@ -97,11 +96,11 @@
                 <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
-        <type>
+         <type>
             <coding>
                 <system value="http://snomed.info/sct" />
-                <code value="318896009" />
-                <display value="Perindopril erbumine 2mg tablets" />
+                <code value="16076005" />
+                <display value="Prescription" />
             </coding>
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
@@ -112,6 +111,7 @@
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
             </identifier>
+             <display value="Perindopril erbumine 2mg tablets" />
         </valueReference>
     </input>
     <input>
@@ -128,11 +128,11 @@
                 <valueDate value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
-        <type>
+      <type>
             <coding>
                 <system value="http://snomed.info/sct" />
-                <code value="386047000" />
-                <display value="Metformin 500mg modified-release tablets" />
+                <code value="16076005" />
+                <display value="Prescription" />
             </coding>
         </type>
         <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
@@ -143,6 +143,7 @@
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
             </identifier>
+             <display value="Metformin 500mg modified-release tablets" />
         </valueReference>
     </input>
     <output>
