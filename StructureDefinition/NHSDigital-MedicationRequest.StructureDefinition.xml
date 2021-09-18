@@ -576,7 +576,7 @@
       <path value="MedicationRequest.eventHistory" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DM-Provenance" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Provenance" />
       </type>
     </element>
   </differential>
