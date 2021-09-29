@@ -70,20 +70,7 @@
                 "id": "a1f9ad95-8e2b-4020-a6bd-124f6fe2ef1c",
                 "identifier": [
                     {
-                        "extension": [
-                            {
-                                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
-                                            "code": "01",
-                                            "display": "Number present and verified"
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
+                    
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "9657847419"
                     }

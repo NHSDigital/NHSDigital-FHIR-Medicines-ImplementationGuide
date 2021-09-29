@@ -1,15 +1,6 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="d0ddff03-a87e-4be6-b6b6-6cf2abec8a47"/>
     <identifier>
-        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                    <code value="01" />
-                    <display value="Number present and verified" />
-                </coding>
-            </valueCodeableConcept>
-        </extension>
         <system value="https://fhir.nhs.uk/Id/nhs-number" />
         <value value="9000000009" />
     </identifier>

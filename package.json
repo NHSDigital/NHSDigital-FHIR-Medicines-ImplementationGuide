@@ -7,9 +7,8 @@
       "4.0.1"
     ],
     "dependencies": {
-      "uk.nhsdigital.r4": "2.1.47-discovery",
-      "UKCore.R4.STU.02.00.00": "2.0.0",
-      "UKCore.R4.02.00.00": "2.0.0",
+      "uk.nhsdigital.r4": "2.1.50-discovery",
+      "UKCore.England": "1.0.8-test",
       "hl7.fhir.r4.core": "4.0.1"
     }
   }

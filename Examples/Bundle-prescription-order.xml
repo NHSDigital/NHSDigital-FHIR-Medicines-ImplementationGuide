@@ -307,15 +307,6 @@
         <!-- `Patient.id -->
         <identifier>
           <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
-          <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
-            <valueCodeableConcept>
-              <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                <code value="01" />
-                <display value="Number present and verified" />
-              </coding>
-            </valueCodeableConcept>
-          </extension>
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
           <value value="9900002717" />
         </identifier>
