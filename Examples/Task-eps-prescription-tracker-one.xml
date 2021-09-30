@@ -93,7 +93,7 @@
         <!-- Should we have a reference to the prescription-order here ???-->
         <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionRepeatDispensingInformation">
             <extension url="dateLastDispensed">
-                <valueDate value="2014-05-07" />
+                <valueDateTime value="2014-05-07" />
             </extension>
         </extension>
         <type>

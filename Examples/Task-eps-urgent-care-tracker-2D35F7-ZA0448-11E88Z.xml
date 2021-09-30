@@ -93,7 +93,7 @@
                 </valueCoding>
             </extension>
             <extension url="dateLastDispensed">
-                <valueDate value="2018-04-22T09:57:03+00:00" />
+                <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
          <type>
@@ -125,7 +125,7 @@
                 </valueCoding>
             </extension>
             <extension url="dateLastDispensed">
-                <valueDate value="2018-04-22T09:57:03+00:00" />
+                <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
       <type>
@@ -152,10 +152,10 @@
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingReleaseInformation">
 
             <extension url="dateLastIssuedDispensed">
-                <valueDate value="2018-04-22T09:57:03+00:00" />
+                <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
             <extension url="dateDownloaded">
-                <valueDate value="2018-04-22T09:57:03+00:00" />
+                <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
         <!-- This is a mandatory element -->

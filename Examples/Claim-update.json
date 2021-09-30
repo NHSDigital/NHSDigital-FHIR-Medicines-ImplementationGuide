@@ -104,6 +104,7 @@
                     }
                 }
             ],
+            "sequence": 1,
             "productOrService": {
                 "coding": [
                     {
