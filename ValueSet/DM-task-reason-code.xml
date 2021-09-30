@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="DM-task-reason-code"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code"/>
-    <version value="1.0.4"/>
+    <version value="1.0.5"/>
     <name value="TaskMedicationDispenseReasonCode"/>
     <status value="draft"/>
     <description value="Task (MedicationDispense) Reason Code"/>
@@ -15,9 +15,13 @@
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
             <version value="01"/>
         </include>
+        <include>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <version value="1.1.3"/>
+        </include>
     </compose>
     <expansion>
-        <timestamp value="2021-04-13T12:00:00+00:00"/>
+        <timestamp value="2021-09-30T12:00:00+00:00"/>
         <contains>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"/>
             <version value="01"/>
@@ -101,6 +105,51 @@
             <version value="1.0.6"/>
             <code value="0001"/>
             <display value="Patient non-attendance"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0005"/>
+            <display value="At the Patients request"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0006"/>
+            <display value="At the Pharmacists request"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0003"/>
+            <display value="Change to medication treatment regime"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0004"/>
+            <display value="Clinical grounds"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0001"/>
+            <display value="Prescribing Error"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0002"/>
+            <display value="Clinical contra-indication"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0009"/>
+            <display value="Patient deducted - registered with new practice"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0007"/>
+            <display value="Notification of Death"/>
+        </contains>
+        <contains>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"/>
+            <code value="0008"/>
+            <display value="Patient deducted - other reason"/>
         </contains>
     </expansion>
 </ValueSet>

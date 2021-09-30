@@ -32,7 +32,7 @@
         <display value="MISS ETTA CORY"/>
     </for>
      <requester>
-        <type value="PracttiionerRole"/>
+        <type value="PractitionerRole"/>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
             <value value="223891001086"></value>
