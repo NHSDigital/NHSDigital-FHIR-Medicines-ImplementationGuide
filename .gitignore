@@ -3,5 +3,9 @@ StructureDefinition/Extension-spineEndpoint.StructureDefinition.xml
 StructureDefinition/Spine*.xml
 StructureDefinition/UKCore*.xml
 StructureDefinition/ExtensionUKCore*.xml
+StructureDefinition/Extension-UKCore*.xml
+StructureDefinition/Extension-EPS-DispenseRelease*.xml
+StructureDefinition/Extension-EPS-DispensingInformation*.xml
+StructureDefinition/Extension-EPS-RepeatInformation*.xml
 StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty.StructureDefinition.xml
 .idea

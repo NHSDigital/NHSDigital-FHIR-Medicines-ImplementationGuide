@@ -97,19 +97,18 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
-    <element id="MedicationRequest.extension:repeatInformation">
+    <element id="MedicationRequest.extension:medicationRepeatInformation">
       <path value="MedicationRequest.extension" />
-      <sliceName value="repeatInformation" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
-      </type>
+      <sliceName value="medicationRepeatInformation" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
       <sliceName value="responsiblePractitioner" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -120,6 +119,7 @@
     <element id="MedicationRequest.extension:prescriptionEndorsement">
       <path value="MedicationRequest.extension" />
       <sliceName value="prescriptionEndorsement" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionEndorsement" />
@@ -130,6 +130,7 @@
       <path value="MedicationRequest.extension" />
       <sliceName value="prescriptionTaskStatusReason" />
       <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory" />
@@ -148,6 +149,7 @@
     <element id="MedicationRequest.extension:controlledDrug">
       <path value="MedicationRequest.extension" />
       <sliceName value="controlledDrug" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -160,6 +162,7 @@
       <sliceName value="dispensingInformation" />
       <short value="For EPS use only" />
       <definition value="Not to be populated by prescribing systems. Tracking systems only for repeat dispensing." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -381,11 +384,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID">
       <path value="MedicationRequest.groupIdentifier.extension" />
       <sliceName value="PrescriptionOrderUUID" />
       <short value="UUID order number for grouped MedciationRequests" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
@@ -464,6 +469,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationRequest.dispenseRequest.extension:performerSiteType">
       <path value="MedicationRequest.dispenseRequest.extension" />
@@ -536,10 +542,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.extension:practitionerRole">
       <path value="MedicationRequest.dispenseRequest.performer.extension" />
       <sliceName value="practitionerRole" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -563,7 +571,6 @@
       <path value="MedicationRequest.substitution" />
       <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done. In most cases this should default to false." />
       <comment value="Substituition is a mandatory requirement for EPS." />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.substitution.allowed[x]">
