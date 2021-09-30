@@ -61,7 +61,8 @@
                     }
                 ]
             }
-        ]
+        ],
+        "display" : "A prescription"
     },
     "payee": {
         "type": {
