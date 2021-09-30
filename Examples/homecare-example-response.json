@@ -130,6 +130,9 @@
                         },
                         "display": "The Simple Pharmacy"
                     }
+                },
+                "substitution": {
+                    "allowedBoolean": false
                 }
             }
         },

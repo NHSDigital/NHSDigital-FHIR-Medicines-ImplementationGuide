@@ -129,7 +129,7 @@
                 {
                     "extension": [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-SuppliedItemIdentifier",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
                                 "value": "18fc8a8b-f7c7-4367-80ce-1f4fc84c962d"
