@@ -116,7 +116,7 @@
     </input>
     <input>
         <!-- Should we have a reference to the prescription-order here ???-->
-        <extension url="https://fhir.nhs.uk/StructureDefinition/ExtensionDispensingInformation">
+        <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
                     <system value="https://fhir.nhs.uk/CodeSystem/medicationdispense-type" />
@@ -166,5 +166,12 @@
                 <display value="Dispensing medication" />
             </coding>
         </type>
+        <valueReference>
+            <type value="MedicationDispense" />
+            <identifier>
+                <system value="https://tools.ietf.org/html/rfc4122" />
+                <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38" />
+            </identifier>
+        </valueReference>
     </output>
 </Task>
