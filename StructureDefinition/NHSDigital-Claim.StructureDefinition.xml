@@ -26,6 +26,27 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Claim" />
   <derivation value="constraint" />
   <differential>
+    <element id="Claim.extension">
+      <path value="Claim.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Claim.extension:replacementOf">
+      <path value="Claim.extension" />
+      <sliceName value="replacementOf" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-replacementOf" />
+      </type>
+    </element>
     <element id="Claim.identifier">
       <path value="Claim.identifier" />
       <min value="1" />
@@ -130,6 +151,10 @@
     <element id="Claim.payee.party">
       <path value="Claim.payee.party" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
+      </type>
     </element>
     <element id="Claim.payee.party.identifier">
       <path value="Claim.payee.party.identifier" />
@@ -183,6 +208,12 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatusReason" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.productOrService">
+      <path value="Claim.item.productOrService" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Claim.item.productOrService.coding">
       <path value="Claim.item.productOrService.coding" />
@@ -308,7 +339,7 @@
       <definition value="Describes possible reasons for someone not having to pay prescription charges." />
       <mustSupport value="true" />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="Prescription Charge Exemption" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-prescription-charge-exemption" />
       </binding>
@@ -374,7 +405,7 @@
       <sliceName value="prescriptionCharge" />
       <max value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge" />
       </binding>
     </element>
@@ -387,7 +418,7 @@
       <sliceName value="dispensingEndorsement" />
       <max value="1" />
       <binding>
-        <strength value="extensible" />
+        <strength value="required" />
         <description value="Program specific reason codes" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
       </binding>
