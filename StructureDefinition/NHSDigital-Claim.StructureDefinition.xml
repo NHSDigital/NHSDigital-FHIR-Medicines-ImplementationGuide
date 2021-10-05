@@ -279,19 +279,6 @@
       </slicing>
       <min value="2" />
     </element>
-    <element id="Claim.item.detail.extension:sequenceIdentifier">
-      <path value="Claim.item.detail.extension" />
-      <sliceName value="sequenceIdentifier" />
-      <short value="UUID for HL7v3 Message" />
-      <definition value="SuppliedLineItem.id" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Claim.item.detail.extension:medicationRequest">
       <path value="Claim.item.detail.extension" />
       <sliceName value="medicationRequest" />
@@ -302,6 +289,16 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.extension:sequenceIdentifier">
+      <path value="Claim.item.detail.extension" />
+      <sliceName value="sequenceIdentifier" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier" />
+      </type>
     </element>
     <element id="Claim.item.detail.sequence">
       <path value="Claim.item.detail.sequence" />
