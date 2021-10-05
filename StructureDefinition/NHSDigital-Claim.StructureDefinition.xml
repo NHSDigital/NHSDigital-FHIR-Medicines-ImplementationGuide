@@ -299,6 +299,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.sequence">
       <path value="Claim.item.detail.sequence" />
