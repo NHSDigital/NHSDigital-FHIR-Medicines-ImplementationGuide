@@ -301,6 +301,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Claim.item.detail.extension:repeatInformation">
+      <path value="Claim.item.detail.extension" />
+      <sliceName value="repeatInformation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation" />
+      </type>
+    </element>
     <element id="Claim.item.detail.sequence">
       <path value="Claim.item.detail.sequence" />
       <mustSupport value="true" />
@@ -370,6 +380,16 @@
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationDispenseReference" />
+      </type>
+    </element>
+    <element id="Claim.item.detail.subDetail.extension:repeatInformation">
+      <path value="Claim.item.detail.subDetail.extension" />
+      <sliceName value="repeatInformation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation" />
       </type>
     </element>
     <element id="Claim.item.detail.subDetail.sequence">
