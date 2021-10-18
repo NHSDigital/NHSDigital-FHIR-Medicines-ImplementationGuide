@@ -261,10 +261,10 @@
                         }
                     ],
                     "quantity": {
-                        "value": 4.5,
-                        "unit": "gram",
+                        "value": 28,
+                        "unit": "drops",
                         "system": "http://unitsofmeasure.org",
-                        "code": "g"
+                        "code": "[drp]"
                     },
                     "performer": {
                         "identifier": {
