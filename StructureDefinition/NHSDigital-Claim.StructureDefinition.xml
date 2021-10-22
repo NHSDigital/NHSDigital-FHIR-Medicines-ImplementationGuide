@@ -211,9 +211,7 @@
     </element>
     <element id="Claim.item.productOrService">
       <path value="Claim.item.productOrService" />
-      <binding>
-        <strength value="required" />
-      </binding>
+      <comment value="To be expanded. At present a fixed SNOMED CT value" />
     </element>
     <element id="Claim.item.productOrService.coding">
       <path value="Claim.item.productOrService.coding" />
