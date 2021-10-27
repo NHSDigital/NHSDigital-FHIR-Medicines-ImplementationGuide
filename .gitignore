@@ -9,3 +9,4 @@ StructureDefinition/Extension-EPS-DispensingInformation*.xml
 StructureDefinition/Extension-EPS-RepeatInformation*.xml
 StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty.StructureDefinition.xml
 .idea
+validation/node_modules
