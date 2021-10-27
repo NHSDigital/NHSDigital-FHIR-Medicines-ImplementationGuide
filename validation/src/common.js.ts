@@ -53,8 +53,15 @@ export let patient : Patient = {
     }
 ;
 
-export async function validate(resource) {
-    const response = await axios.post(`${defaultBaseUrl}/$validate`, resource);
+export async function validate(resource,contentType ) {
+
+    const response = await axios.post(`${defaultBaseUrl}/$validate`,
+        resource,
+        {
+            headers: {
+                'Content-Type': contentType
+            }
+        });
     return response;
 }
 
