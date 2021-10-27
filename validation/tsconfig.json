@@ -8,10 +8,6 @@
     ],
     "moduleResolution": "node",
     "baseUrl": ".",
-    "paths": {
-      "@models": ["../../../models"],
-      "@coordinator": ["../../../coordinator"]
-    }
   },
   "include": [
     "specs/**/*",
