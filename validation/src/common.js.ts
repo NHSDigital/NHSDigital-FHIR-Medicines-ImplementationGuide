@@ -53,6 +53,11 @@ export let patient : Patient = {
     }
 ;
 
+export async function validate(resource) {
+    const response = await axios.post(`${defaultBaseUrl}/$validate`, resource);
+    return response;
+}
+
 export const api = (baseUrl = defaultBaseUrl) => ({
     validate: (resource) => axios.post(`${baseUrl}/$validate`, resource)
         .then(response => response.data)

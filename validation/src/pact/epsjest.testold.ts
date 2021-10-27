@@ -1,5 +1,5 @@
 import {pactWith} from "jest-pact";
-import {defaultBaseUrl, patient} from './common.js';
+import {defaultBaseUrl, patient} from '../common.js.js';
 import {InteractionObject, Matchers} from '@pact-foundation/pact';
 import {supertest} from 'supertest';
 

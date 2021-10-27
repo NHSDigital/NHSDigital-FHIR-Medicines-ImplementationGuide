@@ -1,5 +1,5 @@
 import {pactWith} from "jest-pact";
-import {api, patient} from './common.js';
+import {api, patient} from '../common.js.js';
 
 import {OperationOutcome} from "fhir/r4";
 
