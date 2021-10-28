@@ -60,11 +60,14 @@ jobs:
       - name: Install npm
         run: make install
       
-      - name: Install Validator
+      - name: Install FHIR Validator
         run: make install-validator
       
-      - name: Build Validator
+      - name: Build FHIR Validator
         run: make build-latest-validator
+        
+      - name: Run FHIR Validator
+        run: make run-validator
         
       - name: Run Test
         run: make test
