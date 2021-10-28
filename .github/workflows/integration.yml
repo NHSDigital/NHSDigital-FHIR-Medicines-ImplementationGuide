@@ -60,5 +60,11 @@ jobs:
       - name: Install npm
         run: make install
       
+      - name: Install Validator
+        run: make install-validator
+      
       - name: Build Validator
         run: make build-latest-validator
+        
+      - name: Run Test
+        run: make test
