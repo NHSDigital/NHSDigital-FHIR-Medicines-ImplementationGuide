@@ -6,11 +6,11 @@ test:
 
 
 run-validator:
-	make -C validator run
+	make -C validation-service-fhir-r4 run
 
 ## Install
 install-validator:
-	make -C validator install
+	make -C validation-service-fhir-r4 install
 
 build-validator:
-	make -C validator build
+	make -C validation-service-fhir-r4 build
