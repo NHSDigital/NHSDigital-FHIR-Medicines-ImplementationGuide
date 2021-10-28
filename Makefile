@@ -6,17 +6,17 @@ test:
 
 
 run-validator:
-	make -C validation-service-fhir-r4 run
+	cd validation-service-fhir-r4  && nohup mvn spring-boot:run &
 
 ## Install
 install-validator:
-	make -C validation-service-fhir-r4 install
+	cd validation-service-fhir-r4  && make install
 
 build-validator:
-	make -C validation-service-fhir-r4 build
+	cd validation-service-fhir-r4  && make build
 
 build-latest-validator:
-	make -C validation-service-fhir-r4 build-latest
+	cd validation-service-fhir-r4  && make build-latest
 
 run-validator:
 	make -C validation-service-fhir-r4 run
