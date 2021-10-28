@@ -16,8 +16,7 @@ build-validator:
 	cd validation-service-fhir-r4  && make build
 
 build-latest-validator:
-	cd validation-service-fhir-r4  && pip install poetry requests
-	cd validation-service-fhir-r4  && make build-latest
+	make -C validation-service-fhir-r4 run build-latest
 
 run-validator:
 	make -C validation-service-fhir-r4 run
