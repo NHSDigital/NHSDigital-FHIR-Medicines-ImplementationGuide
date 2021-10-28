@@ -55,5 +55,8 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-build-cache-npm-packages-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install repo
+      - name: Install npm
+        run: make install
+      
+      - name: Run Tests
         run: make test
