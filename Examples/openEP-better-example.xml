@@ -1,7 +1,6 @@
 <Bundle xmlns="http://hl7.org/fhir">
     <id value="openep-better" />
     <identifier>
-        <!--  pertinentInformation2[0].pertinentLineItem.id -->
         <system value="https://tools.ietf.org/html/rfc4122" />
         <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
     </identifier>
@@ -86,14 +85,12 @@
                 </requester>
 
                 <groupIdentifier>
-                    <!-- ParentPrescription.id uuid -->
                     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
                         <valueIdentifier>
                             <system value="https://fhir.nhs.uk/Id/prescription" />
                             <value value="c26f0fe5-c084-4320-9c39-3ccdbc0b2e6a" />
                         </valueIdentifier>
                     </extension>
-                    <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
                     <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
                     <value value="248193-923856-00123C" />
                 </groupIdentifier>
@@ -109,16 +106,6 @@
                     <additionalInstruction>
                         <text value="test c"></text>
                     </additionalInstruction>
-                    <!-- need to investigate   <timing>
-                        <repeat>
-                            <frequency value="3"></frequency>
-                            <period value="1"></period>
-                          <periodUnit value="d"></periodUnit> 
-                            <timeOfDay value="08:00:00"></timeOfDay>
-                            <timeOfDay value="13:00:00"></timeOfDay>
-                            <timeOfDay value="20:00:00"></timeOfDay>
-                        </repeat>
-                    </timing> -->
                     <route>
                         <coding>
                             <system value="http://snomed.info/sct"></system>
@@ -229,7 +216,6 @@
                 <status value="unknown" />
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
-                    <!--   This doesn't match the MedicationRequest - done on purpose   -->
                     <code value="HH" />
                     <display value="home health" />
                 </class>
@@ -247,11 +233,8 @@
     <entry>
         <fullUrl value="urn:uuid:f942fd9b-f423-48c5-84b3-0e76bb4c5da5" />
         <resource>
-            <!--  This is the role of the person who is authorising the prescription -->
             <PractitionerRole xmlns="http://hl7.org/fhir">
-                <!-- UUID not in Hl7v3 version -->
                 <id value="f942fd9b-f423-48c5-84b3-0e76bb4c5da5" />
-                <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
                 <identifier>
                     <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
                     <value value="125686540025" />
@@ -272,7 +255,6 @@
                     <display value="SOMERSET NHS FOUNDATION TRUST" />
                 </organization>
                 <code>
-                    <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
                     <coding>
                         <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
                         <code value="R8000" />

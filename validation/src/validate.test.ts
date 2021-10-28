@@ -38,36 +38,36 @@ describe('Parsing folder CapabilityStatement', () => {
     testFolder('../CapabilityStatement');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder Examples', () => {
     testFolder('../Examples');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder CodeSystem', () => {
     testFolder('../CodeSystem');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder MessageDefinition', () => {
     testFolder('../MessageDefinition');
 });
 
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder ValueSett', () => {
     testFolder('../ValueSet');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder ConceptMap', () => {
     testFolder('../ConceptMap');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder SearchParameter', () => {
     testFolder('../SearchParameter');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder OperationDefinition', () => {
     testFolder('../OperationDefinition');
 });
 
-describe('Parsing folder CapabilityStatement', () => {
+describe('Parsing folder StructureDefinition', () => {
     testFolder('../StructureDefinition');
 });
 

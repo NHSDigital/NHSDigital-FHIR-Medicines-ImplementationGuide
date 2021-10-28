@@ -8,7 +8,6 @@
   <entry>
     <fullUrl value="urn:oid:48B07891-1D81-7B99-3BD2-23E242D2DD44" />
     <resource>
-      <!-- This is the equivalent of the the Send Message Payload (MCCI_RM010000UK12) -->
       <MessageHeader>
         <id value="48B07891-1D81-7B99-3BD2-23E242D2DD44" />
         <eventCoding>
@@ -42,27 +41,11 @@
       </MessageHeader>
     </resource>
   </entry>
-  <!-- Beginning of the Parent Prescription payload (PORX_RM132004UK31) -->
   <entry>
     <fullUrl value="urn:uuid:1E34EE53-397A-2E70-E97C-67B1BD95014D" />
     <resource>
       <MedicationRequest>
-
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
-            225426007 |Administration of therapeutic substance (procedure)| 
-            From Rob Gooch - Hard code this value.
-          
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-procedureCode">
-              <valueCodeableConcept>
-                <coding>
-                  <system value="http://snomed.info/sct" />
-                  <code value="243132000" />
-                  <display value="Inhaled drug administration (procedure)" />
-                </coding>
-              </valueCodeableConcept>
-            </extension>  -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType">
           <valueCoding>
             <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
@@ -75,18 +58,7 @@
             <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           </valueReference>
         </extension>
-        <!-- pertinentInformation2.pertinentTokenIssued. Not required 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-tokenIssued">
-              <valueBoolean value="true" />
-            </extension> -->
-        <!-- Can be pertinentPrescription.id This is:
-            
-            The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
-
-            ?? The reference to DCE gives me the impression this should be the MessageHeader.id
-    -->
         <identifier>
-          <!--  pertinentInformation2[0].pertinentLineItem.id -->
           <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
           <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
         </identifier>
@@ -100,8 +72,6 @@
           </coding>
           <text value="Inpatient"></text>
         </category>
-        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial 
-            Code should be in SNOMED CT refset 999000031000001105 |Manufactured material simple reference set (foundation metadata concept)| -->
         <medicationCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
@@ -112,27 +82,21 @@
         <subject>
           <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         </subject>
-        <!-- ParentPrescription.effectiveTime -->
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
           <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           <display value="Dr Smith" />
         </requester>
-
         <groupIdentifier>
-          <!-- ParentPrescription.id uuid -->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription" />
               <value value="EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
             </valueIdentifier>
           </extension>
-          <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
           <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
-            Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
         <courseOfTherapyType>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
@@ -140,13 +104,10 @@
             <display value="Short course (acute) therapy" />
           </coding>
         </courseOfTherapyType>
-        <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs when required" />
         </dosageInstruction>
-        <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
         <dispenseRequest>
-          <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
             <valueCoding>
               <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
@@ -166,7 +127,6 @@
             </identifier>
           </performer>
         </dispenseRequest>
-        <!-- pertinentInformation2.pertinentLineItem.component.seperatableInd value="false"/> check this mapping is correct -->
         <substitution>
           <allowedBoolean value="false" />
         </substitution>
@@ -177,19 +137,7 @@
     <fullUrl value="urn:uuid:791C9A65-5C6A-308B-D700-32D247BADB87" />
     <resource>
       <MedicationRequest>
-
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.id this is repeated in the identifier section which is required -->
         <id value="791C9A65-5C6A-308B-D700-32D247BADB87" />
-        <!-- suggest use of pertinentInformation2[0].pertinentLineItem.code 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-procedureCode">
-              <valueCodeableConcept>
-                <coding>
-                  <system value="http://snomed.info/sct" />
-                  <code value="243132000" />
-                  <display value="Inhaled drug administration (procedure)" />
-                </coding>
-              </valueCodeableConcept>
-            </extension> -->
         <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType">
           <valueCoding>
             <system value="https://fhir.nhs.uk/CodeSystem/prescription-type" />
@@ -202,22 +150,10 @@
             <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           </valueReference>
         </extension>
-        <!-- pertinentInformation2.pertinentTokenIssued. Not required 
-            <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-tokenIssued">
-              <valueBoolean value="true" />
-            </extension> -->
         <identifier>
-          <!--  pertinentInformation2[1].pertinentLineItem.id -->
           <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
           <value value="791C9A65-5C6A-308B-D700-32D247BADB87" />
         </identifier>
-
-        <!-- Can be pertinentPrescription.id This is:
-            
-            The Identifier Global datatype flavour is used to carry this information as follows: the root attribute shall contain the value of the DCE UUID
-
-            ?? The reference to DCE gives me the impression this should be the MessageHeader.id
-    -->
         <status value="active" />
         <intent value="order" />
         <category>
@@ -228,7 +164,6 @@
           </coding>
           <text value="Inpatient"></text>
         </category>
-        <!-- <pertinentInformation2.pertinentLineItem.product.manufacturedProduct.manufacturedRequestedMaterial -->
         <medicationCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
@@ -239,26 +174,21 @@
         <subject>
           <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
         </subject>
-        <!-- ParentPrescription.effectiveTime -->
         <authoredOn value="2004-09-20T10:30:00.000+00:00" />
         <requester>
           <reference value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
           <display value="Dr Smith" />
         </requester>
         <groupIdentifier>
-          <!-- ParentPrescription.id uuid -->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
             <valueIdentifier>
               <system value="https://fhir.nhs.uk/Id/prescription" />
               <value value="urn:uuid:EDD2E9DD-DA0A-C266-A4E3-447C68239524" />
             </valueIdentifier>
           </extension>
-          <!-- pertinentPrescription.id 2.16.840.1.113883.2.1.3.2.4.18.8 -->
           <system value="https://fhir.nhs.uk/Id/prescription-order-number" />
           <value value="83C40E-A23856-00123C" />
         </groupIdentifier>
-        <!--  <pertinentInformation5.pertinentPrescriptionTreatmentType 
-            Was extension in STU3 to courseOfTherapyType url="https://fhir.nhs.uk/fhir/R4/StructureDefinition/Extension-CareConnect-PrescriptionType-1"> -->
         <courseOfTherapyType>
           <coding>
             <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
@@ -266,13 +196,10 @@
             <display value="Short course (acute) therapy" />
           </coding>
         </courseOfTherapyType>
-        <!-- <pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value -->
         <dosageInstruction>
           <text value="2 Puffs twice daily" />
         </dosageInstruction>
-        <!-- <pertinentInformation2.pertinentLineItem.component.lineItemQuantity -->
         <dispenseRequest>
-          <!-- <pertinentInformation1.pertinentDispensingSitePreference-->
           <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType">
             <valueCoding>
               <system value="https://fhir.nhs.uk/CodeSystem/dispensing-site-preference"></system>
@@ -292,7 +219,6 @@
             </identifier>
           </performer>
         </dispenseRequest>
-        <!-- pertinentInformation2.pertinentLineItem.component.seperatableInd value="false"/> -->
         <substitution>
           <allowedBoolean value="false" />
         </substitution>
@@ -304,13 +230,10 @@
     <resource>
       <Patient>
         <id value="C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
-        <!-- `Patient.id -->
         <identifier>
-          <!-- will be required to add in extension for verification status. This isn't needed as status is implied (traced) -->
           <system value="https://fhir.nhs.uk/Id/nhs-number" />
           <value value="9900002717" />
         </identifier>
-        <!-- Patient.patientPerson.name -->
         <name>
           <use value="official" />
           <family value="Smith" />
@@ -318,11 +241,8 @@
           <given value="Simon" />
           <prefix value="Mr" />
         </name>
-        <!-- Patient.administrativeGenderCode -->
         <gender value="male" />
-        <!-- Patient.birthTime -->
         <birthDate value="1972-12-07" />
-        <!-- `Patient.addr use="H" -->
         <address>
           <use value="home" />
           <type value="both" />
@@ -339,7 +259,6 @@
               <end value="2021-12-31T00:00:00+00:00" />
             </period>
           </identifier>
-          <!-- display not required. Inlcuded to help readbility/navigation-->
           <display value="Dr Nice" />
         </generalPractitioner>
       </Patient>
@@ -348,11 +267,8 @@
   <entry>
     <fullUrl value="urn:uuid:6dc16793-61c2-44b8-8d0f-f872101c016e" />
     <resource>
-      <!--  This is the role of the person who is authorising the prescription -->
       <PractitionerRole xmlns="http://hl7.org/fhir">
-        <!-- UUID not in Hl7v3 version -->
         <id value="6dc16793-61c2-44b8-8d0f-f872101c016e" />
-        <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
           <value value="125686540025" />
@@ -363,7 +279,6 @@
             <value value="896547302565" />
           </identifier>
           <display value="Dr Smith" />
-
         </practitioner>
         <organization>
           <identifier>
@@ -374,7 +289,6 @@
           <display value="Mirfleld Surgery" />
         </organization>
         <code>
-          <!-- <AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
           <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
             <code value="R8000" />
@@ -384,9 +298,7 @@
         <location>
           <reference value="urn:uuid:631330c5-2d4f-4683-a14a-c8e0c3c2d760"/>
         </location>
-        <!-- <AgentPerson classCode="AGNT">.telecom -->
         <telecom>
-          <!-- note mapping of phone to tel: -->
           <system value="phone" />
           <value value="01234567890" />
           <use value="work" />
@@ -397,10 +309,8 @@
   <entry>
     <fullUrl value="urn:uuid:0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
     <resource>
-      <!-- <responsibleParty typeCode="RESP"  This will normally be the patients GP -->
       <PractitionerRole xmlns="http://hl7.org/fhir">
         <id value="0f314b9f-5233-42e6-aed3-c436bb9ac8ab" />
-        <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.0.67 -->
         <identifier>
           <system value="https://fhir.nhs.uk/Id/sds-role-profile-id" />
           <value value="787946852679" />
@@ -421,7 +331,6 @@
           <display value="Mirfleld Surgery" />
         </organization>
         <code>
-          <!-- <responsibleParty typeCode="RESP"><AgentPerson classCode="AGNT">.id 1.2.826.0.1285.0.2.1.104 -->
           <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
             <code value="R8000" />
@@ -431,9 +340,7 @@
         <location>
           <reference value="urn:uuid:631330c5-2d4f-4683-a14a-c8e0c3c2d760"/>
         </location>
-        <!-- <AgentPerson classCode="AGNT">.telecom -->
         <telecom>
-          <!-- note mapping of phone to tel: -->
           <system value="phone" />
           <value value="01234567890" />
           <use value="work" />
