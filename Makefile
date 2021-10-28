@@ -10,13 +10,13 @@ run-validator:
 
 ## Install
 install-validator:
-	cd validation-service-fhir-r4  && make install
+	make -C validation-service-fhir-r4 install
 
 build-validator:
-	cd validation-service-fhir-r4  && make build
+	make -C validation-service-fhir-r4 build
 
 build-latest-validator:
-	make -C validation-service-fhir-r4 run build-latest
+	make -C validation-service-fhir-r4 build-latest
 
 run-validator:
 	make -C validation-service-fhir-r4 run
