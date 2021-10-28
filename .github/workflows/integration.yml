@@ -67,7 +67,9 @@ jobs:
         run: make build-latest-validator
         
       - name: Run FHIR Validator
-        run: make run-validator
+        run: 
+          nohup java -jar validation-service-fhir-r4/target/fhir-validator-0.0.1-SNAPSHOT.jar &
+          sleep 30
         
       - name: Run Test
         run: make test
