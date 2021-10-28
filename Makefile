@@ -1,4 +1,4 @@
-test:
+install:
 	cd validation && npm install
 
 test:
