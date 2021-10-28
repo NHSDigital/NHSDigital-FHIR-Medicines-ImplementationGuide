@@ -1,5 +1,5 @@
-import {defaultBaseUrl, getJson, patient, resourceChecks} from "./common.js";
-import {OperationOutcome} from "fhir/r4";
+import { defaultBaseUrl, getJson, patient, resourceChecks } from "./common.js";
+
 import * as fs from "fs";
 import supertest from "supertest"
 
@@ -9,205 +9,68 @@ const client = () => {
     return supertest(url)
 }
 
-describe('Parsing folder Examples', () => {
-    const dir = '../Examples';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
 
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
+function testFolder(dir) {
 
-    })
+    if (fs.existsSync(dir)) {
+        const list = fs.readdirSync(dir);
+        list.forEach(function (file) {
+            file = dir + "/" + file;
+            const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
+
+            it('Validate ' + file, async () => {
+                await client()
+                    .post('/$validate')
+                    .set("Content-Type", 'application/fhir+xml')
+                    .set("Accept", 'application/fhir+json')
+                    .send(getJson(file, resource))
+                    .expect(200)
+                    .then((response: any) => {
+                        resourceChecks(response, file)
+                    })
+            });
+        })
+    }
+};
+
+
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../CapabilityStatement');
+});
+
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../Examples');
+});
+
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../CodeSystem');
+});
+
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../MessageDefinition');
 });
 
 
 describe('Parsing folder CapabilityStatement', () => {
-    const dir = '../CapabilityStatement';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
+    testFolder('../ValueSet');
 });
 
-
-describe('Parsing folder CodeSystem', () => {
-    const dir = '../CodeSystem';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../ConceptMap');
 });
 
-describe('Parsing folder MessageDefinition', () => {
-    const dir = '../MessageDefinition';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../SearchParameter');
 });
 
-describe('Parsing folder ValueSet', () => {
-    const dir = '../ValueSet';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../OperationDefinition');
 });
 
-describe('Parsing folder ConceptMap', () => {
-    const dir = '../ConceptMap';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
+describe('Parsing folder CapabilityStatement', () => {
+    testFolder('../StructureDefinition');
 });
 
-describe('Parsing folder SearchParameter', () => {
-    const dir = '../SearchParameter';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+json')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
-});
-
-describe('Parsing folder OperationDefinition', () => {
-    const dir = '../OperationDefinition';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
-});
-
-describe('Parsing folder StructureDefinition', () => {
-    const dir = '../StructureDefinition';
-    const list = fs.readdirSync(dir);
-    list.forEach(function (file) {
-        file = dir + "/" + file;
-        const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
-
-        it('Validate ' + file, async () => {
-            await client()
-                .post('/$validate')
-                .set("Content-Type", 'application/fhir+xml')
-                .set("Accept", 'application/fhir+json')
-                .send(getJson(file,resource))
-                .expect(200)
-                .then((response: any) => {
-                    resourceChecks(response, file)
-                })
-        });
-
-    })
-});
 
 
 

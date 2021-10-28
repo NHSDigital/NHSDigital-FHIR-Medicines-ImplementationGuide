@@ -119,7 +119,7 @@ function errorsCheck(resource) {
                 break;
         }
     }
-    if (warn>5) console.log("Warnings "+warn);
+   // if (warn>5) console.log("Warnings "+warn);
 
 }
 
