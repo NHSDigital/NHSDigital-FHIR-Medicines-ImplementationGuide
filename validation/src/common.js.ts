@@ -3,6 +3,8 @@ import {OperationOutcome, Patient} from "fhir/r4";
 
 export const basePath = "/FHIR/R4"
 
+var Fhir = require('fhir').Fhir;
+
 export let defaultBaseUrl = 'http://localhost:9001';
 
 export let patient : Patient = {
@@ -85,6 +87,20 @@ export function resourceChecks(response: any, file) {
     const resource: any = response.body;
     expect(resource.resourceType).toEqual('OperationOutcome');
     expect(errorsCheck(resource))
+}
+
+
+export function getJson(file, resource) {
+    var fileExtension = file.split('.').pop();
+    if (fileExtension == 'xml' || fileExtension == 'XML') {
+        var fhir = new Fhir();
+        var json = fhir.xmlToJson(resource);
+        //console.log(json);
+        return json;
+    } else {
+        return resource;
+    }
+
 }
 
 function errorsCheck(resource) {

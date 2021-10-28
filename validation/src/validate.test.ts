@@ -1,4 +1,4 @@
-import {defaultBaseUrl, getContentType, patient, resourceChecks} from "./common.js";
+import {defaultBaseUrl, getJson, patient, resourceChecks} from "./common.js";
 import {OperationOutcome} from "fhir/r4";
 import * as fs from "fs";
 import supertest from "supertest"
@@ -19,9 +19,9 @@ describe('Parsing folder Examples', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -42,9 +42,9 @@ describe('Parsing folder CapabilityStatement', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -65,9 +65,9 @@ describe('Parsing folder CodeSystem', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -87,9 +87,9 @@ describe('Parsing folder MessageDefinition', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -109,9 +109,9 @@ describe('Parsing folder ValueSet', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -131,9 +131,9 @@ describe('Parsing folder ConceptMap', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -153,9 +153,9 @@ describe('Parsing folder SearchParameter', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+json')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -175,9 +175,9 @@ describe('Parsing folder OperationDefinition', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -197,9 +197,9 @@ describe('Parsing folder StructureDefinition', () => {
         it('Validate ' + file, async () => {
             await client()
                 .post('/$validate')
-                .set("Content-Type", getContentType(file))
+                .set("Content-Type", 'application/fhir+xml')
                 .set("Accept", 'application/fhir+json')
-                .send(resource)
+                .send(getJson(file,resource))
                 .expect(200)
                 .then((response: any) => {
                     resourceChecks(response, file)
@@ -208,6 +208,7 @@ describe('Parsing folder StructureDefinition', () => {
 
     })
 });
+
 
 
 describe('Testing validation api is functioning', () => {
