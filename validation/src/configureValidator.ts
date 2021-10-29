@@ -1,17 +1,28 @@
 import * as fs from "fs";
 import path from "path";
 import {getJson, resourceChecks} from "./common.js";
+import { tar } from 'zip-a-folder';
 
+
+var jsonminify = require("jsonminify");
 const fileNamw = '../package.json';
 
+class TarMe {
+    static async main(src, destination) {
+        console.log(src);
+        console.log(destination)
+        await tar(src, destination);
+    }
+}
 
 if (fs.existsSync(fileNamw)) {
     const file = fs.readFileSync(fileNamw, 'utf-8');
     const pkg = JSON.parse(file);
+    pkg.version = '0.0.0-prerelease';
     var manifest = [
         {
             "packageName": pkg.name,
-            "version": '0.0.0-prerelease'
+            "version": pkg.version
         }
     ];
     if (pkg.dependencies != undefined) {
@@ -36,18 +47,41 @@ if (fs.existsSync(fileNamw)) {
                 return console.error(err);
             }
         });
-        fs.writeFile('package/package.json', pkg,  function(err) {
+        fs.writeFile('package/package.json', JSON.stringify(pkg),  function(err) {
             if (err) {
                 return console.error(err);
             }
         });
         copyFolder('../StructureDefinition');
+
+        copyFolder('../CapabilityStatement');
+
+        copyFolder('../CodeSystem');
+
+        copyFolder('../MessageDefinition');
+
+        copyFolder('../ValueSet');
+
+        copyFolder('../ConceptMap');
+
+        copyFolder('../SearchParameter');
+
+        copyFolder('../OperationDefinition');
+
+        copyFolder('../StructureDefinition');
+        console.log('Creating package ' + pkg.name +'-' + pkg.version);
+        TarMe.main(path.join(__dirname, '../package'),path.join(__dirname,destinationPath + '/' + pkg.name +'-' + pkg.version + '.tgz' ));
+
     }
 }
 
+
+
 function copyFolder(dir) {
 
+    console.log('Processing '+dir);
     if (fs.existsSync(dir)) {
+
         const list = fs.readdirSync(dir);
         list.forEach(function (file) {
 
@@ -57,11 +91,13 @@ function copyFolder(dir) {
             file = dir + "/" + file;
             const resource: any = fs.readFileSync(dir + "/" + file, 'utf8');
             const json = getJson(file,resource);
-            fs.writeFile(destination, json,  function(err) {
+            fs.writeFile(destination, jsonminify(json),  function(err) {
                 if (err) {
                     return console.error(err);
                 }
             });
         })
+    } else {
+        console.log('INFO Folder not found  '+dir);
     }
 }

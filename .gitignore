@@ -11,3 +11,4 @@ StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty.StructureDefinit
 .idea
 validation/node_modules
 package
+.DS_Store

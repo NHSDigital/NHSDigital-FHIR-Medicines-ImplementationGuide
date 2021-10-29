@@ -4,6 +4,8 @@ install:
 test:
 	cd validation && npm test
 
+configure-validation:
+	cd validation && ts-node src/configurevalidator.ts
 
 run-validator:
 	cd validation-service-fhir-r4  && nohup mvn spring-boot:run &
