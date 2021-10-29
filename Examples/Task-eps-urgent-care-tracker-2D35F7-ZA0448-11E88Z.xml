@@ -1,7 +1,6 @@
 <Task xmlns="http://hl7.org/fhir">
     <id value="1828584c-55cb-4888-9529-c85499888188" />
     <meta>
-        <!-- lastEventDate -->
         <lastUpdated value="2018-04-22T09:57:03+00:00" />
     </meta>
     <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation">
@@ -11,12 +10,8 @@
         <extension url="numberOfRepeatsIssued">
             <valueUnsignedInt value="2" />
         </extension>
-        <!-- <extension url="authorisationExpiryDate">
-            <valueDateTime value="2020-08-07" />
-        </extension> -->
     </extension>
     <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-Prescription">
-        <!-- prescriptionTreatmentType -->
         <extension url="courseOfTherapyType">
             <valueCoding>
                 <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"></system>
@@ -25,16 +20,13 @@
             </valueCoding>
         </extension>
     </extension>
-    <!-- internal id, can be ommited -->
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="1828584c-55cb-4888-9529-c85499888188"></value>
     </identifier>
     <status value="completed"></status>
-    <!-- probably use statusReason for pending Cancellation -->
     <statusReason></statusReason>
     <businessStatus>
-        <!-- prescriptionStatus probably don't have the code -->
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-business-status" />
             <code value="0002" />
@@ -43,21 +35,18 @@
     </businessStatus>
     <intent value="order"></intent>
     <code>
-        <!-- Believe clients would want to know what was ordered, should we summarise here in a text field e.g. Acute prescription for Aspirin and Codine -->
-       <coding>
+        <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
             <code value="fulfill" />
             <display value="Fulfill the focal request" />
         </coding>
     </code>
     <focus>
-        <!-- identifier of the prescription i.e. short form prescription id -->
         <identifier>
             <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
             <value value="2D35F7-ZA0448-11E88Z"></value>
         </identifier>
     </focus>
-    <!-- patientNhsNumber -->
     <for>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/nhs-number" />
@@ -65,7 +54,6 @@
         </identifier>
     </for>
     <requester>
-        <!-- prescriber -->
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
             <value value="M12345"></value>
@@ -73,17 +61,14 @@
         <display value="EveryDay Surgery" />
     </requester>
     <owner>
-        <!-- dispensingPharmacy DROP nominated, that comes from PDS -->
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
             <value value="FB444"></value>
         </identifier>
         <display value="Freds Pharmacy" />
     </owner>
-    <!-- prescriptionIssueDate -->
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
     <input>
-        <!-- Should we have a reference to the prescription-order here ???-->
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
@@ -96,14 +81,13 @@
                 <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
-         <type>
+        <type>
             <coding>
                 <system value="http://snomed.info/sct" />
                 <code value="16076005" />
                 <display value="Prescription" />
             </coding>
         </type>
-        <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
             <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
@@ -111,11 +95,10 @@
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
             </identifier>
-             <display value="Perindopril erbumine 2mg tablets" />
+            <display value="Perindopril erbumine 2mg tablets" />
         </valueReference>
     </input>
     <input>
-        <!-- Should we have a reference to the prescription-order here ???-->
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation">
             <extension url="dispenseStatus">
                 <valueCoding>
@@ -128,14 +111,13 @@
                 <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
-      <type>
+        <type>
             <coding>
                 <system value="http://snomed.info/sct" />
                 <code value="16076005" />
                 <display value="Prescription" />
             </coding>
         </type>
-        <!-- lineItems id. This would be used in the GET /MedicationRequest API -->
         <valueReference>
             <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
@@ -143,12 +125,10 @@
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
                 <value value="636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
             </identifier>
-             <display value="Metformin 500mg modified-release tablets" />
+            <display value="Metformin 500mg modified-release tablets" />
         </valueReference>
     </input>
     <output>
-        <!-- Similarly, should we have a reference to the dispense-notification here ???-->
-        <!-- or insert horrid extension here -->
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingReleaseInformation">
 
             <extension url="dateLastIssuedDispensed">
@@ -158,7 +138,6 @@
                 <valueDateTime value="2018-04-22T09:57:03+00:00" />
             </extension>
         </extension>
-        <!-- This is a mandatory element -->
         <type>
             <coding>
                 <system value="http://snomed.info/sct" />
