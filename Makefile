@@ -1,6 +1,6 @@
 install:
 	cd validation && npm install
-	cd validation && npm install
+	cd validation && npm i ts-node
 
 test:
 	cd validation && npm test
