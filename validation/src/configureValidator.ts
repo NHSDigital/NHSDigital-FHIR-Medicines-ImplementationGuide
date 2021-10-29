@@ -9,8 +9,6 @@ const fileNamw = '../package.json';
 
 class TarMe {
     static async main(src, destination) {
-        console.log(src);
-        console.log(destination)
         await tar(src, destination);
     }
 }
@@ -32,6 +30,7 @@ if (fs.existsSync(fileNamw)) {
                     "packageName": key,
                     "version": pkg.dependencies[key]
                 };
+                console.log('Using package '+ key + '-' + pkg.dependencies[key])
                 manifest.push(entry);
             }
         }
@@ -69,7 +68,7 @@ if (fs.existsSync(fileNamw)) {
         copyFolder('../OperationDefinition');
 
         copyFolder('../StructureDefinition');
-        console.log('Creating package ' + pkg.name +'-' + pkg.version);
+        console.log('Creating temporary package ' + pkg.name +'-' + pkg.version);
         TarMe.main(path.join(__dirname, '../package'),path.join(__dirname,destinationPath + '/' + pkg.name +'-' + pkg.version + '.tgz' ));
 
     }
