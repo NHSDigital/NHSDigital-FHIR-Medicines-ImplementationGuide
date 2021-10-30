@@ -9,6 +9,8 @@ StructureDefinition/Extension-EPS-DispensingInformation*.xml
 StructureDefinition/Extension-EPS-RepeatInformation*.xml
 StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty.StructureDefinition.xml
 .idea
-validation/node_modules
+validation
+IOPS-validation
+validation-service-fhir-r4
 package
 .DS_Store
