@@ -89,7 +89,6 @@
             </coding>
         </type>
         <valueReference>
-            <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/30b7e9cf-6f42-40a8-84c1-e61ef638eee2" />
             <identifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
@@ -119,7 +118,6 @@
             </coding>
         </type>
         <valueReference>
-            <type value="MedicationRequest" />
             <reference value="https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/636f1b57-e18c-4f45-acae-2d7db86b6e1e" />
             <identifier>
                 <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
@@ -146,7 +144,6 @@
             </coding>
         </type>
         <valueReference>
-            <type value="MedicationDispense" />
             <identifier>
                 <system value="https://tools.ietf.org/html/rfc4122" />
                 <value value="334a3195-1f6c-497a-8efe-d272ca9c4e38" />
