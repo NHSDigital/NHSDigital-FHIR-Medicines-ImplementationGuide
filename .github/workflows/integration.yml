@@ -28,7 +28,7 @@ jobs:
           path: validation
 
       - name: Check out validation-service-fhir-r4
-        uses: actions/checkout@master
+        uses: actions/checkout@testing
         with:
           repository: NHSDigital/validation-service-fhir-r4
           path: validation-service-fhir-r4
