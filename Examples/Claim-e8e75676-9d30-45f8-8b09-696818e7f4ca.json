@@ -154,7 +154,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "373784005",
-                                "display": "Administration of therapeutic substance"
+                                "display": "Dispensing medication"
                             }
                         ]
                     },
@@ -241,7 +241,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "373784005",
-                                "display": "Administration of therapeutic substance"
+                                "display": "Dispensing medication"
                             }
                         ]
                     },
@@ -328,7 +328,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "373784005",
-                                "display": "Administration of therapeutic substance"
+                                "display": "Dispensing medication"
                             }
                         ]
                     },
