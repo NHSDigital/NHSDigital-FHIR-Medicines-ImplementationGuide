@@ -1,11 +1,14 @@
-name: IOPS-FHIR-Validation
+name: IOPS-FHIR-Validation-Terminology
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  push:
   # Allows you to run this workflow manually from the Actions tab
+  push:
+    branches: [ master, testing ]
+    
   workflow_dispatch:
+     
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -31,7 +34,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: NHSDigital/validation-service-fhir-r4
-          ref: testing
+          ref: feature/terminologyServer
           path: validation-service-fhir-r4
         
       - name: Install Python 3.8
@@ -73,6 +76,10 @@ jobs:
         
       - name: Configure FHIR Validator
         run: make -C validation configure-validation
+        env:
+          CI: true
+          ONTO_CLIENT_ID: ${{ secrets.ONTO_CLIENT_ID }}
+          ONTO_CLIENT_SECRET: ${{ secrets.ONTO_CLIENT_SECRET }}
       
       - name: Build FHIR Validator
         run: cd validation-service-fhir-r4 && mvn clean package
@@ -80,7 +87,7 @@ jobs:
       - name: Run FHIR Validator
         run: 
           nohup java -jar validation-service-fhir-r4/target/fhir-validator-0.0.1-SNAPSHOT.jar &
-          sleep 120
+          sleep 180
         
       - name: Run Test
         run: make -C validation test
