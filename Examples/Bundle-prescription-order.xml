@@ -75,8 +75,8 @@
         <medicationCodeableConcept>
           <coding>
             <system value="http://snomed.info/sct" />
-            <code value="320176004" />
-            <display value="Salbutamol 100micrograms inhaler (product)" />
+            <code value="35936511000001108" />
+            <display value="Salbutamol 100micrograms/dose inhaler" />
           </coding>
         </medicationCodeableConcept>
         <subject>
