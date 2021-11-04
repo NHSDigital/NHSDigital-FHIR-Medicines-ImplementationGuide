@@ -168,7 +168,7 @@
           <coding>
             <system value="http://snomed.info/sct" />
             <code value="810211000001105" />
-            <display value="Seretide 125 Evohaler (GlaxoSmithKline)" />
+            <display value="Seretide 125 Evohaler (GlaxoSmithKline UK Ltd)" />
           </coding>
         </medicationCodeableConcept>
         <subject>

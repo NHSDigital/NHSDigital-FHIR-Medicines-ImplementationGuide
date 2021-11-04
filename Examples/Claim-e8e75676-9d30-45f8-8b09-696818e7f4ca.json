@@ -153,8 +153,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "373784005",
-                                "display": "Dispensing medication"
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
                             }
                         ]
                     },
@@ -240,8 +240,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "373784005",
-                                "display": "Dispensing medication"
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
                             }
                         ]
                     },
@@ -327,8 +327,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "373784005",
-                                "display": "Dispensing medication"
+                                "code": "4627711000001106",
+                                "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd)"
                             }
                         ]
                     },

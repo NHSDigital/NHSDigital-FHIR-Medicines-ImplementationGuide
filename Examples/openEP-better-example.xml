@@ -143,8 +143,8 @@
                 <code>
                     <coding>
                         <system value="http://snomed.info/sct"></system>
-                        <code value="329526003"></code>
-                        <display value="Aspirin 300mg dispersible tablet"></display>
+                        <code value="39695211000001102"></code>
+                        <display value="Aspirin 300mg dispersible tablets"></display>
                     </coding>
                     <text value="Aspirin 300mg dispersible tablets"></text>
                 </code>
