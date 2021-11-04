@@ -4,4 +4,4 @@
 
  [![NHSDigital IOPS Validation)](https://github.com/NHSDigital/NHSDigitial-FHIR-Medicines-ImplementationGuide/actions/workflows/integration.yml/badge.svg)](https://github.com/NHSDigital/NHSDigitial-FHIR-Medicines-ImplementationGuide/actions/workflows/integration.yml)
 
- [Instructions for configuring the Firely Validation](https://github.com/FirelyTeam/firely-terminal-pipeline)
+ [![NHSDigital IOPS Validation)](https://github.com/NHSDigital/NHSDigitial-FHIR-Medicines-ImplementationGuide/actions/workflows/terminology.yml/badge.svg)](https://github.com/NHSDigital/NHSDigitial-FHIR-Medicines-ImplementationGuide/actions/workflows/terminology.yml)
