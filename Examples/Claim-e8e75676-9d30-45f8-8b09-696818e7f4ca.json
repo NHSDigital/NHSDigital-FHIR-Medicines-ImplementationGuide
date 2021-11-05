@@ -183,7 +183,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "4627811000001103",
-                                        "display": "Flolan 1.5mg powder and solvent for solution for injection vials (GlaxoSmithKline) 1 vial"
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
                                     }
                                 ]
                             },
@@ -270,7 +270,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "4627811000001103",
-                                        "display": "Flolan 1.5mg powder and solvent for solution for injection vials (GlaxoSmithKline) 1 vial"
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
                                     }
                                 ]
                             },
@@ -357,7 +357,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "4627811000001103",
-                                        "display": "Flolan 1.5mg powder and solvent for solution for injection vials (GlaxoSmithKline) 1 vial"
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
                                     }
                                 ]
                             },
