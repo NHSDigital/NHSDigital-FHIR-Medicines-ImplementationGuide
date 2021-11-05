@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="d35adc97-8e55-4041-bd01-f4f5ee3dde47"/>
+  <id value="d35adc97-8e55-4041-bd01-f4f5ee3dde47" />
   <url value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Outcome" />
   <name value="NHSDigitalMedicationRequestOutcome" />
   <status value="draft" />
@@ -45,19 +45,21 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
       <sliceName value="responsiblePractitioner" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner" />
       </type>
     </element>
-    <element id="MedicationRequest.extension:prescriptionTaskStatusReason">
+    <element id="MedicationRequest.extension:prescriptionStatusHistory">
       <path value="MedicationRequest.extension" />
-      <sliceName value="prescriptionTaskStatusReason" />
+      <sliceName value="prescriptionStatusHistory" />
       <definition value="The status history within EPS is primarily a technical Status and the statusReason will reflect current clinical status of the order." />
       <min value="1" />
       <type>
@@ -104,10 +106,6 @@
       <path value="MedicationRequest.subject.reference" />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.authoredOn">
-      <path value="MedicationRequest.authoredOn" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
       <min value="1" />
@@ -136,11 +134,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID">
       <path value="MedicationRequest.groupIdentifier.extension" />
       <sliceName value="PrescriptionOrderUUID" />
       <short value="UUID order number for grouped MedciationRequests" />
+      <min value="0" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
@@ -180,10 +180,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="0" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer.extension:practitionerRole">
       <path value="MedicationRequest.dispenseRequest.performer.extension" />
       <sliceName value="practitionerRole" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

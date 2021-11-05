@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="b619236b-3f5a-4b3f-b312-72b6dc0d23b0"/>
+  <id value="b619236b-3f5a-4b3f-b312-72b6dc0d23b0" />
   <url value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
   <name value="ExtensionDMPrescriptionId" />
   <status value="draft" />
@@ -22,7 +22,6 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.url">
