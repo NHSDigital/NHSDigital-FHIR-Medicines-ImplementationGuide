@@ -192,29 +192,30 @@
                     }
                 ],
                 "practitioner": {
-                    "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
-                    "display": "DR RAZIA ALI"
+                    "identifier": {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "G1234567"
+                    },
+                    "display": "Dr ALI RAZIA"
                 },
                 "organization": {
-                    "identifier": 
-                        {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "RBA"
-                        }
-                    ,
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA"
+                    },
                     "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
                 },
                 "specialty": [
                     {
-                      "coding": [
-                        {
-                          "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
-                          "code": "370",
-                          "display": "MEDICAL ONCOLOGY"
-                        }
-                      ]
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
+                                "code": "370",
+                                "display": "MEDICAL ONCOLOGY"
+                            }
+                        ]
                     }
-                  ],
+                ],
                 "code": [
                     {
                         "coding": [
@@ -246,7 +247,7 @@
                     }
                 ],
                 "practitioner": {
-                    "identifier" : {
+                    "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                         "value": "2145879"
                     },
@@ -290,32 +291,30 @@
                     }
                 ],
                 "practitioner": {
-                    "identifier" : {
+                    "identifier": {
                         "system": "https://fhir.nhs.uk/Id/sds-user-id",
                         "value": "7020134158"
                     },
                     "display": "DR SAZ RAZ"
                 },
                 "organization": {
-                    "identifier": 
-                        {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "RBA"
-                        }
-                    ,
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA"
+                    },
                     "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
                 },
                 "specialty": [
                     {
-                      "coding": [
-                        {
-                          "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
-                          "code": "100",
-                          "display": "GENERAL MEDICINE"
-                        }
-                      ]
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
+                                "code": "100",
+                                "display": "GENERAL MEDICINE"
+                            }
+                        ]
                     }
-                  ],
+                ],
                 "code": [
                     {
                         "coding": [
