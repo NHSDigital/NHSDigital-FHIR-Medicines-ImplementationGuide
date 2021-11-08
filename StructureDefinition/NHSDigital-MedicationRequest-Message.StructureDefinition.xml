@@ -21,6 +21,7 @@
       <path value="MedicationRequest.requester" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-Message" />
         <aggregation value="bundled" />
       </type>
     </element>
