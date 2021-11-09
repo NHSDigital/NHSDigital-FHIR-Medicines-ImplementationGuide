@@ -14,3 +14,5 @@ IOPS-validation
 validation-service-fhir-r4
 package
 .DS_Store
+StructureDefinition/NHSDigital-Task.StructureDefinition.xml
+StructureDefinition/Extension-EPS-Prescription.StructureDefinition.xml

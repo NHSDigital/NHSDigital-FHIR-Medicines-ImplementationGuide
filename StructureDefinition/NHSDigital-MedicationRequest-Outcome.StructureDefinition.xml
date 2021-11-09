@@ -125,35 +125,6 @@
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
     </element>
-    <element id="MedicationRequest.groupIdentifier.extension">
-      <path value="MedicationRequest.groupIdentifier.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID">
-      <path value="MedicationRequest.groupIdentifier.extension" />
-      <sliceName value="PrescriptionOrderUUID" />
-      <short value="UUID order number for grouped MedciationRequests" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId" />
-      </type>
-    </element>
-    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].system">
-      <path value="MedicationRequest.groupIdentifier.extension.value[x].system" />
-      <min value="1" />
-    </element>
-    <element id="MedicationRequest.groupIdentifier.extension:PrescriptionOrderUUID.value[x].value">
-      <path value="MedicationRequest.groupIdentifier.extension.value[x].value" />
-      <min value="1" />
-    </element>
     <element id="MedicationRequest.groupIdentifier.system">
       <path value="MedicationRequest.groupIdentifier.system" />
       <min value="1" />
