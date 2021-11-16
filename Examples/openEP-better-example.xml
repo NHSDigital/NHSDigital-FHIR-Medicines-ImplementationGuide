@@ -178,7 +178,7 @@
                 </identifier>
                 <identifier>
                     <system value="https://fhir.nhs.uk/Id/nhs-number"></system>
-                    <value value="1007"></value>
+                    <value value="9876541007"></value>
                 </identifier>
                 <name>
                     <use value="anonymous"></use>
