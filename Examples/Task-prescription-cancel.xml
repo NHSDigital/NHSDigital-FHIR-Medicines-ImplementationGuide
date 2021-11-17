@@ -54,6 +54,13 @@
         </identifier>
         <display value="The Simple Pharmacy"/>
     </owner>
+    <reasonCode>
+        <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="33633005"></code>
+            <display value="Prescription of drug"/>
+        </coding>
+    </reasonCode>
     <input>
         <type>
             <coding>

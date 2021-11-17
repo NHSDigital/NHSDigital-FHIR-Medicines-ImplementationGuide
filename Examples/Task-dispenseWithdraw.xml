@@ -54,8 +54,8 @@
     <reasonCode>
         <coding>
             <system value="http://snomed.info/sct"></system>
-            <code value="16076005"></code>
-            <display value="Prescription"/>
+            <code value="33633005"></code>
+            <display value="Prescription of drug"/>
         </coding>
     </reasonCode>
 </Task>
