@@ -5,6 +5,13 @@
         <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
     </identifier>
     <status value="cancelled"></status>    <!-- this is to mark the sub task as failed -->
+    <statusReason>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"></system>
+            <code value="DA"></code>
+            <display value="Dosage Amendments"/>
+        </coding>
+    </statusReason>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
@@ -46,9 +53,9 @@
     </owner>
     <reasonCode>
         <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason"></system>
-            <code value="DA"></code>
-            <display value="Dosage Amendments"/>
+            <system value="http://snomed.info/sct"></system>
+            <code value="16076005"></code>
+            <display value="Prescription"/>
         </coding>
     </reasonCode>
 </Task>
