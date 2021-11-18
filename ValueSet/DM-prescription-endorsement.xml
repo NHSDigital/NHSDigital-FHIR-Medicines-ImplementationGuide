@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="DM-prescription-endorsement"/>
+    <id value="977ef4e4-de8a-405a-b444-e54b7daa17ed"/>
     <url value="https://fhir.nhs.uk/ValueSet/DM-prescription-endorsement"/>
     <version value="4.0.2"/>
     <name value="NHSBSAPrescriptionEndorsement"/>
