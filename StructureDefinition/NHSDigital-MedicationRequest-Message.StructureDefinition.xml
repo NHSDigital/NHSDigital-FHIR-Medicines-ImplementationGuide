@@ -25,5 +25,12 @@
         <aggregation value="bundled" />
       </type>
     </element>
+    <element id="MedicationRequest.eventHistory">
+      <path value="MedicationRequest.eventHistory" />
+      <type>
+        <code value="Reference" />
+        <aggregation value="bundled" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
