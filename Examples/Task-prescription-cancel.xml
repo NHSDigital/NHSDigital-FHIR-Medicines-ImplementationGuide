@@ -5,6 +5,13 @@
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
     <status value="cancelled"></status>
+    <statusReason>
+        <coding>
+            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"></system>
+            <code value="0001"></code>
+            <display value="Prescribing Error"/>
+        </coding>
+    </statusReason>
     <intent value="order"></intent>
     <groupIdentifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
@@ -49,9 +56,9 @@
     </owner>
     <reasonCode>
         <coding>
-            <system value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason"></system>
-            <code value="0001"></code>
-            <display value="Prescribing Error"/>
+            <system value="http://snomed.info/sct"></system>
+            <code value="33633005"></code>
+            <display value="Prescription of drug"/>
         </coding>
     </reasonCode>
     <input>

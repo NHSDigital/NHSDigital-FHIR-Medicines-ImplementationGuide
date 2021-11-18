@@ -67,6 +67,13 @@
         </identifier>
         <display value="Freds Pharmacy" />
     </owner>
+    <reasonCode>
+        <coding>
+            <system value="http://snomed.info/sct"></system>
+            <code value="33633005"></code>
+            <display value="Prescription of drug"/>
+        </coding>
+    </reasonCode>
     <authoredOn value="2016-07-11T11:07:21+00:00"></authoredOn>
     <input>
         <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation">

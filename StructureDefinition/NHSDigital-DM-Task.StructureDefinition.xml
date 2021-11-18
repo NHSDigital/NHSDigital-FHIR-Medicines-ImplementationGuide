@@ -78,6 +78,48 @@
       <path value="Task.groupIdentifier.value" />
       <min value="1" />
     </element>
+    <element id="Task.statusReason">
+      <path value="Task.statusReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Task.statusReason.coding">
+      <path value="Task.statusReason.coding" />
+       <min value="1" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.statusReason.coding:withdrawReason">
+      <path value="Task.statusReason.coding" />
+      <sliceName value="withdrawReason" />
+      <max value="1" />
+    </element>
+    <element id="Task.statusReason.coding:withdrawReason.system">
+      <path value="Task.statusReason.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason" />
+    </element>
+    <element id="Task.statusReason.coding:dispenseReturn">
+      <path value="Task.statusReason.coding" />
+      <sliceName value="dispenseReturn" />
+      <max value="1" />
+    </element>
+    <element id="Task.statusReason.coding:dispenseReturn.system">
+      <path value="Task.statusReason.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason" />
+    </element>
+    <element id="Task.statusReason.coding:medicationRequestStatusReason">
+      <path value="Task.statusReason.coding" />
+      <sliceName value="medicationRequestStatusReason" />
+      <max value="1" />
+    </element>
+    <element id="Task.statusReason.coding:medicationRequestStatusReason.system">
+      <path value="Task.statusReason.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason" />
+    </element>
     <element id="Task.businessStatus">
       <path value="Task.businessStatus" />
       <binding>
@@ -174,44 +216,6 @@
     <element id="Task.owner.identifier">
       <path value="Task.owner.identifier" />
       <min value="1" />
-    </element>
-    <element id="Task.reasonCode">
-      <path value="Task.reasonCode" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code" />
-      </binding>
-    </element>
-    <element id="Task.reasonCode.coding">
-      <path value="Task.reasonCode.coding" />
-      <min value="1" />
-    </element>
-    <element id="Task.reasonCode.coding:withdrawReason">
-      <path value="Task.reasonCode.coding" />
-      <sliceName value="withdrawReason" />
-      <max value="1" />
-    </element>
-    <element id="Task.reasonCode.coding:withdrawReason.system">
-      <path value="Task.reasonCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason" />
-    </element>
-    <element id="Task.reasonCode.coding:dispenseReturn">
-      <path value="Task.reasonCode.coding" />
-      <sliceName value="dispenseReturn" />
-      <max value="1" />
-    </element>
-    <element id="Task.reasonCode.coding:dispenseReturn.system">
-      <path value="Task.reasonCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason" />
-    </element>
-    <element id="Task.reasonCode.coding:medicationRequestStatusReason">
-      <path value="Task.reasonCode.coding" />
-      <sliceName value="medicationRequestStatusReason" />
-      <max value="1" />
-    </element>
-    <element id="Task.reasonCode.coding:medicationRequestStatusReason.system">
-      <path value="Task.reasonCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason" />
     </element>
     <element id="Task.input.extension">
       <path value="Task.input.extension" />
