@@ -225,9 +225,9 @@
                     "numberOfRepeatsAllowed": 4,
                     "quantity": {
                         "value": 1,
-                        "unit": "pre-filled disposable injection",
+                        "unit": "Injection",
                         "system": "http://snomed.info/sct",
-                        "code": "3318611000001103"
+                        "code": "3092611000001103"
                     },
                     "expectedSupplyDuration": {
                         "value": 7,

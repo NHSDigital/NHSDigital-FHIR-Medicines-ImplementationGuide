@@ -260,9 +260,9 @@
                     "numberOfRepeatsAllowed": 4,
                     "quantity": {
                         "value": 1,
-                        "unit": "pre-filled disposable injection",
+                        "unit": "Injection",
                         "system": "http://snomed.info/sct",
-                        "code": "3318611000001103"
+                        "code": "3092611000001103"
                     },
                     "expectedSupplyDuration": {
                         "value": 7,
@@ -344,7 +344,7 @@
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "G1234567"
+                        "value": "C1234567"
                     },
                     "display": "DR RAZIA ALI"
                 },
@@ -422,7 +422,7 @@
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "G9999999"
+                        "value": "C9999999"
                     },
                     "display": "DR SAZ RAZ"
                 },

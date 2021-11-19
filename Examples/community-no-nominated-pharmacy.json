@@ -185,9 +185,9 @@
           "numberOfRepeatsAllowed": 6,
           "quantity": {
             "value": 4,
-            "unit": "pre-filled disposable injection",
+            "unit": "Injection",
             "system": "http://snomed.info/sct",
-            "code": "3318611000001103"
+            "code": "3092611000001103"
           },
           "expectedSupplyDuration": {
             "value": 28,
@@ -269,7 +269,7 @@
         "practitioner": {
           "identifier": {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "4428981"
+            "value": "C4428981"
           },
           "display": "Dr Thomas Edwards"
         },

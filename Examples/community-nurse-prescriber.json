@@ -263,7 +263,7 @@
         "practitioner": {
           "identifier": {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "4428981"
+            "value": "C4428981"
           },
           "display": "Dr Thomas Edwards"
         },

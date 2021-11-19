@@ -110,7 +110,7 @@
                         <coding>
                             <system value="http://snomed.info/sct"></system>
                             <code value="26643006"></code>
-                            <display value="Oral Use"></display>
+                            <display value="Oral"></display>
                         </coding>
                         <text value="Oral"></text>
                     </route>

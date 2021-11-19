@@ -126,7 +126,7 @@
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "1231234"
+                        "value": "C1231234"
                     },
                     "display": "Jackie Clark"
                 },
@@ -279,9 +279,9 @@
                     ],
                     "quantity": {
                         "value": 10,
-                        "unit": "pre-filled disposable injection",
+                        "unit": "Injection",
                         "system": "http://snomed.info/sct",
-                        "code": "3318611000001103"
+                        "code": "3092611000001103"
                     },
                     "performer": {
                         "identifier": {

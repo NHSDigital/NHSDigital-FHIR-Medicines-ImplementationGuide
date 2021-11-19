@@ -208,7 +208,7 @@
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "123456"
+                        "value": "C1234567"
                     },
                     "display": "DR RAZIA ALI"
                 },

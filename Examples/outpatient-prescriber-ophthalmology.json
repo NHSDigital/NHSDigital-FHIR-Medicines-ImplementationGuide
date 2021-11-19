@@ -96,7 +96,7 @@
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "C123456"
+                        "value": "C1234567"
                     },
                     "display": "DR MARTIJN VONK"
                 },
