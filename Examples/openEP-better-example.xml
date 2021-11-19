@@ -36,9 +36,6 @@
                     <reference value="urn:uuid:c99b7aff-58fc-4e42-b8d4-80ac573e8bff" />
                 </focus>
                 <focus>
-                    <reference value="urn:uuid:46588c8c-c606-420b-b3cc-88fb74f5d41b" />
-                </focus>
-                <focus>
                     <reference value="urn:uuid:f942fd9b-f423-48c5-84b3-0e76bb4c5da5"></reference>
                 </focus>
             </MessageHeader>
