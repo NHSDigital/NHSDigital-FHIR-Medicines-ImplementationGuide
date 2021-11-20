@@ -4,7 +4,7 @@
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
-    <status value="ready"></status>    <!-- reset status to ready. If this is to allow a cancellation, should it be cancelled -->
+    <status value="rejected"></status>  
     <statusReason>
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
