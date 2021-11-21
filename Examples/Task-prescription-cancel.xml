@@ -17,6 +17,13 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="3C2366-B81001-0A409U"></value>
     </groupIdentifier>
+    <partOf>
+        <type value="Task"/>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
+            <value value="3C2366-B81001-0A409U"></value>
+        </identifier>
+    </partOf>
     <code>
         <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
@@ -25,11 +32,11 @@
         </coding>
     </code>
     <focus>
-        <type value="Task"/>
-        <identifier>
-            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-            <value value="3C2366-B81001-0A409U"></value>
-        </identifier>
+         <type value="MedicationRequest"/>
+         <identifier>
+                <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+                <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
+            </identifier>
     </focus>
     <for>
         <identifier>
@@ -38,7 +45,7 @@
         </identifier>
         <display value="MISS ETTA CORY"/>
     </for>
-     <requester>
+    <requester>
         <type value="PractitionerRole"/>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
@@ -61,20 +68,4 @@
             <display value="Prescription of drug"/>
         </coding>
     </reasonCode>
-    <input>
-        <type>
-            <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="16076005" />
-                <display value="Prescription" />
-            </coding>
-        </type>
-        <valueReference>
-            <type value="MedicationRequest"/>
-            <identifier>
-                <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
-                <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
-            </identifier>
-        </valueReference>
-    </input>
 </Task>

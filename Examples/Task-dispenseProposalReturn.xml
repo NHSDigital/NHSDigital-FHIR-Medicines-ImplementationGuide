@@ -4,7 +4,7 @@
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
     </identifier>
-    <status value="rejected"></status>  
+    <status value="rejected"></status>
     <statusReason>
         <coding>
             <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason"></system>
@@ -37,6 +37,12 @@
         </identifier>
     </for>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
+    <requester>
+        <identifier>
+            <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
+            <value value="7654321"></value>
+        </identifier>
+    </requester>
     <owner>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
@@ -45,9 +51,9 @@
     </owner>
     <reasonCode>
         <coding>
-            <system value="http://snomed.info/sct"></system>
-            <code value="33633005"></code>
-            <display value="Prescription of drug"/>
+            <system value="http://snomed.info/sct" />
+            <code value="373784005" />
+            <display value="Dispensing medication" />
         </coding>
     </reasonCode>
     <input>
