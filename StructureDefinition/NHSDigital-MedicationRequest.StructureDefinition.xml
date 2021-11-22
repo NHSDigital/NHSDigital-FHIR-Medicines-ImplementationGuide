@@ -87,6 +87,20 @@
         <expression value="(courseOfTherapyType.coding.code.startsWith('acute')) or  ((courseOfTherapyType.coding.code.startsWith('continuous') or courseOfTherapyType.coding.code.startsWith('instalment')) and dispenseRequest.exists() and dispenseRequest.numberOfRepeatsAllowed.exists())" />
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
+      <constraint>
+        <key value="eps-10" />
+        <severity value="error" />
+        <human value="For continuous-repeat-dispensing reflex-order basedOn must be populated" />
+        <expression value="(courseOfTherapyType.coding.code = 'acute') or (courseOfTherapyType.coding.code = 'continuous') or (courseOfTherapyType.coding.code = 'continuous-repeat-dispensing' and intent !='reflex-order') or (courseOfTherapyType.coding.code = 'continuous-repeat-dispensing' and intent ='reflex-order' and dispenseRequest.exists() and basedOn.exists())" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </constraint>
+      <constraint>
+        <key value="eps-11" />
+        <severity value="error" />
+        <human value="For continuous-repeat-dispensing (intent=reflex-order) or continous orders, numberOfRepeatsAllowed must be empty or equal to 0" />
+        <expression value="(courseOfTherapyType.coding.code = 'acute') or (courseOfTherapyType.coding.code = 'continuous-repeat-dispensing' and intent !='reflex-order') or ((courseOfTherapyType.coding.code = 'continuous' or (courseOfTherapyType.coding.code = 'continuous-repeat-dispensing' and intent ='reflex-order')) and (dispenseRequest.numberOfRepeatsAllowed.exists().not() or (dispenseRequest.numberOfRepeatsAllowed.exists() and dispenseRequest.numberOfRepeatsAllowed = 0)))" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </constraint>
     </element>
     <element id="MedicationRequest.extension">
       <path value="MedicationRequest.extension" />
@@ -365,6 +379,27 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+      </type>
+    </element>
+    <element id="MedicationRequest.basedOn.extension">
+      <path value="MedicationRequest.basedOn.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MedicationRequest.basedOn.extension:repeatInformation">
+      <path value="MedicationRequest.basedOn.extension" />
+      <sliceName value="repeatInformation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation" />
       </type>
     </element>
     <element id="MedicationRequest.groupIdentifier">
