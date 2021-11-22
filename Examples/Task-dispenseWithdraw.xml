@@ -17,13 +17,6 @@
         <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
         <value value="88AF6C-C81007-00001C"></value>
     </groupIdentifier>
-    <partOf>
-        <type value="Task"/>
-        <identifier>
-            <system value="https://fhir.nhs.uk/Id/prescription-order-number"></system>
-            <value value="88AF6C-C81007-00001C"></value>
-        </identifier>
-    </partOf>
     <code>
         <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
@@ -45,10 +38,16 @@
         </identifier>
     </for>
     <authoredOn value="2020-12-21T17:03:20-00:00"></authoredOn>
-    <owner>
+    <requester>
         <identifier>
             <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
             <value value="7654321"></value>
+        </identifier>
+    </requester>
+    <owner>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
+            <value value="VNE51"></value>
         </identifier>
     </owner>
     <reasonCode>
