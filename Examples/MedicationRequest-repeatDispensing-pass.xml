@@ -14,9 +14,6 @@
         </valueReference>
       </extension>
     <extension xmlns="http://hl7.org/fhir" url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation">
-        <extension url="numberOfPrescriptionsIssued">
-            <valueUnsignedInt value="1" />
-        </extension>
         <extension url="authorisationExpiryDate">
             <valueDateTime value="2020-12-07" />            
         </extension>
