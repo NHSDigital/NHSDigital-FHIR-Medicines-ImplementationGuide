@@ -27,7 +27,11 @@
     },
     "created": "2004-09-16T16:30:00+00:00",
     "provider": {
-        "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "884562163557"
+        },
+        "display": "dummy full name"
     },
     "priority": {
         "coding": [
