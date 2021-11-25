@@ -299,7 +299,7 @@
     <element id="Claim.item.extension:prescriptionStatus">
       <path value="Claim.item.extension" />
       <sliceName value="prescriptionStatus" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -383,6 +383,7 @@
     <element id="Claim.item.programCode:prescriptionChargeExemption">
       <path value="Claim.item.programCode" />
       <sliceName value="prescriptionChargeExemption" />
+      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -545,6 +546,7 @@
     <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge">
       <path value="Claim.item.detail.subDetail.programCode" />
       <sliceName value="prescriptionCharge" />
+      <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
@@ -558,7 +560,8 @@
     <element id="Claim.item.detail.subDetail.programCode:dispensingEndorsement">
       <path value="Claim.item.detail.subDetail.programCode" />
       <sliceName value="dispensingEndorsement" />
-      <max value="1" />
+      <min value="1" />
+      <max value="*" />
       <binding>
         <strength value="required" />
         <description value="Program specific reason codes" />
