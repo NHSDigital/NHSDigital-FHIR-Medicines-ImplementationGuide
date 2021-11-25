@@ -211,6 +211,15 @@
                                             "display": "Not Paid"
                                         }
                                     ]
+                                },
+                                {
+                                  "coding": [
+                                    {
+                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                      "code": "NDEC",
+                                      "display": "No Dispenser Endorsement Code"
+                                    }
+                                  ]
                                 }
                             ]
                         }
@@ -298,6 +307,15 @@
                                             "display": "Not Paid"
                                         }
                                     ]
+                                },
+                                {
+                                  "coding": [
+                                    {
+                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                      "code": "NDEC",
+                                      "display": "No Dispenser Endorsement Code"
+                                    }
+                                  ]
                                 }
                             ]
                         }
@@ -379,6 +397,15 @@
                                             "display": "Not Paid"
                                         }
                                     ]
+                                },
+                                {
+                                  "coding": [
+                                    {
+                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                      "code": "NDEC",
+                                      "display": "No Dispenser Endorsement Code"
+                                    }
+                                  ]
                                 }
                             ]
                         }

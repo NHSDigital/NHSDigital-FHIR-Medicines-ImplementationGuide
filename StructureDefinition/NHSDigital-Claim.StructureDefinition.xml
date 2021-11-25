@@ -283,6 +283,7 @@
     <element id="Claim.item">
       <path value="Claim.item" />
       <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Claim.item.extension">
@@ -294,7 +295,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Claim.item.extension:prescriptionStatus">
       <path value="Claim.item.extension" />
@@ -483,7 +484,6 @@
     </element>
     <element id="Claim.item.detail.subDetail">
       <path value="Claim.item.detail.subDetail" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.subDetail.extension">
@@ -561,7 +561,6 @@
       <path value="Claim.item.detail.subDetail.programCode" />
       <sliceName value="dispensingEndorsement" />
       <min value="1" />
-      <max value="*" />
       <binding>
         <strength value="required" />
         <description value="Program specific reason codes" />
@@ -574,6 +573,7 @@
     </element>
     <element id="Claim.item.detail.subDetail.quantity">
       <path value="Claim.item.detail.subDetail.quantity" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Claim.item.detail.subDetail.quantity.extension">

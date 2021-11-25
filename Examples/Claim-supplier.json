@@ -1,10 +1,10 @@
 {
     "resourceType": "Claim",
-    "id": "7447c471-1ce0-4f5f-9dab-5ffd758c289e",
+    "id": "258E153F-567B-4D60-B045-BA315A6B8DB0",
     "identifier": [
         {
-            "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-            "value": "4509B70D-D8B8-EA03-1105-64557CB54A29"
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "d1257b5f-c738-0ca3-e050-d20ae3a20464"
         }
     ],
     "status": "active",
@@ -13,7 +13,7 @@
             {
                 "system": "http://terminology.hl7.org/CodeSystem/claim-type",
                 "code": "pharmacy",
-                "display": "Pharmacy"
+                "display": "pharmacy"
             }
         ]
     },
@@ -21,17 +21,17 @@
     "patient": {
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9300992742"
+            "value": "9446365678"
         },
-        "display": "Mrs Chi Edinburgh"
+        "display": "Dart Janelle Cori"
     },
-    "created": "2004-09-16T16:30:00+00:00",
+    "created": "2021-11-22T10:28:02.0Z",
     "provider": {
         "identifier": {
-            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-            "value": "884562163557"
+            "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+            "value": "23442"
         },
-        "display": "dummy full name"
+        "display": "|Bob||Buller|"
     },
     "priority": {
         "coding": [
@@ -44,23 +44,23 @@
     "prescription": {
         "extension": [
             {
-                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
                 "extension": [
                     {
                         "url": "shortForm",
                         "valueIdentifier": {
                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                            "value": "82D996-C81010-11DB12"
+                            "value": "222FD3-B83002-00001I"
                         }
                     },
                     {
                         "url": "UUID",
                         "valueIdentifier": {
                             "system": "https://fhir.nhs.uk/Id/prescription",
-                            "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                            "value": "d1257b5f-c5f3-0ca3-e050-d20ae3a20464"
                         }
                     }
-                ]
+                ],
+                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier"
             }
         ],
         "display": "The original prescription"
@@ -78,9 +78,9 @@
         "party": {
             "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
+                "value": "FA976"
             },
-            "display": "The Simple Pharmacy"
+            "display": "Bob's Pharmacy"
         }
     },
     "insurance": [
@@ -92,7 +92,7 @@
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "T1450"
                 },
-                "display": "NHS BUSINESS SERVICES AUTHORITY"
+                "display": "PPA"
             }
         }
     ],
@@ -127,15 +127,6 @@
                             "display": "Patient has paid appropriate charges"
                         }
                     ]
-                },
-                {
-                  "coding": [
-                    {
-                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                      "code": "NDEC",
-                      "display": "No Dispenser Endorsement Code"
-                    }
-                  ]
                 }
             ],
             "detail": [
@@ -145,7 +136,7 @@
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
                             "valueIdentifier": {
                                 "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
-                                "value": "18fc8a8b-f7c7-4367-80ce-1f4fc84c962d"
+                                "value": "E19DBF8D-84E9-45EE-BD62-B771C9FE7022"
                             }
                         },
                         {
@@ -153,7 +144,7 @@
                             "valueReference": {
                                 "identifier": {
                                     "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                    "value": "299c610b-f4f1-4eac-a7d7-4fb6b0556e11"
+                                    "value": "d1257b5f-c738-0ca3-e050-d20ae3a20464"
                                 }
                             }
                         }
@@ -163,8 +154,8 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "39720311000001101",
-                                "display": "Paracetamol 500mg soluble tablets"
+                                "code": "134463001",
+                                "display": "Telmisartan 20mg tablets"
                             }
                         ]
                     },
@@ -179,11 +170,22 @@
                             ]
                         }
                     ],
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                                    "code": "0001",
+                                    "display": "Patient has paid appropriate charges"
+                                }
+                            ]
+                        }
+                    ],
                     "quantity": {
-                        "value": 100,
-                        "unit": "Tablet",
+                        "value": 28,
+                        "unit": "tablet",
                         "system": "http://snomed.info/sct",
-                        "code": "732936001"
+                        "code": "428673006"
                     },
                     "subDetail": [
                         {
@@ -192,8 +194,8 @@
                                 "coding": [
                                     {
                                         "system": "http://snomed.info/sct",
-                                        "code": "1858411000001101",
-                                        "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
+                                        "code": "38781611000001106",
+                                        "display": "Telmisartan 20mg tablets (Ennogen Healthcare Ltd)"
                                     }
                                 ]
                             },
@@ -210,6 +212,15 @@
                                 {
                                     "coding": [
                                         {
+                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                                            "code": "no-evidence-seen",
+                                            "display": "No Evidence Seen"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "coding": [
+                                        {
                                             "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
                                             "code": "NDEC",
                                             "display": "No Dispenser Endorsement Code"
@@ -218,87 +229,63 @@
                                 }
                             ],
                             "quantity": {
-                                "value": 60,
+                                "value": 28,
                                 "unit": "tablet",
                                 "system": "http://snomed.info/sct",
-                                "code": "732936001"
+                                "code": "428673006"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimSequenceIdentifier",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/claim-sequence-identifier",
+                                "value": "B24A5B33-AEFB-4BEF-89CE-2A819C57AA2A"
                             }
                         },
                         {
-                            "sequence": 2,
-                            "productOrService": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "915611000001105",
-                                        "display": "Paracetamol 500mg soluble tablets (A A H Pharmaceuticals Ltd)"
-                                    }
-                                ]
-                            },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
+                            "valueReference": {
+                                "identifier": {
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "d1257b5f-c73d-0ca3-e050-d20ae3a20464"
                                 }
-                            ],
-                            "quantity": {
-                                "value": 24,
-                                "unit": "tablet",
-                                "system": "http://snomed.info/sct",
-                                "code": "732936001"
                             }
-                        },
+                        }
+                    ],
+                    "sequence": 2,
+                    "productOrService": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "318986004",
+                                "display": "Telmisartan 40mg tablets"
+                            }
+                        ]
+                    },
+                    "modifier": [
                         {
-                            "sequence": 3,
-                            "productOrService": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "2274211000001101",
-                                        "display": "Paracetamol 500mg soluble tablets (Kent Pharma (UK) Ltd) 16 tablet 2 x 8 tablets"
-                                    }
-                                ]
-                            },
-                            "programCode": [
+                            "coding": [
                                 {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                    "code": "0002",
+                                    "display": "Item not dispensed"
                                 }
-                            ],
-                            "quantity": {
-                                "value": 16,
-                                "unit": "tablet",
-                                "system": "http://snomed.info/sct",
-                                "code": "732936001"
-                            }
+                            ]
+                        }
+                    ],
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
+                                    "code": "0001",
+                                    "display": "Patient has paid appropriate charges"
+                                }
+                            ]
                         }
                     ]
                 }

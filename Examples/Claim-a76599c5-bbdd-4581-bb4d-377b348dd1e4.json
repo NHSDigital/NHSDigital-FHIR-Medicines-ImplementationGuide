@@ -223,6 +223,15 @@
                       "display": "Not Paid"
                     }
                   ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                      "code": "NDEC",
+                      "display": "No Dispenser Endorsement Code"
+                    }
+                  ]
                 }
               ]
             }
@@ -310,6 +319,15 @@
                       "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                       "code": "paid-once",
                       "display": "Paid Once"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                      "code": "NDEC",
+                      "display": "No Dispenser Endorsement Code"
                     }
                   ]
                 }
