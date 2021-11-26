@@ -107,6 +107,26 @@
       <path value="Claim.created" />
       <mustSupport value="true" />
     </element>
+    <element id="Claim.insurer">
+      <path value="Claim.insurer" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
+      </type>
+    </element>
+    <element id="Claim.insurer.identifier">
+      <path value="Claim.insurer.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Claim.insurer.identifier.system">
+      <path value="Claim.insurer.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.insurer.identifier.value">
+      <path value="Claim.insurer.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="Claim.provider">
       <path value="Claim.provider" />
       <type>
