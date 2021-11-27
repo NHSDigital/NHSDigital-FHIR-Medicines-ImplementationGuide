@@ -1,5 +1,13 @@
 <Task xmlns="http://hl7.org/fhir">
     <id value="6a2624a2-321b-470e-91a6-8ae7a065e2f0"/>
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent">
+        <valueReference>
+            <identifier>
+                <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
+                <value value="7654321"></value>
+            </identifier>
+        </valueReference>
+    </extension>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="5AC84C11-DB8B-44DA-8FCF-8980B3D13596"></value>
@@ -38,12 +46,6 @@
         </identifier>
     </for>
     <authoredOn value="2020-12-21T17:03:20-00:00"></authoredOn>
-    <requester>
-        <identifier>
-            <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
-            <value value="7654321"></value>
-        </identifier>
-    </requester>
     <owner>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>

@@ -1,5 +1,14 @@
 <Task xmlns="http://hl7.org/fhir">
     <id value="1291fcca-902b-48f3-9d07-1be9ea30d7a0"/>
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent">
+        <valueReference>
+            <identifier>
+                <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
+                <value value="223891001086"></value>
+            </identifier>
+            <display value="Dr Liz Scott" />
+        </valueReference>
+    </extension>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"></system>
         <value value="ADD2E9DD-DA0A-C266-A4E3-447C68239525"></value>
@@ -27,16 +36,16 @@
     <code>
         <coding>
             <system value="http://hl7.org/fhir/CodeSystem/task-code"></system>
-            <code value="fulfill" />
-            <display value="Fulfill the focal request" />
+            <code value="abort" />
+            <display value="Mark the focal resource as no longer active" />
         </coding>
     </code>
     <focus>
-         <type value="MedicationRequest"/>
-         <identifier>
-                <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
-                <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
-            </identifier>
+        <type value="MedicationRequest"/>
+        <identifier>
+            <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
+            <value value="ee86a018-779c-4809-999f-a9d89cdfd30f" />
+        </identifier>
     </focus>
     <for>
         <identifier>
@@ -45,14 +54,6 @@
         </identifier>
         <display value="MISS ETTA CORY"/>
     </for>
-    <requester>
-        <type value="PractitionerRole"/>
-        <identifier>
-            <system value="https://fhir.nhs.uk/Id/sds-role-profile-id"></system>
-            <value value="223891001086"></value>
-        </identifier>
-        <display value="Dr Liz Scott" />
-    </requester>
     <authoredOn value="2019-12-30T12:00:00+00:00"></authoredOn>
     <owner>
         <identifier>

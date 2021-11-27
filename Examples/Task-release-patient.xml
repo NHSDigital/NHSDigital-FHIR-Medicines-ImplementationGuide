@@ -1,5 +1,14 @@
 <Task xmlns="http://hl7.org/fhir">
     <id value="702cc4e9-81fc-470e-8ae1-43120ae5c16d"/>
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent">
+        <valueReference>
+            <identifier>
+                <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
+                <value value="7654321"></value>
+            </identifier>
+            <display value="The pharmacist"/>
+        </valueReference>
+    </extension>
     <status value="accepted"></status>
     <intent value="order"></intent>
     <groupIdentifier>
@@ -26,20 +35,13 @@
         </identifier>
     </for>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
-    <requester>
-        <identifier>
-            <system value="https://fhir.hl7.org.uk/Id/gphc-number"></system>
-            <value value="7654321"></value>
-        </identifier>
-        <display value="The pharmacist"/>
-    </requester>
     <owner>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
             <value value="VNE51"></value>
         </identifier>
     </owner>
-   <reasonCode>
+    <reasonCode>
         <coding>
             <system value="http://snomed.info/sct"></system>
             <code value="33633005"></code>
