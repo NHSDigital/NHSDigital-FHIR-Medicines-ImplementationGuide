@@ -1,6 +1,18 @@
 {
     "resourceType": "Claim",
     "id": "258E153F-567B-4D60-B045-BA315A6B8DB0",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+            "valueReference": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                    "value": "23442"
+                },
+                "display": "|Bob||Buller|"
+            }
+        }
+    ],
     "identifier": [
         {
             "system": "https://tools.ietf.org/html/rfc4122",
@@ -28,10 +40,10 @@
     "created": "2021-11-22T10:28:02.0Z",
     "provider": {
         "identifier": {
-            "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-            "value": "23442"
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FA976"
         },
-        "display": "|Bob||Buller|"
+        "display": "Bob's Pharmacy"
     },
     "priority": {
         "coding": [

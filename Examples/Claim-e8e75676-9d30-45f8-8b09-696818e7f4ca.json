@@ -1,6 +1,18 @@
 {
     "resourceType": "Claim",
     "id": "e8e75676-9d30-45f8-8b09-696818e7f4ca",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+            "valueReference": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "884562163557"
+                },
+                "display": "dummy full name"
+            }
+        }
+    ],
     "identifier": [
         {
             "system": "https://tools.ietf.org/html/rfc4122",
@@ -27,10 +39,10 @@
     "created": "2011-10-25T13:45:35+00:00",
     "provider": {
         "identifier": {
-            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-            "value": "884562163557"
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FM096a"
         },
-        "display": "dummy full name"
+        "display": "34-36 LOUTH ROAD"
     },
     "priority": {
         "coding": [
@@ -62,7 +74,7 @@
                 ]
             }
         ],
-        "display" : "A prescription"
+        "display": "A prescription"
     },
     "payee": {
         "type": {
@@ -142,8 +154,8 @@
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
                             "valueReference": {
                                 "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                "value": "33560bee-bc0c-4e3b-a155-71591eee9ca5"
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "33560bee-bc0c-4e3b-a155-71591eee9ca5"
                                 }
                             }
                         }
@@ -213,13 +225,13 @@
                                     ]
                                 },
                                 {
-                                  "coding": [
-                                    {
-                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                      "code": "NDEC",
-                                      "display": "No Dispenser Endorsement Code"
-                                    }
-                                  ]
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                            "code": "NDEC",
+                                            "display": "No Dispenser Endorsement Code"
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -238,8 +250,8 @@
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
                             "valueReference": {
                                 "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                "value": "e8e75676-9d30-45f8-8b09-696818e7f4ca"
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "e8e75676-9d30-45f8-8b09-696818e7f4ca"
                                 }
                             }
                         }
@@ -309,13 +321,13 @@
                                     ]
                                 },
                                 {
-                                  "coding": [
-                                    {
-                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                      "code": "NDEC",
-                                      "display": "No Dispenser Endorsement Code"
-                                    }
-                                  ]
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                            "code": "NDEC",
+                                            "display": "No Dispenser Endorsement Code"
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -334,8 +346,8 @@
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationRequestReference",
                             "valueReference": {
                                 "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                "value": "164e94fe-16e5-4105-a4aa-10c3757c07c5"
+                                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                    "value": "164e94fe-16e5-4105-a4aa-10c3757c07c5"
                                 }
                             }
                         }
@@ -399,13 +411,13 @@
                                     ]
                                 },
                                 {
-                                  "coding": [
-                                    {
-                                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                      "code": "NDEC",
-                                      "display": "No Dispenser Endorsement Code"
-                                    }
-                                  ]
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                            "code": "NDEC",
+                                            "display": "No Dispenser Endorsement Code"
+                                        }
+                                    ]
                                 }
                             ]
                         }

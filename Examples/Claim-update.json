@@ -1,6 +1,18 @@
 {
     "resourceType": "Claim",
     "id": "7447c471-1ce0-4f5f-9dab-5ffd758c289e",
+    "extension":  [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+            "valueReference": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "884562163557"
+                },
+                "display": "dummy full name"
+            }
+        }
+    ],
     "identifier": [
         {
             "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
@@ -28,10 +40,10 @@
     "created": "2004-09-16T16:30:00+00:00",
     "provider": {
         "identifier": {
-            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-            "value": "884562163557"
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "VNE51"
         },
-        "display": "dummy full name"
+        "display": "The Simple Pharmacy"
     },
     "priority": {
         "coding": [

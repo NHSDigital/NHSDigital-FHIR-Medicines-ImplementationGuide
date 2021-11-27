@@ -1,6 +1,18 @@
 {
   "resourceType": "Claim",
   "id": "a76599c5-bbdd-4581-bb4d-377b348dd1e4",
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+      "valueReference": {
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+          "value": "7654321"
+        },
+        "display": "Mr Peter Potion"
+      }
+    }
+  ],
   "created": "2021-11-24T09:54:07.246Z",
   "identifier": [
     {
@@ -26,12 +38,11 @@
     }
   },
   "provider": {
-    "type": "Practitioner",
     "identifier": {
-      "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-      "value": "7654321"
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "VNFKT"
     },
-    "display": "Mr Peter Potion"
+    "display": "FIVE STAR HOMECARE LEEDS LTD"
   },
   "priority": {
     "coding": [
