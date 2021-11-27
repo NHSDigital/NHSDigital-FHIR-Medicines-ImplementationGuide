@@ -47,6 +47,18 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-replacementOf" />
       </type>
     </element>
+    <element id="Claim.extension:agent">
+      <path value="Claim.extension" />
+      <sliceName value="agent" />
+      <short value="Provenance of the resource" />
+      <definition value="Is used as the author on request resources." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent" />
+      </type>
+    </element>
     <element id="Claim.identifier">
       <path value="Claim.identifier" />
       <min value="1" />
