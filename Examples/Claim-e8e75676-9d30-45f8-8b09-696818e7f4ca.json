@@ -399,9 +399,6 @@
                             },
                             "programCode": [
                                 {
-                                    "text": "Flolan 1.5mg pdr & solv for soln for inj vials,Test additional information [AI is no longer a valid code]"
-                                },
-                                {
                                     "coding": [
                                         {
                                             "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
