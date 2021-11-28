@@ -380,6 +380,18 @@
         <description value="Prescription Charge Exemption" />
       </binding>
     </element>
+    <element id="Claim.item.programCode.coding">
+      <path value="Claim.item.programCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.programCode.coding.system">
+      <path value="Claim.item.programCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.programCode.coding.code">
+      <path value="Claim.item.programCode.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Claim.item.programCode:exemptionEvidence">
       <path value="Claim.item.programCode" />
       <sliceName value="exemptionEvidence" />
@@ -559,6 +571,18 @@
       <short value="Dispensing Endorsement and Charge Payment" />
       <definition value="Dispensing Endorsement  - Details of the endorsement(s) to support the claim for this medication item. &#xD;&#xA;&#xD;&#xA;Charge Payment - Details on whether a prescription charge was paid for the medication treatment." />
       <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.subDetail.programCode.coding">
+      <path value="Claim.item.detail.subDetail.programCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.subDetail.programCode.coding.system">
+      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.subDetail.programCode.coding.code">
+      <path value="Claim.item.detail.subDetail.programCode.coding.code" />
+      <min value="1" />
     </element>
     <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge">
       <path value="Claim.item.detail.subDetail.programCode" />
