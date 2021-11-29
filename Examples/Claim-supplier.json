@@ -7,7 +7,7 @@
             "valueReference": {
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                    "value": "23442"
+                    "value": "2344242"
                 },
                 "display": "|Bob||Buller|"
             }
