@@ -53,7 +53,7 @@
         <min value="1"></min>
         <max value="1"></max>
         <documentation value="The professional code of the user submitting the request"></documentation>
-        <type value="code"></type>
+        <type value="Identifier"></type>
     </parameter>
     <parameter>
         <name value="return"></name>
