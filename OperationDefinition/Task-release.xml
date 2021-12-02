@@ -34,7 +34,7 @@
     <parameter>
         <name value="owner"></name>
         <use value="in"></use>
-        <min value="0"></min>
+        <min value="1"></min>
         <max value="1"></max>
         <documentation value="The ODS code of the pharmacy. Used for releasing Nominated Pharmacy prescriptions"></documentation>
         <type value="Identifier"></type>
@@ -45,6 +45,14 @@
         <min value="1"></min>
         <max value="1"></max>
         <documentation value="Status from ValueSet http://hl7.org/fhir/valueset-task-status.html Use: accepted"></documentation>
+        <type value="code"></type>
+    </parameter>
+    <parameter>
+        <name value="agent"></name>
+        <use value="in"></use>
+        <min value="1"></min>
+        <max value="1"></max>
+        <documentation value="The professional code of the user submitting the request"></documentation>
         <type value="code"></type>
     </parameter>
     <parameter>
