@@ -186,9 +186,27 @@
                         {
                             "coding": [
                                 {
-                                    "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
-                                    "code": "0001",
-                                    "display": "Patient has paid appropriate charges"
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "paid-once",
+                                    "display": "Paid Once"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                                    "code": "no-evidence-seen",
+                                    "display": "No Evidence Seen"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
                                 }
                             ]
                         }
@@ -211,35 +229,6 @@
                                     }
                                 ]
                             },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
-                                            "code": "no-evidence-seen",
-                                            "display": "No Evidence Seen"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ],
                             "quantity": {
                                 "value": 28,
                                 "unit": "tablet",
@@ -285,17 +274,6 @@
                                     "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
                                     "code": "0002",
                                     "display": "Item not dispensed"
-                                }
-                            ]
-                        }
-                    ],
-                    "programCode": [
-                        {
-                            "coding": [
-                                {
-                                    "system": "https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption",
-                                    "code": "0001",
-                                    "display": "Patient has paid appropriate charges"
                                 }
                             ]
                         }

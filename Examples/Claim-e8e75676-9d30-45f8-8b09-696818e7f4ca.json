@@ -187,24 +187,6 @@
                         "system": "http://snomed.info/sct",
                         "code": "3319611000001107"
                     },
-                    "subDetail": [
-                        {
-                            "sequence": 1,
-                            "productOrService": {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "4627811000001103",
-                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
-                                    }
-                                ]
-                            },
-                            "quantity": {
-                                "value": 1,
-                                "unit": "vial",
-                                "system": "http://snomed.info/sct",
-                                "code": "3319611000001107"
-                            },
                             "programCode": [
                                 {
                                     "coding": [
@@ -233,7 +215,25 @@
                                         }
                                     ]
                                 }
-                            ]
+                            ],
+                    "subDetail": [
+                        {
+                            "sequence": 1,
+                            "productOrService": {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "4627811000001103",
+                                        "display": "Flolan 1.5mg powder and solvent (pH10.5) for solution for infusion vials (GlaxoSmithKline UK Ltd) 1 vial"
+                                    }
+                                ]
+                            },
+                            "quantity": {
+                                "value": 1,
+                                "unit": "vial",
+                                "system": "http://snomed.info/sct",
+                                "code": "3319611000001107"
+                            }
                         }
                     ]
                 },
@@ -283,6 +283,35 @@
                         "system": "http://snomed.info/sct",
                         "code": "3319611000001107"
                     },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "BB",
+                                    "display": "Broken Bulk"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
                     "subDetail": [
                         {
                             "sequence": 1,
@@ -300,36 +329,7 @@
                                 "unit": "vial",
                                 "system": "http://snomed.info/sct",
                                 "code": "3319611000001107"
-                            },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "BB",
-                                            "display": "Broken Bulk"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "not-paid",
-                                            "display": "Not Paid"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ]
+                            }
                         }
                     ]
                 },
@@ -379,6 +379,26 @@
                         "system": "http://snomed.info/sct",
                         "code": "3319611000001107"
                     },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
                     "subDetail": [
                         {
                             "sequence": 1,
@@ -396,27 +416,7 @@
                                 "unit": "vial",
                                 "system": "http://snomed.info/sct",
                                 "code": "3319611000001107"
-                            },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "not-paid",
-                                            "display": "Not Paid"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ]
+                            }
                         }
                     ]
                 }

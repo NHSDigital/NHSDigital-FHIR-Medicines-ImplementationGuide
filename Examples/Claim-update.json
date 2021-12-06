@@ -197,6 +197,26 @@
                         "system": "http://snomed.info/sct",
                         "code": "732936001"
                     },
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "paid-once",
+                                    "display": "Paid Once"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
                     "subDetail": [
                         {
                             "sequence": 1,
@@ -209,26 +229,6 @@
                                     }
                                 ]
                             },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ],
                             "quantity": {
                                 "value": 60,
                                 "unit": "tablet",
@@ -247,26 +247,6 @@
                                     }
                                 ]
                             },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ],
                             "quantity": {
                                 "value": 24,
                                 "unit": "tablet",
@@ -285,26 +265,6 @@
                                     }
                                 ]
                             },
-                            "programCode": [
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "paid-once",
-                                            "display": "Paid Once"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                }
-                            ],
                             "quantity": {
                                 "value": 16,
                                 "unit": "tablet",
