@@ -5,7 +5,7 @@
         <system value="https://fhir.nhs.uk/identifier/CodeSystem" />
         <value value="prescription-charge-exemption" />
     </identifier>
-    <version value="1.0.0" />
+    <version value="1.0.1" />
     <name value="PrescriptionChargeExemption" />
     <title value="Prescription Charge Exemption" />
     <status value="draft" />
@@ -29,11 +29,11 @@
     </concept>
     <concept>
         <code value="0002"></code>
-        <display value="is under 16 years of age" />
+        <display value="Is 60 years of age or over or is under 16 years of age" />
     </concept>
     <concept>
         <code value="0003"></code>
-        <display value="is 16, 17 or 18 and in full-time education" />
+        <display value="16, 17 or 18 and in full-time education" />
     </concept>
     <concept>
         <code value="0004"></code>
@@ -41,47 +41,62 @@
     </concept>
     <concept>
         <code value="0005"></code>
-        <display value="has a valid maternity exemption certificate" />
+        <display value="Maternity exemption certificate" />
     </concept>
     <concept>
         <code value="0006"></code>
-        <display value="has a valid medical exemption certificate" />
+        <display value="Medical exemption certificate" />
     </concept>
     <concept>
         <code value="0007"></code>
-        <display value="has a valid prescription pre-payment certificate" />
+        <display value="Prescription prepayment certificate" />
     </concept>
     <concept>
         <code value="0008"></code>
-        <display value="has a War Pension exemption certificate" />
+        <display value="Prescription exemption certificate issued by Ministry of Defence" />
     </concept>
     <concept>
         <code value="0009"></code>
-        <display value="is named on a current HC2 charges certificate" />
+        <display value="HC2 (full help) certificate" />
     </concept>
     <concept>
         <code value="0010"></code>
-        <display value="was prescribed free-of-charge contraceptives" />
+        <display value="Was prescribed free-of-charge contraceptives" />
     </concept>
     <concept>
         <code value="0011"></code>
-        <display value="gets income support (IS)" />
+        <display value="Income support or Income-related Employment and Support Allowance" />
     </concept>
     <concept>
         <code value="0012"></code>
-        <display value="gets income based Job Seeker's Allowance (JSA (IB))" />
+        <display value="Income based Job Seeker's Allowance" />
     </concept>
     <concept>
         <code value="0013"></code>
-        <display value="is entitled to, or named on a VALID NHS tax credit exemption certificate" />
+        <display value="Tax credit exemption certificate" />
     </concept>
     <concept>
         <code value="0014"></code>
-        <display value="has a partner who gets Pension Credit Guarantee Credit (PGCC)" />
+        <display value="Pension Credit Guarantee Credit (including partners)" />
     </concept>
     <concept>
         <code value="0015"></code>
-        <display value="Patient does not need to pay the prescription charge" />
-        <definition value="This allows the exemption status to be recorded without actually stating the reason for the exemption."/>
+        <display value="Was prescribed free-of-charge HMP/prisoners/persons detained in other secure accommodation medication" />
+    </concept>
+    <concept>
+        <code value="0016"></code>
+        <display value="Universal Credit and meets the criteria" />
+    </concept>
+    <concept>
+        <code value="0017"></code>
+        <display value="Was prescribed free-of-charge STI sexual health medication" />
+    </concept>
+    <concept>
+        <code value="0018"></code>
+        <display value="Was prescribed free-of-charge mental health medication" />
+    </concept>
+    <concept>
+        <code value="0019"></code>
+        <display value="Was prescribed free-of-charge TB medication" />
     </concept>
 </CodeSystem>
