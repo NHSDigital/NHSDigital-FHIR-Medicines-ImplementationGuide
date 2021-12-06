@@ -35,7 +35,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="0" />
+      <min value="1" />
     </element>
     <element id="Claim.extension:replacementOf">
       <path value="Claim.extension" />
@@ -105,6 +105,7 @@
         <severity value="error" />
         <human value="An identifier reference or resource reference must be provided" />
         <expression value="(reference.exists() or identifier.exists())" />
+        <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
       </constraint>
       <constraint>
         <key value="patient-nhs" />
@@ -509,9 +510,55 @@
     </element>
     <element id="Claim.item.detail.programCode">
       <path value="Claim.item.detail.programCode" />
-      <short value="PrescriptionChargeExemption" />
-      <definition value="Describes possible reasons for someone not having to pay prescription charges." />
-      <mustSupport value="false" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <short value="Dispensing Endorsement and Charge Payment" />
+      <definition value="Dispensing Endorsement  - Details of the endorsement(s) to support the claim for this medication item. &#xD;&#xA;&#xD;&#xA;Charge Payment - Details on whether a prescription charge was paid for the medication treatment." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Claim.item.detail.programCode.coding">
+      <path value="Claim.item.detail.programCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.programCode.coding.system">
+      <path value="Claim.item.detail.programCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.programCode.coding.code">
+      <path value="Claim.item.detail.programCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Claim.item.detail.programCode:prescriptionCharge">
+      <path value="Claim.item.detail.programCode" />
+      <sliceName value="prescriptionCharge" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge" />
+      </binding>
+    </element>
+    <element id="Claim.item.detail.programCode:prescriptionCharge.coding.system">
+      <path value="Claim.item.detail.programCode.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge" />
+    </element>
+    <element id="Claim.item.detail.programCode:dispensingEndorsement">
+      <path value="Claim.item.detail.programCode" />
+      <sliceName value="dispensingEndorsement" />
+      <binding>
+        <strength value="required" />
+        <description value="Program specific reason codes" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
+      </binding>
+    </element>
+    <element id="Claim.item.detail.programCode:dispensingEndorsement.coding.system">
+      <path value="Claim.item.detail.programCode.coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
     </element>
     <element id="Claim.item.detail.quantity">
       <path value="Claim.item.detail.quantity" />
@@ -541,7 +588,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationDispenseReference" />
       </type>
-    </element>
+    </element>  
     <element id="Claim.item.detail.subDetail.extension:repeatInformation">
       <path value="Claim.item.detail.subDetail.extension" />
       <sliceName value="repeatInformation" />
@@ -564,59 +611,6 @@
         <description value="DMD Medication Code" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/NHSDigital-MedicationDispense-Code" />
       </binding>
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode">
-      <path value="Claim.item.detail.subDetail.programCode" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <short value="Dispensing Endorsement and Charge Payment" />
-      <definition value="Dispensing Endorsement  - Details of the endorsement(s) to support the claim for this medication item. &#xD;&#xA;&#xD;&#xA;Charge Payment - Details on whether a prescription charge was paid for the medication treatment." />
-      <mustSupport value="true" />
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode.coding">
-      <path value="Claim.item.detail.subDetail.programCode.coding" />
-      <min value="1" />
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode.coding.system">
-      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode.coding.code">
-      <path value="Claim.item.detail.subDetail.programCode.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge">
-      <path value="Claim.item.detail.subDetail.programCode" />
-      <sliceName value="prescriptionCharge" />
-      <min value="1" />
-      <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-vs-prescription-charge" />
-      </binding>
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode:prescriptionCharge.coding.system">
-      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/DM-prescription-charge" />
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode:dispensingEndorsement">
-      <path value="Claim.item.detail.subDetail.programCode" />
-      <sliceName value="dispensingEndorsement" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Program specific reason codes" />
-        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-dispensing-endorsement" />
-      </binding>
-    </element>
-    <element id="Claim.item.detail.subDetail.programCode:dispensingEndorsement.coding.system">
-      <path value="Claim.item.detail.subDetail.programCode.coding.system" />
-      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement" />
     </element>
     <element id="Claim.item.detail.subDetail.quantity">
       <path value="Claim.item.detail.subDetail.quantity" />

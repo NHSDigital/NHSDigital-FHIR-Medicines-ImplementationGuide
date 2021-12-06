@@ -8,6 +8,8 @@ StructureDefinition/Extension-EPS-DispenseRelease*.xml
 StructureDefinition/Extension-EPS-DispensingInformation*.xml
 StructureDefinition/Extension-EPS-RepeatInformation*.xml
 StructureDefinition/Extension-Spine-ActorRoleServiceOrSpecialty.StructureDefinition.xml
+StructureDefinition/Extension-NHSDigital-Account*.*
+StructureDefinition/Extension-NHSDigital-Provenance*.*
 .idea
 validation
 IOPS-validation
