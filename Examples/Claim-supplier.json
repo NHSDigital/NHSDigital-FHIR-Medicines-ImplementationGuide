@@ -139,6 +139,14 @@
                             "display": "Patient has paid appropriate charges"
                         }
                     ]
+                }, {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
+                            "code": "no-evidence-seen",
+                            "display": "No Evidence Seen"
+                        }
+                    ]
                 }
             ],
             "detail": [
@@ -189,15 +197,6 @@
                                     "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
                                     "code": "paid-once",
                                     "display": "Paid Once"
-                                }
-                            ]
-                        },
-                        {
-                            "coding": [
-                                {
-                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-exemption-evidence",
-                                    "code": "no-evidence-seen",
-                                    "display": "No Evidence Seen"
                                 }
                             ]
                         },
@@ -274,6 +273,26 @@
                                     "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
                                     "code": "0002",
                                     "display": "Item not dispensed"
+                                }
+                            ]
+                        }
+                    ],
+                    "programCode": [
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "paid-once",
+                                    "display": "Paid Once"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
                                 }
                             ]
                         }

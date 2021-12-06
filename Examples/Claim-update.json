@@ -1,7 +1,7 @@
 {
     "resourceType": "Claim",
     "id": "7447c471-1ce0-4f5f-9dab-5ffd758c289e",
-    "extension":  [
+    "extension": [
         {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
             "valueReference": {
@@ -139,15 +139,6 @@
                             "display": "Patient has paid appropriate charges"
                         }
                     ]
-                },
-                {
-                  "coding": [
-                    {
-                      "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                      "code": "NDEC",
-                      "display": "No Dispenser Endorsement Code"
-                    }
-                  ]
                 }
             ],
             "detail": [
