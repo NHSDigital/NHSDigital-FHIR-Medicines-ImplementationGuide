@@ -331,9 +331,9 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus" />
       </type>
     </element>
-    <element id="Claim.item.extension:prescriptionStatusReasson">
+    <element id="Claim.item.extension:prescriptionStatusReason">
       <path value="Claim.item.extension" />
-      <sliceName value="prescriptionStatusReasson" />
+      <sliceName value="prescriptionStatusReason" />
       <min value="0" />
       <max value="1" />
       <type>
