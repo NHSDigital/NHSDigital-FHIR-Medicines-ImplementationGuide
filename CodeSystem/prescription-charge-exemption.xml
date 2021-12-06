@@ -24,6 +24,10 @@
     <caseSensitive value="true" />
     <content value="complete" />
     <concept>
+        <code value="0000"></code>
+        <display value="Patient has paid appropriate charges at old rate" />
+    </concept>
+    <concept>
         <code value="0001"></code>
         <display value="Patient has paid appropriate charges" />
     </concept>

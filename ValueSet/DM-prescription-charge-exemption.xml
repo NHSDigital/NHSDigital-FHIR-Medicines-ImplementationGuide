@@ -85,6 +85,11 @@
         <display value="Patient has paid appropriate charges"/>
     </contains>
     <contains>
+      <system value="https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption"/>
+      <code value="0000"/>
+      <display value="Patient has paid appropriate charges at old rate"/>
+  </contains>
+    <contains>
         <system value="https://fhir.nhs.uk/CodeSystem/prescription-charge-exemption"/>
         <code value="0014"/>
         <display value="Pension Credit Guarantee Credit (including partners)"/>
