@@ -52,8 +52,8 @@
         <use value="in"></use>
         <min value="1"></min>
         <max value="1"></max>
-        <documentation value="The professional code of the user submitting the request"></documentation>
-        <type value="Identifier"></type>
+        <documentation value="The professional submitting the release request"></documentation>
+        <type value="Resource"></type>
     </parameter>
     <parameter>
         <name value="return"></name>
