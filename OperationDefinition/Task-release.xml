@@ -34,7 +34,7 @@
     <parameter>
         <name value="owner"></name>
         <use value="in"></use>
-        <min value="1"></min>
+        <min value="0"></min>
         <max value="1"></max>
         <documentation value="The ODS code of the pharmacy. Used for releasing Nominated Pharmacy prescriptions"></documentation>
         <type value="Identifier"></type>
@@ -54,7 +54,6 @@
         <max value="1"></max>
         <documentation value="The professional submitting the release request"></documentation>
         <type value="PractitionerRole"></type>
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole"/>
     </parameter>
     <parameter>
         <name value="return"></name>
