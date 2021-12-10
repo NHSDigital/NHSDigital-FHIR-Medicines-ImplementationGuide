@@ -3,13 +3,6 @@
     "id" : "45a3cbe4-7688-418b-91d3-8f6d5ca94905",
     "parameter": [
         {
-            "name": "owner",
-            "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-            }
-        },
-        {
             "name": "group-identifier",
             "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -45,17 +38,6 @@
                     },
                     "display": "UNIVERSITY HOSPITAL SOUTHAMPTON NHS FOUNDATION TRUST"
                 },
-                "code": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R8000",
-                                "display": "Clinical Practitioner Access Role"
-                            }
-                        ]
-                    }
-                ],
                 "telecom": [
                     {
                         "system": "phone",

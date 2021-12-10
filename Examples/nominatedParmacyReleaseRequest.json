@@ -18,12 +18,6 @@
             "resource": {
                 "resourceType": "PractitionerRole",
                 "id": "16708936-6397-4e03-b84f-4aaa790633e0",
-                "identifier": [
-                    {
-                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                        "value": "555086415105"
-                    }
-                ],
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gmc-number",
@@ -31,24 +25,6 @@
                     },
                     "display": "Jackie Clark"
                 },
-                "organization": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "RHM"
-                    },
-                    "display": "UNIVERSITY HOSPITAL SOUTHAMPTON NHS FOUNDATION TRUST"
-                },
-                "code": [
-                    {
-                        "coding": [
-                            {
-                                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R8000",
-                                "display": "Clinical Practitioner Access Role"
-                            }
-                        ]
-                    }
-                ],
                 "telecom": [
                     {
                         "system": "phone",
