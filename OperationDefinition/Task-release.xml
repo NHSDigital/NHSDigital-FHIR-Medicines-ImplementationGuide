@@ -18,7 +18,7 @@
     </contact>
     <description value="TODO - Add description"></description>
     <code value="release"></code>
-    <comment value="Only one of the parameters based-on.identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
+    <comment value="Only one of the parameters group-identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
     <resource value="Task"></resource>
     <system value="false"></system>
     <type value="true"></type>
