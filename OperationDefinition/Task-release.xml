@@ -34,7 +34,7 @@
     <parameter>
         <name value="owner"></name>
         <use value="in"></use>
-        <min value="0"></min>
+        <min value="1"></min>
         <max value="1"></max>
         <documentation value="The ODS code of the pharmacy. Used for releasing Nominated Pharmacy prescriptions"></documentation>
         <type value="Identifier"></type>
