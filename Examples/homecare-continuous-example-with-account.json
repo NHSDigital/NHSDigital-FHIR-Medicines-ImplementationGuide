@@ -75,11 +75,9 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
                         "valueReference":  {
                             "identifier": {
-                                "use": "official",
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "A99968"
-                            },
-                            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+                            }
                         }
                     },
                     {
