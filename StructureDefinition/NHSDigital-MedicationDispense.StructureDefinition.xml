@@ -259,7 +259,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
-        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
