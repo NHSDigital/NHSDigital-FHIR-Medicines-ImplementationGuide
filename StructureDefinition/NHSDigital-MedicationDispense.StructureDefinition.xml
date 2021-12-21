@@ -259,7 +259,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
-        <aggregation value="referenced" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -284,8 +284,8 @@
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier" />
       </type>
     </element>
-    <element id="MedicationDispense.authorizingPrescription.identifier">
-      <path value="MedicationDispense.authorizingPrescription.identifier" />
+    <element id="MedicationDispense.authorizingPrescription.reference">
+      <path value="MedicationDispense.authorizingPrescription.reference" />
       <min value="1" />
     </element>
     <element id="MedicationDispense.type">
