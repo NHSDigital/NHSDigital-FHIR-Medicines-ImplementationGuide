@@ -72,15 +72,6 @@
                 "resourceType": "MedicationRequest",
                 "extension": [
                     {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
-                        "valueReference":  {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "A99968"
-                            }
-                        }
-                    },
-                    {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
