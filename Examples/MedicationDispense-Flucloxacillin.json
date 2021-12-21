@@ -80,10 +80,7 @@
                     ]
                 }
             ],
-            "identifier": {
-                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
-            }
+            "reference" : "urn:uuid:8ebfd5a3-b361-42a7-b8ec-f1b60d986939"
         }
     ],
     "type": {
