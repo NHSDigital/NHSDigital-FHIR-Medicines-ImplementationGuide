@@ -16,23 +16,24 @@
                     "code": "dispense-notification",
                     "display": "Dispense Notification"
                 },
-                "destination": [{
-                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
-                    "receiver": {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "T1450"
-                        },
-                        "display": "NHS BUSINESS SERVICES AUTHORITY"
+                "destination": [
+                    {
+                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message",
+                        "receiver": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "T1450"
+                            },
+                            "display": "NHS BUSINESS SERVICES AUTHORITY"
+                        }
                     }
-                }],
+                ],
                 "sender": {
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                         "value": "VNE51"
                     },
                     "display": "The Simple Pharmacy"
-                    
                 },
                 "source": {
                     "name": "The Simple Pharmacy",
@@ -65,6 +66,58 @@
             "fullUrl": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29",
             "resource": {
                 "resourceType": "MedicationDispense",
+                "contained": [
+                    {
+                        "resourceType": "MedicationRequest",
+                        "id": "p2",
+                        "status": "active",
+                        "intent": "order",
+                        "identifier": [
+                            {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
+                            }
+                        ],
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "39692211000001107",
+                                    "display": "Flucloxacillin 500mg capsules"
+                                }
+                            ]
+                        },
+                        "groupIdentifier": {
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+                                    "valueIdentifier": {
+                                        "system": "https://fhir.nhs.uk/Id/prescription",
+                                        "value": "66317E0C-CE13-59AD-9979-9B568E080160"
+                                    }
+                                }
+                            ],
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                            "value": "3C2366-B81001-0A409U"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                "value": "9300992742"
+                            },
+                            "display": "Mrs Chi Edinburgh"
+                        },
+                        "dispenseRequest": {
+                            "quantity": {
+                                "value": 21,
+                                "unit": "tablet",
+                                "system": "http://snomed.info/sct",
+                                "code": "428673006"
+                            }
+                        }
+                    }
+                ],
                 "extension": [
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
@@ -97,13 +150,13 @@
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "9300992742"
                     },
-                    "display" : "Mrs Chi Edinburgh"
+                    "display": "Mrs Chi Edinburgh"
                 },
                 "performer": [
                     {
                         "actor": {
-                            "type" : "Practitioner",
-                            "identifier":  {
+                            "type": "Practitioner",
+                            "identifier": {
                                 "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                                 "value": "7654321"
                             },
@@ -113,7 +166,7 @@
                     {
                         "actor": {
                             "type": "Organization",
-                            "identifier":  {
+                            "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "VNE51"
                             },
@@ -123,31 +176,7 @@
                 ],
                 "authorizingPrescription": [
                     {
-                        "extension": [
-                            {
-                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
-                                "extension": [
-                                    {
-                                        "url": "shortForm",
-                                        "valueIdentifier": {
-                                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                                            "value": "3C2366-B81001-0A409U"
-                                        }
-                                    },
-                                    {
-                                        "url": "UUID",
-                                        "valueIdentifier": {
-                                            "system": "https://fhir.nhs.uk/Id/prescription",
-                                            "value": "66317E0C-CE13-59AD-9979-9B568E080160"
-                                        }
-                                    }
-                                ]
-                            }
-                        ],
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                            "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
-                        }
+                        "reference": "#p2"
                     }
                 ],
                 "type": {
@@ -204,6 +233,58 @@
             "fullUrl": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17",
             "resource": {
                 "resourceType": "MedicationDispense",
+                "contained": [
+                    {
+                        "resourceType": "MedicationRequest",
+                        "id": "p1",
+                        "identifier": [
+                            {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
+                            }
+                        ],
+                        "status": "active",
+                        "intent": "order",
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "585011000001109",
+                                    "display": "Metronidazole 400mg tablets (Teva UK Ltd)"
+                                }
+                            ]
+                        },
+                        "groupIdentifier": {
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+                                    "valueIdentifier": {
+                                        "system": "https://fhir.nhs.uk/Id/prescription",
+                                        "value": "66317E0C-CE13-59AD-9979-9B568E080160"
+                                    }
+                                }
+                            ],
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                            "value": "3C2366-B81001-0A409U"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                "value": "9300992742"
+                            },
+                            "display": "Mrs Chi Edinburgh"
+                        },
+                        "dispenseRequest": {
+                            "quantity": {
+                                "value": 21,
+                                "unit": "tablet",
+                                "system": "http://snomed.info/sct",
+                                "code": "428673006"
+                            }
+                        }
+                    }
+                ],
                 "extension": [
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
@@ -236,13 +317,13 @@
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
                         "value": "9453740519"
                     },
-                    "display" : "Mrs Chi Edinburgh"
+                    "display": "Mrs Chi Edinburgh"
                 },
                 "performer": [
                     {
                         "actor": {
-                            "type" : "Practitioner",
-                            "identifier":  {
+                            "type": "Practitioner",
+                            "identifier": {
                                 "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                                 "value": "7654321"
                             },
@@ -252,7 +333,7 @@
                     {
                         "actor": {
                             "type": "Organization",
-                            "identifier":  {
+                            "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "VNE51"
                             },
@@ -262,31 +343,7 @@
                 ],
                 "authorizingPrescription": [
                     {
-                        "extension": [
-                            {
-                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier",
-                                "extension": [
-                                    {
-                                        "url": "shortForm",
-                                        "valueIdentifier": {
-                                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                                            "value": "3C2366-B81001-0A409U"
-                                        }
-                                    },
-                                    {
-                                        "url": "UUID",
-                                        "valueIdentifier": {
-                                            "system": "https://fhir.nhs.uk/Id/prescription",
-                                            "value": "66317E0C-CE13-59AD-9979-9B568E080160"
-                                        }
-                                    }
-                                ]
-                            }
-                        ],
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                            "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
-                        }
+                        "reference": "#p1"
                     }
                 ],
                 "type": {

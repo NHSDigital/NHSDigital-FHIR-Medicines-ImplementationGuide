@@ -258,30 +258,9 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Minimal" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationDispense.authorizingPrescription.extension">
-      <path value="MedicationDispense.authorizingPrescription.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="MedicationDispense.authorizingPrescription.extension:groupIdentifier">
-      <path value="MedicationDispense.authorizingPrescription.extension" />
-      <sliceName value="groupIdentifier" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-DM-GroupIdentifier" />
-      </type>
     </element>
     <element id="MedicationDispense.authorizingPrescription.reference">
       <path value="MedicationDispense.authorizingPrescription.reference" />

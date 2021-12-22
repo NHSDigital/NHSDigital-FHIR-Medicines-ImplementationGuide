@@ -14,7 +14,7 @@
       <path value="MedicationDispense.authorizingPrescription" />
       <type>
         <code value="Reference" />
-        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
   </differential>
