@@ -232,6 +232,59 @@
             "fullUrl": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17",
             "resource": {
                 "resourceType": "MedicationDispense",
+                "contained": [
+                    {
+                        "resourceType": "MedicationRequest",
+                        "id": "m2",
+                        "identifier": [
+                            {
+                                "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                                "value": "5cb17f5a-11ac-4e18-825f-6470467238b3"
+                            }
+                        ],
+                        "status": "active",
+                        "intent": "order",
+                        "medicationCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "35936511000001108",
+                                    "display": "Salbutamol 100micrograms/dose inhaler"
+                                }
+                            ]
+                        },
+                        "subject": {
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                "value": "9876543210"
+                            }
+                        },
+                        "groupIdentifier": {
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+                                    "valueIdentifier": {
+                                        "system": "https://fhir.nhs.uk/Id/prescription",
+                                        "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                                    }
+                                }
+                            ],
+                            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+                            "value": "82D996-C81010-11DB12"
+                        },
+                        "dispenseRequest": {
+                            "quantity": {
+                                "value": 200,
+                                "unit": "dose",
+                                "system": "http://snomed.info/sct",
+                                "code": "3317411000001100"
+                            }
+                        },
+                        "substitution": {
+                            "allowedBoolean": false
+                        }
+                    }
+                ],
                 "extension": [
                     {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
