@@ -115,6 +115,9 @@
                                 "system": "http://snomed.info/sct",
                                 "code": "428673006"
                             }
+                        },
+                        "substitution": {
+                            "allowedBoolean": false
                         }
                     }
                 ],
@@ -282,6 +285,9 @@
                                 "system": "http://snomed.info/sct",
                                 "code": "428673006"
                             }
+                        }, 
+                        "substitution": {
+                            "allowedBoolean": false
                         }
                     }
                 ],
