@@ -1,6 +1,77 @@
 {
     "resourceType": "MedicationRequest",
     "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
+    "contained": [
+        {
+            "resourceType": "Patient",
+            "id" : "patient",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/nhs-number",
+                    "value": "9453740519"
+                }
+            ],
+            "name": [
+                {
+                    "use": "official",
+                    "family": "CORY",
+                    "given": [
+                        "ETTA"
+                    ],
+                    "prefix": [
+                        "MISS"
+                    ]
+                }
+            ],
+            "gender": "female",
+            "birthDate": "1999-01-04",
+            "address": [
+                {
+                    "use": "home",
+                    "postalCode": "DE21 4QH"
+                }
+            ],
+            "generalPractitioner": [
+                {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "B81001"
+                    }
+                }
+            ]
+        },
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "100102238986"
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                    "value": "C1234567"
+                },
+                "display": "DR RAZIA ALI"
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "RBA"
+                },
+                "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "01234567890",
+                    "use": "work"
+                }
+            ]
+        }
+    ],
     "extension": [
         {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
@@ -24,6 +95,33 @@
                         "display": "Schedule 2"
                     }
                 }
+            ]
+        },
+        {
+            "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
+            "extension" : [
+                {
+                    "url" : "costCentre",
+                    "valueReference" : {
+                        "identifier": {
+                            "use": "official",
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "A99968"
+                        },
+                        "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+                    }
+                },
+                {
+                    "url" : "spuriousCode",
+                    "valueReference" : { 
+                        "identifier": 
+                        {
+                            "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
+                            "value": "2345213"
+                        }
+                    }               
+                }
+
             ]
         }
     ],
@@ -56,11 +154,22 @@
         ]
     },
     "subject": {
-        "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
+        "reference": "#patient",
+        "identifier" : {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+        }
     },
     "authoredOn": "2019-12-30T12:00:00+00:00",
     "requester": {
-        "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
+        "reference": "#requester",
+        "identifier" : {
+            "identifier": {
+                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                "value": "C1234567"
+            },
+            "display": "DR RAZIA ALI"
+        }
     },
     "groupIdentifier": {
         "extension": [
