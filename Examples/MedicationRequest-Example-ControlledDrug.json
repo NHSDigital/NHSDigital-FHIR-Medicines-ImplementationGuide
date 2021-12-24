@@ -4,7 +4,7 @@
     "contained": [
         {
             "resourceType": "Patient",
-            "id" : "patient",
+            "id": "patient",
             "identifier": [
                 {
                     "system": "https://fhir.nhs.uk/Id/nhs-number",
@@ -53,8 +53,7 @@
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gmc-number",
                     "value": "C1234567"
-                },
-                "display": "DR RAZIA ALI"
+                }
             },
             "organization": {
                 "identifier": {
@@ -63,6 +62,11 @@
                 },
                 "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
             },
+            "location": [
+                {
+                    "reference": "#address"
+                }
+            ],
             "telecom": [
                 {
                     "system": "phone",
@@ -70,6 +74,21 @@
                     "use": "work"
                 }
             ]
+        },
+        {
+            "resourceType": "Location",
+            "id": "address",
+            "status": "active",
+            "mode": "instance",
+            "address": {
+                "use": "work",
+                "line": [
+                    "MUSGROVE PARK HOSPITAL"
+                ],
+                "city": "TAUNTON",
+                "postalCode": "TA1 5DA",
+                "country": "NLD"
+            }
         }
     ],
     "extension": [
@@ -78,6 +97,23 @@
             "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
                 "code": "0101"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MedicationRequestSignature",
+            "valueSignature": {
+                "type": [
+                    {
+                        "system": "urn:iso-astm:E1762-95:2013",
+                        "code": "1.2.840.10065.1.12.1.1",
+                        "display": "Author's Signature"
+                    }
+                ],
+                "when": "2021-06-25T14:40:17.2561801+01:00",
+                "who": {
+                    "reference": "#requester"
+                },
+                "data": "PFNpZ25hdHVyZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PFNpZ25lZEluZm8geG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiPjxDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIj48L0Nhbm9uaWNhbGl6YXRpb25NZXRob2Q+PFNpZ25hdHVyZU1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNyc2Etc2hhMSI+PC9TaWduYXR1cmVNZXRob2Q+PFJlZmVyZW5jZT48VHJhbnNmb3Jtcz48VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIj48L1RyYW5zZm9ybT48L1RyYW5zZm9ybXM+PERpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIj48L0RpZ2VzdE1ldGhvZD48RGlnZXN0VmFsdWU+cWREeWQ0eXd4ekpNa2liVU15V1puUDhwVFdrPTwvRGlnZXN0VmFsdWU+PC9SZWZlcmVuY2U+PC9TaWduZWRJbmZvPjxTaWduYXR1cmVWYWx1ZT5ESC9GaGNXcnZPUFBrNkxhbWc5WlpnTnJVajJmRnVIZ2NidlZEYmJMblJsQnpDdThPZDErb0NHUENRSHdwSkFRNW8xTlpnSmNjcjI5dHkwV3pCeFBDZEF3OUd2a2dLNy92bCtpdmJlWVlrcEM3V0NLTmxQMkh4UHMzV01KQ2kxOWJ4UFdBTVVBUGNsM2dBTHpVN0lPcXJuc1VTZ20zYnllai9lUERNU0d4UTQ9PC9TaWduYXR1cmVWYWx1ZT48S2V5SW5mbz48WDUwOURhdGE+PFg1MDlDZXJ0aWZpY2F0ZT5NSUlEdURDQ0FxQ2dBd0lCQWdJRVhjbW83ekFOQmdrcWhraUc5dzBCQVFzRkFEQTJNUXd3Q2dZRFZRUUtFd051YUhNeEN6QUpCZ05WQkFzVEFrTkJNUmt3RndZRFZRUURFeEJPU0ZNZ1NVNVVJRXhsZG1Wc0lERkVNQjRYRFRJd01Ea3lNekUxTkRrME9Gb1hEVEl5TURreU16RTJNVGswT0Zvd1F6RU1NQW9HQTFVRUNoTURibWh6TVE4d0RRWURWUVFMRXdaUVpXOXdiR1V4SWpBZ0JnTlZCQU1NR1RVMU5UQTROalF4TlRFd05WOVVaWE4wWDFSbGMzUmtiMmN3Z1o4d0RRWUpLb1pJaHZjTkFRRUJCUUFEZ1kwQU1JR0pBb0dCQVBDeW1MYjBJdm5nS21ZOTlwcmx2VU8xTmxnK1l5NHpEanpUaHVxZDJrdGsyOE1lWWRWbUFMV0xJWTY5cE50VDhEV0NrSmJtVytyR1JFYzFueG9halcrb0NqV2dlMUtjdytVVU15MnNZNXBMMmJoMGpmNGhtK3d5OVZvbGdNeWRsWmN6cklxWmJpYjhCbTBZbkZtbGtqSDltZnU1ZWRzQzhPVmYzdHIyUktYSEFnTUJBQUdqZ2dGRE1JSUJQekFPQmdOVkhROEJBZjhFQkFNQ0JrQXdaUVlEVlIwZ0FRSC9CRnN3V1RCWEJnc3Foam9BaVh0bUFBTUNBREJJTUVZR0NDc0dBUVVGQndJQkZqcG9kSFJ3Y3pvdkwzQnJhUzV1YUhNdWRXc3ZZMlZ5ZEdsbWFXTmhkR1ZmY0c5c2FXTnBaWE12WTI5dWRHVnVkRjlqYjIxdGFYUnRaVzUwTURNR0ExVWRId1FzTUNvd0tLQW1vQ1NHSW1oMGRIQTZMeTlqY213dWJtaHpMblZyTDJsdWRDOHhaQzlqY214ak15NWpjbXd3S3dZRFZSMFFCQ1F3SW9BUE1qQXlNREE1TWpNeE5UUTVORGhhZ1E4eU1ESXlNREl4TmpFMk1UazBPRm93SHdZRFZSMGpCQmd3Rm9BVW9KWWZnWVROUGQ2RVVLTDZRTEl6SHhZNVBGSXdIUVlEVlIwT0JCWUVGRi9YS2h0NWVpN3FyeHcxM1dmR2xDQStaNS9NTUFrR0ExVWRFd1FDTUFBd0dRWUpLb1pJaHZaOUIwRUFCQXd3Q2hzRVZqZ3VNd01DQkxBd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFFZmFidkVRcmt0MEJTUnkzYnA1NkRJMUJyWEN5eVFWdjhORkdsZ2VDQTNOV0V5dE9uQkpqaDNJT0c1YlpsclVBK1lnK2xJMWxFUFlWaGJxd0R2bmlDdUYyOWw1TE0zai82Y1c0YWRIRUFPMTVnZWNHUVRzbm9DUlRZMnYrTzBDcVZ5MGtaWkV0dFRFbGtPekZ3clNvQzRITDdkOG96cG9UR0NpVDBHK3lKT25mWm9yc1ZWd1JFNW9rNUhwMlYyQWEwQ2EvUUVkNzc4UFMxOXFqdHBEUWJjODdVYkVPSXY2alZscUM3VHhIVGViNjB2akhIcU14VFU5bCtjdGF0TnU4N1ovMTA3eG1NRmFVYTRVMXA0R0xZYm9QbElOSUkzVVlwdGNDdXRXeHROcTVGZ1RNTkI1eEJQUE9SU2tjSWxrNDBsc0U1R3EzczlVZ2xLZzNBQ3V1Wnc9PC9YNTA5Q2VydGlmaWNhdGU+PC9YNTA5RGF0YT48L0tleUluZm8+PC9TaWduYXR1cmU+"
             }
         },
         {
@@ -98,11 +134,11 @@
             ]
         },
         {
-            "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
-            "extension" : [
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-Account-code",
+            "extension": [
                 {
-                    "url" : "costCentre",
-                    "valueReference" : {
+                    "url": "costCentre",
+                    "valueReference": {
                         "identifier": {
                             "use": "official",
                             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -112,16 +148,27 @@
                     }
                 },
                 {
-                    "url" : "spuriousCode",
-                    "valueReference" : { 
-                        "identifier": 
-                        {
+                    "url": "spuriousCode",
+                    "valueReference": {
+                        "identifier": {
                             "system": "https://fhir.hl7.org.uk/Id/nhsbsa-spurious-code",
                             "value": "2345213"
                         }
-                    }               
+                    }
                 }
-
+            ]
+        },
+        {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation",
+            "extension": [
+                {
+                    "url": "numberOfPrescriptionsIssued",
+                    "valueUnsignedInt": 1
+                },
+                {
+                    "url": "authorisationExpiryDate",
+                    "valueDateTime": "2020-08-07"
+                }
             ]
         }
     ],
@@ -155,7 +202,7 @@
     },
     "subject": {
         "reference": "#patient",
-        "identifier" : {
+        "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9453740519"
         }
@@ -163,14 +210,17 @@
     "authoredOn": "2019-12-30T12:00:00+00:00",
     "requester": {
         "reference": "#requester",
-        "identifier" : {
-            "identifier": {
-                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                "value": "C1234567"
-            },
-            "display": "DR RAZIA ALI"
-        }
+        "identifier": {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C1234567"
+        },
+        "display": "DR RAZIA ALI"
     },
+    "basedOn": [
+        {
+            "reference": "https://elmpt-hospitals.nhs.uk/MedicationRequest/654321"
+        }
+    ],
     "groupIdentifier": {
         "extension": [
             {
@@ -188,8 +238,8 @@
         "coding": [
             {
                 "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
-                "code": "acute",
-                "display": "Short course (acute) therapy"
+                "code": "continuous",
+                "display": "Continuous long term therapy"
             }
         ]
     },
@@ -214,6 +264,11 @@
                 "value": "FX748"
             }
         },
+        "validityPeriod": {
+            "start": "2020-07-13T12:00:00+00:00",
+            "end": "2020-08-07T12:00:00+00:00"
+        },
+        "numberOfRepeatsAllowed": 0,
         "quantity": {
             "value": 28,
             "unit": "tablet",
