@@ -199,7 +199,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Encounter" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/England-Encounter" />
       </type>
     </element>
     <element id="MedicationDispense.performer">
