@@ -30,6 +30,14 @@
         <resource>
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
+             <interaction>
+                <code value="create" />
+                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
+            </interaction>
+            <interaction>
+                <code value="update" />
+                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
+            </interaction>
         </resource>
         <resource>
             <type value="CommunicationRequest" />
@@ -117,18 +125,16 @@
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task" />
             <interaction>
                 <code value="create" />
-                <documentation value="The $lock operation in futures design">
-                </interaction>
-                <interaction>
-                    <code value="update" />
-                    <documentation value="The $unlock operation in futures design. Used for returns prescriptions to spine">
-                    </interaction>
-                </resource>
-                <operation>
-                    <name value="prepare" />
-                    <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
-                </operation>
+                <documentation value="The $lock operation in futures design"/>
+            </interaction>
+            <interaction>
+                <code value="update" />
+                <documentation value="The $unlock operation in futures design. Used for returns prescriptions to spine" />
             </interaction>
         </resource>
+        <operation>
+            <name value="prepare" />
+            <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
+        </operation>
     </rest>
 </CapabilityStatement>
