@@ -124,7 +124,7 @@
         </resource>
         <operation>
             <name value="process-message" />
-            <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message" />
+            <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-process-message" />
         </operation>
         <operation>
             <name value="prepare" />
