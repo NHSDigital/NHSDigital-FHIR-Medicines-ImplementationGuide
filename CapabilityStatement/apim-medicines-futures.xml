@@ -128,5 +128,7 @@
                     <name value="prepare" />
                     <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
                 </operation>
-            </rest>
-        </CapabilityStatement>
+            </interaction>
+        </resource>
+    </rest>
+</CapabilityStatement>
