@@ -135,22 +135,22 @@
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
-            <documentation value="Use this endpoint to send a prescription-order message to EPS."/>
+           <!-- <documentation value="Use this endpoint to send a prescription-order message to EPS."/>-->
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
-            <documentation value="Use this endpoint to send a prescription-order-update message to EPS to cancel a prescription fulfiment"/>
+            <!-- <documentation value="Use this endpoint to send a prescription-order-update message to EPS to cancel a prescription fulfiment"/>-->
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
-            <documentation value="Use this endpoint to send a dispense-notification message to EPS."/>
+            <!-- <documentation value="Use this endpoint to send a dispense-notification message to EPS."/>-->
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
-            <documentation value="Use this endpoint to send updated dispense-notification message to EPS."/>
+            <!-- <documentation value="Use this endpoint to send updated dispense-notification message to EPS."/>-->
         </supportedMessage>
     </messaging>
 </CapabilityStatement>
