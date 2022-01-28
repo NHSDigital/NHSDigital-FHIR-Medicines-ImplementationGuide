@@ -54,9 +54,9 @@
     </owner>
     <reasonCode>
         <coding>
-            <system value="http://snomed.info/sct"></system>
-            <code value="33633005"></code>
-            <display value="Prescription of drug"/>
+            <system value="http://snomed.info/sct" />
+            <code value="373784005" />
+            <display value="Dispensing medication" />
         </coding>
     </reasonCode>
 </Task>

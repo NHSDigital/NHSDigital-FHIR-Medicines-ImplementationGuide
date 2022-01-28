@@ -18,13 +18,6 @@
             "resource": {
                 "resourceType": "PractitionerRole",
                 "id": "16708936-6397-4e03-b84f-4aaa790633e0",
-                "practitioner": {
-                    "identifier": {
-                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "C1231234"
-                    },
-                    "display": "Jackie Clark"
-                },
                 "telecom": [
                     {
                         "system": "phone",

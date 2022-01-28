@@ -89,10 +89,55 @@
     </element>
     <element id="MedicationDispense.statusReason[x]">
       <path value="MedicationDispense.statusReason[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding">
+      <path value="MedicationDispense.statusReason[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding.system">
+      <path value="MedicationDispense.statusReason[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding.code">
+      <path value="MedicationDispense.statusReason[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding:notDispensedStatusReason">
+      <path value="MedicationDispense.statusReason[x].coding" />
+      <sliceName value="notDispensedStatusReason" />
+      <fixedCoding>
+        <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason" />
+      </fixedCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-status-reason" />
       </binding>
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding:notDispensedStatusReason.system">
+      <path value="MedicationDispense.statusReason[x].coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/medicationdispense-status-reason" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding:amendmentStatusReason">
+      <path value="MedicationDispense.statusReason[x].coding" />
+      <sliceName value="amendmentStatusReason" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.uk/ValueSet/DM-task-reason-code" />
+      </binding>
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding:amendmentStatusReason.system">
+      <path value="MedicationDispense.statusReason[x].coding.system" />
+      <fixedUri value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason" />
     </element>
     <element id="MedicationDispense.category.coding.system">
       <path value="MedicationDispense.category.coding.system" />
@@ -154,7 +199,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Encounter" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/England-Encounter" />
       </type>
     </element>
     <element id="MedicationDispense.performer">
