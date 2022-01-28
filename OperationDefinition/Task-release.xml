@@ -20,6 +20,7 @@
     <code value="release"></code>
     <comment value="Only one of the parameters group-identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
     <resource value="Task"></resource>
+    <affectsState value="true" />
     <system value="false"></system>
     <type value="true"></type>
     <instance value="false"></instance>

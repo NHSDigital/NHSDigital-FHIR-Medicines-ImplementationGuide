@@ -18,6 +18,7 @@
     <comment value="This operation does not use the parameters resource for input parameters, it does for the response.  \n\n A server may return one of several status codes: \n\n * **200 OK**: Indicates that the message has been fully processed." />
     <system value="true" />
     <type value="false" />
+    <affectsState value="true" />
     <instance value="false" />
     <parameter>
         <name value="content" />
