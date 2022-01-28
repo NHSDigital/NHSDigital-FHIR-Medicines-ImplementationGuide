@@ -1,15 +1,15 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="apim-medicines-conformance" />
-    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-nextgen" />
+    <id value="apim-eps-nextgen" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-eps-nextgen" />
     <version value="3.0.0" />
     <name value="APIMEPSNextGen" />
     <status value="active" />
     <date value="2021-04-28T00:00:00+00:00" />
     <publisher value="digital.nhs.uk" />
-    <description value="Conformance requirements for NHS Digital Medicines NextGen APIs" />
+    <description value="Conformance requirements for NHS Digital EPS NextGen APIs" />
     <kind value="requirements" />
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine"/> 
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/> 
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine"/>
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/>
     <fhirVersion value="4.0.1" />
     <format value="application/fhir+json" />
     <rest>
@@ -93,56 +93,56 @@
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task" />
             <interaction>
                 <code value="create" />
-                 <documentation value="Used for returns prescriptions to spine. Should be a PUT">
-            </interaction>
-            <interaction>
-                <code value="search-type" />
-                 <documentation value="The EPS Tracker">
-            </interaction>
-            <operation>
-                <name value="release" />
-                <definition value="https://fhir.nhs.uk/OperationDefinition/Task-release-message" />
-            </operation>
-            <searchParam>
-                <name value="identifier" />
-                <type value="token" />
-                <documentation value="The short form identifier of the prescription you are searching for." />
-            </searchParam>
-            <searchParam>
-                <name value="focus:identifier" />
-                <type value="token" />
-                <documentation value="The short form identifier of the prescription you are searching for." />
-            </searchParam>
-        </resource>
-        <operation>
-            <name value="process-message" />
-            <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message" />
-        </operation>
-        <operation>
-            <name value="prepare" />
-            <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
-        </operation>
-    </rest>
-    <messaging>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
-            <documentation value="Use this endpoint to send a prescription-order message to EPS."/>
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
-            <documentation value="Use this endpoint to send a prescription-order-update message to EPS to cancel a prescription fulfiment"/>
-        </supportedMessage>
-        <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
-            <documentation value="Use this endpoint to send a dispense-notification message to EPS."/>
-        </supportedMessage>
-         <supportedMessage>
-            <mode value="receiver" />
-            <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
-            <documentation value="Use this endpoint to send updated dispense-notification message to EPS."/>
-        </supportedMessage>
-    </messaging>
-</CapabilityStatement>
+                <documentation value="Used for returns prescriptions to spine. Should be a PUT">
+                </interaction>
+                <interaction>
+                    <code value="search-type" />
+                    <documentation value="The EPS Tracker">
+                    </interaction>
+                    <operation>
+                        <name value="release" />
+                        <definition value="https://fhir.nhs.uk/OperationDefinition/Task-release-message" />
+                    </operation>
+                    <searchParam>
+                        <name value="identifier" />
+                        <type value="token" />
+                        <documentation value="The short form identifier of the prescription you are searching for." />
+                    </searchParam>
+                    <searchParam>
+                        <name value="focus:identifier" />
+                        <type value="token" />
+                        <documentation value="The short form identifier of the prescription you are searching for." />
+                    </searchParam>
+                </resource>
+                <operation>
+                    <name value="process-message" />
+                    <definition value="http://hl7.org/fhir/OperationDefinition/MessageHeader-process-message" />
+                </operation>
+                <operation>
+                    <name value="prepare" />
+                    <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
+                </operation>
+            </rest>
+            <messaging>
+                <supportedMessage>
+                    <mode value="receiver" />
+                    <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
+                    <documentation value="Use this endpoint to send a prescription-order message to EPS."/>
+                </supportedMessage>
+                <supportedMessage>
+                    <mode value="receiver" />
+                    <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
+                    <documentation value="Use this endpoint to send a prescription-order-update message to EPS to cancel a prescription fulfiment"/>
+                </supportedMessage>
+                <supportedMessage>
+                    <mode value="receiver" />
+                    <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
+                    <documentation value="Use this endpoint to send a dispense-notification message to EPS."/>
+                </supportedMessage>
+                <supportedMessage>
+                    <mode value="receiver" />
+                    <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
+                    <documentation value="Use this endpoint to send updated dispense-notification message to EPS."/>
+                </supportedMessage>
+            </messaging>
+        </CapabilityStatement>

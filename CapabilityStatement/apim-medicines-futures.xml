@@ -1,15 +1,15 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <id value="apim-medicines-conformance" />
-    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-medicines-futures" />
+    <id value="apim-eps-futures" />
+    <url value="https://fhir.nhs.uk/CapabilityStatement/apim-eps-futures" />
     <version value="3.0.0" />
     <name value="APIMEPSFutures" />
     <status value="active" />
     <date value="2021-04-28T00:00:00+00:00" />
     <publisher value="digital.nhs.uk" />
-    <description value="Conformance requirements for NHS Digital Medicines APIs" />
+    <description value="Conformance requirements for NHS Digital EPS Futures" />
     <kind value="requirements" />
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine"/> 
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/> 
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine"/>
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/>
     <fhirVersion value="4.0.1" />
     <format value="application/fhir+json" />
     <rest>
@@ -41,10 +41,10 @@
             <interaction>
                 <code value="search-type" />
             </interaction>
-             <interaction>
+            <interaction>
                 <code value="create" />
             </interaction>
-             <interaction>
+            <interaction>
                 <code value="update" />
             </interaction>
             <interaction>
@@ -82,18 +82,18 @@
             <interaction>
                 <code value="search-type" />
             </interaction>
-             <interaction>
+            <interaction>
                 <code value="create" />
                 <documentation value="Equivalent to dispense notifications in NextGen"/>
             </interaction>
-             <interaction>
+            <interaction>
                 <code value="update" />
-                 <documentation value="Equivalent to dispense notification updates in NextGen"/>
+                <documentation value="Equivalent to dispense notification updates in NextGen"/>
             </interaction>
             <interaction>
                 <code value="patch" />
             </interaction>
-              <interaction>
+            <interaction>
                 <code value="delete" />
                 <documentation value="Equivalent of the withdraw all dispense notifications in NextGen"/>
             </interaction>
@@ -118,15 +118,15 @@
             <interaction>
                 <code value="create" />
                 <documentation value="The $lock operation in futures design">
-            </interaction>
-             <interaction>
-                <code value="update" />
-                <documentation value="The $unlock operation in futures design. Used for returns prescriptions to spine">
-            </interaction>
-        </resource>
-        <operation>
-            <name value="prepare" />
-            <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
-        </operation>
-    </rest>
-</CapabilityStatement>
+                </interaction>
+                <interaction>
+                    <code value="update" />
+                    <documentation value="The $unlock operation in futures design. Used for returns prescriptions to spine">
+                    </interaction>
+                </resource>
+                <operation>
+                    <name value="prepare" />
+                    <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
+                </operation>
+            </rest>
+        </CapabilityStatement>
