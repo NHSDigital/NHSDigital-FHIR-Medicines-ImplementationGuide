@@ -24,10 +24,6 @@
             </service>
         </security>
         <resource>
-            <type value="List" />
-            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
-        </resource>
-        <resource>
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
              <interaction>
@@ -38,10 +34,6 @@
                 <code value="update" />
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
-        </resource>
-        <resource>
-            <type value="CommunicationRequest" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
         </resource>
         <resource>
             <type value="MedicationRequest" />
@@ -115,10 +107,6 @@
                 <type value="reference" />
                 <documentation value="The identity of a patient to list dispenses for" />
             </searchParam>
-        </resource>
-        <resource>
-            <type value="Medication" />
-            <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
         </resource>
         <resource>
             <type value="Task" />
