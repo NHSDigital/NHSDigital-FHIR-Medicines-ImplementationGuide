@@ -1,5 +1,33 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="apim-eps-futures" />
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition">
+        <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="uk.nhsdigital.r4.test" />
+            </extension>
+        </extension>
+         <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="uk.nhsdigital.medicines.r4.test" />
+            </extension>
+        </extension>
+        <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="UKCore.Release1.test" />
+            </extension>
+            <extension url="version">
+                <valueString value="1.2.2-prerelease" />
+            </extension>
+        </extension>
+        <extension url="openApi">
+            <extension url="documentation">
+                <valueUri value="https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir" />
+            </extension>
+            <extension url="description">
+                <valueString value="Electronic Prescription Service - FHIR API" />
+            </extension>
+        </extension>
+    </extension>
     <url value="https://fhir.nhs.uk/CapabilityStatement/apim-eps-futures" />
     <version value="3.0.0" />
     <name value="APIMEPSFutures" />
