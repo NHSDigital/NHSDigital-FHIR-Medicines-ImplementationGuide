@@ -6,7 +6,7 @@
                 <valueString value="uk.nhsdigital.r4.test" />
             </extension>
         </extension>
-         <extension url="implementationGuide">
+        <extension url="implementationGuide">
             <extension url="name">
                 <valueString value="uk.nhsdigital.medicines.r4.test" />
             </extension>
@@ -54,11 +54,45 @@
         <resource>
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
-             <interaction>
+            <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="Claim" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="258E153F-567B-4D60-B045-BA315A6B8DB0" />
+                        </extension>
+                    </extension>
+                </extension>
+                <code value="read" />
+                <documentation value="New feature to view submitted claims."/>
+            </interaction>
+            <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Claim" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="258E153F-567B-4D60-B045-BA315A6B8DB0" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Claim" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="7447c471-1ce0-4f5f-9dab-5ffd758c289e" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="update" />
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
@@ -67,16 +101,64 @@
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationRequest" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="search-type" />
+                <documentation value="This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationRequest" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
+                        </extension>
+                    </extension>
+                </extension>
+                <code value="read" />
+                <documentation value="**Download presription (part)** and **Prescription Traacking**. Tracker*This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."/>
+            </interaction>
+            <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="MedicationRequest" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
+                <documentation value="**Create a new prescription**. Equivalent to `prescription-order` message in NextGen"/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="MedicationRequest" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="update" />
+                <documentation value="New feature. `prescription-order-update` was closer to PUT //Task described below and cancelled fulfilment"/>
             </interaction>
             <interaction>
                 <code value="patch" />
+                <documentation value="New feature. `prescription-order-update` was closer to PUT //Task described below and cancelled fulfilment"/>
             </interaction>
             <searchParam>
                 <name value="patient:identifier" />
@@ -108,27 +190,72 @@
             <type value="MedicationDispense" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationDispense" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="search-type" />
+                <documentation value="This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationDispense" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
+                        </extension>
+                    </extension>
+                </extension>
+                <code value="read" />
+                <documentation value="This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."/>
+            </interaction>
+            <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="MedicationDispense" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
-                <documentation value="Equivalent to dispense notifications in NextGen"/>
+                <documentation value="**Mark a prescription as Dispensed**. Equivalent to `dispense-notification` in NextGen"/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="MedicationDispense" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="update" />
-                <documentation value="Equivalent to dispense notification updates in NextGen"/>
+                <documentation value="**Mark a prescription as Dispensed**. Equivalent to `dispense-notification-update` message in NextGen"/>
             </interaction>
             <interaction>
                 <code value="patch" />
             </interaction>
             <interaction>
                 <code value="delete" />
-                <documentation value="Equivalent of the withdraw all dispense notifications in NextGen"/>
+                <documentation value="**Withdraw a dispense notification**. Equivalent of the withdraw all dispense notifications in NextGen"/>
             </interaction>
             <searchParam>
                 <name value="patient:identifier" />
                 <type value="token" />
-                <documentation value="TThe identity (NHS Number) of a patient to list dispenses for" />
+                <documentation value="The identity (NHS Number) of a patient to list dispenses for" />
             </searchParam>
             <searchParam>
                 <name value="patient" />
@@ -140,12 +267,32 @@
             <type value="Task" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task" />
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Task" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="702cc4e9-81fc-470e-8ae1-43120ae5c16d" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
-                <documentation value="The $lock operation in futures design"/>
+                <documentation value="**Download prescriptions**. The $lock operation in futures design, this has some overlap with the `$release` operation in NextGen (the part of that operation which changed state)"/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Task" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="ee1b55f8-113c-4725-99a3-25fbad366dd6" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="update" />
-                <documentation value="The $unlock operation in futures design. Used for returns prescriptions to spine" />
+                <documentation value="**Return a downloaded prescription** and **Cancel a prescription**. The $unlock operation in futures design. Used for returns prescriptions to spine" />
             </interaction>
         </resource>
         <operation>
