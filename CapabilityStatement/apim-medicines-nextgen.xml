@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="apim-eps-nextgen" />
-       <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition">
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition">
         <extension url="implementationGuide">
             <extension url="name">
                 <valueString value="uk.nhsdigital.r4.test" />
             </extension>
         </extension>
-         <extension url="implementationGuide">
+        <extension url="implementationGuide">
             <extension url="name">
                 <valueString value="uk.nhsdigital.medicines.r4.test" />
             </extension>
@@ -59,10 +59,30 @@
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
             <interaction>
+             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Claim" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="258E153F-567B-4D60-B045-BA315A6B8DB0" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
             <interaction>
+             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Claim" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="7447c471-1ce0-4f5f-9dab-5ffd758c289e" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="update" />
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
@@ -75,6 +95,16 @@
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
             <interaction>
+             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationRequest" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="search-type" />
             </interaction>
             <searchParam>
@@ -107,6 +137,16 @@
             <type value="MedicationDispense" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="MedicationDispense" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="search-type" />
             </interaction>
             <searchParam>
@@ -128,10 +168,30 @@
             <type value="Task" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task" />
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Task" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="ee1b55f8-113c-4725-99a3-25fbad366dd6" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="create" />
                 <documentation value="Used for returns prescriptions to spine. Should be a PUT"/>
             </interaction>
             <interaction>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="Task" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="bd1ca5c4-ff49-4f2a-9db4-f5dda0112084" />
+                        </extension>
+                    </extension>
+                </extension>
                 <code value="search-type" />
                 <documentation value="The EPS Tracker"/>
             </interaction>
@@ -163,7 +223,7 @@
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
-           <!-- <documentation value="Use this endpoint to send a prescription-order message to EPS."/>-->
+            <!-- <documentation value="Use this endpoint to send a prescription-order message to EPS."/>-->
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
