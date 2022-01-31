@@ -59,7 +59,7 @@
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
             <interaction>
-             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                     <extension url="request">
                         <extension url="resource">
                             <valueCode value="Claim" />
@@ -73,7 +73,7 @@
                 <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
             </interaction>
             <interaction>
-             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                     <extension url="request">
                         <extension url="resource">
                             <valueCode value="Claim" />
@@ -95,7 +95,7 @@
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
             <interaction>
-             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                     <extension url="response">
                         <extension url="resource">
                             <valueCode value="MedicationRequest" />
@@ -196,6 +196,16 @@
                 <documentation value="The EPS Tracker"/>
             </interaction>
             <operation>
+                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                    <extension url="request">
+                        <extension url="resource">
+                            <valueCode value="Parameters" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="45a3cbe4-7688-418b-91d3-8f6d5ca94905" />
+                        </extension>
+                    </extension>
+                </extension>
                 <name value="release" />
                 <definition value="https://fhir.nhs.uk/OperationDefinition/Task-release-message" />
             </operation>
@@ -211,6 +221,16 @@
             </searchParam>
         </resource>
         <operation>
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="0191abb4-4665-4fe3-a19f-fad2e2a894f1" />
+                    </extension>
+                </extension>
+            </extension>
             <name value="process-message" />
             <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-process-message" />
         </operation>
