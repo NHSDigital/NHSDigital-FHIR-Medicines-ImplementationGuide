@@ -36,8 +36,8 @@
     <publisher value="digital.nhs.uk" />
     <description value="Conformance requirements for NHS Digital EPS NextGen APIs" />
     <kind value="requirements" />
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine"/>
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/>
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital-medicine" />
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital" />
     <fhirVersion value="4.0.1" />
     <format value="application/fhir+json" />
     <rest>
@@ -70,7 +70,7 @@
                     </extension>
                 </extension>
                 <code value="create" />
-                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
+                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription." />
             </interaction>
             <interaction>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
@@ -84,7 +84,7 @@
                     </extension>
                 </extension>
                 <code value="update" />
-                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription."/>
+                <documentation value="Use this endpoint to submit a claim for reimbursement for a dispensed prescription." />
             </interaction>
         </resource>
         <resource>
@@ -94,71 +94,10 @@
         <resource>
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
-            <interaction>
-                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
-                    <extension url="response">
-                        <extension url="resource">
-                            <valueCode value="MedicationRequest" />
-                        </extension>
-                        <extension url="id">
-                            <valueString value="A7B86F8D-1D7C-FC28-E050-D20AE3A215F4" />
-                        </extension>
-                    </extension>
-                </extension>
-                <code value="search-type" />
-            </interaction>
-            <searchParam>
-                <name value="patient:identifier" />
-                <type value="token" />
-                <documentation value="Returns prescriptions for a specific patientt identifier (NHS Number)" />
-            </searchParam>
-            <searchParam>
-                <name value="patient" />
-                <type value="reference" />
-                <documentation value="Returns prescriptions for a specific patient" />
-            </searchParam>
-            <searchParam>
-                <name value="medication" />
-                <type value="reference" />
-                <documentation value="Return prescriptions for this medication reference" />
-            </searchParam>
-            <searchParam>
-                <name value="status" />
-                <type value="token" />
-                <documentation value="Status of the prescription" />
-            </searchParam>
-            <searchParam>
-                <name value="authoredon" />
-                <type value="date" />
-                <documentation value="Return prescriptions written on this date" />
-            </searchParam>
         </resource>
         <resource>
             <type value="MedicationDispense" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationDispense" />
-            <interaction>
-                <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
-                    <extension url="response">
-                        <extension url="resource">
-                            <valueCode value="MedicationDispense" />
-                        </extension>
-                        <extension url="id">
-                            <valueString value="06167339-9337-D030-0366-514A6A46DA17" />
-                        </extension>
-                    </extension>
-                </extension>
-                <code value="search-type" />
-            </interaction>
-            <searchParam>
-                <name value="patient:identifier" />
-                <type value="token" />
-                <documentation value="The identity (NHS Number) of a patient to list dispenses for" />
-            </searchParam>
-            <searchParam>
-                <name value="patient" />
-                <type value="reference" />
-                <documentation value="The identity of a patient to list dispenses for" />
-            </searchParam>
         </resource>
         <resource>
             <type value="Medication" />
@@ -179,7 +118,7 @@
                     </extension>
                 </extension>
                 <code value="create" />
-                <documentation value="Used for returns prescriptions to spine. Should be a PUT"/>
+                <documentation value="Used for returns prescriptions to spine. Should be a PUT" />
             </interaction>
             <interaction>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
@@ -193,7 +132,7 @@
                     </extension>
                 </extension>
                 <code value="search-type" />
-                <documentation value="The EPS Tracker"/>
+                <documentation value="The EPS Tracker" />
             </interaction>
             <operation>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
@@ -218,6 +157,11 @@
                 <name value="focus:identifier" />
                 <type value="token" />
                 <documentation value="The short form identifier of the prescription you are searching for." />
+            </searchParam>
+            <searchParam>
+                <name value="patient:identifier" />
+                <type value="token" />
+                <documentation value="The NHS Number of the patient whose prescriptions you are searching for." />
             </searchParam>
         </resource>
         <operation>
@@ -244,21 +188,61 @@
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order" />
             <!-- <documentation value="Use this endpoint to send a prescription-order message to EPS."/>-->
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="hce-DC2C66-A1B2C3-23407B" />
+                    </extension>
+                </extension>
+            </extension>
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/prescription-order-update" />
             <!-- <documentation value="Use this endpoint to send a prescription-order-update message to EPS to cancel a prescription fulfiment"/>-->
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="homecare-update" />
+                    </extension>
+                </extension>
+            </extension>
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
             <!-- <documentation value="Use this endpoint to send a dispense-notification message to EPS."/>-->
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="334a3195-1f6c-497a-8efe-d272ca9c4e38" />
+                    </extension>
+                </extension>
+            </extension>
         </supportedMessage>
         <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
             <!-- <documentation value="Use this endpoint to send updated dispense-notification message to EPS."/>-->
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98" />
+                    </extension>
+                </extension>
+            </extension>
         </supportedMessage>
     </messaging>
 </CapabilityStatement>
