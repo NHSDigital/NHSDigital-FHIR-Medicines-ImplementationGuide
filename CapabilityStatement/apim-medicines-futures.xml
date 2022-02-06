@@ -99,7 +99,7 @@
         </resource>
         <resource>
             <type value="MedicationRequest" />
-            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
+            <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Contained" />
             <interaction>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                     <extension url="response">
