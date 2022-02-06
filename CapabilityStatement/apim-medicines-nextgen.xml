@@ -131,6 +131,21 @@
                         </extension>
                     </extension>
                 </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                    <extension url="required">
+                        <valueString value="identifier" />
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                    <extension url="required">
+                        <valueString value="foucs:identifier" />
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                    <extension url="required">
+                        <valueString value="patient:identifier" />
+                    </extension>
+                </extension>
                 <code value="search-type" />
                 <documentation value="The EPS Tracker" />
             </interaction>
@@ -142,6 +157,14 @@
                         </extension>
                         <extension url="id">
                             <valueString value="45a3cbe4-7688-418b-91d3-8f6d5ca94905" />
+                        </extension>
+                    </extension>
+                    <extension url="response">
+                        <extension url="resource">
+                            <valueCode value="Bundle" />
+                        </extension>
+                        <extension url="id">
+                            <valueString value="E9DDBBC4-DA9A-C223-A2E3-909534332C69" />
                         </extension>
                     </extension>
                 </extension>
@@ -163,15 +186,25 @@
                 <type value="token" />
                 <documentation value="The NHS Number of the patient whose prescriptions you are searching for." />
             </searchParam>
+            <searchParam>
+                <name value="authored-on" />
+                <type value="date" />
+                <documentation value="Date the prescription was authored" />
+            </searchParam>
+            <searchParam>
+                <name value="business-status" />
+                <type value="token" />
+                <documentation value="The state that a prescription is in." />
+            </searchParam>
         </resource>
         <operation>
             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
-                <extension url="request">
+                <extension url="response">
                     <extension url="resource">
-                        <valueCode value="Bundle" />
+                        <valueCode value="OperationOutcome" />
                     </extension>
                     <extension url="id">
-                        <valueString value="0191abb4-4665-4fe3-a19f-fad2e2a894f1" />
+                        <valueString value="c9643613-0b72-4453-bfd2-71bfd2330c73" />
                     </extension>
                 </extension>
             </extension>
@@ -181,6 +214,24 @@
         <operation>
             <name value="prepare" />
             <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
+             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+                <extension url="request">
+                    <extension url="resource">
+                        <valueCode value="Bundle" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="homecare-prepare" />
+                    </extension>
+                </extension>
+                <extension url="response">
+                    <extension url="resource">
+                        <valueCode value="Parameters" />
+                    </extension>
+                    <extension url="id">
+                        <valueString value="320b2e2a-0fa0-4ffa-ad3d-f223c27e849d" />
+                    </extension>
+                </extension>
+            </extension>
         </operation>
     </rest>
     <messaging>
