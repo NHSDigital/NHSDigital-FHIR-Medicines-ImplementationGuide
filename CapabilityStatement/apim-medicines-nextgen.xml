@@ -106,6 +106,21 @@
         <resource>
             <type value="Task" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task" />
+            <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                <extension url="required">
+                    <valueString value="identifier" />
+                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                <extension url="required">
+                    <valueString value="foucs:identifier" />
+                </extension>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+                <extension url="required">
+                    <valueString value="patient:identifier" />
+                </extension>
+            </extension>
             <interaction>
                 <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                     <extension url="request">
@@ -129,21 +144,6 @@
                         <extension url="id">
                             <valueString value="bd1ca5c4-ff49-4f2a-9db4-f5dda0112084" />
                         </extension>
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-                    <extension url="required">
-                        <valueString value="identifier" />
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-                    <extension url="required">
-                        <valueString value="foucs:identifier" />
-                    </extension>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-                    <extension url="required">
-                        <valueString value="patient:identifier" />
                     </extension>
                 </extension>
                 <code value="search-type" />
@@ -214,7 +214,7 @@
         <operation>
             <name value="prepare" />
             <definition value="https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message" />
-             <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
+            <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples">
                 <extension url="request">
                     <extension url="resource">
                         <valueCode value="Bundle" />
