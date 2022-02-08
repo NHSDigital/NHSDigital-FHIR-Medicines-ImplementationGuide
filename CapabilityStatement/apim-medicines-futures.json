@@ -86,84 +86,6 @@
             },
             "resource":  [
                 {
-                    "type": "Claim",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim",
-                    "interaction":  [
-                        {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "response",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "Claim"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "258E153F-567B-4D60-B045-BA315A6B8DB0"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "read",
-                            "documentation": "New feature to view submitted claims."
-                        },
-                        {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "Claim"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "258E153F-567B-4D60-B045-BA315A6B8DB0"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "create",
-                            "documentation": "Use this endpoint to submit a claim for reimbursement for a dispensed prescription."
-                        },
-                        {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "Claim"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "7447c471-1ce0-4f5f-9dab-5ffd758c289e"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "update",
-                            "documentation": "Use this endpoint to submit a claim for reimbursement for a dispensed prescription."
-                        }
-                    ]
-                },
-                {
                     "type": "MedicationRequest",
                     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Contained",
                     "interaction":  [
@@ -189,7 +111,7 @@
                                 }
                             ],
                             "code": "search-type",
-                            "documentation": "This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."
+                            "documentation": "The EPS Tracker."
                         },
                         {
                             "extension":  [
@@ -213,7 +135,7 @@
                                 }
                             ],
                             "code": "read",
-                            "documentation": "**Download presription (part)** and **Prescription Traacking**. Tracker*This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."
+                            "documentation": "**Download prescription (part)**"
                         },
                         {
                             "extension":  [
@@ -240,47 +162,18 @@
                             "documentation": "**Create a new prescription**. Equivalent to `prescription-order` message in NextGen"
                         },
                         {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationRequest"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "update",
-                            "documentation": "New feature. `prescription-order-update` was closer to PUT //Task described below and cancelled fulfilment"
-                        },
-                        {
                             "code": "patch",
-                            "documentation": "New feature. `prescription-order-update` was closer to PUT //Task described below and cancelled fulfilment"
+                            "documentation": "Replaces part of the functionality in cancel prescription"
                         }
                     ],
                     "searchParam":  [
-                        {
-                            "name": "patient:identifier",
-                            "type": "token",
-                            "documentation": "Returns prescriptions for a specific patientt identifier (NHS Number)"
-                        },
                         {
                             "name": "patient",
                             "type": "reference",
                             "documentation": "Returns prescriptions for a specific patient"
                         },
                         {
-                            "name": "medication",
+                            "name": "intended-performer",
                             "type": "reference",
                             "documentation": "Return prescriptions for this medication reference"
                         },
@@ -290,9 +183,14 @@
                             "documentation": "Status of the prescription"
                         },
                         {
-                            "name": "authoredon",
-                            "type": "date",
-                            "documentation": "Return prescriptions written on this date"
+                            "name": "requester",
+                            "type": "reference",
+                            "documentation": "Returns prescriptions prescribed by this prescriber"
+                        },
+                        {
+                            "name": "group",
+                            "type": "reference",
+                            "documentation": "Returns grouped prescriptions"
                         }
                     ]
                 },
@@ -322,7 +220,7 @@
                                 }
                             ],
                             "code": "search-type",
-                            "documentation": "This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."
+                            "documentation": "EPS Tracker."
                         },
                         {
                             "extension":  [
@@ -346,7 +244,7 @@
                                 }
                             ],
                             "code": "read",
-                            "documentation": "This was proposeed as an extension to the EPS Tracker in NextGen but not implemented."
+                            "documentation": "New feature. Allows querying of a patients dispense history"
                         },
                         {
                             "extension":  [
@@ -373,30 +271,6 @@
                             "documentation": "**Mark a prescription as Dispensed**. Equivalent to `dispense-notification` in NextGen"
                         },
                         {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationDispense"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "06167339-9337-D030-0366-514A6A46DA17"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "update",
-                            "documentation": "**Mark a prescription as Dispensed**. Equivalent to `dispense-notification-update` message in NextGen"
-                        },
-                        {
                             "code": "patch"
                         },
                         {
@@ -406,78 +280,23 @@
                     ],
                     "searchParam":  [
                         {
-                            "name": "patient:identifier",
-                            "type": "token",
-                            "documentation": "The identity (NHS Number) of a patient to list dispenses for"
-                        },
-                        {
                             "name": "patient",
                             "type": "reference",
                             "documentation": "The identity of a patient to list dispenses for"
-                        }
-                    ]
-                },
-                {
-                    "type": "Task",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task",
-                    "interaction":  [
-                        {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "Task"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "702cc4e9-81fc-470e-8ae1-43120ae5c16d"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "create",
-                            "documentation": "**Download prescriptions**. The $lock operation in futures design, this has some overlap with the `$release` operation in NextGen (the part of that operation which changed state)"
                         },
                         {
-                            "extension":  [
-                                {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
-                                    "extension":  [
-                                        {
-                                            "url": "request",
-                                            "extension":  [
-                                                {
-                                                    "url": "resource",
-                                                    "valueCode": "Task"
-                                                },
-                                                {
-                                                    "url": "id",
-                                                    "valueString": "ee1b55f8-113c-4725-99a3-25fbad366dd6"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ],
-                            "code": "update",
-                            "documentation": "**Return a downloaded prescription** and **Cancel a prescription**. The $unlock operation in futures design. Used for returns prescriptions to spine"
+                            "name": "prescription",
+                            "type": "reference",
+                            "documentation": "The identity of a prescription to list dispenses from"
+                        },
+                        {
+                        "name": "status",
+                        "type": "token",
+                        "documentation": "Returns dispenses with a specified dispense status"
                         }
                     ]
                 }
-            ],
-            "operation":  [
-                {
-                    "name": "prepare",
-                    "definition": "https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message"
-                }
-            ]
+            ]  
         }
     ]
 }
