@@ -16,9 +16,125 @@
             <value value="interoperabilityteam@nhs.net"></value>
         </telecom>
     </contact>
-    <description value="TODO - Add description"></description>
+    <description value="Use this endpoint to download prescriptions from Spine before it is dispensed. You can download a single prescription using the prescription's ID, or download up to 25 prescriptions (per request) nominated to a dispenser using the dispenser's ODS code."></description>
     <code value="release"></code>
-    <comment value="Only one of the parameters group-identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions."></comment>
+    <comment value="Only one of the parameters group-identifier and owner MUST be provided. This operation performs both a query on the message queue and updates the status of returned prescriptions.
+    ### accept  
+
+The only value to be used is `accepted`. This is for consistency with {{pagelink:NHSDigital-Task-duplicate-2}} and for future use.
+
+```json
+        {
+            "name": "status",
+            "valueCode": "accepted"
+        },
+```
+
+<a name="agent"></a>
+### agent
+
+This is a <a href="https://simplifier.net/guide/nhsdigital/NHSDigital-PractitionerRole">NHSDigital-PractitionerRole</a> resource. Strict compliance to the profile is not enforced but selected fields are required depending on the interaction being invoked:
+
+<br/>
+
+<table class="regular" style="width:100%">
+ <thead>
+   <tr>
+     <th data-no-sort width="25%">PractitionerRole</th>
+     <th data-no-sort width="25%">Patient Release Request (attended)</th>
+     <th data-no-sort width="25%">Nominated Pharmacy Release Request (attended)</th>
+      <th data-no-sort width="25%">Nominated Pharmacy Release Request (unattended)</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+    <td>
+        identifier
+    </td>
+    <td>
+    </td>
+     <td>
+    </td>
+    <td>
+&checkmark;
+    </td>
+   </tr>
+   <tr>
+    <td>
+        practitioner (professional code)
+    </td>
+    <td>
+recommended    
+    </td>
+     <td>
+recommended    
+    </td>
+    <td>
+   </td>
+   </tr>
+    <tr>
+    <td>
+        practitioner (sds-user-id)
+    </td>
+    <td>
+    
+    </td>
+     <td>
+    </td>
+    <td>
+&checkmark;
+    </td>
+   </tr>
+   <tr>
+    <td>
+        code (sds user role)
+    </td>
+    <td>
+    
+    </td>
+     <td>
+    
+    </td>
+    <td>
+&checkmark;
+    </td>
+   </tr>
+    <tr>
+    <td>
+        organization (ODS code)
+    </td>
+    <td>
+    
+    </td>
+     <td>
+     &checkmark; (if different to owner)
+    </td>
+    <td>
+ &checkmark; (if different to owner)
+    </td>
+   </tr>
+      <tr>
+    <td>
+       telecom
+    </td>
+    <td>
+    &checkmark;
+    </td>
+     <td>
+     &checkmark;
+    </td>
+    <td>
+&checkmark;
+    </td>
+   </tr>
+   </tbody>
+</table>
+
+<br />
+
+For attended request this should match CIS2 details being used. For unattended requests, a practitioner is still required, this should be a nominated member of the pharmacy and the data reflects their CIS2 identity.
+
+The value of the `telecom` field should be the contact number a prescriber will use to contact the pharmacy."></comment>
     <resource value="Task"></resource>
     <affectsState value="true" />
     <system value="false"></system>
