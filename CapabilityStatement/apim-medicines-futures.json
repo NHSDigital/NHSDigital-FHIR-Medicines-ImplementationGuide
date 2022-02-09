@@ -92,18 +92,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "response",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationRequest"
+                                                    "url": "request",
+                                                    "valueBoolean": false
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationRequest/A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -116,18 +118,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "response",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationRequest"
+                                                    "url": "request",
+                                                    "valueBoolean": false
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationRequest/A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -140,18 +144,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "request",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationRequest"
+                                                    "url": "request",
+                                                    "valueBoolean": true
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationRequest/A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -201,18 +207,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "response",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationDispense"
+                                                    "url": "request",
+                                                    "valueBoolean": false
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "06167339-9337-D030-0366-514A6A46DA17"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationDispense/06167339-9337-D030-0366-514A6A46DA17"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -225,18 +233,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "response",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationDispense"
+                                                    "url": "request",
+                                                    "valueBoolean": false
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "06167339-9337-D030-0366-514A6A46DA17"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationDispense/06167339-9337-D030-0366-514A6A46DA17"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -249,18 +259,20 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-Examples",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
                                     "extension":  [
                                         {
-                                            "url": "request",
-                                            "extension":  [
+                                            "url": "example",
+                                            "extension": [
                                                 {
-                                                    "url": "resource",
-                                                    "valueCode": "MedicationDispense"
+                                                    "url": "request",
+                                                    "valueBoolean": true
                                                 },
                                                 {
-                                                    "url": "id",
-                                                    "valueString": "06167339-9337-D030-0366-514A6A46DA17"
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "MedicationDispense/06167339-9337-D030-0366-514A6A46DA17"
+                                                    }
                                                 }
                                             ]
                                         }
@@ -272,10 +284,6 @@
                         },
                         {
                             "code": "patch"
-                        },
-                        {
-                            "code": "delete",
-                            "documentation": "**Withdraw a dispense notification**. Equivalent of the withdraw all dispense notifications in NextGen"
                         }
                     ],
                     "searchParam":  [
