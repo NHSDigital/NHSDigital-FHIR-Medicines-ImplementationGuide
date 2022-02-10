@@ -197,6 +197,10 @@
                             "name": "group",
                             "type": "reference",
                             "documentation": "Returns grouped prescriptions"
+                        },{
+                            "name": "_count",
+                            "type": "special",
+                            "documentation": "How many results to return"
                         }
                     ]
                 },
@@ -301,6 +305,11 @@
                         "name": "status",
                         "type": "token",
                         "documentation": "Returns dispenses with a specified dispense status"
+                        },
+                        {
+                            "name": "_count",
+                            "type": "special",
+                            "documentation": "How many results to return"
                         }
                     ]
                 }
