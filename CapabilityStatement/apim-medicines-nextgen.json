@@ -213,6 +213,37 @@
                                                     "valueReference": {
                                                         "reference": "Task/ee1b55f8-113c-4725-99a3-25fbad366dd6"
                                                     }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Return a prescription to spine"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "No dispense notifications may exist on spine for this action. Use withdraw dispense notification to remove them from spine."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/ee1b55f8-113c-4725-99a3-25fbad366dd6"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Withdraw a dispense notification"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Use this endpoint to withdraw the **last** dispense-notification message, for example in the case that a prescription was marked as dispensed erroneously."
                                                 }
                                             ]
                                         }
