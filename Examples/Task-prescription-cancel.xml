@@ -55,13 +55,12 @@
         <display value="MISS ETTA CORY"/>
     </for>
     <authoredOn value="2019-12-30T12:00:00+00:00"></authoredOn>
-    <owner>
+    <requester>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
-            <value value="VNE51"></value>
+            <value value="RBA"></value>
         </identifier>
-        <display value="The Simple Pharmacy"/>
-    </owner>
+    </requester>
     <reasonCode>
         <coding>
             <system value="http://snomed.info/sct"></system>

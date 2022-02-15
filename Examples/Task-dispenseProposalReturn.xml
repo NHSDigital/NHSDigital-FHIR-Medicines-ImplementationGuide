@@ -45,12 +45,12 @@
         </identifier>
     </for>
     <authoredOn value="2016-03-10T22:39:32-04:00"></authoredOn>
-    <owner>
+    <requester>
         <identifier>
             <system value="https://fhir.nhs.uk/Id/ods-organization-code"></system>
             <value value="VNE51"></value>
         </identifier>
-    </owner>
+    </requester>
     <reasonCode>
         <coding>
             <system value="http://snomed.info/sct"></system>

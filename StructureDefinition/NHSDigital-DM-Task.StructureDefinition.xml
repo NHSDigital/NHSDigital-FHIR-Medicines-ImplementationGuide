@@ -190,7 +190,6 @@
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />

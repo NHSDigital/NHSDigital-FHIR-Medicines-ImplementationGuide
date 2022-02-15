@@ -1,13 +1,13 @@
 {
     "resourceType": "CapabilityStatement",
     "id": "apim-eps-nextgen",
-    "extension": [
+    "extension":  [
         {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition",
-            "extension": [
+            "extension":  [
                 {
                     "url": "implementationGuide",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "name",
                             "valueString": "uk.nhsdigital.r4.test"
@@ -16,7 +16,7 @@
                 },
                 {
                     "url": "implementationGuide",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "name",
                             "valueString": "uk.nhsdigital.medicines.r4.test"
@@ -25,7 +25,7 @@
                 },
                 {
                     "url": "implementationGuide",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "name",
                             "valueString": "UKCore.Release1.test"
@@ -38,7 +38,7 @@
                 },
                 {
                     "url": "openApi",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "documentation",
                             "valueUri": "https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir"
@@ -60,21 +60,21 @@
     "publisher": "digital.nhs.uk",
     "description": "Conformance requirements for NHS Digital EPS NextGen APIs",
     "kind": "requirements",
-    "implementationGuide": [
+    "implementationGuide":  [
         "https://simplifier.net/guide/nhsdigital-medicine",
         "https://simplifier.net/guide/nhsdigital"
     ],
     "fhirVersion": "4.0.1",
-    "format": [
+    "format":  [
         "application/fhir+json"
     ],
-    "rest": [
+    "rest":  [
         {
             "mode": "server",
             "security": {
-                "service": [
+                "service":  [
                     {
-                        "coding": [
+                        "coding":  [
                             {
                                 "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
                                 "code": "OAuth",
@@ -84,7 +84,7 @@
                     }
                 ]
             },
-            "resource": [
+            "resource":  [
                 {
                     "type": "List",
                     "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-List"
@@ -92,12 +92,12 @@
                 {
                     "type": "Claim",
                     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim",
-                    "interaction": [
+                    "interaction":  [
                         {
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                                    "extension": [
+                                    "extension":  [
                                         {
                                             "url": "example",
                                             "extension": [
@@ -120,10 +120,10 @@
                             "documentation": "Use this endpoint to submit a claim for reimbursement for a dispensed prescription."
                         },
                         {
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                                    "extension": [
+                                    "extension":  [
                                         {
                                             "url": "example",
                                             "extension": [
@@ -166,10 +166,10 @@
                 {
                     "type": "Task",
                     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "required",
                                     "valueString": "identifier"
@@ -178,7 +178,7 @@
                         },
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "required",
                                     "valueString": "foucs:identifier"
@@ -187,7 +187,7 @@
                         },
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "required",
                                     "valueString": "patient:identifier"
@@ -195,12 +195,12 @@
                             ]
                         }
                     ],
-                    "interaction": [
+                    "interaction":  [
                         {
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                                    "extension": [
+                                    "extension":  [
                                         {
                                             "url": "example",
                                             "extension": [
@@ -234,7 +234,7 @@
                                                 {
                                                     "url": "value",
                                                     "valueReference": {
-                                                        "reference": "Task/ee1b55f8-113c-4725-99a3-25fbad366dd6"
+                                                        "reference": "Task/6a2624a2-321b-470e-91a6-8ae7a065e2f0"
                                                     }
                                                 },
                                                 {
@@ -246,29 +246,6 @@
                                                     "valueMarkdown": "Use this endpoint to withdraw the **last** dispense-notification message, for example in the case that a prescription was marked as dispensed erroneously."
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "url": "example",
-                                            "extension": [
-                                                {
-                                                    "url": "request",
-                                                    "valueBoolean": true
-                                                },
-                                                {
-                                                    "url": "value",
-                                                    "valueReference": {
-                                                        "reference": "Task/1291fcca-902b-48f3-9d07-1be9ea30d7a0"
-                                                    }
-                                                },
-                                                {
-                                                    "url": "summary",
-                                                    "valueMarkdown": "Cancel a prescription"
-                                                },
-                                                {
-                                                    "url": "description",
-                                                    "valueMarkdown": "This is a proposed replacement for the prescription-order-update message"
-                                                }
-                                            ]
                                         }
                                     ]
                                 }
@@ -277,10 +254,10 @@
                             "documentation": "Used for returns prescriptions to spine. Should be a PUT"
                         },
                         {
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                                    "extension": [
+                                    "extension":  [
                                         {
                                             "url": "example",
                                             "extension": [
@@ -303,12 +280,12 @@
                             "documentation": "The EPS Tracker"
                         }
                     ],
-                    "operation": [
+                    "operation":  [
                         {
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                                    "extension": [
+                                    "extension":  [
                                         {
                                             "url": "example",
                                             "extension": [
@@ -346,7 +323,7 @@
                             "definition": "https://fhir.nhs.uk/OperationDefinition/Task-release-message"
                         }
                     ],
-                    "searchParam": [
+                    "searchParam":  [
                         {
                             "name": "identifier",
                             "type": "token",
@@ -375,12 +352,12 @@
                     ]
                 }
             ],
-            "operation": [
+            "operation":  [
                 {
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
@@ -405,10 +382,10 @@
                 {
                     "name": "prepare",
                     "definition": "https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
@@ -446,16 +423,16 @@
             ]
         }
     ],
-    "messaging": [
+    "messaging":  [
         {
-            "supportedMessage": [
+            "supportedMessage":  [
                 {
                     "mode": "receiver",
                     "definition": "https://fhir.nhs.uk/MessageDefinition/prescription-order",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
@@ -471,6 +448,7 @@
                                         }
                                     ]
                                 }
+                               
                             ]
                         }
                     ]
@@ -478,10 +456,10 @@
                 {
                     "mode": "receiver",
                     "definition": "https://fhir.nhs.uk/MessageDefinition/prescription-order-update",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
@@ -497,6 +475,7 @@
                                         }
                                     ]
                                 }
+                               
                             ]
                         }
                     ]
@@ -504,10 +483,10 @@
                 {
                     "mode": "receiver",
                     "definition": "https://fhir.nhs.uk/MessageDefinition/dispense-notification",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
@@ -523,6 +502,7 @@
                                         }
                                     ]
                                 }
+                               
                             ]
                         }
                     ]
@@ -530,10 +510,10 @@
                 {
                     "mode": "receiver",
                     "definition": "https://fhir.nhs.uk/MessageDefinition/dispense-notification-update",
-                    "extension": [
+                    "extension":  [
                         {
                             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
-                            "extension": [
+                            "extension":  [
                                 {
                                     "url": "example",
                                     "extension": [
