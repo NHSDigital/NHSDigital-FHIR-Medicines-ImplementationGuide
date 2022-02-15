@@ -269,6 +269,29 @@
                                                     "valueMarkdown": "This is a proposed replacement for the prescription-order-update message."
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/702cc4e9-81fc-470e-8ae1-43120ae5c16d"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Accept a Prescription (not to be implemented in NextGen)"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "This is an example of $release interaction repackaged as a RESTful interfaction."
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
