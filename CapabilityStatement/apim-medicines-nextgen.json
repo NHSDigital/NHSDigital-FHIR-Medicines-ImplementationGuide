@@ -246,6 +246,29 @@
                                                     "valueMarkdown": "Use this endpoint to withdraw the **last** dispense-notification message, for example in the case that a prescription was marked as dispensed erroneously."
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/1291fcca-902b-48f3-9d07-1be9ea30d7a0"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Cancel a Prescription (proposed)"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "This is a proposed replacement for the prescription-order-update message."
+                                                }
+                                            ]
                                         }
                                     ]
                                 }
