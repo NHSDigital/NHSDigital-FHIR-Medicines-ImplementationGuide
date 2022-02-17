@@ -23,9 +23,9 @@
     "resource": [
         "Task"
     ],
-    "affectsState": true,
-    "system": false,
-    "type": true,
+    "affectsState": false,
+    "system": true,
+    "type": false,
     "instance": false,
     "parameter": [
         {
