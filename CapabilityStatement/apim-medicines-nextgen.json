@@ -426,6 +426,47 @@
                     "definition": "https://fhir.nhs.uk/OperationDefinition/MessageHeader-process-message"
                 },
                 {
+                    "name": "verify-signature",
+                    "definition": "https://fhir.nhs.uk/OperationDefinition/verify-signature",
+                    "extension":  [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "extension":  [
+                                {
+                                    "url": "example",
+                                    "extension": [
+                                        {
+                                            "url": "request",
+                                            "valueBoolean": true
+                                        },
+                                        {
+                                            "url": "value",
+                                            "valueReference": {
+                                                "reference": "Bundle/155e1102-9e71-4f19-9453-b905c0bbc494"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "url": "example",
+                                    "extension": [
+                                        {
+                                            "url": "request",
+                                            "valueBoolean": false
+                                        },
+                                        {
+                                            "url": "value",
+                                            "valueReference": {
+                                                "reference": "Parameters/320b2e2a-0fa0-4ffa-ad3d-f223c27e849d"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "name": "prepare",
                     "definition": "https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message",
                     "extension":  [
