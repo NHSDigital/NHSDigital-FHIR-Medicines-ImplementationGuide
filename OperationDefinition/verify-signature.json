@@ -23,7 +23,7 @@
     "resource": [
         "Task"
     ],
-    "affectsState": false,
+    "affectsState": true,
     "system": true,
     "type": false,
     "instance": false,
