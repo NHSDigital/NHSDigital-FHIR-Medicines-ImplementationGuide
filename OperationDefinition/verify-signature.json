@@ -3,7 +3,7 @@
     "id": "ee360b98-f807-4c5b-a16f-d72933aff9d1",
     "url": "https://fhir.nhs.uk/OperationDefinition/verify-signature",
     "version": "4.0.1",
-    "name": "verifysignature",
+    "name": "verifySignature",
     "status": "draft",
     "kind": "operation",
     "date": "2022-02-17T09:29:23+11:00",
@@ -50,7 +50,7 @@
                     "min": 1,
                     "max": "1",
                     "documentation": "A reference to the Bundled prescription-order FHIR Bundle",
-                    "type": "reference"
+                    "type": "Reference"
                 },
                 {
                     "name": "result",
