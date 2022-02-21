@@ -115,9 +115,6 @@
     <element id="MedicationDispense.statusReason[x].coding:notDispensedStatusReason">
       <path value="MedicationDispense.statusReason[x].coding" />
       <sliceName value="notDispensedStatusReason" />
-      <fixedCoding>
-        <system value="https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason" />
-      </fixedCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.uk/ValueSet/DM-medicationdispense-status-reason" />
