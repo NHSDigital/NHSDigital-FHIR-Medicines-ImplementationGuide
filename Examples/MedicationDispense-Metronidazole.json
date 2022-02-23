@@ -1,6 +1,6 @@
 {
     "resourceType": "MedicationDispense",
-    "id": "06167339-9337-D030-0366-514A6A46DA17",
+    "id": "06167339-9337-d030-0366-514a6a46da17",
     "extension": [
         {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
@@ -14,7 +14,7 @@
     "identifier": [
         {
             "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-            "value": "06167339-9337-D030-0366-514A6A46DA17"
+            "value": "06167339-9337-d030-0366-514a6a46da17"
         }
     ],
     "status": "in-progress",

@@ -63,16 +63,16 @@
                 },
                 "focus": [
                     {
-                        "reference": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29"
+                        "reference": "urn:uuid:4509b70d-d8b8-ea03-1105-64557cb54a29"
                     },
                     {
-                        "reference": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17"
+                        "reference": "urn:uuid:06167339-9337-d030-0366-514a6a46da17"
                     }
                 ]
             }
         },
         {
-            "fullUrl": "urn:uuid:4509B70D-D8B8-EA03-1105-64557CB54A29",
+            "fullUrl": "urn:uuid:4509b70d-d8b8-ea03-1105-64557cb54a29",
             "resource": {
                 "resourceType": "MedicationDispense",
                 "contained": [
@@ -238,7 +238,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:06167339-9337-D030-0366-514A6A46DA17",
+            "fullUrl": "urn:uuid:06167339-9337-d030-0366-514a6a46da17",
             "resource": {
                 "resourceType": "MedicationDispense",
                 "contained": [
@@ -307,7 +307,7 @@
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "06167339-9337-D030-0366-514A6A46DA17"
+                        "value": "06167339-9337-d030-0366-514a6a46da17"
                     }
                 ],
                 "status": "completed",

@@ -40,7 +40,7 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
+        <reference value="urn:uuid:c6750caa-3ca9-4f29-a282-6ee1aa5d7d4c" />
     </subject>
     <authoredOn value="2020-06-10T12:06:00.000+00:00" />
     <requester>

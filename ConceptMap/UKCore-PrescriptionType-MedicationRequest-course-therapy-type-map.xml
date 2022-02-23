@@ -1,5 +1,5 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
-    <id value="UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
+    <id value="756b5412-d688-41f2-b259-4055de9066da"/>
     <url value="https://fhir.nhs.uk/ConceptMap/UKCore-PrescriptionType-MedicationRequest-course-therapy-type-map"/>
     <version value="4.0.2"/>
     <name value="UKCorePrescriptionTypeMedicationRequestcoursetherapytypemap"/>

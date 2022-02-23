@@ -48,16 +48,16 @@
                 },
                 "focus": [
                     {
-                        "reference": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F3"
+                        "reference": "urn:uuid:a7b86f8d-1d77-fc28-e050-d20ae3a215f3"
                     },
                     {
-                        "reference": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F2"
+                        "reference": "urn:uuid:a7b86f8d-1d72-fc28-e050-d20ae3a215f2"
                     },
                     {
-                        "reference": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F1"
+                        "reference": "urn:uuid:a7b86f8d-1d6d-fc28-e050-d20ae3a215f1"
                     },
                     {
-                        "reference": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4"
+                        "reference": "urn:uuid:a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
                     },
                     {
                         "reference": "urn:uuid:51793ac0-112f-46c7-a891-9af8cefb206e"
@@ -181,7 +181,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:A7B86F8D-1D6D-FC28-E050-D20AE3A215F1",
+            "fullUrl": "urn:uuid:a7b86f8d-1d6d-fc28-e050-d20ae3a215f1",
             "resource": {
                 "resourceType": "MedicationRequest",
                 "extension": [
@@ -302,7 +302,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:A7B86F8D-1D72-FC28-E050-D20AE3A215F2",
+            "fullUrl": "urn:uuid:a7b86f8d-1d72-fc28-e050-d20ae3a215f2",
             "resource": {
                 "resourceType": "MedicationRequest",
                 "extension": [
@@ -407,7 +407,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:A7B86F8D-1D77-FC28-E050-D20AE3A215F3",
+            "fullUrl": "urn:uuid:a7b86f8d-1d77-fc28-e050-d20ae3a215f3",
             "resource": {
                 "resourceType": "MedicationRequest",
                 "extension": [
@@ -528,7 +528,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
+            "fullUrl": "urn:uuid:a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
             "resource": {
                 "resourceType": "MedicationRequest",
                 "extension": [

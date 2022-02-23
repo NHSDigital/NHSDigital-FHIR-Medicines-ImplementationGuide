@@ -15,7 +15,7 @@
       </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/prescription-order-item-number" />
-        <value value="1E34EE53-397A-2E70-E97C-67B1BD95014D" />
+        <value value="1e34ee53-397a-2e70-e97c-67b1bd95014d" />
     </identifier>
     <status value="active" />
     <intent value="order" />
@@ -40,7 +40,7 @@
         </coding>
     </medicationCodeableConcept>
     <subject>
-        <reference value="urn:uuid:C6750CAA-3CA9-4F29-A282-6EE1AA5D7D4C" />
+        <reference value="urn:uuid:c6750caa-3ca9-4f29-a282-6ee1aa5d7d4c" />
     </subject>
     <authoredOn value="2004-09-20T10:30:00.000+00:00" />
     <requester>

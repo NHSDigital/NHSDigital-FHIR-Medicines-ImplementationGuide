@@ -6,7 +6,7 @@
     </identifier>
     <type value="message" />
     <entry>
-        <fullUrl value="urn:oid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
+        <fullUrl value="urn:uuid:ed75d3ba-bd49-4ebd-881a-9bec2919962a" />
         <resource>
             <MessageHeader>
                 <id value="ed75d3ba-bd49-4ebd-881a-9bec2919962a" />

@@ -1,6 +1,6 @@
 {
     "resourceType": "MedicationRequest",
-    "id": "A7B86F8D-1D7C-FC28-E050-D20AE3A215F4",
+    "id": "a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
     "contained": [
         {
             "resourceType": "Patient",

@@ -61,7 +61,7 @@
                     },
                     {
                         "type": "Provenance",
-                        "reference": "urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E"
+                        "reference": "urn:uuid:28828c55-8fa7-42d7-916f-fcf076e0c10e"
                     }
                 ]
             }
@@ -362,7 +362,7 @@
             }
         },
         {
-            "fullUrl": "urn:uuid:28828C55-8FA7-42D7-916F-FCF076E0C10E",
+            "fullUrl": "urn:uuid:28828c55-8fa7-42d7-916f-fcf076e0c10e",
             "resource": {
                 "resourceType": "Provenance",
                 "target": [
