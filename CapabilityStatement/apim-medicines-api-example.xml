@@ -1,26 +1,28 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
-        <extension url="packageName">
-            <valueString value="uk.nhsdigital.medicines.r4" />
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition">
+        <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="uk.nhsdigital.medicines.r4" />
+            </extension>
+            <extension url="version">
+                <valueString value="2.1.37-alpha" />
+            </extension>
         </extension>
-        <extension url="version">
-            <valueString value="2.1.37-alpha" />
+        <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="uk.nhsdigital.r4" />
+            </extension>
+            <extension url="version">
+                <valueString value="2.1.33-discovery" />
+            </extension>
         </extension>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
-        <extension url="packageName">
-            <valueString value="uk.nhsdigital.r4" />
-        </extension>
-        <extension url="version">
-            <valueString value="2.1.33-discovery" />
-        </extension>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-NHSDigital-IGPackages">
-        <extension url="packageName">
-            <valueString value="UK.Core.r4.v2" />
-        </extension>
-        <extension url="version">
-            <valueString value="2.0.8" />
+        <extension url="implementationGuide">
+            <extension url="name">
+                <valueString value="UK.Core.r4.v2" />
+            </extension>
+            <extension url="version">
+                <valueString value="2.0.8" />
+            </extension>
         </extension>
     </extension>
     <id value="apim-medicines-api-example" />
@@ -39,10 +41,10 @@
         <releaseDate value="2021-07-21T00:00:00+00:00" />
     </software>
     <implementation>
-    <description value="This is an example EPS API Capability Statement"/>
+        <description value="This is an example EPS API Capability Statement"/>
     </implementation>
-    <implementationGuide value="https://simplifier.net/guide/digitalmedicines"/> 
-    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/> 
+    <implementationGuide value="https://simplifier.net/guide/digitalmedicines"/>
+    <implementationGuide value="https://simplifier.net/guide/nhsdigital"/>
     <format value="application/fhir+json" />
     <format value="application/fhir+xml" />
     <rest>
@@ -64,7 +66,7 @@
             <type value="Claim" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim" />
         </resource>
-         <resource>
+        <resource>
             <type value="CommunicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest" />
         </resource>
@@ -91,7 +93,7 @@
                 <documentation value="Parent snomed procedure code for vaccinations" />
             </searchParam>
         </resource>
-       <resource>
+        <resource>
             <type value="MedicationRequest" />
             <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
             <interaction>
@@ -181,7 +183,7 @@
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification" />
         </supportedMessage>
-         <supportedMessage>
+        <supportedMessage>
             <mode value="receiver" />
             <definition value="https://fhir.nhs.uk/MessageDefinition/dispense-notification-update" />
         </supportedMessage>
