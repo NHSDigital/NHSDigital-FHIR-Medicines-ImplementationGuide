@@ -1,6 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Package">
-        <extension url="implementationGuide">
+        <extension url="FHIRPackage">
             <extension url="name">
                 <valueString value="uk.nhsdigital.medicines.r4" />
             </extension>
@@ -8,7 +8,7 @@
                 <valueString value="2.1.37-alpha" />
             </extension>
         </extension>
-        <extension url="implementationGuide">
+        <extension url="FHIRPackage">
             <extension url="name">
                 <valueString value="uk.nhsdigital.r4" />
             </extension>
@@ -16,7 +16,7 @@
                 <valueString value="2.1.33-discovery" />
             </extension>
         </extension>
-        <extension url="implementationGuide">
+        <extension url="FHIRPackage">
             <extension url="name">
                 <valueString value="UK.Core.r4.v2" />
             </extension>
