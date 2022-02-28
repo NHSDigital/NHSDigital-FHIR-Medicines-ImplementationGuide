@@ -11,6 +11,12 @@
                 },
                 "display": "dummy full name"
             }
+        },
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-replacementOf",
+            "valueIdentifier": {
+                "value": "46055273-3001-41bd-86a0-f8dba7f2161a"
+            }
         }
     ],
     "identifier": [
