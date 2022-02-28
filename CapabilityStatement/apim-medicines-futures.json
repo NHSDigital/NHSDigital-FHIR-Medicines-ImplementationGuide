@@ -60,7 +60,7 @@
     "publisher": "digital.nhs.uk",
     "description": "Conformance requirements for NHS Digital EPS Futures",
     "kind": "requirements",
-    "FHIRPackage":  [
+    "implementationGuide":  [
         "https://simplifier.net/guide/nhsdigital-medicine",
         "https://simplifier.net/guide/nhsdigital"
     ],

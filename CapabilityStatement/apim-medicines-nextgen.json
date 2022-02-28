@@ -60,7 +60,7 @@
     "publisher": "digital.nhs.uk",
     "description": "Conformance requirements for NHS Digital EPS NextGen APIs",
     "kind": "requirements",
-    "FHIRPackage":  [
+    "implementationGuide":  [
         "https://simplifier.net/guide/nhsdigital-medicine",
         "https://simplifier.net/guide/nhsdigital"
     ],
