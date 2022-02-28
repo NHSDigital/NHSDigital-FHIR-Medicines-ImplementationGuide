@@ -3,7 +3,7 @@
     "id": "apim-eps-nextgen",
     "extension":  [
         {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition",
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Package",
             "extension":  [
                 {
                     "url": "implementationGuide",
@@ -96,7 +96,7 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                                     "extension":  [
                                         {
                                             "url": "example",
@@ -122,7 +122,7 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                                     "extension":  [
                                         {
                                             "url": "example",
@@ -199,7 +199,7 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                                     "extension":  [
                                         {
                                             "url": "example",
@@ -302,7 +302,7 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                                     "extension":  [
                                         {
                                             "url": "example",
@@ -330,7 +330,7 @@
                         {
                             "extension":  [
                                 {
-                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                                     "extension":  [
                                         {
                                             "url": "example",
@@ -402,7 +402,7 @@
                 {
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -430,7 +430,7 @@
                     "definition": "https://fhir.nhs.uk/OperationDefinition/verify-signature",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -471,7 +471,7 @@
                     "definition": "https://fhir.nhs.uk/OperationDefinition/MessageHeader-prepare-message",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -518,7 +518,7 @@
                     "definition": "https://fhir.nhs.uk/MessageDefinition/prescription-order",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -545,7 +545,7 @@
                     "definition": "https://fhir.nhs.uk/MessageDefinition/prescription-order-update",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -572,7 +572,7 @@
                     "definition": "https://fhir.nhs.uk/MessageDefinition/dispense-notification",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
@@ -599,7 +599,7 @@
                     "definition": "https://fhir.nhs.uk/MessageDefinition/dispense-notification-update",
                     "extension":  [
                         {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-APIDefinition-OAS",
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
                             "extension":  [
                                 {
                                     "url": "example",
