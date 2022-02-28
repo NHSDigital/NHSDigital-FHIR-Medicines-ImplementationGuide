@@ -80,7 +80,6 @@
                     <reference value="urn:uuid:f942fd9b-f423-48c5-84b3-0e76bb4c5da5" />
                     <display value="Dr Smith" />
                 </requester>
-
                 <groupIdentifier>
                     <extension xmlns="http://hl7.org/fhir" url="https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId">
                         <valueIdentifier>
@@ -148,7 +147,7 @@
                 <form>
                     <coding>
                         <system value="http://snomed.info/sct"></system>
-                        <code value="35366911000001101"></code>
+                        <code value="421366001"></code>
                         <display value="Dispersible tablet"></display>
                     </coding>
                     <text value="Dispersible tablet"></text>
