@@ -378,22 +378,98 @@
                         {
                             "name": "focus:identifier",
                             "type": "token",
-                            "documentation": "The short form identifier of the prescription you are searching for."
+                            "documentation": "The short form identifier of the prescription you are searching for.",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "f28682c0-50d2-472a-a8f0-477f7ac1b63f"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "patient:identifier",
                             "type": "token",
-                            "documentation": "The NHS Number of the patient whose prescriptions you are searching for."
+                            "documentation": "The NHS Number of the patient whose prescriptions you are searching for.",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/nhs-number|9000000009"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "authored-on",
                             "type": "date",
-                            "documentation": "Date the prescription was authored"
+                            "documentation": "Date the prescription was authored",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "eq2004-09-20"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "business-status",
                             "type": "token",
-                            "documentation": "The state that a prescription is in."
+                            "documentation": "The state that a prescription is in.",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status|0002"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

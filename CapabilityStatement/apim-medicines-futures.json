@@ -174,24 +174,100 @@
                     ],
                     "searchParam":  [
                         {
-                            "name": "patient",
-                            "type": "reference",
-                            "documentation": "Returns prescriptions for a specific patient"
+                            "name": "patient:identifier",
+                            "type": "token",
+                            "documentation": "Returns prescriptions for a specific patient",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/nhs-number|9000000009"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "intended-performer",
                             "type": "reference",
-                            "documentation": "Return prescriptions for this medication reference"
+                            "documentation": "Return prescriptions for this medication reference",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/ods-organization-code|M85011"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "status",
                             "type": "token",
-                            "documentation": "Status of the prescription"
+                            "documentation": "Status of the prescription",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "rejected"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
-                            "name": "requester",
-                            "type": "reference",
-                            "documentation": "Returns prescriptions prescribed by this prescriber"
+                            "name": "requester.identifier",
+                            "type": "token",
+                            "documentation": "Returns prescriptions prescribed by this prescriber",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/ods-organization-code|M85011"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "group",
