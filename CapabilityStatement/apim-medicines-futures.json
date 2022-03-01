@@ -238,8 +238,14 @@
                                             "valueInteger": 1
                                         },
                                         {
-                                            "url": "exampleParameter",
-                                            "valueString": "rejected"
+                                            "url": "showCodeAndSystem",
+                                            "valueBoolean": false
+                                        },
+                                        {
+                                            "url": "allowedValues",
+                                            "valueReference": {
+                                                "reference": "http://hl7.org/fhir/ValueSet/medicationrequest-status"
+                                            }
                                         }
                                     ]
                                 }
@@ -368,19 +374,78 @@
                     ],
                     "searchParam":  [
                         {
-                            "name": "patient",
-                            "type": "reference",
-                            "documentation": "The identity of a patient to list dispenses for"
+                            "name": "patient:identifier",
+                            "type": "token",
+                            "documentation": "The identity of a patient to list dispenses for",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "https://fhir.nhs.uk/Id/nhs-number|9000000009"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "prescription",
                             "type": "reference",
-                            "documentation": "The identity of a prescription to list dispenses from"
+                            "documentation": "The identity of a prescription to list dispenses from",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                         "name": "status",
                         "type": "token",
-                        "documentation": "Returns dispenses with a specified dispense status"
+                        "documentation": "Returns dispenses with a specified dispense status",
+                        "extension":  [
+                            {
+                                "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                "extension":  [
+                                    {
+                                        "url": "minimum",
+                                        "valueInteger": 0
+                                    },
+                                    {
+                                        "url": "maximum",
+                                        "valueInteger": 1
+                                    },
+                                    {
+                                        "url": "showCodeAndSystem",
+                                        "valueBoolean": false
+                                    },
+                                    {
+                                        "url": "allowedValues",
+                                        "valueReference": {
+                                            "reference": "http://hl7.org/fhir/ValueSet/medicationdispense-status"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                         },
                         {
                             "name": "_count",

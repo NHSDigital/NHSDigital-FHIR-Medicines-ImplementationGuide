@@ -373,7 +373,26 @@
                         {
                             "name": "identifier",
                             "type": "token",
-                            "documentation": "The short form identifier of the prescription you are searching for."
+                            "documentation": "The short form identifier of the prescription you are searching for.",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "exampleParameter",
+                                            "valueString": "f28682c0-50d2-472a-a8f0-477f7ac1b63f"
+                                        }
+                                    ]
+                                }
+                            ]
                         },
                         {
                             "name": "focus:identifier",
@@ -464,8 +483,40 @@
                                             "valueInteger": 1
                                         },
                                         {
-                                            "url": "exampleParameter",
-                                            "valueString": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status|0002"
+                                            "url": "allowedValues",
+                                            "valueReference": {
+                                                "reference": "https://fhir.nhs.uk/ValueSet/DM-task-business-status"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "status",
+                            "type": "token",
+                            "documentation": "Search by task status",
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-QueryParameters",
+                                    "extension":  [
+                                        {
+                                            "url": "minimum",
+                                            "valueInteger": 0
+                                        },
+                                        {
+                                            "url": "maximum",
+                                            "valueInteger": 1
+                                        },
+                                        {
+                                            "url": "showCodeAndSystem",
+                                            "valueBoolean": false
+                                        },
+                                        {
+                                            "url": "allowedValues",
+                                            "valueReference": {
+                                                "reference": "http://hl7.org/fhir/ValueSet/task-status"
+                                            }
                                         }
                                     ]
                                 }
