@@ -6,7 +6,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "http://example.org/FHIR/R4/MedicationRequest?patient.identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519"
+      "url": "http://example.org/FHIR/R4/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519"
     }
   ],
   "entry": [

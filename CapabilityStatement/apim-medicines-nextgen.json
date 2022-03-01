@@ -316,6 +316,14 @@
                                                     "valueReference": {
                                                         "reference": "Bundle/3b17d59c-41d6-44d7-81e6-47cc398e9dcc"
                                                     }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient Task/Prescription search"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Request **GET [baseUrl]/Task?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003489"
                                                 }
                                             ]
                                         }

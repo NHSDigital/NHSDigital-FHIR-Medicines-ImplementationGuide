@@ -106,6 +106,14 @@
                                                     "valueReference": {
                                                         "reference": "Bundle/fc2af095-2074-473c-b527-701a74998773"
                                                     }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient MedicationRequest search"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Request **GET [baseUrl]/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003888"
                                                 }
                                             ]
                                         }
@@ -307,6 +315,14 @@
                                                     "valueReference": {
                                                         "reference": "Bundle/11c0abb3-7223-4cd8-88bd-68d29694f24c"
                                                     }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient MedicationDispense search"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Request **GET [baseUrl]/MedicationDispense?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9912003888"
                                                 }
                                             ]
                                         }
