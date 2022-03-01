@@ -104,7 +104,7 @@
                                                 {
                                                     "url": "value",
                                                     "valueReference": {
-                                                        "reference": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
+                                                        "reference": "Bundle/fc2af095-2074-473c-b527-701a74998773"
                                                     }
                                                 }
                                             ]
@@ -305,7 +305,7 @@
                                                 {
                                                     "url": "value",
                                                     "valueReference": {
-                                                        "reference": "MedicationDispense/06167339-9337-d030-0366-514a6a46da17"
+                                                        "reference": "Bundle/11c0abb3-7223-4cd8-88bd-68d29694f24c"
                                                     }
                                                 }
                                             ]
