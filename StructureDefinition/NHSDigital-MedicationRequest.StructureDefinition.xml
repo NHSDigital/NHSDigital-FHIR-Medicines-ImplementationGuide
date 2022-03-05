@@ -574,7 +574,7 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
       <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
-      <definition value="The number of repeat issues authorised if specified. <br> <b>MUST</b> be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. <br> <b>MUST</b> NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. /n/n For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this <b>MUST</b> be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication."/>
+      <definition value="The number of repeat issues authorised if specified. /n **MUST** be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. /n **MUST** NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. /n/n For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this **MUST** be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication."/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
