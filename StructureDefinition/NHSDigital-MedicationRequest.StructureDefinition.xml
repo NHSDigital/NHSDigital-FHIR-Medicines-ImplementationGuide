@@ -252,7 +252,7 @@
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
-      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. "/>
+      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. /n/n| code | Definition |/n|--|--|/n| active | The prescription is 'actionable', but not all actions that are implied by it have occurred yet. It has not been dispensed or filled. |/n| cancelled | The prescription is to be cancelled or it has been cancelled been withdrawn before any administrations have occurred. Prescriptions in the process of being cancelled will be regarded as active until all actions are complete. |/n| stopped | "/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.statusReason">
