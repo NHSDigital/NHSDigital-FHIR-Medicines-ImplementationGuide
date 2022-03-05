@@ -451,7 +451,7 @@
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="order number for grouped MedicationRequests" />
-      <definition value="The purpose of the Short Form Prescription ID is to identify the prescription during its lifecycle within the Spine (i.e. prescribe, dispense & claim). The prescription UUID is retained to provide the link through to the Spine medication record within the PSIS and must be included as the first identifier within the prescription message." />
+      <definition value="The purpose of the Short Form Prescription ID is to identify the prescription during its lifecycle within the Spine (i.e. prescribe, dispense and claim). The prescription UUID is retained to provide the link through to the Spine medication record within the PSIS and must be included as the first identifier within the prescription message." />
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
       <mustSupport value="true" />
