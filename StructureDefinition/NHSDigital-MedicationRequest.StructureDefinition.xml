@@ -157,6 +157,7 @@
     <element id="MedicationRequest.extension:responsiblePractitioner">
       <path value="MedicationRequest.extension" />
       <sliceName value="responsiblePractitioner" />
+      <definition value="Must only be populated if the  `requester` can not be responsible for the prescription, i.e. they would not be named as the prescriber on the FP10."/>
       <min value="0" />
       <max value="1" />
       <type>
@@ -188,6 +189,7 @@
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
       <path value="MedicationRequest.extension" />
       <sliceName value="NHSBSAprescriptionType" />
+      <definition value="The vocabulary for the ‘PrescriptionType’ vocabulary is defined within the NHSBSA Overprint Specification. /n/n The System must populate the ‘PrescriptionType’ attribute for the appropriate combination of prescriber and care setting. Retired codes within this vocabulary must not be used"/>
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -198,6 +200,7 @@
     <element id="MedicationRequest.extension:controlledDrug">
       <path value="MedicationRequest.extension" />
       <sliceName value="controlledDrug" />
+      <definition value="Controlled drugs are recorded in the category section alongside the episode class (if applicable). /n/n It is a legal requirement to state the prescribed quantity as words in the `quantityWords` elemen"/>
       <min value="0" />
       <max value="1" />
       <type>
@@ -210,7 +213,7 @@
       <path value="MedicationRequest.extension" />
       <sliceName value="dispensingInformation" />
       <short value="For EPS use only" />
-      <definition value="Not to be populated by prescribing systems. Tracking systems only for repeat dispensing." />
+      <definition value="This extension is used in `continuous-repeat-dispensing` prescriptions sent by EPS to dispensing systems to convey information on prior dispensed medications." />
       <min value="0" />
       <max value="1" />
       <type>
@@ -249,11 +252,12 @@
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
+      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. "/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
-      <definition value="Mandatory for cancelled prescription items" />
+      <definition value="This is generally only used for exception statuses such as `suspended` or `cancelled`. It is the clinical status reason for the cancellation." />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -447,7 +451,7 @@
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
       <short value="order number for grouped MedicationRequests" />
-      <definition value="The short form prescription identifier" />
+      <definition value="The purpose of the Short Form Prescription ID is to identify the prescription during its lifecycle within the Spine (i.e. prescribe, dispense & claim). The prescription UUID is retained to provide the link through to the Spine medication record within the PSIS and must be included as the first identifier within the prescription message." />
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
       <mustSupport value="true" />
