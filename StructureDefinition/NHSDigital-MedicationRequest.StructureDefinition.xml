@@ -350,6 +350,7 @@
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
+      <definition value="A resource reference to a Patient with a traced NHS Number is required, an untraced NHS Number MUST NOT be used."/>
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
