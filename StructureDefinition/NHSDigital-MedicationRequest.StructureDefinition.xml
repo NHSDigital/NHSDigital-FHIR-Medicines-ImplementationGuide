@@ -189,7 +189,7 @@
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
       <path value="MedicationRequest.extension" />
       <sliceName value="NHSBSAprescriptionType" />
-      <definition value="The vocabulary for the ‘PrescriptionType’ vocabulary is defined within the NHSBSA Overprint Specification. /n/n The System must populate the ‘PrescriptionType’ attribute for the appropriate combination of prescriber and care setting. Retired codes within this vocabulary must not be used"/>
+      <definition value="The vocabulary for the ‘PrescriptionType’ vocabulary is defined within the NHSBSA Overprint Specification. \n\n The System must populate the ‘PrescriptionType’ attribute for the appropriate combination of prescriber and care setting. Retired codes within this vocabulary must not be used"/>
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -200,7 +200,7 @@
     <element id="MedicationRequest.extension:controlledDrug">
       <path value="MedicationRequest.extension" />
       <sliceName value="controlledDrug" />
-      <definition value="Controlled drugs are recorded in the category section alongside the episode class (if applicable). /n/n It is a legal requirement to state the prescribed quantity as words in the `quantityWords` elemen"/>
+      <definition value="Controlled drugs are recorded in the category section alongside the episode class (if applicable). \n\n It is a legal requirement to state the prescribed quantity as words in the `quantityWords` elemen"/>
       <min value="0" />
       <max value="1" />
       <type>
@@ -252,7 +252,7 @@
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
-      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. /n/n| code | Definition |/n|--|--|/n| active | The prescription is 'actionable', but not all actions that are implied by it have occurred yet. It has not been dispensed or filled. |/n| cancelled | The prescription is to be cancelled or it has been cancelled been withdrawn before any administrations have occurred. Prescriptions in the process of being cancelled will be regarded as active until all actions are complete. |/n| stopped | "/>
+      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. \n\n| code | Definition |\n|--|--|\n| active | The prescription is 'actionable', but not all actions that are implied by it have occurred yet. It has not been dispensed or filled. |\n| cancelled | The prescription is to be cancelled or it has been cancelled been withdrawn before any administrations have occurred. Prescriptions in the process of being cancelled will be regarded as active until all actions are complete. |\n| stopped | "/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.statusReason">
@@ -521,7 +521,7 @@
     </element>
     <element id="MedicationRequest.note">
       <path value="MedicationRequest.note" />
-      <definition value="Clinical information relating to a prescribed medication item that cannot be conveyed within dosage instructions is populated within `note` field. /n Examples of dispensing notes are: /n/n - To explain changes in dosage, for example, “Dosage has been increased on advice of the hospital”. /n - 'Tell patient to stop their statin whilst on this anitbiotic' /n - 'hospital consultant has confirmed dual treatment' /n/n/n One scenario where `note` must be populated is when the current prescribed medication item is the last authorised repeat of that medication within a repeat prescribing cycle. Appropriate text, such as 'Last authorised repeat' must be included within the `note` to inform the dispenser and to allow the dispenser to communicate to the patient or patient representative. Note that for repeat dispensing, the ‘numberOfRepeatPrescriptionsIssued’ element also conveys this information."/>
+      <definition value="Clinical information relating to a prescribed medication item that cannot be conveyed within dosage instructions is populated within `note` field. \n Examples of dispensing notes are: \n\n - To explain changes in dosage, for example, “Dosage has been increased on advice of the hospital”. \n - 'Tell patient to stop their statin whilst on this anitbiotic' \n - 'hospital consultant has confirmed dual treatment' \n\n\n One scenario where `note` must be populated is when the current prescribed medication item is the last authorised repeat of that medication within a repeat prescribing cycle. Appropriate text, such as 'Last authorised repeat' must be included within the `note` to inform the dispenser and to allow the dispenser to communicate to the patient or patient representative. Note that for repeat dispensing, the ‘numberOfRepeatPrescriptionsIssued’ element also conveys this information."/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction">
@@ -575,7 +575,7 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
       <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
-      <definition value="The number of repeat issues authorised if specified. /n **MUST** be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. /n **MUST** NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. /n/n For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this **MUST** be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication."/>
+      <definition value="The number of repeat issues authorised if specified. \n **MUST** be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. \n **MUST** NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. \n\n For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this **MUST** be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication."/>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
