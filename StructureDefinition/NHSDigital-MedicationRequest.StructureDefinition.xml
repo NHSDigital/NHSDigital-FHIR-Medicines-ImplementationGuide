@@ -194,7 +194,8 @@
     <element id="MedicationRequest.extension:NHSBSAprescriptionType">
       <path value="MedicationRequest.extension" />
       <sliceName value="NHSBSAprescriptionType" />
-      <definition value="The vocabulary for the ‘PrescriptionType’ vocabulary is defined within the NHSBSA Overprint Specification. \n\n The System must populate the ‘PrescriptionType’ attribute for the appropriate combination of prescriber and care setting. Retired codes within this vocabulary must not be used" />
+      <short value="NHS BSA Prescription Type" />
+      <definition value="The vocabulary for the ‘PrescriptionType’ vocabulary is defined within the NHSBSA Overprint Specification. &#xD;&#xA;&#xD;&#xA;The System must populate the ‘PrescriptionType’ attribute for the appropriate combination of prescriber and care setting. Retired codes within this vocabulary must not be used" />
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -261,12 +262,12 @@
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
       <short value="active | cancelled | stopped" />
-      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. \n\n| code | Definition |\n|--|--|\n| active | The prescription is 'actionable', but not all actions that are implied by it have occurred yet. It has not been dispensed or filled. |\n| cancelled | The prescription is to be cancelled or it has been cancelled been withdrawn before any administrations have occurred. Prescriptions in the process of being cancelled will be regarded as active until all actions are complete. |\n| stopped | Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error|\n|completed|All actions that are implied by the prescription have occurred.|" />
+      <definition value="A code specifying the current state of the order. Generally, this will be active or completed state. &#xD;&#xA;&#xD;&#xA;| code | Definition |&#xD;&#xA;|--|--|&#xD;&#xA;| active | The prescription is 'actionable', but not all actions that are implied by it have occurred yet. It has not been dispensed or filled. |&#xD;&#xA;| cancelled | The prescription is to be cancelled or it has been cancelled been withdrawn before any administrations have occurred. Prescriptions in the process of being cancelled will be regarded as active until all actions are complete. |&#xD;&#xA;| stopped | Actions implied by the prescription are to be permanently halted, before all of the administrations occurred. This should not be used if the original order was entered in error|&#xD;&#xA;|completed|All actions that are implied by the prescription have occurred.|" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
-      <definition value="This is generally only used for exception statuses such as `suspended` or `cancelled`. It is the clinical status reason for the cancellation." />
+      <definition value="This is generally only used for exception statuses such as `suspended` or `cancelled`. It is the clinical status reason for the cancellation.&#xD;&#xA;&#xD;&#xA;This is mandatory for 'prescription-order-update' messages." />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -290,8 +291,13 @@
       <path value="MedicationRequest.statusReason.coding.display" />
       <min value="1" />
     </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent" />
+      <comment value="Indicates the type of order. A code specifying the current state of the order. Generally, this will be active or completed state. &#xD;&#xA;&#xD;&#xA;| code | display | courseOfTherapyType | Definition |&#xD;&#xA;|--&#xD;&#xA;| order | Order | acute | The request represents a request/demand and authorization for action |&#xD;&#xA;| original-order | Original Order | continuous-repeat-dispensing instalment-dispensing | The request represents the original authorization for the medication request. |&#xD;&#xA;| reflex-order |Reflex Order | continuous-repeat-dispensing | The request represents an automatically generated supplemental authorization (by EPS) for action based on a parent authorization together with initial results of the action taken against that parent authorization. |&#xD;&#xA;| instance-order | Instance Order | instalment-dispensing | The request represents an instance for the particular order. |" />
+    </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <definition value="In primary care the code of `community` should be used. In secondary care the category will often match the Episode/Spell type.&#xD;&#xA;&#xD;&#xA;| Code | System | Display |&#xD;&#xA;|--&#xD;&#xA;| leave | https://fhir.nhs.uk/CodeSystem/medicationrequest-category | Leave |&#xD;&#xA;|outpatient | http://terminology.hl7.org/CodeSystem/medicationrequest-category |Outpatient |&#xD;&#xA;| discharge | http://terminology.hl7.org/CodeSystem/medicationrequest-category | Discharge |&#xD;&#xA;| community |http://terminology.hl7.org/CodeSystem/medicationrequest-category | Community |&#xD;&#xA;| inpatient  |http://terminology.hl7.org/CodeSystem/medicationrequest-category | Inpatient |" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -345,7 +351,8 @@
     </element>
     <element id="MedicationRequest.medication[x]">
       <path value="MedicationRequest.medication[x]" />
-      <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts" />
+      <definition value="Only Virtual Medical Products (VMP) and Actual Medical Products (AMP) can be used." />
+      <comment value="Any code from the SnomedCT UK DMD subset for VMP, AMP and VTM concepts&#xD;&#xA;&#xD;&#xA;&lt;table&gt;&#xD;&#xA;&lt;thead&gt;&#xD;&#xA;&lt;th data-no-sort width=&quot;25%&quot;&gt;&#xD;&#xA;dm+d Category&#xD;&#xA;&lt;/th&gt;&#xD;&#xA;&lt;th data-no-sort width=&quot;50%&quot;&gt;&#xD;&#xA;dm+d Description&#xD;&#xA;&lt;/th&gt;&#xD;&#xA;&lt;th data-no-sort width=&quot;25%&quot;&gt;&#xD;&#xA;UK SNOMED Members Of&#xD;&#xA;&lt;/th&gt;&#xD;&#xA;&#xD;&#xA;&lt;/thead&gt;&#xD;&#xA;&lt;tr&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;VMP&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;Virtual Medical Product&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;&lt;a href=&quot;https://termbrowser.nhs.uk/?perspective=full&amp;conceptId1=999000561000001109&quot; target=&quot;_blank&quot;&gt;999000561000001109&lt;/a&gt;&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;/tr&gt;&#xD;&#xA;&lt;tr&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;AMP&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;Actual Medical Product&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;td&gt;&#xD;&#xA;&lt;a href=&quot;https://termbrowser.nhs.uk/?perspective=full&amp;conceptId1=999000541000001108&quot; target=&quot;_blank&quot;&gt;999000541000001108&lt;/a&gt;&#xD;&#xA;&lt;/td&gt;&#xD;&#xA;&lt;/tr&gt;&#xD;&#xA;&lt;/table&gt;" />
       <type>
         <code value="CodeableConcept" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-CodeableConcept" />
@@ -359,7 +366,7 @@
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
-      <definition value="A resource reference to a Patient with a traced NHS Number is required, an untraced NHS Number MUST NOT be used." />
+      <definition value="A resource reference to a Patient with a traced NHS Number is required, an untraced NHS Number **MUST NOT** be used." />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Patient" />
@@ -401,6 +408,7 @@
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
+      <definition value="The requester must contain a resource reference to the Practitioner who has electronically signed the prescription.&#xD;&#xA;&#xD;&#xA;If the `requester` can not take responsibility for the prescription, i.e. they would not be the prescriber on the FP10. Then the **extension responsiblePractitioner** must be populated." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -414,6 +422,10 @@
         <source value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest" />
       </constraint>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.performer">
+      <path value="MedicationRequest.performer" />
+      <definition value="For non token based prescriptions the destination pharmacy **MUST** be recorded in the *dispenseRequest.performer.identifier* and a identifier reference (not a resource reference) with an ANANA/ODS Code **MUST** used. &#xD;&#xA;&#xD;&#xA;The extension https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType **MUST** be present.&#xD;&#xA;&#xD;&#xA;Patients pharmacy preferences may be sourced from PDS.&#xD;&#xA;&#xD;&#xA;Patients pharmacy preferences may be overriden by an 'one-off pharmacy nomination' by populating the *dispenseRequest.performer.identifier* with the ODS/ANANA code of the destination pharmacy." />
     </element>
     <element id="MedicationRequest.recorder">
       <path value="MedicationRequest.recorder" />
@@ -431,6 +443,7 @@
     </element>
     <element id="MedicationRequest.basedOn">
       <path value="MedicationRequest.basedOn" />
+      <definition value="This MUST be populated for `continuous-repeat-dispensing` issues where intent=`reflex-order`, i.e. the issues sent from EPS to pharmacists.&#xD;&#xA;It is recommended this is populated for `continuous` issues and this should reference the original order." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation" />
@@ -460,8 +473,8 @@
     </element>
     <element id="MedicationRequest.groupIdentifier">
       <path value="MedicationRequest.groupIdentifier" />
-      <short value="order number for grouped MedicationRequests" />
-      <definition value="The purpose of the Short Form Prescription ID is to identify the prescription during its lifecycle within the Spine (i.e. prescribe, dispense and claim). The prescription UUID is retained to provide the link through to the Spine medication record within the PSIS and must be included as the first identifier within the prescription message." />
+      <short value="groupIdentifier (Short Form Prescription ID)" />
+      <definition value="The purpose of the Short Form Prescription ID is to identify the prescription during its lifecycle within the Spine (i.e. prescribe, dispense &amp; claim). The prescription UUID is retained to provide the link through to the Spine medication record within the PSIS and must be included as the first identifier within the prescription message.&#xD;&#xA;The format of the Short Form Prescription ID is as follows;&#xD;&#xA;&#xD;&#xA;`&lt;RandomNumber&gt;-&lt;PracticeODSCode/ClinicODSCode&gt;-&lt;PracticeSequence/ClinicSequence&gt;&lt;CheckDigit&gt;`&#xD;&#xA;&#xD;&#xA;Where;&#xD;&#xA;&#xD;&#xA;`&lt;RandomNumber&gt;` is a locally generated random number each time a Prescription ID is generated of length 6 hexadecimal characters.&#xD;&#xA;&#xD;&#xA;`&lt;PracticeODSCode/ClinicODSCode&gt;` is the unique ODS code for the practice or clinic code (aka cost centre) as defined within the Spine SDS of length 6 characters. Where the prescriber ODS code is shorter than 6 characters it must be zero-padded up to six characters from the start of the ODS code, e.g. “0A1B2C”.&#xD;&#xA;&#xD;&#xA;`&lt;PracticeSequence/ClinicSequence&gt;` is an incremental sequence number starting from 00000 that is reset after FFFFF back to zero of length 5 hexadecimal characters. For systems that support multiple practices or clinics, a sequence number per practice/clinic is required. This is to ensure uniqueness of prescriptions within the Spine EPS component during the prescription lifecycle.&#xD;&#xA;&#xD;&#xA;`&lt;CheckDigit&gt;` is calculated on the entire ID using the ISO/IEC 7064:2003 MOD 37-2 standard. The check digit algorithm is identical to that using for EPS Release 1.&#xD;&#xA;&#xD;&#xA;Note. Hyphens are always included to separate the ID into 3 blocks of 6 characters.&#xD;&#xA;&#xD;&#xA;Note. The implementation of the MOD 37-2 standard uses a “+” character for char 36 opposed to a “*” character.&#xD;&#xA;&#xD;&#xA;Short Form Prescription ID example (for illustration purposes only);&#xD;&#xA;&#xD;&#xA;**83C40E-A23856-00123W**" />
       <comment value="ITK HL7v3 Mapping = The groupIdentifier is equivalent to ParentPrescription.id (prescription-order-number). The extension is used to carry the ParentPrescription.id (UUID)." />
       <min value="1" />
       <mustSupport value="true" />
@@ -481,6 +494,7 @@
       <path value="MedicationRequest.groupIdentifier.extension" />
       <sliceName value="PrescriptionOrderUUID" />
       <short value="UUID order number for grouped MedciationRequests" />
+      <definition value="When UUIDs are used within HL7 messages they must be represented in an upper case human-readable hexadecimal format where hyphen separators are used as per the example below and as defined by the ‘datatype’ schema within the DMS.&#xD;&#xA;&#xD;&#xA;UUID example (for illustration purposes only);&#xD;&#xA;&#xD;&#xA;**34026084-A445-84AD-2D01-97D69ED25865**" />
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -530,11 +544,13 @@
     </element>
     <element id="MedicationRequest.note">
       <path value="MedicationRequest.note" />
-      <definition value="Clinical information relating to a prescribed medication item that cannot be conveyed within dosage instructions is populated within `note` field. \n Examples of dispensing notes are: \n\n - To explain changes in dosage, for example, “Dosage has been increased on advice of the hospital”. \n - 'Tell patient to stop their statin whilst on this anitbiotic' \n - 'hospital consultant has confirmed dual treatment' \n\n\n One scenario where `note` must be populated is when the current prescribed medication item is the last authorised repeat of that medication within a repeat prescribing cycle. Appropriate text, such as 'Last authorised repeat' must be included within the `note` to inform the dispenser and to allow the dispenser to communicate to the patient or patient representative. Note that for repeat dispensing, the ‘numberOfRepeatPrescriptionsIssued’ element also conveys this information." />
+      <short value="Dispensing Note" />
+      <definition value="Clinical information relating to a prescribed medication item that cannot be conveyed within dosage instructions is populated within `note` field.&#xD;&#xA;&#xD;&#xA;Examples of dispensing notes are:&#xD;&#xA;&#xD;&#xA;- To explain changes in dosage, for example, “Dosage has been increased on advice of the hospital”.&#xD;&#xA;- &quot;Tell patient to stop their statin whilst on this anitbiotic&quot;&#xD;&#xA;- &quot;hospital consultant has confirmed dual treatment&quot;&#xD;&#xA;&#xD;&#xA;One scenario where `note` must be populated is when the current prescribed medication item is the last authorised repeat of that medication within a repeat prescribing cycle. Appropriate text, such as “Last authorised repeat” must be included within the `note` to inform the dispenser and to allow the dispenser to communicate to the patient or patient representative. Note that for repeat dispensing, the ‘numberOfRepeatPrescriptionsIssued’ element also conveys this information." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
+      <definition value="The content of the `dosageInstruction` should follow guidance in [Dosage Structure Overview](https://developer.nhs.uk/apis/dose-syntax-implementation/dosage-overview.html). (Note this is based on CareConnect STU3 but the guidance is still valid in UKCore R4)&#xD;&#xA;&#xD;&#xA;`dosageInstruction.text` **MUST** be supplied and is a human readable version of the structured dose as would be printed on a paper prescription. The prescriber is required to enter a medication item dosage. The use of a generic default value, for example “Use as directed”, if a value is not entered, is not acceptable from a clinical perspective.&#xD;&#xA;&#xD;&#xA;The prescriber is required to enter a medication item dosage. The use of a generic default value, for example “Use as directed”, if a value is not entered, is not acceptable from a clinical perspective. The user must be asked to select a dosage instruction from a pick list, type by hand or have the system populate with a valid and clinically safe dosage instruction relevant to the prescribed medication or clinical circumstances.&#xD;&#xA;&#xD;&#xA;As per BNF guidelines, the dosage must be presented to the user without abbreviation although it may be entered and stored within the PMR in an abbreviated form. Within HL7 messaging, the dosage instruction must be represented without abbreviation." />
       <min value="1" />
       <mustSupport value="true" />
     </element>
@@ -542,6 +558,10 @@
       <path value="MedicationRequest.dosageInstruction.text" />
       <comment value="ITK Mapping = pertinentInformation2.pertinentLineItem.pertinentInformation2.pertinentDosageInstructions.value" />
       <min value="1" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.patientInstruction">
+      <path value="MedicationRequest.dosageInstruction.patientInstruction" />
+      <definition value="These sections **MUST** be used only be used to pass notes regarding the prescription to the pharmacist or patient. Lists of repeat medications and general practice notifications to the patient **SHOULD** be recorded in [NHSDigital-CommunicationRequest](https://simplifier.net/guide/nhsdigital/NHSDigital-CommunicationRequest) resource.&#xD;&#xA;&#xD;&#xA;Patient instructions for taking the drug are contained with in the `patientInstruction` and `additionalInstruction` as per the guidance in [Dosage Structure Overview](https://developer.nhs.uk/apis/dose-syntax-implementation/dosage-overview.html)" />
     </element>
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest" />
@@ -576,6 +596,7 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod">
       <path value="MedicationRequest.dispenseRequest.validityPeriod" />
+      <definition value="The `validityPeriod` attribute defines the validity period for the prescription authorisation. This period must start (the `validityPeriod.start`) at the date of prescribing and cannot exceed 12 months (the `validityPeriod.end`). Typically, most repeatable prescriptions will be authorised for a validity period of either 6 or 12 months." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
@@ -584,7 +605,7 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
       <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
-      <definition value="The number of repeat issues authorised if specified. \n **MUST** be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. \n **MUST** NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. \n\n For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this **MUST** be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication." />
+      <definition value="The number of repeat issues authorised if specified. &lt;br&gt; &lt;b&gt;MUST&lt;/b&gt; be present where a `continuous` or `continuous-repeat-dispensing` is authorised for a defined number of issues. &lt;br&gt; &lt;b&gt;MUST&lt;/b&gt; NOT be specified where the number of repeat issues has not been defined. Therefore, the numberOfRepeats allowed is the total number of allowed issues. See also &lt;a href=&quot;#repeatInformation&quot;&gt;extension repeatInformation&lt;/a&gt;&#xD;&#xA;&#xD;&#xA;For `continuous` orders and `continuous-repeat-dispensing` with intent=`reflex-order` (i.e., orders sent from EPS to pharmacists) this &lt;b&gt;MUST&lt;/b&gt; be zero. The `numberOfRepeatsAllowed` in the extension to `basedOn` can be used to convey this information to inform patients that they need to re-order the medication." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.quantity">
@@ -606,6 +627,8 @@
     </element>
     <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
       <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration" />
+      <short value="Days Supply" />
+      <definition value="The `expectedSupplyDuration` entity is required for repeat dispensing (repeatable) prescriptions only.&#xD;&#xA;&#xD;&#xA;The `expectedSupplyDuration` element defines the expected duration, in days, of each issue of the prescription. A default value of 28 can be used which must be amendable by the prescriber when required. The value must be an integer value greater than zero. A sensible upper limit validation should be included within the System. If this value is omitted, the Spine will assume a value of 28." />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.value">
@@ -662,7 +685,7 @@
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
-      <definition value="Indicates whether or not substitution can or should be part of the dispense. In some cases, substitution must happen, in other cases substitution must not happen. This block explains the prescriber's intent. If nothing is specified substitution may be done. In most cases this should default to false." />
+      <definition value="Within UK healthcare, substitution is not the norm and so this element will normally be set to a default of `false`.&#xD;&#xA;&#xD;&#xA;Substitution being set to false is a mandatory requirement for EPS.." />
       <comment value="Substituition is a mandatory requirement for EPS." />
       <mustSupport value="true" />
     </element>
