@@ -88,7 +88,7 @@
     </element>
     <element id="MedicationDispense.status">
       <path value="MedicationDispense.status" />
-      <definition value="The status of the individual medication item, this will normally indicate whether the medication has been picked up or not. &#xD;&#xA;&#xD;&#xA;| Code | Display | Definition |&#xD;&#xA;|--|--|&#xD;&#xA;| completed | Completed | The dispensed product has been picked up. |&#xD;&#xA;| in-progress | In Progress | The dispensed product is ready for pickup. |" />
+      <definition value="The status of the individual medication item, this will normally indicate whether the medication has been picked up or not. &#xD;&#xA;&#xD;&#xA;| Code | Display | Definition |&#xD;&#xA;|--|--|--|&#xD;&#xA;| completed | Completed | The dispensed product has been picked up. |&#xD;&#xA;| in-progress | In Progress | The dispensed product is ready for pickup. |" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.statusReason[x]">
