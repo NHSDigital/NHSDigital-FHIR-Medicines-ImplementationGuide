@@ -84,7 +84,6 @@
     </element>
     <element id="Task.statusReason.coding">
       <path value="Task.statusReason.coding" />
-       <min value="1" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -92,6 +91,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Task.statusReason.coding:withdrawReason">
       <path value="Task.statusReason.coding" />
@@ -187,6 +187,14 @@
     <element id="Task.authoredOn">
       <path value="Task.authoredOn" />
       <min value="1" />
+    </element>
+    <element id="Task.requester">
+      <path value="Task.requester" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+        <aggregation value="contained" />
+      </type>
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
