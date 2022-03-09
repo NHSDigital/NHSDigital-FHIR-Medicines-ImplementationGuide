@@ -189,10 +189,15 @@
     </element>
     <element id="Task.requester">
       <path value="Task.requester" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalAndTelecom" />
       </type>
+    </element>
+    <element id="Task.requester.reference">
+      <path value="Task.requester.reference" />
+      <min value="1" />
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
