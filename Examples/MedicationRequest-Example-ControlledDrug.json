@@ -53,7 +53,8 @@
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gmc-number",
                     "value": "C1234567"
-                }
+                },
+                "display": "DR RAZIA ALI"
             },
             "organization": {
                 "identifier": {
@@ -62,11 +63,6 @@
                 },
                 "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
             },
-            "location": [
-                {
-                    "reference": "#address"
-                }
-            ],
             "telecom": [
                 {
                     "system": "phone",
@@ -74,21 +70,6 @@
                     "use": "work"
                 }
             ]
-        },
-        {
-            "resourceType": "Location",
-            "id": "address",
-            "status": "active",
-            "mode": "instance",
-            "address": {
-                "use": "work",
-                "line": [
-                    "MUSGROVE PARK HOSPITAL"
-                ],
-                "city": "TAUNTON",
-                "postalCode": "TA1 5DA",
-                "country": "NLD"
-            }
         }
     ],
     "extension": [
@@ -209,12 +190,7 @@
     },
     "authoredOn": "2019-12-30T12:00:00+00:00",
     "requester": {
-        "reference": "#requester",
-        "identifier": {
-            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "C1234567"
-        },
-        "display": "DR RAZIA ALI"
+        "reference": "#requester"
     },
     "basedOn": [
         {

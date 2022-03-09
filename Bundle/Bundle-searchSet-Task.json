@@ -33,6 +33,33 @@
             ]
           }
         ],
+        "contained": [
+          {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+              "identifier": {
+                "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+                "value": "G8123456"
+              },
+              "display": "DR AA BHATIA"
+            },
+            "organization": {
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "C81007"
+              },
+              "display": "VERNON STREET MEDICAL CTR"
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "use": "work",
+                "value": "01234567890"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "system": "https://tools.ietf.org/html/rfc4122",
@@ -72,13 +99,8 @@
             "value": "9912003489"
           }
         },
-        "authoredOn": "2016-07-11T11:07:21+00:00",
         "requester": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "C81007"
-          },
-          "display": "VERNON STREET MEDICAL CTR"
+          "reference": "#requester"
         },
         "owner": {
           "identifier": {
@@ -96,6 +118,7 @@
             }
           ]
         },
+        "authoredOn": "2016-07-11T11:07:21+00:00",
         "input": [
           {
             "type": {
