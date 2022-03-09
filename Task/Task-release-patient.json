@@ -1,0 +1,83 @@
+{
+    "resourceType": "Task",
+    "id": "702cc4e9-81fc-470e-8ae1-43120ae5c16d",
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                    "value": "7654321"
+                },
+                "display": "The pharmacist"
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "VNE51"
+                },
+                "display": "The Pharmacy"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "702cc4e9-81fc-470e-8ae1-43120ae5c16d"
+        }
+    ],
+    "status": "accepted",
+    "intent": "order",
+    "groupIdentifier": {
+        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+        "value": "82D996-C81010-11DB12"
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+            "value": "82D996-C81010-11DB12"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9446368138"
+        }
+    },
+    "authoredOn": "2016-03-10T22:39:32-04:00",
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "VNE51"
+        }
+    },
+    "requester": {
+        "reference": "#requester"
+    },
+    "reasonCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33633005",
+                "display": "Prescription of drug"
+            }
+        ]
+    }
+}

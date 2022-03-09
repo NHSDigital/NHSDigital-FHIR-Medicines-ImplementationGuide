@@ -1,0 +1,231 @@
+{
+    "resourceType": "Task",
+    "id": "1828584c-55cb-4888-9529-c85499888188",
+    "meta": {
+        "lastUpdated": "2018-04-22T09:57:03+00:00"
+    },
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation",
+            "extension": [
+                {
+                    "url": "numberOfRepeatsAllowed",
+                    "valueUnsignedInt": 6
+                },
+                {
+                    "url": "numberOfRepeatsIssued",
+                    "valueUnsignedInt": 2
+                }
+            ]
+        },
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-Prescription",
+            "extension": [
+                {
+                    "url": "courseOfTherapyType",
+                    "valueCoding": {
+                        "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                        "code": "acute",
+                        "display": "Acute"
+                    }
+                }
+            ]
+        }
+    ],
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+                    "value": "G8133438"
+                }
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "M12345"
+                },
+                "display": "EveryDay Surgery"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "1828584c-55cb-4888-9529-c85499888188"
+        }
+    ],
+    "status": "completed",
+    "businessStatus": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                "code": "0002",
+                "display": "Dispensed"
+            }
+        ]
+    },
+    "intent": "order",
+    "code": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+            "value": "2D35F7-ZA0448-11E88Z"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9912003489"
+        }
+    },
+    "requester": {
+        "reference": "#requester"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FB444"
+        },
+        "display": "Freds Pharmacy"
+    },
+    "reasonCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33633005",
+                "display": "Prescription of drug"
+            }
+        ]
+    },
+    "authoredOn": "2016-07-11T11:07:21+00:00",
+    "input": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation",
+                    "extension": [
+                        {
+                            "url": "dispenseStatus",
+                            "valueCoding": {
+                                "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                "code": "0001",
+                                "display": "Item fully dispensed"
+                            }
+                        },
+                        {
+                            "url": "dateLastDispensed",
+                            "valueDateTime": "2018-04-22T09:57:03+00:00"
+                        }
+                    ]
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/30b7e9cf-6f42-40a8-84c1-e61ef638eee2",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                    "value": "30b7e9cf-6f42-40a8-84c1-e61ef638eee2"
+                },
+                "display": "Perindopril erbumine 2mg tablets"
+            }
+        },
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingInformation",
+                    "extension": [
+                        {
+                            "url": "dispenseStatus",
+                            "valueCoding": {
+                                "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
+                                "code": "0001",
+                                "display": "Item fully dispensed"
+                            }
+                        },
+                        {
+                            "url": "dateLastDispensed",
+                            "valueDateTime": "2018-04-22T09:57:03+00:00"
+                        }
+                    ]
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "valueReference": {
+                "reference": "https://prescriptions.spineservices.nhs.uk/FHIR/R4/MedicationRequest/636f1b57-e18c-4f45-acae-2d7db86b6e1e",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                    "value": "636f1b57-e18c-4f45-acae-2d7db86b6e1e"
+                },
+                "display": "Metformin 500mg modified-release tablets"
+            }
+        }
+    ],
+    "output": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-DispensingReleaseInformation",
+                    "extension": [
+                        {
+                            "url": "dateLastIssuedDispensed",
+                            "valueDateTime": "2018-04-22T09:57:03+00:00"
+                        },
+                        {
+                            "url": "dateDownloaded",
+                            "valueDateTime": "2018-04-22T09:57:03+00:00"
+                        }
+                    ]
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "373784005",
+                        "display": "Dispensing medication"
+                    }
+                ]
+            },
+            "valueReference": {
+                "identifier": {
+                    "system": "https://tools.ietf.org/html/rfc4122",
+                    "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+                }
+            }
+        }
+    ]
+}

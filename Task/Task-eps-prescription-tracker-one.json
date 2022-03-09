@@ -1,0 +1,157 @@
+{
+    "resourceType": "Task",
+    "id": "bd1ca5c4-ff49-4f2a-9db4-f5dda0112084",
+    "meta": {
+        "lastUpdated": "2016-07-11T11:07:22+00:00"
+    },
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-Prescription",
+            "extension": [
+                {
+                    "url": "courseOfTherapyType",
+                    "valueCoding": {
+                        "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                        "code": "acute",
+                        "display": "Acute"
+                    }
+                }
+            ]
+        }
+    ],
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+                    "value": "G8123456"
+                },
+                "display": "DR AA BHATIA"
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "C81007"
+                },
+                "display": "VERNON STREET MEDICAL CTR"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "bd1ca5c4-ff49-4f2a-9db4-f5dda0112084"
+        }
+    ],
+    "status": "in-progress",
+    "businessStatus": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
+                "code": "0002",
+                "display": "With Dispenser"
+            }
+        ]
+    },
+    "intent": "order",
+    "code": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "type": "Task",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+            "value": "A3B4D9-Z42475-11E6B+"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9912003489"
+        }
+    },
+    "requester": {
+        "reference": "#requester"
+    },
+    "owner": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "FA666"
+        },
+        "display": "CROYDON PHARMACY"
+    },
+    "reasonCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33633005",
+                "display": "Prescription of drug"
+            }
+        ]
+    },
+    "authoredOn": "2016-07-11T11:07:21+00:00",
+    "input": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "valueReference": {
+                "identifier": {
+                    "system": "https://tools.ietf.org/html/rfc4122",
+                    "value": "ee86a018-779c-4809-999f-a9d89cdfd30f"
+                }
+            }
+        }
+    ],
+    "output": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/StructureDefinition/ExtensionRepeatDispensingInformation",
+                    "extension": [
+                        {
+                            "url": "dateLastDispensed",
+                            "valueDateTime": "2014-05-07"
+                        }
+                    ]
+                }
+            ],
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "373784005",
+                        "display": "Dispensing medication"
+                    }
+                ]
+            },
+            "valueReference": {
+                "identifier": {
+                    "system": "https://tools.ietf.org/html/rfc4122",
+                    "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "resourceType": "Task",
+    "id": "ee1b55f8-113c-4725-99a3-25fbad366dd6",
+    "extension":  [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+            "valueReference": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                    "value": "7654321"
+                }
+            }
+        }
+    ],
+    "contained":  [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                    "value": "7654321"
+                }
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "VNE51"
+                }
+            },
+            "telecom": [
+                {
+                  "system": "phone",
+                  "use": "work",
+                  "value": "01234567890"
+                }
+              ]
+        }
+    ],
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ADD2E9DD-DA0A-C266-A4E3-447C68239525"
+        }
+    ],
+    "status": "rejected",
+    "statusReason": {
+        "coding":  [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason",
+                "code": "0002",
+                "display": "Unable to dispense medication on prescriptions"
+            }
+        ]
+    },
+    "intent": "order",
+    "groupIdentifier": {
+        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+        "value": "83C40E-A23856-00123C"
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+            "value": "83C40E-A23856-00123C"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9446368138"
+        }
+    },
+    "authoredOn": "2016-03-10T22:39:32-04:00",
+    "requester": {
+        "reference": "#requester"
+    },
+    "reasonCode": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33633005",
+                "display": "Prescription of drug"
+            }
+        ]
+    },
+    "input":  [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "valueReference": {
+                "type": "MedicationRequest",
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
+                    "value": "1e34ee53-397a-2e70-e97c-67b1bd95014d"
+                }
+            }
+        }
+    ]
+}
