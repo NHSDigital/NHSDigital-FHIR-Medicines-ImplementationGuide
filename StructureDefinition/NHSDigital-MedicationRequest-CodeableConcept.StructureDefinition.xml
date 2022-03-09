@@ -5,21 +5,6 @@
   <name value="NHSDigitalMedicationRequestCodeableConcept" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="orim" />
-    <uri value="http://hl7.org/orim" />
-    <name value="Ontological RIM Mapping" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="CodeableConcept" />
