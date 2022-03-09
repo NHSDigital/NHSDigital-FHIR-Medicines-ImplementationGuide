@@ -170,7 +170,6 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Bundle-FHIRMessage" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Task.focus.identifier">
       <path value="Task.focus.identifier" />
@@ -192,8 +191,7 @@
       <path value="Task.requester" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <aggregation value="contained" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalAndTelecom" />
       </type>
     </element>
     <element id="Task.owner">

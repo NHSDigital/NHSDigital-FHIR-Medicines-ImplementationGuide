@@ -214,7 +214,7 @@
       <path value="MedicationDispense.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalAndTelecom" />
         <aggregation value="contained" />
       </type>
       <constraint>

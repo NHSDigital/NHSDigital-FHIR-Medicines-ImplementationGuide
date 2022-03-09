@@ -137,8 +137,8 @@
       <path value="Claim.provider" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization" />
-        <aggregation value="referenced" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalAndTelecom" />
+        <aggregation value="contained" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -588,7 +588,7 @@
         <code value="Extension" />
         <profile value="https://fhir.nhs.uk/StructureDefinition/Extension-ClaimMedicationDispenseReference" />
       </type>
-    </element>  
+    </element>
     <element id="Claim.item.detail.subDetail.extension:repeatInformation">
       <path value="Claim.item.detail.subDetail.extension" />
       <sliceName value="repeatInformation" />
