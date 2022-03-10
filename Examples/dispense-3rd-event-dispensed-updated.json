@@ -77,6 +77,32 @@
                 "resourceType": "MedicationDispense",
                 "contained": [
                     {
+                        "resourceType": "PractitionerRole",
+                        "id": "performer",
+                        "practitioner": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                                "value": "7654321"
+                            },
+                            "display": "Mr Peter Potion"
+                        },
+                        "organization": {
+                            "type": "Organization",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "VNE51"
+                            },
+                            "display": "The Simple Pharmacy"
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "work",
+                                "value": "0532567890"
+                            }
+                        ]
+                    },
+                    {
                         "resourceType": "MedicationRequest",
                         "id" : "m1",
                         "identifier": [
@@ -168,22 +194,7 @@
                 "performer": [
                     {
                         "actor": {
-                            "type": "Practitioner",
-                            "identifier": {
-                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                                "value": "4321765"
-                            },
-                            "display": "Miss Wanda Maximoff"
-                        }
-                    },
-                    {
-                        "actor": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "#performer"
                         }
                     }
                 ],
@@ -242,6 +253,32 @@
             "resource": {
                 "resourceType": "MedicationDispense",
                 "contained": [
+                    {
+                        "resourceType": "PractitionerRole",
+                        "id": "performer",
+                        "practitioner": {
+                            "identifier": {
+                                "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                                "value": "7654321"
+                            },
+                            "display": "Mr Peter Potion"
+                        },
+                        "organization": {
+                            "type": "Organization",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "VNE51"
+                            },
+                            "display": "The Simple Pharmacy"
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "work",
+                                "value": "0532567890"
+                            }
+                        ]
+                    },
                     {
                         "resourceType": "MedicationRequest",
                         "id": "m2",
@@ -320,6 +357,13 @@
                         }
                     ]
                 },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "#performer"
+                        }
+                    }
+                ],
                 "subject": {
                     "type": "Patient",
                     "identifier": {
