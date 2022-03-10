@@ -57,6 +57,23 @@
           {
             "resourceType": "PractitionerRole",
             "id": "requester",
+            "contained": [
+              {
+                "resourceType": "Location",
+                "id": "address",
+                "status": "active",
+                "mode": "instance",
+                "address": {
+                  "use": "work",
+                  "line": [
+                    "MUSGROVE PARK HOSPITAL"
+                  ],
+                  "city": "TAUNTON",
+                  "postalCode": "TA1 5DA",
+                  "country": "NLD"
+                }
+              }
+            ],
             "identifier": [
               {
                 "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
@@ -88,21 +105,6 @@
                 "use": "work"
               }
             ]
-          },
-          {
-            "resourceType": "Location",
-            "id": "address",
-            "status": "active",
-            "mode": "instance",
-            "address": {
-              "use": "work",
-              "line": [
-                "MUSGROVE PARK HOSPITAL"
-              ],
-              "city": "TAUNTON",
-              "postalCode": "TA1 5DA",
-              "country": "NLD"
-            }
           }
         ],
         "extension": [
