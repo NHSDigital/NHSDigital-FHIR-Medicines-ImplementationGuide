@@ -21,13 +21,15 @@
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/sds-user-id",
                     "value": "2238910010"
-                }
+                },
+                "display": "Dr Liz Scott"
             },
             "organization": {
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "RBA"
-                }
+                },
+                "display": "The Pharmacy"
             },
             "telecom": [
                 {

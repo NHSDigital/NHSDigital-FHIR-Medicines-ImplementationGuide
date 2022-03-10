@@ -57,23 +57,6 @@
           {
             "resourceType": "PractitionerRole",
             "id": "requester",
-            "contained": [
-              {
-                "resourceType": "Location",
-                "id": "address",
-                "status": "active",
-                "mode": "instance",
-                "address": {
-                  "use": "work",
-                  "line": [
-                    "MUSGROVE PARK HOSPITAL"
-                  ],
-                  "city": "TAUNTON",
-                  "postalCode": "TA1 5DA",
-                  "country": "NLD"
-                }
-              }
-            ],
             "identifier": [
               {
                 "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
@@ -84,7 +67,8 @@
               "identifier": {
                 "system": "https://fhir.hl7.org.uk/Id/gmc-number",
                 "value": "C1234567"
-              }
+              },
+              "display": "Dr Liz Scott"
             },
             "organization": {
               "identifier": {
@@ -93,11 +77,6 @@
               },
               "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
             },
-            "location": [
-              {
-                "reference": "#address"
-              }
-            ],
             "telecom": [
               {
                 "system": "phone",
