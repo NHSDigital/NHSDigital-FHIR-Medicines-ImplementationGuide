@@ -13,6 +13,33 @@
       }
     }
   ],
+  "contained": [
+    {
+      "resourceType": "PractitionerRole",
+      "id": "provider",
+      "practitioner": {
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+          "value": "7654321"
+        },
+        "display": "Mr Peter Potion"
+      },
+      "organization": {
+        "identifier": {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "VNFKT"
+        },
+        "display": "FIVE STAR HOMECARE LEEDS LTD"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "use": "work",
+          "value": "01234567890"
+        }
+      ]
+    }
+  ],
   "created": "2021-11-24T09:54:07.246Z",
   "identifier": [
     {
@@ -38,11 +65,7 @@
     }
   },
   "provider": {
-    "identifier": {
-      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-      "value": "VNFKT"
-    },
-    "display": "FIVE STAR HOMECARE LEEDS LTD"
+    "reference" : "#provider"
   },
   "priority": {
     "coding": [
@@ -191,26 +214,25 @@
             }
           ],
           "programCode": [
-    
-              {
-                "coding": [
-                  {
-                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                    "code": "not-paid",
-                    "display": "Not Paid"
-                  }
-                ]
-              },
-              {
-                "coding": [
-                  {
-                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                    "code": "NDEC",
-                    "display": "No Dispenser Endorsement Code"
-                  }
-                ]
-              }
-            ],
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                  "code": "not-paid",
+                  "display": "Not Paid"
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                  "code": "NDEC",
+                  "display": "No Dispenser Endorsement Code"
+                }
+              ]
+            }
+          ],
           "quantity": {
             "value": 100,
             "unit": "tablet",
@@ -235,7 +257,6 @@
                 "system": "http://snomed.info/sct",
                 "code": "428673006"
               }
-              
             }
           ]
         },

@@ -1,22 +1,43 @@
 {
     "resourceType": "Claim",
     "id": "e8e75676-9d30-45f8-8b09-696818e7f4ca",
-    "extension": [
+    "contained": [
         {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
-            "valueReference": {
-                "identifier": {
+            "resourceType": "PractitionerRole",
+            "id": "provider",
+            "identifier": [
+                {
                     "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                     "value": "884562163557"
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+                    "value": "7321654"
                 },
                 "display": "dummy full name"
-            }
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "FM096a"
+                },
+                "display": "34-36 LOUTH ROAD"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
         }
     ],
     "identifier": [
         {
             "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "2ED97439-1078-E46F-E040-007F01001C14"
+            "value": "737dcf8d-fc7a-436d-b692-7d3c4f258083"
         }
     ],
     "status": "active",
@@ -38,11 +59,7 @@
     },
     "created": "2011-10-25T13:45:35+00:00",
     "provider": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "FM096a"
-        },
-        "display": "34-36 LOUTH ROAD"
+        "reference" : "#provider"
     },
     "priority": {
         "coding": [
@@ -187,35 +204,35 @@
                         "system": "http://snomed.info/sct",
                         "code": "3319611000001107"
                     },
-                            "programCode": [
+                    "programCode": [
+                        {
+                            "coding": [
                                 {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
-                                            "code": "not-paid",
-                                            "display": "Not Paid"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                            "code": "NDEC",
-                                            "display": "No Dispenser Endorsement Code"
-                                        }
-                                    ]
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
                                 }
-                            ],
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/DM-prescription-charge",
+                                    "code": "not-paid",
+                                    "display": "Not Paid"
+                                }
+                            ]
+                        },
+                        {
+                            "coding": [
+                                {
+                                    "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
+                                    "code": "NDEC",
+                                    "display": "No Dispenser Endorsement Code"
+                                }
+                            ]
+                        }
+                    ],
                     "subDetail": [
                         {
                             "sequence": 1,
