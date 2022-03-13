@@ -352,6 +352,37 @@
                                                     "valueReference": {
                                                         "reference": "Parameters/45a3cbe4-7688-418b-91d3-8f6d5ca94905"
                                                     }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Patient Pharmacy Release Request"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "`group-identifier` **MUST** be present. This is also known as the prescription token."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Parameters/ee778f88-e1aa-49b0-8cbc-77d54c65ef9e"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Nominated Pharmacy Release Request"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "`group-identifier` **MUST NOT** be present. "
                                                 }
                                             ]
                                         },
