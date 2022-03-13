@@ -55,7 +55,7 @@
         <max value="1"></max>
         <documentation value="The professional submitting the release request"></documentation>
         <type value="PractitionerRole"></type>
-        <profle value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalPlusTelecom"/>
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalPlusTelecom"/>
     </parameter>
     <parameter>
         <name value="return"></name>
