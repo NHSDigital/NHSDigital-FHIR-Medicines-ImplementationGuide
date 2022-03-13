@@ -49,12 +49,13 @@
         <type value="code"></type>
     </parameter>
     <parameter>
-        <name value="agent"></name>
+        <name value="requester"></name>
         <use value="in"></use>
         <min value="1"></min>
         <max value="1"></max>
         <documentation value="The professional submitting the release request"></documentation>
         <type value="PractitionerRole"></type>
+        <profle value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalPlusTelecom"/>
     </parameter>
     <parameter>
         <name value="return"></name>

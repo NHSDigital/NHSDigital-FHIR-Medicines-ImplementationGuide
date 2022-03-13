@@ -3,6 +3,13 @@
     "id" : "45a3cbe4-7688-418b-91d3-8f6d5ca94905",
     "parameter": [
         {
+            "name": "owner",
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "RHM"
+            }
+        },
+        {
             "name": "group-identifier",
             "valueIdentifier": {
                 "system": "https://fhir.nhs.uk/Id/prescription-order-number",
@@ -14,7 +21,7 @@
             "valueCode": "accepted"
         },
         {
-            "name": "agent",
+            "name": "requester",
             "resource": {
                 "resourceType": "PractitionerRole",
                 "id": "16708936-6397-4e03-b84f-4aaa790633e0",
