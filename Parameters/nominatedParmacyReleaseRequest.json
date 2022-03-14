@@ -14,7 +14,7 @@
             "valueCode": "accepted"
         },
         {
-            "name": "requester",
+            "name": "agent",
             "resource": {
                 "resourceType": "PractitionerRole",
                 "id": "16708936-6397-4e03-b84f-4aaa790633e0",

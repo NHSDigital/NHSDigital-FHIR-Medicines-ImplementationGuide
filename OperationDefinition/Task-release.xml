@@ -50,7 +50,7 @@
         <type value="code"></type>
     </parameter>
     <parameter>
-        <name value="requester"></name>
+        <name value="agent"></name>
         <use value="in"></use>
         <min value="1"></min>
         <max value="1"></max>
