@@ -193,6 +193,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole-MinimalPlusTelecom" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Task.requester.reference">
