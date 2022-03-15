@@ -97,6 +97,11 @@
     "requester": {
         "reference": "#requester"
     },
+    "note": [
+        {
+            "text": "Prescription cancellation reason - missing in nextgen"
+        }
+    ],
     "reasonCode": {
         "coding": [
             {
