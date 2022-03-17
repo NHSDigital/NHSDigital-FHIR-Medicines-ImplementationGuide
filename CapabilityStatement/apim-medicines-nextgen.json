@@ -165,7 +165,7 @@
                 },
                 {
                     "type": "Task",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-DM-Task",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Task-EPS",
                     "extension":  [
                         {
                             "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination",
