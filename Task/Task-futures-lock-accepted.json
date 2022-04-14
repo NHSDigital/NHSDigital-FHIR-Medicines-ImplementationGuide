@@ -36,10 +36,6 @@
     ],
     "status": "accepted",
     "intent": "order",
-    "groupIdentifier": {
-        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-        "value": "82D996-C81010-11DB12"
-    },
     "code": {
         "coding": [
             {
@@ -50,10 +46,7 @@
         ]
     },
     "focus": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-            "value": "82D996-C81010-11DB12"
-        }
+        "reference": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4"
     },
     "for": {
         "identifier": {
@@ -61,7 +54,7 @@
             "value": "9446368138"
         }
     },
-    "authoredOn": "2016-03-10T22:39:32-04:00",
+    "authoredOn": "2022-04-14T20:39:32-04:00",
     "owner": {
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -70,14 +63,5 @@
     },
     "requester": {
         "reference": "#requester"
-    },
-    "reasonCode": {
-        "coding": [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "33633005",
-                "display": "Prescription of drug"
-            }
-        ]
     }
 }

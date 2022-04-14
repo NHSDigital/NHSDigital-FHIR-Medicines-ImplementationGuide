@@ -1,18 +1,6 @@
 {
     "resourceType": "Task",
     "id": "1291fcca-902b-48f3-9d07-1be9ea30d7a0",
-    "extension": [
-        {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
-            "valueReference": {
-                "identifier": {
-                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                    "value": "223891001086"
-                },
-                "display": "Dr Liz Scott"
-            }
-        }
-    ],
     "contained": [
         {
             "resourceType": "PractitionerRole",
@@ -29,7 +17,7 @@
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "RBA"
                 },
-                "display": "The Pharmacy"
+                "display": "The Acute Trust"
             },
             "telecom": [
                 {
@@ -57,19 +45,6 @@
         ]
     },
     "intent": "order",
-    "groupIdentifier": {
-        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-        "value": "3C2366-B81001-0A409U"
-    },
-    "partOf": [
-        {
-            "type": "Task",
-            "identifier": {
-                "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                "value": "3C2366-B81001-0A409U"
-            }
-        }
-    ],
     "code": {
         "coding": [
             {
@@ -80,11 +55,7 @@
         ]
     },
     "focus": {
-        "type": "MedicationRequest",
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-            "value": "ee86a018-779c-4809-999f-a9d89cdfd30f"
-        }
+        "reference": "MedicationRequest/ee86a018-779c-4809-999f-a9d89cdfd30f"
     },
     "for": {
         "identifier": {
@@ -101,14 +72,5 @@
         {
             "text": "Prescription cancellation reason - missing in nextgen"
         }
-    ],
-    "reasonCode": {
-        "coding": [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "33633005",
-                "display": "Prescription of drug"
-            }
-        ]
-    }
+    ]
 }

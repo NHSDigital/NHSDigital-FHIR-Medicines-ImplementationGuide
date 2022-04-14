@@ -180,6 +180,175 @@
                             "documentation": "Replaces part of the functionality in cancel prescription"
                         }
                     ],
+                    "operation":  [
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/702cc4e9-81fc-470e-8ae1-43120ae5c16d"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser accepts a MedicationRequest assigned to them or takes ownership and accepts a MedicationRequest"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status is set to accepted and the owner field must be populated."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "OperationOutcome/option2"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": "lock",
+                            "definition": "https://fhir.nhs.uk/OperationDefinition/MedicationRequest-lock"
+                        },
+                        {
+                            "extension":  [
+                                {
+                                    "url": "https://fhir.nhs.uk/StructureDefinition/Extension-NHSDigital-CapabilityStatement-Examples",
+                                    "extension":  [
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/af8a007d-0a7c-4124-a713-55280eaaf5bb"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser completes fullfilment of order"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to completed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/148fd3a7-79e1-4bee-b769-cc6ada05391d"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser rejects MedicationRequest assigned to them"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to rejected and a statusReason is given (e.g. unable to dispense medications)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/04908e21-1c70-4cc8-ac7b-1e611eddae1e"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser fails MedicationRequest assigned or previously accepted by them"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to rejected and a reason is given (e.g. invalid digital signature)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": true
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "Task/1291fcca-902b-48f3-9d07-1be9ea30d7a0"
+                                                    }
+                                                },
+                                                {
+                                                    "url": "summary",
+                                                    "valueMarkdown": "Dispenser or other practitioner cancels the MedicationRequest"
+                                                },
+                                                {
+                                                    "url": "description",
+                                                    "valueMarkdown": "Task.status set to cancelled or entered-in-error."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "url": "example",
+                                            "extension": [
+                                                {
+                                                    "url": "request",
+                                                    "valueBoolean": false
+                                                },
+                                                {
+                                                    "url": "value",
+                                                    "valueReference": {
+                                                        "reference": "OperationOutcome/option2"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "name": "unlock",
+                            "definition": "https://fhir.nhs.uk/OperationDefinition/MedicationRequest-unlock"
+                        }
+                    ],
                     "searchParam":  [
                         {
                             "name": "patient:identifier",

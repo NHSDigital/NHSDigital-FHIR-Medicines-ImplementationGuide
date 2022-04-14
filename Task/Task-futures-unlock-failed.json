@@ -1,0 +1,76 @@
+{
+    "resourceType": "Task",
+    "id": "04908e21-1c70-4cc8-ac7b-1e611eddae1e",
+    "contained": [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "2238910010"
+                },
+                "display": "Dr Liz Scott"
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "RBA"
+                },
+                "display": "The Acute Trust"
+            },
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ADD2E9DD-DA0A-C266-A4E3-447C68239525"
+        }
+    ],
+    "status": "failed",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason",
+                "code": "0005",
+                "display": "Invalid digital signature"
+            }
+        ]
+    },
+    "intent": "order",
+    "code": {
+        "coding": [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "abort",
+                "display": "Mark the focal resource as no longer active"
+            }
+        ]
+    },
+    "focus": {
+        "reference": "MedicationRequest/ee86a018-779c-4809-999f-a9d89cdfd30f"
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+        },
+        "display": "MISS ETTA CORY"
+    },
+    "authoredOn": "2019-12-30T12:00:00+00:00",
+    "requester": {
+        "reference": "#requester"
+    },
+    "note": [
+        {
+            "text": "Prescription cancellation reason - missing in nextgen"
+        }
+    ]
+}
