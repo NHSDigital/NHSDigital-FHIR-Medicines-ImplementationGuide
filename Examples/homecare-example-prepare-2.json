@@ -22,27 +22,15 @@
             "receiver": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-              },
-              "display": "The Simple Pharmacy"
+                "value": "X2601"
+              }
             }
           }
         ],
-        "sender": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-        },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
         "focus": [
-          {
-            "type": "Patient",
-            "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-          },
           {
             "type": "MedicationRequest",
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
@@ -291,6 +279,13 @@
           {
             "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
           }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 333444",
+            "use": "work"
+          }
         ]
       }
     },
@@ -353,17 +348,6 @@
             "value": "RBA"
           }
         ],
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/R4/CodeSystem/organisation-role",
-                "code": "RO197",
-                "display": "NHS TRUST"
-              }
-            ]
-          }
-        ],
         "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
         "address": [
           {
@@ -397,9 +381,6 @@
           }
         ],
         "active": true,
-        "providedBy": {
-          "reference" : "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
-        },
         "location": [
           {
             "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962b"
