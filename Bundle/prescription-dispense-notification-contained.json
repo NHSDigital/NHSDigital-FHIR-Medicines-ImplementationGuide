@@ -56,7 +56,12 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "reference": "#organization"
+                            "reference": "#organization",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "FK545"
+                            },
+                            "display": "Crossgates Day & Night Pharmacy"
                         },
                         "telecom": [
                             {
@@ -103,10 +108,6 @@
                                 ]
                             }
                         ],
-                        "meta": {
-                            "lastUpdated": "2022-05-25T19:02:21.637Z",
-                            "versionId": "1"
-                        },
                         "name": "Crossgates Day & Night Pharmacy",
                         "telecom": [
                             {
@@ -284,7 +285,12 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "reference": "#organization"
+                            "reference": "#organization",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                                "value": "FK545"
+                            },
+                            "display": "Crossgates Day & Night Pharmacy"
                         },
                         "telecom": [
                             {
@@ -331,10 +337,6 @@
                                 ]
                             }
                         ],
-                        "meta": {
-                            "lastUpdated": "2022-05-25T19:02:21.637Z",
-                            "versionId": "1"
-                        },
                         "name": "Crossgates Day & Night Pharmacy",
                         "telecom": [
                             {
