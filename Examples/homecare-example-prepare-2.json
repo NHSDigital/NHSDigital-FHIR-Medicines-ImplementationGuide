@@ -13,8 +13,8 @@
         "resourceType": "MessageHeader",
         "eventCoding": {
           "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-          "code": "dispense-notification",
-          "display": "Dispense Notification"
+          "code": "prescription-order",
+          "display": "Prescription Order"
         },
         "destination": [
           {
@@ -32,10 +32,7 @@
         },
         "focus": [
           {
-            "reference": "urn:uuid:4509b70d-d8b8-ea03-1105-64557cb54a29"
-          },
-          {
-            "reference": "urn:uuid:06167339-9337-d030-0366-514a6a46da17"
+            "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
         ]
       }
