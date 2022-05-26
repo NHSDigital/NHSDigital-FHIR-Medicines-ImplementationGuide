@@ -41,7 +41,7 @@
                 },
                 "source": {
                     "name": "NHS Spine",
-                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message"
+                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message"
                 },
                 "response": {
                     "identifier": "ea50b4a2-0110-4aaa-a3f5-65707e713ae9",

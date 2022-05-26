@@ -40,7 +40,7 @@
                     "code": "ok"
                 },
                 "source": {
-                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$post-message"
+                    "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message"
                 },
                 "focus": [
                     {
