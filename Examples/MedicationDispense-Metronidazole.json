@@ -16,6 +16,7 @@
             "resourceType": "PractitionerRole",
             "id": "performer",
             "practitioner": {
+                "reference": "https://directory.spineservices.nhs.uk/FHIR/R4/Practitioner/12344557",
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                     "value": "7654321"
@@ -23,11 +24,12 @@
                 "display": "Mr Peter Potion"
             },
             "organization": {
+                "reference": "https://directory.spineservices.nhs.uk/FHIR/R4/Organization/FK545",
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                    "value": "VNE51"
+                    "value": "FK545"
                 },
-                "display": "The Simple Pharmacy"
+                "display": "Crossgates Day & Night Pharmacy"
             },
             "telecom": [
                 {
