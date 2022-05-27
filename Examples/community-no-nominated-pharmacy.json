@@ -20,8 +20,7 @@
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
             "value": "RBA"
-          },
-          "display": "RAZIA|ALI"
+          }
         },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RBA"
@@ -33,15 +32,11 @@
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                 "value": "X26"
-              },
-              "display": "NHS Digital"
+              }
             }
           }
         ],
         "focus": [
-          {
-            "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
-          },
           {
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
@@ -267,19 +262,16 @@
           }
         ],
         "practitioner": {
-          "identifier": {
-            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "C4428981"
-          },
-          "display": "Dr Thomas Edwards"
+          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
         },
         "organization": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
         },
+        "healthcareService": [
+          {
+            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
+          }
+        ],
         "specialty": [
           {
             "coding": [
@@ -306,16 +298,6 @@
           {
             "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
             "display": "MUSGROVE PARK HOSPITAL"
-          }
-        ],
-        "healthcareService": [
-          {
-            "identifier": {
-              "use": "official",
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "A99968"
-            },
-            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
           }
         ],
         "telecom": [
@@ -349,6 +331,89 @@
           "postalCode": "TA1 5DA",
           "country": "NLD"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C4428981"
+          }
+        ],
+        "name": [
+          {
+            "family": "EDWARDS",
+            "given": [
+              "Thomas"
+            ],
+            "prefix": [
+              "DR"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          }
+        ],
+        "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
+        "address": [
+          {
+            "line": [
+              "MUSGROVE PARK HOSPITAL",
+              "PARKFIELD DRIVE",
+              "TAUNTON"
+            ],
+            "postalCode": "TA1 5DA"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823333444",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "54b0506d-49af-4245-9d40-d7d64902055e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "A99968"
+          }
+        ],
+        "active": true,
+        "location": [
+          {
+            "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962b"
+          }
+        ],
+        "name": "SOMERSET BOWEL CANCER SCREENING CENTRE",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 333444",
+            "use": "work"
+          }
+        ]
       }
     }
   ]
