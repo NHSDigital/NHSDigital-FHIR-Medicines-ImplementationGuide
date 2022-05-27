@@ -359,7 +359,7 @@
           }
         ],
         "practitioner": {
-          "fullUrl": "urn:uuid:b751b904-cad9-4beb-a559-9c8ea1028d1b"
+          "reference": "urn:uuid:b751b904-cad9-4beb-a559-9c8ea1028d1b"
         },
         "organization": {
           "reference": "urn:uuid:5520ad34-5eb0-4042-bc4c-7255b76f08d7"
