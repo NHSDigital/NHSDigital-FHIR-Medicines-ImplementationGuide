@@ -38,22 +38,6 @@
               "code" : "prescription-order",
               "display" : "Prescription Order"
             },
-            "destination" : [ {
-              "endpoint" : "urn:nhs-uk:addressing:ods:FH542",
-              "receiver" : {
-                "identifier" : {
-                  "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "value" : "FH542"
-                }
-              }
-            } ],
-            "sender" : {
-              "identifier" : {
-                "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value" : "X2601"
-              },
-              "display" : "NHS Digital Spine"
-            },
             "source" : {
               "name" : "NHS Spine",
               "endpoint" : "https://int.api.service.nhs.uk/electronic-prescriptions/$process-message"

@@ -25,24 +25,6 @@
           "code": "prescription-order-response",
           "display": "Prescription Order Response"
         },
-        "destination": [
-          {
-            "endpoint": "urn:nhs-uk:addressing:ods:A99968",
-            "receiver": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "A99968"
-              }
-            }
-          }
-        ],
-        "sender": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "X2601"
-          },
-          "display": "NHS Digital Spine"
-        },
         "source": {
           "name": "NHS Spine",
           "endpoint": "https://internal-dev.api.service.nhs.uk/electronic-prescriptions/$process-message"

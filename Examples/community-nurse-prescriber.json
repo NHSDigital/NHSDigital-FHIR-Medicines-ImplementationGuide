@@ -16,26 +16,9 @@
           "code": "prescription-order",
           "display": "Prescription Order"
         },
-        "sender": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          }
-        },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:RBA"
         },
-        "destination": [
-          {
-            "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message",
-            "receiver": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-              }
-            }
-          }
-        ],
         "focus": [
           {
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"

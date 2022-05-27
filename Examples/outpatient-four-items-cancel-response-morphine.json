@@ -16,25 +16,6 @@
                     "code": "prescription-order-response",
                     "display": "Prescription Order Response"
                 },
-                "destination": [
-                    {
-                        "endpoint": "urn:nhs-uk:addressing:ods:RBA",
-                        "receiver": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "RBA"
-                            },
-                            "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-                        }
-                    }
-                ],
-                "sender": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "X2601"
-                    },
-                    "display": "NHS Digital Spine"
-                },
                 "response": {
                     "identifier": "5a8079ae-e430-41ff-89fa-14db08969a19",
                     "code": "ok"

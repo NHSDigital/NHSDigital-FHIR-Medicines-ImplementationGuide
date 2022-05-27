@@ -20,17 +20,6 @@
                     "code": "prescription-order",
                     "display": "Prescription Order"
                 },
-                "destination": [
-                    {
-                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message",
-                        "receiver": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            }
-                        }
-                    }
-                ],
                 "source": {
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },

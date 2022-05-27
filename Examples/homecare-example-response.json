@@ -20,25 +20,6 @@
                     "code": "prescription-order-response",
                     "display": "Prescription Order Response"
                 },
-                "destination": [
-                    {
-                        "endpoint": "urn:nhs-uk:addressing:ods:RBA",
-                        "receiver": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "RBA"
-                            },
-                            "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-                        }
-                    }
-                ],
-                "sender": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "X2601"
-                    },
-                    "display": "NHS Digital Spine"
-                },
                 "source": {
                     "name": "NHS Spine",
                     "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message"

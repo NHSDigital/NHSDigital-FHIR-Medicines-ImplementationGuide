@@ -16,27 +16,9 @@
           "code": "prescription-order",
           "display": "Prescription Order"
         },
-        "sender": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "C81010"
-          },
-          "display": "The Moir Medical Centre"
-        },
         "source": {
           "endpoint": "urn:nhs-uk:addressing:ods:C81010"
         },
-        "destination": [
-          {
-            "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message",
-            "receiver": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-              }
-            }
-          }
-        ],
         "focus": [
           {
             "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
@@ -145,8 +127,8 @@
             },
             "doseAndRate": [
               {
-                "doseQuantity": { 
-                  "value" :1,
+                "doseQuantity": {
+                  "value": 1,
                   "unit": "tablet"
                 }
               }
@@ -377,20 +359,10 @@
           }
         ],
         "practitioner": {
-          "identifier": 
-            {
-              "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-              "value": "G8133438"
-            },
-            "display": "DR AA BHATIA"
+          "fullUrl": "urn:uuid:b751b904-cad9-4beb-a559-9c8ea1028d1b"
         },
         "organization": {
-          "identifier": 
-            {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "C81010"
-            },
-            "display":"The Moir Medical Centre"
+          "reference": "urn:uuid:5520ad34-5eb0-4042-bc4c-7255b76f08d7"
         },
         "code": [
           {
@@ -439,12 +411,11 @@
         ],
         "requester": {
           "type": "Organization",
-          "identifier": 
-          {
+          "identifier": {
             "system": "https://fhir.nhs.uk/Id/ods-organization-code",
             "value": "C81010"
           },
-          "display":"The Moir Medical Centre"
+          "display": "The Moir Medical Centre"
         },
         "recipient": [
           {
@@ -500,12 +471,110 @@
           "line": [
             "REGENT STREET",
             "LONG EATON"
-        ],
-        "city": "NOTTINGHAM",
-        "district": "NOTTINGHAMSHIRE",
-        "postalCode": "NG10 1QQ",
-        "country": "ENGLAND"
+          ],
+          "city": "NOTTINGHAM",
+          "district": "NOTTINGHAMSHIRE",
+          "postalCode": "NG10 1QQ",
+          "country": "ENGLAND"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b751b904-cad9-4beb-a559-9c8ea1028d1b",
+      "resource": {
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmp-number",
+            "value": "G3270228"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "The Moir Medical Centre",
+              "Regent Street, Long Eaton",
+              "Nottingham"
+            ],
+            "postalCode": "NG10 1QQ"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-05-24T14:45:44.893Z",
+          "versionId": "4"
+        },
+        "name": [
+          {
+            "given": [
+              "M"
+            ],
+            "prefix": [
+              "Dr"
+            ],
+            "family": "Kinsey"
+          }
+        ],
+        "active": true,
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "0115 9735820"
+          }
+        ],
+        "id": "b751b904-cad9-4beb-a559-9c8ea1028d1b",
+        "resourceType": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5520ad34-5eb0-4042-bc4c-7255b76f08d7",
+      "resource": {
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "C81010"
+          }
+        ],
+        "partOf": {
+          "display": "Nhs Derby And Derbyshire Ccg"
+        },
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "The Moir Medical Centre",
+              "Regent Street, Long Eaton",
+              "Nottingham"
+            ],
+            "postalCode": "NG10 1QQ"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "394745000",
+                "display": "General practice"
+              }
+            ]
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2022-05-24T06:26:51.488Z",
+          "versionId": "1"
+        },
+        "name": "The Moir Medical Centre",
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "0115 9737320"
+          }
+        ],
+        "id": "5520ad34-5eb0-4042-bc4c-7255b76f08d7",
+        "resourceType": "Organization"
       }
     }
   ]

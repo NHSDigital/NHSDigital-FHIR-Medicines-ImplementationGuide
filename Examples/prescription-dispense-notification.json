@@ -16,25 +16,6 @@
                     "code": "dispense-notification",
                     "display": "Dispense Notification"
                 },
-                "destination": [
-                    {
-                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message",
-                        "receiver": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "T1450"
-                            },
-                            "display": "NHS BUSINESS SERVICES AUTHORITY"
-                        }
-                    }
-                ],
-                "sender": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "VNE51"
-                    },
-                    "display": "The Simple Pharmacy"
-                },
                 "source": {
                     "name": "The Simple Pharmacy",
                     "endpoint": "urn:nhs-uk:addressing:ods:VNE51"

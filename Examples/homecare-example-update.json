@@ -29,36 +29,6 @@
                     "code": "prescription-order-update",
                     "display": "Prescription Order Update"
                 },
-                "destination": [
-                    {
-                        "endpoint": "https://sandbox.api.service.nhs.uk/electronic-prescriptions/$process-message",
-                        "receiver": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "X2601"
-                            },
-                            "display": "NHS Digital Spine"
-                        }
-                    }
-                ],
-                "sender": {
-                    "extension": [
-                        {
-                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-LocalPart",
-                            "valueReference": {
-                                "identifier": {
-                                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                    "value": "A99968"
-                                }
-                            }
-                        }
-                    ],
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "RBA"
-                    },
-                    "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-                },
                 "source": {
                     "name": "DJM",
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
