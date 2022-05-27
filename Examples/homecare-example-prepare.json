@@ -8,7 +8,7 @@
   "type": "message",
   "entry": [
     {
-      "fullUrl": "urn:uuid:311316d3-1de0-4f7c-8109-c950ead1c717",
+      "fullUrl": "urn:uuid:e9a71955-53ba-b15a-d4b6-bea99d5017b3",
       "resource": {
         "resourceType": "MessageHeader",
         "eventCoding": {
@@ -22,29 +22,16 @@
             "receiver": {
               "identifier": {
                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-              },
-              "display": "The Simple Pharmacy"
+                "value": "X2601"
+              }
             }
           }
         ],
-        "sender": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-        },
         "source": {
-          "endpoint": "urn:nhs-uk:addressing:ods:RBA"
+          "endpoint": "urn:nhs-uk:addressing:ods:VNE51"
         },
         "focus": [
           {
-            "type": "Patient",
-            "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-          },
-          {
-            "type": "MedicationRequest",
             "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
           }
         ]
@@ -282,54 +269,14 @@
           }
         ],
         "practitioner": {
-          "identifier": {
-            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-            "value": "C1234567"
-          },
-          "display": "Dr ALI RAZIA"
+          "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
         },
         "organization": {
-          "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "RBA"
-          },
-          "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+          "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
         },
-        "specialty": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-clinical-specialty",
-                "code": "370",
-                "display": "MEDICAL ONCOLOGY"
-              }
-            ]
-          }
-        ],
-        "code": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                "code": "R8000",
-                "display": "Clinical Practitioner Access Role"
-              }
-            ]
-          }
-        ],
-        "location": [
-          {
-            "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
-            "display": "MUSGROVE PARK HOSPITAL"
-          }
-        ],
         "healthcareService": [
           {
-            "identifier": {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "A99968"
-            },
-            "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+            "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
           }
         ],
         "telecom": [
@@ -363,6 +310,89 @@
           "postalCode": "TA1 5DA",
           "country": "NLD"
         }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+        "identifier": [
+          {
+            "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+            "value": "C1234567"
+          }
+        ],
+        "name": [
+          {
+            "family": "ALI",
+            "given": [
+              "RAZIA"
+            ],
+            "prefix": [
+              "DR"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "RBA"
+          }
+        ],
+        "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
+        "address": [
+          {
+            "line": [
+              "MUSGROVE PARK HOSPITAL",
+              "PARKFIELD DRIVE",
+              "TAUNTON"
+            ],
+            "postalCode": "TA1 5DA"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823333444",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "54b0506d-49af-4245-9d40-d7d64902055e",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "A99968"
+          }
+        ],
+        "active": true,
+        "location": [
+          {
+            "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962b"
+          }
+        ],
+        "name": "SOMERSET BOWEL CANCER SCREENING CENTRE",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "01823 333444",
+            "use": "work"
+          }
+        ]
       }
     }
   ]

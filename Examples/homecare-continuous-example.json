@@ -27,41 +27,17 @@
                             "identifier": {
                                 "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                                 "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            }
                         }
                     }
                 ],
-                "sender": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "RBA"
-                    },
-                    "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-                },
-                "author": {
-                    "type": "PractitionerRole",
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                        "value": "100102238986"
-                    },
-                    "display": "DR ALI"
-                },
                 "source": {
                     "endpoint": "urn:nhs-uk:addressing:ods:RBA"
                 },
                 "focus": [
                     {
-                        "type": "Patient",
-                        "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
-                    },
-                    {
                         "type": "MedicationRequest",
                         "reference": "urn:uuid:a54219b8-f741-4c47-b662-e4f8dfa49ab6"
-                    },
-                    {
-                        "type": "Provenance",
-                        "reference": "urn:uuid:28828c55-8fa7-42d7-916f-fcf076e0c10e"
                     }
                 ]
             }
@@ -307,19 +283,16 @@
                     }
                 ],
                 "practitioner": {
-                    "identifier": {
-                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                        "value": "C1234567"
-                    },
-                    "display": "DR RAZIA ALI"
+                    "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
                 },
                 "organization": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "RBA"
-                    },
-                    "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+                    "reference": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8"
                 },
+                "healthcareService": [
+                    {
+                        "reference": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e"
+                    }
+                ],
                 "specialty": [
                     {
                         "coding": [
@@ -344,18 +317,8 @@
                 ],
                 "location": [
                     {
-                      "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
-                      "display": "MUSGROVE PARK HOSPITAL"
-                    }
-                  ],
-                "healthcareService": [
-                    {
-                        "identifier": {
-                            "use": "official",
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "A99968"
-                        },
-                        "display": "SOMERSET BOWEL CANCER SCREENING CENTRE"
+                        "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
+                        "display": "MUSGROVE PARK HOSPITAL"
                     }
                 ],
                 "telecom": [
@@ -402,28 +365,111 @@
             }
         },
         {
-          "fullUrl": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
-          "resource": {
-            "resourceType": "Location",
-            "identifier": [
-              {
-                "use": "official",
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "RBA11"
-              }
-            ],
-            "status": "active",
-            "mode": "instance",
-            "address": {
-              "use": "work",
-              "line": [
-                "MUSGROVE PARK HOSPITAL"
-              ],
-              "city": "TAUNTON",
-              "postalCode": "TA1 5DA",
-              "country": "NLD"
+            "fullUrl": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962",
+            "resource": {
+                "resourceType": "Location",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA11"
+                    }
+                ],
+                "status": "active",
+                "mode": "instance",
+                "address": {
+                    "use": "work",
+                    "line": [
+                        "MUSGROVE PARK HOSPITAL"
+                    ],
+                    "city": "TAUNTON",
+                    "postalCode": "TA1 5DA",
+                    "country": "NLD"
+                }
             }
-          }
+        },
+        {
+            "fullUrl": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "a8c85454-f8cb-498d-9629-78e2cb5fa47a",
+                "identifier": [
+                    {
+                        "system": "https://fhir.hl7.org.uk/Id/gmc-number",
+                        "value": "C1234567"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "ALI",
+                        "given": [
+                            "RAZIA"
+                        ],
+                        "prefix": [
+                            "DR"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "RBA"
+                    }
+                ],
+                "name": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST",
+                "address": [
+                    {
+                        "line": [
+                            "MUSGROVE PARK HOSPITAL",
+                            "PARKFIELD DRIVE",
+                            "TAUNTON"
+                        ],
+                        "postalCode": "TA1 5DA"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01823333444",
+                        "use": "work"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:54b0506d-49af-4245-9d40-d7d64902055e",
+            "resource": {
+                "resourceType": "HealthcareService",
+                "id": "54b0506d-49af-4245-9d40-d7d64902055e",
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "A99968"
+                    }
+                ],
+                "active": true,
+                "location": [
+                    {
+                        "reference": "urn:uuid:044e7916-c697-4072-880e-ef44d3032962b"
+                    }
+                ],
+                "name": "SOMERSET BOWEL CANCER SCREENING CENTRE",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "01823 333444",
+                        "use": "work"
+                    }
+                ]
+            }
         }
     ]
 }
