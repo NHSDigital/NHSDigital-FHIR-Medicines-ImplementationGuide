@@ -384,6 +384,7 @@
         {
             "fullUrl": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a",
             "resource":  {
+                "resourceType": "Organization",
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
@@ -421,8 +422,7 @@
                         "use": "work",
                         "value": "0113 3180277"
                     }
-                ],
-                "resourceType": "Organization"
+                ]
             }
         }
     ]
