@@ -45,12 +45,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "reference": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a",
-                             "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "FK545"
-                            },
-                             "display": "Crossgates Day & Night Pharmacy"
+                            "reference": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a"
                         },
                         "telecom": [
                             {
