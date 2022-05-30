@@ -1,9 +1,9 @@
 {
     "resourceType": "Bundle",
-    "id": "75f7464d-1469-4118-b96c-59fb07cdf3f8",
+    "id": "a7849e19-6f4a-4336-a4ef-8962e2f7e684",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "75f7464d-1469-4118-b96c-59fb07cdf3f8"
+        "value": "a7849e19-6f4a-4336-a4ef-8962e2f7e684"
     },
     "type": "message",
     "entry": [
@@ -59,12 +59,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
                         },
                         "telecom": [
                             {
@@ -139,7 +134,7 @@
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "fd833d33-f128-4fa2-a807-1fc8a7db2658"
+                        "value": "4021d407-8a4f-478a-9cb7-3aab645b91b6"
                     }
                 ],
                 "status": "completed",
@@ -147,20 +142,23 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "1858411000001101",
-                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
+                            "code": "915611000001105",
+                            "display": "Paracetamol 500mg soluble tablets (A A H Pharmaceuticals Ltd)"
                         }
                     ]
                 },
                 "subject": {
                     "type": "Patient",
-                    "reference": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    },
                     "display": "Miss Bernie Kanfeld"
                 },
                 "performer": [
                     {
                         "actor": {
-                            "reference" : "#performer"
+                            "reference": "#performer"
                         }
                     }
                 ],
@@ -179,21 +177,21 @@
                     ]
                 },
                 "quantity": {
-                    "value": 60,
+                    "value": 24,
                     "unit": "tablet",
                     "system": "http://snomed.info/sct",
                     "code": "732936001"
                 },
                 "daysSupply": {
-                    "value": 15,
+                    "value": 6,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-10T16:30:00+00:00",
+                "whenPrepared": "2020-06-25T15:30:00+00:00",
                 "dosageInstruction": [
                     {
-                        "text": "100 tablets. One tablet to be taken four times a day",
+                        "text": "210 tablets. One tablet to be taken four times a day",
                         "timing": {
                             "repeat": {
                                 "frequency": 5,
@@ -230,12 +228,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
                         },
                         "telecom": [
                             {
@@ -318,14 +311,17 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "3416211000001106",
-                            "display": "Salbutamol 100micrograms/dose inhaler (Sandoz Ltd) 200 dose"
+                            "code": "35936511000001108",
+                            "display": "Salbutamol 100micrograms/dose inhaler"
                         }
                     ]
                 },
                 "subject": {
                     "type": "Patient",
-                    "reference": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9876543210"
+                    },
                     "display": "Miss Bernie Kanfeld"
                 },
                 "performer": [
@@ -348,114 +344,51 @@
                             "display": "Item fully dispensed"
                         }
                     ]
-                },
-                "quantity": {
-                    "value": 200,
-                    "unit": "unit dose",
-                    "system": "http://snomed.info/sct",
-                    "code": "408102007"
-                },
-                "daysSupply": {
-                    "value": 40,
-                    "unit": "Day",
-                    "system": "http://unitsofmeasure.org",
-                    "code": "d"
-                },
-                "whenPrepared": "2004-09-16T16:30:00+00:00",
-                "dosageInstruction": [
-                    {
-                        "text": "5 times a day for 40 days",
-                        "timing": {
-                            "repeat": {
-                                "boundsDuration": {
-                                    "value": 40,
-                                    "unit": "d"
-                                },
-                                "frequency": 5,
-                                "period": 1,
-                                "periodUnit": "d"
-                            }
-                        },
-                        "doseAndRate": [
-                            {
-                                "doseQuantity": {
-                                    "value": 1,
-                                    "unit": "unit dose",
-                                    "system": "http://snomed.info/sct",
-                                    "code": "408102007"
-                                }
-                            }
-                        ]
-                    }
-                ]
+                }
             }
         },
         {
-            "fullUrl": "urn:uuid:bde9eba6-079f-4210-8108-6ea8db58de8c",
-            "resource": {
-                "resourceType": "Patient",
+            "fullUrl": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b",
+            "resource":  {
                 "identifier": [
                     {
-                        "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "9876543210"
-                    },
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    }
+                ],
+                "address": [
                     {
-                        "system": "https://fhir.leedsth.nhs.uk/Id/pas-number",
-                        "value": "ABC8650149"
-                    },
-                    {
-                        "system": "https://fhir.leedsth.nhs.uk/Id/PPMIdentifier",
-                        "value": "1"
+                        "city": "West Yorkshire",
+                        "use": "work",
+                        "line": [
+                            "17 Austhorpe Road",
+                            "Crossgates",
+                            "Leeds"
+                        ],
+                        "postalCode": "LS15 8BA"
                     }
                 ],
                 "active": true,
-                "name": [
+                "type": [
                     {
-                        "use": "official",
-                        "family": "Kanfeld",
-                        "given": [
-                            "Bernie"
-                        ],
-                        "prefix": [
-                            "Miss"
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                                "code": "182",
+                                "display": "PHARMACY"
+                            }
                         ]
                     }
                 ],
+                "name": "The Simple Pharmacy",
                 "telecom": [
                     {
                         "system": "phone",
-                        "value": "0115 9737320",
-                        "use": "home"
-                    },
-                    {
-                        "system": "email",
-                        "value": "bernie.kanfeld@nhsdigital.nhs.uk",
-                        "use": "home"
-                    }
-                ],
-                "gender": "female",
-                "birthDate": "1998-03-13",
-                "address": [
-                    {
                         "use": "work",
-                        "type": "both",
-                        "line": [
-                            "Field Jardin",
-                            "Long Eaton"
-                        ],
-                        "city": "Nottingham",
-                        "district": "Derbyshire",
-                        "postalCode": "NG10 1ZZ"
+                        "value": "0113 3180277"
                     }
                 ],
-                "generalPractitioner": [
-                    {
-                        "identifier": {
-                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                            "value": "C81010"
-                        }
-                    }
-                ]
+                "resourceType": "Organization"
             }
         }
     ]

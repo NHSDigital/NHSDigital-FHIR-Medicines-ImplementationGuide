@@ -1,9 +1,9 @@
 {
     "resourceType": "Bundle",
-    "id": "334a3195-1f6c-497a-8efe-d272ca9c4e38",
+    "id": "b240434e-cb85-40bb-899c-1c61410c93a7",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+        "value": "b240434e-cb85-40bb-899c-1c61410c93a7"
     },
     "type": "message",
     "entry": [
@@ -59,12 +59,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
                         },
                         "telecom": [
                             {
@@ -76,7 +71,7 @@
                     },
                     {
                         "resourceType": "MedicationRequest",
-                        "id": "m1",
+                        "id" : "m1",
                         "identifier": [
                             {
                                 "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
@@ -85,6 +80,7 @@
                         ],
                         "status": "active",
                         "intent": "order",
+                    
                         "medicationCodeableConcept": {
                             "coding": [
                                 {
@@ -113,7 +109,9 @@
                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
                             "value": "82D996-C81010-11DB12"
                         },
+                        
                         "dispenseRequest": {
+                        
                             "quantity": {
                                 "value": 100,
                                 "unit": "tablet",
@@ -131,15 +129,15 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0006",
-                            "display": "Dispensed"
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
                         }
                     }
                 ],
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "228e8360-c490-4de6-a33b-daeb6a8d904a"
+                        "value": "fd833d33-f128-4fa2-a807-1fc8a7db2658"
                     }
                 ],
                 "status": "completed",
@@ -147,8 +145,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "2274211000001101",
-                            "display": "Paracetamol 500mg soluble tablets (Kent Pharma (UK) Ltd) 16 tablet 2 x 8 tablets"
+                            "code": "1858411000001101",
+                            "display": "Paracetamol 500mg soluble tablets (Alliance Healthcare (Distribution) Ltd) 60 tablet"
                         }
                     ]
                 },
@@ -176,24 +174,24 @@
                     "coding": [
                         {
                             "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                            "code": "0001",
-                            "display": "Item fully dispensed"
+                            "code": "0003",
+                            "display": "Item dispensed - partial"
                         }
                     ]
                 },
                 "quantity": {
-                    "value": 16,
+                    "value": 60,
                     "unit": "tablet",
                     "system": "http://snomed.info/sct",
                     "code": "732936001"
                 },
                 "daysSupply": {
-                    "value": 4,
+                    "value": 15,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-25T15:30:00+00:00",
+                "whenPrepared": "2020-06-10T16:30:00+00:00",
                 "dosageInstruction": [
                     {
                         "text": "100 tablets. One tablet to be taken four times a day",
@@ -233,12 +231,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
                         },
                         "telecom": [
                             {
@@ -305,8 +298,8 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0006",
-                            "display": "Dispensed"
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
                         }
                     }
                 ],
@@ -321,8 +314,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "35936511000001108",
-                            "display": "Salbutamol 100micrograms/dose inhaler"
+                            "code": "3416211000001106",
+                            "display": "Salbutamol 100micrograms/dose inhaler (Sandoz Ltd) 200 dose"
                         }
                     ]
                 },
@@ -354,7 +347,90 @@
                             "display": "Item fully dispensed"
                         }
                     ]
-                }
+                },
+                "quantity": {
+                    "value": 200,
+                    "unit": "unit dose",
+                    "system": "http://snomed.info/sct",
+                    "code": "408102007"
+                },
+                "daysSupply": {
+                    "value": 40,
+                    "unit": "Day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenPrepared": "2004-09-16T16:30:00+00:00",
+                "dosageInstruction": [
+                    {
+                        "text": "5 times a day for 40 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsDuration": {
+                                    "value": 40,
+                                    "unit": "d"
+                                },
+                                "frequency": 5,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "unit dose",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "408102007"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b",
+            "resource":  {
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "West Yorkshire",
+                        "use": "work",
+                        "line": [
+                            "17 Austhorpe Road",
+                            "Crossgates",
+                            "Leeds"
+                        ],
+                        "postalCode": "LS15 8BA"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                                "code": "182",
+                                "display": "PHARMACY"
+                            }
+                        ]
+                    }
+                ],
+                "name": "The Simple Pharmacy",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "0113 3180277"
+                    }
+                ],
+                "resourceType": "Organization"
             }
         }
     ]

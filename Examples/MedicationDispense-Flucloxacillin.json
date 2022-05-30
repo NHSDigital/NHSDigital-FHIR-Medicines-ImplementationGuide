@@ -23,11 +23,7 @@
                 "display": "Mr Peter Potion"
             },
             "organization": {
-                "identifier":  {
-                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                    "value": "VNE51"
-                },
-                "display": "The Simple Pharmacy"
+                "reference": "urn:uuid:2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
             },
             "telecom": [
                 {

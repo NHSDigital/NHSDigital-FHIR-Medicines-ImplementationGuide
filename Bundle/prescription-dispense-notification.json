@@ -1,46 +1,23 @@
 {
     "resourceType": "Bundle",
-    "id": "1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98",
+    "id": "prescription-dispense-notification-resource",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
-        "value": "1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98"
+        "value": "e9a71955-53ba-b15a-d4b6-bea99d5017b3"
     },
     "type": "message",
     "entry": [
         {
-            "fullUrl": "urn:uuid:1e9d39ef-e999-4ab5-8fa1-bf8a0ff0ea98",
+            "fullUrl": "urn:uuid:e9a71955-53ba-b15a-d4b6-bea99d5017b3",
             "resource": {
                 "resourceType": "MessageHeader",
-                "extension": [
-                    {
-                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-replacementOf",
-                        "valueIdentifier": {
-                            "system": "https://tools.ietf.org/html/rfc4122",
-                            "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
-                        }
-                    }
-                ],
                 "eventCoding": {
                     "system": "https://fhir.nhs.uk/CodeSystem/message-event",
-                    "code": "dispense-notification-update",
-                    "display": "Dispense Notification Update"
+                    "code": "dispense-notification",
+                    "display": "Dispense Notification"
                 },
                 "source": {
-                    "name": "The Simple Pharmacy",
                     "endpoint": "urn:nhs-uk:addressing:ods:VNE51"
-                },
-                "reason": {
-                    "coding": [
-                        {
-                            "system": "https://fhir.nhs.uk/CodeSystem/message-reason-prescription",
-                            "code": "notification",
-                            "display": "Notification"
-                        }
-                    ]
-                },
-                "response": {
-                    "identifier": "6b1d6d0f-f154-48c9-80e5-48f041585185",
-                    "code": "ok"
                 },
                 "focus": [
                     {
@@ -68,12 +45,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a"
                         },
                         "telecom": [
                             {
@@ -85,30 +57,23 @@
                     },
                     {
                         "resourceType": "MedicationRequest",
-                        "id" : "m1",
+                        "id": "request2",
+                        "status": "active",
+                        "intent": "order",
                         "identifier": [
                             {
                                 "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                "value": "299c610b-f4f1-4eac-a7d7-4fb6b0556e11"
+                                "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
                             }
                         ],
-                        "status": "active",
-                        "intent": "order",
-                    
                         "medicationCodeableConcept": {
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "39720311000001101",
-                                    "display": "Paracetamol 500mg soluble tablets"
+                                    "code": "39692211000001107",
+                                    "display": "Flucloxacillin 500mg capsules"
                                 }
                             ]
-                        },
-                        "subject": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/nhs-number",
-                                "value": "9876543210"
-                            }
                         },
                         "groupIdentifier": {
                             "extension": [
@@ -116,21 +81,27 @@
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
                                     "valueIdentifier": {
                                         "system": "https://fhir.nhs.uk/Id/prescription",
-                                        "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                                        "value": "66317E0C-CE13-59AD-9979-9B568E080160"
                                     }
                                 }
                             ],
                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                            "value": "82D996-C81010-11DB12"
+                            "value": "3C2366-B81001-0A409U"
                         },
-                        
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                "value": "9300992742"
+                            },
+                            "display": "Mrs Chi Edinburgh"
+                        },
                         "dispenseRequest": {
-                        
                             "quantity": {
-                                "value": 100,
+                                "value": 21,
                                 "unit": "tablet",
                                 "system": "http://snomed.info/sct",
-                                "code": "732936001"
+                                "code": "428673006"
                             }
                         },
                         "substitution": {
@@ -143,15 +114,15 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0006",
-                            "display": "Dispensed"
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
                         }
                     }
                 ],
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/prescription-dispense-item-number",
-                        "value": "228e8360-c490-4de6-a33b-daeb6a8d904a"
+                        "value": "4509b70d-d8b8-ea03-1105-64557cb54a29"
                     }
                 ],
                 "status": "completed",
@@ -159,8 +130,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "2274211000001101",
-                            "display": "Paracetamol 500mg soluble tablets (Kent Pharma (UK) Ltd) 16 tablet 2 x 8 tablets"
+                            "code": "39692211000001107",
+                            "display": "Flucloxacillin 500mg capsules"
                         }
                     ]
                 },
@@ -168,9 +139,9 @@
                     "type": "Patient",
                     "identifier": {
                         "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "9876543210"
+                        "value": "9300992742"
                     },
-                    "display": "Miss Bernie Kanfeld"
+                    "display": "Mrs Chi Edinburgh"
                 },
                 "performer": [
                     {
@@ -181,7 +152,7 @@
                 ],
                 "authorizingPrescription": [
                     {
-                        "reference": "#m1"
+                        "reference": "#request2"
                     }
                 ],
                 "type": {
@@ -194,37 +165,42 @@
                     ]
                 },
                 "quantity": {
-                    "value": 16,
-                    "unit": "tablet",
+                    "value": 28,
+                    "unit": "capsule",
                     "system": "http://snomed.info/sct",
-                    "code": "732936001"
+                    "code": "3316911000001105"
                 },
                 "daysSupply": {
-                    "value": 4,
+                    "value": 7,
                     "unit": "Day",
                     "system": "http://unitsofmeasure.org",
                     "code": "d"
                 },
-                "whenPrepared": "2020-06-25T15:30:00+00:00",
+                "whenPrepared": "2004-09-16T16:30:00+00:00",
                 "dosageInstruction": [
                     {
-                        "text": "100 tablets. One tablet to be taken four times a day",
+                        "text": "4 times a day for 7 days",
                         "timing": {
                             "repeat": {
-                                "frequency": 5,
+                                "boundsDuration": {
+                                    "value": 7,
+                                    "unit": "d"
+                                },
+                                "frequency": 4,
                                 "period": 1,
                                 "periodUnit": "d"
                             }
                         },
-                        "route": {
-                            "coding": [
-                                {
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "capsule",
                                     "system": "http://snomed.info/sct",
-                                    "code": "26643006",
-                                    "display": "Oral"
+                                    "code": "3316911000001105"
                                 }
-                            ]
-                        }
+                            }
+                        ]
                     }
                 ]
             }
@@ -245,12 +221,7 @@
                             "display": "Mr Peter Potion"
                         },
                         "organization": {
-                            "type": "Organization",
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "VNE51"
-                            },
-                            "display": "The Simple Pharmacy"
+                            "reference": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a"
                         },
                         "telecom": [
                             {
@@ -262,11 +233,11 @@
                     },
                     {
                         "resourceType": "MedicationRequest",
-                        "id": "m2",
+                        "id": "request1",
                         "identifier": [
                             {
                                 "system": "https://fhir.nhs.uk/Id/prescription-order-item-number",
-                                "value": "5cb17f5a-11ac-4e18-825f-6470467238b3"
+                                "value": "E76622AE-E2DB-5683-2045-D1C229EDA3A2"
                             }
                         ],
                         "status": "active",
@@ -275,16 +246,10 @@
                             "coding": [
                                 {
                                     "system": "http://snomed.info/sct",
-                                    "code": "35936511000001108",
-                                    "display": "Salbutamol 100micrograms/dose inhaler"
+                                    "code": "585011000001109",
+                                    "display": "Metronidazole 400mg tablets (Teva UK Ltd)"
                                 }
                             ]
-                        },
-                        "subject": {
-                            "identifier": {
-                                "system": "https://fhir.nhs.uk/Id/nhs-number",
-                                "value": "9876543210"
-                            }
                         },
                         "groupIdentifier": {
                             "extension": [
@@ -292,19 +257,27 @@
                                     "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
                                     "valueIdentifier": {
                                         "system": "https://fhir.nhs.uk/Id/prescription",
-                                        "value": "b2fc79f0-2793-4736-9b2d-0976c21e73a5"
+                                        "value": "66317E0C-CE13-59AD-9979-9B568E080160"
                                     }
                                 }
                             ],
                             "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-                            "value": "82D996-C81010-11DB12"
+                            "value": "3C2366-B81001-0A409U"
+                        },
+                        "subject": {
+                            "type": "Patient",
+                            "identifier": {
+                                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                                "value": "9300992742"
+                            },
+                            "display": "Mrs Chi Edinburgh"
                         },
                         "dispenseRequest": {
                             "quantity": {
-                                "value": 200,
-                                "unit": "dose",
+                                "value": 21,
+                                "unit": "tablet",
                                 "system": "http://snomed.info/sct",
-                                "code": "3317411000001100"
+                                "code": "428673006"
                             }
                         },
                         "substitution": {
@@ -317,8 +290,8 @@
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-TaskBusinessStatus",
                         "valueCoding": {
                             "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-business-status",
-                            "code": "0006",
-                            "display": "Dispensed"
+                            "code": "0003",
+                            "display": "With Dispenser - Active"
                         }
                     }
                 ],
@@ -328,15 +301,23 @@
                         "value": "06167339-9337-d030-0366-514a6a46da17"
                     }
                 ],
-                "status": "completed",
+                "status": "in-progress",
                 "medicationCodeableConcept": {
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "35936511000001108",
-                            "display": "Salbutamol 100micrograms/dose inhaler"
+                            "code": "585011000001109",
+                            "display": "Metronidazole 400mg tablets (Teva UK Ltd)"
                         }
                     ]
+                },
+                "subject": {
+                    "type": "Patient",
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/nhs-number",
+                        "value": "9453740519"
+                    },
+                    "display": "Mrs Chi Edinburgh"
                 },
                 "performer": [
                     {
@@ -345,28 +326,103 @@
                         }
                     }
                 ],
-                "subject": {
-                    "type": "Patient",
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "9876543210"
-                    },
-                    "display": "Miss Bernie Kanfeld"
-                },
                 "authorizingPrescription": [
                     {
-                        "reference": "#m2"
+                        "reference": "#request1"
                     }
                 ],
                 "type": {
                     "coding": [
                         {
                             "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-type",
-                            "code": "0001",
-                            "display": "Item fully dispensed"
+                            "code": "0003",
+                            "display": "Item dispensed - partial"
                         }
                     ]
-                }
+                },
+                "quantity": {
+                    "value": 21,
+                    "unit": "tablet",
+                    "system": "http://snomed.info/sct",
+                    "code": "428673006"
+                },
+                "daysSupply": {
+                    "value": 7,
+                    "unit": "Day",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "d"
+                },
+                "whenPrepared": "2004-09-16T16:30:00+00:00",
+                "dosageInstruction": [
+                    {
+                        "text": "3 times a day for 10 days",
+                        "timing": {
+                            "repeat": {
+                                "boundsDuration": {
+                                    "value": 10,
+                                    "unit": "d"
+                                },
+                                "frequency": 3,
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:b70c1bf2-0c29-4f73-b041-708bd375a98a",
+            "resource":  {
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "FK545"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "West Yorkshire",
+                        "use": "work",
+                        "line": [
+                            "17 Austhorpe Road",
+                            "Crossgates",
+                            "Leeds"
+                        ],
+                        "postalCode": "LS15 8BA"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                                "code": "182",
+                                "display": "PHARMACY"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Crossgates Day & Night Pharmacy",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "0113 3180277"
+                    }
+                ],
+                "resourceType": "Organization"
             }
         }
     ]
