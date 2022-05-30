@@ -1,6 +1,6 @@
 {
     "resourceType": "Bundle",
-    "id": "prescription-dispense-notification-resource",
+    "id": "prescription-dispense-notification",
     "identifier": {
         "system": "https://tools.ietf.org/html/rfc4122",
         "value": "e9a71955-53ba-b15a-d4b6-bea99d5017b3"
