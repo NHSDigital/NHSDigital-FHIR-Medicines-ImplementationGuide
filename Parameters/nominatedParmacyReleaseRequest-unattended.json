@@ -26,17 +26,13 @@
                 ],
                 "practitioner": {
                     "identifier":  {
-                        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                        "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                         "value": "3415870201"
                       },
                     "display": "Jackie Clark"
                 },
                 "organization": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "RHM"
-                    },
-                    "display": "UNIVERSITY HOSPITAL SOUTHAMPTON NHS FOUNDATION TRUST"
+                    "reference": "Organization/2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
                 },
                 "code":  [
                     {
@@ -54,6 +50,51 @@
                         "system": "phone",
                         "value": "02380798431",
                         "use": "work"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "organization",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "2bf9f37c-d88b-4f86-ad5f-373c1416e04b",
+                "identifier": [
+                    {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "VNE51"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "West Yorkshire",
+                        "use": "work",
+                        "line": [
+                            "17 Austhorpe Road",
+                            "Crossgates",
+                            "Leeds"
+                        ],
+                        "postalCode": "LS15 8BA"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                                "code": "182",
+                                "display": "PHARMACY"
+                            }
+                        ]
+                    }
+                ],
+                "name": "The Simple Pharmacy",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "0113 3180277"
                     }
                 ]
             }
