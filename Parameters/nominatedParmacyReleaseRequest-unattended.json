@@ -32,7 +32,7 @@
                     "display": "Jackie Clark"
                 },
                 "organization": {
-                    "reference": "Organization/2bf9f37c-d88b-4f86-ad5f-373c1416e04b"
+                    "reference": "#organization"
                 },
                 "code":  [
                     {
@@ -58,7 +58,7 @@
             "name": "organization",
             "resource": {
                 "resourceType": "Organization",
-                "id": "2bf9f37c-d88b-4f86-ad5f-373c1416e04b",
+                "id": "organization",
                 "identifier": [
                     {
                         "system": "https://fhir.nhs.uk/Id/ods-organization-code",
