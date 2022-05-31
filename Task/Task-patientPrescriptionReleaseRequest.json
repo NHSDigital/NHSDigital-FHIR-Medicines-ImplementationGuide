@@ -1,7 +1,7 @@
 {
     "resourceType": "Task",
     "id": "11f7a92d-63b5-4a81-9931-4b47c53066f1",
-    "contained":  [
+    "contained": [
         {
             "resourceType": "PractitionerRole",
             "id": "requester",
@@ -12,18 +12,18 @@
                 }
             ],
             "practitioner": {
-                "identifier":  {
+                "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gphc-number",
                     "value": "3415870201"
-                  },
+                },
                 "display": "Jackie Clark"
             },
             "organization": {
                 "reference": "#organisation"
             },
-            "code":  [
+            "code": [
                 {
-                    "coding":  [
+                    "coding": [
                         {
                             "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
                             "code": "R8000",
@@ -88,15 +88,6 @@
     ],
     "status": "accepted",
     "intent": "order",
-    "code": {
-        "coding":  [
-            {
-                "system": "http://hl7.org/fhir/CodeSystem/task-code",
-                "code": "fulfill",
-                "display": "Fulfill the focal request"
-            }
-        ]
-    },
     "groupIdentifier": {
         "system": "https://fhir.nhs.uk/Id/prescription-order-number",
         "value": "82D996-C81010-11DB12"

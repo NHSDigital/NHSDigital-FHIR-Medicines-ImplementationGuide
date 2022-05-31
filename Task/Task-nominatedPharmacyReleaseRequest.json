@@ -87,14 +87,5 @@
         }
     ],
     "status": "accepted",
-    "intent": "order",
-    "code": {
-        "coding":  [
-            {
-                "system": "http://hl7.org/fhir/CodeSystem/task-code",
-                "code": "fulfill",
-                "display": "Fulfill the focal request"
-            }
-        ]
-    }
+    "intent": "order"
 }
