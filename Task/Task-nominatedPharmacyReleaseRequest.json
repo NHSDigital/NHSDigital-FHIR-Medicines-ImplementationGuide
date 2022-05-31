@@ -86,6 +86,9 @@
             }
         }
     ],
+    "requester": {
+        "reference": "#requester"
+    },
     "status": "accepted",
     "intent": "order"
 }

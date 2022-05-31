@@ -88,6 +88,9 @@
     ],
     "status": "accepted",
     "intent": "order",
+    "requester": {
+        "reference": "#requester"
+    },
     "groupIdentifier": {
         "system": "https://fhir.nhs.uk/Id/prescription-order-number",
         "value": "82D996-C81010-11DB12"
