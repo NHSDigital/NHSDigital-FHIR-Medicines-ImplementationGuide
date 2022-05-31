@@ -42,7 +42,7 @@
         },
         {
             "resourceType": "Organization",
-            "reference": "#organisation",
+            "id": "organisation",
             "identifier": [
                 {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
