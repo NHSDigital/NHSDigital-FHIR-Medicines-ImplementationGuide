@@ -32,7 +32,7 @@
                     "display": "Jackie Clark"
                 },
                 "organization": {
-                    "reference": "#organization"
+                    "reference": "Organization/#organization"
                 },
                 "code":  [
                     {

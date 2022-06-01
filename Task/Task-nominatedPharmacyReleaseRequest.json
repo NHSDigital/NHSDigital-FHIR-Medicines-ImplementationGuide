@@ -1,6 +1,12 @@
 {
     "resourceType": "Task",
     "id": "ea8a2753-57e9-4bd3-a217-3776b20abb3a",
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ea8a2753-57e9-4bd3-a217-3776b20abb3a"
+        }
+    ],
     "contained": [
         {
             "resourceType": "PractitionerRole",
@@ -86,6 +92,29 @@
     "requester": {
         "reference": "#requester"
     },
+    "authoredOn": "2022-06-01T10:18:00+00:00",
+    "focus": {
+        "type": "Organization",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "VNE51"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+        }
+    },
     "status": "accepted",
-    "intent": "order"
+    "intent": "order",
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "16076005",
+                "display": "Prescription"
+            }
+        ]
+    }
 }

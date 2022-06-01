@@ -1,6 +1,12 @@
 {
     "resourceType": "Task",
     "id": "11f7a92d-63b5-4a81-9931-4b47c53066f1",
+    "identifier": [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "11f7a92d-63b5-4a81-9931-4b47c53066f1"
+        }
+    ],
     "contained": [
         {
             "resourceType": "PractitionerRole",
@@ -91,5 +97,28 @@
     "groupIdentifier": {
         "system": "https://fhir.nhs.uk/Id/prescription-order-number",
         "value": "82D996-C81010-11DB12"
+    },
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "16076005",
+                "display": "Prescription"
+            }
+        ]
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9453740519"
+        }
+    },
+    "authoredOn": "2022-06-01T10:18:00+00:00",
+    "focus": {
+        "type": "Organization",
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "VNE51"
+        }
     }
 }
