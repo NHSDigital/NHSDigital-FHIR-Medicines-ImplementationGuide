@@ -3,13 +3,6 @@
     "id": "66bc43c6-b803-4593-96c9-44c62f4613f4",
     "parameter": [
         {
-            "name": "owner",
-            "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "VNE51"
-            }
-        },
-        {
             "name": "status",
             "valueCode": "accepted"
         },
@@ -49,7 +42,7 @@
             }
         },
         {
-            "name": "organization",
+            "name": "owner",
             "resource": {
                 "resourceType": "Organization",
                 "id": "organization",

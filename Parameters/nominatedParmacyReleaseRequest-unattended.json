@@ -3,13 +3,6 @@
     "id": "ee778f88-e1aa-49b0-8cbc-77d54c65ef9e",
     "parameter": [
         {
-            "name": "owner",
-            "valueIdentifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "FX748"
-            }
-        },
-        {
             "name": "status",
             "valueCode": "accepted"
         },
@@ -55,7 +48,7 @@
             }
         },
         {
-            "name": "organization",
+            "name": "owner",
             "resource": {
                 "resourceType": "Organization",
                 "id": "organization",
