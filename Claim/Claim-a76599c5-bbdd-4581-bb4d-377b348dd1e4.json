@@ -17,6 +17,23 @@
     {
       "resourceType": "PractitionerRole",
       "id": "provider",
+      "identifier": [
+        {
+          "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+          "value": "454567759542"
+        }
+      ],
+      "code": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+              "code": "S0030:G0100:R0620",
+              "display": "Clinical Practitioner Access Role"
+            }
+          ]
+        }
+      ],
       "practitioner": {
         "identifier": {
           "system": "https://fhir.hl7.org.uk/Id/gphc-number",
@@ -25,7 +42,7 @@
         "display": "Mr Peter Potion"
       },
       "organization": {
-        "reference" : "#organisation"
+        "reference": "#organisation"
       },
       "telecom": [
         {
@@ -36,7 +53,6 @@
       ]
     },
     {
-      
       "resourceType": "Organization",
       "id": "organisation",
       "identifier": [
@@ -138,7 +154,7 @@
       ]
     },
     "party": {
-      "reference" : "#organisation"
+      "reference": "#organisation"
     }
   },
   "prescription": {

@@ -1,143 +1,159 @@
 {
-    "resourceType": "Task",
-    "id": "6a2624a2-321b-470e-91a6-8ae7a065e2f0",
-    "extension":  [
-        {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
-            "valueReference": {
-                "identifier": {
-                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                    "value": "7654321"
-                }
-            }
+  "resourceType": "Task",
+  "id": "6a2624a2-321b-470e-91a6-8ae7a065e2f0",
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/StructureDefinition/Extension-Provenance-agent",
+      "valueReference": {
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+          "value": "7654321"
         }
-    ],
-    "contained":  [
+      }
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "PractitionerRole",
+      "id": "requester",
+      "identifier": [
         {
-            "resourceType": "PractitionerRole",
-            "id": "requester",
-            "practitioner": {
-                "identifier": {
-                    "system": "https://fhir.hl7.org.uk/Id/gphc-number",
-                    "value": "7654321"
-                },
-                "display": "Mrs Anna Kanfeld"
-            },
-            "organization": {
-                "reference" : "#organisation"
-              },
-            "telecom": [
-                {
-                  "system": "phone",
-                  "use": "work",
-                  "value": "01234567890"
-                }
-              ]
-        },
+          "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+          "value": "641555508105"
+        }
+      ],
+      "code": [
         {
-          
-          "resourceType": "Organization",
-          "id": "organisation",
-          "identifier": [
+          "coding": [
             {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "VNE51"
-            }
-          ],
-          "address": [
-            {
-              "city": "West Yorkshire",
-              "use": "work",
-              "line": [
-                "17 Austhorpe Road",
-                "Crossgates",
-                "Leeds"
-              ],
-              "postalCode": "LS15 8BA"
-            }
-          ],
-          "active": true,
-          "type": [
-            {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
-                  "code": "182",
-                  "display": "PHARMACY"
-                }
-              ]
-            }
-          ],
-          "name": "The Simple Pharmacy",
-          "telecom": [
-            {
-              "system": "phone",
-              "use": "work",
-              "value": "0113 3180277"
+              "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+              "code": "S0030:G0100:R0620",
+              "display": "Clinical Practitioner Access Role"
             }
           ]
         }
-    ],
-    "identifier":  [
+      ],
+      "practitioner": {
+        "identifier": {
+          "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+          "value": "7654321"
+        },
+        "display": "Mrs Anna Kanfeld"
+      },
+      "organization": {
+        "reference": "#organisation"
+      },
+      "telecom": [
         {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "5AC84C11-DB8B-44DA-8FCF-8980B3D13596"
+          "system": "phone",
+          "use": "work",
+          "value": "01234567890"
         }
-    ],
-    "status": "cancelled",
-    "statusReason": {
-        "coding":  [
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "organisation",
+      "identifier": [
+        {
+          "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+          "value": "VNE51"
+        }
+      ],
+      "address": [
+        {
+          "city": "West Yorkshire",
+          "use": "work",
+          "line": [
+            "17 Austhorpe Road",
+            "Crossgates",
+            "Leeds"
+          ],
+          "postalCode": "LS15 8BA"
+        }
+      ],
+      "active": true,
+      "type": [
+        {
+          "coding": [
             {
-                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason",
-                "code": "DA",
-                "display": "Dosage Amendments"
+              "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+              "code": "182",
+              "display": "PHARMACY"
             }
-        ]
-    },
-    "intent": "order",
-    "groupIdentifier": {
-        "system": "https://fhir.nhs.uk/Id/prescription-order-number",
-        "value": "88AF6C-C81007-00001C"
-    },
-    "code": {
-        "coding":  [
-            {
-                "system": "http://hl7.org/fhir/CodeSystem/task-code",
-                "code": "abort",
-                "display": "Mark the focal resource as no longer active"
-            }
-        ]
-    },
-    "focus": {
-        "type": "Bundle",
-        "identifier": {
-            "system": "https://tools.ietf.org/html/rfc4122",
-            "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+          ]
         }
-    },
-    "for": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/nhs-number",
-            "value": "9446368138"
+      ],
+      "name": "The Simple Pharmacy",
+      "telecom": [
+        {
+          "system": "phone",
+          "use": "work",
+          "value": "0113 3180277"
         }
-    },
-    "authoredOn": "2020-12-21T17:03:20-00:00",
-    "owner": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "VNE51"
-        }
-    },
-    "requester": {
-        "reference": "#requester"
-    },
-    "reasonCode": {
-        "coding":  [
-            {
-                "system": "http://snomed.info/sct",
-                "code": "373784005",
-                "display": "Dispensing medication"
-            }
-        ]
+      ]
     }
+  ],
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "5AC84C11-DB8B-44DA-8FCF-8980B3D13596"
+    }
+  ],
+  "status": "cancelled",
+  "statusReason": {
+    "coding": [
+      {
+        "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-withdraw-reason",
+        "code": "DA",
+        "display": "Dosage Amendments"
+      }
+    ]
+  },
+  "intent": "order",
+  "groupIdentifier": {
+    "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+    "value": "88AF6C-C81007-00001C"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/CodeSystem/task-code",
+        "code": "abort",
+        "display": "Mark the focal resource as no longer active"
+      }
+    ]
+  },
+  "focus": {
+    "type": "Bundle",
+    "identifier": {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "334a3195-1f6c-497a-8efe-d272ca9c4e38"
+    }
+  },
+  "for": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9446368138"
+    }
+  },
+  "authoredOn": "2020-12-21T17:03:20-00:00",
+  "owner": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "VNE51"
+    }
+  },
+  "requester": {
+    "reference": "#requester"
+  },
+  "reasonCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "373784005",
+        "display": "Dispensing medication"
+      }
+    ]
+  }
 }
