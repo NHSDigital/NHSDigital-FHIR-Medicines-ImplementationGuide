@@ -48,3 +48,4 @@ StructureDefinition/Extension-replacementOf.StructureDefinition.xml
 StructureDefinition/NHSDigital-PractitionerRole-Full.xml
 StructureDefinition/NHSDigital-PractitionerRole-Minimal.StructureDefinition.xml
 StructureDefinition/NHSDigital-PractitionerRole-MinimalPlusTelecom.StructureDefinition.xml
+.DS_Store
