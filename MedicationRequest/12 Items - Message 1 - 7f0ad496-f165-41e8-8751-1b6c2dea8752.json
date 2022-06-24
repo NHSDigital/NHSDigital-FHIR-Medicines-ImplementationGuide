@@ -124,8 +124,7 @@
                         "coding": [
                             {
                                 "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                                "code": "R8000",
-                                "display": "Clinical Practitioner Access Role"
+                                "code": "R8000"
                             }
                         ]
                     }
