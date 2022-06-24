@@ -29,6 +29,23 @@
             {
                 "resourceType": "PractitionerRole",
                 "id": "performer",
+                "identifier": [
+                    {
+                      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                      "value": "641555508105"
+                    }
+                  ],
+                  "code": [
+                    {
+                      "coding": [
+                        {
+                          "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                          "code": "S0030:G0100:R0620",
+                          "display": "Clinical Practitioner Access Role"
+                        }
+                      ]
+                    }
+                  ],
                 "practitioner": {
                     "identifier": {
                         "system": "https://fhir.hl7.org.uk/Id/gphc-number",
@@ -37,10 +54,7 @@
                     "display": "Mr Peter Potion"
                 },
                 "organization": {
-                    "identifier": {
-                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                        "value": "VNE51"
-                    },
+                    "reference": "Organization/VNE51",
                     "display": "The Simple Pharmacy"
                 },
                 "telecom": [
@@ -162,6 +176,50 @@
       "search": {
         "mode": "match"
       }
+    },
+    {
+        "fullUrl": "Organization/VNE51",
+        "resource":  {
+            "resourceType": "Organization",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "VNE51"
+                }
+            ],
+            "address": [
+                {
+                    "city": "West Yorkshire",
+                    "use": "work",
+                    "line": [
+                        "17 Austhorpe Road",
+                        "Crossgates",
+                        "Leeds"
+                    ],
+                    "postalCode": "LS15 8BA"
+                }
+            ],
+            "active": true,
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+                            "code": "182",
+                            "display": "PHARMACY"
+                        }
+                    ]
+                }
+            ],
+            "name": "The Simple Pharmacy",
+            "telecom": [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "0113 3180277"
+                }
+            ]
+        }
     }
   ]
 }
