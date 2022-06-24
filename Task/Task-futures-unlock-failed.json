@@ -5,6 +5,23 @@
         {
             "resourceType": "PractitionerRole",
             "id": "requester",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "741555508105"
+                }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620",
+                            "display": "Clinical Practitioner Access Role"
+                        }
+                    ]
+                }
+            ],
             "practitioner": {
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/sds-user-id",
