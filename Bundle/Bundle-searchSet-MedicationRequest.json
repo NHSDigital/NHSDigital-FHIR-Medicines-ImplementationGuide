@@ -11,7 +11,7 @@
   ],
   "entry": [
     {
-      "fullUrl": "MedicationReqyest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
+      "fullUrl": "MedicationRequest/a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
       "resource": {
         "resourceType": "MedicationRequest",
         "id": "a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
@@ -62,6 +62,16 @@
                 "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
                 "value": "100102238986"
               }
+            ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                            "code": "R8000"
+                        }
+                    ]
+                }
             ],
             "practitioner": {
               "identifier": {

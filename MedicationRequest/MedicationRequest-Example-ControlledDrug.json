@@ -49,6 +49,16 @@
                     "value": "100102238986"
                 }
             ],
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                            "code": "R8000"
+                        }
+                    ]
+                }
+            ],
             "practitioner": {
                 "identifier": {
                     "system": "https://fhir.hl7.org.uk/Id/gmc-number",
