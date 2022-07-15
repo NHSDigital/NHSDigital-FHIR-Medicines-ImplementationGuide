@@ -147,7 +147,7 @@
             "value": "683458"
           },
           {
-            "system": "https://fhir.hl7.org.uk/Id/gphc-number",
+            "system": "https://fhir.nhs.uk/Id/sds-user-id",
             "value": "6150129"
           }
         ],
