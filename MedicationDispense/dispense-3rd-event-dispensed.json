@@ -367,6 +367,12 @@
                         "reference": "#m2"
                     }
                 ],
+                "quantity": {
+                    "value": 0,
+                    "unit": "unit dose",
+                    "system": "http://snomed.info/sct",
+                    "code": "408102007"
+                },
                 "type": {
                     "coding": [
                         {
