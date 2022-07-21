@@ -28,9 +28,6 @@
                         ]
                     }
                 ],
-                "organization": {
-                    "reference": "Organization/organization"
-                },
                 "telecom": [
                     {
                         "system": "phone",
