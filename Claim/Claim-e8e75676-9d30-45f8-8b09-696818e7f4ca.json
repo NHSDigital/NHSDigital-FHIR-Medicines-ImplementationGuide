@@ -368,10 +368,11 @@
                             "coding": [
                                 {
                                     "system": "https://fhir.nhs.uk/CodeSystem/medicationdispense-endorsement",
-                                    "code": "NDEC",
-                                    "display": "No Dispenser Endorsement Code"
+                                    "code": "IP",
+                                    "display": "Invoice Price for less common products or special items"
                                 }
-                            ]
+                            ],
+                            "text" : "15gram,£12.34,EFGH Ltd"
                         }
                     ],
                     "subDetail": [
