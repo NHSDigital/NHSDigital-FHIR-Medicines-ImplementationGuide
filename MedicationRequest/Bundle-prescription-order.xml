@@ -292,7 +292,7 @@
           <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
             <code value="R8000" />
-            <display value="Clinical Practitioner Access Role" />
+          
           </coding>
         </code>
         <location>
@@ -334,7 +334,7 @@
           <coding>
             <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName" />
             <code value="R8000" />
-            <display value="Clinical Practitioner Access Role" />
+
           </coding>
         </code>
         <location>
