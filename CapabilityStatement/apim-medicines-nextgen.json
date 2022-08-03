@@ -161,7 +161,7 @@
                 },
                 {
                     "type": "Medication",
-                    "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Medication"
                 },
                 {
                     "type": "Task",
