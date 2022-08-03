@@ -84,8 +84,8 @@
                     "coding":  [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "763158003",
-                            "display": "Medicinal product"
+                            "code": "36126511000001106",
+                            "display": "Morphine 10mg modified-release tablets"
                         }
                     ]
                 },

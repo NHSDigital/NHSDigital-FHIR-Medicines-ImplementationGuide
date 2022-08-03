@@ -247,8 +247,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "763158003",
-              "display": "Medicinal product"
+              "code": "35936511000001108",
+              "display": "Salbutamol 100micrograms/dose inhaler"
             }
           ]
         },

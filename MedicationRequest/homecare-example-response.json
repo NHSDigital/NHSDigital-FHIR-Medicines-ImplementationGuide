@@ -76,8 +76,8 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "763158003",
-                            "display": "Medicinal product"
+                            "code": "15517911000001104",
+                            "display": "Methotrexate 10mg/0.2ml solution for injection pre-filled syringes"
                         }
                     ]
                 },
