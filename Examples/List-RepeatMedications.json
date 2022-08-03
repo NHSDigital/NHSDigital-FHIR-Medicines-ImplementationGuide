@@ -3,11 +3,6 @@
     "id": "d0f003a0-8763-43d5-a264-ce52a38901c9",
     "status": "current",
     "mode": "snapshot",
-    "code": {
-      "coding": [
-      ],
-      "text": "Repeat Medications"
-    },
     "subject": {
       "reference": "urn:uuid:848d8470-bd51-494e-9347-8142ea75cb23"
     },

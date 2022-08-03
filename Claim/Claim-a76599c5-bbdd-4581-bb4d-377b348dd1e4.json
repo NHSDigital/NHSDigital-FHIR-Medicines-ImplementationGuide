@@ -177,7 +177,8 @@
           }
         ]
       }
-    ]
+    ],
+    "display" : "A prescription order"
   },
   "item": [
     {

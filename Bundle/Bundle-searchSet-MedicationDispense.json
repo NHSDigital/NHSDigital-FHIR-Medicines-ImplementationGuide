@@ -120,7 +120,7 @@
                         ]
                     }
                 ],
-                "reference": "urn:uuid:da549c24-abde-403a-bebe-96a1962ca018"
+                "reference": "MedicationRequest/da549c24-abde-403a-bebe-96a1962ca018"
             }
         ],
         "type": {
@@ -218,6 +218,9 @@
                     "value": "0113 3180277"
                 }
             ]
+        },
+        "search": {
+          "mode": "include"
         }
     }
   ]

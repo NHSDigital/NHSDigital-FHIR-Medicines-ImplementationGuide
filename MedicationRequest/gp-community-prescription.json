@@ -433,9 +433,6 @@
         "resourceType": "List",
         "status": "current",
         "mode": "snapshot",
-        "code": {
-          "text": "Repeat Medications"
-        },
         "subject": {
           "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
         },

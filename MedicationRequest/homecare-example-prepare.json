@@ -89,6 +89,11 @@
         "requester": {
           "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
         },
+        "basedOn": [
+          {
+            "reference": "https://elmpt-hospitals.nhs.uk/MedicationRequest/654321"
+          }
+        ],
         "groupIdentifier": {
           "extension": [
             {
@@ -258,14 +263,14 @@
           }
         ],
         "code": [
-            {
-                "coding": [
-                    {
-                        "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                        "code": "R8000"
-                    }
-                ]
-            }
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+                "code": "R8000"
+              }
+            ]
+          }
         ],
         "practitioner": {
           "reference": "urn:uuid:a8c85454-f8cb-498d-9629-78e2cb5fa47a"
