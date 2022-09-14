@@ -87,7 +87,7 @@
             "resourceType" : "Practitioner",
             "id" : "80eb635a-fb95-427f-9754-3ef9ca922994",
             "identifier" : [ {
-              "system" : "https://fhir.nhs.uk/Id/gmc-reference-number",
+              "system" : "https://fhir.nhs.uk/Id/gmc-number",
               "value" : "6150129"
             } ],
             "name" : [ {
