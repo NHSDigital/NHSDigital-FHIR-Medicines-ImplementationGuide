@@ -99,8 +99,8 @@
     "coding": [
       {
         "system": "http://hl7.org/fhir/CodeSystem/task-code",
-        "code": "change",
-        "display": "Change the focal resource"
+        "code": "abort",
+        "display": "Mark the focal resource as no longer active"
       }
     ]
   },

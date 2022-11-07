@@ -55,6 +55,9 @@
         "focus": [
           {
             "reference": "urn:uuid:4509b70d-d8b8-ea03-1105-64557cb54a29"
+          },
+		  {
+            "reference": "urn:uuid:4509b70d-d8b8-ea03-1105-64557cb54a28"
           }
         ]
       }
@@ -144,11 +147,18 @@
               ]
             },
             "subject": {
-              "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9449304106"
+              },
+              "display": "MR ZACKERY NICODEMUS LEGASSICK"
             },
             "authoredOn": "2021-05-07T14:47:29+00:00",
             "requester": {
-              "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                "value": "3415870202"
+              }
             },
             "groupIdentifier": {
               "extension": [
@@ -391,11 +401,18 @@
               ]
             },
             "subject": {
-              "reference": "urn:uuid:78d3c2eb-009e-4ec8-a358-b042954aa9b2"
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/nhs-number",
+                "value": "9449304106"
+              },
+              "display": "MR ZACKERY NICODEMUS LEGASSICK"
             },
             "authoredOn": "2021-05-07T14:47:29+00:00",
             "requester": {
-              "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca666"
+              "identifier": {
+                "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                "value": "3415870202"
+              }
             },
             "groupIdentifier": {
               "extension": [
