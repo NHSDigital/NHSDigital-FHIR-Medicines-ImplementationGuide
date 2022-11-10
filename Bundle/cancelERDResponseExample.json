@@ -12,7 +12,7 @@
       "fullUrl": "urn:uuid:17773b27-427e-4940-8c16-64cdac715001",
       "resource": {
         "resourceType": "MessageHeader",
-		"id": "17773b27-427e-4940-8c16-64cdac715001"
+		"id": "17773b27-427e-4940-8c16-64cdac715001",
 		"extension" : [ 
 		  {
             "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-MessageHeader-messageId",
