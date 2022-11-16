@@ -6,7 +6,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "http://example.org/FHIR/R4/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519"
+      "url": "http://example.org/FHIR/R4/MedicationRequest?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9453740519&_include=MedicationRequest:subject,MedicationRequest:requester"
     }
   ],
   "entry": [
@@ -15,110 +15,12 @@
       "resource": {
         "resourceType": "MedicationRequest",
         "id": "a7b86f8d-1d7c-fc28-e050-d20ae3a215f4",
-        "contained": [
-          {
-            "resourceType": "Patient",
-            "id": "patient",
-            "identifier": [
-              {
-                "system": "https://fhir.nhs.uk/Id/nhs-number",
-                "value": "9453740519"
-              }
-            ],
-            "name": [
-              {
-                "use": "official",
-                "family": "CORY",
-                "given": [
-                  "ETTA"
-                ],
-                "prefix": [
-                  "MISS"
-                ]
-              }
-            ],
-            "gender": "female",
-            "birthDate": "1999-01-04",
-            "address": [
-              {
-                "use": "home",
-                "postalCode": "DE21 4QH"
-              }
-            ],
-            "generalPractitioner": [
-              {
-                "identifier": {
-                  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                  "value": "B81001"
-                }
-              }
-            ]
-          },
-          {
-            "resourceType": "PractitionerRole",
-            "id": "requester",
-            "identifier": [
-              {
-                "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
-                "value": "100102238986"
-              }
-            ],
-            "code": [
-                {
-                    "coding": [
-                        {
-                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
-                            "code": "R8000"
-                        }
-                    ]
-                }
-            ],
-            "practitioner": {
-              "identifier": {
-                "system": "https://fhir.hl7.org.uk/Id/gmc-number",
-                "value": "C1234567"
-              },
-              "display": "Dr Liz Scott"
-            },
-            "organization": {
-              "identifier": {
-                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                "value": "RBA"
-              },
-              "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
-            },
-            "telecom": [
-              {
-                "system": "phone",
-                "value": "01234567890",
-                "use": "work"
-              }
-            ]
-          }
-        ],
         "extension": [
           {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
               "code": "0101"
-            }
-          },
-          {
-            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-MedicationRequestSignature",
-            "valueSignature": {
-              "type": [
-                {
-                  "system": "urn:iso-astm:E1762-95:2013",
-                  "code": "1.2.840.10065.1.12.1.1",
-                  "display": "Author's Signature"
-                }
-              ],
-              "when": "2021-06-25T14:40:17.2561801+01:00",
-              "who": {
-                "reference": "#requester"
-              },
-              "data": "PFNpZ25hdHVyZSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyI+PFNpZ25lZEluZm8geG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyMiPjxDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIj48L0Nhbm9uaWNhbGl6YXRpb25NZXRob2Q+PFNpZ25hdHVyZU1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNyc2Etc2hhMSI+PC9TaWduYXR1cmVNZXRob2Q+PFJlZmVyZW5jZT48VHJhbnNmb3Jtcz48VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8xMC94bWwtZXhjLWMxNG4jIj48L1RyYW5zZm9ybT48L1RyYW5zZm9ybXM+PERpZ2VzdE1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvMDkveG1sZHNpZyNzaGExIj48L0RpZ2VzdE1ldGhvZD48RGlnZXN0VmFsdWU+cWREeWQ0eXd4ekpNa2liVU15V1puUDhwVFdrPTwvRGlnZXN0VmFsdWU+PC9SZWZlcmVuY2U+PC9TaWduZWRJbmZvPjxTaWduYXR1cmVWYWx1ZT5ESC9GaGNXcnZPUFBrNkxhbWc5WlpnTnJVajJmRnVIZ2NidlZEYmJMblJsQnpDdThPZDErb0NHUENRSHdwSkFRNW8xTlpnSmNjcjI5dHkwV3pCeFBDZEF3OUd2a2dLNy92bCtpdmJlWVlrcEM3V0NLTmxQMkh4UHMzV01KQ2kxOWJ4UFdBTVVBUGNsM2dBTHpVN0lPcXJuc1VTZ20zYnllai9lUERNU0d4UTQ9PC9TaWduYXR1cmVWYWx1ZT48S2V5SW5mbz48WDUwOURhdGE+PFg1MDlDZXJ0aWZpY2F0ZT5NSUlEdURDQ0FxQ2dBd0lCQWdJRVhjbW83ekFOQmdrcWhraUc5dzBCQVFzRkFEQTJNUXd3Q2dZRFZRUUtFd051YUhNeEN6QUpCZ05WQkFzVEFrTkJNUmt3RndZRFZRUURFeEJPU0ZNZ1NVNVVJRXhsZG1Wc0lERkVNQjRYRFRJd01Ea3lNekUxTkRrME9Gb1hEVEl5TURreU16RTJNVGswT0Zvd1F6RU1NQW9HQTFVRUNoTURibWh6TVE4d0RRWURWUVFMRXdaUVpXOXdiR1V4SWpBZ0JnTlZCQU1NR1RVMU5UQTROalF4TlRFd05WOVVaWE4wWDFSbGMzUmtiMmN3Z1o4d0RRWUpLb1pJaHZjTkFRRUJCUUFEZ1kwQU1JR0pBb0dCQVBDeW1MYjBJdm5nS21ZOTlwcmx2VU8xTmxnK1l5NHpEanpUaHVxZDJrdGsyOE1lWWRWbUFMV0xJWTY5cE50VDhEV0NrSmJtVytyR1JFYzFueG9halcrb0NqV2dlMUtjdytVVU15MnNZNXBMMmJoMGpmNGhtK3d5OVZvbGdNeWRsWmN6cklxWmJpYjhCbTBZbkZtbGtqSDltZnU1ZWRzQzhPVmYzdHIyUktYSEFnTUJBQUdqZ2dGRE1JSUJQekFPQmdOVkhROEJBZjhFQkFNQ0JrQXdaUVlEVlIwZ0FRSC9CRnN3V1RCWEJnc3Foam9BaVh0bUFBTUNBREJJTUVZR0NDc0dBUVVGQndJQkZqcG9kSFJ3Y3pvdkwzQnJhUzV1YUhNdWRXc3ZZMlZ5ZEdsbWFXTmhkR1ZmY0c5c2FXTnBaWE12WTI5dWRHVnVkRjlqYjIxdGFYUnRaVzUwTURNR0ExVWRId1FzTUNvd0tLQW1vQ1NHSW1oMGRIQTZMeTlqY213dWJtaHpMblZyTDJsdWRDOHhaQzlqY214ak15NWpjbXd3S3dZRFZSMFFCQ1F3SW9BUE1qQXlNREE1TWpNeE5UUTVORGhhZ1E4eU1ESXlNREl4TmpFMk1UazBPRm93SHdZRFZSMGpCQmd3Rm9BVW9KWWZnWVROUGQ2RVVLTDZRTEl6SHhZNVBGSXdIUVlEVlIwT0JCWUVGRi9YS2h0NWVpN3FyeHcxM1dmR2xDQStaNS9NTUFrR0ExVWRFd1FDTUFBd0dRWUpLb1pJaHZaOUIwRUFCQXd3Q2hzRVZqZ3VNd01DQkxBd0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFFZmFidkVRcmt0MEJTUnkzYnA1NkRJMUJyWEN5eVFWdjhORkdsZ2VDQTNOV0V5dE9uQkpqaDNJT0c1YlpsclVBK1lnK2xJMWxFUFlWaGJxd0R2bmlDdUYyOWw1TE0zai82Y1c0YWRIRUFPMTVnZWNHUVRzbm9DUlRZMnYrTzBDcVZ5MGtaWkV0dFRFbGtPekZ3clNvQzRITDdkOG96cG9UR0NpVDBHK3lKT25mWm9yc1ZWd1JFNW9rNUhwMlYyQWEwQ2EvUUVkNzc4UFMxOXFqdHBEUWJjODdVYkVPSXY2alZscUM3VHhIVGViNjB2akhIcU14VFU5bCtjdGF0TnU4N1ovMTA3eG1NRmFVYTRVMXA0R0xZYm9QbElOSUkzVVlwdGNDdXRXeHROcTVGZ1RNTkI1eEJQUE9SU2tjSWxrNDBsc0U1R3EzczlVZ2xLZzNBQ3V1Wnc9PC9YNTA5Q2VydGlmaWNhdGU+PC9YNTA5RGF0YT48L0tleUluZm8+PC9TaWduYXR1cmU+"
             }
           },
           {
@@ -206,7 +108,7 @@
           ]
         },
         "subject": {
-          "reference": "#patient",
+          "reference": "Patient/78d3c2eb-009e-4ec8-a358-b042954aa9b2",
           "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "9453740519"
@@ -214,7 +116,7 @@
         },
         "authoredOn": "2019-12-30T12:00:00+00:00",
         "requester": {
-          "reference": "#requester",
+          "reference": "PractitionerRole/56166769-c1c4-4d07-afa8-132b5dfca666",
           "identifier": {
             "system": "https://fhir.hl7.org.uk/Id/gmc-number",
             "value": "C1234567"
@@ -288,6 +190,97 @@
       "search": {
         "mode": "match"
       }
-    }
+    },
+	{
+	  "fullUrl": "Patient/78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+      "resource": {
+		"resourceType": "Patient",
+		"id": "78d3c2eb-009e-4ec8-a358-b042954aa9b2",
+		"identifier": [
+		  {
+			"system": "https://fhir.nhs.uk/Id/nhs-number",
+			"value": "9453740519"
+		  }
+		],
+		"name": [
+		  {
+			"use": "official",
+			"family": "CORY",
+			"given": [
+			  "ETTA"
+			],
+			"prefix": [
+			  "MISS"
+			]
+		  }
+		],
+		"gender": "female",
+		"birthDate": "1999-01-04",
+		"address": [
+		  {
+			"use": "home",
+			"postalCode": "DE21 4QH"
+		  }
+		],
+		"generalPractitioner": [
+		  {
+			"identifier": {
+			  "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			  "value": "B81001"
+			}
+		  }
+		]
+	  },
+	  "search": {
+        "mode": "include"
+      }
+	},
+	{
+	  "fullUrl": "PractitionerRole/56166769-c1c4-4d07-afa8-132b5dfca666",
+	  "resource": {
+		"resourceType": "PractitionerRole",
+		"id": "56166769-c1c4-4d07-afa8-132b5dfca666",
+		"identifier": [
+		  {
+			"system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+			"value": "100102238986"
+		  }
+		],
+		"code": [
+			{
+				"coding": [
+					{
+						"system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-SDSJobRoleName",
+						"code": "R8000"
+					}
+				]
+			}
+		],
+		"practitioner": {
+		  "identifier": {
+			"system": "https://fhir.hl7.org.uk/Id/gmc-number",
+			"value": "C1234567"
+		  },
+		  "display": "Dr Liz Scott"
+		},
+		"organization": {
+		  "identifier": {
+			"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+			"value": "RBA"
+		  },
+		  "display": "TAUNTON AND SOMERSET NHS FOUNDATION TRUST"
+		},
+		"telecom": [
+		  {
+			"system": "phone",
+			"value": "01234567890",
+			"use": "work"
+		  }
+		]
+	  },
+	  "search": {
+        "mode": "include"
+      }
+	}
   ]
 }
