@@ -65,7 +65,7 @@
                     }
                 ],
                 "status": "active",
-                "intent": "order",
+                "intent": "original-order",
                 "category": [
                     {
                         "coding": [
