@@ -54,12 +54,13 @@
             ],
             "practitioner": {
                 "identifier": {
-                    "system": "https://fhir.hl7.org.uk/Id/gmp-number",
-                    "value": "G8133438"
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7654321"
                 },
                 "display": "Dr Sarah Sunshine"
             },
             "organization": {
+			    "reference": "Organization/3b4b03a5-52ba-4ba6-9b82-70350aa109d8",
                 "identifier": {
                     "system": "https://fhir.nhs.uk/Id/ods-organization-code",
                     "value": "M12345"
