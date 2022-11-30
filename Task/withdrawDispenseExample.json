@@ -93,13 +93,18 @@
             }
         },
 		{
-			"url": "courseOfTherapyType",
-			"valueCoding": {
-				"system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
-			    "code": "continuous",
-			    "display": "Continuous long term therapy"
-			}
-		},
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-Prescription",
+            "extension":  [
+                {
+                    "url": "courseOfTherapyType",
+                    "valueCoding": {
+                        "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                        "code": "acute",
+                        "display": "Short course (acute) therapy"
+                    }
+                }
+            ]
+        },
 		{
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation",
             "extension": [
