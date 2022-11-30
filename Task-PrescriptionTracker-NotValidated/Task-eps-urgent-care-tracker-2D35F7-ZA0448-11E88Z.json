@@ -10,11 +10,11 @@
             "extension": [
                 {
                     "url": "numberOfRepeatsAllowed",
-                    "valueUnsignedInt": 6
+                    "valueInteger": 6
                 },
                 {
                     "url": "numberOfRepeatsIssued",
-                    "valueUnsignedInt": 2
+                    "valueInteger": 2
                 }
             ]
         },

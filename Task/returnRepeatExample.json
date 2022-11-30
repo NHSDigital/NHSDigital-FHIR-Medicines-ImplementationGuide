@@ -1,0 +1,182 @@
+{
+    "resourceType": "Task",
+    "id": "ee1b55f8-113c-4725-99a3-25fbad366dd6",
+	"extension": [
+        {
+            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-EPS-RepeatInformation",
+            "extension": [
+                {
+                    "url": "numberOfRepeatsAllowed",
+                    "valueInteger": 6
+                },
+                {
+                    "url": "numberOfRepeatsIssued",
+                    "valueInteger": 0
+                }
+            ]
+        }
+	],
+    "contained":  [
+        {
+            "resourceType": "PractitionerRole",
+            "id": "requester",
+            "identifier":  [
+                {
+                    "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+                    "value": "641555508105"
+                }
+            ],
+            "practitioner": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                    "value": "7654321"
+                },
+                "display": "Ms Lottie Maifeld"
+            },
+            "organization": {
+                "reference": "#organization"
+            },
+            "code":  [
+                {
+                    "coding":  [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/NHSDigital-SDS-JobRoleCode",
+                            "code": "S0030:G0100:R0620"
+                        }
+                    ]
+                }
+            ],
+            "telecom":  [
+                {
+                    "system": "phone",
+                    "use": "work",
+                    "value": "01234567890"
+                }
+            ]
+        },
+		{
+			"resourceType": "Organization",
+			"id": "organization",
+			"extension": [
+				{
+					"url": "https://fhir.nhs.uk/StructureDefinition/Extension-ODS-OrganisationRelationships",
+					"extension": [
+						{
+							"url": "reimbursementAuthority",
+							"valueIdentifier": {
+								"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+								"value": "T1450"
+							}
+						}
+					]
+				}
+			],
+			"identifier":  [
+				{
+					"system": "https://fhir.nhs.uk/Id/ods-organization-code",
+					"value": "VNE51"
+				}
+			],
+			"address":  [
+				{
+					"city": "West Yorkshire",
+					"use": "work",
+					"line":  [
+						"17 Austhorpe Road",
+						"Crossgates",
+						"Leeds"
+					],
+					"postalCode": "LS15 8BA"
+				}
+			],
+			"active": true,
+			"type":  [
+				{
+					"coding":  [
+						{
+							"system": "https://fhir.nhs.uk/CodeSystem/organisation-role",
+							"code": "182",
+							"display": "PHARMACY"
+						}
+					]
+				}
+			],
+			"name": "The Simple Pharmacy",
+			"telecom":  [
+				{
+					"system": "phone",
+					"use": "work",
+					"value": "0113 3180277"
+				}
+			]
+		}
+    ],
+    "identifier":  [
+        {
+            "system": "https://tools.ietf.org/html/rfc4122",
+            "value": "ee1b55f8-113c-4725-99a3-25fbad366dd6"
+        }
+    ],
+    "status": "rejected",
+    "statusReason": {
+        "coding":  [
+            {
+                "system": "https://fhir.nhs.uk/CodeSystem/EPS-task-dispense-return-status-reason",
+                "code": "0003",
+                "display": "Patient requested release"
+            }
+        ]
+    },
+    "intent": "order",
+    "code": {
+        "coding":  [
+            {
+                "system": "http://hl7.org/fhir/CodeSystem/task-code",
+                "code": "fulfill",
+                "display": "Fulfill the focal request"
+            }
+        ]
+    },
+    "focus": {
+        "identifier": {
+			"system": "https://tools.ietf.org/html/rfc4122",
+			"value": "a5d77265-8ba5-4c74-b8ce-ea0dbaafbdb8"
+        }
+    },
+    "for": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449304130"
+        }
+    },
+    "authoredOn": "2022-11-21T14:30:00+00:00",
+    "requester": {
+        "reference": "#requester"
+    },
+    "reasonCode": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "33633005",
+                "display": "Prescription of drug"
+            }
+        ]
+    },
+	"input":  [
+        {
+            "type": {
+                "coding":  [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "16076005",
+                        "display": "Prescription"
+                    }
+                ]
+            },
+            "valueIdentifier": {
+                "system": "https://fhir.nhs.uk/Id/prescription-order-number",
+				"value": "24F5DA-A83008-7EFE6Z"
+            }
+        }
+    ]
+}
