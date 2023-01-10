@@ -29,7 +29,7 @@
         },
 		"destination" : [ 
 		  {
-            "endpoint" : "urn:nhs-uk:addressing:ods:RBA",
+            "endpoint" : "https://directory.spineservices.nhs.uk/STU3/Organization/RBA",
             "receiver" : {
               "identifier" : {
                 "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
