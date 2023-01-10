@@ -22,7 +22,7 @@
                 },
                 "source": {
                     "name": "RX1",
-                    "endpoint": "urn:nhs-uk:addressing:ods:RX1"
+                    "endpoint": "https://directory.spineservices.nhs.uk/STU3/Organization/RX1"
                 },
                 "focus": [
                     {

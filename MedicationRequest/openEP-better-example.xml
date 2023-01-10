@@ -24,7 +24,7 @@
                 </sender>
                 <source>
                     <name value="PAS" />
-                    <endpoint value="urn:nhs-uk:addressing:ods:RBA" />
+                    <endpoint value="https://directory.spineservices.nhs.uk/STU3/Organization/RBA" />
                 </source>
                 <focus>
                     <reference value="urn:uuid:22a49ecc-eab1-4cc2-ba39-0d34ff8c2bd1" />

@@ -18,7 +18,7 @@
                     "display": "Prescription Order"
                 },
                 "source": {
-                    "endpoint": "urn:nhs-uk:addressing:ods:694X0"
+                    "endpoint": "https://directory.spineservices.nhs.uk/STU3/Organization/694X0"
                 },
                 "focus": [
                     {
