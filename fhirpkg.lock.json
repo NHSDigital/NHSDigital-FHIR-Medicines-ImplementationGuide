@@ -2,8 +2,8 @@
   "updated": "2022-03-09T13:04:02.5651095+00:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "fhir.r4.ukcore.stu1": "1.0.1",
-    "uk.nhsdigital.r4.test": "2.7.9-prerelease"
+    "fhir.r4.ukcore.stu3.currentbuild": "0.0.3-pre-release",
+    "uk.nhsdigital.r4.test": "2.8.3-prerelease"
   },
   "missing": {}
 }
