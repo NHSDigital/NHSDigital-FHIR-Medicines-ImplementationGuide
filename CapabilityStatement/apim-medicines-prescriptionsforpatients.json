@@ -58,8 +58,8 @@
     "status": "active",
     "date": "2021-04-28T00:00:00+00:00",
     "publisher": "digital.nhs.uk",
-    "description": "Conformance requirements for NHS Digital EPS Prescriptions for Patients APIs",
-    "kind": "requirements",
+    "description": "Capability Statement for NHS Digital EPS Prescriptions for Patients API",
+    "kind": "instance",
     "implementationGuide":  [
         "https://simplifier.net/guide/nhsdigital-medicine",
         "https://simplifier.net/guide/nhsdigital"
@@ -68,6 +68,10 @@
     "format":  [
         "application/fhir+json"
     ],
+    "implementation": {
+        "description": "Base URL for the Prescriptions for Patients API",
+        "url": "https://api.service.nhs.uk/prescriptions-for-patients"
+    },
     "rest":  [
         {
             "mode": "server",
@@ -113,7 +117,7 @@
                                 }
                             ],
                             "code": "search-type",
-                            "documentation": "Use this endpoint to request prescription summaries for a given patient (specified within header)."
+                            "documentation": "Use this endpoint to request prescription summaries for a given patient (specified within request header)."
                         }
                     ]
                 },
