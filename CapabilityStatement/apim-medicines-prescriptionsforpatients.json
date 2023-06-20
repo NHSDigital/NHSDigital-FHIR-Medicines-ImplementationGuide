@@ -91,7 +91,7 @@
             "resource":  [
                 {
                     "type": "Bundle",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Bundle-Collection",
+                    "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
                     "interaction":  [
                         {
                             "extension":  [
