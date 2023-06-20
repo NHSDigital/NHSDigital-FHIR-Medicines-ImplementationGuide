@@ -86,10 +86,6 @@
                 ]
             },
             "resource":  [
-						    {
-                    "type": "Bundle",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Bundle-FHIRMessage"
-                },
                 {
                     "type": "Claim",
                     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Claim",
