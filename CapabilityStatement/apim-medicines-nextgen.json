@@ -86,6 +86,10 @@
             },
             "resource":  [
                 {
+                    "type": "Bundle",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Bundle-SearchSet"
+                },
+								{
                     "type": "List",
                     "profile": "https://fhir.hl7.org.uk/StructureDefinition/UKCore-List"
                 },
