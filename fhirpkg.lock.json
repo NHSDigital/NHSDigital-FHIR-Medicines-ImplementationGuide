@@ -3,7 +3,7 @@
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "fhir.r4.ukcore.stu3.currentbuild": "0.0.3-pre-release",
-    "uk.nhsdigital.r4.test": "2.8.3-prerelease"
+    "uk.nhsdigital.r4.test": "2.8.12-prerelease"
   },
   "missing": {}
 }
