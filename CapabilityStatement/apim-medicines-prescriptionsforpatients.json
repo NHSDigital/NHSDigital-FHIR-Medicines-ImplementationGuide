@@ -140,6 +140,14 @@
                 {
                     "type": "Organization",
                     "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization"
+                },
+                {
+                    "type": "Location",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Location"
+                },
+                {
+                    "type": "HealthcareService",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-HealthcareService"
                 }
             ]
         }
