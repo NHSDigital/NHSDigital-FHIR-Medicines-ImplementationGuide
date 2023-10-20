@@ -122,24 +122,20 @@
                     ]
                 },
                 {
-                    "type": "CommunicationRequest",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-CommunicationRequest"
-                },
-                {
                     "type": "MedicationRequest",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/UKCore-MedicationRequest"
                 },
                 {
                     "type": "PractitionerRole",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-PractitionerRole"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/UKCore-PractitionerRole"
                 },
                 {
                     "type": "Practitioner",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Practitioner"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/UKCore-Practitioner"
                 },
                 {
                     "type": "Organization",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-Organization"
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/UKCore-Organization"
                 }
             ]
         }
