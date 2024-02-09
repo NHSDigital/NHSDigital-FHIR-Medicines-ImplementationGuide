@@ -395,8 +395,8 @@
               "coding": [
                 {
                   "system": "http://snomed.info/sct",
-                  "code": "317972000",
-                  "display": "Furosemide 40 mg oral tablet"
+                  "code": "42294811000001108",
+                  "display": "Furosemide 40mg tablets"
                 }
               ]
             },
@@ -512,8 +512,8 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "317972000",
-              "display": "Furosemide 40 mg oral tablet"
+              "code": "42294811000001108",
+              "display": "Furosemide 40mg tablets"
             }
           ]
         },

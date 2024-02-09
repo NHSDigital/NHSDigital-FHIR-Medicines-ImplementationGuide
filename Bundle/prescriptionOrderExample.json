@@ -231,7 +231,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "322341003",
+              "code": "42009811000001101",
               "display": "Co-codamol 30mg/500mg tablets"
             }
           ]
@@ -360,7 +360,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "321080004",
+              "code": "42195711000001104",
               "display": "Pseudoephedrine hydrochloride 60mg tablets"
             }
           ]
@@ -489,7 +489,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "324252006",
+              "code": "41942011000001100",
               "display": "Azithromycin 250mg capsules"
             }
           ]

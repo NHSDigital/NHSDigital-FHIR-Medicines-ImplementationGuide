@@ -178,8 +178,8 @@
           "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "322341003",
-            "display": "Codeine phosphate 30 mg and paracetamol 500 mg oral tablet"
+            "code": "42009811000001101",
+            "display": "Co-codamol 30mg/500mg tablets"
           }
           ]
         },
@@ -296,8 +296,8 @@
           "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "321080004",
-            "display": "Pseudoephedrine hydrochloride 60 mg oral tablet"
+            "code": "42195711000001104",
+            "display": "Pseudoephedrine hydrochloride 60mg tablets"
           }
           ]
         },

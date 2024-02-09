@@ -177,7 +177,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "321196004",
+                            "code": "42128111000001101",
                             "display": "Diazepam 2mg tablets"
                         }
                     ]
@@ -298,7 +298,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "322236009",
+                            "code": "42109611000001109",
                             "display": "Paracetamol 500mg tablets"
                         }
                     ]
@@ -403,7 +403,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "321152004",
+                            "code": "42137211000001105",
                             "display": "Temazepam 10mg tablets"
                         }
                     ]
