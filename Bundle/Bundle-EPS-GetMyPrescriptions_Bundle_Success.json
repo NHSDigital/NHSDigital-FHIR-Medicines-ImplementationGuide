@@ -179,7 +179,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "322341003",
-            "display": "Co-codamol 30mg/500mg tablets"
+            "display": "Codeine phosphate 30 mg and paracetamol 500 mg oral tablet"
           }
           ]
         },
@@ -297,7 +297,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "321080004",
-            "display": "Pseudoephedrine hydrochloride 60mg tablets"
+            "display": "Pseudoephedrine hydrochloride 60 mg oral tablet"
           }
           ]
         },
@@ -414,7 +414,7 @@
           "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "324252006",
+            "code": "41942011000001100",
             "display": "Azithromycin 250mg capsules"
           }
           ]
