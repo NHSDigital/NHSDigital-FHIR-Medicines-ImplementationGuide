@@ -208,7 +208,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "322236009",
+                            "code": "42109611000001109",
                             "display": "Paracetamol 500mg tablets"
                         }
                     ]
@@ -420,7 +420,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "329652003",
+                            "code": "42104811000001109",
                             "display": "Ibuprofen 200mg tablets"
                         }
                     ]

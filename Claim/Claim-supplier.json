@@ -236,7 +236,7 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "134463001",
+                                "code": "42382811000001109",
                                 "display": "Telmisartan 20mg tablets"
                             }
                         ]
@@ -323,7 +323,7 @@
                         "coding": [
                             {
                                 "system": "http://snomed.info/sct",
-                                "code": "318986004",
+                                "code": "42383011000001107",
                                 "display": "Telmisartan 40mg tablets"
                             }
                         ]

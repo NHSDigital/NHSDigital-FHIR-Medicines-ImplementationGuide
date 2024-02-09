@@ -419,7 +419,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "329653008",
+                            "code": "42104911000001104",
                             "display": "Ibuprofen 400mg tablets"
                         }
                     ]
@@ -525,7 +525,7 @@
                     "coding": [
                         {
                             "system": "http://snomed.info/sct",
-                            "code": "373959000",
+                            "code": "42271511000001101",
                             "display": "Fluoxetine 10mg capsules"
                         }
                     ]
