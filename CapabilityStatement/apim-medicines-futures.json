@@ -87,7 +87,7 @@
             "resource":  [
                 {
                     "type": "MedicationRequest",
-                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest-Contained",
+                    "profile": "https://fhir.nhs.uk/StructureDefinition/NHSDigital-MedicationRequest",
                     "interaction":  [
                         {
                             "extension":  [
