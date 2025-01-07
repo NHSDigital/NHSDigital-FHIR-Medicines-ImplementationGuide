@@ -311,7 +311,7 @@
               "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType",
               "valueCoding": {
                 "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
-                "value": "0004"
+                "code": "0004"
               }
             }
           ],
