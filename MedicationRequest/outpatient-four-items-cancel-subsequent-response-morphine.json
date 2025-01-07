@@ -48,6 +48,14 @@
                         ]
                     },
                     {
+                        "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
+                        "valueCoding": {
+                            "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
+                            "code": "1001",
+                            "display": "Outpatient Community Prescriber - Medical Prescriber"
+                        }
+                    },
+                    {
                         "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-ResponsiblePractitioner",
                         "valueReference": {
                             "reference": "urn:uuid:56166769-c1c4-4d07-afa8-132b5dfca645"
@@ -61,8 +69,7 @@
                             },
                             {
                                 "url": "schedule",
-                                "valueCoding":
-                                {
+                                "valueCoding": {
                                     "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-controlled-drug",
                                     "code": "CD2",
                                     "display": "Schedule 2"
@@ -79,9 +86,29 @@
                     }
                 ],
                 "status": "cancelled",
+                "statusReason": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/CodeSystem/medicationrequest-status-reason",
+                            "code": "0001",
+                            "display": "Prescribing Error"
+                        }
+                    ]
+                },
                 "intent": "order",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                                "code": "outpatient",
+                                "display": "Outpatient"
+                            }
+                        ]
+                    }
+                ],
                 "medicationCodeableConcept": {
-                    "coding":  [
+                    "coding": [
                         {
                             "system": "http://snomed.info/sct",
                             "code": "36126511000001106",
@@ -97,9 +124,48 @@
                     "reference": "urn:uuid:63aa76ee-4b0d-41d8-97d5-fe86a134736b"
                 },
                 "groupIdentifier": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+                            "valueIdentifier": {
+                                "system": "https://fhir.nhs.uk/Id/prescription",
+                                "value": "A7B86F8D-1CF8-FC28-E050-D20AE3A215F0"
+                            }
+                        }
+                    ],
                     "system": "https://fhir.nhs.uk/Id/prescription-order-number",
                     "value": "3C2366-B81001-0A409U"
                 },
+                "courseOfTherapyType": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                            "code": "acute",
+                            "display": "Short course (acute) therapy"
+                        }
+                    ]
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "1 tablet, daily",
+                        "timing": {
+                            "repeat": {
+                                "period": 1,
+                                "periodUnit": "d"
+                            }
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1,
+                                    "unit": "tablet",
+                                    "system": "http://snomed.info/sct",
+                                    "code": "428673006"
+                                }
+                            }
+                        ]
+                    }
+                ],
                 "dispenseRequest": {
                     "extension": [
                         {

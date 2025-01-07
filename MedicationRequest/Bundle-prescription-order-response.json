@@ -212,6 +212,14 @@
         "id": "0ef0236b-568a-4aff-a8fc-5b956402abc6",
         "extension": [
           {
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionType",
+              "valueCoding": {
+                  "system": "https://fhir.nhs.uk/CodeSystem/prescription-type",
+                  "code": "0101",
+                  "display": "Primary Care Prescriber – Medical Prescriber"
+              }
+          },
+          {
             "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionStatusHistory",
             "extension": [
               {
@@ -241,6 +249,26 @@
             "value": "0d4f8c2e-8153-45f9-b040-1e2858808808"
           }
         ],
+        "courseOfTherapyType": {
+          "coding":  [
+              {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                  "code": "acute",
+                  "display": "Short course (acute) therapy"
+              }
+          ]
+        },
+        "category": [
+            {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                        "code": "inpatient",
+                        "display": "Inpatient"
+                    }
+                ]
+            }
+        ],
         "status": "cancelled",
         "intent": "order",
         "medicationCodeableConcept": {
@@ -260,10 +288,39 @@
           "reference": "urn:uuid:ca7a1e5a-f955-46d8-b1d6-528a45a8c20f"
         },
         "groupIdentifier": {
+          "extension":  [
+              {
+                  "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PrescriptionId",
+                  "valueIdentifier": {
+                      "system": "https://fhir.nhs.uk/Id/prescription",
+                      "value": "ad945a29-85f8-439a-b590-6789719adc16"
+                  }
+              }
+          ],
           "system": "https://fhir.nhs.uk/Id/prescription-order-number",
           "value": "47FD70-A99968-E517CT"
         },
+        "dosageInstruction": [
+          {
+            "text": "2 Puffs twice daily"
+          }
+        ],
         "dispenseRequest": {
+          "extension": [
+            {
+              "url": "https://fhir.nhs.uk/StructureDefinition/Extension-DM-PerformerSiteType",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/CodeSystem/dispensing-site-preference",
+                "code": "0004"
+              }
+            }
+          ],
+          "quantity": {
+            "value": 240,
+            "unit": "actuation(s)",
+            "system": "http://snomed.info/sct",
+            "code": "732981002"
+          },
           "performer": {
             "identifier": {
               "system": "https://fhir.nhs.uk/Id/ods-organization-code",
